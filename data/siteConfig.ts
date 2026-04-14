@@ -20,6 +20,7 @@ export const NAV_LINKS = [
   { href: '/como-asistir', label: 'Cómo asistir' },
   { href: '/donde-ver', label: 'Dónde verlo' },
   { href: '/mapa', label: 'Mapa' },
+  { href: '/guia', label: 'Guías' },
   { href: '/noticias', label: 'Noticias' },
   { href: '/faq', label: 'FAQ' },
 ]

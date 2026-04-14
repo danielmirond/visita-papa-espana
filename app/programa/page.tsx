@@ -55,6 +55,13 @@ export default function ProgramaPage() {
           <p className="mt-3 text-white/70">
             Agenda completa del 6 al 12 de junio de 2026
           </p>
+          <a
+            href="/api/calendario"
+            download
+            className="mt-4 inline-block rounded-lg border border-white/30 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10"
+          >
+            &#x1F4C5; Descargar calendario (.ics)
+          </a>
         </Container>
       </section>
 
