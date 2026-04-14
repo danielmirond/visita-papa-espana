@@ -51,7 +51,7 @@ export default function CountdownTimer({ targetDate }: { targetDate: string }) {
   if (!mounted) {
     return (
       <div className="flex justify-center gap-3 sm:gap-5">
-        {['Dias', 'Horas', 'Min', 'Seg'].map((label) => (
+        {['Días', 'Horas', 'Min', 'Seg'].map((label) => (
           <TimeBox key={label} value={0} label={label} />
         ))}
       </div>
@@ -62,7 +62,7 @@ export default function CountdownTimer({ targetDate }: { targetDate: string }) {
     return (
       <div className="rounded-xl bg-papal-gold/20 px-6 py-4 text-center backdrop-blur-sm">
         <p className="font-heading text-xl font-bold text-white">
-          El Papa Leon XIV esta en Espana
+          El Papa León XIV está en España
         </p>
       </div>
     )
@@ -70,7 +70,7 @@ export default function CountdownTimer({ targetDate }: { targetDate: string }) {
 
   return (
     <div className="flex justify-center gap-3 sm:gap-5">
-      <TimeBox value={timeLeft.days} label="Dias" />
+      <TimeBox value={timeLeft.days} label="Días" />
       <TimeBox value={timeLeft.hours} label="Horas" />
       <TimeBox value={timeLeft.minutes} label="Min" />
       <TimeBox value={timeLeft.seconds} label="Seg" />

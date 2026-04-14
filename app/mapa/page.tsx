@@ -6,7 +6,7 @@ import { formatDateShort } from '@/lib/utils'
 
 export const metadata: Metadata = {
   title: 'Mapa del recorrido papal',
-  description: 'Mapa con el recorrido del Papa Leon XIV por Espana: Madrid, Barcelona, Gran Canaria y Tenerife del 6 al 12 de junio de 2026.',
+  description: 'Mapa con el recorrido del Papa León XIV por España: Madrid, Barcelona, Gran Canaria y Tenerife del 6 al 12 de junio de 2026.',
 }
 
 const CITY_COLORS: Record<string, string> = {
@@ -25,13 +25,13 @@ export default function MapaPage() {
             Mapa del recorrido
           </h1>
           <p className="mt-3 text-white/70">
-            4 ciudades, 2 comunidades autonomas, 1 archipielago
+            4 ciudades, 2 comunidades autónomas, 1 archipiélago
           </p>
         </Container>
       </section>
 
       <Container className="py-10">
-        {/* Recorrido lineal */}
+        {/* Recorrido lineal (visual) */}
         <div className="mx-auto max-w-2xl">
           <div className="relative">
             {cities.map((city, i) => (
@@ -86,12 +86,12 @@ export default function MapaPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa del recorrido papal por Espana"
+              title="Mapa del recorrido papal por España"
               className="w-full"
             />
           </div>
           <p className="mt-2 text-center text-xs text-papal-navy/40">
-            Las ubicaciones exactas de los actos se publicaran en las semanas previas
+            Las ubicaciones exactas de los actos se publicarán en las semanas previas
           </p>
         </div>
 
@@ -106,19 +106,19 @@ export default function MapaPage() {
                 <span className="text-sm font-medium text-papal-navy">Madrid &rarr; Barcelona</span>
                 <div className="text-right text-xs text-papal-navy/60">
                   <p>AVE: 2h 30min</p>
-                  <p>Avion: 1h 20min</p>
+                  <p>Avión: 1h 20min</p>
                 </div>
               </div>
               <div className="flex items-center justify-between rounded-lg bg-gray-50 p-3">
                 <span className="text-sm font-medium text-papal-navy">Barcelona &rarr; Gran Canaria</span>
                 <div className="text-right text-xs text-papal-navy/60">
-                  <p>Avion: 3h 30min</p>
+                  <p>Avión: 3h 30min</p>
                 </div>
               </div>
               <div className="flex items-center justify-between rounded-lg bg-gray-50 p-3">
                 <span className="text-sm font-medium text-papal-navy">Gran Canaria &rarr; Tenerife</span>
                 <div className="text-right text-xs text-papal-navy/60">
-                  <p>Avion: 30min</p>
+                  <p>Avión: 30min</p>
                   <p>Ferry: 1h 30min</p>
                 </div>
               </div>

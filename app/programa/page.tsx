@@ -8,18 +8,18 @@ import { dateToSlug } from '@/lib/utils'
 
 export const metadata: Metadata = {
   title: 'Programa completo',
-  description: 'Agenda dia a dia de la visita del Papa Leon XIV a Espana. Todos los actos, misas, encuentros y eventos del 6 al 12 de junio de 2026 en Madrid, Barcelona, Gran Canaria y Tenerife.',
+  description: 'Agenda día a día de la visita del Papa León XIV a España. Todos los actos, misas, encuentros y eventos del 6 al 12 de junio de 2026 en Madrid, Barcelona, Gran Canaria y Tenerife.',
 }
 
 const EVENT_TYPE_LABELS: Record<string, string> = {
   misa: 'Misa',
   vigilia: 'Vigilia',
   encuentro: 'Encuentro',
-  inauguracion: 'Inauguracion',
+  inauguracion: 'Inauguración',
   traslado: 'Traslado',
   llegada: 'Llegada',
   despedida: 'Despedida',
-  'acto-publico': 'Acto publico',
+  'acto-publico': 'Acto público',
 }
 
 const EVENT_TYPE_COLORS: Record<string, string> = {
@@ -40,10 +40,10 @@ export default function ProgramaPage() {
         data={{
           '@context': 'https://schema.org',
           '@type': 'Event',
-          name: 'Visita apostolica del Papa Leon XIV a Espana',
+          name: 'Visita apostólica del Papa León XIV a España',
           startDate: '2026-06-06',
           endDate: '2026-06-12',
-          description: 'Programa completo de la visita papal a Espana',
+          description: 'Programa completo de la visita papal a España',
         }}
       />
 
@@ -100,7 +100,7 @@ export default function ProgramaPage() {
                           </span>
                           {event.isPublic && (
                             <span className="rounded bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">
-                              Publico
+                              Público
                             </span>
                           )}
                           {!event.isConfirmed && (

@@ -18,6 +18,6 @@ export interface PapalEvent {
 export interface ScheduleDay {
   date: string // YYYY-MM-DD
   citySlug: string
-  label: string // "Sabado 6 de junio"
+  label: string // "Sábado 6 de junio"
   events: PapalEvent[]
 }

@@ -21,7 +21,7 @@ export function generateMetadata({ params }: Props): Metadata {
   if (!city) return {}
   return {
     title: `${city.name} - Visita papal`,
-    description: `Guia completa de la visita del Papa Leon XIV a ${city.name}. Programa, transporte, alojamiento y consejos practicos.`,
+    description: `Guía completa de la visita del Papa León XIV a ${city.name}. Programa, transporte, alojamiento y consejos prácticos.`,
   }
 }
 
@@ -54,8 +54,13 @@ export default function CityPage({ params }: Props) {
       />
 
       {/* Hero */}
-      <section className={`bg-gradient-to-r ${CITY_GRADIENTS[city.slug]}`}>
-        <Container className="py-12 text-white sm:py-16">
+      <section className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url('${city.heroImage}')` }}
+        />
+        <div className={`absolute inset-0 bg-gradient-to-r ${CITY_GRADIENTS[city.slug]} opacity-80`} />
+        <Container className="relative py-12 text-white sm:py-16">
           <Link href="/ciudades" className="text-sm text-white/70 hover:text-white">
             &larr; Todas las ciudades
           </Link>
@@ -118,15 +123,15 @@ export default function CityPage({ params }: Props) {
               ))}
             </section>
 
-            {/* Info practica */}
+            {/* Info práctica */}
             <section className="mt-10">
               <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">
-                Informacion practica
+                Información práctica
               </h2>
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="mb-2 font-bold text-papal-navy">Como llegar</h3>
+                  <h3 className="mb-2 font-bold text-papal-navy">Cómo llegar</h3>
                   <ul className="space-y-1">
                     {city.practicalInfo.transport.map((t) => (
                       <li key={t} className="flex items-start gap-2 text-sm text-papal-navy/70">
@@ -174,7 +179,7 @@ export default function CityPage({ params }: Props) {
             {hotels.length > 0 && (
               <div className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
                 <h3 className="font-heading text-lg font-bold text-papal-navy">
-                  Donde alojarse
+                  Dónde alojarse
                 </h3>
                 <div className="mt-3 space-y-3">
                   {hotels.map((hotel) => (
@@ -196,17 +201,17 @@ export default function CityPage({ params }: Props) {
               </div>
             )}
 
-            {/* CTA inscripcion */}
+            {/* CTA inscripción */}
             <div className="rounded-xl bg-papal-navy p-5 text-white">
-              <h3 className="font-heading text-lg font-bold">Quieres asistir?</h3>
+              <h3 className="font-heading text-lg font-bold">¿Quieres asistir?</h3>
               <p className="mt-1 text-sm text-white/70">
-                Los actos publicos requieren inscripcion previa gratuita.
+                Los actos públicos requieren inscripción previa gratuita.
               </p>
               <Link
                 href="/como-asistir"
                 className="mt-3 inline-block rounded-lg bg-papal-gold px-4 py-2 text-sm font-bold text-papal-navy hover:bg-papal-gold-light"
               >
-                Ver guia completa
+                Ver guía completa
               </Link>
             </div>
           </aside>

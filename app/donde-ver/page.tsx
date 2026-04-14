@@ -3,12 +3,12 @@ import Container from '@/components/ui/Container'
 import { tvChannels } from '@/data/tvChannels'
 
 export const metadata: Metadata = {
-  title: 'Donde ver la visita del Papa',
-  description: 'Todos los canales de TV, plataformas de streaming y emisoras de radio que retransmitiran la visita del Papa Leon XIV a Espana en junio de 2026.',
+  title: 'Dónde ver la visita del Papa',
+  description: 'Todos los canales de TV, plataformas de streaming y emisoras de radio que retransmitirán la visita del Papa León XIV a España en junio de 2026.',
 }
 
 const TYPE_LABELS: Record<string, string> = {
-  tv: 'Television',
+  tv: 'Televisión',
   streaming: 'Streaming',
   radio: 'Radio',
 }
@@ -31,7 +31,7 @@ export default function DondeVerPage() {
       <section className="gradient-navy">
         <Container className="py-12 text-center">
           <h1 className="font-heading text-3xl font-bold text-white sm:text-4xl">
-            Donde ver la visita del Papa
+            Dónde ver la visita del Papa
           </h1>
           <p className="mt-3 text-white/70">
             TV, streaming y radio: todas las formas de seguir la visita en directo
@@ -42,9 +42,9 @@ export default function DondeVerPage() {
       <Container className="py-10">
         <div className="mb-8 rounded-xl border border-papal-gold/20 bg-papal-cream p-5">
           <p className="text-center text-sm text-papal-navy/80">
-            La cobertura principal correra a cargo de <strong>RTVE</strong> (La 1, La 2 y RTVE Play) con retransmision completa de todos los actos principales.
+            La cobertura principal correrá a cargo de <strong>RTVE</strong> (La 1, La 2 y RTVE Play) con retransmisión completa de todos los actos principales.
             Los canales religiosos <strong>13TV</strong> y <strong>TRECE</strong> ofrecen cobertura especializada.
-            <strong> Vatican News</strong> retransmitira en directo desde la perspectiva del Vaticano.
+            <strong> Vatican News</strong> retransmitirá en directo desde la perspectiva del Vaticano.
           </p>
         </div>
 
@@ -92,9 +92,9 @@ export default function DondeVerPage() {
             Pantallas gigantes
           </h2>
           <p className="mt-2 text-sm text-papal-navy/70">
-            Se instalaran pantallas gigantes en los principales puntos de Madrid, Barcelona y Canarias
+            Se instalarán pantallas gigantes en los principales puntos de Madrid, Barcelona y Canarias
             para que los fieles que no puedan acceder a los recintos puedan seguir los actos en directo.
-            Los detalles de ubicacion se publicaran en las semanas previas a la visita.
+            Los detalles de ubicación se publicarán en las semanas previas a la visita.
           </p>
         </section>
       </Container>

@@ -22,7 +22,7 @@ export function generateMetadata({ params }: Props): Metadata {
   const city = cities.find((c) => c.slug === day.citySlug)
   return {
     title: `${day.label} - ${city?.name}`,
-    description: `Programa del ${formatDateLong(day.date)} en ${city?.name}. ${day.events.length} actos programados para la visita del Papa Leon XIV.`,
+    description: `Programa del ${formatDateLong(day.date)} en ${city?.name}. ${day.events.length} actos programados para la visita del Papa León XIV.`,
   }
 }
 
@@ -30,11 +30,11 @@ const EVENT_TYPE_LABELS: Record<string, string> = {
   misa: 'Misa',
   vigilia: 'Vigilia',
   encuentro: 'Encuentro',
-  inauguracion: 'Inauguracion',
+  inauguracion: 'Inauguración',
   traslado: 'Traslado',
   llegada: 'Llegada',
   despedida: 'Despedida',
-  'acto-publico': 'Acto publico',
+  'acto-publico': 'Acto público',
 }
 
 export default function DiaPage({ params }: Props) {
@@ -80,7 +80,7 @@ export default function DiaPage({ params }: Props) {
                     </span>
                     {event.isPublic && (
                       <span className="rounded bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">
-                        Acto publico
+                        Acto público
                       </span>
                     )}
                     {!event.isConfirmed && (

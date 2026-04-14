@@ -16,15 +16,15 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    'Papa Leon XIV',
-    'visita Papa Espana 2026',
+    'Papa León XIV',
+    'visita Papa España 2026',
     'Papa Madrid',
     'Papa Barcelona',
     'Papa Canarias',
     'Sagrada Familia',
     'Alzad la mirada',
     'visita papal',
-    'Leon XIV Espana',
+    'León XIV España',
   ],
   openGraph: {
     title: siteConfig.name,

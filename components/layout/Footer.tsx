@@ -12,11 +12,11 @@ export default function Footer() {
             <div className="mb-3 flex items-center gap-2">
               <span className="text-2xl">&#x271D;</span>
               <span className="font-heading text-lg font-bold text-white">
-                Papa en Espana
+                Papa en España
               </span>
             </div>
             <p className="text-sm leading-relaxed text-white/60">
-              Guia completa de la visita del Papa Leon XIV a Espana.
+              Guía completa de la visita del Papa León XIV a España.
               6-12 de junio de 2026.
             </p>
             <p className="mt-2 text-sm font-medium text-papal-gold">
@@ -24,7 +24,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Navegacion */}
+          {/* Navegación */}
           <div>
             <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-white">
               Secciones
@@ -66,7 +66,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-white/60 transition-colors hover:text-papal-gold"
                 >
-                  Inscripcion Madrid
+                  Inscripción Madrid
                 </a>
               </li>
               <li>
@@ -76,7 +76,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-white/60 transition-colors hover:text-papal-gold"
                 >
-                  Archidiocesis de Madrid
+                  Archidiócesis de Madrid
                 </a>
               </li>
               <li>
@@ -95,7 +95,7 @@ export default function Footer() {
           {/* Lema */}
           <div>
             <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-white">
-              Visita apostolica
+              Visita apostólica
             </h3>
             <p className="text-sm text-white/60">
               Del 6 al 12 de junio de 2026
@@ -117,12 +117,12 @@ export default function Footer() {
         <div className="mt-10 border-t border-white/10 pt-6">
           <div className="flex flex-col items-center justify-between gap-2 text-xs text-white/40 sm:flex-row">
             <p>
-              Este sitio no es una web oficial. Informacion recopilada de fuentes publicas.
+              Este sitio no es una web oficial. Información recopilada de fuentes públicas.
             </p>
             <p>
               Algunos enlaces son de afiliados. Consulta nuestra{' '}
               <Link href="/aviso-legal" className="underline hover:text-white/60">
-                politica de afiliacion
+                política de afiliación
               </Link>.
             </p>
           </div>

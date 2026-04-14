@@ -6,7 +6,7 @@ import { cities } from '@/data/cities'
 
 export const metadata: Metadata = {
   title: 'Noticias sobre la visita',
-  description: 'Ultimas noticias y actualizaciones sobre la visita del Papa Leon XIV a Espana en junio de 2026.',
+  description: 'Últimas noticias y actualizaciones sobre la visita del Papa León XIV a España en junio de 2026.',
 }
 
 export default function NoticiasPage() {
@@ -20,7 +20,7 @@ export default function NoticiasPage() {
             Noticias
           </h1>
           <p className="mt-3 text-white/70">
-            Ultimas novedades sobre la visita del Papa Leon XIV a Espana
+            Últimas novedades sobre la visita del Papa León XIV a España
           </p>
         </Container>
       </section>
@@ -56,7 +56,7 @@ export default function NoticiasPage() {
                 {article.excerpt}
               </p>
               <p className="mt-3 text-sm font-medium text-papal-gold">
-                Leer mas &rarr;
+                Leer más &rarr;
               </p>
             </Link>
           ))}

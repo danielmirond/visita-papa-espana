@@ -36,7 +36,7 @@ export default function NoticiaPage({ params }: Props) {
           headline: article.title,
           description: article.excerpt,
           datePublished: article.date,
-          author: { '@type': 'Organization', name: 'Visita Papa Espana' },
+          author: { '@type': 'Organization', name: 'Visita Papa España' },
         }}
       />
 

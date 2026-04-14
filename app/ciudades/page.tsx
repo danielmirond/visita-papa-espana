@@ -7,7 +7,7 @@ import { formatDateShort } from '@/lib/utils'
 
 export const metadata: Metadata = {
   title: 'Ciudades de la visita',
-  description: 'Madrid, Barcelona, Gran Canaria y Tenerife: las cuatro ciudades que visitara el Papa Leon XIV en junio de 2026. Informacion practica, transporte y alojamiento.',
+  description: 'Madrid, Barcelona, Gran Canaria y Tenerife: las cuatro ciudades que visitará el Papa León XIV en junio de 2026. Información práctica, transporte y alojamiento.',
 }
 
 const CITY_GRADIENTS: Record<string, string> = {
@@ -26,7 +26,7 @@ export default function CiudadesPage() {
             Ciudades de la visita
           </h1>
           <p className="mt-3 text-white/70">
-            El Papa Leon XIV visitara 4 ciudades en 7 dias
+            El Papa León XIV visitará 4 ciudades en 7 días
           </p>
         </Container>
       </section>
@@ -43,7 +43,12 @@ export default function CiudadesPage() {
                 href={`/ciudades/${city.slug}`}
                 className="group block overflow-hidden rounded-xl border border-gray-100 shadow-sm transition-all hover:shadow-lg"
               >
-                <div className={`bg-gradient-to-r ${CITY_GRADIENTS[city.slug]} p-6 text-white sm:p-8`}>
+                <div
+                  className="relative overflow-hidden p-6 text-white sm:p-8"
+                  style={{ backgroundImage: `url('${city.heroImage}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                >
+                  <div className={`absolute inset-0 bg-gradient-to-r ${CITY_GRADIENTS[city.slug]} opacity-80`} />
+                  <div className="relative">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                     <div>
                       <h2 className="font-heading text-2xl font-bold sm:text-3xl">
@@ -62,6 +67,7 @@ export default function CiudadesPage() {
                   <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/90">
                     {city.description}
                   </p>
+                  </div>
                 </div>
                 <div className="bg-white p-5">
                   <h3 className="mb-2 text-sm font-bold uppercase tracking-wider text-papal-navy/50">
@@ -76,7 +82,7 @@ export default function CiudadesPage() {
                     ))}
                   </ul>
                   <p className="mt-3 text-sm font-medium text-papal-gold group-hover:underline">
-                    Ver toda la informacion de {city.name} &rarr;
+                    Ver toda la información de {city.name} &rarr;
                   </p>
                 </div>
               </Link>

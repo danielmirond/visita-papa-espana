@@ -11,7 +11,7 @@ import { formatDateShort } from '@/lib/utils'
 const eventJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Event',
-  name: 'Visita apostolica del Papa Leon XIV a Espana',
+  name: 'Visita apostólica del Papa León XIV a España',
   description: siteConfig.description,
   startDate: '2026-06-06',
   endDate: '2026-06-12',
@@ -23,8 +23,8 @@ const eventJsonLd = {
     { '@type': 'Place', name: 'Gran Canaria', address: { '@type': 'PostalAddress', addressCountry: 'ES', addressLocality: 'Las Palmas de Gran Canaria' } },
     { '@type': 'Place', name: 'Tenerife', address: { '@type': 'PostalAddress', addressCountry: 'ES', addressLocality: 'Santa Cruz de Tenerife' } },
   ],
-  performer: { '@type': 'Person', name: 'Papa Leon XIV' },
-  organizer: { '@type': 'Organization', name: 'Conferencia Episcopal Espanola', url: 'https://conferenciaepiscopal.es' },
+  performer: { '@type': 'Person', name: 'Papa León XIV' },
+  organizer: { '@type': 'Organization', name: 'Conferencia Episcopal Española', url: 'https://conferenciaepiscopal.es' },
 }
 
 const CITY_COLORS: Record<string, string> = {
@@ -54,7 +54,12 @@ export default function HomePage() {
       <JsonLd data={eventJsonLd} />
 
       {/* Hero */}
-      <section className="gradient-navy relative overflow-hidden">
+      <section className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/hero/papa-leon-xiv.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-papal-navy/85 via-papal-navy/80 to-papal-navy/95" />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-papal-gold blur-3xl" />
         </div>
@@ -63,9 +68,9 @@ export default function HomePage() {
             6 - 12 de junio de 2026
           </p>
           <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
-            Visita del Papa Leon XIV
+            Visita del Papa León XIV
             <br />
-            <span className="text-papal-gold">a Espana</span>
+            <span className="text-papal-gold">a España</span>
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/70">
             Madrid &middot; Barcelona &middot; Gran Canaria &middot; Tenerife
@@ -89,7 +94,7 @@ export default function HomePage() {
               href="/como-asistir"
               className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
             >
-              Como asistir
+              Cómo asistir
             </Link>
           </div>
         </Container>
@@ -101,7 +106,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             <div className="text-center">
               <p className="font-heading text-3xl font-bold text-papal-navy">7</p>
-              <p className="text-sm text-papal-navy/60">dias</p>
+              <p className="text-sm text-papal-navy/60">días</p>
             </div>
             <div className="text-center">
               <p className="font-heading text-3xl font-bold text-papal-navy">4</p>
@@ -113,7 +118,7 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <p className="font-heading text-3xl font-bold text-papal-navy">{publicEvents}</p>
-              <p className="text-sm text-papal-navy/60">actos publicos</p>
+              <p className="text-sm text-papal-navy/60">actos públicos</p>
             </div>
           </div>
         </Container>
@@ -123,7 +128,7 @@ export default function HomePage() {
       <section className="section-padding">
         <Container>
           <h2 className="mb-2 text-center font-heading text-3xl font-bold text-papal-navy">
-            Recorrido por Espana
+            Recorrido por España
           </h2>
           <p className="mb-10 text-center text-papal-navy/60">
             Tres pilares: unidad (Madrid), belleza (Barcelona), caridad (Canarias)
@@ -160,7 +165,7 @@ export default function HomePage() {
                     ))}
                     {city.highlights.length > 3 && (
                       <li className="text-sm font-medium text-papal-gold group-hover:underline">
-                        +{city.highlights.length - 3} actos mas
+                        +{city.highlights.length - 3} actos más
                       </li>
                     )}
                   </ul>
@@ -175,10 +180,10 @@ export default function HomePage() {
       <section className="section-padding bg-gray-50">
         <Container>
           <h2 className="mb-2 text-center font-heading text-3xl font-bold text-papal-navy">
-            Programa dia a dia
+            Programa día a día
           </h2>
           <p className="mb-10 text-center text-papal-navy/60">
-            {totalEvents} actos en 7 dias por 4 ciudades de Espana
+            {totalEvents} actos en 7 días por 4 ciudades de España
           </p>
           <div className="space-y-3">
             {schedule.map((day) => {
@@ -211,7 +216,7 @@ export default function HomePage() {
                     ))}
                     {day.events.length > 2 && (
                       <p className="text-right text-xs font-medium text-papal-gold">
-                        +{day.events.length - 2} mas
+                        +{day.events.length - 2} más
                       </p>
                     )}
                   </div>
@@ -230,11 +235,11 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* Ultimas noticias */}
+      {/* Últimas noticias */}
       <section className="section-padding">
         <Container>
           <h2 className="mb-8 text-center font-heading text-3xl font-bold text-papal-navy">
-            Ultimas noticias
+            Últimas noticias
           </h2>
           <div className="grid gap-6 sm:grid-cols-3">
             {latestNews.map((article) => (
@@ -268,11 +273,11 @@ export default function HomePage() {
       <section className="gradient-navy">
         <Container className="py-12 text-center">
           <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
-            Quieres asistir?
+            ¿Quieres asistir?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-white/70">
-            Los actos son gratuitos pero requieren inscripcion previa.
-            Registrate en la web oficial para reservar tu plaza.
+            Los actos son gratuitos pero requieren inscripción previa.
+            Regístrate en la web oficial para reservar tu plaza.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <a
@@ -287,7 +292,7 @@ export default function HomePage() {
               href="/como-asistir"
               className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
             >
-              Guia completa
+              Guía completa
             </Link>
           </div>
         </Container>

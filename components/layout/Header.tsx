@@ -16,7 +16,7 @@ export default function Header() {
             <span className="text-2xl">&#x271D;</span>
             <div>
               <span className="font-heading text-lg font-bold text-papal-navy">
-                Papa en Espana
+                Papa en España
               </span>
               <span className="ml-2 hidden text-xs text-papal-gold sm:inline">
                 2026
