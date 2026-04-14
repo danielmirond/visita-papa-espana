@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import CountdownTimer from '@/components/home/CountdownTimer'
+import NewsletterForm from '@/components/shared/NewsletterForm'
 import JsonLd from '@/components/seo/JsonLd'
 import { siteConfig } from '@/data/siteConfig'
 import { cities } from '@/data/cities'
@@ -266,6 +267,13 @@ export default function HomePage() {
               Ver todas las noticias &rarr;
             </Link>
           </div>
+        </Container>
+      </section>
+
+      {/* Newsletter */}
+      <section className="bg-white">
+        <Container className="py-10">
+          <NewsletterForm variant="banner" />
         </Container>
       </section>
 

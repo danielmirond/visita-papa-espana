@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
+import NewsletterForm from '@/components/shared/NewsletterForm'
 import { cities, getCityBySlug } from '@/data/cities'
 import { getScheduleByCity } from '@/data/schedule'
 import { getAffiliatesByCategory } from '@/data/affiliates'
@@ -214,6 +215,9 @@ export default function CityPage({ params }: Props) {
                 Ver guía completa
               </Link>
             </div>
+
+            {/* Newsletter */}
+            <NewsletterForm variant="inline" />
           </aside>
         </div>
       </Container>

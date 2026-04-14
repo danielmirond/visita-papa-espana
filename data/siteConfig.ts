@@ -21,4 +21,5 @@ export const NAV_LINKS = [
   { href: '/donde-ver', label: 'Dónde verlo' },
   { href: '/mapa', label: 'Mapa' },
   { href: '/noticias', label: 'Noticias' },
+  { href: '/faq', label: 'FAQ' },
 ]
