@@ -1,0 +1,133 @@
+import Link from 'next/link'
+import Container from '@/components/ui/Container'
+import { NAV_LINKS, siteConfig } from '@/data/siteConfig'
+
+export default function Footer() {
+  return (
+    <footer className="gradient-navy mt-16 text-white/80">
+      <Container className="py-12">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Marca */}
+          <div>
+            <div className="mb-3 flex items-center gap-2">
+              <span className="text-2xl">&#x271D;</span>
+              <span className="font-heading text-lg font-bold text-white">
+                Papa en Espana
+              </span>
+            </div>
+            <p className="text-sm leading-relaxed text-white/60">
+              Guia completa de la visita del Papa Leon XIV a Espana.
+              6-12 de junio de 2026.
+            </p>
+            <p className="mt-2 text-sm font-medium text-papal-gold">
+              &ldquo;Alzad la mirada&rdquo;
+            </p>
+          </div>
+
+          {/* Navegacion */}
+          <div>
+            <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-white">
+              Secciones
+            </h3>
+            <ul className="space-y-2">
+              {NAV_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-white/60 transition-colors hover:text-papal-gold"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Enlaces oficiales */}
+          <div>
+            <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-white">
+              Enlaces oficiales
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href={siteConfig.officialSite}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/60 transition-colors hover:text-papal-gold"
+                >
+                  Con el Papa (oficial)
+                </a>
+              </li>
+              <li>
+                <a
+                  href={siteConfig.registrationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/60 transition-colors hover:text-papal-gold"
+                >
+                  Inscripcion Madrid
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.archimadrid.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/60 transition-colors hover:text-papal-gold"
+                >
+                  Archidiocesis de Madrid
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.vaticannews.va/es.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/60 transition-colors hover:text-papal-gold"
+                >
+                  Vatican News
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Lema */}
+          <div>
+            <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-white">
+              Visita apostolica
+            </h3>
+            <p className="text-sm text-white/60">
+              Del 6 al 12 de junio de 2026
+            </p>
+            <p className="text-sm text-white/60">
+              Madrid &middot; Barcelona &middot; Gran Canaria &middot; Tenerife
+            </p>
+            <div className="mt-4 rounded-lg border border-papal-gold/30 bg-white/5 p-3">
+              <p className="text-center font-heading text-sm italic text-papal-gold">
+                &ldquo;Alzad la mirada&rdquo;
+              </p>
+              <p className="mt-1 text-center text-xs text-white/40">
+                Juan 4,35
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 border-t border-white/10 pt-6">
+          <div className="flex flex-col items-center justify-between gap-2 text-xs text-white/40 sm:flex-row">
+            <p>
+              Este sitio no es una web oficial. Informacion recopilada de fuentes publicas.
+            </p>
+            <p>
+              Algunos enlaces son de afiliados. Consulta nuestra{' '}
+              <Link href="/aviso-legal" className="underline hover:text-white/60">
+                politica de afiliacion
+              </Link>.
+            </p>
+          </div>
+        </div>
+      </Container>
+    </footer>
+  )
+}

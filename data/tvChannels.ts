@@ -1,0 +1,88 @@
+import { TvChannel } from '@/types/tv'
+
+export const tvChannels: TvChannel[] = [
+  {
+    name: 'La 1 (TVE)',
+    type: 'tv',
+    url: 'https://www.rtve.es/directo/la-1/',
+    description: 'Cadena publica principal. Retransmision completa de todos los actos principales de la visita papal.',
+    isFree: true,
+  },
+  {
+    name: 'La 2 (TVE)',
+    type: 'tv',
+    url: 'https://www.rtve.es/directo/la-2/',
+    description: 'Cobertura complementaria con analisis y programas especiales sobre la visita.',
+    isFree: true,
+  },
+  {
+    name: 'RTVE Play',
+    type: 'streaming',
+    url: 'https://www.rtve.es/play/',
+    description: 'Plataforma de streaming de RTVE. Retransmision en directo y contenidos a la carta.',
+    isFree: true,
+  },
+  {
+    name: '13TV',
+    type: 'tv',
+    url: 'https://www.13tv.es/',
+    description: 'Canal de la Conferencia Episcopal. Cobertura exhaustiva de todos los actos religiosos.',
+    isFree: true,
+  },
+  {
+    name: 'TRECE',
+    type: 'tv',
+    url: 'https://www.trecetv.es/',
+    description: 'Canal catolico con cobertura especial, entrevistas y programas sobre la visita.',
+    isFree: true,
+  },
+  {
+    name: 'Vatican News',
+    type: 'streaming',
+    url: 'https://www.vaticannews.va/es.html',
+    description: 'Canal oficial del Vaticano. Retransmision en directo de todos los actos del Papa con comentarios en espanol.',
+    isFree: true,
+  },
+  {
+    name: 'COPE',
+    type: 'radio',
+    url: 'https://www.cope.es/',
+    description: 'Cadena de radio de la Conferencia Episcopal. Cobertura en directo y programas especiales.',
+    isFree: true,
+  },
+  {
+    name: 'RNE (Radio Nacional)',
+    type: 'radio',
+    url: 'https://www.rtve.es/radio/',
+    description: 'Radio publica nacional con retransmision de los actos principales.',
+    isFree: true,
+  },
+  {
+    name: 'Cadena SER',
+    type: 'radio',
+    url: 'https://cadenaser.com/',
+    description: 'Cobertura informativa de la visita papal en los programas de noticias.',
+    isFree: true,
+  },
+  {
+    name: 'Antena 3 Noticias',
+    type: 'tv',
+    url: 'https://www.antena3.com/noticias/',
+    description: 'Cobertura en informativos y conexiones en directo con los principales actos.',
+    isFree: true,
+  },
+  {
+    name: 'Telecinco',
+    type: 'tv',
+    url: 'https://www.telecinco.es/',
+    description: 'Cobertura en informativos con especiales sobre la visita.',
+    isFree: true,
+  },
+  {
+    name: 'laSexta',
+    type: 'tv',
+    url: 'https://www.lasexta.com/',
+    description: 'Cobertura informativa y analisis en programas de actualidad.',
+    isFree: true,
+  },
+]

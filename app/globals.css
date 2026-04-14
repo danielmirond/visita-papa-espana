@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-papal-navy bg-white antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-12 md:py-20;
+  }
+
+  .gradient-gold {
+    @apply bg-gradient-to-r from-papal-gold to-papal-gold-light;
+  }
+
+  .gradient-navy {
+    @apply bg-gradient-to-br from-papal-navy to-papal-navy-light;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-papal-gold to-papal-gold-light bg-clip-text text-transparent;
+  }
+}
