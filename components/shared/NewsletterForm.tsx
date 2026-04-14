@@ -28,9 +28,8 @@ export default function NewsletterForm({ variant = 'inline', className = '' }: P
   if (status === 'success') {
     return (
       <div className={`rounded-xl p-6 text-center ${variant === 'banner' ? 'bg-green-50' : ''} ${className}`}>
-        <p className="text-2xl">&#x2709;&#xFE0F;</p>
         <p className="mt-2 font-heading text-lg font-bold text-green-700">
-          ¡Suscrito!
+          Suscripción confirmada
         </p>
         <p className="mt-1 text-sm text-green-600">
           Te avisaremos de todas las novedades de la visita papal.
@@ -44,7 +43,7 @@ export default function NewsletterForm({ variant = 'inline', className = '' }: P
       <div className={`rounded-xl bg-papal-cream p-6 sm:p-8 ${className}`}>
         <div className="mx-auto max-w-2xl text-center">
           <h3 className="font-heading text-2xl font-bold text-papal-navy">
-            No te pierdas nada
+            Manténgase informado
           </h3>
           <p className="mt-2 text-sm text-papal-navy/60">
             Recibe las últimas novedades, cambios de programa y consejos prácticos
@@ -107,7 +106,7 @@ export default function NewsletterForm({ variant = 'inline', className = '' }: P
   return (
     <div className={`rounded-xl border border-papal-gold/20 bg-papal-cream p-5 ${className}`}>
       <h3 className="font-heading text-lg font-bold text-papal-navy">
-        &#x2709;&#xFE0F; Newsletter
+        Newsletter
       </h3>
       <p className="mt-1 text-sm text-papal-navy/60">
         Recibe novedades y cambios de programa.

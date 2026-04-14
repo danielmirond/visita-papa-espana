@@ -35,13 +35,6 @@ const CITY_COLORS: Record<string, string> = {
   tenerife: 'from-emerald-600 to-emerald-800',
 }
 
-const CITY_EMOJIS: Record<string, string> = {
-  madrid: '',
-  barcelona: '',
-  'gran-canaria': '',
-  tenerife: '',
-}
-
 export default function HomePage() {
   const totalEvents = schedule.reduce((acc, day) => acc + day.events.length, 0)
   const publicEvents = schedule.reduce(
@@ -144,8 +137,7 @@ export default function HomePage() {
                 <div className={`bg-gradient-to-r ${CITY_COLORS[city.slug]} p-6 text-white`}>
                   <div className="flex items-start justify-between">
                     <div>
-                      <p className="text-3xl">{CITY_EMOJIS[city.slug]}</p>
-                      <h3 className="mt-2 font-heading text-2xl font-bold">{city.name}</h3>
+                      <h3 className="font-heading text-2xl font-bold">{city.name}</h3>
                       <p className="text-sm text-white/80">{city.region}</p>
                     </div>
                     <div className="rounded-lg bg-white/20 px-3 py-1.5 text-sm font-medium backdrop-blur-sm">
@@ -281,7 +273,7 @@ export default function HomePage() {
       <section className="gradient-navy">
         <Container className="py-12 text-center">
           <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
-            ¿Quieres asistir?
+            Información de asistencia
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-white/70">
             Los actos son gratuitos pero requieren inscripción previa.

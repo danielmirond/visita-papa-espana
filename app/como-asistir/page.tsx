@@ -6,7 +6,7 @@ import { affiliates } from '@/data/affiliates'
 
 export const metadata: Metadata = {
   title: 'Cómo asistir a la visita del Papa',
-  description: 'Guía práctica para asistir a la visita del Papa León XIV a España: inscripción, transporte, alojamiento, qué llevar y consejos para disfrutar de los actos.',
+  description: 'Guía práctica para asistir a la visita del Papa León XIV a España: inscripción, transporte, alojamiento, qué llevar y recomendaciones para los actos.',
 }
 
 export default function ComoAsistirPage() {
@@ -22,7 +22,7 @@ export default function ComoAsistirPage() {
             Cómo asistir
           </h1>
           <p className="mt-3 text-white/70">
-            Todo lo que necesitas saber para vivir la visita del Papa León XIV
+            Guía práctica para asistir a los actos de la visita papal
           </p>
         </Container>
       </section>
@@ -152,23 +152,23 @@ export default function ComoAsistirPage() {
                 <div className="rounded-lg bg-green-50 p-4">
                   <h3 className="font-bold text-green-800">Imprescindible</h3>
                   <ul className="mt-2 space-y-1 text-sm text-green-700">
-                    <li>&#x2713; Acreditación/inscripción impresa o en móvil</li>
-                    <li>&#x2713; DNI o pasaporte</li>
-                    <li>&#x2713; Agua (al menos 1,5 litros)</li>
-                    <li>&#x2713; Protección solar (crema, gorra, gafas)</li>
-                    <li>&#x2713; Calzado cómodo</li>
-                    <li>&#x2713; Batería externa para el móvil</li>
+                    <li>&bull; Acreditación/inscripción impresa o en móvil</li>
+                    <li>&bull; DNI o pasaporte</li>
+                    <li>&bull; Agua (al menos 1,5 litros)</li>
+                    <li>&bull; Protección solar (crema, gorra, gafas)</li>
+                    <li>&bull; Calzado cómodo</li>
+                    <li>&bull; Batería externa para el móvil</li>
                   </ul>
                 </div>
                 <div className="rounded-lg bg-amber-50 p-4">
                   <h3 className="font-bold text-amber-800">Recomendable</h3>
                   <ul className="mt-2 space-y-1 text-sm text-amber-700">
-                    <li>&#x2713; Esterilla o cojín para sentarse</li>
-                    <li>&#x2713; Comida ligera (fruta, bocadillo)</li>
-                    <li>&#x2713; Paraguas plegable (por si acaso)</li>
-                    <li>&#x2713; Rosario o articulos religiosos</li>
-                    <li>&#x2713; Banderas o pancartas permitidas</li>
-                    <li>&#x2713; Ropa de manga larga para las vigilias</li>
+                    <li>&bull; Esterilla o cojín para sentarse</li>
+                    <li>&bull; Comida ligera (fruta, bocadillo)</li>
+                    <li>&bull; Paraguas plegable (por si acaso)</li>
+                    <li>&bull; Rosario o artículos religiosos</li>
+                    <li>&bull; Banderas o pancartas permitidas</li>
+                    <li>&bull; Ropa de manga larga para las vigilias</li>
                   </ul>
                 </div>
               </div>
@@ -269,15 +269,15 @@ export default function ComoAsistirPage() {
 
             {/* Dónde ver */}
             <div className="rounded-xl bg-papal-navy p-5 text-white">
-              <h3 className="font-heading text-lg font-bold">¿No puedes ir?</h3>
+              <h3 className="font-heading text-lg font-bold">Retransmisión en directo</h3>
               <p className="mt-1 text-sm text-white/70">
-                Toda la visita se podrá seguir en directo por TV y streaming.
+                Toda la visita podrá seguirse en directo por televisión y plataformas digitales.
               </p>
               <Link
                 href="/donde-ver"
                 className="mt-3 inline-block rounded-lg bg-papal-gold px-4 py-2 text-sm font-bold text-papal-navy hover:bg-papal-gold-light"
               >
-                Dónde verlo
+                Dónde seguir la visita
               </Link>
             </div>
           </aside>

@@ -17,7 +17,7 @@ export default function GuiaPage() {
             Guías por tipo de visitante
           </h1>
           <p className="mt-3 text-white/70">
-            Consejos personalizados para que todos disfruten de la visita
+            Recomendaciones personalizadas para cada tipo de visitante
           </p>
         </Container>
       </section>
@@ -30,8 +30,7 @@ export default function GuiaPage() {
               href={`/guia/${profile.slug}`}
               className="group rounded-xl border border-gray-100 p-6 shadow-sm transition-all hover:shadow-md"
             >
-              <p className="text-4xl">{profile.emoji}</p>
-              <h2 className="mt-3 font-heading text-xl font-bold text-papal-navy group-hover:text-papal-gold">
+              <h2 className="font-heading text-xl font-bold text-papal-navy group-hover:text-papal-gold">
                 {profile.title}
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-papal-navy/60">
@@ -46,8 +45,7 @@ export default function GuiaPage() {
 
         {/* Calendario descargable */}
         <div className="mt-10 rounded-xl bg-papal-cream p-6 text-center sm:p-8">
-          <p className="text-3xl">&#x1F4C5;</p>
-          <h2 className="mt-2 font-heading text-2xl font-bold text-papal-navy">
+          <h2 className="font-heading text-2xl font-bold text-papal-navy">
             Añade los eventos a tu calendario
           </h2>
           <p className="mx-auto mt-2 max-w-lg text-sm text-papal-navy/60">
@@ -59,7 +57,7 @@ export default function GuiaPage() {
             download
             className="mt-4 inline-block rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
           >
-            &#x1F4E5; Descargar calendario (.ics)
+            Descargar calendario (.ics)
           </a>
         </div>
       </Container>

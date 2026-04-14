@@ -60,7 +60,7 @@ export default function ProgramaPage() {
             download
             className="mt-4 inline-block rounded-lg border border-white/30 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10"
           >
-            &#x1F4C5; Descargar calendario (.ics)
+            Descargar calendario (.ics)
           </a>
         </Container>
       </section>
@@ -123,7 +123,7 @@ export default function ProgramaPage() {
                           {event.description}
                         </p>
                         <p className="mt-2 text-xs text-papal-navy/40">
-                          &#x1F4CD; {event.location}
+                          Lugar: {event.location}
                         </p>
                         {event.registrationUrl && (
                           <a

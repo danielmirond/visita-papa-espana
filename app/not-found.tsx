@@ -4,7 +4,7 @@ import Container from '@/components/ui/Container'
 export default function NotFound() {
   return (
     <Container className="flex min-h-[60vh] flex-col items-center justify-center text-center">
-      <p className="text-6xl">&#x271D;</p>
+      <p className="text-3xl text-papal-navy/40">&#x271D;</p>
       <h1 className="mt-4 font-heading text-3xl font-bold text-papal-navy">
         Página no encontrada
       </h1>

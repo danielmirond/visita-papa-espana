@@ -13,12 +13,6 @@ const TYPE_LABELS: Record<string, string> = {
   radio: 'Radio',
 }
 
-const TYPE_ICONS: Record<string, string> = {
-  tv: '&#x1F4FA;',
-  streaming: '&#x1F4BB;',
-  radio: '&#x1F4FB;',
-}
-
 export default function DondeVerPage() {
   const grouped = {
     tv: tvChannels.filter((c) => c.type === 'tv'),
@@ -51,7 +45,6 @@ export default function DondeVerPage() {
         {(['tv', 'streaming', 'radio'] as const).map((type) => (
           <section key={type} className="mb-10">
             <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">
-              <span dangerouslySetInnerHTML={{ __html: TYPE_ICONS[type] }} />{' '}
               {TYPE_LABELS[type]}
             </h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

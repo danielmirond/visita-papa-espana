@@ -204,7 +204,7 @@ export default function CityPage({ params }: Props) {
 
             {/* CTA inscripción */}
             <div className="rounded-xl bg-papal-navy p-5 text-white">
-              <h3 className="font-heading text-lg font-bold">¿Quieres asistir?</h3>
+              <h3 className="font-heading text-lg font-bold">Información de asistencia</h3>
               <p className="mt-1 text-sm text-white/70">
                 Los actos públicos requieren inscripción previa gratuita.
               </p>

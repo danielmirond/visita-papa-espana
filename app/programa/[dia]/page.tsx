@@ -94,7 +94,7 @@ export default function DiaPage({ params }: Props) {
                   </h2>
                   <p className="mt-2 text-papal-navy/70">{event.description}</p>
                   <p className="mt-3 text-sm text-papal-navy/50">
-                    &#x1F4CD; {event.location}
+                    Lugar: {event.location}
                   </p>
                   {event.registrationUrl && (
                     <a

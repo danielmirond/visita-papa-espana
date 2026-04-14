@@ -38,8 +38,7 @@ export default function ProfilePage({ params }: Props) {
           <Link href="/guia" className="text-sm text-papal-gold hover:underline">
             &larr; Todas las guías
           </Link>
-          <div className="mt-4 flex items-center gap-4">
-            <span className="text-5xl">{profile.emoji}</span>
+          <div className="mt-4">
             <div>
               <h1 className="font-heading text-3xl font-bold text-white sm:text-4xl">
                 {profile.title}
@@ -80,7 +79,7 @@ export default function ProfilePage({ params }: Props) {
                 <ul className="space-y-1.5">
                   {profile.essentials.map((item, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-green-800">
-                      <span className="mt-0.5">&#x2713;</span>
+                      <span className="mt-0.5">&bull;</span>
                       {item}
                     </li>
                   ))}
@@ -91,13 +90,13 @@ export default function ProfilePage({ params }: Props) {
             {/* Advertencias */}
             <section>
               <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">
-                Ten en cuenta
+                Aspectos importantes
               </h2>
               <div className="rounded-xl bg-amber-50 p-5">
                 <ul className="space-y-1.5">
                   {profile.warnings.map((warning, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-amber-800">
-                      <span className="mt-0.5">&#x26A0;&#xFE0F;</span>
+                      <span className="mt-0.5">&mdash;</span>
                       {warning}
                     </li>
                   ))}
@@ -108,10 +107,10 @@ export default function ProfilePage({ params }: Props) {
             {/* Calendario */}
             <section className="rounded-xl bg-papal-cream p-6 text-center">
               <h3 className="font-heading text-lg font-bold text-papal-navy">
-                &#x1F4C5; Añade los eventos a tu calendario
+                Añadir eventos al calendario
               </h3>
               <p className="mt-1 text-sm text-papal-navy/60">
-                Todos los actos de la visita en un archivo para tu móvil.
+                Todos los actos de la visita en un archivo para su dispositivo.
               </p>
               <a
                 href="/api/calendario"
@@ -163,7 +162,6 @@ export default function ProfilePage({ params }: Props) {
                       href={`/guia/${p.slug}`}
                       className="flex items-center gap-2 rounded-lg p-2 text-sm transition-colors hover:bg-gray-50"
                     >
-                      <span>{p.emoji}</span>
                       <span className="text-papal-navy/80">{p.title}</span>
                     </Link>
                   ))}

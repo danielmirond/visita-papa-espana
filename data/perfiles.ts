@@ -13,7 +13,7 @@ export const profiles: VisitorProfile[] = [
   {
     slug: 'familias',
     title: 'Familias con niños',
-    emoji: '👨‍👩‍👧‍👦',
+    emoji: '',
     description: 'Guía para disfrutar de la visita papal con los más pequeños. Consejos prácticos para que toda la familia viva una experiencia inolvidable.',
     tips: [
       'Elige actos de duración corta o con buen acceso (evita las vigilias nocturnas con niños pequeños)',
@@ -44,7 +44,7 @@ export const profiles: VisitorProfile[] = [
   {
     slug: 'mayores',
     title: 'Personas mayores',
-    emoji: '👴',
+    emoji: '',
     description: 'Consejos para que las personas mayores o con movilidad limitada puedan participar cómodamente en los actos de la visita papal.',
     tips: [
       'Solicita acceso preferente al inscribirte si tienes movilidad reducida',
@@ -75,7 +75,7 @@ export const profiles: VisitorProfile[] = [
   {
     slug: 'internacional',
     title: 'Visitantes internacionales',
-    emoji: '🌍',
+    emoji: '',
     description: 'Todo lo que necesitas saber si vienes del extranjero a vivir la visita del Papa León XIV a España.',
     tips: [
       'Los ciudadanos de la UE solo necesitan DNI o pasaporte. Otros países pueden necesitar visado',
@@ -107,7 +107,7 @@ export const profiles: VisitorProfile[] = [
   {
     slug: 'movilidad-reducida',
     title: 'Personas con movilidad reducida',
-    emoji: '♿',
+    emoji: '',
     description: 'Información sobre accesibilidad y adaptaciones para personas con movilidad reducida durante la visita papal.',
     tips: [
       'Indica tus necesidades de accesibilidad al inscribirte en los actos',
