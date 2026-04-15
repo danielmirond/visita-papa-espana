@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
-import CountdownTimer from '@/components/home/CountdownTimer'
+import dynamic from 'next/dynamic'
 import NewsletterForm from '@/components/shared/NewsletterForm'
-import SocialFeed from '@/components/shared/SocialFeed'
+
+const CountdownTimer = dynamic(() => import('@/components/home/CountdownTimer'), { ssr: false, loading: () => <div className="flex justify-center gap-3 sm:gap-5">{['Días','Horas','Min','Seg'].map(l => <div key={l} className="flex flex-col items-center"><div className="flex h-16 w-16 items-center justify-center rounded-lg bg-white/10 sm:h-20 sm:w-20"><span className="font-heading text-2xl font-bold text-papal-gold sm:text-4xl">--</span></div><span className="mt-1.5 text-xs uppercase tracking-wider text-white/60">{l}</span></div>)}</div> })
+const SocialFeed = dynamic(() => import('@/components/shared/SocialFeed'), { ssr: false, loading: () => <div className="h-[500px] rounded-xl border border-papal-gold/20 bg-papal-cream animate-pulse" /> })
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import JsonLd from '@/components/seo/JsonLd'
 import { siteConfig } from '@/data/siteConfig'
@@ -50,10 +52,10 @@ export default function HomePage() {
       <JsonLd data={eventJsonLd} />
 
       {/* Hero */}
-      <section className="relative overflow-hidden">
+      <section className="relative min-h-[600px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero/papa-leon-xiv.jpg')" }}
+          style={{ backgroundImage: "url('/images/hero/papa-leon-xiv.webp')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-papal-navy/85 via-papal-navy/80 to-papal-navy/95" />
         <div className="absolute inset-0 opacity-10">
@@ -97,7 +99,7 @@ export default function HomePage() {
       </section>
 
       {/* Cifras clave */}
-      <section className="border-b border-papal-gold/10 bg-papal-cream">
+      <section className="border-b border-papal-gold/10 bg-papal-cream min-h-[88px]">
         <Container className="py-8">
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             <div className="text-center">

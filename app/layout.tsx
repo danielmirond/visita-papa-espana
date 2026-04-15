@@ -71,7 +71,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <link rel="preload" href="/images/hero/papa-leon-xiv.jpg" as="image" />
+        <link rel="preload" href="/images/hero/papa-leon-xiv.webp" as="image" type="image/webp" fetchPriority="high" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>

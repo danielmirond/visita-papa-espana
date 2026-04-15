@@ -6,7 +6,7 @@ export const cities: City[] = [
     name: 'Madrid',
     region: 'Comunidad de Madrid',
     description: 'Primera parada de la visita papal (6-8 junio). Madrid acogerá los actos de mayor dimensión institucional y eclesial: el encuentro con los Reyes en Zarzuela, la Misa de Corpus Christi en Cibeles, el histórico discurso ante el Congreso y el Senado, y el encuentro diocesano en el Bernabéu.',
-    heroImage: '/images/cities/madrid.jpg',
+    heroImage: '/images/cities/madrid.webp',
     coordinates: { lat: 40.4168, lng: -3.7038 },
     papalDates: { start: '2026-06-06', end: '2026-06-08' },
     highlights: [
@@ -41,7 +41,7 @@ export const cities: City[] = [
     name: 'Barcelona',
     region: 'Cataluña',
     description: 'Barcelona será la parada cultural y simbólica de la visita (9-10 junio). El acto central será la bendición de la Torre de Jesucristo en la Sagrada Familia, coincidiendo con el centenario de la muerte de Gaudí y su proceso de beatificación. También se visitará el Monasterio de Montserrat.',
-    heroImage: '/images/cities/barcelona.jpg',
+    heroImage: '/images/cities/barcelona.webp',
     coordinates: { lat: 41.3874, lng: 2.1686 },
     papalDates: { start: '2026-06-09', end: '2026-06-10' },
     highlights: [
@@ -72,7 +72,7 @@ export const cities: City[] = [
     name: 'Gran Canaria',
     region: 'Islas Canarias',
     description: 'Primera visita de un Papa a las Islas Canarias. El 11 de junio Gran Canaria será el núcleo social de la visita con un fuerte enfoque en la crisis migratoria. El Papa visitará el muelle de Arguineguín, símbolo de la llegada de migrantes, y celebrará misa en el estadio.',
-    heroImage: '/images/cities/gran-canaria.jpg',
+    heroImage: '/images/cities/gran-canaria.webp',
     coordinates: { lat: 28.1235, lng: -15.4363 },
     papalDates: { start: '2026-06-11', end: '2026-06-11' },
     highlights: [
@@ -102,7 +102,7 @@ export const cities: City[] = [
     name: 'Tenerife',
     region: 'Islas Canarias',
     description: 'Tenerife será la última parada de la visita papal el 12 de junio. El Papa visitará el centro de acogida de migrantes de Las Raíces y celebrará la misa de clausura en el Puerto de Santa Cruz, antes de regresar a Roma.',
-    heroImage: '/images/cities/tenerife.jpg',
+    heroImage: '/images/cities/tenerife.webp',
     coordinates: { lat: 28.4636, lng: -16.2518 },
     papalDates: { start: '2026-06-12', end: '2026-06-12' },
     highlights: [
