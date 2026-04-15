@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import CountdownTimer from '@/components/home/CountdownTimer'
 import NewsletterForm from '@/components/shared/NewsletterForm'
+import SocialFeed from '@/components/shared/SocialFeed'
+import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import JsonLd from '@/components/seo/JsonLd'
 import { siteConfig } from '@/data/siteConfig'
 import { cities } from '@/data/cities'
@@ -169,6 +171,11 @@ export default function HomePage() {
         </Container>
       </section>
 
+      {/* Banner afiliación */}
+      <div className="py-6">
+        <BannerPlaceholder size="728x90" label="Reserva tu hotel para la visita papal" />
+      </div>
+
       {/* Programa resumen */}
       <section className="section-padding bg-gray-50">
         <Container>
@@ -268,6 +275,24 @@ export default function HomePage() {
           <NewsletterForm variant="banner" />
         </Container>
       </section>
+
+      {/* Redes sociales */}
+      <section className="section-padding">
+        <Container>
+          <h2 className="mb-8 text-center font-heading text-3xl font-bold text-papal-navy">
+            Desde el Vaticano
+          </h2>
+          <div className="grid gap-6 lg:grid-cols-2">
+            <SocialFeed platform="twitter" />
+            <SocialFeed platform="instagram" />
+          </div>
+        </Container>
+      </section>
+
+      {/* Banner afiliación */}
+      <div className="py-4">
+        <BannerPlaceholder size="728x90" label="Compara vuelos a Canarias" />
+      </div>
 
       {/* CTA registro */}
       <section className="gradient-navy">

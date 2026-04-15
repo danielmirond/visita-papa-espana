@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
+import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import { siteConfig } from '@/data/siteConfig'
 import { affiliates } from '@/data/affiliates'
 
@@ -266,6 +267,9 @@ export default function ComoAsistirPage() {
                 <p className="mt-2 text-[10px] text-papal-navy/40">Enlace patrocinado</p>
               </div>
             )}
+
+            {/* Banner */}
+            <BannerPlaceholder size="300x250" label="Seguro de viaje" />
 
             {/* Dónde ver */}
             <div className="rounded-xl bg-papal-navy p-5 text-white">

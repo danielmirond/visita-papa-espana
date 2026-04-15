@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation'
 import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
 import NewsletterForm from '@/components/shared/NewsletterForm'
+import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
+import SocialFeed from '@/components/shared/SocialFeed'
 import { cities, getCityBySlug } from '@/data/cities'
 import { getScheduleByCity } from '@/data/schedule'
 import { getAffiliatesByCategory } from '@/data/affiliates'
@@ -216,8 +218,14 @@ export default function CityPage({ params }: Props) {
               </Link>
             </div>
 
+            {/* Banner */}
+            <BannerPlaceholder size="300x250" label="Alojamiento recomendado" />
+
             {/* Newsletter */}
             <NewsletterForm variant="inline" />
+
+            {/* Twitter */}
+            <SocialFeed platform="twitter" />
           </aside>
         </div>
       </Container>

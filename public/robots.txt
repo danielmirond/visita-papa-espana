@@ -2,8 +2,12 @@
 User-agent: *
 Allow: /
 
+# *
+User-agent: *
+Disallow: /api/
+
 # Host
-Host: https://visitapapa.es
+Host: https://www.visita-papa-2026.es
 
 # Sitemaps
-Sitemap: https://visitapapa.es/sitemap.xml
+Sitemap: https://www.visita-papa-2026.es/sitemap.xml

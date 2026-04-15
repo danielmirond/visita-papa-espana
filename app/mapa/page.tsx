@@ -77,17 +77,17 @@ export default function MapaPage() {
           <h2 className="mb-4 text-center font-heading text-2xl font-bold text-papal-navy">
             Mapa interactivo
           </h2>
-          <div className="overflow-hidden rounded-xl border border-gray-200">
+          <div className="overflow-hidden rounded-xl border border-papal-gold/20" style={{ aspectRatio: '16/9' }}>
             <iframe
               src={`https://www.google.com/maps/d/embed?mid=1&z=5&ll=38.5,-3.5&q=${cities.map(c => encodeURIComponent(c.name + ', Spain')).join('|')}`}
               width="100%"
-              height="480"
-              style={{ border: 0 }}
+              height="100%"
+              style={{ border: 0, minHeight: 400 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Mapa del recorrido papal por España"
-              className="w-full"
+              className="h-full w-full"
             />
           </div>
           <p className="mt-2 text-center text-xs text-papal-navy/40">
