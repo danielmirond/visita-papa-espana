@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 }
 
 const CITY_GRADIENTS: Record<string, string> = {
-  madrid: 'from-red-600 to-red-800',
-  barcelona: 'from-blue-600 to-blue-800',
-  'gran-canaria': 'from-yellow-600 to-amber-700',
-  tenerife: 'from-emerald-600 to-emerald-800',
+  madrid: 'from-papal-navy to-papal-navy-light',
+  barcelona: 'from-papal-navy-light to-papal-navy',
+  'gran-canaria': 'from-papal-gold-dark to-papal-navy',
+  tenerife: 'from-papal-navy to-papal-gold-dark',
 }
 
 export default function CiudadesPage() {

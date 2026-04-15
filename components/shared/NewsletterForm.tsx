@@ -27,11 +27,11 @@ export default function NewsletterForm({ variant = 'inline', className = '' }: P
 
   if (status === 'success') {
     return (
-      <div className={`rounded-xl p-6 text-center ${variant === 'banner' ? 'bg-green-50' : ''} ${className}`}>
-        <p className="mt-2 font-heading text-lg font-bold text-green-700">
+      <div className={`rounded-xl p-6 text-center ${variant === 'banner' ? 'bg-papal-cream' : ''} ${className}`}>
+        <p className="mt-2 font-heading text-lg font-bold text-papal-navy">
           Suscripción confirmada
         </p>
-        <p className="mt-1 text-sm text-green-600">
+        <p className="mt-1 text-sm text-papal-navy/70">
           Te avisaremos de todas las novedades de la visita papal.
         </p>
       </div>

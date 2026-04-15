@@ -149,9 +149,9 @@ export default function ComoAsistirPage() {
                 4. Qué llevar
               </h2>
               <div className="grid gap-3 sm:grid-cols-2">
-                <div className="rounded-lg bg-green-50 p-4">
-                  <h3 className="font-bold text-green-800">Imprescindible</h3>
-                  <ul className="mt-2 space-y-1 text-sm text-green-700">
+                <div className="rounded-lg bg-papal-cream p-4">
+                  <h3 className="font-bold text-papal-navy">Imprescindible</h3>
+                  <ul className="mt-2 space-y-1 text-sm text-papal-navy/80">
                     <li>&bull; Acreditación/inscripción impresa o en móvil</li>
                     <li>&bull; DNI o pasaporte</li>
                     <li>&bull; Agua (al menos 1,5 litros)</li>
@@ -160,9 +160,9 @@ export default function ComoAsistirPage() {
                     <li>&bull; Batería externa para el móvil</li>
                   </ul>
                 </div>
-                <div className="rounded-lg bg-amber-50 p-4">
-                  <h3 className="font-bold text-amber-800">Recomendable</h3>
-                  <ul className="mt-2 space-y-1 text-sm text-amber-700">
+                <div className="rounded-lg bg-papal-cream p-4">
+                  <h3 className="font-bold text-papal-gold-dark">Recomendable</h3>
+                  <ul className="mt-2 space-y-1 text-sm text-papal-navy/70">
                     <li>&bull; Esterilla o cojín para sentarse</li>
                     <li>&bull; Comida ligera (fruta, bocadillo)</li>
                     <li>&bull; Paraguas plegable (por si acaso)</li>
@@ -179,19 +179,19 @@ export default function ComoAsistirPage() {
               <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">
                 5. Voluntariado
               </h2>
-              <div className="rounded-xl border border-blue-100 bg-blue-50 p-6">
-                <p className="text-blue-800">
+              <div className="rounded-xl border border-papal-gold/20 bg-papal-cream p-6">
+                <p className="text-papal-navy">
                   La organización necesita <strong>miles de voluntarios</strong> en cada ciudad para tareas de acogida,
                   hospitality, apoyo logístico y atención a los asistentes.
                 </p>
-                <p className="mt-2 text-sm text-blue-700">
+                <p className="mt-2 text-sm text-papal-navy/80">
                   En Madrid se buscan <strong>10.000 voluntarios</strong>. Es una forma única de vivir la visita desde dentro.
                 </p>
                 <a
                   href={siteConfig.officialSite}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-block rounded-lg bg-blue-600 px-4 py-2 text-sm font-bold text-white hover:bg-blue-700"
+                  className="mt-3 inline-block rounded-lg bg-papal-navy px-4 py-2 text-sm font-bold text-white hover:bg-papal-navy-light"
                 >
                   Información sobre voluntariado
                 </a>

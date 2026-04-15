@@ -57,7 +57,7 @@ export default function DondeVerPage() {
                     <h3 className="font-heading text-lg font-bold text-papal-navy">
                       {channel.name}
                     </h3>
-                    <span className="rounded bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">
+                    <span className="rounded bg-papal-gold/20 px-2 py-0.5 text-xs font-medium text-papal-gold-dark">
                       Gratis
                     </span>
                   </div>
@@ -80,7 +80,7 @@ export default function DondeVerPage() {
           </section>
         ))}
 
-        <section className="rounded-xl bg-gray-50 p-6">
+        <section className="rounded-xl bg-papal-cream p-6">
           <h2 className="font-heading text-xl font-bold text-papal-navy">
             Pantallas gigantes
           </h2>

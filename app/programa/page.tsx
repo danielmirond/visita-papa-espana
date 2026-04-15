@@ -23,13 +23,13 @@ const EVENT_TYPE_LABELS: Record<string, string> = {
 }
 
 const EVENT_TYPE_COLORS: Record<string, string> = {
-  misa: 'bg-papal-red text-white',
-  vigilia: 'bg-purple-600 text-white',
-  encuentro: 'bg-blue-600 text-white',
+  misa: 'bg-papal-red/90 text-white',
+  vigilia: 'bg-papal-navy text-white',
+  encuentro: 'bg-papal-navy-light text-white',
   inauguracion: 'bg-papal-gold text-papal-navy',
-  traslado: 'bg-gray-400 text-white',
-  llegada: 'bg-green-600 text-white',
-  despedida: 'bg-gray-600 text-white',
+  traslado: 'bg-papal-navy/40 text-white',
+  llegada: 'bg-papal-gold-dark text-white',
+  despedida: 'bg-papal-navy/60 text-white',
   'acto-publico': 'bg-papal-navy text-white',
 }
 
@@ -106,12 +106,12 @@ export default function ProgramaPage() {
                             {EVENT_TYPE_LABELS[event.eventType]}
                           </span>
                           {event.isPublic && (
-                            <span className="rounded bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">
+                            <span className="rounded bg-papal-gold/20 px-2 py-0.5 text-xs font-medium text-papal-gold-dark">
                               Público
                             </span>
                           )}
                           {!event.isConfirmed && (
-                            <span className="rounded bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700">
+                            <span className="rounded bg-papal-navy/10 px-2 py-0.5 text-xs font-medium text-papal-navy/60">
                               Pendiente confirmar
                             </span>
                           )}

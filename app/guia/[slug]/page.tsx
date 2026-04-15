@@ -75,10 +75,10 @@ export default function ProfilePage({ params }: Props) {
               <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">
                 Qué llevar
               </h2>
-              <div className="rounded-xl bg-green-50 p-5">
+              <div className="rounded-xl bg-papal-cream p-5">
                 <ul className="space-y-1.5">
                   {profile.essentials.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-green-800">
+                    <li key={i} className="flex items-start gap-2 text-sm text-papal-navy">
                       <span className="mt-0.5">&bull;</span>
                       {item}
                     </li>
@@ -92,10 +92,10 @@ export default function ProfilePage({ params }: Props) {
               <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">
                 Aspectos importantes
               </h2>
-              <div className="rounded-xl bg-amber-50 p-5">
+              <div className="rounded-xl bg-papal-cream border border-papal-gold/20 p-5">
                 <ul className="space-y-1.5">
                   {profile.warnings.map((warning, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-amber-800">
+                    <li key={i} className="flex items-start gap-2 text-sm text-papal-navy/80">
                       <span className="mt-0.5">&mdash;</span>
                       {warning}
                     </li>

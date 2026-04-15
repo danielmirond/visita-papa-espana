@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 }
 
 const CITY_COLORS: Record<string, string> = {
-  madrid: 'bg-red-600',
-  barcelona: 'bg-blue-600',
-  'gran-canaria': 'bg-amber-600',
-  tenerife: 'bg-emerald-600',
+  madrid: 'bg-papal-navy',
+  barcelona: 'bg-papal-navy-light',
+  'gran-canaria': 'bg-papal-gold-dark',
+  tenerife: 'bg-papal-gold',
 }
 
 export default function MapaPage() {

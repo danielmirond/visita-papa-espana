@@ -79,12 +79,12 @@ export default function DiaPage({ params }: Props) {
                       {EVENT_TYPE_LABELS[event.eventType]}
                     </span>
                     {event.isPublic && (
-                      <span className="rounded bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">
+                      <span className="rounded bg-papal-gold/20 px-2 py-0.5 text-xs font-medium text-papal-gold-dark">
                         Acto público
                       </span>
                     )}
                     {!event.isConfirmed && (
-                      <span className="rounded bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700">
+                      <span className="rounded bg-papal-navy/10 px-2 py-0.5 text-xs font-medium text-papal-navy/60">
                         Pendiente confirmar
                       </span>
                     )}
