@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import JsonLd from '@/components/seo/JsonLd'
+import GoogleAnalytics from '@/components/seo/GoogleAnalytics'
 import { siteConfig } from '@/data/siteConfig'
 import './globals.css'
 
@@ -38,6 +39,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
+  },
 }
 
 const websiteJsonLd = {
@@ -57,6 +61,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} ${playfair.variable}`}>
       <body>
+        <GoogleAnalytics />
         <JsonLd data={websiteJsonLd} />
         <Header />
         <main className="min-h-screen">{children}</main>
