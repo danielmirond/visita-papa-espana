@@ -5,6 +5,7 @@ import Container from '@/components/ui/Container'
 import { schedule } from '@/data/schedule'
 import { cities } from '@/data/cities'
 import { slugToDate, dateToSlug, formatDateLong } from '@/lib/utils'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 interface Props {
   params: { dia: string }
@@ -23,6 +24,7 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: `${day.label} - ${city?.name}`,
     description: `Programa del ${formatDateLong(day.date)} en ${city?.name}. ${day.events.length} actos programados para la visita del Papa León XIV.`,
+    alternates: getAlternates(`/programa/${params.dia}`, 'es'),
   }
 }
 

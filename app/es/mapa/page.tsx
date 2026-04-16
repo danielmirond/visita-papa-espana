@@ -3,10 +3,12 @@ import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import { cities } from '@/data/cities'
 import { formatDateShort } from '@/lib/utils'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
   title: 'Mapa del recorrido papal',
   description: 'Mapa con el recorrido del Papa León XIV por España: Madrid, Barcelona, Gran Canaria y Tenerife del 6 al 12 de junio de 2026.',
+  alternates: getAlternates('/mapa', 'es'),
 }
 
 const CITY_COLORS: Record<string, string> = {

@@ -1,7 +1,13 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import dynamic from 'next/dynamic'
 import NewsletterForm from '@/components/shared/NewsletterForm'
+import { getAlternates } from '@/lib/i18n-metadata'
+
+export const metadata: Metadata = {
+  alternates: getAlternates('', 'es'),
+}
 
 const CountdownTimer = dynamic(() => import('@/components/home/CountdownTimer'), { ssr: false, loading: () => <div className="flex justify-center gap-3 sm:gap-5">{['Días','Horas','Min','Seg'].map(l => <div key={l} className="flex flex-col items-center"><div className="flex h-16 w-16 items-center justify-center rounded-lg bg-white/10 sm:h-20 sm:w-20"><span className="font-heading text-2xl font-bold text-papal-gold sm:text-4xl">--</span></div><span className="mt-1.5 text-xs uppercase tracking-wider text-white/60">{l}</span></div>)}</div> })
 const SocialFeed = dynamic(() => import('@/components/shared/SocialFeed'), { ssr: false, loading: () => <div className="h-[500px] rounded-xl border border-papal-gold/20 bg-papal-cream animate-pulse" /> })

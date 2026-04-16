@@ -3,10 +3,12 @@ import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
 import { faq, FAQ_CATEGORIES } from '@/data/faq'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
   title: 'Preguntas frecuentes',
   description: 'Resolvemos todas tus dudas sobre la visita del Papa León XIV a España: inscripción, transporte, alojamiento, qué llevar y cómo asistir a los actos.',
+  alternates: getAlternates('/faq', 'es'),
 }
 
 export default function FaqPage() {

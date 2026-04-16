@@ -4,10 +4,12 @@ import Container from '@/components/ui/Container'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import { siteConfig } from '@/data/siteConfig'
 import { affiliates } from '@/data/affiliates'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
   title: 'Cómo asistir a la visita del Papa',
   description: 'Guía práctica para asistir a la visita del Papa León XIV a España: inscripción, transporte, alojamiento, qué llevar y recomendaciones para los actos.',
+  alternates: getAlternates('/como-asistir', 'es'),
 }
 
 export default function ComoAsistirPage() {

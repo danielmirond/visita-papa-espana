@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
 import Container from '@/components/ui/Container'
 import { tvChannels } from '@/data/tvChannels'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
   title: 'Dónde ver la visita del Papa',
   description: 'Todos los canales de TV, plataformas de streaming y emisoras de radio que retransmitirán la visita del Papa León XIV a España en junio de 2026.',
+  alternates: getAlternates('/donde-ver', 'es'),
 }
 
 const TYPE_LABELS: Record<string, string> = {

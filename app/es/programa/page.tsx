@@ -5,10 +5,12 @@ import JsonLd from '@/components/seo/JsonLd'
 import { schedule } from '@/data/schedule'
 import { cities } from '@/data/cities'
 import { dateToSlug } from '@/lib/utils'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
   title: 'Programa completo',
   description: 'Agenda día a día de la visita del Papa León XIV a España. Todos los actos, misas, encuentros y eventos del 6 al 12 de junio de 2026 en Madrid, Barcelona, Gran Canaria y Tenerife.',
+  alternates: getAlternates('/programa', 'es'),
 }
 
 const EVENT_TYPE_LABELS: Record<string, string> = {

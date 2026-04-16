@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
   title: 'Política de privacidad',
   description: 'Política de privacidad y tratamiento de datos personales en visita-papa-2026.es conforme al RGPD.',
+  alternates: getAlternates('/privacidad', 'es'),
 }
 
 export default function PrivacidadPage() {

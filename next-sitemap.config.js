@@ -1,18 +1,19 @@
 /** @type {import('next-sitemap').IConfig} */
+const SITE_URL = process.env.SITE_URL || 'https://www.visita-papa-2026.es'
+
+const LOCALES = ['es', 'en', 'it', 'fr', 'de', 'pt']
+
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://www.visita-papa-2026.es',
+  siteUrl: SITE_URL,
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,
-  alternateRefs: [
-    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es'), hreflang: 'es' },
-    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es') + '/en', hreflang: 'en' },
-    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es') + '/it', hreflang: 'it' },
-    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es') + '/fr', hreflang: 'fr' },
-    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es') + '/de', hreflang: 'de' },
-    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es') + '/pt', hreflang: 'pt' },
-    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es'), hreflang: 'x-default' },
-  ],
+  // Excluir la raíz porque es un redirect
+  exclude: ['/', '/api/*'],
+  alternateRefs: LOCALES.map((locale) => ({
+    href: `${SITE_URL}/${locale}`,
+    hreflang: locale,
+  })).concat([{ href: `${SITE_URL}/es`, hreflang: 'x-default' }]),
   robotsTxtOptions: {
     policies: [
       { userAgent: '*', allow: '/' },
@@ -21,31 +22,51 @@ module.exports = {
     additionalSitemaps: [],
   },
   transform: async (config, path) => {
-    // Prioridades personalizadas por ruta
-    const priorities = {
-      '/': 1.0,
-      '/programa': 0.9,
-      '/ciudades': 0.9,
-      '/como-asistir': 0.9,
-      '/faq': 0.8,
-      '/donde-ver': 0.8,
-      '/guia': 0.8,
-      '/mapa': 0.7,
-      '/noticias': 0.7,
+    // Prioridades por tipo de página
+    let priority = 0.6
+    let changefreq = 'weekly'
+
+    // Homes de cada idioma: prioridad máxima
+    if (LOCALES.some((l) => path === `/${l}`)) {
+      priority = 1.0
+      changefreq = 'daily'
     }
 
-    const changefreqs = {
-      '/': 'daily',
-      '/programa': 'daily',
-      '/noticias': 'daily',
-      '/faq': 'weekly',
+    // Páginas principales en /es/
+    if (
+      ['/es/programa', '/es/ciudades', '/es/como-asistir', '/es/como-llegar'].includes(path)
+    ) {
+      priority = 0.9
+      changefreq = 'daily'
     }
+
+    // Páginas de contenido secundarias
+    if (['/es/faq', '/es/donde-ver', '/es/guia', '/es/mapa', '/es/noticias'].includes(path)) {
+      priority = 0.8
+    }
+
+    // Legales menos prioritarias
+    if (['/es/aviso-legal', '/es/privacidad', '/es/politica-cookies'].includes(path)) {
+      priority = 0.3
+    }
+
+    // Generar alternates solo para páginas /es/* que tendrán traducción futura
+    const alternateRefs = path.startsWith('/es')
+      ? LOCALES.map((locale) => ({
+          href: `${SITE_URL}${path.replace('/es', `/${locale}`)}`,
+          hreflang: locale,
+        })).concat([{ href: `${SITE_URL}${path}`, hreflang: 'x-default' }])
+      : LOCALES.map((locale) => ({
+          href: `${SITE_URL}/${locale}`,
+          hreflang: locale,
+        })).concat([{ href: `${SITE_URL}/es`, hreflang: 'x-default' }])
 
     return {
       loc: path,
-      changefreq: changefreqs[path] || config.changefreq,
-      priority: priorities[path] || config.priority,
+      changefreq,
+      priority,
       lastmod: new Date().toISOString(),
+      alternateRefs,
     }
   },
 }

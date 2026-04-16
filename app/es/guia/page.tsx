@@ -2,10 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import { profiles } from '@/data/perfiles'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
   title: 'Guías por tipo de visitante',
   description: 'Guías personalizadas para la visita del Papa León XIV: familias con niños, personas mayores, visitantes internacionales y personas con movilidad reducida.',
+  alternates: getAlternates('/guia', 'es'),
 }
 
 export default function GuiaPage() {

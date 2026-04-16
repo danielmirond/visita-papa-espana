@@ -3,10 +3,12 @@ import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import { news } from '@/data/news'
 import { cities } from '@/data/cities'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
   title: 'Noticias sobre la visita',
   description: 'Últimas noticias y actualizaciones sobre la visita del Papa León XIV a España en junio de 2026.',
+  alternates: getAlternates('/noticias', 'es'),
 }
 
 export default function NoticiasPage() {

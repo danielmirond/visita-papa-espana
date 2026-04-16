@@ -54,9 +54,9 @@ export const metadata: Metadata = {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
   },
   alternates: {
-    canonical: siteConfig.url,
+    canonical: `${siteConfig.url}/es`,
     languages: {
-      'es-ES': siteConfig.url,
+      'es-ES': `${siteConfig.url}/es`,
       'en-GB': `${siteConfig.url}/en`,
       'it-IT': `${siteConfig.url}/it`,
       'fr-FR': `${siteConfig.url}/fr`,

@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
   title: 'Política de cookies',
   description: 'Información sobre el uso de cookies en visita-papa-2026.es conforme al Reglamento General de Protección de Datos (RGPD).',
+  alternates: getAlternates('/politica-cookies', 'es'),
 }
 
 export default function PoliticaCookiesPage() {

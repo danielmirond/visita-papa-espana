@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import Container from '@/components/ui/Container'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
   title: 'Aviso legal y política de afiliación',
   description: 'Aviso legal, política de privacidad y transparencia sobre enlaces de afiliación en visitapapa2026.es.',
+  alternates: getAlternates('/aviso-legal', 'es'),
 }
 
 export default function AvisoLegalPage() {

@@ -12,6 +12,7 @@ import { cities, getCityBySlug } from '@/data/cities'
 import { getScheduleByCity } from '@/data/schedule'
 import { getAffiliatesByCategory } from '@/data/affiliates'
 import { formatDateLong, dateToSlug } from '@/lib/utils'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 interface Props {
   params: { slug: string }
@@ -27,6 +28,7 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: `${city.name} - Visita papal`,
     description: `Guía completa de la visita del Papa León XIV a ${city.name}. Programa, transporte, alojamiento y consejos prácticos.`,
+    alternates: getAlternates(`/ciudades/${params.slug}`, 'es'),
   }
 }
 

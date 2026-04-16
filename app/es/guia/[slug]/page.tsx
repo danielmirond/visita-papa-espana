@@ -5,6 +5,7 @@ import Container from '@/components/ui/Container'
 import NewsletterForm from '@/components/shared/NewsletterForm'
 import { profiles, getProfileBySlug } from '@/data/perfiles'
 import { getAffiliateById } from '@/data/affiliates'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 interface Props {
   params: { slug: string }
@@ -20,6 +21,7 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: `Guía para ${profile.title.toLowerCase()}`,
     description: `Consejos y recomendaciones para ${profile.title.toLowerCase()} durante la visita del Papa León XIV a España. Qué llevar, qué tener en cuenta y cómo prepararse.`,
+    alternates: getAlternates(`/guia/${params.slug}`, 'es'),
   }
 }
 

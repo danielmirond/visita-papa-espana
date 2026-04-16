@@ -4,10 +4,12 @@ import Container from '@/components/ui/Container'
 import { cities } from '@/data/cities'
 import { schedule } from '@/data/schedule'
 import { formatDateShort } from '@/lib/utils'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
   title: 'Ciudades de la visita',
   description: 'Madrid, Barcelona, Gran Canaria y Tenerife: las cuatro ciudades que visitará el Papa León XIV en junio de 2026. Información práctica, transporte y alojamiento.',
+  alternates: getAlternates('/ciudades', 'es'),
 }
 
 const CITY_GRADIENTS: Record<string, string> = {

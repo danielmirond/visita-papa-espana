@@ -5,6 +5,7 @@ import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
 import { news, getNewsBySlug } from '@/data/news'
 import { cities } from '@/data/cities'
+import { getAlternates } from '@/lib/i18n-metadata'
 
 interface Props {
   params: { slug: string }
@@ -20,6 +21,7 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: article.title,
     description: article.excerpt,
+    alternates: getAlternates(`/noticias/${params.slug}`, 'es'),
   }
 }
 
