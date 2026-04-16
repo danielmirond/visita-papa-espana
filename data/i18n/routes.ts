@@ -44,6 +44,10 @@ export const ROUTE_TRANSLATIONS = {
     es: 'faq', en: 'faq', it: 'faq', fr: 'faq',
     de: 'faq', pt: 'faq', ca: 'faq', gl: 'faq', eu: 'faq',
   },
+  tienda: {
+    es: 'tienda', en: 'shop', it: 'negozio', fr: 'boutique',
+    de: 'shop', pt: 'loja', ca: 'botiga', gl: 'tenda', eu: 'denda',
+  },
   'que-llevar': {
     es: 'que-llevar', en: 'what-to-bring', it: 'cosa-portare', fr: 'que-emporter',
     de: 'was-mitnehmen', pt: 'o-que-levar', ca: 'que-portar', gl: 'que-levar', eu: 'zer-eraman',

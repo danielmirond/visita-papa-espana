@@ -3,23 +3,12 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Container from '@/components/ui/Container'
-import { siteConfig } from '@/data/siteConfig'
+import { siteConfig, featureFlags } from '@/data/siteConfig'
 import { LOCALES, DEFAULT_LOCALE, type Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 import { getDictionary } from '@/data/i18n/dictionaries'
+import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { openCookieBanner } from '@/components/shared/CookieBanner'
-
-const NAV: { path: string; key: keyof ReturnType<typeof getDictionary>['nav'] }[] = [
-  { path: '/', key: 'home' },
-  { path: '/programa', key: 'programa' },
-  { path: '/ciudades', key: 'ciudades' },
-  { path: '/como-asistir', key: 'comoAsistir' },
-  { path: '/donde-ver', key: 'dondeVer' },
-  { path: '/mapa', key: 'mapa' },
-  { path: '/noticias', key: 'noticias' },
-  { path: '/guia', key: 'guias' },
-  { path: '/faq', key: 'faq' },
-]
 
 export default function Footer() {
   const pathname = usePathname()
@@ -27,7 +16,23 @@ export default function Footer() {
     (LOCALES.find((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`)) as Locale) ||
     DEFAULT_LOCALE
   const dict = getDictionary(currentLocale)
+  const pagesDict = getPagesDict(currentLocale)
   const prefixHref = (p: string) => localizePath(p, currentLocale)
+
+  const navItems: { path: string; label: string }[] = [
+    { path: '/', label: dict.nav.home },
+    { path: '/programa', label: dict.nav.programa },
+    { path: '/ciudades', label: dict.nav.ciudades },
+    { path: '/como-asistir', label: dict.nav.comoAsistir },
+    { path: '/donde-ver', label: dict.nav.dondeVer },
+    { path: '/mapa', label: dict.nav.mapa },
+    { path: '/noticias', label: dict.nav.noticias },
+    { path: '/guia', label: dict.nav.guias },
+    { path: '/faq', label: dict.nav.faq },
+    ...(featureFlags.shopEnabled
+      ? [{ path: '/tienda', label: pagesDict.shop.title }]
+      : []),
+  ]
 
   // Nuevas páginas temáticas: biografía del Papa, kit, himno, oración, voluntariado
   const extraItems: { path: string; labelByLocale: Partial<Record<Locale, string>> }[] = [
@@ -84,13 +89,13 @@ export default function Footer() {
               Secciones
             </h3>
             <ul className="space-y-2">
-              {NAV.map((item) => (
+              {navItems.map((item) => (
                 <li key={item.path}>
                   <Link
                     href={prefixHref(item.path)}
                     className="text-sm text-white/60 transition-colors hover:text-papal-gold"
                   >
-                    {dict.nav[item.key]}
+                    {item.label}
                   </Link>
                 </li>
               ))}

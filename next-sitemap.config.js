@@ -19,6 +19,7 @@ const ROUTE_TRANSLATIONS = {
   noticias: { es: 'noticias', en: 'news', it: 'notizie', fr: 'actualites', de: 'nachrichten', pt: 'noticias', ca: 'noticies', gl: 'novas', eu: 'albisteak' },
   guia: { es: 'guia', en: 'guides', it: 'guide', fr: 'guides', de: 'ratgeber', pt: 'guias', ca: 'guies', gl: 'guias', eu: 'gidak' },
   faq: { es: 'faq', en: 'faq', it: 'faq', fr: 'faq', de: 'faq', pt: 'faq', ca: 'faq', gl: 'faq', eu: 'faq' },
+  tienda: { es: 'tienda', en: 'shop', it: 'negozio', fr: 'boutique', de: 'shop', pt: 'loja', ca: 'botiga', gl: 'tenda', eu: 'denda' },
   'aviso-legal': { es: 'aviso-legal', en: 'legal-notice', it: 'note-legali', fr: 'mentions-legales', de: 'impressum', pt: 'aviso-legal', ca: 'avis-legal', gl: 'aviso-legal', eu: 'lege-oharra' },
   privacidad: { es: 'privacidad', en: 'privacy', it: 'privacy', fr: 'confidentialite', de: 'datenschutz', pt: 'privacidade', ca: 'privacitat', gl: 'privacidade', eu: 'pribatutasuna' },
   'politica-cookies': { es: 'politica-cookies', en: 'cookies-policy', it: 'politica-cookie', fr: 'politique-cookies', de: 'cookie-richtlinie', pt: 'politica-cookies', ca: 'politica-galetes', gl: 'politica-cookies', eu: 'cookie-politika' },
