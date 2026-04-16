@@ -53,6 +53,18 @@ export const metadata: Metadata = {
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
   },
+  alternates: {
+    canonical: siteConfig.url,
+    languages: {
+      'es-ES': siteConfig.url,
+      'en-GB': `${siteConfig.url}/en`,
+      'it-IT': `${siteConfig.url}/it`,
+      'fr-FR': `${siteConfig.url}/fr`,
+      'de-DE': `${siteConfig.url}/de`,
+      'pt-PT': `${siteConfig.url}/pt`,
+      'x-default': siteConfig.url,
+    },
+  },
 }
 
 const websiteJsonLd = {

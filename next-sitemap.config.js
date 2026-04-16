@@ -4,6 +4,15 @@ module.exports = {
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,
+  alternateRefs: [
+    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es'), hreflang: 'es' },
+    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es') + '/en', hreflang: 'en' },
+    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es') + '/it', hreflang: 'it' },
+    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es') + '/fr', hreflang: 'fr' },
+    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es') + '/de', hreflang: 'de' },
+    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es') + '/pt', hreflang: 'pt' },
+    { href: (process.env.SITE_URL || 'https://www.visita-papa-2026.es'), hreflang: 'x-default' },
+  ],
   robotsTxtOptions: {
     policies: [
       { userAgent: '*', allow: '/' },

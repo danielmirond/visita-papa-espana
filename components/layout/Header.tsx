@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { NAV_LINKS } from '@/data/siteConfig'
 import Container from '@/components/ui/Container'
+import LanguageSwitcher from '@/components/layout/LanguageSwitcher'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,12 +36,17 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <div className="ml-2 border-l border-papal-gold/20 pl-2">
+              <LanguageSwitcher />
+            </div>
           </nav>
 
-          {/* Mobile hamburger */}
+          {/* Mobile: language + hamburger */}
+          <div className="flex items-center gap-1 md:hidden">
+            <LanguageSwitcher />
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex h-10 w-10 items-center justify-center rounded-md md:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-md"
             aria-label="Menu"
           >
             <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,6 +57,7 @@ export default function Header() {
               )}
             </svg>
           </button>
+          </div>
         </div>
 
         {/* Mobile menu */}
