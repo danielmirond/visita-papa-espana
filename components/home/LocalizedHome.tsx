@@ -4,6 +4,7 @@ import NewsletterForm from '@/components/shared/NewsletterForm'
 import JsonLd from '@/components/seo/JsonLd'
 import { getDictionary } from '@/data/i18n/dictionaries'
 import { type Locale } from '@/data/i18n/types'
+import { localizePath } from '@/data/i18n/routes'
 import { siteConfig } from '@/data/siteConfig'
 import { cities } from '@/data/cities'
 import { schedule } from '@/data/schedule'
@@ -64,13 +65,13 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
 
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             <Link
-              href={locale === 'es' ? '/es/programa' : `/${locale}`}
+              href={localizePath('/programa', locale)}
               className="rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
             >
               {dict.home.seeProgram}
             </Link>
             <Link
-              href={locale === 'es' ? '/es/como-asistir' : `/${locale}`}
+              href={localizePath('/como-asistir', locale)}
               className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
             >
               {dict.home.howToAttend}

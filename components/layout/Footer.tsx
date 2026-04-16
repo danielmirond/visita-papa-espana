@@ -3,18 +3,30 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Container from '@/components/ui/Container'
-import { NAV_LINKS, siteConfig } from '@/data/siteConfig'
+import { siteConfig } from '@/data/siteConfig'
 import { LOCALES, DEFAULT_LOCALE, type Locale } from '@/data/i18n/types'
+import { localizePath } from '@/data/i18n/routes'
+import { getDictionary } from '@/data/i18n/dictionaries'
+
+const NAV: { path: string; key: keyof ReturnType<typeof getDictionary>['nav'] }[] = [
+  { path: '/', key: 'home' },
+  { path: '/programa', key: 'programa' },
+  { path: '/ciudades', key: 'ciudades' },
+  { path: '/como-asistir', key: 'comoAsistir' },
+  { path: '/donde-ver', key: 'dondeVer' },
+  { path: '/mapa', key: 'mapa' },
+  { path: '/noticias', key: 'noticias' },
+  { path: '/guia', key: 'guias' },
+  { path: '/faq', key: 'faq' },
+]
 
 export default function Footer() {
   const pathname = usePathname()
   const currentLocale: Locale =
     (LOCALES.find((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`)) as Locale) ||
     DEFAULT_LOCALE
-  const prefixHref = (href: string): string => {
-    if (href === '/') return `/${currentLocale}`
-    return `/${currentLocale}${href}`
-  }
+  const dict = getDictionary(currentLocale)
+  const prefixHref = (p: string) => localizePath(p, currentLocale)
 
   return (
     <footer className="gradient-navy mt-16 text-white/80">
@@ -43,13 +55,13 @@ export default function Footer() {
               Secciones
             </h3>
             <ul className="space-y-2">
-              {NAV_LINKS.map((link) => (
-                <li key={link.href}>
+              {NAV.map((item) => (
+                <li key={item.path}>
                   <Link
-                    href={prefixHref(link.href)}
+                    href={prefixHref(item.path)}
                     className="text-sm text-white/60 transition-colors hover:text-papal-gold"
                   >
-                    {link.label}
+                    {dict.nav[item.key]}
                   </Link>
                 </li>
               ))}

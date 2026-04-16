@@ -4,6 +4,7 @@ import { getCitiesByLocale } from '@/data/i18n/content/cities'
 import { getScheduleByLocale } from '@/data/i18n/content/schedule'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { type Locale } from '@/data/i18n/types'
+import { localizePath } from '@/data/i18n/routes'
 import { formatDateShort } from '@/lib/utils'
 
 const CITY_GRADIENTS: Record<string, string> = {
@@ -17,7 +18,6 @@ export default function CiudadesPageContent({ locale }: { locale: Locale }) {
   const t = getPagesDict(locale)
   const cities = getCitiesByLocale(locale)
   const schedule = getScheduleByLocale(locale)
-  const prefix = locale === 'es' ? '/es' : `/${locale}`
 
   return (
     <>
@@ -39,7 +39,7 @@ export default function CiudadesPageContent({ locale }: { locale: Locale }) {
             return (
               <Link
                 key={city.slug}
-                href={`${prefix}/ciudades/${city.slug}`}
+                href={localizePath(`/ciudades/${city.slug}`, locale)}
                 className="group block overflow-hidden rounded-xl border border-gray-100 shadow-sm transition-all hover:shadow-lg"
               >
                 <div

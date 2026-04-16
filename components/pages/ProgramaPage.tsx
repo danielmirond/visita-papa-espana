@@ -25,7 +25,6 @@ export default function ProgramaPageContent({ locale }: { locale: Locale }) {
   const t = getPagesDict(locale)
   const schedule = getScheduleByLocale(locale)
   const cities = getCitiesByLocale(locale)
-  const prefix = locale === 'es' ? '/es' : `/${locale}`
 
   return (
     <>

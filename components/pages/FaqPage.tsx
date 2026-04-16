@@ -5,12 +5,12 @@ import { getFaqByLocale, getFaqCategoriesByLocale } from '@/data/i18n/content/fa
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { siteConfig } from '@/data/siteConfig'
 import { type Locale } from '@/data/i18n/types'
+import { localizePath } from '@/data/i18n/routes'
 
 export default function FaqPageContent({ locale }: { locale: Locale }) {
   const t = getPagesDict(locale)
   const faq = getFaqByLocale(locale)
   const categories = Object.entries(getFaqCategoriesByLocale(locale)) as [string, string][]
-  const prefix = locale === 'es' ? '/es' : `/${locale}`
 
   const faqJsonLd = {
     '@context': 'https://schema.org',
@@ -91,7 +91,7 @@ export default function FaqPageContent({ locale }: { locale: Locale }) {
                 {t.faq.officialSite}
               </a>
               <Link
-                href={`${prefix}/como-asistir`}
+                href={localizePath('/como-asistir', locale)}
                 className="rounded-lg border border-papal-navy/20 px-4 py-2 text-sm font-bold text-papal-navy hover:bg-white"
               >
                 {t.faq.practicalGuide}

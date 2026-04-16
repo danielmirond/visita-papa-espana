@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { LOCALES, LOCALE_LABELS, LOCALE_FLAGS, DEFAULT_LOCALE, type Locale } from '@/data/i18n/types'
+import { translateCurrentPath } from '@/data/i18n/routes'
 
 export default function LanguageSwitcher() {
   const [open, setOpen] = useState(false)
@@ -24,22 +25,9 @@ export default function LanguageSwitcher() {
     return () => document.removeEventListener('mousedown', handler)
   }, [])
 
-  // Generar URL para cada idioma preservando la ruta
+  // Generar URL traducida para cada idioma preservando la ruta canónica
   const getUrlForLocale = (locale: Locale): string => {
-    if (locale === DEFAULT_LOCALE) {
-      // Español: sin prefijo. Quitar el actual.
-      const currentPath = LOCALES.reduce(
-        (p, l) => (p === `/${l}` ? '/' : p.startsWith(`/${l}/`) ? p.slice(l.length + 1) : p),
-        pathname
-      )
-      return currentPath || '/'
-    }
-    // Otros idiomas: añadir prefijo
-    const basePath = LOCALES.reduce(
-      (p, l) => (p === `/${l}` ? '/' : p.startsWith(`/${l}/`) ? p.slice(l.length + 1) : p),
-      pathname
-    )
-    return `/${locale}${basePath === '/' ? '' : basePath}`
+    return translateCurrentPath(pathname, locale)
   }
 
   return (
