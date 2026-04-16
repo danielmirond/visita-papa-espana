@@ -2,6 +2,47 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'asi-suena-el-himno-oficial-del-viaje-del-papa-a-espana',
+    title: 'Así suena el himno oficial del viaje del Papa a España',
+    excerpt: 'La producción, impulsada por VIVAFE, se grabó en la catedral de la Almudena y, de forma simultanea, en las seos de Barcelona, Gran Canaria y Tenerife La entrada Así suena el himno oficial del viaje del Papa a España se p…',
+    content: 'La producción, impulsada por VIVAFE, se grabó en la catedral de la Almudena y, de forma simultanea, en las seos de Barcelona, Gran Canaria y Tenerife La entrada Así suena el himno oficial del viaje del Papa a España se publicó primero en Alfa y Omega.',
+    date: '2026-04-16',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/asi-suena-el-himno-oficial-del-viaje-del-papa-a-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'en-la-plaza-de-lima-la-iglesia-de-madrid-acogera-a-los-jovenes-esten-en-el-momen',
+    title: 'En la plaza de Lima, la Iglesia de Madrid acogerá a los jóvenes «estén en el momento que estén»',
+    excerpt: 'Alberto Fernández, miembro del equipo organizador de la vigilia del 6 de junio, anima a invitar a quienes «no estén tan cerca de la Iglesia» o «no tengan pensado venir». También «queremos pedir al Papa que nos oriente so…',
+    content: 'Alberto Fernández, miembro del equipo organizador de la vigilia del 6 de junio, anima a invitar a quienes «no estén tan cerca de la Iglesia» o «no tengan pensado venir». También «queremos pedir al Papa que nos oriente sobre las dificultades que tienen los jóvenes» La entrada En la plaza de Lima, la Iglesia de Madrid acogerá a los jóvenes «estén en el momento que estén» se publicó primero en Alfa y Omega.',
+    date: '2026-04-16',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/en-la-plaza-de-lima-la-iglesia-de-madrid-acogera-a-los-jovenes-esten-en-el-momento-que-esten/',
+    relatedCities: ['madrid'],
+  },
+  {
+    slug: 'el-trozo-de-cayuco-que-fernandez-le-entrego-al-papa-y-que-conecta-los-viajes-de-',
+    title: 'El trozo de cayuco que Fernández le entregó al Papa y que conecta los viajes de León XIV a África y España',
+    excerpt: 'La pieza salió del Puerto de la Restinga, fue bendecida por el obispo de Tenerife, y llevada hasta Roma por dos periodistas de COPE. En la diócesis insular el Pontífice se encontrará con los migrantes y también celebrará…',
+    content: 'La pieza salió del Puerto de la Restinga, fue bendecida por el obispo de Tenerife, y llevada hasta Roma por dos periodistas de COPE. En la diócesis insular el Pontífice se encontrará con los migrantes y también celebrará una Misa en la «explanada portuaria de Los Llanos» La entrada El trozo de cayuco que Fernández le entregó al Papa y que conecta los viajes de León XIV a África y España se publicó primero en Alfa y Omega.',
+    date: '2026-04-16',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/el-trozo-de-cayuco-que-fernandez-le-entrego-al-papa-y-que-conecta-los-viajes-de-leon-xiv-a-africa-y-espana/',
+    relatedCities: ['tenerife'],
+  },
+  {
+    slug: 'transparencia-y-claridad-los-pilares-de-la-organizacion-y-la-gestion-economica-d',
+    title: 'Transparencia y claridad: los pilares de la organización y la gestión económica del Viaje del Papa a España',
+    excerpt: 'A pocas semanas de que el Papa León XIV aterrice en nuestro país, la Organización del Viaje Apostólico de Su Santidad, ha aprobado definitivamente los criterios de organización y gestión económica del viaje que, así como…',
+    content: 'A pocas semanas de que el Papa León XIV aterrice en nuestro país, la Organización del Viaje Apostólico de Su Santidad, ha aprobado definitivamente los criterios de organización y gestión económica del viaje que, así como el logo y el lema oficiales y los sistemas de inscripción y preinscripción de asistentes.',
+    date: '2026-04-07',
+    source: 'Conferencia Episcopal Española',
+    sourceUrl: 'https://www.conferenciaepiscopal.es/transparencia-claridad-pilares-organizacion-gestion-economica-viaje-papa-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'vigilia-plaza-lima-misa-cibeles-confirmadas',
     title: 'Confirmados horarios y lugares: Vigilia en Plaza de Lima y Misa de Corpus en Cibeles',
     excerpt: 'La organización confirma que el sábado 6 de junio a las 20:00 se celebrará una gran vigilia juvenil en la Plaza de Lima y el domingo 7 a las 9:30 Misa de Corpus Christi en Plaza de Cibeles.',

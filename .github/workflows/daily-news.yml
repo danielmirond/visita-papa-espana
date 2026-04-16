@@ -1,0 +1,51 @@
+name: Noticias diarias
+
+on:
+  schedule:
+    # Todos los días a las 07:00 UTC (09:00 Madrid en verano, 08:00 en invierno)
+    - cron: '0 7 * * *'
+  workflow_dispatch: # Permite disparo manual desde la pestaña Actions
+
+# Permisos: el bot necesita poder escribir en el repo
+permissions:
+  contents: write
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch noticias del RSS
+        run: node scripts/fetch-news.mjs
+
+      - name: Comprobar cambios
+        id: changes
+        run: |
+          if git diff --quiet data/news.ts; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No hay noticias nuevas hoy."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Se añadieron noticias nuevas:"
+            git diff --stat data/news.ts
+          fi
+
+      - name: Commit y push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "papa-news-bot"
+          git config user.email "bot@visita-papa-2026.es"
+          git add data/news.ts
+          COUNT=$(git diff --cached data/news.ts | grep -c "^+    slug:")
+          git commit -m "feat(news): $COUNT noticia(s) nueva(s) desde RSS
+
+          Importadas automáticamente por scripts/fetch-news.mjs
+          Fuentes: Alfa y Omega, Conferencia Episcopal Española, Vatican News"
+          git push
