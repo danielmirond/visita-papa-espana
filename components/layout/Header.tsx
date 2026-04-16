@@ -2,18 +2,30 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { NAV_LINKS } from '@/data/siteConfig'
 import Container from '@/components/ui/Container'
 import LanguageSwitcher from '@/components/layout/LanguageSwitcher'
+import { LOCALES, DEFAULT_LOCALE, type Locale } from '@/data/i18n/types'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
+
+  const currentLocale: Locale =
+    (LOCALES.find((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`)) as Locale) ||
+    DEFAULT_LOCALE
+
+  const prefixHref = (href: string): string => {
+    if (href === '/') return `/${currentLocale}`
+    return `/${currentLocale}${href}`
+  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-papal-gold/20 bg-white/95 backdrop-blur-sm">
       <Container>
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href={prefixHref('/')} className="flex items-center gap-2">
             <span className="text-2xl">&#x271D;</span>
             <div>
               <span className="font-heading text-lg font-bold text-papal-navy">
@@ -30,7 +42,7 @@ export default function Header() {
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
-                href={link.href}
+                href={prefixHref(link.href)}
                 className="rounded-md px-3 py-2 text-sm font-medium text-papal-navy/80 transition-colors hover:bg-papal-cream hover:text-papal-navy"
               >
                 {link.label}
@@ -66,7 +78,7 @@ export default function Header() {
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
-                href={link.href}
+                href={prefixHref(link.href)}
                 onClick={() => setIsOpen(false)}
                 className="block rounded-md px-3 py-2 text-sm font-medium text-papal-navy/80 transition-colors hover:bg-papal-cream"
               >

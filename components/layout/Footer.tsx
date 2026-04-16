@@ -1,8 +1,21 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import Container from '@/components/ui/Container'
 import { NAV_LINKS, siteConfig } from '@/data/siteConfig'
+import { LOCALES, DEFAULT_LOCALE, type Locale } from '@/data/i18n/types'
 
 export default function Footer() {
+  const pathname = usePathname()
+  const currentLocale: Locale =
+    (LOCALES.find((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`)) as Locale) ||
+    DEFAULT_LOCALE
+  const prefixHref = (href: string): string => {
+    if (href === '/') return `/${currentLocale}`
+    return `/${currentLocale}${href}`
+  }
+
   return (
     <footer className="gradient-navy mt-16 text-white/80">
       <Container className="py-12">
@@ -33,7 +46,7 @@ export default function Footer() {
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
-                    href={link.href}
+                    href={prefixHref(link.href)}
                     className="text-sm text-white/60 transition-colors hover:text-papal-gold"
                   >
                     {link.label}
@@ -120,13 +133,13 @@ export default function Footer() {
               Este sitio no es una web oficial. Información recopilada de fuentes públicas.
             </p>
             <nav className="flex flex-wrap gap-4 text-xs text-white/60">
-              <Link href="/aviso-legal" className="hover:text-papal-gold">
+              <Link href={prefixHref('/aviso-legal')} className="hover:text-papal-gold">
                 Aviso legal
               </Link>
-              <Link href="/privacidad" className="hover:text-papal-gold">
+              <Link href={prefixHref('/privacidad')} className="hover:text-papal-gold">
                 Privacidad
               </Link>
-              <Link href="/politica-cookies" className="hover:text-papal-gold">
+              <Link href={prefixHref('/politica-cookies')} className="hover:text-papal-gold">
                 Cookies
               </Link>
             </nav>

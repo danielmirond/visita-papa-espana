@@ -1,23 +1,22 @@
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
 import Container from '@/components/ui/Container'
 import NewsletterForm from '@/components/shared/NewsletterForm'
 import JsonLd from '@/components/seo/JsonLd'
-import { LOCALES, type Locale } from '@/data/i18n/types'
 import { getDictionary } from '@/data/i18n/dictionaries'
+import { type Locale } from '@/data/i18n/types'
 import { siteConfig } from '@/data/siteConfig'
 import { cities } from '@/data/cities'
 import { schedule } from '@/data/schedule'
 
-interface Props {
-  params: { lang: string }
+const CITY_COLORS: Record<string, string> = {
+  madrid: 'from-red-700 to-red-900',
+  barcelona: 'from-blue-700 to-blue-900',
+  'gran-canaria': 'from-amber-600 to-amber-800',
+  tenerife: 'from-emerald-700 to-emerald-900',
 }
 
-export default function LocalizedHome({ params }: Props) {
-  const lang = params.lang as Locale
-  if (!LOCALES.includes(lang) || lang === 'es') notFound()
-  const dict = getDictionary(lang)
-
+export default function LocalizedHome({ locale }: { locale: Locale }) {
+  const dict = getDictionary(locale)
   const totalEvents = schedule.reduce((acc, day) => acc + day.events.length, 0)
   const publicEvents = schedule.reduce(
     (acc, day) => acc + day.events.filter((e) => e.isPublic).length,
@@ -36,7 +35,7 @@ export default function LocalizedHome({ params }: Props) {
           endDate: '2026-06-12',
           eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
           eventStatus: 'https://schema.org/EventScheduled',
-          inLanguage: lang,
+          inLanguage: locale,
         }}
       />
 
@@ -65,25 +64,23 @@ export default function LocalizedHome({ params }: Props) {
 
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             <Link
-              href="/"
+              href={locale === 'es' ? '/es/programa' : `/${locale}`}
               className="rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
             >
               {dict.home.seeProgram}
             </Link>
+            <Link
+              href={locale === 'es' ? '/es/como-asistir' : `/${locale}`}
+              className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
+            >
+              {dict.home.howToAttend}
+            </Link>
           </div>
-
-          <p className="mt-8 text-xs text-white/50">
-            {lang === 'en' && 'Full content available in Spanish at visita-papa-2026.es'}
-            {lang === 'it' && 'Contenuto completo disponibile in spagnolo su visita-papa-2026.es'}
-            {lang === 'fr' && 'Contenu complet disponible en espagnol sur visita-papa-2026.es'}
-            {lang === 'de' && 'Vollständige Inhalte auf Spanisch unter visita-papa-2026.es verfügbar'}
-            {lang === 'pt' && 'Conteúdo completo disponível em espanhol em visita-papa-2026.es'}
-          </p>
         </Container>
       </section>
 
       {/* Cifras */}
-      <section className="border-b border-papal-gold/10 bg-papal-cream">
+      <section className="border-b border-papal-gold/10 bg-papal-cream min-h-[88px]">
         <Container className="py-8">
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             <div className="text-center">
@@ -127,7 +124,9 @@ export default function LocalizedHome({ params }: Props) {
                     backgroundPosition: 'center',
                   }}
                 >
-                  <div className="absolute inset-0 bg-papal-navy/75" />
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-r ${CITY_COLORS[city.slug]} opacity-85`}
+                  />
                   <div className="relative">
                     <h3 className="font-heading text-2xl font-bold">{city.name}</h3>
                     <p className="text-sm text-white/80">{city.region}</p>
