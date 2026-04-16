@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import JsonLd from '@/components/seo/JsonLd'
 import GoogleAnalytics from '@/components/seo/GoogleAnalytics'
+import CookieBanner from '@/components/shared/CookieBanner'
 import { siteConfig } from '@/data/siteConfig'
 import './globals.css'
 
@@ -81,6 +82,7 @@ export default function RootLayout({
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   )

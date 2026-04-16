@@ -115,16 +115,21 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6">
-          <div className="flex flex-col items-center justify-between gap-2 text-xs text-white/40 sm:flex-row">
-            <p>
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-xs text-white/40">
               Este sitio no es una web oficial. Información recopilada de fuentes públicas.
             </p>
-            <p>
-              Algunos enlaces son de afiliados. Consulta nuestra{' '}
-              <Link href="/aviso-legal" className="underline hover:text-white/60">
-                política de afiliación
-              </Link>.
-            </p>
+            <nav className="flex flex-wrap gap-4 text-xs text-white/60">
+              <Link href="/aviso-legal" className="hover:text-papal-gold">
+                Aviso legal
+              </Link>
+              <Link href="/privacidad" className="hover:text-papal-gold">
+                Privacidad
+              </Link>
+              <Link href="/politica-cookies" className="hover:text-papal-gold">
+                Cookies
+              </Link>
+            </nav>
           </div>
         </div>
       </Container>
