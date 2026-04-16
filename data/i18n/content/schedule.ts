@@ -1,0 +1,307 @@
+import { ScheduleDay, PapalEvent } from '@/types/schedule'
+import { schedule as scheduleEs } from '@/data/schedule'
+import { Locale } from '@/data/i18n/types'
+
+// Translations por event.id. Si falta, se cae al español.
+type EventTrans = { title: string; description: string; location: string }
+type LabelTrans = string
+
+const eventTranslations: Record<Locale, Record<string, EventTrans>> = {
+  es: {}, // no hace falta, se usa el original
+  en: {
+    'llegada-madrid': {
+      title: 'Arrival in Madrid',
+      description: 'Arrival of Pope Leo XIV at Adolfo Suárez Madrid-Barajas Airport. Official welcome by authorities.',
+      location: 'Adolfo Suárez Madrid-Barajas Airport',
+    },
+    'zarzuela': {
+      title: 'Meeting with the King and Queen',
+      description: 'Meeting with King Felipe VI and Queen Letizia at the Zarzuela Palace.',
+      location: 'Zarzuela Palace',
+    },
+    'cedia-carabanchel': {
+      title: 'Visit to CEDIA 24h shelter',
+      description: 'Visit to the reception centre for homeless people in the Carabanchel neighbourhood.',
+      location: 'CEDIA 24h, Carabanchel',
+    },
+    'vigilia-plaza-lima': {
+      title: 'Youth vigil with the Pope',
+      description: 'Great vigil with youth at Plaza de Lima and surroundings. The Pope will tour the area in the popemobile greeting pilgrims, followed by a vigil with his words and Eucharistic adoration.',
+      location: 'Plaza de Lima, Madrid',
+    },
+    'misa-cibeles': {
+      title: 'Corpus Christi Mass and procession',
+      description: 'Solemn Corpus Christi Mass presided by Pope Leo XIV from Plaza de Cibeles, followed by Eucharistic procession through adjacent areas. Day of Charity.',
+      location: 'Plaza de Cibeles',
+    },
+    'movistar-arena': {
+      title: 'Meeting with civil society',
+      description: 'Meeting with representatives of culture, art, economy and the labour world at Movistar Arena.',
+      location: 'Movistar Arena',
+    },
+    'congreso': {
+      title: 'Address to Congress and Senate',
+      description: 'First address by a Pope to the Spanish Congress in a historic joint session with the Senate.',
+      location: 'Spanish Congress',
+    },
+    'obispos-cee': {
+      title: 'Meeting with Spanish bishops',
+      description: 'Meeting of the Pope with the Spanish Episcopal Conference and all Spanish bishops.',
+      location: 'CEE Headquarters',
+    },
+    'almudena': {
+      title: 'Visit to the Almudena Cathedral',
+      description: 'Visit of the Pope to the Cathedral of Santa María la Real de la Almudena.',
+      location: 'Almudena Cathedral',
+    },
+    'bernabeu-diocesano': {
+      title: 'Diocesan gathering',
+      description: 'Large diocesan gathering at the Santiago Bernabéu Stadium with the faithful of Madrid.',
+      location: 'Santiago Bernabéu Stadium',
+    },
+    'voluntarios-ifema': {
+      title: 'Meeting with volunteers',
+      description: 'Thanksgiving event for volunteers of the visit at IFEMA.',
+      location: 'IFEMA, Madrid',
+    },
+    'traslado-barcelona': {
+      title: 'Transfer to Barcelona',
+      description: 'The Pope travels from Madrid to Barcelona.',
+      location: 'Madrid - Barcelona',
+    },
+    'vigilia-montjuic': {
+      title: 'Vigil at Montjuïc',
+      description: 'Prayer vigil at Montjuïc, Barcelona.',
+      location: 'Montjuïc, Barcelona',
+    },
+    'montserrat': {
+      title: 'Visit to Montserrat Monastery',
+      description: 'Meeting with the Benedictine community of Montserrat Monastery.',
+      location: 'Montserrat Monastery',
+    },
+    'misa-sagrada-familia': {
+      title: 'Mass at the Sagrada Familia',
+      description: 'Solemn Mass at the Sagrada Familia Basilica.',
+      location: 'Sagrada Familia Basilica',
+    },
+    'torre-jesus': {
+      title: 'Blessing of the Tower of Jesus',
+      description: 'Historic event: Pope Leo XIV blesses and inaugurates the 172.5-metre Tower of Jesus Christ at the Sagrada Familia. Coincides with the centenary of Antoni Gaudí’s death and his beatification process.',
+      location: 'Sagrada Familia Basilica',
+    },
+    'llegada-canarias': {
+      title: 'Arrival in Gran Canaria',
+      description: 'Arrival of the Pope in Las Palmas de Gran Canaria at midday.',
+      location: 'Las Palmas de Gran Canaria',
+    },
+    'arguineguin': {
+      title: 'Meeting at Arguineguín dock',
+      description: 'Meeting at Arguineguín dock, symbol of the migration crisis in the Canary Islands. A highly symbolic event on welcome and migrant rights.',
+      location: 'Arguineguín Dock',
+    },
+    'catedral-las-palmas': {
+      title: 'Meeting at Las Palmas Cathedral',
+      description: 'Meeting with diocesan representatives at the Cathedral of Santa Ana.',
+      location: 'Cathedral of Santa Ana, Las Palmas',
+    },
+    'palacio-episcopal-gc': {
+      title: 'Reception with humanitarian organisations',
+      description: 'Reception at the Episcopal Palace with humanitarian and welcome organisations.',
+      location: 'Episcopal Palace, Las Palmas',
+    },
+    'misa-estadio-gc': {
+      title: 'Mass at the Gran Canaria Stadium',
+      description: 'Public Mass presided by Pope Leo XIV at the Gran Canaria Stadium.',
+      location: 'Gran Canaria Stadium',
+    },
+    'las-raices': {
+      title: 'Visit to Las Raíces reception centre',
+      description: 'Visit to the migrant reception centre Las Raíces in Tenerife.',
+      location: 'Las Raíces reception centre',
+    },
+    'misa-santa-cruz': {
+      title: 'Closing Mass in Santa Cruz',
+      description: 'Closing Mass of the papal visit to Spain presided by Pope Leo XIV at the Port of Santa Cruz de Tenerife, at midday.',
+      location: 'Port of Santa Cruz de Tenerife',
+    },
+    'despedida': {
+      title: 'Farewell and return to Rome',
+      description: 'Farewell ceremony of Pope Leo XIV. End of the apostolic visit to Spain.',
+      location: 'Tenerife Airport',
+    },
+  },
+  it: {
+    'llegada-madrid': { title: 'Arrivo a Madrid', description: 'Arrivo di Papa Leone XIV all’Aeroporto Adolfo Suárez Madrid-Barajas. Accoglienza ufficiale dalle autorità.', location: 'Aeroporto Adolfo Suárez Madrid-Barajas' },
+    'zarzuela': { title: 'Incontro con i Reali', description: 'Incontro con il Re Felipe VI e la Regina Letizia al Palazzo della Zarzuela.', location: 'Palazzo della Zarzuela' },
+    'cedia-carabanchel': { title: 'Visita al centro CEDIA 24h', description: 'Visita al centro di accoglienza per senzatetto nel quartiere di Carabanchel.', location: 'CEDIA 24h, Carabanchel' },
+    'vigilia-plaza-lima': { title: 'Veglia giovanile con il Papa', description: 'Grande veglia con i giovani in Plaza de Lima e dintorni. Il Papa percorrerà la zona in papamobile salutando i pellegrini, seguito da una veglia con le sue parole e adorazione eucaristica.', location: 'Plaza de Lima, Madrid' },
+    'misa-cibeles': { title: 'Messa del Corpus Christi e processione', description: 'Messa solenne del Corpus Christi presieduta da Papa Leone XIV da Plaza de Cibeles, seguita da processione eucaristica per le zone adiacenti. Giornata della Carità.', location: 'Plaza de Cibeles' },
+    'movistar-arena': { title: 'Incontro con la società civile', description: 'Incontro con rappresentanti della cultura, dell’arte, dell’economia e del mondo del lavoro al Movistar Arena.', location: 'Movistar Arena' },
+    'congreso': { title: 'Discorso al Congresso e al Senato', description: 'Primo discorso di un Papa davanti al Congresso dei Deputati in seduta congiunta storica con il Senato.', location: 'Congresso dei Deputati' },
+    'obispos-cee': { title: 'Incontro con i vescovi spagnoli', description: 'Incontro del Papa con la Conferenza Episcopale Spagnola e tutti i vescovi di Spagna.', location: 'Sede della CEE' },
+    'almudena': { title: 'Visita alla Cattedrale dell’Almudena', description: 'Visita del Papa alla Cattedrale di Santa María la Real de la Almudena.', location: 'Cattedrale dell’Almudena' },
+    'bernabeu-diocesano': { title: 'Incontro diocesano', description: 'Grande incontro diocesano nello Stadio Santiago Bernabéu con i fedeli di Madrid.', location: 'Stadio Santiago Bernabéu' },
+    'voluntarios-ifema': { title: 'Incontro con i volontari', description: 'Atto di ringraziamento ai volontari della visita a IFEMA.', location: 'IFEMA, Madrid' },
+    'traslado-barcelona': { title: 'Trasferimento a Barcellona', description: 'Il Papa viaggia da Madrid a Barcellona.', location: 'Madrid - Barcellona' },
+    'vigilia-montjuic': { title: 'Veglia al Montjuïc', description: 'Veglia di preghiera al Montjuïc, Barcellona.', location: 'Montjuïc, Barcellona' },
+    'montserrat': { title: 'Visita al Monastero di Montserrat', description: 'Incontro con la comunità benedettina del Monastero di Montserrat.', location: 'Monastero di Montserrat' },
+    'misa-sagrada-familia': { title: 'Messa alla Sagrada Familia', description: 'Messa solenne nella Basilica della Sagrada Familia.', location: 'Basilica della Sagrada Familia' },
+    'torre-jesus': { title: 'Benedizione della Torre di Gesù', description: 'Atto storico: Papa Leone XIV benedice e inaugura la Torre di Gesù Cristo della Sagrada Familia (172,5 metri). Coincide con il centenario della morte di Antoni Gaudí e il suo processo di beatificazione.', location: 'Basilica della Sagrada Familia' },
+    'llegada-canarias': { title: 'Arrivo a Gran Canaria', description: 'Arrivo del Papa a Las Palmas de Gran Canaria a mezzogiorno.', location: 'Las Palmas de Gran Canaria' },
+    'arguineguin': { title: 'Incontro al molo di Arguineguín', description: 'Incontro al molo di Arguineguín, simbolo della crisi migratoria alle Canarie. Atto di forte carica simbolica sull’accoglienza e i diritti dei migranti.', location: 'Molo di Arguineguín' },
+    'catedral-las-palmas': { title: 'Incontro alla Cattedrale di Las Palmas', description: 'Incontro con rappresentanti diocesani nella Cattedrale di Santa Ana.', location: 'Cattedrale di Santa Ana, Las Palmas' },
+    'palacio-episcopal-gc': { title: 'Ricevimento con organizzazioni umanitarie', description: 'Ricevimento al Palazzo Episcopale con organizzazioni umanitarie e di accoglienza.', location: 'Palazzo Episcopale, Las Palmas' },
+    'misa-estadio-gc': { title: 'Messa allo Stadio di Gran Canaria', description: 'Messa pubblica presieduta da Papa Leone XIV allo Stadio di Gran Canaria.', location: 'Stadio di Gran Canaria' },
+    'las-raices': { title: 'Visita al centro di accoglienza Las Raíces', description: 'Visita al centro di accoglienza migranti di Las Raíces a Tenerife.', location: 'Centro di accoglienza Las Raíces' },
+    'misa-santa-cruz': { title: 'Messa di chiusura a Santa Cruz', description: 'Messa di chiusura della visita papale in Spagna presieduta da Papa Leone XIV nel Porto di Santa Cruz de Tenerife, a mezzogiorno.', location: 'Porto di Santa Cruz de Tenerife' },
+    'despedida': { title: 'Congedo e ritorno a Roma', description: 'Cerimonia di congedo di Papa Leone XIV. Fine della visita apostolica in Spagna.', location: 'Aeroporto di Tenerife' },
+  },
+  fr: {
+    'llegada-madrid': { title: 'Arrivée à Madrid', description: 'Arrivée du Pape Léon XIV à l’aéroport Adolfo Suárez Madrid-Barajas. Accueil officiel par les autorités.', location: 'Aéroport Adolfo Suárez Madrid-Barajas' },
+    'zarzuela': { title: 'Rencontre avec les Rois', description: 'Rencontre avec le Roi Felipe VI et la Reine Letizia au palais de la Zarzuela.', location: 'Palais de la Zarzuela' },
+    'cedia-carabanchel': { title: 'Visite au centre CEDIA 24h', description: 'Visite au centre d’accueil pour sans-abri du quartier de Carabanchel.', location: 'CEDIA 24h, Carabanchel' },
+    'vigilia-plaza-lima': { title: 'Veillée des jeunes avec le Pape', description: 'Grande veillée avec les jeunes à Plaza de Lima et environs. Le Pape parcourra la zone en papamobile en saluant les pèlerins, suivi d’une veillée avec ses paroles et l’adoration eucharistique.', location: 'Plaza de Lima, Madrid' },
+    'misa-cibeles': { title: 'Messe du Corpus Christi et procession', description: 'Messe solennelle du Corpus Christi présidée par le Pape Léon XIV depuis Plaza de Cibeles, suivie d’une procession eucharistique. Journée de la Charité.', location: 'Plaza de Cibeles' },
+    'movistar-arena': { title: 'Rencontre avec la société civile', description: 'Rencontre avec des représentants de la culture, de l’art, de l’économie et du monde du travail au Movistar Arena.', location: 'Movistar Arena' },
+    'congreso': { title: 'Discours au Congrès et au Sénat', description: 'Premier discours d’un Pape devant le Congrès des députés en session conjointe historique avec le Sénat.', location: 'Congrès des députés' },
+    'obispos-cee': { title: 'Rencontre avec les évêques espagnols', description: 'Rencontre du Pape avec la Conférence épiscopale espagnole et tous les évêques d’Espagne.', location: 'Siège de la CEE' },
+    'almudena': { title: 'Visite de la cathédrale de l’Almudena', description: 'Visite du Pape à la cathédrale Santa María la Real de la Almudena.', location: 'Cathédrale de l’Almudena' },
+    'bernabeu-diocesano': { title: 'Rencontre diocésaine', description: 'Grande rencontre diocésaine au stade Santiago Bernabéu avec les fidèles de Madrid.', location: 'Stade Santiago Bernabéu' },
+    'voluntarios-ifema': { title: 'Rencontre avec les bénévoles', description: 'Acte de remerciement aux bénévoles de la visite à l’IFEMA.', location: 'IFEMA, Madrid' },
+    'traslado-barcelona': { title: 'Transfert à Barcelone', description: 'Le Pape voyage de Madrid à Barcelone.', location: 'Madrid - Barcelone' },
+    'vigilia-montjuic': { title: 'Veillée à Montjuïc', description: 'Veillée de prière à Montjuïc, Barcelone.', location: 'Montjuïc, Barcelone' },
+    'montserrat': { title: 'Visite du monastère de Montserrat', description: 'Rencontre avec la communauté bénédictine du monastère de Montserrat.', location: 'Monastère de Montserrat' },
+    'misa-sagrada-familia': { title: 'Messe à la Sagrada Família', description: 'Messe solennelle à la basilique de la Sagrada Família.', location: 'Basilique de la Sagrada Família' },
+    'torre-jesus': { title: 'Bénédiction de la Tour de Jésus', description: 'Acte historique : le Pape Léon XIV bénit et inaugure la Tour de Jésus-Christ de la Sagrada Família (172,5 mètres). Coïncide avec le centenaire de la mort d’Antoni Gaudí et son processus de béatification.', location: 'Basilique de la Sagrada Família' },
+    'llegada-canarias': { title: 'Arrivée en Grande Canarie', description: 'Arrivée du Pape à Las Palmas de Grande Canarie à midi.', location: 'Las Palmas de Grande Canarie' },
+    'arguineguin': { title: 'Rencontre au quai d’Arguineguín', description: 'Rencontre au quai d’Arguineguín, symbole de la crise migratoire aux Canaries. Un acte à forte charge symbolique sur l’accueil et les droits des migrants.', location: 'Quai d’Arguineguín' },
+    'catedral-las-palmas': { title: 'Rencontre à la cathédrale de Las Palmas', description: 'Rencontre avec les représentants diocésains à la cathédrale de Santa Ana.', location: 'Cathédrale de Santa Ana, Las Palmas' },
+    'palacio-episcopal-gc': { title: 'Réception avec les organisations humanitaires', description: 'Réception au palais épiscopal avec les organisations humanitaires et d’accueil.', location: 'Palais épiscopal, Las Palmas' },
+    'misa-estadio-gc': { title: 'Messe au stade de Grande Canarie', description: 'Messe publique présidée par le Pape Léon XIV au stade de Grande Canarie.', location: 'Stade de Grande Canarie' },
+    'las-raices': { title: 'Visite au centre d’accueil Las Raíces', description: 'Visite au centre d’accueil des migrants Las Raíces à Tenerife.', location: 'Centre d’accueil Las Raíces' },
+    'misa-santa-cruz': { title: 'Messe de clôture à Santa Cruz', description: 'Messe de clôture de la visite papale en Espagne présidée par le Pape Léon XIV au port de Santa Cruz de Tenerife, à midi.', location: 'Port de Santa Cruz de Tenerife' },
+    'despedida': { title: 'Départ et retour à Rome', description: 'Cérémonie de départ du Pape Léon XIV. Fin de la visite apostolique en Espagne.', location: 'Aéroport de Tenerife' },
+  },
+  de: {
+    'llegada-madrid': { title: 'Ankunft in Madrid', description: 'Ankunft von Papst Leo XIV. am Flughafen Adolfo Suárez Madrid-Barajas. Offizieller Empfang durch die Behörden.', location: 'Flughafen Adolfo Suárez Madrid-Barajas' },
+    'zarzuela': { title: 'Begegnung mit dem Königspaar', description: 'Begegnung mit König Felipe VI. und Königin Letizia im Palast Zarzuela.', location: 'Palast Zarzuela' },
+    'cedia-carabanchel': { title: 'Besuch im CEDIA 24h-Obdachlosenheim', description: 'Besuch des Aufnahmezentrums für Obdachlose im Stadtteil Carabanchel.', location: 'CEDIA 24h, Carabanchel' },
+    'vigilia-plaza-lima': { title: 'Jugendvigil mit dem Papst', description: 'Große Vigil mit Jugendlichen am Plaza de Lima und Umgebung. Der Papst fährt im Papamobil durch die Zone, gefolgt von einer Vigil mit seinen Worten und eucharistischer Anbetung.', location: 'Plaza de Lima, Madrid' },
+    'misa-cibeles': { title: 'Fronleichnamsmesse und Prozession', description: 'Feierliche Fronleichnamsmesse unter Leitung von Papst Leo XIV. vom Plaza de Cibeles, gefolgt von einer eucharistischen Prozession. Tag der Nächstenliebe.', location: 'Plaza de Cibeles' },
+    'movistar-arena': { title: 'Begegnung mit der Zivilgesellschaft', description: 'Begegnung mit Vertretern aus Kultur, Kunst, Wirtschaft und Arbeitswelt in der Movistar Arena.', location: 'Movistar Arena' },
+    'congreso': { title: 'Rede vor Kongress und Senat', description: 'Erste Rede eines Papstes vor dem Abgeordnetenkongress in historischer gemeinsamer Sitzung mit dem Senat.', location: 'Abgeordnetenkongress' },
+    'obispos-cee': { title: 'Begegnung mit spanischen Bischöfen', description: 'Begegnung des Papstes mit der Spanischen Bischofskonferenz und allen Bischöfen Spaniens.', location: 'Sitz der CEE' },
+    'almudena': { title: 'Besuch der Kathedrale Almudena', description: 'Besuch des Papstes in der Kathedrale Santa María la Real de la Almudena.', location: 'Kathedrale Almudena' },
+    'bernabeu-diocesano': { title: 'Diözesane Begegnung', description: 'Große diözesane Begegnung im Stadion Santiago Bernabéu mit den Gläubigen von Madrid.', location: 'Stadion Santiago Bernabéu' },
+    'voluntarios-ifema': { title: 'Begegnung mit Freiwilligen', description: 'Dankesveranstaltung für Freiwillige des Besuchs bei IFEMA.', location: 'IFEMA, Madrid' },
+    'traslado-barcelona': { title: 'Reise nach Barcelona', description: 'Der Papst reist von Madrid nach Barcelona.', location: 'Madrid - Barcelona' },
+    'vigilia-montjuic': { title: 'Vigil am Montjuïc', description: 'Gebetsvigil am Montjuïc, Barcelona.', location: 'Montjuïc, Barcelona' },
+    'montserrat': { title: 'Besuch des Klosters Montserrat', description: 'Begegnung mit der benediktinischen Gemeinschaft des Klosters Montserrat.', location: 'Kloster Montserrat' },
+    'misa-sagrada-familia': { title: 'Messe in der Sagrada Família', description: 'Feierliche Messe in der Basilika Sagrada Família.', location: 'Basilika Sagrada Família' },
+    'torre-jesus': { title: 'Segnung des Jesus-Turms', description: 'Historischer Akt: Papst Leo XIV. segnet und weiht den 172,5 Meter hohen Jesus-Christus-Turm der Sagrada Família. Fällt mit dem 100. Todestag von Antoni Gaudí und seinem Seligsprechungsprozess zusammen.', location: 'Basilika Sagrada Família' },
+    'llegada-canarias': { title: 'Ankunft auf Gran Canaria', description: 'Ankunft des Papstes in Las Palmas de Gran Canaria mittags.', location: 'Las Palmas de Gran Canaria' },
+    'arguineguin': { title: 'Begegnung am Hafen Arguineguín', description: 'Begegnung am Hafen Arguineguín, Symbol der Migrationskrise auf den Kanaren. Ein Akt mit starker Symbolik über Aufnahme und Migrantenrechte.', location: 'Hafen Arguineguín' },
+    'catedral-las-palmas': { title: 'Begegnung in der Kathedrale Las Palmas', description: 'Begegnung mit diözesanen Vertretern in der Kathedrale Santa Ana.', location: 'Kathedrale Santa Ana, Las Palmas' },
+    'palacio-episcopal-gc': { title: 'Empfang humanitärer Organisationen', description: 'Empfang im Bischöflichen Palast mit humanitären und Aufnahmeorganisationen.', location: 'Bischöflicher Palast, Las Palmas' },
+    'misa-estadio-gc': { title: 'Messe im Stadion Gran Canaria', description: 'Öffentliche Messe unter Leitung von Papst Leo XIV. im Stadion Gran Canaria.', location: 'Stadion Gran Canaria' },
+    'las-raices': { title: 'Besuch des Aufnahmezentrums Las Raíces', description: 'Besuch des Aufnahmezentrums für Migranten Las Raíces auf Teneriffa.', location: 'Aufnahmezentrum Las Raíces' },
+    'misa-santa-cruz': { title: 'Abschlussmesse in Santa Cruz', description: 'Abschlussmesse des Papstbesuchs in Spanien unter Leitung von Papst Leo XIV. im Hafen von Santa Cruz de Tenerife, mittags.', location: 'Hafen Santa Cruz de Tenerife' },
+    'despedida': { title: 'Abschied und Rückkehr nach Rom', description: 'Abschiedszeremonie von Papst Leo XIV. Ende des apostolischen Besuchs in Spanien.', location: 'Flughafen Teneriffa' },
+  },
+  pt: {
+    'llegada-madrid': { title: 'Chegada a Madrid', description: 'Chegada do Papa Leão XIV ao Aeroporto Adolfo Suárez Madrid-Barajas. Receção oficial pelas autoridades.', location: 'Aeroporto Adolfo Suárez Madrid-Barajas' },
+    'zarzuela': { title: 'Encontro com os Reis', description: 'Encontro com o Rei Felipe VI e a Rainha Letizia no Palácio da Zarzuela.', location: 'Palácio da Zarzuela' },
+    'cedia-carabanchel': { title: 'Visita ao centro CEDIA 24h', description: 'Visita ao centro de acolhimento para sem-abrigo no bairro de Carabanchel.', location: 'CEDIA 24h, Carabanchel' },
+    'vigilia-plaza-lima': { title: 'Vigília juvenil com o Papa', description: 'Grande vigília com jovens em Plaza de Lima e arredores. O Papa percorrerá a zona em papamóvel cumprimentando os peregrinos, seguido de uma vigília com as suas palavras e adoração eucarística.', location: 'Plaza de Lima, Madrid' },
+    'misa-cibeles': { title: 'Missa de Corpus Christi e procissão', description: 'Missa solene de Corpus Christi presidida pelo Papa Leão XIV desde a Plaza de Cibeles, seguida de procissão eucarística. Jornada da Caridade.', location: 'Plaza de Cibeles' },
+    'movistar-arena': { title: 'Encontro com a sociedade civil', description: 'Encontro com representantes da cultura, arte, economia e mundo laboral no Movistar Arena.', location: 'Movistar Arena' },
+    'congreso': { title: 'Discurso ao Congresso e Senado', description: 'Primeiro discurso de um Papa ante o Congresso dos Deputados em sessão conjunta histórica com o Senado.', location: 'Congresso dos Deputados' },
+    'obispos-cee': { title: 'Encontro com os bispos espanhóis', description: 'Encontro do Papa com a Conferência Episcopal Espanhola e todos os bispos de Espanha.', location: 'Sede da CEE' },
+    'almudena': { title: 'Visita à Catedral da Almudena', description: 'Visita do Papa à Catedral de Santa María la Real de la Almudena.', location: 'Catedral da Almudena' },
+    'bernabeu-diocesano': { title: 'Encontro diocesano', description: 'Grande encontro diocesano no Estádio Santiago Bernabéu com os fiéis de Madrid.', location: 'Estádio Santiago Bernabéu' },
+    'voluntarios-ifema': { title: 'Encontro com voluntários', description: 'Ato de agradecimento aos voluntários da visita em IFEMA.', location: 'IFEMA, Madrid' },
+    'traslado-barcelona': { title: 'Transferência a Barcelona', description: 'O Papa viaja de Madrid a Barcelona.', location: 'Madrid - Barcelona' },
+    'vigilia-montjuic': { title: 'Vigília em Montjuïc', description: 'Vigília de oração em Montjuïc, Barcelona.', location: 'Montjuïc, Barcelona' },
+    'montserrat': { title: 'Visita ao Mosteiro de Montserrat', description: 'Encontro com a comunidade beneditina do Mosteiro de Montserrat.', location: 'Mosteiro de Montserrat' },
+    'misa-sagrada-familia': { title: 'Missa na Sagrada Família', description: 'Missa solene na Basílica da Sagrada Família.', location: 'Basílica da Sagrada Família' },
+    'torre-jesus': { title: 'Bênção da Torre de Jesus', description: 'Ato histórico: o Papa Leão XIV abençoa e inaugura a Torre de Jesus Cristo da Sagrada Família (172,5 metros). Coincide com o centenário da morte de Antoni Gaudí e o seu processo de beatificação.', location: 'Basílica da Sagrada Família' },
+    'llegada-canarias': { title: 'Chegada a Gran Canária', description: 'Chegada do Papa a Las Palmas de Gran Canária ao meio-dia.', location: 'Las Palmas de Gran Canária' },
+    'arguineguin': { title: 'Encontro no cais de Arguineguín', description: 'Encontro no cais de Arguineguín, símbolo da crise migratória nas Canárias. Um ato de forte carga simbólica sobre o acolhimento e os direitos dos migrantes.', location: 'Cais de Arguineguín' },
+    'catedral-las-palmas': { title: 'Encontro na Catedral de Las Palmas', description: 'Encontro com representantes diocesanos na Catedral de Santa Ana.', location: 'Catedral de Santa Ana, Las Palmas' },
+    'palacio-episcopal-gc': { title: 'Receção com organizações humanitárias', description: 'Receção no Palácio Episcopal com organizações humanitárias e de acolhimento.', location: 'Palácio Episcopal, Las Palmas' },
+    'misa-estadio-gc': { title: 'Missa no Estádio de Gran Canária', description: 'Missa pública presidida pelo Papa Leão XIV no Estádio de Gran Canária.', location: 'Estádio de Gran Canária' },
+    'las-raices': { title: 'Visita ao centro de acolhimento Las Raíces', description: 'Visita ao centro de acolhimento de migrantes Las Raíces em Tenerife.', location: 'Centro de acolhimento Las Raíces' },
+    'misa-santa-cruz': { title: 'Missa de encerramento em Santa Cruz', description: 'Missa de encerramento da visita papal a Espanha presidida pelo Papa Leão XIV no Porto de Santa Cruz de Tenerife, ao meio-dia.', location: 'Porto de Santa Cruz de Tenerife' },
+    'despedida': { title: 'Despedida e regresso a Roma', description: 'Cerimónia de despedida do Papa Leão XIV. Fim da visita apostólica a Espanha.', location: 'Aeroporto de Tenerife' },
+  },
+}
+
+// Day labels per locale
+const dayLabels: Record<Locale, Record<string, LabelTrans>> = {
+  es: {}, // se usa scheduleEs.label
+  en: {
+    '2026-06-06': 'Saturday 6 June',
+    '2026-06-07': 'Sunday 7 June — Corpus Christi',
+    '2026-06-08': 'Monday 8 June',
+    '2026-06-09': 'Tuesday 9 June',
+    '2026-06-10': 'Wednesday 10 June',
+    '2026-06-11': 'Thursday 11 June',
+    '2026-06-12': 'Friday 12 June',
+  },
+  it: {
+    '2026-06-06': 'Sabato 6 giugno',
+    '2026-06-07': 'Domenica 7 giugno — Corpus Christi',
+    '2026-06-08': 'Lunedì 8 giugno',
+    '2026-06-09': 'Martedì 9 giugno',
+    '2026-06-10': 'Mercoledì 10 giugno',
+    '2026-06-11': 'Giovedì 11 giugno',
+    '2026-06-12': 'Venerdì 12 giugno',
+  },
+  fr: {
+    '2026-06-06': 'Samedi 6 juin',
+    '2026-06-07': 'Dimanche 7 juin — Corpus Christi',
+    '2026-06-08': 'Lundi 8 juin',
+    '2026-06-09': 'Mardi 9 juin',
+    '2026-06-10': 'Mercredi 10 juin',
+    '2026-06-11': 'Jeudi 11 juin',
+    '2026-06-12': 'Vendredi 12 juin',
+  },
+  de: {
+    '2026-06-06': 'Samstag, 6. Juni',
+    '2026-06-07': 'Sonntag, 7. Juni — Fronleichnam',
+    '2026-06-08': 'Montag, 8. Juni',
+    '2026-06-09': 'Dienstag, 9. Juni',
+    '2026-06-10': 'Mittwoch, 10. Juni',
+    '2026-06-11': 'Donnerstag, 11. Juni',
+    '2026-06-12': 'Freitag, 12. Juni',
+  },
+  pt: {
+    '2026-06-06': 'Sábado 6 de junho',
+    '2026-06-07': 'Domingo 7 de junho — Corpus Christi',
+    '2026-06-08': 'Segunda-feira 8 de junho',
+    '2026-06-09': 'Terça-feira 9 de junho',
+    '2026-06-10': 'Quarta-feira 10 de junho',
+    '2026-06-11': 'Quinta-feira 11 de junho',
+    '2026-06-12': 'Sexta-feira 12 de junho',
+  },
+}
+
+export function getScheduleByLocale(locale: Locale): ScheduleDay[] {
+  if (locale === 'es') return scheduleEs
+  const tr = eventTranslations[locale] || {}
+  const dl = dayLabels[locale] || {}
+  return scheduleEs.map((day) => ({
+    ...day,
+    label: dl[day.date] || day.label,
+    events: day.events.map<PapalEvent>((ev) => {
+      const trans = tr[ev.id]
+      if (!trans) return ev
+      return {
+        ...ev,
+        title: trans.title,
+        description: trans.description,
+        location: trans.location,
+      }
+    }),
+  }))
+}

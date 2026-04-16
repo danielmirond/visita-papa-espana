@@ -2,6 +2,16 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'vigilia-plaza-lima-misa-cibeles-confirmadas',
+    title: 'Confirmados horarios y lugares: Vigilia en Plaza de Lima y Misa de Corpus en Cibeles',
+    excerpt: 'La organización confirma que el sábado 6 de junio a las 20:00 se celebrará una gran vigilia juvenil en la Plaza de Lima y el domingo 7 a las 9:30 Misa de Corpus Christi en Plaza de Cibeles.',
+    content: 'El comité organizador ha confirmado los detalles de los principales actos multitudinarios de la visita papal a Madrid. El sábado 6 de junio a las 20:00 horas, el Papa León XIV presidirá una gran vigilia con jóvenes en la Plaza de Lima y alrededores, donde recorrerá la zona en papamóvil antes del acto con sus palabras y adoración eucarística. El domingo 7 de junio a las 9:30, celebrará la Misa de Corpus Christi desde la Plaza de Cibeles, seguida de procesión eucarística. En Canarias, la Misa en el Estadio de Gran Canaria será el jueves 11 a las 18:30 y la misa de clausura en Tenerife el viernes 12 hacia el mediodía en el Puerto de Santa Cruz. La inscripción para todos los actos está abierta en inscripciones.conelpapa.es/auth.',
+    date: '2026-04-14',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/el-papa-celebrara-una-gran-vigilia-con-jovenes-y-una-misa-multitudinarias-durante-su-visita-pastoral-a-madrid/',
+    relatedCities: ['madrid', 'gran-canaria', 'tenerife'],
+  },
+  {
     slug: 'confirmada-visita-papa-leon-xiv-espana',
     title: 'Confirmada la visita del Papa León XIV a España del 6 al 12 de junio',
     excerpt: 'La Santa Sede confirma oficialmente el viaje apostólico del Papa León XIV a España, con paradas en Madrid, Barcelona, Gran Canaria y Tenerife.',
