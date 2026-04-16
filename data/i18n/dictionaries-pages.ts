@@ -38,6 +38,19 @@ type PagesExt = {
     officialSite: string
     practicalGuide: string
   }
+  home: {
+    dayByDayTitle: string
+    dayByDaySubtitle: string // ej: "24 events in 7 days..."
+    events: string           // "actos" / "events"
+    moreEvents: string       // "más" / "more"
+    viewAllNews: string
+    newsletterNote: string
+    affiliateLabel1: string  // banner 1
+    affiliateLabel2: string  // banner 2
+    registerBtn: string
+    fullGuideBtn: string
+    month3letter: string     // "jun" / "Jun"
+  }
 }
 
 const es: PagesExt = {
@@ -77,6 +90,19 @@ const es: PagesExt = {
     notFoundDesc: 'Consulte la web oficial para información actualizada.',
     officialSite: 'Web oficial',
     practicalGuide: 'Guía práctica',
+  },
+  home: {
+    dayByDayTitle: 'Programa día a día',
+    dayByDaySubtitle: 'actos en 7 días por 4 ciudades de España',
+    events: 'actos',
+    moreEvents: 'más',
+    viewAllNews: 'Ver todas las noticias',
+    newsletterNote: 'Recibe las novedades de la visita papal por email',
+    affiliateLabel1: 'Reserva tu hotel para la visita papal',
+    affiliateLabel2: 'Compara vuelos a Canarias',
+    registerBtn: 'Inscribirse en Madrid',
+    fullGuideBtn: 'Guía completa',
+    month3letter: 'jun',
   },
 }
 
@@ -118,6 +144,19 @@ const en: PagesExt = {
     officialSite: 'Official website',
     practicalGuide: 'Practical guide',
   },
+  home: {
+    dayByDayTitle: 'Day-by-day programme',
+    dayByDaySubtitle: 'events in 7 days across 4 cities of Spain',
+    events: 'events',
+    moreEvents: 'more',
+    viewAllNews: 'View all news',
+    newsletterNote: 'Get the latest news of the papal visit by email',
+    affiliateLabel1: 'Book your hotel for the papal visit',
+    affiliateLabel2: 'Compare flights to the Canary Islands',
+    registerBtn: 'Register in Madrid',
+    fullGuideBtn: 'Full guide',
+    month3letter: 'Jun',
+  },
 }
 
 const it: PagesExt = {
@@ -157,6 +196,19 @@ const it: PagesExt = {
     notFoundDesc: 'Consulta il sito ufficiale per informazioni aggiornate.',
     officialSite: 'Sito ufficiale',
     practicalGuide: 'Guida pratica',
+  },
+  home: {
+    dayByDayTitle: 'Programma giorno per giorno',
+    dayByDaySubtitle: 'eventi in 7 giorni in 4 città della Spagna',
+    events: 'eventi',
+    moreEvents: 'altri',
+    viewAllNews: 'Vedi tutte le notizie',
+    newsletterNote: 'Ricevi le novità della visita papale via email',
+    affiliateLabel1: 'Prenota il tuo hotel per la visita papale',
+    affiliateLabel2: 'Confronta voli per le Canarie',
+    registerBtn: 'Iscriviti a Madrid',
+    fullGuideBtn: 'Guida completa',
+    month3letter: 'giu',
   },
 }
 
@@ -198,6 +250,19 @@ const fr: PagesExt = {
     officialSite: 'Site officiel',
     practicalGuide: 'Guide pratique',
   },
+  home: {
+    dayByDayTitle: 'Programme jour par jour',
+    dayByDaySubtitle: 'événements en 7 jours dans 4 villes d’Espagne',
+    events: 'événements',
+    moreEvents: 'plus',
+    viewAllNews: 'Voir toutes les actualités',
+    newsletterNote: 'Recevez les actualités de la visite pontificale par email',
+    affiliateLabel1: 'Réservez votre hôtel pour la visite pontificale',
+    affiliateLabel2: 'Comparez les vols vers les Canaries',
+    registerBtn: 'S’inscrire à Madrid',
+    fullGuideBtn: 'Guide complet',
+    month3letter: 'juin',
+  },
 }
 
 const de: PagesExt = {
@@ -238,6 +303,19 @@ const de: PagesExt = {
     officialSite: 'Offizielle Website',
     practicalGuide: 'Praktischer Leitfaden',
   },
+  home: {
+    dayByDayTitle: 'Programm Tag für Tag',
+    dayByDaySubtitle: 'Veranstaltungen in 7 Tagen in 4 spanischen Städten',
+    events: 'Veranstaltungen',
+    moreEvents: 'weitere',
+    viewAllNews: 'Alle Nachrichten ansehen',
+    newsletterNote: 'Erhalten Sie Neuigkeiten des Papstbesuchs per E-Mail',
+    affiliateLabel1: 'Buchen Sie Ihr Hotel für den Papstbesuch',
+    affiliateLabel2: 'Vergleichen Sie Flüge auf die Kanaren',
+    registerBtn: 'In Madrid anmelden',
+    fullGuideBtn: 'Vollständiger Leitfaden',
+    month3letter: 'Jun',
+  },
 }
 
 const pt: PagesExt = {
@@ -277,6 +355,19 @@ const pt: PagesExt = {
     notFoundDesc: 'Consulte o site oficial para informação atualizada.',
     officialSite: 'Site oficial',
     practicalGuide: 'Guia prático',
+  },
+  home: {
+    dayByDayTitle: 'Programa dia a dia',
+    dayByDaySubtitle: 'atos em 7 dias em 4 cidades de Espanha',
+    events: 'atos',
+    moreEvents: 'mais',
+    viewAllNews: 'Ver todas as notícias',
+    newsletterNote: 'Receba as novidades da visita papal por email',
+    affiliateLabel1: 'Reserve o seu hotel para a visita papal',
+    affiliateLabel2: 'Compare voos para as Canárias',
+    registerBtn: 'Inscrever-se em Madrid',
+    fullGuideBtn: 'Guia completo',
+    month3letter: 'jun',
   },
 }
 
