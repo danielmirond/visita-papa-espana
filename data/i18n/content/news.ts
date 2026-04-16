@@ -206,6 +206,13 @@ const newsTranslations: Record<Locale, Record<string, T>> = {
       source: 'Arquidiocese de Madrid',
     },
   },
+  // Catalán, gallego y euskera: sin traducción de noticias por ahora.
+  // El fallback en getNewsByLocale usa el contenido español cuando una
+  // noticia no tiene traducción específica. Perfecto para noticias frescas
+  // que se generan a diario desde el RSS.
+  ca: {},
+  gl: {},
+  eu: {},
 }
 
 export function getNewsByLocale(locale: Locale): NewsArticle[] {

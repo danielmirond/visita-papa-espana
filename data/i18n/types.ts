@@ -1,6 +1,6 @@
-export type Locale = 'es' | 'en' | 'it' | 'fr' | 'de' | 'pt'
+export type Locale = 'es' | 'en' | 'it' | 'fr' | 'de' | 'pt' | 'ca' | 'gl' | 'eu'
 
-export const LOCALES: Locale[] = ['es', 'en', 'it', 'fr', 'de', 'pt']
+export const LOCALES: Locale[] = ['es', 'en', 'it', 'fr', 'de', 'pt', 'ca', 'gl', 'eu']
 
 export const LOCALE_LABELS: Record<Locale, string> = {
   es: 'Español',
@@ -9,6 +9,9 @@ export const LOCALE_LABELS: Record<Locale, string> = {
   fr: 'Français',
   de: 'Deutsch',
   pt: 'Português',
+  ca: 'Català',
+  gl: 'Galego',
+  eu: 'Euskara',
 }
 
 export const LOCALE_FLAGS: Record<Locale, string> = {
@@ -18,6 +21,9 @@ export const LOCALE_FLAGS: Record<Locale, string> = {
   fr: '🇫🇷',
   de: '🇩🇪',
   pt: '🇵🇹',
+  ca: '🏴󠁥󠁳󠁣󠁴󠁿',
+  gl: '🏴󠁥󠁳󠁧󠁡󠁿',
+  eu: '🏴󠁥󠁳󠁰󠁶󠁿',
 }
 
 export const DEFAULT_LOCALE: Locale = 'es'
@@ -30,6 +36,9 @@ export const HTML_LANG: Record<Locale, string> = {
   fr: 'fr-FR',
   de: 'de-DE',
   pt: 'pt-PT',
+  ca: 'ca-ES',
+  gl: 'gl-ES',
+  eu: 'eu-ES',
 }
 
 export interface Dictionary {

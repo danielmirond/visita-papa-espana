@@ -6,22 +6,22 @@ const SITE_URL =
   process.env.SITE_URL ||
   'https://www.visita-papa-2026.es'
 
-const LOCALES = ['es', 'en', 'it', 'fr', 'de', 'pt']
+const LOCALES = ['es', 'en', 'it', 'fr', 'de', 'pt', 'ca', 'gl', 'eu']
 
 // Traducciones de rutas canónicas
 const ROUTE_TRANSLATIONS = {
-  programa: { es: 'programa', en: 'schedule', it: 'programma', fr: 'programme', de: 'programm', pt: 'programa' },
-  ciudades: { es: 'ciudades', en: 'cities', it: 'citta', fr: 'villes', de: 'staedte', pt: 'cidades' },
-  'como-asistir': { es: 'como-asistir', en: 'how-to-attend', it: 'come-partecipare', fr: 'comment-assister', de: 'teilnahme', pt: 'como-assistir' },
-  'como-llegar': { es: 'como-llegar', en: 'how-to-get-there', it: 'come-arrivare', fr: 'comment-s-y-rendre', de: 'anreise', pt: 'como-chegar' },
-  'donde-ver': { es: 'donde-ver', en: 'where-to-watch', it: 'dove-vedere', fr: 'ou-regarder', de: 'wo-ansehen', pt: 'onde-ver' },
-  mapa: { es: 'mapa', en: 'map', it: 'mappa', fr: 'carte', de: 'karte', pt: 'mapa' },
-  noticias: { es: 'noticias', en: 'news', it: 'notizie', fr: 'actualites', de: 'nachrichten', pt: 'noticias' },
-  guia: { es: 'guia', en: 'guides', it: 'guide', fr: 'guides', de: 'ratgeber', pt: 'guias' },
-  faq: { es: 'faq', en: 'faq', it: 'faq', fr: 'faq', de: 'faq', pt: 'faq' },
-  'aviso-legal': { es: 'aviso-legal', en: 'legal-notice', it: 'note-legali', fr: 'mentions-legales', de: 'impressum', pt: 'aviso-legal' },
-  privacidad: { es: 'privacidad', en: 'privacy', it: 'privacy', fr: 'confidentialite', de: 'datenschutz', pt: 'privacidade' },
-  'politica-cookies': { es: 'politica-cookies', en: 'cookies-policy', it: 'politica-cookie', fr: 'politique-cookies', de: 'cookie-richtlinie', pt: 'politica-cookies' },
+  programa: { es: 'programa', en: 'schedule', it: 'programma', fr: 'programme', de: 'programm', pt: 'programa', ca: 'programa', gl: 'programa', eu: 'egitaraua' },
+  ciudades: { es: 'ciudades', en: 'cities', it: 'citta', fr: 'villes', de: 'staedte', pt: 'cidades', ca: 'ciutats', gl: 'cidades', eu: 'hiriak' },
+  'como-asistir': { es: 'como-asistir', en: 'how-to-attend', it: 'come-partecipare', fr: 'comment-assister', de: 'teilnahme', pt: 'como-assistir', ca: 'com-assistir', gl: 'como-asistir', eu: 'nola-parte-hartu' },
+  'como-llegar': { es: 'como-llegar', en: 'how-to-get-there', it: 'come-arrivare', fr: 'comment-s-y-rendre', de: 'anreise', pt: 'como-chegar', ca: 'com-arribar', gl: 'como-chegar', eu: 'nola-heldu' },
+  'donde-ver': { es: 'donde-ver', en: 'where-to-watch', it: 'dove-vedere', fr: 'ou-regarder', de: 'wo-ansehen', pt: 'onde-ver', ca: 'on-veure', gl: 'onde-ver', eu: 'non-ikusi' },
+  mapa: { es: 'mapa', en: 'map', it: 'mappa', fr: 'carte', de: 'karte', pt: 'mapa', ca: 'mapa', gl: 'mapa', eu: 'mapa' },
+  noticias: { es: 'noticias', en: 'news', it: 'notizie', fr: 'actualites', de: 'nachrichten', pt: 'noticias', ca: 'noticies', gl: 'novas', eu: 'albisteak' },
+  guia: { es: 'guia', en: 'guides', it: 'guide', fr: 'guides', de: 'ratgeber', pt: 'guias', ca: 'guies', gl: 'guias', eu: 'gidak' },
+  faq: { es: 'faq', en: 'faq', it: 'faq', fr: 'faq', de: 'faq', pt: 'faq', ca: 'faq', gl: 'faq', eu: 'faq' },
+  'aviso-legal': { es: 'aviso-legal', en: 'legal-notice', it: 'note-legali', fr: 'mentions-legales', de: 'impressum', pt: 'aviso-legal', ca: 'avis-legal', gl: 'aviso-legal', eu: 'lege-oharra' },
+  privacidad: { es: 'privacidad', en: 'privacy', it: 'privacy', fr: 'confidentialite', de: 'datenschutz', pt: 'privacidade', ca: 'privacitat', gl: 'privacidade', eu: 'pribatutasuna' },
+  'politica-cookies': { es: 'politica-cookies', en: 'cookies-policy', it: 'politica-cookie', fr: 'politique-cookies', de: 'cookie-richtlinie', pt: 'politica-cookies', ca: 'politica-galetes', gl: 'politica-cookies', eu: 'cookie-politika' },
 }
 
 // Build reverse map: localized slug per locale → canonical key

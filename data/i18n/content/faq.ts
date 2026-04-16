@@ -172,6 +172,109 @@ const FAQ_CATEGORIES_PT = {
   evento: 'Sobre os atos',
 }
 
+// Catalán
+const faqCa: FaqItem[] = [
+  mk('general', 'Quan visitarà el Papa Lleó XIV Espanya?', 'El Papa Lleó XIV visitarà Espanya del 6 al 12 de juny de 2026. El recorregut inclou Madrid (6-8 juny), Barcelona (9-10 juny), Gran Canària (11 juny) i Tenerife (12 juny).'),
+  mk('general', 'Quin és el lema de la visita papal?', 'El lema oficial de la visita apostòlica és "Alceu la mirada", pres de l’Evangeli de Joan 4,35.'),
+  mk('general', 'És la primera vegada que un Papa visita Espanya?', 'No. Joan Pau II va visitar Espanya diverses vegades i Benet XVI el 2011. Però és la primera visita de Lleó XIV i la primera vegada en la història que un Papa visita les Illes Canàries.'),
+  mk('general', 'Quines ciutats visitarà el Papa?', 'El Papa visitarà quatre ciutats: Madrid, Barcelona (benedicció de la Torre de Jesús a la Sagrada Família), Gran Canària (focus en migració) i Tenerife (missa de clausura).'),
+  mk('general', 'Quina és la web oficial de la visita?', 'La web oficial és conelpapa.es. Per inscriure’s als actes de Madrid s’usa inscripciones.conelpapa.es.'),
+  mk('inscripcion', 'És gratuït assistir als actes del Papa?', 'Sí, tots els actes públics són completament gratuïts. Però cal inscripció prèvia a la web oficial per motius d’aforament i seguretat.'),
+  mk('inscripcion', 'Com m’inscric per assistir?', 'Has de registrar-te a la web oficial de cada ciutat. Per a Madrid, a inscripciones.conelpapa.es. Selecciona els actes, omple el formulari i rebràs una confirmació per email.'),
+  mk('inscripcion', 'Necessito entrada o invitació?', 'Per als actes públics (misses, vetlles) cal inscripció prèvia gratuïta. Alguns actes com el discurs al Congrés són només per invitació.'),
+  mk('inscripcion', 'Puc assistir amb nens?', 'Sí, els nens poden assistir als actes públics. Porta protecció solar, aigua i menjar. Els esdeveniments massius impliquen llargues esperes.'),
+  mk('inscripcion', 'Puc ser voluntari?', 'Sí. L’organització necessita milers de voluntaris. A Madrid es busquen 10.000. Pots inscriure’t a conelpapa.es.'),
+  mk('transporte', 'Com arribo a Madrid?', 'Les millors opcions són l’AVE des de les principals ciutats espanyoles o l’avió a l’Aeroport Adolfo Suárez Madrid-Barajas. Durant la visita es reforçarà Metro i Cercanies.'),
+  mk('transporte', 'Hi haurà talls de trànsit?', 'Sí, s’esperen importants talls al voltant dels actes. Es recomana el transport públic. A Madrid afectarà Cibeles, Castellana i Bernabéu.'),
+  mk('transporte', 'Com arribo a Canàries?', 'Només amb avió. Vols directes a Gran Canària (LPA) i Tenerife (TFN/TFS) des de Madrid i Barcelona. Entre illes hi ha vols de 30 min i ferris de 1h30.'),
+  mk('transporte', 'S’ampliarà l’horari del transport públic?', 'Sí. Metro, autobusos i cercanies ampliaran horaris i freqüències. Els detalls es publicaran setmanes abans.'),
+  mk('alojamiento', 'On m’allotjo a Madrid?', 'Les millors zones són Centre, Chamartín i Castellana. Reserva amb la màxima antelació per la gran demanda.'),
+  mk('alojamiento', 'Hi ha allotjament gratuït per a pelegrins?', 'Sí. Parròquies i col·legis religiosos ofereixen allotjament gratuït a través de la web oficial.'),
+  mk('alojamiento', 'On m’allotjo a Barcelona?', 'Les millors zones són l’Eixample (a prop de la Sagrada Família) i Sants. Reserva amb antelació per temporada alta.'),
+  mk('evento', 'Quins actes tenen lloc a la Sagrada Família?', 'El 10 de juny el Papa celebrarà missa solemne a la Basílica i, com a acte central, beneirà la Torre de Jesucrist de 172,5 metres. Coincideix amb el centenari de Gaudí.'),
+  mk('evento', 'Què és la vetlla de la Plaça de Lima?', 'El dissabte 6 de juny a les 20:00 es farà una gran vetlla juvenil a la Plaça de Lima. El Papa recorrerà la zona en papamòbil seguit de paraules i adoració eucarística.'),
+  mk('evento', 'Què passa al moll d’Arguineguín?', 'L’11 de juny el Papa visitarà el moll d’Arguineguín a Gran Canària, lloc simbòlic de la crisi migratòria a les Canàries.'),
+  mk('evento', 'Es pot veure la visita per televisió?', 'Sí. RTVE (La 1, La 2 i RTVE Play) retransmetrà tots els actes principals en directe i en obert. 13TV, TRECE i Vatican News també donaran cobertura.'),
+  mk('evento', 'Què passa si plou?', 'Els actes a l’aire lliure es faran tret de condicions meteorològiques extremes. Porta un paraigua plegable. Els actes en recintes tancats no es veuen afectats.'),
+  mk('evento', 'Què no puc portar als actes?', 'Per seguretat, no es permeten motxilles grans, objectes punxants, ampolles de vidre, drons ni paraigües llargs. Porta només l’imprescindible en una bossa petita.'),
+]
+
+// Gallego
+const faqGl: FaqItem[] = [
+  mk('general', 'Cando visitará o Papa León XIV a España?', 'O Papa León XIV visitará España do 6 ao 12 de xuño de 2026. O percorrido inclúe Madrid (6-8 xuño), Barcelona (9-10 xuño), Gran Canaria (11 xuño) e Tenerife (12 xuño).'),
+  mk('general', 'Cal é o lema da visita papal?', 'O lema oficial da visita apostólica é "Ergue o ollar", tomado do Evanxeo de Xoán 4,35.'),
+  mk('general', 'É a primeira vez que un Papa visita España?', 'Non. Xoán Paulo II visitou España varias veces e Bieito XVI en 2011. Pero é a primeira visita de León XIV e a primeira vez na historia que un Papa visita as Illas Canarias.'),
+  mk('general', 'Que cidades visitará o Papa?', 'O Papa visitará catro cidades: Madrid, Barcelona (bendición da Torre de Xesús na Sagrada Familia), Gran Canaria (enfoque en migración) e Tenerife (misa de clausura).'),
+  mk('general', 'Cal é a web oficial da visita?', 'A web oficial é conelpapa.es. Para inscribirse aos actos de Madrid úsase inscripciones.conelpapa.es.'),
+  mk('inscripcion', 'É gratuíto asistir aos actos do Papa?', 'Si, todos os actos públicos son totalmente gratuítos. Pero require inscrición previa na web oficial por motivos de aforo e seguridade.'),
+  mk('inscripcion', 'Como me inscribo para asistir?', 'Debes rexistrarte na web oficial de cada cidade. Para Madrid, en inscripciones.conelpapa.es. Selecciona os actos, completa o formulario e recibirás unha confirmación por email.'),
+  mk('inscripcion', 'Necesito entrada ou invitación?', 'Para os actos públicos (misas, vixilias) cómpre inscrición previa gratuíta. Algúns actos como o discurso no Congreso son só por invitación.'),
+  mk('inscripcion', 'Podo asistir con nenos?', 'Si, os nenos poden asistir aos actos públicos. Leva protección solar, auga e comida. Os eventos masivos implican longas esperas.'),
+  mk('inscripcion', 'Podo ser voluntario?', 'Si. A organización precisa miles de voluntarios. En Madrid búscanse 10.000. Podes inscribirte en conelpapa.es.'),
+  mk('transporte', 'Como chego a Madrid?', 'As mellores opcións son o AVE dende as principais cidades españolas ou o avión ao Aeroporto Adolfo Suárez Madrid-Barajas. Durante a visita reforzarase Metro e Cercanías.'),
+  mk('transporte', 'Haberá cortes de tráfico?', 'Si, espéranse importantes cortes arredor dos actos. Recoméndase o transporte público. En Madrid afectará Cibeles, Castellana e Bernabéu.'),
+  mk('transporte', 'Como chego a Canarias?', 'Só en avión. Voos directos a Gran Canaria (LPA) e Tenerife (TFN/TFS) dende Madrid e Barcelona. Entre illas hai voos de 30 min e ferries de 1h30.'),
+  mk('transporte', 'Ampliarase o horario do transporte público?', 'Si. Metro, autobuses e cercanías ampliarán horarios e frecuencias. Os detalles publicaranse semanas antes.'),
+  mk('alojamiento', 'Onde me aloxo en Madrid?', 'As mellores zonas son Centro, Chamartín e Castellana. Reserva coa máxima antelación pola gran demanda.'),
+  mk('alojamiento', 'Hai aloxamento gratuíto para peregrinos?', 'Si. Parroquias e colexios relixiosos ofrecen aloxamento gratuíto a través da web oficial.'),
+  mk('alojamiento', 'Onde me aloxo en Barcelona?', 'As mellores zonas son o Eixample (preto da Sagrada Familia) e Sants. Reserva con antelación pola temporada alta.'),
+  mk('evento', 'Que actos teñen lugar na Sagrada Familia?', 'O 10 de xuño o Papa celebrará misa solemne na Basílica e, como acto central, bendecirá a Torre de Xesucristo de 172,5 metros. Coincide co centenario de Gaudí.'),
+  mk('evento', 'Que é a vixilia da Plaza de Lima?', 'O sábado 6 de xuño ás 20:00 celebrarase unha gran vixilia xuvenil na Plaza de Lima. O Papa percorrerá a zona en papamóbil seguido de palabras e adoración eucarística.'),
+  mk('evento', 'Que pasa no peirao de Arguineguín?', 'O 11 de xuño o Papa visitará o peirao de Arguineguín en Gran Canaria, lugar simbólico da crise migratoria nas Canarias.'),
+  mk('evento', 'Pódese ver a visita por televisión?', 'Si. RTVE (La 1, La 2 e RTVE Play) retransmitirá todos os actos principais en directo e en aberto. 13TV, TRECE e Vatican News tamén darán cobertura.'),
+  mk('evento', 'Que pasa se chove?', 'Os actos ao aire libre celebraranse salvo condicións meteorolóxicas extremas. Leva un paraugas pregable. Os actos en recintos pechados non se ven afectados.'),
+  mk('evento', 'Que non podo levar aos actos?', 'Por seguridade, non se permiten mochilas grandes, obxectos punzantes, botellas de vidro, drons nin paraugas longos. Leva só o imprescindible nunha bolsa pequena.'),
+]
+
+// Euskera
+const faqEu: FaqItem[] = [
+  mk('general', 'Noiz bisitatuko du Leon XIV.a Aita Santuak Espainia?', 'Leon XIV.a Aita Santuak 2026ko ekainaren 6tik 12ra bisitatuko du Espainia. Ibilbideak Madrid (ekainak 6-8), Bartzelona (ekainak 9-10), Gran Canaria (ekainak 11) eta Tenerife (ekainak 12) biltzen ditu.'),
+  mk('general', 'Zein da bisitaldi papalaren leloa?', 'Bisitaldi apostolikoaren lelo ofiziala "Altxatu begirada" da, Joan 4,35etik hartua.'),
+  mk('general', 'Aita Santu batek Espainia bisitatzen duen lehen aldia al da?', 'Ez. Joan Paulo II.ak Espainia hainbat aldiz bisitatu zuen eta Benedikto XVI.ak 2011n. Hala ere, Leon XIV.aren lehen bisitaldia da eta historian Aita Santu batek Kanariak bisitatzen dituen lehen aldia.'),
+  mk('general', 'Zein hiri bisitatuko ditu Aita Santuak?', 'Aita Santuak lau hiri bisitatuko ditu: Madril, Bartzelona (Jesukristo Dorrearen bedeinkazioa Sagrada Familian), Gran Canaria (migrazioan enfokatua) eta Tenerife (itxiera meza).'),
+  mk('general', 'Zein da bisitaldiaren webgune ofiziala?', 'Webgune ofiziala conelpapa.es da. Madrilgo ekitaldietara izena emateko inscripciones.conelpapa.es erabiltzen da.'),
+  mk('inscripcion', 'Doakoa al da Aita Santuaren ekitaldietara joatea?', 'Bai, ekitaldi publiko guztiak erabat doakoak dira. Hala ere, aldez aurretik izena eman behar da webgune ofizialean, edukiera eta segurtasun arrazoiengatik.'),
+  mk('inscripcion', 'Nola eman dezaket izena?', 'Hiri bakoitzaren webgune ofizialean erregistratu behar duzu. Madrilerako, inscripciones.conelpapa.es helbidean. Hautatu ekitaldiak, bete inprimakia eta berrespena jasoko duzu emailez.'),
+  mk('inscripcion', 'Sarrera edo gonbidapena behar dut?', 'Ekitaldi publikoetarako (mezak, bijiliak) aldez aurretiko izen-ematea behar da. Ekitaldi batzuk, hala nola Kongresuko hitzaldia, gonbidapenez soilik dira.'),
+  mk('inscripcion', 'Haurrekin joan naiteke?', 'Bai, haurrak ekitaldi publikoetara joan daitezke. Eraman eguzki-babesa, ura eta jana. Ekitaldi masiboek itxaronaldi luzeak dakartzate.'),
+  mk('inscripcion', 'Boluntarioa izan naiteke?', 'Bai. Antolakuntzak milaka boluntario behar ditu. Madrilen 10.000 bilatzen dira. conelpapa.es helbidean eman dezakezu izena.'),
+  mk('transporte', 'Nola heldu naiz Madrilera?', 'Aukerarik onenak AVEa dira Espainiako hiri nagusietatik edo hegaldia Adolfo Suárez Madrid-Barajas aireportura. Bisitaldian zehar Metroa eta Cercanías indartu egingo dira.'),
+  mk('transporte', 'Trafiko-murrizketarik egongo al da?', 'Bai, ekitaldien inguruan murrizketa handiak espero dira. Garraio publikoa gomendatzen da. Madrilen Cibeles, Castellana eta Bernabéu izango dira kaltetuak.'),
+  mk('transporte', 'Nola heldu naiz Kanarietara?', 'Hegazkinez soilik. Zuzeneko hegaldiak Gran Canariara (LPA) eta Tenerifera (TFN/TFS) Madriletik eta Bartzelonatik. Uharteen artean 30 minutuko hegaldiak eta 1h30eko ferryak daude.'),
+  mk('transporte', 'Garraio publikoaren ordutegia luzatuko al da?', 'Bai. Metroak, autobusek eta Cercaníasek ordutegiak eta maiztasunak luzatuko dituzte. Xehetasunak aste batzuk lehenago argitaratuko dira.'),
+  mk('alojamiento', 'Non ostatu hartu Madrilen?', 'Eremu onenak Centro, Chamartín eta Castellana dira. Erreserbatu ahalik eta lasterren, eskaera handia dela eta.'),
+  mk('alojamiento', 'Ba al dago erromesen doako ostaturik?', 'Bai. Parrokiek eta ikastetxe erlijiosoek doako ostatua eskaintzen dute webgune ofizialaren bidez.'),
+  mk('alojamiento', 'Non ostatu hartu Bartzelonan?', 'Eremu onenak Eixamplea (Sagrada Familiatik gertu) eta Sants dira. Erreserbatu aldez aurretik turismo-denboraldia baita.'),
+  mk('evento', 'Zer ekitaldi egiten dira Sagrada Familian?', 'Ekainaren 10ean Aita Santuak meza solemnea emango du Basilikan eta, ekitaldi nagusi gisa, 172,5 metroko Jesukristo Dorrea bedeinkatuko du. Gaudíren mendeurrenarekin bat egiten du.'),
+  mk('evento', 'Zer da Lima plazako bijilia?', 'Larunbatean, ekainak 6, 20:00etan gazteen bijilia handia egingo da Lima plazan. Aita Santuak papamobilean ibiliko da eremuan zehar, ondoren hitzak esango ditu eta adorazio eukaristikoa egingo da.'),
+  mk('evento', 'Zer gertatzen da Arguineguíngo kaian?', 'Ekainaren 11n Aita Santuak Arguineguíngo kaia bisitatuko du Gran Canarian, Kanarietako migrazio-krisiaren toki sinbolikoa.'),
+  mk('evento', 'Telebistaz ikus al daiteke bisitaldia?', 'Bai. RTVEk (La 1, La 2 eta RTVE Play) ekitaldi nagusi guztiak zuzenean eta libreki emango ditu. 13TV, TRECE eta Vatican News-ek ere estaldura emango dute.'),
+  mk('evento', 'Zer gertatzen da euria eginez gero?', 'Aire zabaleko ekitaldiak egingo dira, baldintza meteorologiko muturrekoak direnean izan ezik. Eraman tolesgarri euritakoa. Itxitako guneetako ekitaldiei ez zaie eragiten.'),
+  mk('evento', 'Zer ezin dut eraman ekitaldietara?', 'Segurtasunagatik, ez dira onartzen motxila handiak, objektu zorrotzak, kristalezko botilak, droneak edo euritakoak. Eraman behar-beharrezkoa soilik poltsa txiki batean.'),
+]
+
+const FAQ_CATEGORIES_CA = {
+  general: 'Informació general',
+  inscripcion: 'Inscripció i accés',
+  transporte: 'Transport',
+  alojamiento: 'Allotjament',
+  evento: 'Sobre els actes',
+}
+const FAQ_CATEGORIES_GL = {
+  general: 'Información xeral',
+  inscripcion: 'Inscrición e acceso',
+  transporte: 'Transporte',
+  alojamiento: 'Aloxamento',
+  evento: 'Sobre os actos',
+}
+const FAQ_CATEGORIES_EU = {
+  general: 'Informazio orokorra',
+  inscripcion: 'Izen-ematea eta sarrera',
+  transporte: 'Garraioa',
+  alojamiento: 'Ostatua',
+  evento: 'Ekitaldiei buruz',
+}
+
 const faqMap: Record<Locale, FaqItem[]> = {
   es: faqEs,
   en: faqEn,
@@ -179,6 +282,9 @@ const faqMap: Record<Locale, FaqItem[]> = {
   fr: faqFr,
   de: faqDe,
   pt: faqPt,
+  ca: faqCa,
+  gl: faqGl,
+  eu: faqEu,
 }
 
 const catMap: Record<Locale, typeof CATEGORIES_ES> = {
@@ -188,6 +294,9 @@ const catMap: Record<Locale, typeof CATEGORIES_ES> = {
   fr: FAQ_CATEGORIES_FR,
   de: FAQ_CATEGORIES_DE,
   pt: FAQ_CATEGORIES_PT,
+  ca: FAQ_CATEGORIES_CA,
+  gl: FAQ_CATEGORIES_GL,
+  eu: FAQ_CATEGORIES_EU,
 }
 
 export function getFaqByLocale(locale: Locale): FaqItem[] {
