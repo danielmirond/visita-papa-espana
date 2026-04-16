@@ -1,5 +1,10 @@
 /** @type {import('next-sitemap').IConfig} */
-const SITE_URL = process.env.SITE_URL || 'https://www.visita-papa-2026.es'
+// CANONICAL_URL tiene prioridad: cuando actives el .com, las URLs del
+// sitemap apuntarán al .com automáticamente.
+const SITE_URL =
+  process.env.CANONICAL_URL ||
+  process.env.SITE_URL ||
+  'https://www.visita-papa-2026.es'
 
 const LOCALES = ['es', 'en', 'it', 'fr', 'de', 'pt']
 

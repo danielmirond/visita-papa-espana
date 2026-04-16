@@ -3,7 +3,6 @@ import { LOCALES, DEFAULT_LOCALE, type Locale } from '@/data/i18n/types'
 
 function getBrowserLocale(request: NextRequest): Locale {
   const acceptLanguage = request.headers.get('accept-language') || ''
-  // Parse: "es-ES,es;q=0.9,en;q=0.8" → ['es', 'en']
   const parts = acceptLanguage
     .split(',')
     .map((p) => p.trim().split(';')[0].toLowerCase().slice(0, 2))
@@ -16,7 +15,7 @@ function getBrowserLocale(request: NextRequest): Locale {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  // Skip: assets, API, etc
+  // Skip: assets, API, etc.
   if (
     pathname.startsWith('/_next') ||
     pathname.startsWith('/api') ||
@@ -35,19 +34,31 @@ export function middleware(request: NextRequest) {
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
   )
   if (hasLocale) {
-    return NextResponse.next()
+    const response = NextResponse.next()
+    // Ayuda a cachés y a Google a saber que la respuesta varía por idioma
+    response.headers.set('Vary', 'Accept-Language')
+    return response
   }
 
-  // Raíz o ruta sin locale: redirigir al idioma detectado
+  // Raíz o ruta sin locale: redirigir al idioma detectado.
+  //
+  // Nota sobre el status code:
+  //   - 307 sería semánticamente correcto si el destino depende del
+  //     Accept-Language del cliente (distintos usuarios → distintos destinos).
+  //   - 302 con Vary: Accept-Language es la opción preferida por Google Search.
+  //   - NO usamos 301/308 (permanente) porque el destino no es fijo: un mismo
+  //     usuario con otro idioma del navegador iría a otra URL.
+  //
+  // Para el redirect .es → .com (dominio completo) SÍ se usa 308 (= 301 SEO)
+  // y se configura en Vercel Dashboard → Settings → Domains.
   const detectedLocale = getBrowserLocale(request)
-  const redirectUrl = new URL(
-    pathname === '/' ? `/${detectedLocale}` : `/${detectedLocale}${pathname}`,
-    request.url
-  )
-  // Preservar query string
+  const target = pathname === '/' ? `/${detectedLocale}` : `/${detectedLocale}${pathname}`
+  const redirectUrl = new URL(target, request.url)
   redirectUrl.search = request.nextUrl.search
 
-  return NextResponse.redirect(redirectUrl, 307)
+  const response = NextResponse.redirect(redirectUrl, 302)
+  response.headers.set('Vary', 'Accept-Language')
+  return response
 }
 
 export const config = {
