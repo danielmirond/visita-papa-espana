@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -21,7 +21,24 @@ const playfair = Playfair_Display({
   preload: true,
 })
 
+export const viewport: Viewport = {
+  themeColor: '#1B2A4A',
+  width: 'device-width',
+  initialScale: 1,
+}
+
+/**
+ * Metadata a nivel de layout: NO incluye canonical ni alternates.
+ * Cada página los define con getAlternates(path, locale).
+ *
+ * Solo contiene:
+ * - título / descripción por defecto
+ * - iconos, manifest
+ * - verificación Search Console
+ * - robots
+ */
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.shortName}`,
@@ -45,26 +62,44 @@ export const metadata: Metadata = {
     siteName: siteConfig.shortName,
     locale: 'es_ES',
     type: 'website',
+    images: [
+      {
+        url: '/images/hero/papa-leon-xiv.webp',
+        width: 1200,
+        height: 800,
+        alt: 'Papa León XIV',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: ['/images/hero/papa-leon-xiv.webp'],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
   },
-  alternates: {
-    canonical: `${siteConfig.url}/es`,
-    languages: {
-      'es-ES': `${siteConfig.url}/es`,
-      'en-GB': `${siteConfig.url}/en`,
-      'it-IT': `${siteConfig.url}/it`,
-      'fr-FR': `${siteConfig.url}/fr`,
-      'de-DE': `${siteConfig.url}/de`,
-      'pt-PT': `${siteConfig.url}/pt`,
-      'x-default': siteConfig.url,
-    },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
   },
+  manifest: '/manifest.json',
 }
 
 const websiteJsonLd = {
@@ -84,7 +119,13 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <link rel="preload" href="/images/hero/papa-leon-xiv.webp" as="image" type="image/webp" fetchPriority="high" />
+        <link
+          rel="preload"
+          href="/images/hero/papa-leon-xiv.webp"
+          as="image"
+          type="image/webp"
+          fetchPriority="high"
+        />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#1B2A4A"/>
+  <!-- Cruz papal (3 travesaños) -->
+  <g fill="#D4AF37">
+    <!-- Vertical -->
+    <rect x="29" y="10" width="6" height="44" rx="1"/>
+    <!-- Travesaño superior (pequeño) -->
+    <rect x="22" y="18" width="20" height="5" rx="1"/>
+    <!-- Travesaño medio -->
+    <rect x="18" y="28" width="28" height="5" rx="1"/>
+    <!-- Travesaño inferior (pequeño) -->
+    <rect x="24" y="38" width="16" height="5" rx="1"/>
+  </g>
+</svg>
