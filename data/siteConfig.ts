@@ -1,17 +1,15 @@
 /**
  * Dominio canónico PREFERIDO: el que queremos que Google indexe.
- * Hoy usamos .es porque es el que está activo. En cuanto el .com esté
- * configurado en Vercel y con DNS propagado, cambiar aquí (o usar la
- * variable de entorno CANONICAL_URL) y automáticamente:
- *   - Todos los <link rel="canonical"> apuntarán al .com
- *   - Todos los hreflang apuntarán al .com
- *   - El sitemap se regenera con URLs .com
- *   - Los metadatos OpenGraph apuntarán al .com
  *
- * El .es debe configurarse en Vercel como "Redirect to" al .com con
- * status 308 (equivalente a 301 permanente para SEO).
+ * www.visita-papa-2026.com es el dominio canónico único. Todos los
+ * demás (visita-papa-2026.com, visita-papa-2026.es, www.visita-papa-2026.es)
+ * redirigen aquí con 301 (configurado en next.config.js).
+ *
+ * Esto garantiza que los canonical, hreflang, sitemap y OG apunten
+ * siempre al .com. Si en el futuro cambia el dominio canónico, basta
+ * con modificar CANONICAL_URL en Vercel env vars.
  */
-const CANONICAL_URL = process.env.CANONICAL_URL || 'https://www.visita-papa-2026.es'
+const CANONICAL_URL = process.env.CANONICAL_URL || 'https://www.visita-papa-2026.com'
 
 /**
  * Dominio desde el que se sirve la aplicación actualmente.

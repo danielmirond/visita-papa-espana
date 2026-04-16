@@ -1,32 +1,45 @@
 /** @type {import('next').NextConfig} */
 
-// Redirect permanente (308 = 301 SEO) del dominio legacy al canónico.
-// Se activa con REDIRECT_LEGACY_DOMAIN=visita-papa-2026.es (el dominio antiguo).
-// El destino es siempre el dominio canónico definido en CANONICAL_URL.
-//
-// NOTA: la forma MÁS RECOMENDADA es configurar esto en Vercel Dashboard
-// (Settings → Domains → seleccionar .es → "Redirect to" .com con
-// "Preserve paths" y status 308). Esto lo hace a nivel de edge antes
-// de llegar a la función. Este redirect en next.config.js es una
-// alternativa/refuerzo.
-const LEGACY_HOST = process.env.REDIRECT_LEGACY_DOMAIN // ej: 'visita-papa-2026.es'
-const CANONICAL_HOST = process.env.CANONICAL_HOST // ej: 'www.visita-papa-2026.com'
+/**
+ * Redirects 301 de dominio canónico.
+ *
+ * Estructura final:
+ *   https://www.visita-papa-2026.com ← destino canónico ÚNICO
+ *   https://visita-papa-2026.com     → 301 → www.visita-papa-2026.com (canonicalizar a www)
+ *   https://www.visita-papa-2026.es  → 301 → www.visita-papa-2026.com (dominio legacy)
+ *   https://visita-papa-2026.es      → 301 → www.visita-papa-2026.com
+ *
+ * statusCode: 301 explícito (no `permanent: true` que genera 308).
+ * Preserve paths: el /:path* en source y destination lo garantiza.
+ *
+ * Ambos dominios están en el mismo proyecto Vercel, así que todos los
+ * requests llegan a esta función y se redirigen antes de servir contenido.
+ */
+const CANONICAL_HOST = 'www.visita-papa-2026.com'
 
-const legacyRedirects = []
-if (LEGACY_HOST && CANONICAL_HOST) {
-  legacyRedirects.push({
+const domainRedirects = [
+  // Legacy .es → .com (con www)
+  {
     source: '/:path*',
-    has: [{ type: 'host', value: LEGACY_HOST }],
+    has: [{ type: 'host', value: 'www.visita-papa-2026.es' }],
     destination: `https://${CANONICAL_HOST}/:path*`,
-    permanent: true, // 308 (301 SEO)
-  })
-  legacyRedirects.push({
+    statusCode: 301,
+  },
+  // Legacy .es → .com (sin www)
+  {
     source: '/:path*',
-    has: [{ type: 'host', value: `www.${LEGACY_HOST}` }],
+    has: [{ type: 'host', value: 'visita-papa-2026.es' }],
     destination: `https://${CANONICAL_HOST}/:path*`,
-    permanent: true,
-  })
-}
+    statusCode: 301,
+  },
+  // Canonicalizar .com: sin www → con www
+  {
+    source: '/:path*',
+    has: [{ type: 'host', value: 'visita-papa-2026.com' }],
+    destination: `https://${CANONICAL_HOST}/:path*`,
+    statusCode: 301,
+  },
+]
 
 const nextConfig = {
   compress: true,
@@ -58,7 +71,7 @@ const nextConfig = {
   },
 
   async redirects() {
-    return [...legacyRedirects]
+    return [...domainRedirects]
   },
 
   reactStrictMode: true,
