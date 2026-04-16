@@ -1,94 +1,146 @@
-'use client'
+import Link from 'next/link'
+import { getNewsByLocale } from '@/data/i18n/content/news'
+import { type Locale } from '@/data/i18n/types'
+import { localizePath } from '@/data/i18n/routes'
+import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 
-import { useEffect } from 'react'
+/**
+ * "Feed social" auto-hospedado.
+ *
+ * Sustituye los widgets rotos de Twitter e Instagram por tarjetas
+ * estilo red social alimentadas por las noticias RSS que importamos
+ * a diario (Alfa y Omega, Conferencia Episcopal, Vatican News).
+ *
+ * Ventajas frente al widget oficial:
+ * - Nunca se rompe (sin dependencias de terceros)
+ * - Sin cookies de terceros
+ * - Sin ad-blockers
+ * - Misma estética en los 9 idiomas
+ * - Carga instantánea (server component, sin JS cliente)
+ */
 
 interface Props {
-  platform: 'twitter' | 'instagram'
+  locale: Locale
+  limit?: number
   className?: string
 }
 
-export default function SocialFeed({ platform, className = '' }: Props) {
-  useEffect(() => {
-    if (platform !== 'twitter') return
-    const existingScript = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]')
-    if (existingScript) {
-      // Si ya existe, disparar re-escaneo
-      ;(window as any).twttr?.widgets?.load?.()
-      return
-    }
-    const script = document.createElement('script')
-    script.src = 'https://platform.twitter.com/widgets.js'
-    script.async = true
-    script.charset = 'utf-8'
-    document.body.appendChild(script)
-  }, [platform])
+const SOURCE_META: Record<string, { handle: string; avatar: string; color: string }> = {
+  'Alfa y Omega': {
+    handle: '@alfayomegasem',
+    avatar: 'A',
+    color: 'from-blue-600 to-blue-800',
+  },
+  'Conferencia Episcopal Española': {
+    handle: '@eiglesiaes',
+    avatar: 'C',
+    color: 'from-red-600 to-red-800',
+  },
+  'Vatican News': {
+    handle: '@VaticanNews',
+    avatar: 'V',
+    color: 'from-papal-gold-dark to-papal-gold',
+  },
+  'Oficina de Prensa de la Santa Sede': {
+    handle: '@HolySeePress',
+    avatar: 'S',
+    color: 'from-papal-navy to-papal-navy-light',
+  },
+  'Archidiócesis de Madrid': {
+    handle: '@archimadrid',
+    avatar: 'M',
+    color: 'from-red-700 to-red-900',
+  },
+}
 
-  if (platform === 'twitter') {
-    return (
-      <div className={`overflow-hidden rounded-xl border border-papal-gold/20 bg-white ${className}`}>
-        <div className="border-b border-papal-gold/10 bg-papal-cream px-4 py-3">
-          <h3 className="font-heading text-sm font-bold text-papal-navy">
-            Vatican News en X
-          </h3>
-        </div>
-        <div className="max-h-[500px] overflow-y-auto p-2">
-          <a
-            className="twitter-timeline"
-            data-height="480"
-            data-chrome="noheader nofooter noborders transparent"
-            data-theme="light"
-            data-lang="es"
-            href="https://twitter.com/vaticannews_es"
-          >
-            Cargando publicaciones de @vaticannews_es...
-          </a>
-        </div>
-      </div>
-    )
+function formatRelativeDate(isoDate: string, locale: Locale): string {
+  const d = new Date(isoDate + 'T12:00:00')
+  const now = new Date()
+  const diffMs = now.getTime() - d.getTime()
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24))
+
+  if (diffDays < 1) {
+    return ({ es: 'Hoy', en: 'Today', it: 'Oggi', fr: "Aujourd'hui", de: 'Heute', pt: 'Hoje', ca: 'Avui', gl: 'Hoxe', eu: 'Gaur' } as Record<Locale, string>)[locale]
   }
-
-  if (platform === 'instagram') {
-    // Instagram no permite embeber perfiles, solo posts individuales.
-    // Mostramos una tarjeta de enlace elegante al perfil oficial.
-    return (
-      <div className={`overflow-hidden rounded-xl border border-papal-gold/20 bg-white ${className}`}>
-        <div className="border-b border-papal-gold/10 bg-papal-cream px-4 py-3">
-          <h3 className="font-heading text-sm font-bold text-papal-navy">
-            Instagram del Vaticano
-          </h3>
-        </div>
-        <div className="flex min-h-[480px] flex-col items-center justify-center gap-4 p-8 text-center">
-          <div className="flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-papal-gold/30 bg-papal-cream">
-            <svg viewBox="0 0 24 24" fill="none" className="h-10 w-10 text-papal-gold" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M12 2.5c-2.58 0-2.9.01-3.91.06-1.01.05-1.7.2-2.3.44-.62.24-1.14.56-1.67 1.08-.52.53-.84 1.05-1.08 1.67-.23.6-.39 1.29-.44 2.3C2.51 9.1 2.5 9.42 2.5 12s.01 2.9.06 3.91c.05 1.01.2 1.7.44 2.3.24.62.56 1.14 1.08 1.67.53.52 1.05.84 1.67 1.08.6.23 1.29.39 2.3.44 1.01.05 1.33.06 3.91.06s2.9-.01 3.91-.06c1.01-.05 1.7-.2 2.3-.44.62-.24 1.14-.56 1.67-1.08.52-.53.84-1.05 1.08-1.67.23-.6.39-1.29.44-2.3.05-1.01.06-1.33.06-3.91s-.01-2.9-.06-3.91c-.05-1.01-.2-1.7-.44-2.3a4.6 4.6 0 00-1.08-1.67 4.6 4.6 0 00-1.67-1.08c-.6-.23-1.29-.39-2.3-.44C14.9 2.51 14.58 2.5 12 2.5z" />
-              <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5" />
-              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
-            </svg>
-          </div>
-          <div>
-            <p className="font-heading text-lg font-bold text-papal-navy">@franciscus</p>
-            <p className="mt-1 text-sm text-papal-navy/60">Cuenta oficial del Papa en Instagram</p>
-          </div>
-          <a
-            href="https://www.instagram.com/franciscus/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg bg-papal-gold px-5 py-2 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
-          >
-            Ver en Instagram
-          </a>
-          <a
-            href="https://www.instagram.com/vaticannews.es/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-papal-navy/60 hover:text-papal-gold hover:underline"
-          >
-            También: @vaticannews.es
-          </a>
-        </div>
-      </div>
-    )
+  if (diffDays === 1) {
+    return ({ es: 'Ayer', en: 'Yesterday', it: 'Ieri', fr: 'Hier', de: 'Gestern', pt: 'Ontem', ca: 'Ahir', gl: 'Onte', eu: 'Atzo' } as Record<Locale, string>)[locale]
   }
+  if (diffDays < 7) {
+    const label = ({ es: 'hace', en: 'ago', it: 'fa', fr: 'il y a', de: 'vor', pt: 'há', ca: 'fa', gl: 'hai', eu: 'duela' } as Record<Locale, string>)[locale]
+    const d = ({ es: 'd', en: 'd', it: 'g', fr: 'j', de: 'T', pt: 'd', ca: 'd', gl: 'd', eu: 'e' } as Record<Locale, string>)[locale]
+    return `${label} ${diffDays}${d}`
+  }
+  return d.toLocaleDateString(locale === 'eu' ? 'eu-ES' : locale)
+}
 
-  return null
+export default function SocialFeed({ locale, limit = 6, className = '' }: Props) {
+  const t = getPagesDict(locale)
+  const news = getNewsByLocale(locale).slice(0, limit)
+
+  return (
+    <div className={`overflow-hidden rounded-xl border border-papal-gold/20 bg-white ${className}`}>
+      <div className="border-b border-papal-gold/10 bg-papal-cream px-5 py-3">
+        <h3 className="font-heading text-base font-bold text-papal-navy">
+          {t.home.dayByDayTitle === 'Programa día a día' ? 'Últimas publicaciones' : t.home.viewAllNews}
+        </h3>
+      </div>
+      <div className="max-h-[560px] overflow-y-auto divide-y divide-gray-100">
+        {news.map((article) => {
+          const meta =
+            SOURCE_META[article.source || ''] || {
+              handle: '@source',
+              avatar: article.source?.[0] || '?',
+              color: 'from-papal-navy to-papal-navy-light',
+            }
+
+          return (
+            <Link
+              key={article.slug}
+              href={localizePath(`/noticias/${article.slug}`, locale)}
+              className="group block p-4 transition-colors hover:bg-papal-cream/30"
+            >
+              <div className="flex gap-3">
+                {/* Avatar */}
+                <div
+                  className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${meta.color} font-heading text-sm font-bold text-white`}
+                  aria-hidden="true"
+                >
+                  {meta.avatar}
+                </div>
+
+                {/* Contenido */}
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-baseline gap-x-2">
+                    <span className="font-heading text-sm font-bold text-papal-navy">
+                      {article.source || ''}
+                    </span>
+                    <span className="text-xs text-papal-navy/40">{meta.handle}</span>
+                    <span className="text-xs text-papal-navy/30">·</span>
+                    <span className="text-xs text-papal-navy/40">
+                      {formatRelativeDate(article.date, locale)}
+                    </span>
+                  </div>
+                  <p className="mt-1 text-sm font-medium text-papal-navy group-hover:text-papal-gold-dark">
+                    {article.title}
+                  </p>
+                  <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-papal-navy/60">
+                    {article.excerpt}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          )
+        })}
+      </div>
+
+      <div className="border-t border-gray-100 bg-gray-50 px-5 py-2.5 text-center">
+        <Link
+          href={localizePath('/noticias', locale)}
+          className="text-xs font-medium text-papal-gold hover:underline"
+        >
+          {t.home.viewAllNews} →
+        </Link>
+      </div>
+    </div>
+  )
 }

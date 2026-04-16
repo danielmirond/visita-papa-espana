@@ -5,9 +5,7 @@ import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
 import NewsletterForm from '@/components/shared/NewsletterForm'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
-import dynamic from 'next/dynamic'
-
-const SocialFeed = dynamic(() => import('@/components/shared/SocialFeed'), { ssr: false, loading: () => <div className="h-[500px] rounded-xl border border-papal-gold/20 bg-papal-cream animate-pulse" /> })
+import SocialFeed from '@/components/shared/SocialFeed'
 import { cities, getCityBySlug } from '@/data/cities'
 import { getScheduleByCity } from '@/data/schedule'
 import { getAffiliatesByCategory } from '@/data/affiliates'
@@ -228,8 +226,8 @@ export default function CityPage({ params }: Props) {
             {/* Newsletter */}
             <NewsletterForm variant="inline" />
 
-            {/* Twitter */}
-            <SocialFeed platform="twitter" />
+            {/* Últimas publicaciones */}
+            <SocialFeed locale="es" limit={4} />
           </aside>
         </div>
       </Container>

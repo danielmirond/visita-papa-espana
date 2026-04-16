@@ -28,12 +28,10 @@ const CountdownTimer = dynamic(() => import('@/components/home/CountdownTimer'),
   ),
 })
 
-const SocialFeed = dynamic(() => import('@/components/shared/SocialFeed'), {
-  ssr: false,
-  loading: () => (
-    <div className="h-[500px] rounded-xl border border-papal-gold/20 bg-papal-cream animate-pulse" />
-  ),
-})
+// SocialFeed ahora es server component (ex widget Twitter/Instagram
+// que dependían de terceros y no funcionaban). Se renderiza en SSR
+// con las noticias del RSS diario importadas.
+import SocialFeed from '@/components/shared/SocialFeed'
 
 const CITY_COLORS: Record<string, string> = {
   madrid: 'from-papal-navy to-papal-navy-light',
@@ -305,15 +303,14 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* Redes sociales */}
+      {/* Últimas publicaciones (feed propio alimentado por RSS) */}
       <section className="section-padding">
         <Container>
           <h2 className="mb-8 text-center font-heading text-3xl font-bold text-papal-navy">
             {dict.home.fromVatican}
           </h2>
-          <div className="grid gap-6 lg:grid-cols-2">
-            <SocialFeed platform="twitter" />
-            <SocialFeed platform="instagram" />
+          <div className="mx-auto max-w-2xl">
+            <SocialFeed locale={locale} limit={8} />
           </div>
         </Container>
       </section>
