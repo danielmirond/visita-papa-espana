@@ -51,6 +51,17 @@ type PagesExt = {
     fullGuideBtn: string
     month3letter: string     // "jun" / "Jun"
   }
+  shop: {
+    title: string
+    subtitle: string
+    all: string
+    disclaimer: string
+    categoryMerch: string
+    categoryReligioso: string
+    categoryLibros: string
+    categorySouvenirs: string
+    categoryRopa: string
+  }
 }
 
 const es: PagesExt = {
@@ -103,6 +114,18 @@ const es: PagesExt = {
     registerBtn: 'Inscribirse en Madrid',
     fullGuideBtn: 'Guía completa',
     month3letter: 'jun',
+  },
+  shop: {
+    title: 'Tienda',
+    subtitle: 'Recuerdos oficiales de la visita, artículos religiosos y libros',
+    all: 'Todo',
+    disclaimer:
+      'Algunos productos son de afiliación (Amazon y otros): al comprar recibimos una pequeña comisión sin coste adicional para usted. Los productos marcados como "Oficial" son merchandising propio de la visita.',
+    categoryMerch: 'Recuerdos de la visita',
+    categoryReligioso: 'Artículos religiosos',
+    categoryLibros: 'Libros',
+    categorySouvenirs: 'Souvenirs',
+    categoryRopa: 'Ropa',
   },
 }
 
@@ -157,6 +180,18 @@ const en: PagesExt = {
     fullGuideBtn: 'Full guide',
     month3letter: 'Jun',
   },
+  shop: {
+    title: 'Shop',
+    subtitle: 'Official visit memorabilia, religious items and books',
+    all: 'All',
+    disclaimer:
+      'Some products are affiliate links (Amazon and others): we receive a small commission at no additional cost to you. Products marked as "Official" are proprietary merchandise of the visit.',
+    categoryMerch: 'Visit memorabilia',
+    categoryReligioso: 'Religious items',
+    categoryLibros: 'Books',
+    categorySouvenirs: 'Souvenirs',
+    categoryRopa: 'Clothing',
+  },
 }
 
 const it: PagesExt = {
@@ -209,6 +244,18 @@ const it: PagesExt = {
     registerBtn: 'Iscriviti a Madrid',
     fullGuideBtn: 'Guida completa',
     month3letter: 'giu',
+  },
+  shop: {
+    title: 'Negozio',
+    subtitle: 'Ricordi ufficiali della visita, articoli religiosi e libri',
+    all: 'Tutti',
+    disclaimer:
+      'Alcuni prodotti sono link di affiliazione (Amazon e altri): riceviamo una piccola commissione senza costi aggiuntivi per te. I prodotti contrassegnati come "Ufficiale" sono merchandising proprietario della visita.',
+    categoryMerch: 'Ricordi della visita',
+    categoryReligioso: 'Articoli religiosi',
+    categoryLibros: 'Libri',
+    categorySouvenirs: 'Souvenir',
+    categoryRopa: 'Abbigliamento',
   },
 }
 
@@ -263,6 +310,18 @@ const fr: PagesExt = {
     fullGuideBtn: 'Guide complet',
     month3letter: 'juin',
   },
+  shop: {
+    title: 'Boutique',
+    subtitle: 'Souvenirs officiels de la visite, articles religieux et livres',
+    all: 'Tout',
+    disclaimer:
+      'Certains produits sont des liens d’affiliation (Amazon et autres) : nous recevons une petite commission sans frais supplémentaires pour vous. Les produits marqués « Officiel » sont la marchandise propre de la visite.',
+    categoryMerch: 'Souvenirs de la visite',
+    categoryReligioso: 'Articles religieux',
+    categoryLibros: 'Livres',
+    categorySouvenirs: 'Souvenirs',
+    categoryRopa: 'Vêtements',
+  },
 }
 
 const de: PagesExt = {
@@ -315,6 +374,18 @@ const de: PagesExt = {
     registerBtn: 'In Madrid anmelden',
     fullGuideBtn: 'Vollständiger Leitfaden',
     month3letter: 'Jun',
+  },
+  shop: {
+    title: 'Shop',
+    subtitle: 'Offizielle Souvenirs des Besuchs, religiöse Artikel und Bücher',
+    all: 'Alle',
+    disclaimer:
+      'Einige Produkte sind Affiliate-Links (Amazon und andere): Wir erhalten eine kleine Provision ohne zusätzliche Kosten für Sie. Als „Offiziell" gekennzeichnete Produkte sind eigener Merchandise des Besuchs.',
+    categoryMerch: 'Souvenirs des Besuchs',
+    categoryReligioso: 'Religiöse Artikel',
+    categoryLibros: 'Bücher',
+    categorySouvenirs: 'Souvenirs',
+    categoryRopa: 'Kleidung',
   },
 }
 
@@ -369,6 +440,18 @@ const pt: PagesExt = {
     fullGuideBtn: 'Guia completo',
     month3letter: 'jun',
   },
+  shop: {
+    title: 'Loja',
+    subtitle: 'Recordações oficiais da visita, artigos religiosos e livros',
+    all: 'Todos',
+    disclaimer:
+      'Alguns produtos são links de afiliação (Amazon e outros): recebemos uma pequena comissão sem custo adicional para si. Os produtos marcados como "Oficial" são merchandising próprio da visita.',
+    categoryMerch: 'Recordações da visita',
+    categoryReligioso: 'Artigos religiosos',
+    categoryLibros: 'Livros',
+    categorySouvenirs: 'Souvenirs',
+    categoryRopa: 'Vestuário',
+  },
 }
 
 const ca: PagesExt = {
@@ -421,6 +504,17 @@ const ca: PagesExt = {
     registerBtn: 'Inscriure’s a Madrid',
     fullGuideBtn: 'Guia completa',
     month3letter: 'juny',
+  },
+  shop: {
+    title: 'Botiga commemorativa',
+    subtitle: 'Articles oficials i no oficials de la visita papal',
+    all: 'Tots',
+    disclaimer: 'Enllaços d’afiliació. Podem rebre una comissió sense cost addicional per a tu.',
+    categoryMerch: 'Marxandatge',
+    categoryReligioso: 'Religiós',
+    categoryLibros: 'Llibres',
+    categorySouvenirs: 'Records',
+    categoryRopa: 'Roba',
   },
 }
 
@@ -475,6 +569,17 @@ const gl: PagesExt = {
     fullGuideBtn: 'Guía completa',
     month3letter: 'xuño',
   },
+  shop: {
+    title: 'Tenda conmemorativa',
+    subtitle: 'Artigos oficiais e non oficiais da visita papal',
+    all: 'Todos',
+    disclaimer: 'Ligazóns de afiliación. Podemos recibir unha comisión sen custo adicional para ti.',
+    categoryMerch: 'Merchandising',
+    categoryReligioso: 'Relixioso',
+    categoryLibros: 'Libros',
+    categorySouvenirs: 'Recordos',
+    categoryRopa: 'Roupa',
+  },
 }
 
 const eu: PagesExt = {
@@ -527,6 +632,17 @@ const eu: PagesExt = {
     registerBtn: 'Izena eman Madrilen',
     fullGuideBtn: 'Gida osoa',
     month3letter: 'eka',
+  },
+  shop: {
+    title: 'Oroigarrien denda',
+    subtitle: 'Bisitaldi papalaren produktu ofizialak eta ez-ofizialak',
+    all: 'Guztiak',
+    disclaimer: 'Afiliazio-estekak. Komisio bat jaso dezakegu kostu gehigarririk gabe zuretzat.',
+    categoryMerch: 'Merchandising',
+    categoryReligioso: 'Erlijiosoa',
+    categoryLibros: 'Liburuak',
+    categorySouvenirs: 'Oroigarriak',
+    categoryRopa: 'Arropa',
   },
 }
 

@@ -17,6 +17,20 @@ const CANONICAL_URL = process.env.CANONICAL_URL || 'https://www.visita-papa-2026
  */
 const DEPLOY_URL = process.env.DEPLOY_URL || CANONICAL_URL
 
+/**
+ * Feature flags.
+ * Para activar una feature en local: añade la variable en .env.local
+ * Para activarla en producción: Settings → Environment Variables en Vercel
+ */
+export const featureFlags = {
+  /**
+   * Tienda de merchandising.
+   * En main pero oculta hasta que NEXT_PUBLIC_SHOP_ENABLED=true
+   * (en prod: no definir la variable → tienda oculta).
+   */
+  shopEnabled: process.env.NEXT_PUBLIC_SHOP_ENABLED === 'true',
+}
+
 export const siteConfig = {
   name: 'Visita Papa León XIV a España 2026',
   shortName: 'Papa en España · Guía independiente',
