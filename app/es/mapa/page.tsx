@@ -1,9 +1,21 @@
 import type { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import { cities } from '@/data/cities'
 import { formatDateShort } from '@/lib/utils'
 import { getAlternates } from '@/lib/i18n-metadata'
+
+// Mapa solo en cliente (Leaflet necesita window)
+const PapalRouteMap = dynamic(() => import('@/components/map/PapalRouteMap'), {
+  ssr: false,
+  loading: () => (
+    <div
+      className="overflow-hidden rounded-xl border border-papal-gold/20 bg-papal-cream animate-pulse"
+      style={{ height: '500px' }}
+    />
+  ),
+})
 
 export const metadata: Metadata = {
   title: 'Mapa del recorrido papal',
@@ -74,26 +86,15 @@ export default function MapaPage() {
           </div>
         </div>
 
-        {/* Mapa embebido */}
+        {/* Mapa interactivo (Leaflet + OpenStreetMap, sin Google) */}
         <div className="mt-10">
           <h2 className="mb-4 text-center font-heading text-2xl font-bold text-papal-navy">
             Mapa interactivo
           </h2>
-          <div className="overflow-hidden rounded-xl border border-papal-gold/20" style={{ aspectRatio: '16/9' }}>
-            <iframe
-              src={`https://www.google.com/maps/d/embed?mid=1&z=5&ll=38.5,-3.5&q=${cities.map(c => encodeURIComponent(c.name + ', Spain')).join('|')}`}
-              width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: 400 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa del recorrido papal por España"
-              className="h-full w-full"
-            />
-          </div>
+          <PapalRouteMap locale="es" height="540px" />
           <p className="mt-2 text-center text-xs text-papal-navy/40">
-            Las ubicaciones exactas de los actos se publicarán en las semanas previas
+            Los pins marcan las 4 ciudades de la visita en orden. Haga clic en cada
+            pin para ver las fechas y acceder a la información detallada.
           </p>
         </div>
 
