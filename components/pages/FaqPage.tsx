@@ -1,31 +1,32 @@
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { getFaqByLocale, getFaqCategoriesByLocale } from '@/data/i18n/content/faq'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
+import { getDictionary } from '@/data/i18n/dictionaries'
 import { siteConfig } from '@/data/siteConfig'
 import { type Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
+import { faqPageSchema } from '@/lib/schema/generators'
 
 export default function FaqPageContent({ locale }: { locale: Locale }) {
   const t = getPagesDict(locale)
+  const nav = getDictionary(locale)
   const faq = getFaqByLocale(locale)
   const categories = Object.entries(getFaqCategoriesByLocale(locale)) as [string, string][]
 
-  const faqJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    inLanguage: locale,
-    mainEntity: faq.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: { '@type': 'Answer', text: item.answer },
-    })),
-  }
+  const breadcrumbs = [
+    { name: nav.nav.home, href: localizePath('/', locale) },
+    { name: t.faq.title, href: localizePath('/faq', locale) },
+  ]
 
   return (
     <>
-      <JsonLd data={faqJsonLd} />
+      {/* FAQ con SpeakableSpecification → búsqueda por voz */}
+      <JsonLd data={faqPageSchema(faq, locale)} />
+
+      <Breadcrumbs items={breadcrumbs} />
 
       <section className="gradient-navy">
         <Container className="py-12 text-center">

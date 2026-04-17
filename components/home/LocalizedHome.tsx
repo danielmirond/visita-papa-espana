@@ -12,6 +12,7 @@ import { siteConfig } from '@/data/siteConfig'
 import { getCitiesByLocale } from '@/data/i18n/content/cities'
 import { getScheduleByLocale } from '@/data/i18n/content/schedule'
 import { getNewsByLocale } from '@/data/i18n/content/news'
+import { visitMainEventSchema } from '@/lib/schema/generators'
 
 const CountdownTimer = dynamic(() => import('@/components/home/CountdownTimer'), {
   ssr: false,
@@ -66,19 +67,7 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <JsonLd
-        data={{
-          '@context': 'https://schema.org',
-          '@type': 'Event',
-          name: `${dict.home.heroTitle} ${dict.home.heroCountry}`,
-          description: siteConfig.description,
-          startDate: '2026-06-06',
-          endDate: '2026-06-12',
-          eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-          eventStatus: 'https://schema.org/EventScheduled',
-          inLanguage: locale,
-        }}
-      />
+      <JsonLd data={visitMainEventSchema(locale)} />
 
       {/* Hero */}
       <section className="relative min-h-[600px] overflow-hidden">

@@ -6,6 +6,11 @@ import JsonLd from '@/components/seo/JsonLd'
 import GoogleAnalytics from '@/components/seo/GoogleAnalytics'
 import CookieBanner from '@/components/shared/CookieBanner'
 import { siteConfig } from '@/data/siteConfig'
+import {
+  organizationSchema,
+  popeLeoPersonSchema,
+  webSiteSchema,
+} from '@/lib/schema/generators'
 import './globals.css'
 
 const inter = Inter({
@@ -102,15 +107,6 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
 }
 
-const websiteJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: siteConfig.name,
-  url: siteConfig.url,
-  description: siteConfig.description,
-  inLanguage: 'es',
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -131,7 +127,16 @@ export default function RootLayout({
       </head>
       <body>
         <GoogleAnalytics />
-        <JsonLd data={websiteJsonLd} />
+        {/*
+          Schemas globales (en cada página):
+          - Organization: identidad del sitio
+          - WebSite: permite sitelinks searchbox
+          - Person: Papa León XIV con sameAs a Wikidata/Wikipedia
+            (se referencia por @id desde los Event schemas)
+        */}
+        <JsonLd data={organizationSchema()} />
+        <JsonLd data={webSiteSchema('es')} />
+        <JsonLd data={popeLeoPersonSchema()} />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

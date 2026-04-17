@@ -1,11 +1,15 @@
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
+import JsonLd from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { getCitiesByLocale } from '@/data/i18n/content/cities'
 import { getScheduleByLocale } from '@/data/i18n/content/schedule'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
+import { getDictionary } from '@/data/i18n/dictionaries'
 import { type Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 import { formatDateShort } from '@/lib/utils'
+import { citySchema } from '@/lib/schema/generators'
 
 const CITY_GRADIENTS: Record<string, string> = {
   madrid: 'from-papal-navy to-papal-navy-light',
@@ -16,11 +20,25 @@ const CITY_GRADIENTS: Record<string, string> = {
 
 export default function CiudadesPageContent({ locale }: { locale: Locale }) {
   const t = getPagesDict(locale)
+  const nav = getDictionary(locale)
   const cities = getCitiesByLocale(locale)
   const schedule = getScheduleByLocale(locale)
 
+  const breadcrumbs = [
+    { name: nav.nav.home, href: localizePath('/', locale) },
+    { name: t.ciudades.title, href: localizePath('/ciudades', locale) },
+  ]
+
   return (
     <>
+      {/* Un City schema por cada una: geo + containedInPlace España + sameAs Wikidata */}
+      {cities.map((city) => {
+        const schema = citySchema(city, locale)
+        return schema ? <JsonLd key={city.slug} data={schema} /> : null
+      })}
+
+      <Breadcrumbs items={breadcrumbs} />
+
       <section className="gradient-navy">
         <Container className="py-12 text-center">
           <h1 className="font-heading text-3xl font-bold text-white sm:text-4xl">

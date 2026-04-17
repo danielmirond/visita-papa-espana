@@ -2,9 +2,36 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
+import JsonLd from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { siteConfig } from '@/data/siteConfig'
 import { affiliates } from '@/data/affiliates'
 import { getAlternates } from '@/lib/i18n-metadata'
+import { howToSchema } from '@/lib/schema/generators'
+import { localizePath } from '@/data/i18n/routes'
+
+const howToSteps = [
+  {
+    name: 'Inscripción previa',
+    text: 'Regístrate en inscripciones.conelpapa.es seleccionando los actos a los que quieres asistir. Recibirás una confirmación por email con tu acreditación.',
+  },
+  {
+    name: 'Planifica el transporte',
+    text: 'AVE desde las principales ciudades, avión para Canarias. Durante la visita Metro, Cercanías y bus reforzarán horarios y frecuencias.',
+  },
+  {
+    name: 'Reserva alojamiento',
+    text: 'Reserva con antelación en zonas céntricas. También hay alojamiento gratuito en parroquias y colegios religiosos a través de la web oficial.',
+  },
+  {
+    name: 'Qué llevar',
+    text: 'Acreditación, DNI, agua, protección solar, calzado cómodo, batería de móvil, comida ligera. Evita mochilas grandes, objetos punzantes y botellas de cristal.',
+  },
+  {
+    name: 'Asiste al acto',
+    text: 'Llega con varias horas de antelación para los eventos masivos. Sigue las indicaciones de los voluntarios y la seguridad en los accesos.',
+  },
+]
 
 export const metadata: Metadata = {
   title: 'Cómo asistir a la visita del Papa',
@@ -17,8 +44,25 @@ export default function ComoAsistirPage() {
   const transporte = affiliates.filter((a) => a.category === 'transporte')
   const seguros = affiliates.filter((a) => a.category === 'seguro')
 
+  const breadcrumbs = [
+    { name: 'Inicio', href: localizePath('/', 'es') },
+    { name: 'Cómo asistir', href: localizePath('/como-asistir', 'es') },
+  ]
+
   return (
     <>
+      {/* HowTo schema: aparece en resultados enriquecidos con pasos */}
+      <JsonLd
+        data={howToSchema(
+          'Cómo asistir a la visita del Papa León XIV a España',
+          'Pasos prácticos para inscribirse, viajar, alojarse y asistir a los actos de la visita apostólica.',
+          howToSteps,
+          'es'
+        )}
+      />
+
+      <Breadcrumbs items={breadcrumbs} />
+
       <section className="gradient-navy">
         <Container className="py-12 text-center">
           <h1 className="font-heading text-3xl font-bold text-white sm:text-4xl">

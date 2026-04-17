@@ -3,9 +3,12 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { news, getNewsBySlug } from '@/data/news'
 import { cities } from '@/data/cities'
 import { getAlternates } from '@/lib/i18n-metadata'
+import { newsArticleSchema } from '@/lib/schema/generators'
+import { localizePath } from '@/data/i18n/routes'
 
 interface Props {
   params: { slug: string }
@@ -29,22 +32,22 @@ export default function NoticiaPage({ params }: Props) {
   const article = getNewsBySlug(params.slug)
   if (!article) notFound()
 
+  const breadcrumbs = [
+    { name: 'Inicio', href: localizePath('/', 'es') },
+    { name: 'Noticias', href: localizePath('/noticias', 'es') },
+    { name: article.title, href: localizePath(`/noticias/${article.slug}`, 'es') },
+  ]
+
   return (
     <>
-      <JsonLd
-        data={{
-          '@context': 'https://schema.org',
-          '@type': 'NewsArticle',
-          headline: article.title,
-          description: article.excerpt,
-          datePublished: article.date,
-          author: { '@type': 'Organization', name: 'Visita Papa España' },
-        }}
-      />
+      {/* NewsArticle rico: author, publisher, mainEntityOfPage, mentions (entidades detectadas) */}
+      <JsonLd data={newsArticleSchema(article, 'es')} />
+
+      <Breadcrumbs items={breadcrumbs} />
 
       <section className="gradient-navy">
         <Container className="py-10">
-          <Link href="/noticias" className="text-sm text-papal-gold hover:underline">
+          <Link href={localizePath('/noticias', 'es')} className="text-sm text-papal-gold hover:underline">
             &larr; Todas las noticias
           </Link>
         </Container>

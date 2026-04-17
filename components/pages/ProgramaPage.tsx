@@ -1,13 +1,20 @@
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { getDictionary } from '@/data/i18n/dictionaries'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { type Locale } from '@/data/i18n/types'
+import { localizePath } from '@/data/i18n/routes'
 import { getScheduleByLocale } from '@/data/i18n/content/schedule'
 import { getCitiesByLocale } from '@/data/i18n/content/cities'
 import { dateToSlug } from '@/lib/utils'
 import { siteConfig } from '@/data/siteConfig'
+import {
+  eventSchema,
+  programmeItemListSchema,
+  visitMainEventSchema,
+} from '@/lib/schema/generators'
 
 const EVENT_TYPE_COLORS: Record<string, string> = {
   misa: 'bg-papal-red text-white',
@@ -26,18 +33,24 @@ export default function ProgramaPageContent({ locale }: { locale: Locale }) {
   const schedule = getScheduleByLocale(locale)
   const cities = getCitiesByLocale(locale)
 
+  const breadcrumbs = [
+    { name: nav.nav.home, href: localizePath('/', locale) },
+    { name: t.programa.title, href: localizePath('/programa', locale) },
+  ]
+
   return (
     <>
-      <JsonLd
-        data={{
-          '@context': 'https://schema.org',
-          '@type': 'Event',
-          name: `${nav.home.heroTitle} ${nav.home.heroCountry}`,
-          startDate: '2026-06-06',
-          endDate: '2026-06-12',
-          inLanguage: locale,
-        }}
-      />
+      {/* Schema: evento principal + lista de items + un Event rico por cada acto */}
+      <JsonLd data={visitMainEventSchema(locale)} />
+      <JsonLd data={programmeItemListSchema(schedule, locale)} />
+      {schedule.flatMap((day) =>
+        day.events.map((event) => {
+          const city = cities.find((c) => c.slug === day.citySlug)
+          return <JsonLd key={event.id} data={eventSchema(event, city, locale)} />
+        })
+      )}
+
+      <Breadcrumbs items={breadcrumbs} />
 
       <section className="gradient-navy">
         <Container className="py-12 text-center">
