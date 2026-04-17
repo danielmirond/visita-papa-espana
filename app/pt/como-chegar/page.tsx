@@ -1,15 +1,14 @@
 import type { Metadata } from 'next'
-import ComingSoonPage from '@/components/pages/ComingSoonPage'
-import { getDictionary } from '@/data/i18n/dictionaries'
+import ComoLlegarPageContent from '@/components/pages/ComoLlegarPage'
+import { getComoLlegarLabels } from '@/data/i18n/content/como-llegar'
 import { getAlternates } from '@/lib/i18n-metadata'
 
-const dict = getDictionary('pt')
+const t = getComoLlegarLabels('pt')
 
 export const metadata: Metadata = {
-  title: dict.nav.comoAsistir,
+  title: t.heroTitle,
+  description: t.heroSubtitle,
   alternates: getAlternates('/como-llegar', 'pt'),
 }
 
-export default function Page() {
-  return <ComingSoonPage locale="pt" pageTitle="como-chegar" pagePath="/como-llegar" />
-}
+export default function Page() { return <ComoLlegarPageContent locale="pt" /> }

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import ComingSoonPage from '@/components/pages/ComingSoonPage'
+import GuiaListPageContent from '@/components/pages/GuiaListPage'
 import { getDictionary } from '@/data/i18n/dictionaries'
 import { getAlternates } from '@/lib/i18n-metadata'
 
@@ -10,6 +10,4 @@ export const metadata: Metadata = {
   alternates: getAlternates('/guia', 'gl'),
 }
 
-export default function Page() {
-  return <ComingSoonPage locale="gl" pageTitle={dict.nav.guias} pagePath="/guia" />
-}
+export default function Page() { return <GuiaListPageContent locale="gl" /> }
