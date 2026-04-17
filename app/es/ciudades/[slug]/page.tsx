@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Container from '@/components/ui/Container'
@@ -11,6 +12,17 @@ import { getScheduleByCity } from '@/data/schedule'
 import { getAffiliatesByCategory } from '@/data/affiliates'
 import { formatDateLong, dateToSlug } from '@/lib/utils'
 import { getAlternates } from '@/lib/i18n-metadata'
+
+// Mapa de la ciudad (client-only, Leaflet)
+const CityEventsMap = dynamic(() => import('@/components/map/CityEventsMap'), {
+  ssr: false,
+  loading: () => (
+    <div
+      className="overflow-hidden rounded-xl border border-papal-gold/20 bg-papal-cream animate-pulse"
+      style={{ height: '420px' }}
+    />
+  ),
+})
 
 interface Props {
   params: { slug: string }
@@ -126,6 +138,24 @@ export default function CityPage({ params }: Props) {
                   </div>
                 </div>
               ))}
+            </section>
+
+            {/* Mapa de los actos en la ciudad */}
+            <section className="mt-10">
+              <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">
+                Mapa de los actos en {city.name}
+              </h2>
+              <CityEventsMap
+                events={citySchedule.flatMap((d) => d.events)}
+                cityCenter={city.coordinates}
+                cityName={city.name}
+                locale="es"
+                height="420px"
+              />
+              <p className="mt-2 text-xs text-papal-navy/40">
+                Los pins muestran los actos con ubicación conocida. Haga clic en cada uno
+                para ver hora, lugar y tipo de acto.
+              </p>
             </section>
 
             {/* Info práctica */}

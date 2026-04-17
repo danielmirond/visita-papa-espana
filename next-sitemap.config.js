@@ -4,7 +4,7 @@
 const SITE_URL =
   process.env.CANONICAL_URL ||
   process.env.SITE_URL ||
-  'https://www.visita-papa-2026.es'
+  'https://www.visita-papa-2026.com'
 
 const LOCALES = ['es', 'en', 'it', 'fr', 'de', 'pt', 'ca', 'gl', 'eu']
 
