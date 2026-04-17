@@ -93,8 +93,13 @@ module.exports = {
     const alternateRefs = LOCALES.map((locale) => ({
       href: `${SITE_URL}${localizePath(cleanCanonical, locale)}`,
       hreflang: locale,
+      hrefIsAbsolute: true,
     })).concat([
-      { href: `${SITE_URL}${localizePath(cleanCanonical, 'es')}`, hreflang: 'x-default' },
+      {
+        href: `${SITE_URL}${localizePath(cleanCanonical, 'es')}`,
+        hreflang: 'x-default',
+        hrefIsAbsolute: true,
+      },
     ])
 
     return {
