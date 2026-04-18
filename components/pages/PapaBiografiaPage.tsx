@@ -1,13 +1,20 @@
 import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import JsonLd from '@/components/seo/JsonLd'
 import {
   biografiaPapa,
   timelineVida,
   prioridadesMagisterio,
   citasRelevantes,
+  raicesChicago,
+  familiaPapa,
+  posicionesMagisterio,
+  redesSociales,
+  faqPapaLeonXIV,
 } from '@/data/papaBiografia'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
+import { faqPageSchema } from '@/lib/schema/generators'
 
 interface Props {
   locale: Locale
@@ -34,6 +41,28 @@ const L = {
     whyName: 'Por qué "León"',
     moreInfo: 'Más información',
     vaticanLink: 'Ficha oficial en Vaticano.va',
+    chicagoTitle: 'El Papa de Chicago: raíces y cultura personal',
+    chicagoNeighborhood: 'Barrio natal',
+    chicagoParish: 'Parroquia de la infancia',
+    chicagoHS: 'Instituto',
+    chicagoTeam: 'Equipo deportivo favorito',
+    chicagoEthnicity: 'Ascendencia y etnicidad',
+    chicagoLanguage: 'Idioma familiar',
+    chicagoFun: 'Dato curioso',
+    familyTitle: 'Familia del Papa León XIV',
+    positionsTitle: 'Posiciones del magisterio: pro-vida, LGTB, IA, inmigración, Latin Mass',
+    positionsLead: 'Resumen de las posiciones del Papa León XIV sobre los temas que más se buscan, con contexto completo y enlace a la fuente.',
+    sourceLabel: 'Fuente',
+    physicalTitle: 'Datos físicos y personales',
+    heightLbl: 'Altura',
+    languagesLbl: 'Idiomas que habla',
+    shieldTitle: 'Escudo papal y lema',
+    mottoTranslation: 'Traducción',
+    socialTitle: 'Redes sociales y canales oficiales',
+    socialOfficial: 'Cuentas oficiales del Papa',
+    faqTitle: 'Preguntas frecuentes sobre el Papa León XIV',
+    sourcesTitle: 'Fuentes',
+    sourcesLead: 'Datos biográficos recopilados de fuentes oficiales y públicas.',
   },
   en: {
     breadcrumb: 'Pope Leo XIV',
@@ -196,10 +225,11 @@ const L = {
     moreInfo: 'Informazio gehiago',
     vaticanLink: 'Profil ofiziala Vatican.va-n',
   },
-} as const satisfies Record<Locale, any>
+} as const
 
 export default function PapaBiografiaPage({ locale }: Props) {
-  const t = L[locale] || L.es
+  // Fallback a ES para claves no traducidas (nuevas secciones)
+  const t = { ...L.es, ...((L as any)[locale] || {}) } as typeof L.es
 
   return (
     <>
@@ -268,6 +298,144 @@ export default function PapaBiografiaPage({ locale }: Props) {
                 ))}
               </div>
             </section>
+
+            {/* Chicago: raíces personales */}
+            <section>
+              <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">
+                {t.chicagoTitle}
+              </h2>
+              <dl className="grid gap-3 rounded-xl border border-gray-100 bg-white p-5 text-sm shadow-sm sm:grid-cols-2">
+                <div>
+                  <dt className="text-xs font-semibold uppercase text-papal-navy/60">{t.chicagoNeighborhood}</dt>
+                  <dd className="text-papal-navy">{raicesChicago.barrioNatal}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase text-papal-navy/60">{t.chicagoParish}</dt>
+                  <dd className="text-papal-navy">{raicesChicago.parroquiaInfancia}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase text-papal-navy/60">{t.chicagoHS}</dt>
+                  <dd className="text-papal-navy">{raicesChicago.instituto}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase text-papal-navy/60">{t.chicagoTeam}</dt>
+                  <dd className="text-papal-navy">{raicesChicago.equipoDeportivo}</dd>
+                </div>
+                <div className="sm:col-span-2">
+                  <dt className="text-xs font-semibold uppercase text-papal-navy/60">{t.chicagoEthnicity}</dt>
+                  <dd className="text-papal-navy">{raicesChicago.etnicidad}</dd>
+                </div>
+              </dl>
+              <p className="mt-3 rounded bg-papal-cream px-3 py-2 text-sm italic text-papal-navy/80">
+                🎯 {t.chicagoFun}: {raicesChicago.datoCurioso}
+              </p>
+            </section>
+
+            {/* Familia */}
+            <section>
+              <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">
+                {t.familyTitle}
+              </h2>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {familiaPapa.map((m) => (
+                  <div key={m.nombre} className="rounded-xl border border-gray-100 bg-white p-4 text-sm shadow-sm">
+                    <p className="text-xs font-semibold uppercase text-papal-gold-dark">{m.relacion}</p>
+                    <p className="mt-1 font-heading font-bold text-papal-navy">{m.nombre}</p>
+                    <p className="mt-1 text-papal-navy/70">{m.datos}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Posiciones del magisterio */}
+            <section>
+              <h2 className="mb-2 font-heading text-2xl font-bold text-papal-navy">
+                {t.positionsTitle}
+              </h2>
+              <p className="mb-4 text-sm text-papal-navy/70">{t.positionsLead}</p>
+              <div className="space-y-3">
+                {posicionesMagisterio.map((p) => (
+                  <details
+                    key={p.tema}
+                    className="rounded-xl border border-papal-gold/20 bg-white p-4 shadow-sm"
+                  >
+                    <summary className="cursor-pointer select-none font-heading font-bold text-papal-navy">
+                      {p.tema} — <span className="font-normal text-papal-navy/70">{p.resumen}</span>
+                    </summary>
+                    <p className="mt-3 text-sm text-papal-navy/85">{p.detalle}</p>
+                    <p className="mt-2 text-xs italic text-papal-navy/50">
+                      {t.sourceLabel}: {p.fuente}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </section>
+
+            {/* Escudo y lema */}
+            <section>
+              <h2 className="mb-3 font-heading text-2xl font-bold text-papal-navy">
+                {t.shieldTitle}
+              </h2>
+              <div className="rounded-xl border border-papal-gold/30 bg-papal-cream p-5">
+                <p className="font-serif text-lg italic text-papal-navy">
+                  « {biografiaPapa.lemaEpiscopal} »
+                </p>
+                <p className="mt-1 text-sm text-papal-navy/70">
+                  <strong>{t.mottoTranslation}:</strong> {biografiaPapa.lemaTraduccion}
+                </p>
+                <p className="mt-3 text-sm text-papal-navy/80">
+                  {biografiaPapa.escudoDescripcion}
+                </p>
+              </div>
+            </section>
+
+            {/* FAQ con schema */}
+            <section>
+              <JsonLd
+                data={faqPageSchema(
+                  faqPapaLeonXIV.map((f) => ({
+                    question: f.pregunta,
+                    answer: f.respuesta,
+                    category: 'general',
+                  })),
+                  locale
+                )}
+              />
+              <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">
+                {t.faqTitle}
+              </h2>
+              <div className="space-y-2">
+                {faqPapaLeonXIV.map((f, i) => (
+                  <details
+                    key={i}
+                    className="rounded-xl border border-gray-100 bg-white p-4 shadow-sm open:bg-papal-cream"
+                  >
+                    <summary className="cursor-pointer select-none font-heading font-semibold text-papal-navy">
+                      {f.pregunta}
+                    </summary>
+                    <p className="mt-2 text-sm text-papal-navy/80">{f.respuesta}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+
+            {/* Fuentes */}
+            <section className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+              <h2 className="mb-2 font-heading text-lg font-bold text-papal-navy">
+                📚 {t.sourcesTitle}
+              </h2>
+              <p className="mb-3 text-sm text-papal-navy/70">{t.sourcesLead}</p>
+              <ul className="space-y-1 text-xs text-papal-navy/70">
+                <li>• <a href="https://www.vatican.va/content/leo-xiv/es.html" target="_blank" rel="noopener noreferrer" className="hover:text-papal-gold-dark">Vatican.va — ficha biográfica oficial del Papa León XIV</a></li>
+                <li>• <a href="https://press.vatican.va" target="_blank" rel="noopener noreferrer" className="hover:text-papal-gold-dark">Sala Stampa de la Santa Sede — boletines y discursos oficiales</a></li>
+                <li>• <a href="https://www.vaticannews.va/es.html" target="_blank" rel="noopener noreferrer" className="hover:text-papal-gold-dark">Vatican News (multilingüe) — noticias oficiales de la Santa Sede</a></li>
+                <li>• <a href="https://www.catholicnewsagency.com" target="_blank" rel="noopener noreferrer" className="hover:text-papal-gold-dark">Catholic News Agency (CNA)</a> y <a href="https://www.aciprensa.com" target="_blank" rel="noopener noreferrer" className="hover:text-papal-gold-dark">ACI Prensa</a> — cobertura eclesial</li>
+                <li>• <a href="https://www.osanet.org" target="_blank" rel="noopener noreferrer" className="hover:text-papal-gold-dark">Orden de San Agustín (Curia Generalicia, Roma)</a> — archivos de la OSA</li>
+                <li>• <a href="https://www.diocesisdechiclayo.org" target="_blank" rel="noopener noreferrer" className="hover:text-papal-gold-dark">Diócesis de Chiclayo (Perú)</a> — etapa episcopal</li>
+                <li>• <a href="https://en.wikipedia.org/wiki/Pope_Leo_XIV" target="_blank" rel="noopener noreferrer" className="hover:text-papal-gold-dark">Wikipedia (EN/ES) — con referencias cruzadas verificadas</a></li>
+                <li>• Hemeroteca: <em>El País, ABC, COPE, L&apos;Osservatore Romano, America Magazine, Crux, Il Sismografo</em> (mayo 2025 — presente).</li>
+              </ul>
+            </section>
           </div>
 
           <aside className="space-y-5">
@@ -304,7 +472,49 @@ export default function PapaBiografiaPage({ locale }: Props) {
                     {biografiaPapa.fechaEleccion} · {biografiaPapa.conclaveRonda}
                   </dd>
                 </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase text-papal-navy/60">{t.heightLbl}</dt>
+                  <dd className="text-papal-navy">{biografiaPapa.altura}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase text-papal-navy/60">{t.languagesLbl}</dt>
+                  <dd className="text-papal-navy">{biografiaPapa.idiomas.join(', ')}</dd>
+                </div>
               </dl>
+            </div>
+
+            {/* Redes sociales / canales oficiales */}
+            <div className="rounded-xl bg-white p-5 shadow-sm">
+              <h3 className="font-heading text-base font-bold text-papal-navy">
+                {t.socialTitle}
+              </h3>
+              <p className="mt-1 text-xs text-papal-navy/60">{redesSociales.pontifex.descripcion}</p>
+              <ul className="mt-3 space-y-2 text-sm">
+                <li>
+                  <a href={redesSociales.pontifex.twitter} target="_blank" rel="noopener noreferrer"
+                     className="text-papal-gold hover:underline">
+                    @Pontifex en X (Twitter) →
+                  </a>
+                </li>
+                <li>
+                  <a href={redesSociales.pontifex.instagram} target="_blank" rel="noopener noreferrer"
+                     className="text-papal-gold hover:underline">
+                    Franciscus en Instagram →
+                  </a>
+                </li>
+                <li>
+                  <a href={redesSociales.vaticanNews.url} target="_blank" rel="noopener noreferrer"
+                     className="text-papal-gold hover:underline">
+                    Vatican News (53 idiomas) →
+                  </a>
+                </li>
+                <li>
+                  <a href={redesSociales.vaticano.url} target="_blank" rel="noopener noreferrer"
+                     className="text-papal-gold hover:underline">
+                    Vatican.va (portal oficial) →
+                  </a>
+                </li>
+              </ul>
             </div>
 
             <div className="rounded-xl bg-papal-navy p-5 text-white">

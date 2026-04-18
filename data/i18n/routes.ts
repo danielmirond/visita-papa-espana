@@ -64,6 +64,10 @@ export const ROUTE_TRANSLATIONS = {
     es: 'papa-leon-xiv', en: 'pope-leo-xiv', it: 'papa-leone-xiv', fr: 'pape-leon-xiv',
     de: 'papst-leo-xiv', pt: 'papa-leao-xiv', ca: 'papa-lleo-xiv', gl: 'papa-leon-xiv', eu: 'leon-xiv-aita-santua',
   },
+  'historia-visitas-papales': {
+    es: 'historia-visitas-papales', en: 'papal-visits-history', it: 'storia-visite-papali', fr: 'histoire-visites-papales',
+    de: 'papstbesuche-geschichte', pt: 'historia-visitas-papais', ca: 'historia-visites-papals', gl: 'historia-visitas-papais', eu: 'bisitaldi-papalen-historia',
+  },
   'aviso-legal': {
     es: 'aviso-legal', en: 'legal-notice', it: 'note-legali', fr: 'mentions-legales',
     de: 'impressum', pt: 'aviso-legal', ca: 'avis-legal', gl: 'aviso-legal', eu: 'lege-oharra',

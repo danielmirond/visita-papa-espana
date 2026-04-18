@@ -27,6 +27,7 @@ const ROUTE_TRANSLATIONS = {
   oracion: { es: 'oracion', en: 'prayer', it: 'preghiera', fr: 'priere', de: 'gebet', pt: 'oracao', ca: 'oracio', gl: 'oracion', eu: 'otoitza' },
   voluntariado: { es: 'voluntariado', en: 'volunteering', it: 'volontariato', fr: 'benevolat', de: 'ehrenamt', pt: 'voluntariado', ca: 'voluntariat', gl: 'voluntariado', eu: 'boluntariotza' },
   'papa-leon-xiv': { es: 'papa-leon-xiv', en: 'pope-leo-xiv', it: 'papa-leone-xiv', fr: 'pape-leon-xiv', de: 'papst-leo-xiv', pt: 'papa-leao-xiv', ca: 'papa-lleo-xiv', gl: 'papa-leon-xiv', eu: 'leon-xiv-aita-santua' },
+  'historia-visitas-papales': { es: 'historia-visitas-papales', en: 'papal-visits-history', it: 'storia-visite-papali', fr: 'histoire-visites-papales', de: 'papstbesuche-geschichte', pt: 'historia-visitas-papais', ca: 'historia-visites-papals', gl: 'historia-visitas-papais', eu: 'bisitaldi-papalen-historia' },
 }
 
 // Build reverse map: localized slug per locale → canonical key

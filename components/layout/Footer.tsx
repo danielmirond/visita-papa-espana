@@ -50,6 +50,10 @@ export default function Footer() {
       path: '/oracion',
       labelByLocale: { es: 'Oración', en: 'Prayer', it: 'Preghiera', fr: 'Prière', de: 'Gebet', pt: 'Oração', ca: 'Oració', gl: 'Oración', eu: 'Otoitza' },
     },
+    {
+      path: '/historia-visitas-papales',
+      labelByLocale: { es: 'Historia de visitas', en: 'Visits history', it: 'Storia visite', fr: 'Histoire visites', de: 'Besuche-Geschichte', pt: 'História das visitas', ca: 'Història de visites', gl: 'Historia das visitas', eu: 'Bisitaldien historia' },
+    },
   ]
 
   return (
