@@ -14,7 +14,8 @@ import {
 } from '@/data/papaBiografia'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
-import { faqPageSchema } from '@/lib/schema/generators'
+import { faqPageSchema, popeLeoPersonSchema } from '@/lib/schema/generators'
+import Link from 'next/link'
 
 interface Props {
   locale: Locale
@@ -233,6 +234,9 @@ export default function PapaBiografiaPage({ locale }: Props) {
 
   return (
     <>
+      {/* Schema Person expandido: birthPlace, nationality, height, languages, parents, alumniOf, sameAs */}
+      <JsonLd data={popeLeoPersonSchema()} />
+
       <section className="gradient-navy">
         <Container className="py-12">
           <Breadcrumbs items={[{ name: t.breadcrumb, href: localizePath('/papa-leon-xiv', locale) }]} />
@@ -535,6 +539,67 @@ export default function PapaBiografiaPage({ locale }: Props) {
             </div>
           </aside>
         </div>
+
+        {/* Internal linking · Explora también */}
+        <nav aria-label="Related" className="mt-12 rounded-xl border border-papal-gold/20 bg-papal-cream p-6">
+          <h2 className="mb-4 font-heading text-xl font-bold text-papal-navy">
+            {locale === 'en' ? 'Explore also' :
+             locale === 'it' ? 'Esplora anche' :
+             locale === 'fr' ? 'Explorer aussi' :
+             locale === 'de' ? 'Entdecken Sie auch' :
+             locale === 'pt' ? 'Explorar também' :
+             locale === 'ca' ? 'Explora també' :
+             locale === 'gl' ? 'Explora tamén' :
+             locale === 'eu' ? 'Esploratu ere' :
+             'Explora también'}
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <Link href={localizePath('/historia-visitas-papales', locale)} className="group rounded-lg bg-white p-4 shadow-sm transition hover:shadow-md">
+              <h3 className="font-heading font-bold text-papal-navy group-hover:text-papal-gold">
+                {locale === 'en' ? 'Papal Visits to Spain (1982-2026)' :
+                 locale === 'it' ? 'Visite papali in Spagna (1982-2026)' :
+                 locale === 'fr' ? 'Visites papales en Espagne (1982-2026)' :
+                 locale === 'de' ? 'Papstbesuche in Spanien (1982-2026)' :
+                 locale === 'pt' ? 'Visitas papais a Espanha (1982-2026)' :
+                 locale === 'ca' ? 'Visites papals a Espanya (1982-2026)' :
+                 locale === 'gl' ? 'Visitas papais a España (1982-2026)' :
+                 locale === 'eu' ? 'Bisitaldi papalak Espainian (1982-2026)' :
+                 'Historia de visitas papales a España (1982-2026)'}
+              </h3>
+              <p className="mt-1 text-xs text-papal-navy/60">
+                Juan Pablo II · Benedicto XVI · León XIV
+              </p>
+            </Link>
+            <Link href={localizePath('/programa', locale)} className="group rounded-lg bg-white p-4 shadow-sm transition hover:shadow-md">
+              <h3 className="font-heading font-bold text-papal-navy group-hover:text-papal-gold">
+                {locale === 'en' ? 'Full Schedule of the Visit' :
+                 locale === 'it' ? 'Programma completo della visita' :
+                 locale === 'fr' ? 'Programme complet de la visite' :
+                 locale === 'de' ? 'Vollständiges Besuchsprogramm' :
+                 locale === 'pt' ? 'Programa completo da visita' :
+                 locale === 'ca' ? 'Programa complet de la visita' :
+                 locale === 'gl' ? 'Programa completo da visita' :
+                 locale === 'eu' ? 'Bisitaldiaren egitaraua' :
+                 'Programa completo de la visita'}
+              </h3>
+              <p className="mt-1 text-xs text-papal-navy/60">6-12 junio 2026 · 24 actos</p>
+            </Link>
+            <Link href={localizePath('/ciudades', locale)} className="group rounded-lg bg-white p-4 shadow-sm transition hover:shadow-md">
+              <h3 className="font-heading font-bold text-papal-navy group-hover:text-papal-gold">
+                {locale === 'en' ? 'Cities of the Visit' :
+                 locale === 'it' ? 'Città della visita' :
+                 locale === 'fr' ? 'Villes de la visite' :
+                 locale === 'de' ? 'Besuchsstädte' :
+                 locale === 'pt' ? 'Cidades da visita' :
+                 locale === 'ca' ? 'Ciutats de la visita' :
+                 locale === 'gl' ? 'Cidades da visita' :
+                 locale === 'eu' ? 'Bisitaldiaren hiriak' :
+                 'Ciudades de la visita'}
+              </h3>
+              <p className="mt-1 text-xs text-papal-navy/60">Madrid · Barcelona · Gran Canaria · Tenerife</p>
+            </Link>
+          </div>
+        </nav>
       </Container>
     </>
   )

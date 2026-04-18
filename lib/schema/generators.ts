@@ -46,6 +46,7 @@ export function popeLeoPersonSchema() {
     '@type': 'Person',
     '@id': p.wikidata,
     name: p.name,
+    alternateName: ['Pope Leo XIV', 'Papa Leone XIV', 'Papst Leo XIV', 'Robert Francis Prevost'],
     givenName: 'Robert',
     familyName: 'Prevost',
     additionalName: 'Francis',
@@ -53,11 +54,104 @@ export function popeLeoPersonSchema() {
     birthDate: p.birthDate,
     birthPlace: {
       '@type': 'Place',
-      name: p.birthPlace,
+      name: 'Chicago, Illinois, Estados Unidos',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Chicago',
+        addressRegion: 'IL',
+        addressCountry: 'US',
+      },
     },
+    nationality: [
+      { '@type': 'Country', name: 'Estados Unidos', sameAs: 'https://www.wikidata.org/wiki/Q30' },
+      { '@type': 'Country', name: 'Perú', sameAs: 'https://www.wikidata.org/wiki/Q419' },
+    ],
+    height: {
+      '@type': 'QuantitativeValue',
+      value: 180,
+      unitCode: 'CMT', // UN/CEFACT for centimetres
+    },
+    knowsLanguage: ['es', 'en', 'it', 'fr', 'pt', 'la', 'qu'],
     jobTitle: p.jobTitle,
-    image: p.image,
-    sameAs: [p.wikidata, p.wikipediaEs, p.wikipediaEn],
+    hasOccupation: {
+      '@type': 'Occupation',
+      name: 'Obispo de Roma, Sucesor de Pedro, Sumo Pontífice de la Iglesia católica',
+    },
+    worksFor: {
+      '@type': 'Organization',
+      '@id': p.worksFor,
+      name: 'Santa Sede',
+      url: 'https://www.vatican.va',
+    },
+    affiliation: {
+      '@type': 'Organization',
+      name: 'Orden de San Agustín',
+      alternateName: 'Augustinian Order',
+      url: 'https://www.osanet.org',
+      sameAs: 'https://www.wikidata.org/wiki/Q285762',
+    },
+    alumniOf: [
+      {
+        '@type': 'CollegeOrUniversity',
+        name: 'Villanova University',
+        sameAs: 'https://www.wikidata.org/wiki/Q1629544',
+      },
+      {
+        '@type': 'CollegeOrUniversity',
+        name: 'Catholic Theological Union',
+        sameAs: 'https://www.wikidata.org/wiki/Q1052181',
+      },
+      {
+        '@type': 'CollegeOrUniversity',
+        name: 'Pontificia Universidad Santo Tomás de Aquino (Angelicum)',
+        sameAs: 'https://www.wikidata.org/wiki/Q1133066',
+      },
+    ],
+    parent: [
+      {
+        '@type': 'Person',
+        name: 'Louis Marius Prevost',
+        gender: 'Male',
+      },
+      {
+        '@type': 'Person',
+        name: 'Mildred Martínez',
+        gender: 'Female',
+      },
+    ],
+    sibling: [
+      { '@type': 'Person', name: 'Louis Prevost', gender: 'Male' },
+      { '@type': 'Person', name: 'John Prevost', gender: 'Male' },
+    ],
+    award: [
+      'Cardenal (2023)',
+      'Elegido 267.º Papa de la Iglesia católica (8 mayo 2025)',
+    ],
+    image: {
+      '@type': 'ImageObject',
+      url: p.image,
+      contentUrl: p.image,
+      width: 1024,
+      height: 1024,
+      license: 'https://creativecommons.org/licenses/by-sa/4.0/',
+      creditText: 'Vatican Media / Wikimedia Commons',
+    },
+    url: 'https://www.vatican.va/content/leo-xiv/es.html',
+    sameAs: [
+      p.wikidata,
+      p.wikipediaEs,
+      p.wikipediaEn,
+      'https://it.wikipedia.org/wiki/Papa_Leone_XIV',
+      'https://de.wikipedia.org/wiki/Leo_XIV.',
+      'https://fr.wikipedia.org/wiki/L%C3%A9on_XIV',
+      'https://pt.wikipedia.org/wiki/Papa_Le%C3%A3o_XIV',
+      'https://ca.wikipedia.org/wiki/Lle%C3%B3_XIV',
+      'https://www.vatican.va/content/leo-xiv/es.html',
+      'https://twitter.com/Pontifex',
+      'https://www.instagram.com/franciscus',
+    ],
+    description:
+      'Robert Francis Prevost (Chicago, 14 sept. 1955), conocido como León XIV, es el 267.º Papa de la Iglesia católica, elegido el 8 de mayo de 2025. Religioso agustino, fue misionero y obispo en Perú durante más de tres décadas, prior general de la Orden de San Agustín y prefecto del Dicasterio para los Obispos.',
   }
 }
 

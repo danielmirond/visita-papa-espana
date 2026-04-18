@@ -17,6 +17,26 @@ import type { RouteKey } from '@/data/i18n/routes'
 type SeoEntry = { title: string; description: string }
 type SeoByLocale = Partial<Record<Locale, SeoEntry>>
 
+// og:image por ruta — cada página hereda el más relevante.
+// Convención: usar imágenes existentes en /public/images/.
+export const OG_IMAGE_BY_ROUTE: Partial<Record<RouteKey, string>> = {
+  'papa-leon-xiv': '/images/hero/papa-leon-xiv.webp',
+  'historia-visitas-papales': '/images/hero/papa-leon-xiv.webp',
+  ciudades: '/images/cities/madrid.webp',
+  programa: '/images/hero/papa-leon-xiv.webp',
+  'como-asistir': '/images/hero/papa-leon-xiv.webp',
+  'como-llegar': '/images/cities/madrid.webp',
+  'donde-ver': '/images/hero/papa-leon-xiv.webp',
+  mapa: '/images/cities/barcelona.webp',
+  noticias: '/images/hero/papa-leon-xiv.webp',
+  guia: '/images/hero/papa-leon-xiv.webp',
+  faq: '/images/hero/papa-leon-xiv.webp',
+  'que-llevar': '/images/hero/papa-leon-xiv.webp',
+  himno: '/images/hero/papa-leon-xiv.webp',
+  oracion: '/images/hero/papa-leon-xiv.webp',
+  voluntariado: '/images/hero/papa-leon-xiv.webp',
+}
+
 export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
   programa: {
     es: {
@@ -659,11 +679,19 @@ export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
 }
 
 /**
- * Devuelve {title, description} para una ruta y locale dados.
+ * Devuelve {title, description, ogImage} para una ruta y locale dados.
  * Fallback a español si el locale no tiene traducción.
  */
-export function getSeoMeta(routeKey: RouteKey, locale: Locale): SeoEntry | null {
+export function getSeoMeta(
+  routeKey: RouteKey,
+  locale: Locale
+): (SeoEntry & { ogImage?: string }) | null {
   const byLocale = seoByRoute[routeKey]
   if (!byLocale) return null
-  return byLocale[locale] || byLocale.es || null
+  const entry = byLocale[locale] || byLocale.es
+  if (!entry) return null
+  return {
+    ...entry,
+    ogImage: OG_IMAGE_BY_ROUTE[routeKey],
+  }
 }

@@ -1,6 +1,7 @@
 import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import JsonLd from '@/components/seo/JsonLd'
+import Link from 'next/link'
 import { visitas, datosAgregados, faqHistoria } from '@/data/historiaVisitas'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
@@ -245,6 +246,33 @@ export default function HistoriaVisitasPage({ locale }: Props) {
             <li>• Archivos diocesanos de Santiago de Compostela, Madrid, Barcelona y Valencia.</li>
           </ul>
         </section>
+
+        {/* Internal linking · Explora también */}
+        <nav aria-label="Related" className="mt-10 rounded-xl border border-papal-gold/20 bg-papal-cream p-6">
+          <h2 className="mb-4 font-heading text-xl font-bold text-papal-navy">
+            Explora también
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <Link href={localizePath('/papa-leon-xiv', locale)} className="group rounded-lg bg-white p-4 shadow-sm transition hover:shadow-md">
+              <h3 className="font-heading font-bold text-papal-navy group-hover:text-papal-gold">
+                Biografía del Papa León XIV
+              </h3>
+              <p className="mt-1 text-xs text-papal-navy/60">Edad · familia · idiomas · posiciones</p>
+            </Link>
+            <Link href={localizePath('/programa', locale)} className="group rounded-lg bg-white p-4 shadow-sm transition hover:shadow-md">
+              <h3 className="font-heading font-bold text-papal-navy group-hover:text-papal-gold">
+                Programa 2026
+              </h3>
+              <p className="mt-1 text-xs text-papal-navy/60">24 actos · 6-12 junio 2026</p>
+            </Link>
+            <Link href={localizePath('/ciudades', locale)} className="group rounded-lg bg-white p-4 shadow-sm transition hover:shadow-md">
+              <h3 className="font-heading font-bold text-papal-navy group-hover:text-papal-gold">
+                Ciudades de la visita
+              </h3>
+              <p className="mt-1 text-xs text-papal-navy/60">Madrid · Barcelona · Gran Canaria · Tenerife</p>
+            </Link>
+          </div>
+        </nav>
       </Container>
     </>
   )
