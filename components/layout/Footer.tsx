@@ -175,14 +175,17 @@ export default function Footer() {
             <p className="text-sm text-white/60">
               Madrid &middot; Barcelona &middot; Gran Canaria &middot; Tenerife
             </p>
-            <div className="mt-4 rounded-lg border border-papal-gold/30 bg-white/5 p-3">
+            <Link
+              href={prefixHref('/alzad-la-mirada')}
+              className="mt-4 block rounded-lg border border-papal-gold/30 bg-white/5 p-3 transition hover:bg-white/10"
+            >
               <p className="text-center font-heading text-sm italic text-papal-gold">
                 &ldquo;Alzad la mirada&rdquo;
               </p>
               <p className="mt-1 text-center text-xs text-white/40">
-                Juan 4,35
+                Juan 4,35 — ¿de dónde viene?
               </p>
-            </div>
+            </Link>
           </div>
         </div>
 

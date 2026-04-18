@@ -68,6 +68,22 @@ export const ROUTE_TRANSLATIONS = {
     es: 'historia-visitas-papales', en: 'papal-visits-history', it: 'storia-visite-papali', fr: 'histoire-visites-papales',
     de: 'papstbesuche-geschichte', pt: 'historia-visitas-papais', ca: 'historia-visites-papals', gl: 'historia-visitas-papais', eu: 'bisitaldi-papalen-historia',
   },
+  discursos: {
+    es: 'discursos', en: 'speeches', it: 'discorsi', fr: 'discours',
+    de: 'ansprachen', pt: 'discursos', ca: 'discursos', gl: 'discursos', eu: 'hitzaldiak',
+  },
+  frases: {
+    es: 'frases', en: 'quotes', it: 'citazioni', fr: 'citations',
+    de: 'zitate', pt: 'frases', ca: 'frases', gl: 'frases', eu: 'aipuak',
+  },
+  'dilexi-te': {
+    es: 'dilexi-te', en: 'dilexi-te', it: 'dilexi-te', fr: 'dilexi-te',
+    de: 'dilexi-te', pt: 'dilexi-te', ca: 'dilexi-te', gl: 'dilexi-te', eu: 'dilexi-te',
+  },
+  'alzad-la-mirada': {
+    es: 'alzad-la-mirada', en: 'lift-up-your-eyes', it: 'alzate-gli-occhi', fr: 'levez-les-yeux',
+    de: 'erhebt-eure-augen', pt: 'levantai-os-olhos', ca: 'alceu-els-ulls', gl: 'ergue-os-ollos', eu: 'jaso-begiak',
+  },
   'aviso-legal': {
     es: 'aviso-legal', en: 'legal-notice', it: 'note-legali', fr: 'mentions-legales',
     de: 'impressum', pt: 'aviso-legal', ca: 'avis-legal', gl: 'aviso-legal', eu: 'lege-oharra',

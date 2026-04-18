@@ -22,6 +22,7 @@ type SeoByLocale = Partial<Record<Locale, SeoEntry>>
 export const OG_IMAGE_BY_ROUTE: Partial<Record<RouteKey, string>> = {
   'papa-leon-xiv': '/images/hero/papa-leon-xiv.webp',
   'historia-visitas-papales': '/images/hero/papa-leon-xiv.webp',
+  'alzad-la-mirada': '/images/hero/papa-leon-xiv.webp',
   ciudades: '/images/cities/madrid.webp',
   programa: '/images/hero/papa-leon-xiv.webp',
   'como-asistir': '/images/hero/papa-leon-xiv.webp',
@@ -626,6 +627,45 @@ export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
       title: 'Boluntariotza · Leon XIV Espainia bisitaldia 2026',
       description:
         'Leon XIV.a Aita Santuaren Espainiarako bisitaldian (2026ko ekainaren 6-12) boluntario gisa nola izena eman: arloak, baldintzak, plazak eta onurak.',
+    },
+  },
+
+  'alzad-la-mirada': {
+    es: {
+      title: '"Alzad la mirada": origen y significado del lema papal 2026',
+      description: '¿De dónde viene "Alzad la mirada"? El lema de la visita del Papa León XIV a España procede de Juan 4,35. Contexto bíblico, por qué lo eligió la CEE y traducciones.',
+    },
+    en: {
+      title: '"Lift Up Your Eyes": Origin & Meaning of the Papal Motto 2026',
+      description: 'Where does "Lift up your eyes" come from? The motto of Pope Leo XIV\'s visit to Spain is taken from John 4:35. Biblical context, why the CEE chose it, translations.',
+    },
+    it: {
+      title: '"Alzate gli occhi": origine e significato del motto papale 2026',
+      description: 'Da dove viene "Alzate gli occhi"? Il motto della visita di Papa Leone XIV in Spagna proviene da Giovanni 4,35. Contesto biblico e perché l\'ha scelto la CEE.',
+    },
+    fr: {
+      title: '"Levez les yeux" : origine et sens de la devise papale 2026',
+      description: 'D\'où vient "Levez les yeux" ? La devise de la visite du Pape Léon XIV en Espagne vient de Jean 4,35. Contexte biblique, pourquoi la CEE l\'a choisie, traductions.',
+    },
+    de: {
+      title: '"Erhebt eure Augen": Ursprung und Bedeutung des Papstmottos',
+      description: 'Woher kommt "Erhebt eure Augen"? Das Motto der Spanienreise von Papst Leo XIV stammt aus Johannes 4,35. Biblischer Kontext und warum es die CEE wählte.',
+    },
+    pt: {
+      title: '"Levantai os olhos": origem e significado do lema papal 2026',
+      description: 'De onde vem "Levantai os olhos"? O lema da visita do Papa Leão XIV a Espanha vem de João 4,35. Contexto bíblico, porquê a CEE o escolheu, traduções.',
+    },
+    ca: {
+      title: '"Alceu els ulls": origen i significat del lema papal 2026',
+      description: 'D\'on ve "Alceu els ulls"? El lema de la visita del Papa Lleó XIV a Espanya prové de Joan 4,35. Context bíblic, per què la CEE el va escollir i traduccions.',
+    },
+    gl: {
+      title: '"Erguei os ollos": orixe e significado do lema papal 2026',
+      description: 'De onde vén "Erguei os ollos"? O lema da visita do Papa León XIV a España vén de Xoán 4,35. Contexto bíblico, por que a CEE o escolleu e traducións.',
+    },
+    eu: {
+      title: '"Jaso begiak": Aita Santuaren bisitaldiaren lemaren jatorria',
+      description: 'Nondik dator "Jaso begiak"? Leon XIV.a Aita Santuaren Espainiarako bisitaldiaren lema Joan 4,35etik dator. Testuinguru biblikoa eta zergatik hautatu zuten.',
     },
   },
 
