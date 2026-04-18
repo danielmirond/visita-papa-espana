@@ -23,6 +23,9 @@ export const OG_IMAGE_BY_ROUTE: Partial<Record<RouteKey, string>> = {
   'papa-leon-xiv': '/images/hero/papa-leon-xiv.webp',
   'historia-visitas-papales': '/images/hero/papa-leon-xiv.webp',
   'alzad-la-mirada': '/images/hero/papa-leon-xiv.webp',
+  discursos: '/images/hero/papa-leon-xiv.webp',
+  frases: '/images/hero/papa-leon-xiv.webp',
+  'dilexi-te': '/images/hero/papa-leon-xiv.webp',
   ciudades: '/images/cities/madrid.webp',
   programa: '/images/hero/papa-leon-xiv.webp',
   'como-asistir': '/images/hero/papa-leon-xiv.webp',
@@ -627,6 +630,123 @@ export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
       title: 'Boluntariotza · Leon XIV Espainia bisitaldia 2026',
       description:
         'Leon XIV.a Aita Santuaren Espainiarako bisitaldian (2026ko ekainaren 6-12) boluntario gisa nola izena eman: arloak, baldintzak, plazak eta onurak.',
+    },
+  },
+
+  discursos: {
+    es: {
+      title: 'Discursos del Papa León XIV: homilías y mensajes 2025-2026',
+      description: 'Discursos, homilías y mensajes clave del Papa León XIV: primer saludo, Colegio Cardenalicio, inicio de pontificado, Urbi et Orbi, mensaje de paz y más.',
+    },
+    en: {
+      title: 'Pope Leo XIV Speeches: Homilies & Messages 2025-2026',
+      description: 'Key speeches, homilies and messages of Pope Leo XIV: first greeting, Cardinalate address, inauguration Mass, Urbi et Orbi, peace message and more.',
+    },
+    it: {
+      title: 'Discorsi di Papa Leone XIV: omelie e messaggi 2025-2026',
+      description: 'Discorsi, omelie e messaggi chiave di Papa Leone XIV: primo saluto, Collegio Cardinalizio, Messa di inizio pontificato, Urbi et Orbi e altro.',
+    },
+    fr: {
+      title: 'Discours du Pape Léon XIV : homélies et messages 2025-2026',
+      description: 'Discours, homélies et messages clés du Pape Léon XIV : première salutation, Collège cardinalice, messe inaugurale, Urbi et Orbi, message de paix.',
+    },
+    de: {
+      title: 'Ansprachen von Papst Leo XIV: Predigten & Botschaften',
+      description: 'Wichtige Reden, Predigten und Botschaften von Papst Leo XIV: erster Gruß, Kardinalskollegium, Amtseinführungsmesse, Urbi et Orbi, Friedensbotschaft.',
+    },
+    pt: {
+      title: 'Discursos do Papa Leão XIV: homilias e mensagens 2025-2026',
+      description: 'Discursos, homilias e mensagens-chave do Papa Leão XIV: primeira saudação, Colégio Cardinalício, Missa de início, Urbi et Orbi e mais.',
+    },
+    ca: {
+      title: 'Discursos del Papa Lleó XIV: homilies i missatges 2025-2026',
+      description: 'Discursos, homilies i missatges clau del Papa Lleó XIV: primera salutació, Col·legi Cardenalici, Missa inaugural, Urbi et Orbi, missatge de pau.',
+    },
+    gl: {
+      title: 'Discursos do Papa León XIV: homilías e mensaxes 2025-2026',
+      description: 'Discursos, homilías e mensaxes chave do Papa León XIV: primeira saudación, Colexio Cardenalicio, Misa de inicio, Urbi et Orbi e máis.',
+    },
+    eu: {
+      title: 'Leon XIV.a Aita Santuaren hitzaldiak eta homiliak',
+      description: 'Leon XIV.a Aita Santuaren hitzaldi, homilia eta mezu nagusiak: lehen agurra, Kardinalen Kolegioa, hasierako Meza, Urbi et Orbi eta gehiago.',
+    },
+  },
+
+  frases: {
+    es: {
+      title: 'Frases célebres del Papa León XIV: citas por temas',
+      description: 'Las frases más célebres del Papa León XIV organizadas por temas: paz, migración, inteligencia artificial, doctrina social, familia, pobreza y unidad eclesial.',
+    },
+    en: {
+      title: 'Famous Quotes from Pope Leo XIV: Sayings by Topic',
+      description: 'Pope Leo XIV\'s most famous quotes organised by topic: peace, migration, artificial intelligence, social doctrine, family, poverty and Church unity.',
+    },
+    it: {
+      title: 'Frasi celebri di Papa Leone XIV: citazioni per tema',
+      description: 'Le frasi più celebri di Papa Leone XIV ordinate per tema: pace, migrazione, intelligenza artificiale, dottrina sociale, famiglia, povertà e unità.',
+    },
+    fr: {
+      title: 'Citations célèbres du Pape Léon XIV : phrases par thème',
+      description: 'Les citations les plus célèbres du Pape Léon XIV classées par thème : paix, migration, intelligence artificielle, doctrine sociale, famille, pauvreté.',
+    },
+    de: {
+      title: 'Berühmte Zitate von Papst Leo XIV nach Themen',
+      description: 'Die berühmtesten Zitate von Papst Leo XIV nach Themen: Frieden, Migration, KI, Soziallehre, Familie, Armut und kirchliche Einheit.',
+    },
+    pt: {
+      title: 'Frases célebres do Papa Leão XIV: citações por temas',
+      description: 'As frases mais célebres do Papa Leão XIV organizadas por temas: paz, migração, inteligência artificial, doutrina social, família, pobreza e unidade.',
+    },
+    ca: {
+      title: 'Frases cèlebres del Papa Lleó XIV: cites per temes',
+      description: 'Les frases més cèlebres del Papa Lleó XIV ordenades per temes: pau, migració, intel·ligència artificial, doctrina social, família, pobresa i unitat.',
+    },
+    gl: {
+      title: 'Frases célebres do Papa León XIV: citas por temas',
+      description: 'As frases máis célebres do Papa León XIV organizadas por temas: paz, migración, intelixencia artificial, doutrina social, familia, pobreza e unidade.',
+    },
+    eu: {
+      title: 'Leon XIV.a Aita Santuaren aipu ospetsuak gaien arabera',
+      description: 'Leon XIV.a Aita Santuaren aipu ospetsuenak gaien arabera: bakea, migrazioa, adimen artifiziala, doktrina soziala, familia, pobrezia eta batasuna.',
+    },
+  },
+
+  'dilexi-te': {
+    es: {
+      title: 'Dilexi Te: primera exhortación apostólica del Papa León XIV',
+      description: '"Dilexi Te" ("Te he amado"): primera exhortación apostólica del Papa León XIV sobre el amor de Dios y la caridad a los pobres. Contexto, temas y texto oficial.',
+    },
+    en: {
+      title: 'Dilexi Te: Pope Leo XIV\'s First Apostolic Exhortation',
+      description: '"Dilexi Te" ("I have loved you"): Pope Leo XIV\'s first apostolic exhortation on God\'s love and charity to the poor. Context, key themes and official text.',
+    },
+    it: {
+      title: 'Dilexi Te: prima esortazione apostolica di Papa Leone XIV',
+      description: '"Dilexi Te" ("Ti ho amato"): prima esortazione apostolica di Papa Leone XIV sull\'amore di Dio e la carità ai poveri. Contesto, temi e testo ufficiale.',
+    },
+    fr: {
+      title: 'Dilexi Te : première exhortation apostolique de Léon XIV',
+      description: '"Dilexi Te" ("Je t\'ai aimé") : première exhortation apostolique du Pape Léon XIV sur l\'amour de Dieu et la charité envers les pauvres.',
+    },
+    de: {
+      title: 'Dilexi Te: erstes Apostolisches Schreiben von Leo XIV',
+      description: '"Dilexi Te" ("Ich habe dich geliebt"): erstes Apostolisches Schreiben von Papst Leo XIV über Gottes Liebe und die Caritas für die Armen.',
+    },
+    pt: {
+      title: 'Dilexi Te: primeira exortação apostólica de Leão XIV',
+      description: '"Dilexi Te" ("Eu te amei"): primeira exortação apostólica do Papa Leão XIV sobre o amor de Deus e a caridade aos pobres. Contexto e temas.',
+    },
+    ca: {
+      title: 'Dilexi Te: primera exhortació apostòlica de Lleó XIV',
+      description: '"Dilexi Te" ("T\'he estimat"): primera exhortació apostòlica del Papa Lleó XIV sobre l\'amor de Déu i la caritat als pobres. Context i temes.',
+    },
+    gl: {
+      title: 'Dilexi Te: primeira exhortación apostólica de León XIV',
+      description: '"Dilexi Te" ("Ámoche"): primeira exhortación apostólica do Papa León XIV sobre o amor de Deus e a caridade aos pobres. Contexto e temas.',
+    },
+    eu: {
+      title: 'Dilexi Te: Leon XIV.aren lehen aholku apostolikoa',
+      description: '"Dilexi Te" ("Maitatu zaitut"): Leon XIV.a Aita Santuaren lehen aholku apostolikoa Jainkoaren maitasunaz eta behartsuenganako karitateaz.',
     },
   },
 
