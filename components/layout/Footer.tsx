@@ -28,10 +28,34 @@ export default function Footer() {
   const dict = getDictionary(currentLocale)
   const prefixHref = (p: string) => localizePath(p, currentLocale)
 
+  // Nuevas páginas temáticas: biografía del Papa, kit, himno, oración, voluntariado
+  const extraItems: { path: string; labelByLocale: Partial<Record<Locale, string>> }[] = [
+    {
+      path: '/papa-leon-xiv',
+      labelByLocale: { es: 'Papa León XIV', en: 'Pope Leo XIV', it: 'Papa Leone XIV', fr: 'Pape Léon XIV', de: 'Papst Leo XIV', pt: 'Papa Leão XIV', ca: 'Papa Lleó XIV', gl: 'Papa León XIV', eu: 'Leon XIV.a' },
+    },
+    {
+      path: '/voluntariado',
+      labelByLocale: { es: 'Voluntariado', en: 'Volunteering', it: 'Volontariato', fr: 'Bénévolat', de: 'Ehrenamt', pt: 'Voluntariado', ca: 'Voluntariat', gl: 'Voluntariado', eu: 'Boluntariotza' },
+    },
+    {
+      path: '/que-llevar',
+      labelByLocale: { es: 'Qué llevar', en: 'What to bring', it: 'Cosa portare', fr: 'Que emporter', de: 'Was mitnehmen', pt: 'O que levar', ca: 'Què portar', gl: 'Que levar', eu: 'Zer eraman' },
+    },
+    {
+      path: '/himno',
+      labelByLocale: { es: 'Himno', en: 'Anthem', it: 'Inno', fr: 'Hymne', de: 'Hymne', pt: 'Hino', ca: 'Himne', gl: 'Himno', eu: 'Ereserkia' },
+    },
+    {
+      path: '/oracion',
+      labelByLocale: { es: 'Oración', en: 'Prayer', it: 'Preghiera', fr: 'Prière', de: 'Gebet', pt: 'Oração', ca: 'Oració', gl: 'Oración', eu: 'Otoitza' },
+    },
+  ]
+
   return (
     <footer className="gradient-navy mt-16 text-white/80">
       <Container className="py-12">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           {/* Marca */}
           <div>
             <div className="mb-3 flex items-center gap-2">
@@ -62,6 +86,25 @@ export default function Footer() {
                     className="text-sm text-white/60 transition-colors hover:text-papal-gold"
                   >
                     {dict.nav[item.key]}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Páginas temáticas */}
+          <div>
+            <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-white">
+              {currentLocale === 'en' ? 'More' : currentLocale === 'fr' ? 'Plus' : currentLocale === 'de' ? 'Mehr' : currentLocale === 'it' ? 'Altro' : currentLocale === 'pt' ? 'Mais' : currentLocale === 'ca' ? 'Més' : currentLocale === 'gl' ? 'Máis' : currentLocale === 'eu' ? 'Gehiago' : 'Más'}
+            </h3>
+            <ul className="space-y-2">
+              {extraItems.map((item) => (
+                <li key={item.path}>
+                  <Link
+                    href={prefixHref(item.path)}
+                    className="text-sm text-white/60 transition-colors hover:text-papal-gold"
+                  >
+                    {item.labelByLocale[currentLocale] || item.labelByLocale.es}
                   </Link>
                 </li>
               ))}

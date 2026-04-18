@@ -7,6 +7,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import NewsletterForm from '@/components/shared/NewsletterForm'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import SocialFeed from '@/components/shared/SocialFeed'
+import MeteoWidget from '@/components/shared/MeteoWidget'
 import { cities, getCityBySlug } from '@/data/cities'
 import { getScheduleByCity } from '@/data/schedule'
 import { getAffiliatesByCategory } from '@/data/affiliates'
@@ -138,6 +139,28 @@ export default function CityPage({ params }: Props) {
                   </div>
                 </div>
               ))}
+            </section>
+
+            {/* Meteo: previsión para los días del viaje */}
+            <section className="mt-10">
+              <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">
+                Previsión meteorológica
+              </h2>
+              <MeteoWidget
+                ciudad={city.name}
+                lat={city.coordinates.lat}
+                lon={city.coordinates.lng}
+                fechas={(() => {
+                  const arr: string[] = []
+                  const start = new Date(city.papalDates.start)
+                  const end = new Date(city.papalDates.end)
+                  for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+                    arr.push(d.toISOString().slice(0, 10))
+                  }
+                  return arr
+                })()}
+                locale="es"
+              />
             </section>
 
             {/* Mapa de los actos en la ciudad */}

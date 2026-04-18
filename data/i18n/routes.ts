@@ -44,6 +44,26 @@ export const ROUTE_TRANSLATIONS = {
     es: 'faq', en: 'faq', it: 'faq', fr: 'faq',
     de: 'faq', pt: 'faq', ca: 'faq', gl: 'faq', eu: 'faq',
   },
+  'que-llevar': {
+    es: 'que-llevar', en: 'what-to-bring', it: 'cosa-portare', fr: 'que-emporter',
+    de: 'was-mitnehmen', pt: 'o-que-levar', ca: 'que-portar', gl: 'que-levar', eu: 'zer-eraman',
+  },
+  himno: {
+    es: 'himno', en: 'anthem', it: 'inno', fr: 'hymne',
+    de: 'hymne', pt: 'hino', ca: 'himne', gl: 'himno', eu: 'ereserkia',
+  },
+  oracion: {
+    es: 'oracion', en: 'prayer', it: 'preghiera', fr: 'priere',
+    de: 'gebet', pt: 'oracao', ca: 'oracio', gl: 'oracion', eu: 'otoitza',
+  },
+  voluntariado: {
+    es: 'voluntariado', en: 'volunteering', it: 'volontariato', fr: 'benevolat',
+    de: 'ehrenamt', pt: 'voluntariado', ca: 'voluntariat', gl: 'voluntariado', eu: 'boluntariotza',
+  },
+  'papa-leon-xiv': {
+    es: 'papa-leon-xiv', en: 'pope-leo-xiv', it: 'papa-leone-xiv', fr: 'pape-leon-xiv',
+    de: 'papst-leo-xiv', pt: 'papa-leao-xiv', ca: 'papa-lleo-xiv', gl: 'papa-leon-xiv', eu: 'leon-xiv-aita-santua',
+  },
   'aviso-legal': {
     es: 'aviso-legal', en: 'legal-notice', it: 'note-legali', fr: 'mentions-legales',
     de: 'impressum', pt: 'aviso-legal', ca: 'avis-legal', gl: 'aviso-legal', eu: 'lege-oharra',
