@@ -5,10 +5,13 @@ import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import { cityTransports } from '@/data/transporte'
 import { getAffiliateById } from '@/data/affiliates'
 import { getAlternates } from '@/lib/i18n-metadata'
+import { getSeoMeta } from '@/lib/seo-by-route'
+
+const seo = getSeoMeta('como-llegar', 'es')
 
 export const metadata: Metadata = {
-  title: 'Cómo llegar',
-  description: 'Guía de transporte para la visita del Papa León XIV: cómo llegar a Madrid, Barcelona, Gran Canaria y Tenerife en tren, avión o bus. Horarios, precios y afectaciones de tráfico.',
+  title: seo?.title ?? undefined,
+  description: seo?.description ?? undefined,
   alternates: getAlternates('/como-llegar', 'es'),
 }
 

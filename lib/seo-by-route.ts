@@ -18,6 +18,357 @@ type SeoEntry = { title: string; description: string }
 type SeoByLocale = Partial<Record<Locale, SeoEntry>>
 
 export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
+  programa: {
+    es: {
+      title: 'Programa visita Papa León XIV a España · 6-12 junio 2026',
+      description: 'Programa completo día a día de la visita del Papa León XIV a España: 24 actos en Madrid, Barcelona, Gran Canaria y Tenerife del 6 al 12 de junio de 2026.',
+    },
+    en: {
+      title: 'Schedule: Pope Leo XIV\'s Visit to Spain · 6-12 June 2026',
+      description: 'Full day-by-day schedule of Pope Leo XIV\'s apostolic journey to Spain: 24 events in Madrid, Barcelona, Gran Canaria and Tenerife, 6-12 June 2026.',
+    },
+    it: {
+      title: 'Programma visita Papa Leone XIV in Spagna · 6-12 giu 2026',
+      description: 'Programma completo giorno per giorno della visita di Papa Leone XIV in Spagna: 24 eventi a Madrid, Barcellona, Gran Canaria e Tenerife, 6-12 giugno 2026.',
+    },
+    fr: {
+      title: 'Programme visite du Pape Léon XIV en Espagne · Juin 2026',
+      description: 'Programme complet jour par jour de la visite du Pape Léon XIV en Espagne : 24 événements à Madrid, Barcelone, Grande Canarie et Ténérife, 6-12 juin 2026.',
+    },
+    de: {
+      title: 'Programm Papst Leo XIV Spanien · 6.-12. Juni 2026',
+      description: 'Vollständiger Tagesplan der Apostolischen Reise von Papst Leo XIV nach Spanien: 24 Veranstaltungen in Madrid, Barcelona, Gran Canaria und Teneriffa.',
+    },
+    pt: {
+      title: 'Programa visita Papa Leão XIV a Espanha · 6-12 jun 2026',
+      description: 'Programa completo dia a dia da visita do Papa Leão XIV a Espanha: 24 atos em Madrid, Barcelona, Grã Canária e Tenerife, 6-12 de junho de 2026.',
+    },
+    ca: {
+      title: 'Programa visita Papa Lleó XIV a Espanya · 6-12 juny 2026',
+      description: 'Programa complet dia a dia de la visita del Papa Lleó XIV a Espanya: 24 actes a Madrid, Barcelona, Gran Canària i Tenerife, 6-12 de juny de 2026.',
+    },
+    gl: {
+      title: 'Programa visita Papa León XIV a España · 6-12 xuño 2026',
+      description: 'Programa completo día a día da visita do Papa León XIV a España: 24 actos en Madrid, Barcelona, Gran Canaria e Tenerife, 6-12 de xuño de 2026.',
+    },
+    eu: {
+      title: 'Leon XIV Espainia bisitaldia · Egitaraua · Ekainak 6-12',
+      description: 'Leon XIV.a Aita Santuaren Espainiarako bidai apostolikoaren eguneroko egitaraua: 24 ekitaldi Madril, Bartzelona, Gran Canaria eta Tenerifen.',
+    },
+  },
+
+  ciudades: {
+    es: {
+      title: 'Ciudades visita Papa León XIV: Madrid, Barcelona, Canarias',
+      description: 'Guía completa de las 4 ciudades que visita el Papa León XIV en España: Madrid, Barcelona, Gran Canaria y Tenerife. Programa, transporte y alojamiento.',
+    },
+    en: {
+      title: 'Cities of Pope Leo XIV\'s Visit: Madrid, Barcelona, Canaries',
+      description: 'Complete guide to the 4 cities of Pope Leo XIV\'s visit to Spain: Madrid, Barcelona, Gran Canaria and Tenerife. Programme, transport and accommodation.',
+    },
+    it: {
+      title: 'Città visita Papa Leone XIV: Madrid, Barcellona, Canarie',
+      description: 'Guida completa alle 4 città della visita di Papa Leone XIV in Spagna: Madrid, Barcellona, Gran Canaria e Tenerife. Programma, trasporti e alloggio.',
+    },
+    fr: {
+      title: 'Villes visite Pape Léon XIV : Madrid, Barcelone, Canaries',
+      description: 'Guide complet des 4 villes de la visite du Pape Léon XIV en Espagne : Madrid, Barcelone, Grande Canarie et Ténérife. Programme, transport, hébergement.',
+    },
+    de: {
+      title: 'Städte der Papstvisite Leo XIV: Madrid, Barcelona, Kanaren',
+      description: 'Vollständiger Führer zu den 4 Städten des Papstbesuchs Leo XIV in Spanien: Madrid, Barcelona, Gran Canaria und Teneriffa. Programm und Unterkunft.',
+    },
+    pt: {
+      title: 'Cidades visita Papa Leão XIV: Madrid, Barcelona, Canárias',
+      description: 'Guia completo das 4 cidades da visita do Papa Leão XIV a Espanha: Madrid, Barcelona, Grã Canária e Tenerife. Programa, transporte e alojamento.',
+    },
+    ca: {
+      title: 'Ciutats visita Papa Lleó XIV: Madrid, Barcelona, Canàries',
+      description: 'Guia completa de les 4 ciutats de la visita del Papa Lleó XIV a Espanya: Madrid, Barcelona, Gran Canària i Tenerife. Programa, transport i allotjament.',
+    },
+    gl: {
+      title: 'Cidades visita Papa León XIV: Madrid, Barcelona, Canarias',
+      description: 'Guía completa das 4 cidades da visita do Papa León XIV a España: Madrid, Barcelona, Gran Canaria e Tenerife. Programa, transporte e aloxamento.',
+    },
+    eu: {
+      title: 'Leon XIV bisitaldiaren hiriak: Madril, Bartzelona, Kanariak',
+      description: 'Leon XIV.a Aita Santuaren Espainiarako bisitaldiaren 4 hirien gida osoa: Madril, Bartzelona, Kanaria Handia eta Tenerife.',
+    },
+  },
+
+  'como-asistir': {
+    es: {
+      title: 'Cómo asistir a la visita del Papa León XIV: entradas 2026',
+      description: 'Guía práctica para asistir a la visita del Papa León XIV a España en junio de 2026: inscripción gratuita, entradas, acreditaciones y recomendaciones.',
+    },
+    en: {
+      title: 'How to Attend Pope Leo XIV\'s Visit: Tickets & Passes 2026',
+      description: 'Practical guide to attending Pope Leo XIV\'s visit to Spain in June 2026: free registration, tickets, accreditation and recommendations.',
+    },
+    it: {
+      title: 'Come partecipare alla visita di Papa Leone XIV: biglietti',
+      description: 'Guida pratica per partecipare alla visita di Papa Leone XIV in Spagna nel giugno 2026: iscrizione gratuita, biglietti, accreditamento.',
+    },
+    fr: {
+      title: 'Comment assister à la visite du Pape Léon XIV · Billets 2026',
+      description: 'Guide pratique pour assister à la visite du Pape Léon XIV en Espagne en juin 2026 : inscription gratuite, billets, accréditations et conseils.',
+    },
+    de: {
+      title: 'Papstvisite Leo XIV: Teilnahme, Tickets & Anmeldung 2026',
+      description: 'Praktischer Leitfaden zur Teilnahme an der Papstvisite Leo XIV in Spanien im Juni 2026: kostenlose Anmeldung, Tickets, Akkreditierung.',
+    },
+    pt: {
+      title: 'Como assistir à visita do Papa Leão XIV: bilhetes 2026',
+      description: 'Guia prático para assistir à visita do Papa Leão XIV a Espanha em junho 2026: inscrição gratuita, bilhetes, acreditações e recomendações.',
+    },
+    ca: {
+      title: 'Com assistir a la visita del Papa Lleó XIV: entrades 2026',
+      description: 'Guia pràctica per assistir a la visita del Papa Lleó XIV a Espanya el juny de 2026: inscripció gratuïta, entrades, acreditacions i recomanacions.',
+    },
+    gl: {
+      title: 'Como asistir á visita do Papa León XIV: entradas 2026',
+      description: 'Guía práctica para asistir á visita do Papa León XIV a España en xuño de 2026: inscrición gratuíta, entradas, acreditacións e recomendacións.',
+    },
+    eu: {
+      title: 'Nola parte hartu Leon XIV bisitaldian: sarrerak 2026',
+      description: 'Leon XIV.a Aita Santuaren Espainiarako 2026ko ekaineko bisitaldian parte hartzeko gida: doako izen-ematea, sarrerak eta egiaztagiriak.',
+    },
+  },
+
+  'como-llegar': {
+    es: {
+      title: 'Cómo llegar a Madrid, Barcelona y Canarias · Papa León XIV',
+      description: 'Transporte para la visita del Papa León XIV: cómo llegar a Madrid, Barcelona, Gran Canaria y Tenerife en tren (AVE), avión o bus. Horarios especiales junio 2026.',
+    },
+    en: {
+      title: 'How to Get to Madrid, Barcelona & Canaries · Pope Leo XIV',
+      description: 'Transport for Pope Leo XIV\'s visit: how to reach Madrid, Barcelona, Gran Canaria and Tenerife by train (AVE), plane or bus. Special schedules for June 2026.',
+    },
+    it: {
+      title: 'Come arrivare a Madrid, Barcellona e Canarie · Papa Leone',
+      description: 'Trasporti per la visita di Papa Leone XIV: come raggiungere Madrid, Barcellona, Gran Canaria e Tenerife in treno (AVE), aereo o bus. Orari speciali giugno 2026.',
+    },
+    fr: {
+      title: 'Se rendre à Madrid, Barcelone, Canaries · Pape Léon XIV',
+      description: 'Transports pour la visite du Pape Léon XIV : comment rejoindre Madrid, Barcelone, Grande Canarie et Ténérife en train (AVE), avion ou bus. Juin 2026.',
+    },
+    de: {
+      title: 'Anreise Madrid, Barcelona, Kanaren · Papst Leo XIV',
+      description: 'Verkehr für den Papstbesuch Leo XIV: Wie Sie Madrid, Barcelona, Gran Canaria und Teneriffa mit Zug (AVE), Flugzeug oder Bus erreichen. Juni 2026.',
+    },
+    pt: {
+      title: 'Como chegar a Madrid, Barcelona e Canárias · Papa Leão XIV',
+      description: 'Transporte para a visita do Papa Leão XIV: como chegar a Madrid, Barcelona, Grã Canária e Tenerife de comboio (AVE), avião ou autocarro. Junho 2026.',
+    },
+    ca: {
+      title: 'Com arribar a Madrid, Barcelona i Canàries · Papa Lleó XIV',
+      description: 'Transport per a la visita del Papa Lleó XIV: com arribar a Madrid, Barcelona, Gran Canària i Tenerife en tren (AVE), avió o bus. Horaris juny 2026.',
+    },
+    gl: {
+      title: 'Como chegar a Madrid, Barcelona e Canarias · Papa León XIV',
+      description: 'Transporte para a visita do Papa León XIV: como chegar a Madrid, Barcelona, Gran Canaria e Tenerife en tren (AVE), avión ou autobús. Xuño 2026.',
+    },
+    eu: {
+      title: 'Nola heldu Madril, Bartzelona eta Kanarietara · Leon XIV',
+      description: 'Leon XIV.a Aita Santuaren bisitaldirako garraioa: Madril, Bartzelona, Kanaria Handia eta Tenerifera nola heldu trenez (AVE), hegazkinez edo autobusez.',
+    },
+  },
+
+  'donde-ver': {
+    es: {
+      title: 'Dónde ver la visita del Papa León XIV: TV, streaming, radio',
+      description: 'Canales de TV (RTVE, 13TV, TRECE), streaming (RTVE Play, Vatican News) y radio que retransmiten la visita del Papa León XIV a España en junio de 2026.',
+    },
+    en: {
+      title: 'Where to Watch Pope Leo XIV\'s Visit: TV, Stream, Radio',
+      description: 'TV channels (RTVE, 13TV), streaming (RTVE Play, Vatican News) and radio broadcasting Pope Leo XIV\'s visit to Spain in June 2026. Live and on-demand.',
+    },
+    it: {
+      title: 'Dove vedere la visita di Papa Leone XIV: TV e streaming',
+      description: 'Canali TV (RTVE, 13TV, Vatican News), streaming e radio che trasmettono la visita di Papa Leone XIV in Spagna nel giugno 2026. In diretta e on demand.',
+    },
+    fr: {
+      title: 'Où regarder la visite du Pape Léon XIV : TV, streaming',
+      description: 'Chaînes TV (RTVE, 13TV, Vatican News), streaming et radio qui retransmettent la visite du Pape Léon XIV en Espagne en juin 2026. En direct et à la demande.',
+    },
+    de: {
+      title: 'Papstvisite Leo XIV live sehen: TV, Streaming, Radio',
+      description: 'TV-Sender (RTVE, 13TV, Vatican News), Streaming-Dienste und Radiostationen, die den Besuch von Papst Leo XIV in Spanien im Juni 2026 übertragen.',
+    },
+    pt: {
+      title: 'Onde ver a visita do Papa Leão XIV: TV, streaming, rádio',
+      description: 'Canais TV (RTVE, 13TV, Vatican News), streaming e rádio que transmitem a visita do Papa Leão XIV a Espanha em junho 2026. Em direto e a pedido.',
+    },
+    ca: {
+      title: 'On veure la visita del Papa Lleó XIV: TV, streaming, ràdio',
+      description: 'Canals TV (RTVE, 13TV, Vatican News), streaming i ràdio que retransmeten la visita del Papa Lleó XIV a Espanya el juny de 2026. En directe i sota demanda.',
+    },
+    gl: {
+      title: 'Onde ver a visita do Papa León XIV: TV, streaming, radio',
+      description: 'Canles TV (RTVE, 13TV, Vatican News), streaming e radio que retransmiten a visita do Papa León XIV a España en xuño de 2026. En directo e baixo demanda.',
+    },
+    eu: {
+      title: 'Non ikusi Leon XIV bisitaldia: TB, streaming, irratia',
+      description: 'Leon XIV.a Aita Santuaren Espainiarako 2026ko ekaineko bisitaldia emititzen duten telebista-kateak (RTVE, 13TV, Vatican News), streaming eta irratia.',
+    },
+  },
+
+  mapa: {
+    es: {
+      title: 'Mapa del recorrido del Papa León XIV · Madrid, Barcelona',
+      description: 'Mapa interactivo del recorrido del Papa León XIV por España del 6 al 12 de junio de 2026: Madrid, Barcelona, Gran Canaria y Tenerife con todos los actos.',
+    },
+    en: {
+      title: 'Map of Pope Leo XIV\'s Route in Spain · Interactive 2026',
+      description: 'Interactive map of Pope Leo XIV\'s apostolic journey across Spain (6-12 June 2026): Madrid, Barcelona, Gran Canaria and Tenerife with every event pinned.',
+    },
+    it: {
+      title: 'Mappa percorso Papa Leone XIV in Spagna · Interattiva 2026',
+      description: 'Mappa interattiva del percorso di Papa Leone XIV in Spagna (6-12 giugno 2026): Madrid, Barcellona, Gran Canaria e Tenerife con tutti gli eventi.',
+    },
+    fr: {
+      title: 'Carte parcours Pape Léon XIV Espagne · Interactive 2026',
+      description: 'Carte interactive du voyage apostolique du Pape Léon XIV en Espagne (6-12 juin 2026) : Madrid, Barcelone, Grande Canarie et Ténérife avec tous les événements.',
+    },
+    de: {
+      title: 'Karte Papst Leo XIV Spanienreise · Interaktiv 2026',
+      description: 'Interaktive Karte der Apostolischen Reise von Papst Leo XIV durch Spanien (6.-12. Juni 2026): Madrid, Barcelona, Gran Canaria und Teneriffa.',
+    },
+    pt: {
+      title: 'Mapa do percurso do Papa Leão XIV · Interativo 2026',
+      description: 'Mapa interativo da viagem apostólica do Papa Leão XIV a Espanha (6-12 de junho 2026): Madrid, Barcelona, Grã Canária e Tenerife com todos os atos.',
+    },
+    ca: {
+      title: 'Mapa del recorregut del Papa Lleó XIV · Interactiu 2026',
+      description: 'Mapa interactiu del viatge apostòlic del Papa Lleó XIV a Espanya (6-12 de juny 2026): Madrid, Barcelona, Gran Canària i Tenerife amb tots els actes.',
+    },
+    gl: {
+      title: 'Mapa do percorrido do Papa León XIV · Interactivo 2026',
+      description: 'Mapa interactivo da viaxe apostólica do Papa León XIV a España (6-12 de xuño 2026): Madrid, Barcelona, Gran Canaria e Tenerife con todos os actos.',
+    },
+    eu: {
+      title: 'Leon XIV Espainiako ibilbidearen mapa · 2026',
+      description: 'Leon XIV.a Aita Santuaren Espainiako bidai apostolikoaren mapa interaktiboa (2026ko ekainaren 6-12): Madril, Bartzelona, Kanaria Handia eta Tenerife.',
+    },
+  },
+
+  noticias: {
+    es: {
+      title: 'Noticias Papa León XIV: novedades visita España 2026',
+      description: 'Últimas noticias, actualizaciones y seguimiento de la visita del Papa León XIV a España en junio de 2026. Actualizado diariamente desde fuentes oficiales.',
+    },
+    en: {
+      title: 'Pope Leo XIV News: Latest Updates on Spain Visit 2026',
+      description: 'Latest news, updates and coverage of Pope Leo XIV\'s visit to Spain in June 2026. Daily updates from official sources and mainstream media.',
+    },
+    it: {
+      title: 'Notizie Papa Leone XIV: aggiornamenti visita Spagna 2026',
+      description: 'Ultime notizie, aggiornamenti e copertura della visita di Papa Leone XIV in Spagna nel giugno 2026. Aggiornato quotidianamente da fonti ufficiali.',
+    },
+    fr: {
+      title: 'Actualités Pape Léon XIV : visite Espagne 2026',
+      description: 'Dernières actualités, mises à jour et couverture de la visite du Pape Léon XIV en Espagne en juin 2026. Mis à jour quotidiennement depuis sources officielles.',
+    },
+    de: {
+      title: 'Papst Leo XIV News: Spanienreise 2026 — Aktuelle',
+      description: 'Aktuelle Nachrichten und Updates zum Besuch von Papst Leo XIV in Spanien im Juni 2026. Tägliche Aktualisierung aus offiziellen Quellen und Leitmedien.',
+    },
+    pt: {
+      title: 'Notícias Papa Leão XIV: visita Espanha 2026',
+      description: 'Últimas notícias, atualizações e cobertura da visita do Papa Leão XIV a Espanha em junho de 2026. Atualizado diariamente de fontes oficiais.',
+    },
+    ca: {
+      title: 'Notícies Papa Lleó XIV: visita Espanya 2026',
+      description: 'Darreres notícies, actualitzacions i cobertura de la visita del Papa Lleó XIV a Espanya el juny de 2026. Actualitzat diàriament des de fonts oficials.',
+    },
+    gl: {
+      title: 'Novas Papa León XIV: visita España 2026',
+      description: 'Últimas novas, actualizacións e cobertura da visita do Papa León XIV a España en xuño de 2026. Actualizado diariamente dende fontes oficiais.',
+    },
+    eu: {
+      title: 'Leon XIV albisteak: 2026ko Espainia bisitaldia',
+      description: 'Leon XIV.a Aita Santuaren 2026ko ekaineko Espainia bisitaldiaren albiste, eguneraketa eta estaldura berrienak. Iturri ofizialetatik egunero eguneratuta.',
+    },
+  },
+
+  guia: {
+    es: {
+      title: 'Guía del peregrino Papa León XIV: familias, mayores, PMR',
+      description: 'Guías adaptadas por perfil para la visita del Papa León XIV: familias con niños, personas mayores, movilidad reducida y peregrinos internacionales.',
+    },
+    en: {
+      title: 'Pilgrim Guide Pope Leo XIV: Families, Elderly, Mobility',
+      description: 'Tailored guides for Pope Leo XIV\'s visit by visitor profile: families with kids, elderly, reduced mobility and international pilgrims. Tips and checklists.',
+    },
+    it: {
+      title: 'Guida pellegrino Papa Leone XIV: famiglie, anziani, PMR',
+      description: 'Guide su misura per la visita di Papa Leone XIV per profilo: famiglie con bambini, anziani, mobilità ridotta e pellegrini internazionali.',
+    },
+    fr: {
+      title: 'Guide pèlerin Pape Léon XIV : familles, seniors, PMR',
+      description: 'Guides adaptés à la visite du Pape Léon XIV par profil : familles avec enfants, seniors, mobilité réduite et pèlerins internationaux.',
+    },
+    de: {
+      title: 'Pilgerführer Papst Leo XIV: Familien, Senioren, Mobilität',
+      description: 'Maßgeschneiderte Leitfäden zur Papstvisite Leo XIV nach Zielgruppe: Familien mit Kindern, Senioren, eingeschränkte Mobilität, internationale Pilger.',
+    },
+    pt: {
+      title: 'Guia peregrino Papa Leão XIV: famílias, idosos, mobilidade',
+      description: 'Guias adaptados por perfil para a visita do Papa Leão XIV: famílias com crianças, idosos, mobilidade reduzida e peregrinos internacionais.',
+    },
+    ca: {
+      title: 'Guia pelegrí Papa Lleó XIV: famílies, grans, mobilitat',
+      description: 'Guies adaptades per perfil per a la visita del Papa Lleó XIV: famílies amb nens, gent gran, mobilitat reduïda i pelegrins internacionals.',
+    },
+    gl: {
+      title: 'Guía peregrino Papa León XIV: familias, maiores, mobilidade',
+      description: 'Guías adaptadas por perfil para a visita do Papa León XIV: familias con nenos, maiores, mobilidade reducida e peregrinos internacionais.',
+    },
+    eu: {
+      title: 'Leon XIV gida: familiak, adinekoak, mugikortasuna',
+      description: 'Leon XIV.a Aita Santuaren bisitaldirako profil bakoitzerako gidak: familiak umeekin, adinekoak, mugikortasun urria eta nazioarteko erromesak.',
+    },
+  },
+
+  faq: {
+    es: {
+      title: 'Preguntas frecuentes · Visita Papa León XIV España 2026',
+      description: '23 respuestas a las dudas más frecuentes sobre la visita del Papa León XIV a España en junio 2026: entradas, transporte, alojamiento, seguridad y más.',
+    },
+    en: {
+      title: 'FAQ · Pope Leo XIV\'s Visit to Spain 2026 · Answered',
+      description: '23 answers to the most common questions about Pope Leo XIV\'s visit to Spain in June 2026: tickets, transport, accommodation, security and more.',
+    },
+    it: {
+      title: 'FAQ · Visita Papa Leone XIV in Spagna 2026 · Risposte',
+      description: '23 risposte alle domande più frequenti sulla visita di Papa Leone XIV in Spagna nel giugno 2026: biglietti, trasporti, alloggio, sicurezza.',
+    },
+    fr: {
+      title: 'FAQ · Visite Pape Léon XIV Espagne 2026 · Réponses',
+      description: '23 réponses aux questions les plus fréquentes sur la visite du Pape Léon XIV en Espagne en juin 2026 : billets, transport, hébergement, sécurité.',
+    },
+    de: {
+      title: 'FAQ · Papstvisite Leo XIV Spanien 2026 · Antworten',
+      description: '23 Antworten auf die häufigsten Fragen zum Besuch von Papst Leo XIV in Spanien im Juni 2026: Tickets, Transport, Unterkunft, Sicherheit und mehr.',
+    },
+    pt: {
+      title: 'FAQ · Visita Papa Leão XIV Espanha 2026 · Respostas',
+      description: '23 respostas às perguntas mais frequentes sobre a visita do Papa Leão XIV a Espanha em junho de 2026: bilhetes, transporte, alojamento, segurança.',
+    },
+    ca: {
+      title: 'FAQ · Visita Papa Lleó XIV Espanya 2026 · Respostes',
+      description: '23 respostes a les preguntes més freqüents sobre la visita del Papa Lleó XIV a Espanya el juny de 2026: entrades, transport, allotjament, seguretat.',
+    },
+    gl: {
+      title: 'FAQ · Visita Papa León XIV España 2026 · Respostas',
+      description: '23 respostas ás preguntas máis frecuentes sobre a visita do Papa León XIV a España en xuño de 2026: entradas, transporte, aloxamento, seguridade.',
+    },
+    eu: {
+      title: 'Ohiko galderak · Leon XIV bisitaldia Espainia 2026',
+      description: 'Leon XIV.a Aita Santuaren 2026ko ekaineko Espainia bisitaldiari buruzko 23 ohiko galdera: sarrerak, garraioa, ostatua, segurtasuna eta gehiago.',
+    },
+  },
+
   'papa-leon-xiv': {
     es: {
       title: 'Papa León XIV: biografía, edad, familia e idiomas',

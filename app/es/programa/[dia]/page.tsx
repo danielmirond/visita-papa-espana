@@ -22,8 +22,8 @@ export function generateMetadata({ params }: Props): Metadata {
   if (!day) return {}
   const city = cities.find((c) => c.slug === day.citySlug)
   return {
-    title: `${day.label} - ${city?.name}`,
-    description: `Programa del ${formatDateLong(day.date)} en ${city?.name}. ${day.events.length} actos programados para la visita del Papa León XIV.`,
+    title: `${day.label} en ${city?.name} · Visita Papa León XIV 2026`,
+    description: `${day.events.length} actos del Papa León XIV en ${city?.name} el ${formatDateLong(day.date)}: horarios, ubicaciones, cómo asistir y retransmisión en TV.`,
     alternates: getAlternates(`/programa/${params.dia}`, 'es'),
   }
 }

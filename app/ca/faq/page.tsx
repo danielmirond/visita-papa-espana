@@ -2,12 +2,15 @@ import type { Metadata } from 'next'
 import FaqPageContent from '@/components/pages/FaqPage'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { getAlternates } from '@/lib/i18n-metadata'
+import { getSeoMeta } from '@/lib/seo-by-route'
 
 const t = getPagesDict('ca')
 
+const seo = getSeoMeta('faq', 'ca')
+
 export const metadata: Metadata = {
-  title: t.faq.title,
-  description: t.faq.subtitle,
+  title: seo?.title ?? undefined,
+  description: seo?.description ?? undefined,
   alternates: getAlternates('/faq', 'ca'),
 }
 

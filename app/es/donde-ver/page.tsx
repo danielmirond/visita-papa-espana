@@ -2,10 +2,13 @@ import type { Metadata } from 'next'
 import Container from '@/components/ui/Container'
 import { tvChannels } from '@/data/tvChannels'
 import { getAlternates } from '@/lib/i18n-metadata'
+import { getSeoMeta } from '@/lib/seo-by-route'
+
+const seo = getSeoMeta('donde-ver', 'es')
 
 export const metadata: Metadata = {
-  title: 'Dónde ver la visita del Papa',
-  description: 'Todos los canales de TV, plataformas de streaming y emisoras de radio que retransmitirán la visita del Papa León XIV a España en junio de 2026.',
+  title: seo?.title ?? undefined,
+  description: seo?.description ?? undefined,
   alternates: getAlternates('/donde-ver', 'es'),
 }
 

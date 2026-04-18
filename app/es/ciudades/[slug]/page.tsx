@@ -36,9 +36,16 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const city = getCityBySlug(params.slug)
   if (!city) return {}
+  // Formato de fechas en español
+  const start = new Date(city.papalDates.start)
+  const end = new Date(city.papalDates.end)
+  const fmt = (d: Date) => d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long' })
+  const datesLabel = start.toDateString() === end.toDateString()
+    ? fmt(start)
+    : `${fmt(start)} al ${fmt(end)}`
   return {
-    title: `${city.name} - Visita papal`,
-    description: `Guía completa de la visita del Papa León XIV a ${city.name}. Programa, transporte, alojamiento y consejos prácticos.`,
+    title: `Visita del Papa León XIV a ${city.name} · ${datesLabel} 2026`,
+    description: `Programa, actos, cómo asistir, cómo llegar y alojamiento para la visita del Papa León XIV a ${city.name} (${datesLabel} 2026). Mapa, meteo y guía práctica.`,
     alternates: getAlternates(`/ciudades/${params.slug}`, 'es'),
   }
 }

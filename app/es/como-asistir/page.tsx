@@ -7,6 +7,7 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { siteConfig } from '@/data/siteConfig'
 import { affiliates } from '@/data/affiliates'
 import { getAlternates } from '@/lib/i18n-metadata'
+import { getSeoMeta } from '@/lib/seo-by-route'
 import { howToSchema } from '@/lib/schema/generators'
 import { localizePath } from '@/data/i18n/routes'
 
@@ -33,9 +34,11 @@ const howToSteps = [
   },
 ]
 
+const seo = getSeoMeta('como-asistir', 'es')
+
 export const metadata: Metadata = {
-  title: 'Cómo asistir a la visita del Papa',
-  description: 'Guía práctica para asistir a la visita del Papa León XIV a España: inscripción, transporte, alojamiento, qué llevar y recomendaciones para los actos.',
+  title: seo?.title ?? undefined,
+  description: seo?.description ?? undefined,
   alternates: getAlternates('/como-asistir', 'es'),
 }
 

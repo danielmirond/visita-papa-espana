@@ -2,12 +2,15 @@ import type { Metadata } from 'next'
 import ComoAsistirPageContent from '@/components/pages/ComoAsistirPage'
 import { getComoAsistirContent } from '@/data/i18n/content/como-asistir'
 import { getAlternates } from '@/lib/i18n-metadata'
+import { getSeoMeta } from '@/lib/seo-by-route'
 
 const t = getComoAsistirContent('de')
 
+const seo = getSeoMeta('como-asistir', 'de')
+
 export const metadata: Metadata = {
-  title: t.heroTitle,
-  description: t.heroSubtitle,
+  title: seo?.title ?? undefined,
+  description: seo?.description ?? undefined,
   alternates: getAlternates('/como-asistir', 'de'),
 }
 

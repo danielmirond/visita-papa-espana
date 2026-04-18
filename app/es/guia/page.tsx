@@ -3,10 +3,13 @@ import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import { profiles } from '@/data/perfiles'
 import { getAlternates } from '@/lib/i18n-metadata'
+import { getSeoMeta } from '@/lib/seo-by-route'
+
+const seo = getSeoMeta('guia', 'es')
 
 export const metadata: Metadata = {
-  title: 'Guías por tipo de visitante',
-  description: 'Guías personalizadas para la visita del Papa León XIV: familias con niños, personas mayores, visitantes internacionales y personas con movilidad reducida.',
+  title: seo?.title ?? undefined,
+  description: seo?.description ?? undefined,
   alternates: getAlternates('/guia', 'es'),
 }
 

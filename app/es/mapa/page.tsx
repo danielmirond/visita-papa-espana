@@ -5,6 +5,7 @@ import Container from '@/components/ui/Container'
 import { cities } from '@/data/cities'
 import { formatDateShort } from '@/lib/utils'
 import { getAlternates } from '@/lib/i18n-metadata'
+import { getSeoMeta } from '@/lib/seo-by-route'
 
 // Mapa solo en cliente (Leaflet necesita window)
 const PapalRouteMap = dynamic(() => import('@/components/map/PapalRouteMap'), {
@@ -17,9 +18,11 @@ const PapalRouteMap = dynamic(() => import('@/components/map/PapalRouteMap'), {
   ),
 })
 
+const seo = getSeoMeta('mapa', 'es')
+
 export const metadata: Metadata = {
-  title: 'Mapa del recorrido papal',
-  description: 'Mapa con el recorrido del Papa León XIV por España: Madrid, Barcelona, Gran Canaria y Tenerife del 6 al 12 de junio de 2026.',
+  title: seo?.title ?? undefined,
+  description: seo?.description ?? undefined,
   alternates: getAlternates('/mapa', 'es'),
 }
 
