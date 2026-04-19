@@ -7,6 +7,7 @@ import { siteConfig } from '@/data/siteConfig'
 import { LOCALES, DEFAULT_LOCALE, type Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 import { getDictionary } from '@/data/i18n/dictionaries'
+import { openCookieBanner } from '@/components/shared/CookieBanner'
 
 const NAV: { path: string; key: keyof ReturnType<typeof getDictionary>['nav'] }[] = [
   { path: '/', key: 'home' },
@@ -204,6 +205,14 @@ export default function Footer() {
               <Link href={prefixHref('/politica-cookies')} className="hover:text-papal-gold">
                 Cookies
               </Link>
+              <button
+                type="button"
+                onClick={openCookieBanner}
+                className="hover:text-papal-gold"
+                aria-label="Reabrir el banner de cookies para modificar o revocar el consentimiento"
+              >
+                🍪 Preferencias de cookies
+              </button>
             </nav>
           </div>
         </div>

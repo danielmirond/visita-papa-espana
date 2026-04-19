@@ -22,7 +22,36 @@ export default function AvisoLegalPage() {
       <Container className="py-10">
         <div className="prose prose-papal mx-auto max-w-2xl text-papal-navy/80">
 
-          <h2 className="font-heading text-xl font-bold text-papal-navy">Sobre este sitio</h2>
+          {/* Datos identificativos · art. 10 LSSI-CE */}
+          <div className="rounded-xl border-2 border-papal-gold/30 bg-papal-cream p-5 not-prose">
+            <h2 className="font-heading text-lg font-bold text-papal-navy">
+              Datos identificativos (art. 10 LSSI-CE)
+            </h2>
+            <dl className="mt-2 space-y-1 text-sm">
+              <div className="flex flex-wrap gap-2">
+                <dt className="font-semibold text-papal-navy">Titular:</dt>
+                <dd>Daniel Mirón (persona física)</dd>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <dt className="font-semibold text-papal-navy">NIF:</dt>
+                <dd>44039446N</dd>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <dt className="font-semibold text-papal-navy">Email:</dt>
+                <dd>
+                  <a href="mailto:info@visita-papa-2026.com" className="text-papal-gold-dark hover:underline">
+                    info@visita-papa-2026.com
+                  </a>
+                </dd>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <dt className="font-semibold text-papal-navy">Dominio:</dt>
+                <dd>www.visita-papa-2026.com</dd>
+              </div>
+            </dl>
+          </div>
+
+          <h2 className="mt-8 font-heading text-xl font-bold text-papal-navy">Sobre este sitio</h2>
           <p className="text-sm leading-relaxed">
             Este sitio web es un proyecto informativo independiente y <strong>no tiene vinculación oficial</strong> con
             la Santa Sede, la Conferencia Episcopal Española, el Gobierno de España ni ninguna otra institución
@@ -55,14 +84,28 @@ export default function AvisoLegalPage() {
             para su retirada inmediata.
           </p>
 
-          <h2 className="mt-8 font-heading text-xl font-bold text-papal-navy">Privacidad</h2>
+          <h2 className="mt-8 font-heading text-xl font-bold text-papal-navy">Privacidad y cookies</h2>
           <p className="text-sm leading-relaxed">
-            Este sitio no utiliza cookies de seguimiento ni recopila datos personales más allá de los que
-            voluntariamente proporciones al suscribirte a la newsletter. Los emails recopilados se usan
-            exclusivamente para enviar información sobre la visita papal y nunca se comparten con terceros.
+            Este sitio utiliza cookies técnicas propias (exentas de consentimiento) y cookies analíticas
+            de Google Analytics 4 (previo consentimiento del usuario). Los emails recogidos para la
+            newsletter se usan exclusivamente para enviar información sobre la visita papal y no se
+            comparten con terceros. Consulta el detalle completo y los tipos de cookies en nuestra{' '}
+            <a href="/politica-cookies" className="text-papal-gold hover:underline">
+              política de cookies
+            </a>{' '}
+            y{' '}
+            <a href="/privacidad" className="text-papal-gold hover:underline">
+              política de privacidad
+            </a>
+            .
           </p>
           <p className="text-sm leading-relaxed">
-            Puedes solicitar la eliminación de tus datos en cualquier momento escribiéndonos por email.
+            Para ejercer tus derechos (acceso, rectificación, supresión, oposición, limitación,
+            portabilidad y revocación del consentimiento) escribe a{' '}
+            <a href="mailto:info@visita-papa-2026.com" className="text-papal-gold hover:underline">
+              info@visita-papa-2026.com
+            </a>
+            .
           </p>
 
           <h2 className="mt-8 font-heading text-xl font-bold text-papal-navy">Limitación de responsabilidad</h2>
