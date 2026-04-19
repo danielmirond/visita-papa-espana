@@ -1,17 +1,17 @@
 import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import JsonLd from '@/components/seo/JsonLd'
+import { redesSociales } from '@/data/papaBiografia'
 import {
+  getTimelineVida,
+  getPosicionesMagisterio,
+  getFaqPapaLeonXIV,
   biografiaPapa,
-  timelineVida,
   prioridadesMagisterio,
   citasRelevantes,
   raicesChicago,
   familiaPapa,
-  posicionesMagisterio,
-  redesSociales,
-  faqPapaLeonXIV,
-} from '@/data/papaBiografia'
+} from '@/data/i18n/content/papaBiografia'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 import { faqPageSchema, popeLeoPersonSchema } from '@/lib/schema/generators'
@@ -407,6 +407,9 @@ const L = {
 export default function PapaBiografiaPage({ locale }: Props) {
   // Fallback a ES para claves no traducidas (nuevas secciones)
   const t = { ...L.es, ...((L as any)[locale] || {}) } as typeof L.es
+  const timelineVida = getTimelineVida(locale)
+  const posicionesMagisterio = getPosicionesMagisterio(locale)
+  const faqPapaLeonXIV = getFaqPapaLeonXIV(locale)
 
   return (
     <>
