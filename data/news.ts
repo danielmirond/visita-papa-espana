@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-papa-en-espana-noli-me-tangere',
+    title: 'El Papa en España: «Noli me tangere»',
+    excerpt: '«No me toques». Es lo que le dijo Jesús Resucitado a María Magdalena cuando la apóstol, tras confundirlo con el hortelano, lo reconoció al fin. Pero, ¿Cómo que «no me toques»? ¿De verdad era necesaria esa respuesta tan a…',
+    content: '«No me toques». Es lo que le dijo Jesús Resucitado a María Magdalena cuando la apóstol, tras confundirlo con el hortelano, lo reconoció al fin. Pero, ¿Cómo que «no me toques»? ¿De verdad era necesaria esa respuesta tan antipática? El famoso «Noli me tangere» de la Vulgata en latín (Jn 20, 16) ha sido traducido [&#8230;] La entrada El Papa en España: «Noli me tangere» se publicó primero en Omnes.',
+    date: '2026-04-15',
+    source: 'Omnes Mag',
+    sourceUrl: 'https://www.omnesmag.com/firmas/el-papa-en-espana-noli-me-tangere/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'alza-la-mirada-ya-esta-aqui-el-himno-oficial-de-la-visita-de-leon-xiv-a-espana',
+    title: '«Alza la mirada»: ya está aquí el himno oficial de la visita de León XIV a España',
+    excerpt: 'La producción incluye más de 1.700 voces de voluntarios de las diócesis de Madrid, Barcelona, Gran Canaria y Tenerife La entrada «Alza la mirada»: ya está aquí el himno oficial de la visita de León XIV a España se public…',
+    content: 'La producción incluye más de 1.700 voces de voluntarios de las diócesis de Madrid, Barcelona, Gran Canaria y Tenerife La entrada «Alza la mirada»: ya está aquí el himno oficial de la visita de León XIV a España se publicó primero en Revista Ecclesia.',
+    date: '2026-04-16',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/alza-la-mirada-ya-esta-aqui-el-himno-oficial-de-la-visita-de-leon-xiv-a-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'asi-suena-el-himno-oficial-del-viaje-del-papa-a-espana',
     title: 'Así suena el himno oficial del viaje del Papa a España',
     excerpt: 'La producción, impulsada por VIVAFE, se grabó en la catedral de la Almudena y, de forma simultanea, en las seos de Barcelona, Gran Canaria y Tenerife La entrada Así suena el himno oficial del viaje del Papa a España se p…',
