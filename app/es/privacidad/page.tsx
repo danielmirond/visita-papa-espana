@@ -83,20 +83,19 @@ export default function PrivacidadPage() {
                 <tbody>
                   <tr>
                     <td className="border border-papal-gold/20 p-2">
-                      Dirección de email
+                      Datos del formulario de contacto (nombre, email, mensaje, motivo)
                     </td>
                     <td className="border border-papal-gold/20 p-2">
-                      Suscripción voluntaria a la newsletter
+                      Envío voluntario a través de <a href="/contacto" className="text-papal-gold-dark hover:underline">/contacto</a>
                     </td>
                     <td className="border border-papal-gold/20 p-2">
-                      Envío de novedades sobre la visita apostólica
+                      Responder a la consulta del usuario
                     </td>
                     <td className="border border-papal-gold/20 p-2">
-                      Consentimiento (art. 6.1.a RGPD)
+                      Consentimiento explícito (art. 6.1.a RGPD)
                     </td>
                     <td className="border border-papal-gold/20 p-2">
-                      Hasta que te des de baja; supresión al 6.º mes tras la visita si no hay
-                      interacción
+                      Hasta la resolución de la consulta; máx. 12 meses
                     </td>
                   </tr>
                   <tr>
@@ -165,8 +164,9 @@ export default function PrivacidadPage() {
                 por defecto; transferencia puntual a EE. UU. amparada por las mismas cláusulas.
               </li>
               <li>
-                • <strong>Proveedor de email marketing</strong> (MailerLite EU, proveedor con
-                sede en Lituania) — los emails de la newsletter se almacenan en la UE.
+                • <strong>Resend (Resend, Inc.)</strong> — tramita el envío del mensaje del
+                formulario de contacto al responsable. Infraestructura en la UE (Dublin) con
+                transferencia puntual a EE. UU. amparada por SCCs.
               </li>
             </ul>
           </section>

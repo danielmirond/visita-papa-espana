@@ -19,8 +19,8 @@ const DEPLOY_URL = process.env.DEPLOY_URL || CANONICAL_URL
 
 export const siteConfig = {
   name: 'Visita Papa León XIV a España 2026',
-  shortName: 'Papa en España',
-  description: 'Guía completa de la visita del Papa León XIV a España del 6 al 12 de junio de 2026. Programa, ciudades, cómo asistir, dónde verlo y toda la información práctica.',
+  shortName: 'Papa en España · Guía independiente',
+  description: 'Guía informativa INDEPENDIENTE y no oficial de la visita del Papa León XIV a España (6-12 junio 2026). Programa, ciudades, cómo asistir, dónde verlo. Sin afiliación con la Santa Sede ni la Conferencia Episcopal Española.',
 
   /** URL canónica (para SEO: canonical, hreflang, sitemap, OG). */
   url: CANONICAL_URL,

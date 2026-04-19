@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import Header from '@/components/layout/Header'
+import UnofficialNotice from '@/components/shared/UnofficialNotice'
 import Footer from '@/components/layout/Footer'
 import JsonLd from '@/components/seo/JsonLd'
 import GoogleAnalytics from '@/components/seo/GoogleAnalytics'
@@ -137,6 +138,7 @@ export default function RootLayout({
         <JsonLd data={organizationSchema()} />
         <JsonLd data={webSiteSchema('es')} />
         <JsonLd data={popeLeoPersonSchema()} />
+        <UnofficialNotice />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

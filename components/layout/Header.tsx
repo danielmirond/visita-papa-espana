@@ -39,12 +39,15 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           <Link href={href('/')} className="flex items-center gap-2">
             <span className="text-2xl">&#x271D;</span>
-            <div>
-              <span className="font-heading text-lg font-bold text-papal-navy">
-                Papa en España
-              </span>
-              <span className="ml-2 hidden text-xs text-papal-gold sm:inline">
-                2026
+            <div className="leading-tight">
+              <div className="flex items-center gap-2">
+                <span className="font-heading text-lg font-bold text-papal-navy">
+                  Papa en España
+                </span>
+                <span className="hidden text-xs text-papal-gold sm:inline">2026</span>
+              </div>
+              <span className="block text-[10px] uppercase tracking-wide text-papal-navy/50">
+                Guía independiente
               </span>
             </div>
           </Link>

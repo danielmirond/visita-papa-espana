@@ -162,7 +162,10 @@ export function webSiteSchema(locale: Locale = 'es') {
     '@id': `${siteConfig.url}#website`,
     url: siteConfig.url,
     name: siteConfig.name,
+    alternateName: 'Papa en España · Guía independiente',
     description: siteConfig.description,
+    disambiguatingDescription:
+      'Sitio informativo independiente. No tiene vinculación oficial con la Santa Sede, con la Conferencia Episcopal Española ni con ninguna diócesis u organización del viaje apostólico del Papa León XIV a España.',
     inLanguage: HTML_LANG[locale],
     publisher: { '@id': `${siteConfig.url}#organization` },
     // SearchAction permite a Google mostrar sitelinks searchbox

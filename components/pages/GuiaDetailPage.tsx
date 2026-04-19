@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Container from '@/components/ui/Container'
-import NewsletterForm from '@/components/shared/NewsletterForm'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { getProfilesByLocale, getProfileBySlugLocale } from '@/data/i18n/content/perfiles'
 import { getAffiliateById } from '@/data/affiliates'
@@ -170,8 +169,6 @@ export default function GuiaDetailPageContent({ locale, slug }: { locale: Locale
                   ))}
               </div>
             </div>
-
-            <NewsletterForm variant="inline" />
           </aside>
         </div>
       </Container>

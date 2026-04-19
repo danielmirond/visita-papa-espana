@@ -63,11 +63,23 @@ export default function AvisoLegalPage() {
             </a>.
           </p>
 
-          <h2 className="mt-8 font-heading text-xl font-bold text-papal-navy">Política de afiliación</h2>
+          <h2 className="mt-8 font-heading text-xl font-bold text-papal-navy">Política de afiliación y no intermediación</h2>
           <p className="text-sm leading-relaxed">
-            Este sitio web participa en programas de afiliación. Esto significa que algunos de los enlaces a
-            productos y servicios (hoteles, transporte, seguros, merchandising) son <strong>enlaces de afiliado</strong>.
-            Si realizas una compra a través de estos enlaces, recibimos una pequeña comisión sin coste adicional para ti.
+            Este sitio web participa en programas de afiliación (Amazon, Booking.com, Skyscanner,
+            Renfe y similares). Esto significa que algunos enlaces a productos y servicios
+            (hoteles, transporte, seguros, merchandising) son <strong>enlaces de afiliado</strong>.
+            Si realizas una compra o reserva a través de esos enlaces, recibimos una pequeña
+            comisión sin coste adicional para ti. Obligación de transparencia conforme al art. 20
+            de la Ley 34/2002 (LSSI-CE).
+          </p>
+          <p className="text-sm leading-relaxed">
+            <strong>No somos agencia de viajes ni intermediario turístico.</strong> No organizamos,
+            vendemos ni facturamos paquetes combinados, vuelos, alojamientos, entradas a actos
+            litúrgicos ni servicios de transporte. Al pulsar un enlace de afiliado eres redirigido
+            directamente al portal del proveedor (Amazon, Booking, etc.), que es quien tramita la
+            transacción y emite la factura. La Ley 16/2015 de viajes combinados y la normativa
+            turística autonómica <em>no</em> nos son aplicables al operar únicamente como fuente
+            informativa.
           </p>
           <p className="text-sm leading-relaxed">
             Los enlaces de afiliación están siempre identificados con la etiqueta &ldquo;Enlace patrocinado&rdquo; o
@@ -88,9 +100,10 @@ export default function AvisoLegalPage() {
           <h2 className="mt-8 font-heading text-xl font-bold text-papal-navy">Privacidad y cookies</h2>
           <p className="text-sm leading-relaxed">
             Este sitio utiliza cookies técnicas propias (exentas de consentimiento) y cookies analíticas
-            de Google Analytics 4 (previo consentimiento del usuario). Los emails recogidos para la
-            newsletter se usan exclusivamente para enviar información sobre la visita papal y no se
-            comparten con terceros. Consulta el detalle completo y los tipos de cookies en nuestra{' '}
+            de Google Analytics 4 (previo consentimiento del usuario). No existe newsletter ni
+            suscripción por email. La única recogida de datos personales es el formulario de
+            contacto, que envía el mensaje al responsable y no almacena datos en bases internas.
+            Consulta el detalle completo y los tipos de cookies en nuestra{' '}
             <a href="/politica-cookies" className="text-papal-gold hover:underline">
               política de cookies
             </a>{' '}

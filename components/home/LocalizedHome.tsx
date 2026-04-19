@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import Container from '@/components/ui/Container'
-import NewsletterForm from '@/components/shared/NewsletterForm'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import JsonLd from '@/components/seo/JsonLd'
 import { getDictionary } from '@/data/i18n/dictionaries'
@@ -282,13 +281,6 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
               {t.home.viewAllNews} &rarr;
             </Link>
           </div>
-        </Container>
-      </section>
-
-      {/* Newsletter */}
-      <section className="bg-white">
-        <Container className="py-10">
-          <NewsletterForm variant="banner" />
         </Container>
       </section>
 

@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Container from '@/components/ui/Container'
-import NewsletterForm from '@/components/shared/NewsletterForm'
 import { profiles, getProfileBySlug } from '@/data/perfiles'
 import { getAffiliateById } from '@/data/affiliates'
 import { getAlternates } from '@/lib/i18n-metadata'
@@ -171,7 +170,6 @@ export default function ProfilePage({ params }: Props) {
             </div>
 
             {/* Newsletter */}
-            <NewsletterForm variant="inline" />
           </aside>
         </div>
       </Container>

@@ -3,8 +3,8 @@ import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
 import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
-import NewsletterForm from '@/components/shared/NewsletterForm'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
+import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
 import SocialFeed from '@/components/shared/SocialFeed'
 import MeteoWidget from '@/components/shared/MeteoWidget'
 import { getCitiesByLocale } from '@/data/i18n/content/cities'
@@ -306,12 +306,11 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
             </div>
 
             <BannerPlaceholder size="300x250" label="Alojamiento recomendado" />
-
-            <NewsletterForm variant="inline" />
-
             <SocialFeed locale={locale} limit={4} />
           </aside>
         </div>
+
+        <AffiliateNotice locale={locale} />
       </Container>
     </>
   )

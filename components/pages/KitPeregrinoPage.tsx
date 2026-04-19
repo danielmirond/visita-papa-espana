@@ -1,5 +1,6 @@
 import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
 import { kitPeregrino, KIT_CATEGORIES, type KitCategory } from '@/data/kitPeregrino'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
@@ -308,6 +309,8 @@ export default function KitPeregrinoPage({ locale }: Props) {
             ))}
           </ul>
         </section>
+
+        <AffiliateNotice locale={locale} />
       </Container>
     </>
   )
