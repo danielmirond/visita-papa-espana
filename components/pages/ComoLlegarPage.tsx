@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
+import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { cityTransports } from '@/data/transporte'
 import { getAffiliateById } from '@/data/affiliates'
@@ -204,6 +205,8 @@ export default function ComoLlegarPageContent({ locale }: { locale: Locale }) {
             </Link>
           </div>
         </div>
+
+        <AffiliateNotice locale={locale} />
       </Container>
     </>
   )

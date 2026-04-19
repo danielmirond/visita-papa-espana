@@ -33,6 +33,7 @@ const ROUTE_TRANSLATIONS = {
   'dilexi-te': { es: 'dilexi-te', en: 'dilexi-te', it: 'dilexi-te', fr: 'dilexi-te', de: 'dilexi-te', pt: 'dilexi-te', ca: 'dilexi-te', gl: 'dilexi-te', eu: 'dilexi-te' },
   'alzad-la-mirada': { es: 'alzad-la-mirada', en: 'lift-up-your-eyes', it: 'alzate-gli-occhi', fr: 'levez-les-yeux', de: 'erhebt-eure-augen', pt: 'levantai-os-olhos', ca: 'alceu-els-ulls', gl: 'ergue-os-ollos', eu: 'jaso-begiak' },
   contacto: { es: 'contacto', en: 'contact', it: 'contatto', fr: 'contact', de: 'kontakt', pt: 'contato', ca: 'contacte', gl: 'contacto', eu: 'kontaktua' },
+  creditos: { es: 'creditos', en: 'credits', it: 'crediti', fr: 'credits', de: 'credits', pt: 'creditos', ca: 'credits', gl: 'creditos', eu: 'kredituak' },
 }
 
 // Build reverse map: localized slug per locale → canonical key

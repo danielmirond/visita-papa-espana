@@ -1,0 +1,17 @@
+import type { Metadata } from "next"
+import CreditosPage from "@/components/pages/CreditosPage"
+import { getAlternates } from "@/lib/i18n-metadata"
+import { getSeoMeta } from "@/lib/seo-by-route"
+
+const seo = getSeoMeta("creditos", "gl")
+
+export const metadata: Metadata = {
+  title: seo?.title,
+  description: seo?.description,
+  alternates: getAlternates("/creditos", "gl"),
+  openGraph: seo?.ogImage ? { images: [{ url: seo.ogImage, width: 1200, height: 630, alt: seo.title }] } : undefined,
+}
+
+export default function Page() {
+  return <CreditosPage locale="gl" />
+}

@@ -88,6 +88,10 @@ export const ROUTE_TRANSLATIONS = {
     es: 'contacto', en: 'contact', it: 'contatto', fr: 'contact',
     de: 'kontakt', pt: 'contato', ca: 'contacte', gl: 'contacto', eu: 'kontaktua',
   },
+  creditos: {
+    es: 'creditos', en: 'credits', it: 'crediti', fr: 'credits',
+    de: 'credits', pt: 'creditos', ca: 'credits', gl: 'creditos', eu: 'kredituak',
+  },
   'aviso-legal': {
     es: 'aviso-legal', en: 'legal-notice', it: 'note-legali', fr: 'mentions-legales',
     de: 'impressum', pt: 'aviso-legal', ca: 'avis-legal', gl: 'aviso-legal', eu: 'lege-oharra',

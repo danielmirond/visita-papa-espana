@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
+import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { siteConfig } from '@/data/siteConfig'
@@ -257,6 +258,8 @@ export default function ComoAsistirPageContent({ locale }: { locale: Locale }) {
             </div>
           </aside>
         </div>
+
+        <AffiliateNotice locale={locale} />
       </Container>
     </>
   )
