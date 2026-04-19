@@ -60,8 +60,12 @@ export default function CookieBanner() {
   useEffect(() => {
     const consent = loadConsent()
     if (!consent) {
-      const timer = setTimeout(() => setVisible(true), 800)
-      return () => clearTimeout(timer)
+      // Sin setTimeout: el banner es position:fixed y no afecta al layout
+      // principal. La animación slide-up (animate-cookie-slide-up en
+      // globals.css) evita el "flash" visual y da sensación de entrada
+      // suave sin bloquear LCP.
+      setVisible(true)
+      return
     }
     // Prerellenar los valores actuales por si abren preferencias
     setAnalytics(consent.analytics)
@@ -130,7 +134,7 @@ export default function CookieBanner() {
       aria-live="polite"
       aria-label="Aviso de cookies"
       aria-describedby="cookie-banner-body"
-      className="fixed inset-x-0 bottom-0 z-[60] border-t-2 border-papal-gold bg-white shadow-[0_-8px_24px_rgba(27,42,74,0.15)]"
+      className="animate-cookie-slide-up fixed inset-x-0 bottom-0 z-[60] border-t-2 border-papal-gold bg-white shadow-[0_-8px_24px_rgba(27,42,74,0.15)]"
     >
       <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6 sm:py-5 lg:px-8">
         {!showDetails ? (

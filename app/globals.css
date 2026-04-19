@@ -33,3 +33,27 @@
     @apply bg-gradient-to-r from-papal-gold to-papal-gold-light bg-clip-text text-transparent;
   }
 }
+
+/* Banner de cookies: entrada suave sin setTimeout JS (Oleada B WPO) */
+@keyframes cookie-slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-cookie-slide-up {
+  animation: cookie-slide-up 380ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation-delay: 250ms; /* pequeño delay visual, pero sin bloquear JS */
+}
+
+/* Respeta preferencia de reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-cookie-slide-up {
+    animation: none;
+  }
+}
