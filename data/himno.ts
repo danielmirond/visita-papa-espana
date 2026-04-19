@@ -30,7 +30,8 @@ export interface HimnoData {
   destinoIngresos: string
   letra: string | null // null mientras no se publique oficial
   audioUrl: string | null
-  videoUrl: string | null
+  videoUrl: string | null        // URL para <iframe src=...> (formato /embed/)
+  videoUrlShare: string | null   // URL canónica para compartir (formato /watch?v=)
   spotifyUrl: string | null
   descripcion: string
   estadoPublicacion: 'publicado' | 'pendiente'
@@ -60,9 +61,12 @@ export const himnoOficial: HimnoData = {
   ],
   destinoIngresos:
     'Los ingresos de reproducciones en plataformas de streaming se destinan íntegramente a las obras sociales de la Iglesia en España.',
-  letra: null, // Letra oficial no publicada en abierto todavía
-  audioUrl: null, // Actualizar con URL Spotify/Apple Music/YouTube cuando se confirme
-  videoUrl: null,
+  letra: null, // Letra oficial no publicada en texto abierto — pendiente
+  audioUrl: null,
+  // URL para embed en iframe (formato /embed/ID)
+  videoUrl: 'https://www.youtube.com/embed/aAPGJxp4dUA',
+  // URL canónica de YouTube para compartir
+  videoUrlShare: 'https://www.youtube.com/watch?v=aAPGJxp4dUA',
   spotifyUrl: null,
   descripcion:
     'Himno oficial del viaje apostólico del Papa León XIV a España (6-12 junio 2026), titulado «Alza la mirada» en referencia al lema del viaje (Juan 4,35). Una producción colectiva de 11 compositores impulsada por VIVAFE y producida por Pablo Cebrián. El himno se grabó el 21 de marzo de 2026 de forma simultánea en cuatro catedrales españolas con la participación de más de 1.700 voces de voluntarios de las cuatro diócesis receptoras. Publicado el 17 de abril de 2026 en todas las plataformas de streaming.',
