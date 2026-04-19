@@ -27,6 +27,9 @@ const FEEDS = [
   { name: 'Alfa y Omega', url: 'https://alfayomega.es/feed/' },
   { name: 'Conferencia Episcopal Española', url: 'https://www.conferenciaepiscopal.es/feed/' },
   { name: 'Vatican News', url: 'https://www.vaticannews.va/es.rss.xml' },
+  { name: 'ACI Prensa', url: 'https://www.aciprensa.com/rss' },
+  { name: 'Omnes Mag', url: 'https://www.omnesmag.com/feed/' },
+  { name: 'Ecclesia', url: 'https://revistaecclesia.es/feed/' },
 ]
 
 // Para ser relevante, la noticia tiene que cumplir DOS condiciones (AND):
