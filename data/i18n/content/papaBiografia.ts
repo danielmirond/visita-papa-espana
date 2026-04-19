@@ -234,6 +234,70 @@ export function getFaqPapaLeonXIV(locale: Locale): FaqPapa[] {
 // Raíces Chicago — EN
 // =============================================================================
 
+const RAICES_CHICAGO_IT = {
+  barrioNatal: 'Dolton, sobborgo meridionale di Chicago, Illinois',
+  parroquiaInfancia: 'Parrocchia di St. Mary of the Assumption, Dolton',
+  instituto: 'Mendel Catholic Preparatory High School, Chicago',
+  equipoDeportivo: 'Chicago White Sox (tifoso dichiarato, presente alla Gara 1 delle World Series 2005)',
+  etnicidad: 'Origini miste: francesi (parte paterna), italiane, e spagnolo-creole con radici in Louisiana (parte materna). La famiglia Prevost proviene dal nord della Francia.',
+  idiomaEnCasa: 'Inglese',
+  datoCurioso: 'Nel 2005, prima di diventare vescovo, viaggiò appositamente a Chicago per assistere alla Gara 1 delle World Series che i White Sox avrebbero vinto — ponendo fine a una siccità di 88 anni. Primo papa apertamente appassionato di baseball americano.',
+}
+const RAICES_CHICAGO_FR = {
+  barrioNatal: 'Dolton, banlieue sud de Chicago, Illinois',
+  parroquiaInfancia: 'Paroisse de St. Mary of the Assumption, Dolton',
+  instituto: 'Mendel Catholic Preparatory High School, Chicago',
+  equipoDeportivo: 'Chicago White Sox (fan déclaré, présent au match 1 des World Series 2005)',
+  etnicidad: 'Origines mixtes : françaises (côté paternel), italiennes, et hispano-créoles avec des racines en Louisiane (côté maternel). La famille Prevost vient du nord de la France.',
+  idiomaEnCasa: 'Anglais',
+  datoCurioso: 'En 2005, avant de devenir évêque, il s\'est expressément rendu à Chicago pour assister au match 1 des World Series que les White Sox ont finalement remportées — mettant fin à 88 ans de sécheresse. Premier pape ouvertement amateur de baseball américain.',
+}
+const RAICES_CHICAGO_DE = {
+  barrioNatal: 'Dolton, südlicher Vorort von Chicago, Illinois',
+  parroquiaInfancia: 'St. Mary of the Assumption, Dolton',
+  instituto: 'Mendel Catholic Preparatory High School, Chicago',
+  equipoDeportivo: 'Chicago White Sox (erklärter Fan, bei Spiel 1 der World Series 2005 anwesend)',
+  etnicidad: 'Gemischte Herkunft: französisch (väterlicherseits), italienisch und spanisch-kreolisch mit Wurzeln in Louisiana (mütterlicherseits). Die Familie Prevost stammt aus Nordfrankreich.',
+  idiomaEnCasa: 'Englisch',
+  datoCurioso: '2005, vor seiner Bischofsweihe, reiste er eigens nach Chicago, um Spiel 1 der World Series zu erleben, das die White Sox gewannen — und beendete eine 88-jährige Durststrecke. Erster Papst, der offen Baseballfan ist.',
+}
+const RAICES_CHICAGO_PT = {
+  barrioNatal: 'Dolton, subúrbio sul de Chicago, Illinois',
+  parroquiaInfancia: 'Paróquia de St. Mary of the Assumption, Dolton',
+  instituto: 'Mendel Catholic Preparatory High School, Chicago',
+  equipoDeportivo: 'Chicago White Sox (adepto declarado, presente no jogo 1 das World Series 2005)',
+  etnicidad: 'Origens mistas: francesas (lado paterno), italianas e espanhol-crioulas com raízes na Luisiana (lado materno). A família Prevost provém do norte da França.',
+  idiomaEnCasa: 'Inglês',
+  datoCurioso: 'Em 2005, antes de ser bispo, viajou expressamente a Chicago para assistir ao jogo 1 das World Series que os White Sox acabaram por vencer — pondo fim a uma seca de 88 anos. Primeiro papa abertamente fã de basebol americano.',
+}
+const RAICES_CHICAGO_CA = {
+  barrioNatal: 'Dolton, suburbi sud de Chicago, Illinois',
+  parroquiaInfancia: 'Parròquia de St. Mary of the Assumption, Dolton',
+  instituto: 'Mendel Catholic Preparatory High School, Chicago',
+  equipoDeportivo: 'Chicago White Sox (aficionat declarat, present al Joc 1 de les World Series 2005)',
+  etnicidad: 'Orígens mixtos: francesos (per part del pare), italians, i hispano-criolls amb arrels a Louisiana (per part de la mare). La família Prevost prové del nord de França.',
+  idiomaEnCasa: 'Anglès',
+  datoCurioso: 'El 2005, abans de ser bisbe, va viatjar expressament a Chicago per presenciar el Joc 1 de les World Series que els White Sox van acabar guanyant — posant fi a 88 anys de sequera. Primer papa obertament afeccionat al beisbol americà.',
+}
+const RAICES_CHICAGO_GL = {
+  barrioNatal: 'Dolton, suburbio sur de Chicago, Illinois',
+  parroquiaInfancia: 'Parroquia de St. Mary of the Assumption, Dolton',
+  instituto: 'Mendel Catholic Preparatory High School, Chicago',
+  equipoDeportivo: 'Chicago White Sox (afeccionado declarado, presente no Xogo 1 das World Series 2005)',
+  etnicidad: 'Orixes mixtas: francesas (pola parte do pai), italianas, e hispano-criollas con raíces en Luisiana (pola parte da nai). A familia Prevost procede do norte de Francia.',
+  idiomaEnCasa: 'Inglés',
+  datoCurioso: 'En 2005, antes de ser bispo, viaxou expresamente a Chicago para asistir ao Xogo 1 das World Series que os White Sox acabaron gañando — pondo fin a 88 anos de seca. Primeiro papa abertamente afeccionado ao béisbol americano.',
+}
+const RAICES_CHICAGO_EU = {
+  barrioNatal: 'Dolton, Chicago-ko hegoaldeko auzoa, Illinois',
+  parroquiaInfancia: 'St. Mary of the Assumption parrokia, Dolton',
+  instituto: 'Mendel Catholic Preparatory High School, Chicago',
+  equipoDeportivo: 'Chicago White Sox (zale aitortua, 2005eko World Seriesen 1. partidan egon zen)',
+  etnicidad: 'Jatorri mistoak: frantsesak (aitaren aldetik), italiarrak, eta espainol-kreolak Louisianako sustraiekin (amaren aldetik). Prevost familia Frantziako iparraldekoa da.',
+  idiomaEnCasa: 'Ingelesa',
+  datoCurioso: '2005ean, gotzaina izan aurretik, Chicagora joan zen espresuki World Seriesen 1. partidari begira, White Sox-ek azkenean irabazi zuen — 88 urteko lehortea amaituz. Beisbol amerikarraren zalea den lehen aita santua.',
+}
+
 const RAICES_CHICAGO_EN = {
   barrioNatal: 'Dolton, southern suburb of Chicago, Illinois',
   parroquiaInfancia: 'St. Mary of the Assumption Parish, Dolton',
@@ -245,13 +309,65 @@ const RAICES_CHICAGO_EN = {
 }
 
 export function getRaicesChicago(locale: Locale) {
-  if (locale === 'en') return RAICES_CHICAGO_EN
-  return raicesChicago
+  switch (locale) {
+    case 'en': return RAICES_CHICAGO_EN
+    case 'it': return RAICES_CHICAGO_IT
+    case 'fr': return RAICES_CHICAGO_FR
+    case 'de': return RAICES_CHICAGO_DE
+    case 'pt': return RAICES_CHICAGO_PT
+    case 'ca': return RAICES_CHICAGO_CA
+    case 'gl': return RAICES_CHICAGO_GL
+    case 'eu': return RAICES_CHICAGO_EU
+    default: return raicesChicago
+  }
 }
 
 // =============================================================================
 // Familia — EN
 // =============================================================================
+
+const FAMILIA_IT: MiembroFamilia[] = [
+  { relacion: 'Padre', nombre: 'Louis Marius Prevost', datos: 'Figlio di immigrati francesi. Veterano della Seconda guerra mondiale (sbarco in Normandia). Sovrintendente di scuole cattoliche a sud di Chicago. Deceduto nel 1997.' },
+  { relacion: 'Madre', nombre: 'Mildred Martínez', datos: 'Di origini spagnole e italiane, con radici familiari a New Orleans (Louisiana). Bibliotecaria ed educatrice. Deceduta nel 1990. Trasmise al futuro Papa la lingua spagnola e la devozione mariana.' },
+  { relacion: 'Fratello maggiore', nombre: 'Louis Prevost', datos: 'Militare in pensione e imprenditore. Vive a Port Charlotte, Florida.' },
+  { relacion: 'Fratello mediano', nombre: 'John Prevost', datos: 'Direttore di scuola cattolica in pensione. Risiede vicino a Chicago.' },
+]
+const FAMILIA_FR: MiembroFamilia[] = [
+  { relacion: 'Père', nombre: 'Louis Marius Prevost', datos: 'Fils d\'immigrants français. Vétéran de la Seconde Guerre mondiale (débarquement de Normandie). Surintendant des écoles catholiques au sud de Chicago. Décédé en 1997.' },
+  { relacion: 'Mère', nombre: 'Mildred Martínez', datos: 'D\'origine espagnole et italienne, avec des racines familiales à La Nouvelle-Orléans (Louisiane). Bibliothécaire et éducatrice. Décédée en 1990. Transmit au futur Pape la langue espagnole et la dévotion mariale.' },
+  { relacion: 'Frère aîné', nombre: 'Louis Prevost', datos: 'Militaire à la retraite et entrepreneur. Vit à Port Charlotte, Floride.' },
+  { relacion: 'Frère cadet', nombre: 'John Prevost', datos: 'Directeur d\'école catholique à la retraite. Réside près de Chicago.' },
+]
+const FAMILIA_DE: MiembroFamilia[] = [
+  { relacion: 'Vater', nombre: 'Louis Marius Prevost', datos: 'Sohn französischer Einwanderer. Veteran des Zweiten Weltkriegs (Landung in der Normandie). Superintendent katholischer Schulen im Süden Chicagos. Verstorben 1997.' },
+  { relacion: 'Mutter', nombre: 'Mildred Martínez', datos: 'Spanischer und italienischer Abstammung, mit Familienwurzeln in New Orleans (Louisiana). Bibliothekarin und Pädagogin. Verstorben 1990. Gab dem künftigen Papst die spanische Sprache und die Marienverehrung weiter.' },
+  { relacion: 'Älterer Bruder', nombre: 'Louis Prevost', datos: 'Pensionierter Soldat und Unternehmer. Lebt in Port Charlotte, Florida.' },
+  { relacion: 'Mittlerer Bruder', nombre: 'John Prevost', datos: 'Pensionierter Direktor einer katholischen Schule. Lebt in der Nähe von Chicago.' },
+]
+const FAMILIA_PT: MiembroFamilia[] = [
+  { relacion: 'Pai', nombre: 'Louis Marius Prevost', datos: 'Filho de imigrantes franceses. Veterano da Segunda Guerra Mundial (desembarque da Normandia). Superintendente de escolas católicas no sul de Chicago. Falecido em 1997.' },
+  { relacion: 'Mãe', nombre: 'Mildred Martínez', datos: 'De ascendência espanhola e italiana, com raízes familiares em Nova Orleães (Luisiana). Bibliotecária e educadora. Falecida em 1990. Transmitiu ao futuro Papa a língua espanhola e a devoção mariana.' },
+  { relacion: 'Irmão mais velho', nombre: 'Louis Prevost', datos: 'Militar reformado e empresário. Vive em Port Charlotte, Florida.' },
+  { relacion: 'Irmão do meio', nombre: 'John Prevost', datos: 'Diretor de escola católica reformado. Reside perto de Chicago.' },
+]
+const FAMILIA_CA: MiembroFamilia[] = [
+  { relacion: 'Pare', nombre: 'Louis Marius Prevost', datos: 'Fill d\'immigrants francesos. Veterà de la Segona Guerra Mundial (desembarcament de Normandia). Superintendent d\'escoles catòliques al sud de Chicago. Mort el 1997.' },
+  { relacion: 'Mare', nombre: 'Mildred Martínez', datos: 'D\'ascendència espanyola i italiana, amb arrels familiars a Nova Orleans (Louisiana). Bibliotecària i educadora. Morta el 1990. Va transmetre al futur Papa la llengua espanyola i la devoció mariana.' },
+  { relacion: 'Germà gran', nombre: 'Louis Prevost', datos: 'Militar jubilat i empresari. Viu a Port Charlotte, Florida.' },
+  { relacion: 'Germà mitjà', nombre: 'John Prevost', datos: 'Director d\'escola catòlica jubilat. Resideix prop de Chicago.' },
+]
+const FAMILIA_GL: MiembroFamilia[] = [
+  { relacion: 'Pai', nombre: 'Louis Marius Prevost', datos: 'Fillo de inmigrantes franceses. Veterano da II Guerra Mundial (desembarco de Normandía). Superintendente de escolas católicas no sur de Chicago. Falecido en 1997.' },
+  { relacion: 'Nai', nombre: 'Mildred Martínez', datos: 'De ascendencia española e italiana, con raíces familiares en Nova Orleáns (Luisiana). Bibliotecaria e educadora. Falecida en 1990. Transmitiu ao futuro Papa a lingua española e a devoción mariana.' },
+  { relacion: 'Irmán maior', nombre: 'Louis Prevost', datos: 'Militar xubilado e empresario. Vive en Port Charlotte, Florida.' },
+  { relacion: 'Irmán mediano', nombre: 'John Prevost', datos: 'Director de escola católica xubilado. Reside preto de Chicago.' },
+]
+const FAMILIA_EU: MiembroFamilia[] = [
+  { relacion: 'Aita', nombre: 'Louis Marius Prevost', datos: 'Frantziako etorkinen semea. Bigarren Mundu Gerrako beteranoa (Normandiako lehorreratzea). Chicago hegoaldeko eskola katolikoen superintendentea. 1997an hil zen.' },
+  { relacion: 'Ama', nombre: 'Mildred Martínez', datos: 'Espainiar eta italiar jatorrikoa, New Orleans-eko (Louisiana) familia-sustraiekin. Liburuzaina eta hezitzailea. 1990ean hil zen. Aita Santu izango zenari gaztelaniaren hizkuntza eta Ama Birjinaren debozioa transmititu zizkion.' },
+  { relacion: 'Anaia nagusia', nombre: 'Louis Prevost', datos: 'Militar erretiratua eta enpresaburua. Port Charlotte-n bizi da, Florida.' },
+  { relacion: 'Anaia ertaina', nombre: 'John Prevost', datos: 'Eskola katolikoko zuzendari erretiratua. Chicago inguruan bizi da.' },
+]
 
 const FAMILIA_EN: MiembroFamilia[] = [
   { relacion: 'Father', nombre: 'Louis Marius Prevost', datos: 'Son of French immigrants. World War II veteran (Normandy landings). Superintendent of Catholic schools in south Chicago. Died in 1997.' },
@@ -261,13 +377,51 @@ const FAMILIA_EN: MiembroFamilia[] = [
 ]
 
 export function getFamiliaPapa(locale: Locale): MiembroFamilia[] {
-  if (locale === 'en') return FAMILIA_EN
-  return familiaPapa
+  switch (locale) {
+    case 'en': return FAMILIA_EN
+    case 'it': return FAMILIA_IT
+    case 'fr': return FAMILIA_FR
+    case 'de': return FAMILIA_DE
+    case 'pt': return FAMILIA_PT
+    case 'ca': return FAMILIA_CA
+    case 'gl': return FAMILIA_GL
+    case 'eu': return FAMILIA_EU
+    default: return familiaPapa
+  }
 }
 
 // =============================================================================
 // Citas relevantes — EN
 // =============================================================================
+
+const CITAS_IT: CitaPapa[] = [
+  { texto: 'La pace sia con tutti voi. Grazie, cari fratelli, per questo incontro. La pace di Cristo risorto, pace disarmata e disarmante, umile e perseverante.', ocasion: 'Primo saluto dalla Loggia Vaticana', fecha: '2025-05-08' },
+  { texto: 'Ho scelto il nome di Leone perché Papa Leone XIII, con la storica enciclica Rerum Novarum, affrontò la questione sociale nel contesto della prima grande rivoluzione industriale. Oggi la Chiesa offre a tutti il suo patrimonio di dottrina sociale per rispondere a un\'altra rivoluzione industriale: quella dell\'intelligenza artificiale.', ocasion: 'Discorso al Collegio Cardinalizio', fecha: '2025-05-10' },
+]
+const CITAS_FR: CitaPapa[] = [
+  { texto: 'La paix soit avec vous tous. Merci, chers frères, pour cette rencontre. La paix du Christ ressuscité, paix désarmée et désarmante, humble et persévérante.', ocasion: 'Premier salut depuis la Loggia vaticane', fecha: '2025-05-08' },
+  { texto: 'J\'ai choisi le nom de Léon parce que le Pape Léon XIII, avec l\'encyclique historique Rerum Novarum, a abordé la question sociale dans le contexte de la première grande révolution industrielle. Aujourd\'hui, l\'Église offre à tous son patrimoine de doctrine sociale pour répondre à une autre révolution industrielle : celle de l\'intelligence artificielle.', ocasion: 'Discours au Collège cardinalice', fecha: '2025-05-10' },
+]
+const CITAS_DE: CitaPapa[] = [
+  { texto: 'Der Friede sei mit euch allen. Danke, liebe Brüder, für dieses Zusammentreffen. Der Friede des auferstandenen Christus, ein entwaffneter und entwaffnender Friede, demütig und beharrlich.', ocasion: 'Erster Gruß von der Vatikanischen Loggia', fecha: '2025-05-08' },
+  { texto: 'Ich habe den Namen Leo gewählt, weil Papst Leo XIII. mit der historischen Enzyklika Rerum Novarum die soziale Frage im Kontext der ersten großen industriellen Revolution behandelte. Heute bietet die Kirche allen ihr Erbe der Soziallehre als Antwort auf eine andere industrielle Revolution an: die der künstlichen Intelligenz.', ocasion: 'Ansprache an das Kardinalskollegium', fecha: '2025-05-10' },
+]
+const CITAS_PT: CitaPapa[] = [
+  { texto: 'A paz esteja com todos vós. Obrigado, queridos irmãos, por este encontro. A paz de Cristo ressuscitado, paz desarmada e desarmante, humilde e perseverante.', ocasion: 'Primeira saudação da Loggia Vaticana', fecha: '2025-05-08' },
+  { texto: 'Escolhi o nome de Leão porque o Papa Leão XIII, com a histórica encíclica Rerum Novarum, abordou a questão social no contexto da primeira grande revolução industrial. Hoje a Igreja oferece a todos o seu património de doutrina social para responder a outra revolução industrial: a da inteligência artificial.', ocasion: 'Discurso ao Colégio Cardinalício', fecha: '2025-05-10' },
+]
+const CITAS_CA: CitaPapa[] = [
+  { texto: 'La pau sigui amb tots vosaltres. Gràcies, estimats germans, per aquesta trobada. La pau de Crist ressuscitat, pau desarmada i desarmant, humil i perseverant.', ocasion: 'Primera salutació des de la Lògia Vaticana', fecha: '2025-05-08' },
+  { texto: 'He triat el nom de Lleó perquè el Papa Lleó XIII, amb la històrica encíclica Rerum Novarum, va abordar la qüestió social en el context de la primera gran revolució industrial. Avui l\'Església ofereix a tothom el seu patrimoni de doctrina social per respondre a una altra revolució industrial: la de la intel·ligència artificial.', ocasion: 'Discurs al Col·legi Cardenalici', fecha: '2025-05-10' },
+]
+const CITAS_GL: CitaPapa[] = [
+  { texto: 'A paz sexa con todos vós. Grazas, queridos irmáns, por este encontro. A paz de Cristo resucitado, paz desarmada e desarmante, humilde e perseverante.', ocasion: 'Primeira saudación desde a Loggia Vaticana', fecha: '2025-05-08' },
+  { texto: 'Escollín o nome de León porque o Papa León XIII, coa histórica encíclica Rerum Novarum, abordou a cuestión social no contexto da primeira gran revolución industrial. Hoxe a Igrexa ofrécelle a todos o seu patrimonio de doutrina social para responder a outra revolución industrial: a da intelixencia artificial.', ocasion: 'Discurso ao Colexio Cardenalicio', fecha: '2025-05-10' },
+]
+const CITAS_EU: CitaPapa[] = [
+  { texto: 'Bakea zuekin guztiekin. Eskerrik asko, anai-arreba maiteak, topaketa honengatik. Berpiztutako Kristoren bakea, bake desarmatua eta desarmatzailea, apala eta irmoa.', ocasion: 'Lehen agurra Vatikano Loggiatik', fecha: '2025-05-08' },
+  { texto: 'Leon izena aukeratu dut Leon XIII.ak Rerum Novarum entziklika historikoarekin gizarte-gaia lehen industria-iraultza handiaren testuinguruan landu zuelako. Gaur Elizak bere doktrina sozialaren ondarea eskaintzen du beste industria-iraultza bati erantzuteko: adimen artifizialarena.', ocasion: 'Kardinalen Kolegioari hitzaldia', fecha: '2025-05-10' },
+]
 
 const CITAS_EN: CitaPapa[] = [
   { texto: 'Peace be with all of you. Thank you, dear brothers, for this gathering. The peace of the risen Christ, an unarmed and disarming peace, humble and persevering.', ocasion: 'First greeting from the Vatican Loggia', fecha: '2025-05-08' },
@@ -275,13 +429,72 @@ const CITAS_EN: CitaPapa[] = [
 ]
 
 export function getCitasRelevantes(locale: Locale): CitaPapa[] {
-  if (locale === 'en') return CITAS_EN
-  return citasRelevantes
+  switch (locale) {
+    case 'en': return CITAS_EN
+    case 'it': return CITAS_IT
+    case 'fr': return CITAS_FR
+    case 'de': return CITAS_DE
+    case 'pt': return CITAS_PT
+    case 'ca': return CITAS_CA
+    case 'gl': return CITAS_GL
+    case 'eu': return CITAS_EU
+    default: return citasRelevantes
+  }
 }
 
 // =============================================================================
 // Prioridades del magisterio — EN (breve, resumen)
 // =============================================================================
+
+const PRIORIDADES_IT: PrioridadMagisterio[] = [
+  { titulo: 'Dottrina sociale e giustizia economica', descripcion: 'Eredità diretta di Leone XIII: rinnovamento della Rerum Novarum per il XXI secolo. Lavoro dignitoso, divario ricchi-poveri, tecnologia al servizio dell\'uomo.' },
+  { titulo: 'Intelligenza artificiale e dignità umana', descripcion: 'Il Papa ha menzionato più volte che il nome "Leone" evoca anche la sfida dell\'IA, come lo fu l\'industrializzazione al tempo di Leone XIII.' },
+  { titulo: 'Migrazioni e accoglienza', descripcion: 'Figlio di una famiglia con radici migranti e vescovo in Perù, pone la migrazione come priorità pastorale. Collegamento con la visita alle Canarie.' },
+  { titulo: 'Unità e comunione ecclesiale', descripcion: 'Il suo motto "In illo uno unum" esprime un programma pontificio centrato sull\'unità della Chiesa in un momento di tensioni interne.' },
+  { titulo: 'Vicinanza pastorale e sinodalità', descripcion: 'Continuità con la linea sinodale di Papa Francesco: Chiesa che ascolta, Chiesa in cammino, decentralizzazione reale.' },
+]
+const PRIORIDADES_FR: PrioridadMagisterio[] = [
+  { titulo: 'Doctrine sociale et justice économique', descripcion: 'Héritage direct de Léon XIII : renouvellement de Rerum Novarum pour le XXIe siècle. Travail digne, fossé riches-pauvres, technologie au service de l\'homme.' },
+  { titulo: 'Intelligence artificielle et dignité humaine', descripcion: 'Le Pape a mentionné plusieurs fois que le nom "Léon" évoque aussi le défi de l\'IA, comme l\'industrialisation l\'était à l\'époque de Léon XIII.' },
+  { titulo: 'Migrations et accueil', descripcion: 'Fils d\'une famille aux racines migrantes et évêque au Pérou, il place la migration comme priorité pastorale. Lien avec la visite aux Canaries.' },
+  { titulo: 'Unité et communion ecclésiale', descripcion: 'Sa devise "In illo uno unum" exprime un programme pontifical centré sur l\'unité de l\'Église à un moment de tensions internes.' },
+  { titulo: 'Proximité pastorale et synodalité', descripcion: 'Continuité avec la ligne synodale du Pape François : Église qui écoute, Église en marche, décentralisation réelle.' },
+]
+const PRIORIDADES_DE: PrioridadMagisterio[] = [
+  { titulo: 'Soziallehre und wirtschaftliche Gerechtigkeit', descripcion: 'Direktes Erbe Leo XIII.: Erneuerung von Rerum Novarum für das 21. Jahrhundert. Menschenwürdige Arbeit, Kluft zwischen Arm und Reich, Technik im Dienst des Menschen.' },
+  { titulo: 'Künstliche Intelligenz und Menschenwürde', descripcion: 'Der Papst hat mehrfach erwähnt, dass der Name "Leo" auch die KI-Herausforderung heraufbeschwört, wie es die Industrialisierung zu Zeiten Leos XIII. war.' },
+  { titulo: 'Migration und Aufnahme', descripcion: 'Als Sohn einer Familie mit Migrationswurzeln und Bischof in Peru macht er Migration zur pastoralen Priorität. Verbindung zum Besuch der Kanaren.' },
+  { titulo: 'Einheit und kirchliche Gemeinschaft', descripcion: 'Sein Motto "In illo uno unum" drückt ein pontifikales Programm aus, das auf die Einheit der Kirche in Zeiten innerer Spannungen ausgerichtet ist.' },
+  { titulo: 'Pastorale Nähe und Synodalität', descripcion: 'Kontinuität mit der synodalen Linie von Papst Franziskus: zuhörende Kirche, Kirche im Gehen, echte Dezentralisierung.' },
+]
+const PRIORIDADES_PT: PrioridadMagisterio[] = [
+  { titulo: 'Doutrina social e justiça económica', descripcion: 'Herança direta de Leão XIII: renovação da Rerum Novarum para o século XXI. Trabalho digno, fosso ricos-pobres, tecnologia ao serviço do homem.' },
+  { titulo: 'Inteligência artificial e dignidade humana', descripcion: 'O Papa mencionou várias vezes que o nome "Leão" evoca também o desafio da IA, como a industrialização o foi nos tempos de Leão XIII.' },
+  { titulo: 'Migrações e acolhimento', descripcion: 'Filho de uma família com raízes migrantes e bispo no Peru, coloca a migração como prioridade pastoral. Ligação com a visita às Canárias.' },
+  { titulo: 'Unidade e comunhão eclesial', descripcion: 'O seu lema "In illo uno unum" expressa um programa pontifício centrado na unidade da Igreja num momento de tensões internas.' },
+  { titulo: 'Proximidade pastoral e sinodalidade', descripcion: 'Continuidade com a linha sinodal do Papa Francisco: Igreja que escuta, Igreja a caminho, descentralização real.' },
+]
+const PRIORIDADES_CA: PrioridadMagisterio[] = [
+  { titulo: 'Doctrina social i justícia econòmica', descripcion: 'Herència directa de Lleó XIII: renovació de Rerum Novarum per al segle XXI. Treball digne, bretxa rics-pobres, tecnologia al servei de l\'home.' },
+  { titulo: 'Intel·ligència artificial i dignitat humana', descripcion: 'El Papa ha esmentat diverses vegades que el nom "Lleó" evoca també el repte de la IA, com ho va ser la industrialització en temps de Lleó XIII.' },
+  { titulo: 'Migracions i acollida', descripcion: 'Fill d\'una família amb arrels migrants i bisbe al Perú, situa la migració com a prioritat pastoral. Vinculació amb la visita a les Canàries.' },
+  { titulo: 'Unitat i comunió eclesial', descripcion: 'El seu lema "In illo uno unum" expressa un programa pontifici centrat en la unitat de l\'Església en un moment de tensions internes.' },
+  { titulo: 'Proximitat pastoral i sinodalitat', descripcion: 'Continuïtat amb la línia sinodal del Papa Francesc: Església que escolta, Església en camí, descentralització real.' },
+]
+const PRIORIDADES_GL: PrioridadMagisterio[] = [
+  { titulo: 'Doutrina social e xustiza económica', descripcion: 'Herdanza directa de León XIII: renovación da Rerum Novarum para o século XXI. Traballo digno, fenda ricos-pobres, tecnoloxía ao servizo do home.' },
+  { titulo: 'Intelixencia artificial e dignidade humana', descripcion: 'O Papa mencionou varias veces que o nome "León" evoca tamén o reto da IA, como o foi a industrialización nos tempos de León XIII.' },
+  { titulo: 'Migracións e acollida', descripcion: 'Fillo dunha familia con raíces migrantes e bispo no Perú, sitúa a migración como prioridade pastoral. Vinculación coa visita ás Canarias.' },
+  { titulo: 'Unidade e comuñón eclesial', descripcion: 'O seu lema "In illo uno unum" expresa un programa pontificio centrado na unidade da Igrexa nun momento de tensións internas.' },
+  { titulo: 'Proximidade pastoral e sinodalidade', descripcion: 'Continuidade coa liña sinodal do Papa Francisco: Igrexa que escoita, Igrexa en camiño, descentralización real.' },
+]
+const PRIORIDADES_EU: PrioridadMagisterio[] = [
+  { titulo: 'Doktrina soziala eta justizia ekonomikoa', descripcion: 'Leon XIII.aren herentzia zuzena: Rerum Novarumen berritzea XXI. menderako. Lan duina, aberats-pobreen arteko arrakala, teknologia gizakiaren zerbitzura.' },
+  { titulo: 'Adimen artifiziala eta giza duintasuna', descripcion: 'Aita Santuak hainbatetan aipatu du "Leon" izenak AAren erronka ere gogorarazten duela, industrializazioa izan zen bezala Leon XIII.aren garaian.' },
+  { titulo: 'Migrazioak eta harrera', descripcion: 'Migratzaile sustraidun familiaren semea eta Peruko gotzaina, migrazioa lehentasun pastoral gisa kokatzen du. Kanarietarako bisitarekin lotura.' },
+  { titulo: 'Batasuna eta komunio ekleziala', descripcion: 'Bere "In illo uno unum" lemak barne-tentsioen uneko Elizaren batasunean ardaztutako pontifikatu-programa adierazten du.' },
+  { titulo: 'Hurbiltasun pastorala eta sinodalitatea', descripcion: 'Frantzisko Aita Santuaren lerro sinodalaren jarraipena: entzuten duen Eliza, bidean doan Eliza, benetako deszentralizazioa.' },
+]
 
 const PRIORIDADES_EN: PrioridadMagisterio[] = [
   { titulo: 'Social doctrine and economic justice', descripcion: 'Direct inheritance of Leo XIII: renewal of Rerum Novarum for the 21st century. Decent work, gap between rich and poor, technology in service of humanity.' },
@@ -292,8 +505,17 @@ const PRIORIDADES_EN: PrioridadMagisterio[] = [
 ]
 
 export function getPrioridadesMagisterio(locale: Locale): PrioridadMagisterio[] {
-  if (locale === 'en') return PRIORIDADES_EN
-  return prioridadesMagisterio
+  switch (locale) {
+    case 'en': return PRIORIDADES_EN
+    case 'it': return PRIORIDADES_IT
+    case 'fr': return PRIORIDADES_FR
+    case 'de': return PRIORIDADES_DE
+    case 'pt': return PRIORIDADES_PT
+    case 'ca': return PRIORIDADES_CA
+    case 'gl': return PRIORIDADES_GL
+    case 'eu': return PRIORIDADES_EU
+    default: return prioridadesMagisterio
+  }
 }
 
 export { biografiaPapa, prioridadesMagisterio, citasRelevantes, raicesChicago, familiaPapa }
