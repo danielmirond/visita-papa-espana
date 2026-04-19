@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import Container from '@/components/ui/Container'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
@@ -70,9 +71,13 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
 
       {/* Hero */}
       <section className="relative min-h-[600px] overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero/papa-leon-xiv.webp')" }}
+        <Image
+          src="/images/hero/papa-leon-xiv.webp"
+          alt="Papa León XIV"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-papal-navy/85 via-papal-navy/80 to-papal-navy/95" />
         <div className="absolute inset-0 opacity-10">
@@ -153,14 +158,14 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
                 href={localizePath(`/ciudades/${city.slug}`, locale)}
                 className="group overflow-hidden rounded-xl border border-gray-100 shadow-sm transition-all hover:shadow-md"
               >
-                <div
-                  className="relative p-6 text-white"
-                  style={{
-                    backgroundImage: `url('${city.heroImage}')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                >
+                <div className="relative overflow-hidden p-6 text-white">
+                  <Image
+                    src={city.heroImage}
+                    alt={city.name}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="object-cover object-center"
+                  />
                   <div className={`absolute inset-0 bg-gradient-to-r ${CITY_COLORS[city.slug]} opacity-85`} />
                   <div className="relative flex items-start justify-between">
                     <div>

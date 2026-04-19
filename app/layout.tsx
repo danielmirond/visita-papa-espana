@@ -7,11 +7,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import GoogleAnalytics from '@/components/seo/GoogleAnalytics'
 import CookieBanner from '@/components/shared/CookieBanner'
 import { siteConfig } from '@/data/siteConfig'
-import {
-  organizationSchema,
-  popeLeoPersonSchema,
-  webSiteSchema,
-} from '@/lib/schema/generators'
+import { globalGraphSchema } from '@/lib/schema/generators'
 import './globals.css'
 
 const inter = Inter({
@@ -135,9 +131,8 @@ export default function RootLayout({
           - Person: Papa León XIV con sameAs a Wikidata/Wikipedia
             (se referencia por @id desde los Event schemas)
         */}
-        <JsonLd data={organizationSchema()} />
-        <JsonLd data={webSiteSchema('es')} />
-        <JsonLd data={popeLeoPersonSchema()} />
+        {/* JSON-LD global consolidado en @graph (Organization + WebSite + Person) */}
+        <JsonLd data={globalGraphSchema('es')} />
         <UnofficialNotice />
         <Header />
         <main className="min-h-screen">{children}</main>

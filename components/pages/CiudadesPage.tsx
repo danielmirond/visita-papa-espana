@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
@@ -60,14 +61,14 @@ export default function CiudadesPageContent({ locale }: { locale: Locale }) {
                 href={localizePath(`/ciudades/${city.slug}`, locale)}
                 className="group block overflow-hidden rounded-xl border border-gray-100 shadow-sm transition-all hover:shadow-lg"
               >
-                <div
-                  className="relative p-6 text-white sm:p-8"
-                  style={{
-                    backgroundImage: `url('${city.heroImage}')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                >
+                <div className="relative overflow-hidden p-6 text-white sm:p-8">
+                  <Image
+                    src={city.heroImage}
+                    alt={city.name}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover object-center"
+                  />
                   <div className={`absolute inset-0 bg-gradient-to-r ${CITY_GRADIENTS[city.slug]} opacity-85`} />
                   <div className="relative">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">

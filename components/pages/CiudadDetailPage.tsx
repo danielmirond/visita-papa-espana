@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
 import Container from '@/components/ui/Container'
@@ -105,9 +106,13 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${city.heroImage}')` }}
+        <Image
+          src={city.heroImage}
+          alt={city.name}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
         <div
           className={`absolute inset-0 bg-gradient-to-r ${CITY_GRADIENTS[city.slug] || 'from-papal-navy to-papal-navy-light'} opacity-80`}
