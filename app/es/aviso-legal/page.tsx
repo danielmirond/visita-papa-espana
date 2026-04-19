@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import { getAlternates } from '@/lib/i18n-metadata'
 
@@ -37,11 +38,11 @@ export default function AvisoLegalPage() {
                 <dd>44039446N</dd>
               </div>
               <div className="flex flex-wrap gap-2">
-                <dt className="font-semibold text-papal-navy">Email:</dt>
+                <dt className="font-semibold text-papal-navy">Contacto:</dt>
                 <dd>
-                  <a href="mailto:info@visita-papa-2026.com" className="text-papal-gold-dark hover:underline">
-                    info@visita-papa-2026.com
-                  </a>
+                  <Link href="/contacto" className="text-papal-gold-dark hover:underline">
+                    Formulario de contacto
+                  </Link>
                 </dd>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -102,9 +103,7 @@ export default function AvisoLegalPage() {
           <p className="text-sm leading-relaxed">
             Para ejercer tus derechos (acceso, rectificación, supresión, oposición, limitación,
             portabilidad y revocación del consentimiento) escribe a{' '}
-            <a href="mailto:info@visita-papa-2026.com" className="text-papal-gold hover:underline">
-              info@visita-papa-2026.com
-            </a>
+            <Link href="/contacto" className="text-papal-gold-dark hover:underline">formulario de contacto</Link>
             .
           </p>
 

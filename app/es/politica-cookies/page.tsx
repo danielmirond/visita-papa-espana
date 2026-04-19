@@ -38,11 +38,11 @@ export default function PoliticaCookiesPage() {
                 <dd>44039446N</dd>
               </div>
               <div className="flex gap-2">
-                <dt className="font-semibold text-papal-navy">Email:</dt>
+                <dt className="font-semibold text-papal-navy">Contacto:</dt>
                 <dd>
-                  <a href="mailto:info@visita-papa-2026.com" className="text-papal-gold-dark hover:underline">
-                    info@visita-papa-2026.com
-                  </a>
+                  <Link href="/contacto" className="text-papal-gold-dark hover:underline">
+                    Formulario de contacto
+                  </Link>
                 </dd>
               </div>
               <div className="flex gap-2">
@@ -355,9 +355,7 @@ export default function PoliticaCookiesPage() {
             <p className="mt-2 text-sm leading-relaxed">
               Tienes derecho a ser informado, a revocar el consentimiento, a acceder, rectificar,
               suprimir, oponerte, limitar y portar tus datos. Para ejercerlos escribe a{' '}
-              <a href="mailto:info@visita-papa-2026.com" className="text-papal-gold-dark hover:underline">
-                info@visita-papa-2026.com
-              </a>{' '}
+              <Link href="/contacto" className="text-papal-gold-dark hover:underline">formulario de contacto</Link>{' '}
               adjuntando copia de un documento que acredite tu identidad. Si consideras que el
               tratamiento vulnera tus derechos, puedes presentar una reclamación ante la{' '}
               <a

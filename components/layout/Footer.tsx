@@ -205,6 +205,9 @@ export default function Footer() {
               <Link href={prefixHref('/politica-cookies')} className="hover:text-papal-gold">
                 Cookies
               </Link>
+              <Link href={prefixHref('/contacto')} className="hover:text-papal-gold">
+                Contacto
+              </Link>
               <button
                 type="button"
                 onClick={openCookieBanner}

@@ -38,11 +38,11 @@ export default function PrivacidadPage() {
                 <dd>44039446N</dd>
               </div>
               <div className="flex flex-wrap gap-2">
-                <dt className="font-semibold text-papal-navy">Email de contacto:</dt>
+                <dt className="font-semibold text-papal-navy">Contacto:</dt>
                 <dd>
-                  <a href="mailto:info@visita-papa-2026.com" className="text-papal-gold-dark hover:underline">
-                    info@visita-papa-2026.com
-                  </a>
+                  <Link href="/contacto" className="text-papal-gold-dark hover:underline">
+                    Formulario de contacto
+                  </Link>
                 </dd>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -191,9 +191,7 @@ export default function PrivacidadPage() {
             </ul>
             <p className="mt-3 text-sm leading-relaxed">
               Para ejercerlos, escribe a{' '}
-              <a href="mailto:info@visita-papa-2026.com" className="text-papal-gold-dark hover:underline">
-                info@visita-papa-2026.com
-              </a>{' '}
+              <Link href="/contacto" className="text-papal-gold-dark hover:underline">formulario de contacto</Link>{' '}
               adjuntando copia de un documento que acredite tu identidad (DNI, pasaporte o
               equivalente). Responderemos en un plazo máximo de 30 días naturales.
             </p>

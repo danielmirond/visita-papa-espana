@@ -23,6 +23,7 @@ export const OG_IMAGE_BY_ROUTE: Partial<Record<RouteKey, string>> = {
   'papa-leon-xiv': '/images/hero/papa-leon-xiv.webp',
   'historia-visitas-papales': '/images/hero/papa-leon-xiv.webp',
   'alzad-la-mirada': '/images/hero/papa-leon-xiv.webp',
+  contacto: '/images/hero/papa-leon-xiv.webp',
   discursos: '/images/hero/papa-leon-xiv.webp',
   frases: '/images/hero/papa-leon-xiv.webp',
   'dilexi-te': '/images/hero/papa-leon-xiv.webp',
@@ -747,6 +748,45 @@ export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
     eu: {
       title: 'Dilexi Te: Leon XIV.aren lehen aholku apostolikoa',
       description: '"Dilexi Te" ("Maitatu zaitut"): Leon XIV.a Aita Santuaren lehen aholku apostolikoa Jainkoaren maitasunaz eta behartsuenganako karitateaz.',
+    },
+  },
+
+  contacto: {
+    es: {
+      title: 'Contacto · visita-papa-2026.com',
+      description: 'Formulario de contacto del sitio. Correcciones, propuestas de colaboración, prensa y ejercicio de derechos RGPD. Respuesta en 48 horas.',
+    },
+    en: {
+      title: 'Contact · visita-papa-2026.com',
+      description: 'Contact form of the site. Corrections, collaboration proposals, press enquiries and GDPR rights. Reply within 48 hours.',
+    },
+    it: {
+      title: 'Contatto · visita-papa-2026.com',
+      description: 'Modulo di contatto del sito. Correzioni, proposte di collaborazione, stampa ed esercizio dei diritti GDPR. Risposta entro 48 ore.',
+    },
+    fr: {
+      title: 'Contact · visita-papa-2026.com',
+      description: 'Formulaire de contact du site. Corrections, propositions de collaboration, presse et exercice des droits RGPD. Réponse sous 48 heures.',
+    },
+    de: {
+      title: 'Kontakt · visita-papa-2026.com',
+      description: 'Kontaktformular der Website. Korrekturen, Kooperationsvorschläge, Presse und DSGVO-Rechte. Antwort innerhalb von 48 Stunden.',
+    },
+    pt: {
+      title: 'Contacto · visita-papa-2026.com',
+      description: 'Formulário de contacto do site. Correções, propostas de colaboração, imprensa e exercício de direitos RGPD. Resposta em 48 horas.',
+    },
+    ca: {
+      title: 'Contacte · visita-papa-2026.com',
+      description: 'Formulari de contacte del lloc. Correccions, propostes de col·laboració, premsa i exercici de drets RGPD. Resposta en 48 hores.',
+    },
+    gl: {
+      title: 'Contacto · visita-papa-2026.com',
+      description: 'Formulario de contacto do sitio. Correccións, propostas de colaboración, prensa e exercicio de dereitos RGPD. Resposta en 48 horas.',
+    },
+    eu: {
+      title: 'Kontaktua · visita-papa-2026.com',
+      description: 'Webguneko kontaktu-formularioa. Zuzenketak, lankidetza-proposamenak, prentsa eta RGPD eskubideak. Erantzuna 48 ordutan.',
     },
   },
 

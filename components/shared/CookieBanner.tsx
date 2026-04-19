@@ -140,7 +140,7 @@ export default function CookieBanner() {
                 Aviso de cookies
               </h2>
               <p className="mt-1 text-sm leading-relaxed text-papal-navy/75">
-                El responsable del sitio (Daniel Mirón, info@visita-papa-2026.com) utiliza
+                El responsable del sitio (Daniel Mirón) utiliza
                 <strong> cookies propias técnicas</strong> —necesarias, exentas de consentimiento—
                 y <strong>cookies analíticas de terceros</strong> (Google Analytics, Google LLC)
                 para medir el uso del sitio y mejorarlo. Las cookies de marketing se usan solo

@@ -84,6 +84,10 @@ export const ROUTE_TRANSLATIONS = {
     es: 'alzad-la-mirada', en: 'lift-up-your-eyes', it: 'alzate-gli-occhi', fr: 'levez-les-yeux',
     de: 'erhebt-eure-augen', pt: 'levantai-os-olhos', ca: 'alceu-els-ulls', gl: 'ergue-os-ollos', eu: 'jaso-begiak',
   },
+  contacto: {
+    es: 'contacto', en: 'contact', it: 'contatto', fr: 'contact',
+    de: 'kontakt', pt: 'contato', ca: 'contacte', gl: 'contacto', eu: 'kontaktua',
+  },
   'aviso-legal': {
     es: 'aviso-legal', en: 'legal-notice', it: 'note-legali', fr: 'mentions-legales',
     de: 'impressum', pt: 'aviso-legal', ca: 'avis-legal', gl: 'aviso-legal', eu: 'lege-oharra',
