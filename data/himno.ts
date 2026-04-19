@@ -11,29 +11,66 @@
  * y se completa automáticamente cuando se publique.
  */
 
+export interface GrabacionLugar {
+  catedral: string
+  ciudad: string
+}
+
 export interface HimnoData {
   titulo: string
-  autor: string | null
-  compositor: string | null
+  tituloCompleto: string
   lema: string
+  autores: string[]
+  productor: string
+  impulsor: string
+  fechaGrabacion: string
+  fechaPublicacion: string
+  numVoces: number
+  lugaresGrabacion: GrabacionLugar[]
+  destinoIngresos: string
   letra: string | null // null mientras no se publique oficial
   audioUrl: string | null
   videoUrl: string | null
+  spotifyUrl: string | null
   descripcion: string
   estadoPublicacion: 'publicado' | 'pendiente'
+  fuentes: string[]
 }
 
 export const himnoOficial: HimnoData = {
-  titulo: 'Himno oficial del viaje apostólico',
-  autor: null, // pendiente
-  compositor: null, // pendiente
-  lema: 'Testigos de esperanza',
-  letra: null, // actualizar cuando se publique
-  audioUrl: null,
+  titulo: 'Alza la mirada',
+  tituloCompleto: 'Alza la mirada — himno oficial del viaje apostólico del Papa León XIV a España',
+  lema: 'Alza la mirada',
+  autores: [
+    'Marcos Ricbour',
+    'Javi Caño',
+    'Toño Casado',
+    // Según Alfa y Omega son 11 compositores en total (colaboración colectiva)
+  ],
+  productor: 'Pablo Cebrián',
+  impulsor: 'VIVAFE (Vicaría de Evangelización y Fe)',
+  fechaGrabacion: '2026-03-21',
+  fechaPublicacion: '2026-04-17',
+  numVoces: 1700,
+  lugaresGrabacion: [
+    { catedral: 'Catedral de Santa María la Real de la Almudena', ciudad: 'Madrid' },
+    { catedral: 'Basílica de la Sagrada Familia', ciudad: 'Barcelona' },
+    { catedral: 'Catedral de Santa Ana', ciudad: 'Las Palmas de Gran Canaria' },
+    { catedral: 'Catedral de La Laguna', ciudad: 'San Cristóbal de La Laguna (Tenerife)' },
+  ],
+  destinoIngresos:
+    'Los ingresos de reproducciones en plataformas de streaming se destinan íntegramente a las obras sociales de la Iglesia en España.',
+  letra: null, // Letra oficial no publicada en abierto todavía
+  audioUrl: null, // Actualizar con URL Spotify/Apple Music/YouTube cuando se confirme
   videoUrl: null,
+  spotifyUrl: null,
   descripcion:
-    'El himno oficial del viaje apostólico del Papa León XIV a España acompañará los actos litúrgicos de los cuatro días. La Conferencia Episcopal Española publicará el título, la letra y la partitura en las semanas previas a la visita, junto con el audio oficial y un videoclip institucional.',
-  estadoPublicacion: 'pendiente',
+    'Himno oficial del viaje apostólico del Papa León XIV a España (6-12 junio 2026), titulado «Alza la mirada» en referencia al lema del viaje (Juan 4,35). Una producción colectiva de 11 compositores impulsada por VIVAFE y producida por Pablo Cebrián. El himno se grabó el 21 de marzo de 2026 de forma simultánea en cuatro catedrales españolas con la participación de más de 1.700 voces de voluntarios de las cuatro diócesis receptoras. Publicado el 17 de abril de 2026 en todas las plataformas de streaming.',
+  estadoPublicacion: 'publicado',
+  fuentes: [
+    'https://revistaecclesia.es/alza-la-mirada-ya-esta-aqui-el-himno-oficial-de-la-visita-de-leon-xiv-a-espana/',
+    'https://alfayomega.es/asi-suena-el-himno-oficial-del-viaje-del-papa-a-espana/',
+  ],
 }
 
 export interface OracionData {
