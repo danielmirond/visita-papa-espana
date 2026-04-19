@@ -3,12 +3,12 @@ import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import JsonLd from '@/components/seo/JsonLd'
 import {
+  getRazonesEleccion,
+  getLemasPrevios,
+  getFaqLema,
   lemaData,
   traduccionesLema,
-  razonesEleccion,
-  lemasPrevios,
-  faqLema,
-} from '@/data/alzadLaMirada'
+} from '@/data/i18n/content/alzadLaMirada'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 import { faqPageSchema } from '@/lib/schema/generators'
@@ -249,6 +249,9 @@ const L = {
 
 export default function AlzadLaMiradaPage({ locale }: Props) {
   const t = { ...L.es, ...((L as any)[locale] || {}) } as typeof L.es
+  const razonesEleccion = getRazonesEleccion(locale)
+  const lemasPrevios = getLemasPrevios(locale)
+  const faqLema = getFaqLema(locale)
   const versEs = traduccionesLema.find((x) => x.locale === 'es')!
   const versGrc = traduccionesLema.find((x) => x.locale === 'grc')!
   const versLa = traduccionesLema.find((x) => x.locale === 'la')!

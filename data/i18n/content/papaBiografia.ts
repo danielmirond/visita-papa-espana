@@ -230,6 +230,71 @@ export function getFaqPapaLeonXIV(locale: Locale): FaqPapa[] {
   return dict as FaqPapa[]
 }
 
-// Re-export de los datos que permanecen universales (no traducidos todavía)
-export { prioridadesMagisterio, citasRelevantes, raicesChicago, familiaPapa, biografiaPapa }
+// =============================================================================
+// Raíces Chicago — EN
+// =============================================================================
+
+const RAICES_CHICAGO_EN = {
+  barrioNatal: 'Dolton, southern suburb of Chicago, Illinois',
+  parroquiaInfancia: 'St. Mary of the Assumption Parish, Dolton',
+  instituto: 'Mendel Catholic Preparatory High School, Chicago',
+  equipoDeportivo: 'Chicago White Sox (declared fan, present at Game 1 of the 2005 World Series)',
+  etnicidad: 'Mixed origins: French (father\'s side), Italian, and Spanish-Creole with Louisiana roots (mother\'s side). The Prevost family comes from northern France.',
+  idiomaEnCasa: 'English',
+  datoCurioso: 'In 2005, before becoming a bishop, he travelled expressly to Chicago to witness Game 1 of the World Series that the White Sox ended up winning — breaking an 88-year drought. First Pope openly a fan of American baseball.',
+}
+
+export function getRaicesChicago(locale: Locale) {
+  if (locale === 'en') return RAICES_CHICAGO_EN
+  return raicesChicago
+}
+
+// =============================================================================
+// Familia — EN
+// =============================================================================
+
+const FAMILIA_EN: MiembroFamilia[] = [
+  { relacion: 'Father', nombre: 'Louis Marius Prevost', datos: 'Son of French immigrants. World War II veteran (Normandy landings). Superintendent of Catholic schools in south Chicago. Died in 1997.' },
+  { relacion: 'Mother', nombre: 'Mildred Martínez', datos: 'Of Spanish and Italian descent, with family roots in New Orleans (Louisiana). Librarian and educator. Died in 1990. Passed on the Spanish language and Marian devotion to the future Pope.' },
+  { relacion: 'Older brother', nombre: 'Louis Prevost', datos: 'Retired military and businessman. Lives in Port Charlotte, Florida.' },
+  { relacion: 'Middle brother', nombre: 'John Prevost', datos: 'Retired Catholic school principal. Lives near Chicago.' },
+]
+
+export function getFamiliaPapa(locale: Locale): MiembroFamilia[] {
+  if (locale === 'en') return FAMILIA_EN
+  return familiaPapa
+}
+
+// =============================================================================
+// Citas relevantes — EN
+// =============================================================================
+
+const CITAS_EN: CitaPapa[] = [
+  { texto: 'Peace be with all of you. Thank you, dear brothers, for this gathering. The peace of the risen Christ, an unarmed and disarming peace, humble and persevering.', ocasion: 'First greeting from the Vatican Loggia', fecha: '2025-05-08' },
+  { texto: 'I have chosen the name Leo because Pope Leo XIII, with the historic encyclical Rerum Novarum, addressed the social question in the context of the first great industrial revolution. Today the Church offers to all her heritage of social doctrine to respond to another industrial revolution: that of artificial intelligence.', ocasion: 'Address to the College of Cardinals', fecha: '2025-05-10' },
+]
+
+export function getCitasRelevantes(locale: Locale): CitaPapa[] {
+  if (locale === 'en') return CITAS_EN
+  return citasRelevantes
+}
+
+// =============================================================================
+// Prioridades del magisterio — EN (breve, resumen)
+// =============================================================================
+
+const PRIORIDADES_EN: PrioridadMagisterio[] = [
+  { titulo: 'Social doctrine and economic justice', descripcion: 'Direct inheritance of Leo XIII: renewal of Rerum Novarum for the 21st century. Decent work, gap between rich and poor, technology in service of humanity.' },
+  { titulo: 'Artificial intelligence and human dignity', descripcion: 'The Pope has mentioned several times that the name "Leo" also evokes the AI challenge, just as industrialisation was in Leo XIII\'s time.' },
+  { titulo: 'Migration and welcome', descripcion: 'Son of a migrant-rooted family and bishop in Peru, he places migration as a pastoral priority. Connection with the Canary Islands visit.' },
+  { titulo: 'Unity and ecclesial communion', descripcion: 'His motto "In illo uno unum" expresses a pontifical programme centred on Church unity at a time of internal tensions.' },
+  { titulo: 'Pastoral closeness and synodality', descripcion: 'Continuity with Pope Francis\'s synodal line: a listening Church, a Church on the way, real decentralisation.' },
+]
+
+export function getPrioridadesMagisterio(locale: Locale): PrioridadMagisterio[] {
+  if (locale === 'en') return PRIORIDADES_EN
+  return prioridadesMagisterio
+}
+
+export { biografiaPapa, prioridadesMagisterio, citasRelevantes, raicesChicago, familiaPapa }
 export type { TimelineEntry, PosicionMagisterio, FaqPapa, PrioridadMagisterio, CitaPapa, MiembroFamilia }

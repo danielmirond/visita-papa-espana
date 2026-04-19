@@ -1,6 +1,6 @@
 import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
-import { areasVoluntariado, requisitos, beneficios, enlacesOficialesVoluntariado } from '@/data/voluntariado'
+import { getAreasVoluntariado, getRequisitos, getBeneficios, enlacesOficialesVoluntariado } from '@/data/i18n/content/voluntariado'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 
@@ -242,6 +242,9 @@ const L = {
 
 export default function VoluntariadoPage({ locale }: Props) {
   const t = L[locale] || L.es
+  const areasVoluntariado = getAreasVoluntariado(locale)
+  const requisitos = getRequisitos(locale)
+  const beneficios = getBeneficios(locale)
 
   return (
     <>

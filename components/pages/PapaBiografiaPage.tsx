@@ -6,11 +6,11 @@ import {
   getTimelineVida,
   getPosicionesMagisterio,
   getFaqPapaLeonXIV,
+  getRaicesChicago,
+  getFamiliaPapa,
+  getCitasRelevantes,
+  getPrioridadesMagisterio,
   biografiaPapa,
-  prioridadesMagisterio,
-  citasRelevantes,
-  raicesChicago,
-  familiaPapa,
 } from '@/data/i18n/content/papaBiografia'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
@@ -410,6 +410,10 @@ export default function PapaBiografiaPage({ locale }: Props) {
   const timelineVida = getTimelineVida(locale)
   const posicionesMagisterio = getPosicionesMagisterio(locale)
   const faqPapaLeonXIV = getFaqPapaLeonXIV(locale)
+  const raicesChicago = getRaicesChicago(locale)
+  const familiaPapa = getFamiliaPapa(locale)
+  const citasRelevantes = getCitasRelevantes(locale)
+  const prioridadesMagisterio = getPrioridadesMagisterio(locale)
 
   return (
     <>

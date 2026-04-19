@@ -2,7 +2,7 @@ import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import JsonLd from '@/components/seo/JsonLd'
 import Link from 'next/link'
-import { visitas, datosAgregados, faqHistoria } from '@/data/historiaVisitas'
+import { getVisitas, getFaqHistoria, datosAgregados } from '@/data/i18n/content/historiaVisitas'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 import { faqPageSchema } from '@/lib/schema/generators'
@@ -269,6 +269,8 @@ const L = {
 
 export default function HistoriaVisitasPage({ locale }: Props) {
   const t = { ...L.es, ...((L as any)[locale] || {}) } as typeof L.es
+  const visitas = getVisitas(locale)
+  const faqHistoria = getFaqHistoria(locale)
 
   return (
     <>

@@ -3,11 +3,11 @@ import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import JsonLd from '@/components/seo/JsonLd'
 import {
-  dilexiTeData,
-  temasDilexiTe,
-  citasClavesDilexiTe,
-  faqDilexiTe,
-} from '@/data/dilexiTe'
+  getDilexiTeData,
+  getTemasDilexiTe,
+  getCitasClavesDilexiTe,
+  getFaqDilexiTe,
+} from '@/data/i18n/content/dilexiTe'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 import { faqPageSchema } from '@/lib/schema/generators'
@@ -203,6 +203,10 @@ const L = {
 
 export default function DilexiTePage({ locale }: Props) {
   const t = { ...L.es, ...((L as any)[locale] || {}) } as typeof L.es
+  const dilexiTeData = getDilexiTeData(locale)
+  const temasDilexiTe = getTemasDilexiTe(locale)
+  const citasClavesDilexiTe = getCitasClavesDilexiTe(locale)
+  const faqDilexiTe = getFaqDilexiTe(locale)
 
   return (
     <>

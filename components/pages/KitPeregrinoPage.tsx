@@ -1,7 +1,7 @@
 import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
-import { kitPeregrino, KIT_CATEGORIES, type KitCategory } from '@/data/kitPeregrino'
+import { getKitPeregrino, getKitCategories, type KitCategory } from '@/data/i18n/content/kitPeregrino'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 
@@ -228,6 +228,8 @@ const L: Record<Locale, {
 
 export default function KitPeregrinoPage({ locale }: Props) {
   const t = L[locale] || L.es
+  const kitPeregrino = getKitPeregrino(locale)
+  const KIT_CATEGORIES = getKitCategories(locale)
 
   return (
     <>

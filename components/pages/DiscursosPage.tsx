@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
-import { discursos, tiposDiscurso } from '@/data/discursos'
+import { getDiscursos, getTiposDiscurso } from '@/data/i18n/content/discursos'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 
@@ -117,6 +117,8 @@ export default function DiscursosPage({ locale }: Props) {
   const t = { ...L.es, ...((L as any)[locale] || {}) } as typeof L.es
 
   // Orden cronológico inverso (más reciente arriba)
+  const discursos = getDiscursos(locale)
+  const tiposDiscurso = getTiposDiscurso(locale)
   const ordenados = [...discursos].sort((a, b) => b.fecha.localeCompare(a.fecha))
 
   return (

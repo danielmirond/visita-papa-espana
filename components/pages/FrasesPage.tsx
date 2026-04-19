@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
-import { frases, TEMAS_FRASE, type TemaFrase } from '@/data/frasesPapa'
+import { getFrases, getTemasFrase, type TemaFrase } from '@/data/i18n/content/frasesPapa'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 
@@ -97,6 +97,8 @@ const L = {
 
 export default function FrasesPage({ locale }: Props) {
   const t = { ...L.es, ...((L as any)[locale] || {}) } as typeof L.es
+  const frases = getFrases(locale)
+  const TEMAS_FRASE = getTemasFrase(locale)
 
   return (
     <>
