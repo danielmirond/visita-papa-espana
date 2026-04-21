@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-mantendra-durante-su-visita-a-espana-un-encuentro-con-los-obispos-en-la',
+    title: 'León XIV mantendrá durante su visita a España un encuentro con los obispos en la sede de la Conferencia Episcopal',
+    excerpt: 'Lo ha confirmado este lunes Luis Argüello, presidente de la CEE, durante el discurso de apertura de la Asamblea Plenaria La entrada León XIV mantendrá durante su visita a España un encuentro con los obispos en la sede de…',
+    content: 'Lo ha confirmado este lunes Luis Argüello, presidente de la CEE, durante el discurso de apertura de la Asamblea Plenaria La entrada León XIV mantendrá durante su visita a España un encuentro con los obispos en la sede de la Conferencia Episcopal se publicó primero en Revista Ecclesia.',
+    date: '2026-04-20',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/encuentro-obispo-espanoles-leon-xiv-conferencia-episcopal-sede/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'el-papa-en-espana-noli-me-tangere',
     title: 'El Papa en España: «Noli me tangere»',
     excerpt: '«No me toques». Es lo que le dijo Jesús Resucitado a María Magdalena cuando la apóstol, tras confundirlo con el hortelano, lo reconoció al fin. Pero, ¿Cómo que «no me toques»? ¿De verdad era necesaria esa respuesta tan a…',
