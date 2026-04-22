@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'umas-sera-la-aseguradora-oficial-de-la-visita-del-papa-a-espana-tras-su-acuerdo-',
+    title: 'UMAS será la aseguradora oficial de la visita del Papa a España, tras su acuerdo con la Conferencia Episcopal',
+    excerpt: 'La alianza se articula a través de un acuerdo institucional y otro operativo que regulan tanto el marco de colaboración como las condiciones específicas de aseguramiento La entrada UMAS será la aseguradora oficial de la …',
+    content: 'La alianza se articula a través de un acuerdo institucional y otro operativo que regulan tanto el marco de colaboración como las condiciones específicas de aseguramiento La entrada UMAS será la aseguradora oficial de la visita del Papa a España, tras su acuerdo con la Conferencia Episcopal se publicó primero en Revista Ecclesia.',
+    date: '2026-04-21',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/umas-sera-la-aseguradora-oficial-de-la-visita-del-papa-a-espana-tras-su-acuerdo-con-la-conferencia-episcopal/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'leon-xiv-mantendra-durante-su-visita-a-espana-un-encuentro-con-los-obispos-en-la',
     title: 'León XIV mantendrá durante su visita a España un encuentro con los obispos en la sede de la Conferencia Episcopal',
     excerpt: 'Lo ha confirmado este lunes Luis Argüello, presidente de la CEE, durante el discurso de apertura de la Asamblea Plenaria La entrada León XIV mantendrá durante su visita a España un encuentro con los obispos en la sede de…',
