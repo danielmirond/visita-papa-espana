@@ -5,7 +5,7 @@ import { Product, ProductCategory } from '@/types/shop'
  *
  * Modelo mixto:
  * - Afiliación (Amazon, etc.): la mayoría de libros, artículos religiosos.
- *   Reemplaza TUAFFILIATEID con tu tag de Amazon Afiliados.
+ *   Tag de Amazon Afiliados: nuus-21 (Daniel Mirón).
  * - Print-on-demand (Printful, Redbubble): merch propio de la visita.
  *   Para activar, crea los productos en el proveedor y pega la URL aquí.
  *
@@ -97,7 +97,7 @@ export const products: Product[] = [
     images: ['/images/shop/rosario-olivo.webp'],
     category: 'religioso',
     source: 'amazon',
-    buyUrl: 'https://www.amazon.es/s?k=rosario+madera+olivo+tierra+santa&tag=TUAFFILIATEID',
+    buyUrl: 'https://www.amazon.es/s?k=rosario+madera+olivo+tierra+santa&tag=nuus-21',
     isOfficialMerch: false,
   },
   {
@@ -109,7 +109,7 @@ export const products: Product[] = [
     images: ['/images/shop/medalla-san-benito.webp'],
     category: 'religioso',
     source: 'amazon',
-    buyUrl: 'https://www.amazon.es/s?k=medalla+san+benito+plata&tag=TUAFFILIATEID',
+    buyUrl: 'https://www.amazon.es/s?k=medalla+san+benito+plata&tag=nuus-21',
     isOfficialMerch: false,
   },
   {
@@ -122,7 +122,7 @@ export const products: Product[] = [
     images: ['/images/shop/cruz-pectoral.webp'],
     category: 'religioso',
     source: 'amazon',
-    buyUrl: 'https://www.amazon.es/s?k=cruz+pectoral+madera&tag=TUAFFILIATEID',
+    buyUrl: 'https://www.amazon.es/s?k=cruz+pectoral+madera&tag=nuus-21',
     isOfficialMerch: false,
   },
   {
@@ -135,7 +135,7 @@ export const products: Product[] = [
     images: ['/images/shop/vela-liturgica.webp'],
     category: 'religioso',
     source: 'amazon',
-    buyUrl: 'https://www.amazon.es/s?k=vela+liturgica+procesion&tag=TUAFFILIATEID',
+    buyUrl: 'https://www.amazon.es/s?k=vela+liturgica+procesion&tag=nuus-21',
     isOfficialMerch: false,
     relatedCity: 'madrid',
   },
@@ -153,7 +153,7 @@ export const products: Product[] = [
     images: ['/images/shop/libro-biografia.webp'],
     category: 'libros',
     source: 'amazon',
-    buyUrl: 'https://www.amazon.es/s?k=papa+leon+xiv+biografia&tag=TUAFFILIATEID',
+    buyUrl: 'https://www.amazon.es/s?k=papa+leon+xiv+biografia&tag=nuus-21',
     isOfficialMerch: false,
     tags: ['destacado'],
   },
@@ -167,7 +167,7 @@ export const products: Product[] = [
     images: ['/images/shop/libro-alzad-mirada.webp'],
     category: 'libros',
     source: 'amazon',
-    buyUrl: 'https://www.amazon.es/s?k=alzad+la+mirada+papa&tag=TUAFFILIATEID',
+    buyUrl: 'https://www.amazon.es/s?k=alzad+la+mirada+papa&tag=nuus-21',
     isOfficialMerch: false,
   },
   {
@@ -180,7 +180,7 @@ export const products: Product[] = [
     images: ['/images/shop/libro-enciclica.webp'],
     category: 'libros',
     source: 'amazon',
-    buyUrl: 'https://www.amazon.es/s?k=enciclica+leon+xiv&tag=TUAFFILIATEID',
+    buyUrl: 'https://www.amazon.es/s?k=enciclica+leon+xiv&tag=nuus-21',
     isOfficialMerch: false,
   },
   {
@@ -193,7 +193,7 @@ export const products: Product[] = [
     images: ['/images/shop/libro-gaudi.webp'],
     category: 'libros',
     source: 'amazon',
-    buyUrl: 'https://www.amazon.es/s?k=sagrada+familia+gaudi+centenario&tag=TUAFFILIATEID',
+    buyUrl: 'https://www.amazon.es/s?k=sagrada+familia+gaudi+centenario&tag=nuus-21',
     isOfficialMerch: false,
     relatedCity: 'barcelona',
     tags: ['destacado'],
@@ -208,7 +208,7 @@ export const products: Product[] = [
     images: ['/images/shop/biblia-jerusalen.webp'],
     category: 'libros',
     source: 'amazon',
-    buyUrl: 'https://www.amazon.es/s?k=biblia+de+jerusalen+tapa+dura&tag=TUAFFILIATEID',
+    buyUrl: 'https://www.amazon.es/s?k=biblia+de+jerusalen+tapa+dura&tag=nuus-21',
     isOfficialMerch: false,
   },
 
