@@ -71,7 +71,7 @@ export const affiliates: AffiliateLink[] = [
   {
     id: 'amazon-religioso',
     provider: 'amazon',
-    url: 'https://www.amazon.es/s?k=papa+leon+xiv&tag=TUAFFILIATEID',
+    url: 'https://www.amazon.es/s?k=papa+leon+xiv&tag=nuus-21',
     displayName: 'Artículos Papa León XIV',
     description: 'Recuerdos, libros y artículos conmemorativos de la visita del Papa a España.',
     category: 'merchandising',

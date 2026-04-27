@@ -1,13 +1,13 @@
 /**
  * Kit del peregrino: productos recomendados para asistir a actos multitudinarios
  * al aire libre (vigilia, misas masivas, procesiones). Enlaces Amazon con tag
- * de afiliado — se reemplaza TUAFFILIATEID en producción por el tag real.
+ * de afiliado — tag real de Amazon Afiliados: nuus-21.
  *
  * Las URLs son búsquedas genéricas (no ASIN fijo) para evitar productos
  * descatalogados; Amazon paga comisión igualmente por la sesión.
  */
 
-const AMZN_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG || 'TUAFFILIATEID-21'
+const AMZN_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG || 'nuus-21'
 
 function amzSearch(query: string): string {
   const q = encodeURIComponent(query)
