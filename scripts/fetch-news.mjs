@@ -30,22 +30,21 @@ const FEEDS = [
   { name: 'ACI Prensa', url: 'https://www.aciprensa.com/rss' },
   { name: 'Omnes Mag', url: 'https://www.omnesmag.com/feed/' },
   { name: 'Ecclesia', url: 'https://revistaecclesia.es/feed/' },
+  { name: 'Religión Digital', url: 'https://www.religiondigital.org/rss/' },
+  { name: 'Vida Nueva', url: 'https://www.vidanuevadigital.com/feed/' },
 ]
 
-// Para ser relevante, la noticia tiene que cumplir DOS condiciones (AND):
-//   1. Mencionar al Papa / León XIV / Vaticano
-//   2. Mencionar España, una ciudad de la visita o un lugar específico
-// Esto evita incluir noticias de otros viajes papales (Camerún, etc.).
-const POPE_KEYWORDS = [
-  /papa(\s+le[oó]n\s+xiv)?/i,
-  /le[oó]n\s+xiv/i,
-  /pont[ií]fice/i,
-  /santo\s+padre/i,
-]
+// =============================================================================
+// FILTRADO POR CAPAS
+// =============================================================================
+// Tier 1 (VISIT_KEYWORDS): noticia específica del viaje a España.
+// Tier 2 (POPE_MAGISTERIUM): magisterio de León XIV (encíclicas, audiencias,
+//        mensajes) — relevante como contenido contextual aunque no mencione España.
+// Tier 3 (SPAIN_PREP): preparación de la Iglesia española para la visita
+//        (voluntarios, peregrinos, diócesis anfitrionas).
+// =============================================================================
 
-// Debe ser muy específico a la visita: lugares concretos o menciones
-// de "viaje/visita a España". Quitamos palabras ambiguas que aparecen
-// en contextos no relacionados (ej: "sacerdotes españoles" en Camerún).
+// Tier 1: muy específico al viaje — lugares concretos o menciones explícitas.
 const VISIT_KEYWORDS = [
   /sagrada\s+famil[ií]a/i,
   /plaza\s+de\s+(lima|cibeles)/i,
@@ -72,6 +71,40 @@ const VISIT_KEYWORDS = [
   /(madrid|barcelona|canarias|tenerife|espa[ñn]a)\s+.{0,50}\s+le[oó]n\s+xiv/i,
   /\b6\s*(-|a|al)\s*12\s+(de\s+)?junio/i, // fechas de la visita
 ]
+
+// Tier 2: magisterio de León XIV. Requiere que aparezca León XIV / Papa
+// junto con un tema doctrinal o acto magisterial. Solo aplicamos esta capa
+// a fuentes con alta señal y baja redundancia (no a portales generalistas).
+const POPE_MAGISTERIUM_PATTERNS = [
+  /le[oó]n\s+xiv\s+.{0,80}(encíclica|enciclica|exhortación|exhortacion|carta apost[oó]lica|mensaje|catequesis|audiencia general|ángelus|angelus|homilía|homilia|discurso|motu proprio)/i,
+  /(encíclica|enciclica|exhortación|exhortacion|catequesis|homilía|homilia)\s+.{0,80}\s+le[oó]n\s+xiv/i,
+  /el\s+papa\s+.{0,60}\s+(pide|llama|denuncia|exhorta|recuerda|pronuncia|publica|firma)\s+/i,
+  /le[oó]n\s+xiv\s+.{0,60}\s+(pide|llama|denuncia|exhorta|recuerda|pronuncia|publica|firma)\s+/i,
+  /audiencia\s+(general|de\s+los\s+miércoles|del\s+santo\s+padre)/i,
+  /(ángelus|angelus|regina\s+caeli)\s+.{0,40}\s+le[oó]n\s+xiv/i,
+]
+
+// Tier 3: preparación de la Iglesia española para la visita.
+// Combinaciones de: keyword de preparación + España/diócesis/CEE.
+const SPAIN_PREP_PATTERNS = [
+  /(voluntari[oa]s?|peregrin[oa]s?|inscrip[cs]i[oó]n|preparativos?|preparaci[oó]n)\s+.{0,60}\s+(papa|le[oó]n\s+xiv|visita|viaje)/i,
+  /(papa|le[oó]n\s+xiv|visita|viaje)\s+.{0,60}\s+(voluntari[oa]s?|peregrin[oa]s?|inscrip[cs]i[oó]n|preparativos?|preparaci[oó]n)/i,
+  /conferencia\s+episcopal\s+espa[ñn]ola\s+.{0,80}\s+(papa|le[oó]n\s+xiv|visita|viaje)/i,
+  /(arz?obispado|archidi[oó]cesis|di[oó]cesis)\s+(de\s+)?(madrid|barcelona|canarias|tenerife)\s+.{0,80}\s+(papa|visita|viaje|le[oó]n\s+xiv)/i,
+  /(asamblea\s+plenaria|cardenal\s+omella|argüello|argüello|cobo|os[oó]ro)\s+.{0,60}\s+(papa|visita|viaje|le[oó]n\s+xiv)/i,
+  /(papa|le[oó]n\s+xiv|visita|viaje|peregrinos?)\s+.{0,60}\s+(asamblea\s+plenaria|cardenal\s+omella|argüello|argüello|cobo|os[oó]ro)/i,
+  /himno\s+(oficial\s+)?(de\s+la\s+)?visita/i,
+]
+
+// Fuentes en las que aplicamos las capas Tier 2 y Tier 3 (alta señal).
+const HIGH_SIGNAL_SOURCES = new Set([
+  'Alfa y Omega',
+  'Conferencia Episcopal Española',
+  'Vatican News',
+  'Ecclesia',
+  'Omnes Mag',
+  'Vida Nueva',
+])
 
 // Ciudades relacionadas a detectar en el texto para el campo relatedCities
 const CITY_MATCHERS = {
@@ -148,20 +181,34 @@ function parseRss(xml) {
 
 // ----------------------------- Filtering -------------------------------
 
-function isRelevant(item) {
-  // Para ser relevante el TÍTULO (no solo la descripción) debe mencionar
-  // la visita a España o un lugar específico. Así evitamos que noticias
-  // sobre otros viajes papales se cuelen por mencionar "España" de pasada.
+function isRelevant(item, sourceName) {
+  // El TÍTULO es la señal más fuerte (la descripción suele ser ruido).
+  // Devuelve { ok, category } o null si no pasa.
   const title = item.title
   const url = item.link.toLowerCase()
 
+  // Tier 1 — viaje específico a España. Cualquier fuente.
   const titleHasVisit = VISIT_KEYWORDS.some((rx) => rx.test(title))
   const urlHasVisit =
     /viaje-del-papa-a-espana|papa-leon-xiv-(espana|madrid|barcelona|canarias|tenerife)|visita-papa-leon-xiv-espana|visita-pastoral-madrid|viaje-papa-espana|visita-pontifical-espana/i.test(
       url
     )
+  if (titleHasVisit || urlHasVisit) return { ok: true, category: 'visita' }
 
-  return titleHasVisit || urlHasVisit
+  // Tier 2 y Tier 3 solo en fuentes de alta señal (evita ruido).
+  if (!HIGH_SIGNAL_SOURCES.has(sourceName)) return null
+
+  // Tier 2 — magisterio del Papa León XIV (contexto doctrinal).
+  if (POPE_MAGISTERIUM_PATTERNS.some((rx) => rx.test(title))) {
+    return { ok: true, category: 'papa' }
+  }
+
+  // Tier 3 — preparación de la Iglesia española para la visita.
+  if (SPAIN_PREP_PATTERNS.some((rx) => rx.test(title))) {
+    return { ok: true, category: 'iglesia-espana' }
+  }
+
+  return null
 }
 
 function detectCities(item) {
@@ -270,16 +317,24 @@ async function main() {
   for (const feed of FEEDS) {
     try {
       const items = await fetchFeed(feed)
-      const relevant = items.filter(isRelevant).slice(0, MAX_PER_FEED)
-      perSource[feed.name] = relevant.length
-      for (const item of relevant) {
+      const relevant = items
+        .map((it) => ({ item: it, match: isRelevant(it, feed.name) }))
+        .filter(({ match }) => match)
+        .slice(0, MAX_PER_FEED)
+      perSource[feed.name] = {
+        total: relevant.length,
+        visita: relevant.filter((r) => r.match.category === 'visita').length,
+        papa: relevant.filter((r) => r.match.category === 'papa').length,
+        'iglesia-espana': relevant.filter((r) => r.match.category === 'iglesia-espana').length,
+      }
+      for (const { item, match } of relevant) {
         if (!item.title || !item.link) continue
         if (existingUrls.has(item.link)) continue
         const entry = buildNewsEntry(item, feed.name)
         if (existingSlugs.has(entry.slug)) continue
         existingSlugs.add(entry.slug)
         existingUrls.add(item.link)
-        added.push(entry)
+        added.push({ ...entry, _category: match.category })
       }
     } catch (err) {
       console.error(`  ✗ Error en ${feed.name}: ${err.message}`)
@@ -296,8 +351,11 @@ async function main() {
 
   console.log(`\n${added.length} noticia(s) nueva(s):`)
   added.forEach((e) => {
-    console.log(`  - [${e.source}] ${e.title}`)
+    console.log(`  - [${e.source}/${e._category}] ${e.title}`)
   })
+
+  // _category es solo para log; lo eliminamos antes de escribir al .ts
+  added.forEach((e) => delete e._category)
 
   if (DRY_RUN) {
     console.log('\n[DRY RUN] No se ha escrito nada.')
