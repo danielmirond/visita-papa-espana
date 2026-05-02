@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'obispos-corruptos-y-profanadores-vox-rompe-todos-los-puentes-con-la-iglesia-ante',
+    title: '"Obispos corruptos y profanadores": Vox rompe todos los puentes con la Iglesia antes de la visita del Papa a España',
+    excerpt: 'La ultraderecha acusa a los obispos de “hacer negocio” con la inmigración y amenaza con criticar a León XIV si en su discurso ante el Congreso avala la regularización de migrantes, mientras un sector del episcopado ya tr…',
+    content: 'La ultraderecha acusa a los obispos de “hacer negocio” con la inmigración y amenaza con criticar a León XIV si en su discurso ante el Congreso avala la regularización de migrantes, mientras un sector del episcopado ya trabaja con la hipótesis de un G',
+    date: '2026-05-02',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/vox-dinamita-puentes-iglesia-visita-papa-espana_1_1452059.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'mas-de-3-000-periodistas-acreditados-para-el-viaje-del-papa-a-espana',
+    title: 'Más de 3.000 periodistas acreditados para el viaje del Papa a España',
+    excerpt: 'La mayoría son españoles. Más de la mitad pertenecen a medios televisivos, y la gran mayoría se ha acreditado para Madrid',
+    content: 'La mayoría son españoles. Más de la mitad pertenecen a medios televisivos, y la gran mayoría se ha acreditado para Madrid',
+    date: '2026-05-02',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/periodistas-acreditados-viaje-papa-espana_1_1452099.html',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'materiales-pastorales-de-preparacion-para-la-visita-del-papa-leon-xiv',
     title: 'Materiales pastorales de preparación para la visita del Papa León XIV',
     excerpt: 'El equipo de Pastoral de la&#160;Conferencia Episcopal Española constituido con motivo de la visita del Papa León XIV a España ha elaborado los materiales de preparación para este acontecimiento histórico. Estos recursos…',
