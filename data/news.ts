@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-ministro-torres-contento-por-la-visita-del-papa-a-canarias-se-puede-ser-mas-o',
+    title: 'El ministro Torres, contento por la visita del Papa a Canarias: "Se puede ser más o menos religioso, pero es un hito histórico"',
+    excerpt: 'El ministro de Política Territorial y Memoria Democrática ha expresado este lunes su "alegría" por la visita del Papa. "Se puede ser más o menos religioso, nada es religioso, pero es un hito histórico", ha afirmado',
+    content: 'El ministro de Política Territorial y Memoria Democrática ha expresado este lunes su "alegría" por la visita del Papa. "Se puede ser más o menos religioso, nada es religioso, pero es un hito histórico", ha afirmado',
+    date: '2026-05-04',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/ministro-torres-contento-visita-papa_1_1452324.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'magnifica-humanitas-la-primera-enciclica-de-leon-xiv-para-el-15-de-mayo',
+    title: '‘Magnifica humanitas’: la primera encíclica de León XIV, ¿para el 15 de mayo?',
+    excerpt: 'La noticia ‘Magnifica humanitas’: la primera encíclica de León XIV, ¿para el 15 de mayo? se publicó primero en Noticias religiosas de última hora | Vida Nueva León XIV tiene lista la que será su primera encíclica. Llevar…',
+    content: 'La noticia ‘Magnifica humanitas’: la primera encíclica de León XIV, ¿para el 15 de mayo? se publicó primero en Noticias religiosas de última hora | Vida Nueva León XIV tiene lista la que será su primera encíclica. Llevará por nombre ‘Magnifica humanitas’ (Magnífica humanidad), y según la Agencia Católica de Noticias (KNA) de Alemania, tendría previsto publicarse el próximo 15 de mayo. ¿Todavía no sigues a Vida Nueva en INSTAGRAM? WHATSAPP: Sigue nuestro canal para recibir gratis la mejor información Regístrate en &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-05-03',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/05/03/magnifica-humanitas-la-primera-enciclica-leon-xiv-15-de-mayo/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'obispos-corruptos-y-profanadores-vox-rompe-todos-los-puentes-con-la-iglesia-ante',
     title: '"Obispos corruptos y profanadores": Vox rompe todos los puentes con la Iglesia antes de la visita del Papa a España',
     excerpt: 'La ultraderecha acusa a los obispos de “hacer negocio” con la inmigración y amenaza con criticar a León XIV si en su discurso ante el Congreso avala la regularización de migrantes, mientras un sector del episcopado ya tr…',
