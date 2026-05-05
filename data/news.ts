@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'marlaska-blinda-la-visita-del-papa-mas-de-13-000-policias-y-guardias-civiles-vel',
+    title: 'Marlaska \'blinda\' la visita del Papa: más de 13.000 policías y guardias civiles velarán por la seguridad de León XIV en España',
+    excerpt: '11.000 policías nacionales y unos 2.200 guardias civiles, a los que se sumarán efectivos de los Mossos d’Esquadra, de la policía canaria y agentes de las policías locales que conformarán el dispositivo de seguridad con m…',
+    content: '11.000 policías nacionales y unos 2.200 guardias civiles, a los que se sumarán efectivos de los Mossos d’Esquadra, de la policía canaria y agentes de las policías locales que conformarán el dispositivo de seguridad con motivo de la visita del papa a',
+    date: '2026-05-05',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/marlaska-blinda-visita-papa-policia-guardia-civil-leon-xiv_1_1452341.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'leonor-la-peregrina-mas-esperada-en-la-vigilia-de-leon-xiv-en-madrid',
+    title: 'Leonor, la peregrina más esperada en la vigilia de León XIV en Madrid',
+    excerpt: 'La noticia Leonor, la peregrina más esperada en la vigilia de León XIV en Madrid se publicó primero en Noticias religiosas de última hora | Vida Nueva La princesa Leonor, heredera a la corona de España, tendría previsto …',
+    content: 'La noticia Leonor, la peregrina más esperada en la vigilia de León XIV en Madrid se publicó primero en Noticias religiosas de última hora | Vida Nueva La princesa Leonor, heredera a la corona de España, tendría previsto participar en la vigilia para jóvenes que presidirá León XIV en la tarde noche del sábado 6 de junio en Madrid. Fuentes eclesiales han desvelado a &#8216;Vida Nueva’ que la hija primogénita de Felipe VI y Letizia, salvo que problemas de agenda finalmente lo &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-05-04',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/05/04/leonor-peregrina-vigilia-leon-madrid/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'el-ministro-torres-contento-por-la-visita-del-papa-a-canarias-se-puede-ser-mas-o',
     title: 'El ministro Torres, contento por la visita del Papa a Canarias: "Se puede ser más o menos religioso, pero es un hito histórico"',
     excerpt: 'El ministro de Política Territorial y Memoria Democrática ha expresado este lunes su "alegría" por la visita del Papa. "Se puede ser más o menos religioso, nada es religioso, pero es un hito histórico", ha afirmado',
