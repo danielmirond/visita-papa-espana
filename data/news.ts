@@ -2,6 +2,26 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'programa-oficial-viaje-papa-leon-xiv-espana-2026',
+    title: 'La Santa Sede publica el programa oficial del Viaje Apostólico del Papa León XIV a España',
+    excerpt: 'La Sala de Prensa Vaticana y la Conferencia Episcopal Española han hecho público el programa oficial del Viaje Apostólico del Papa León XIV a España, del 6 al 12 de junio de 2026, con más de 20 actos en cinco diócesis y aproximadamente 2.500 km recorridos en seis días.',
+    content: 'La Sala de Prensa Vaticana, en coordinación con la Conferencia Episcopal Española, ha publicado este 6 de mayo el programa detallado del Viaje Apostólico del Papa León XIV a España (6-12 de junio de 2026). El itinerario contempla más de 20 actos articulados en torno a tres ejes: caridad, Eucaristía y encuentro comunitario. La visita comenzará el sábado 6 de junio con la llegada al Aeropuerto Adolfo Suárez Madrid-Barajas a las 10:30, seguida de la ceremonia de bienvenida en el Palacio Real (11:30), la visita al proyecto social CEDIA 24 Horas de Cáritas en Carabanchel (18:00) y la vigilia con jóvenes en la Plaza de Lima (20:30). El domingo 7 de junio, solemnidad del Corpus Christi, el Santo Padre presidirá la Eucaristía en la Plaza de Cibeles a las 10:00, seguida de procesión eucarística, y por la tarde mantendrá un encuentro con la sociedad civil en el Movistar Arena. El lunes 8 incluye audiencia con el Presidente del Gobierno en la Nunciatura, discurso ante los parlamentarios en el Congreso, encuentro con los obispos en la sede de la CEE, oración mariana en la Almudena y encuentro diocesano en el Estadio Santiago Bernabéu. El martes 9, tras un encuentro con voluntarios en IFEMA, el Papa viajará a Barcelona para presidir la Hora Media en la catedral y la vigilia en el Estadio Olímpico Lluís Companys. El miércoles 10, visita al centro penitenciario Brians 1, rezo del Rosario en Montserrat, encuentro con realidades de caridad en San Agustín y Santa Misa en la Sagrada Familia con la inauguración de la Torre de Jesucristo. El jueves 11 el Pontífice estará en Gran Canaria (Arguineguín, Catedral de Santa Ana, Estadio de Gran Canaria) y el viernes 12 concluirá en Tenerife con encuentros con migrantes en Las Raíces y La Laguna y Santa Misa de clausura en el Puerto de Santa Cruz.',
+    date: '2026-05-06',
+    source: 'Vatican News',
+    sourceUrl: 'https://www.vaticannews.va/es/papa/news/2026-05/papa-leon-xiv-viaje-apostolico-espana-programa-oicial-2026.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'mas-de-20-actos-agenda-oficial-papa-viaje-apostolico-espana',
+    title: 'Más de 20 actos completan la agenda oficial del Papa en su Viaje Apostólico a España',
+    excerpt: 'La Conferencia Episcopal Española ha hecho pública la agenda detallada del Viaje Apostólico, que se desarrollará en cinco diócesis (Madrid, Barcelona, Canarias y Tenerife) en torno a tres ejes: caridad, Eucaristía y encuentro comunitario.',
+    content: 'La Conferencia Episcopal Española ha presentado este 6 de mayo la agenda oficial del Viaje Apostólico del Papa León XIV a España, que se desarrollará del 6 al 12 de junio de 2026. El documento confirma más de veinte actos pastorales distribuidos en cinco diócesis y un recorrido aproximado de 2.500 kilómetros en seis días. Los tres ejes temáticos del viaje son la caridad —con la visita al CEDIA 24 Horas de Cáritas en Madrid, al Centro Penitenciario Brians 1 en Barcelona y a las realidades de acogida a migrantes en Canarias—, la Eucaristía —con celebraciones presididas por el Santo Padre en la Plaza de Cibeles, en la Sagrada Familia, en el Estadio de Gran Canaria y en el Puerto de Santa Cruz de Tenerife— y el encuentro comunitario —con jóvenes en la Plaza de Lima, con la sociedad civil en el Movistar Arena y con la comunidad diocesana en el Estadio Santiago Bernabéu—. El presidente de la CEE, monseñor Luis Argüello, ha subrayado el carácter pastoral del viaje y la centralidad del lema «Alzad la mirada» (Jn 4,35).',
+    date: '2026-05-06',
+    source: 'Conferencia Episcopal Española',
+    sourceUrl: 'https://www.conferenciaepiscopal.es/agenda-oficial-papa-viaje-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
     slug: 'umas-sera-la-aseguradora-oficial-de-la-visita-del-papa-a-espana-tras-su-acuerdo-',
     title: 'UMAS será la aseguradora oficial de la visita del Papa a España, tras su acuerdo con la Conferencia Episcopal',
     excerpt: 'La alianza se articula a través de un acuerdo institucional y otro operativo que regulan tanto el marco de colaboración como las condiciones específicas de aseguramiento La entrada UMAS será la aseguradora oficial de la …',
