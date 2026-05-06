@@ -2,6 +2,37 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'hoy-es-el-dia-d-asi-sera-el-viaje-del-papa-a-espana',
+    title: 'Hoy es el \'día D\': Así será el viaje del Papa a España',
+    excerpt: 'León XIV se convertirá en el primer pontífice en hablar ante la sede de la democracia española. La evangelización en las grandes ciudades, la belleza de Gaudí y la realidad migratoria frente a las “prioridades nacionales…',
+    content: 'León XIV se convertirá en el primer pontífice en hablar ante la sede de la democracia española. La evangelización en las grandes ciudades, la belleza de Gaudí y la realidad migratoria frente a las “prioridades nacionales”, ejes de una visita que se p',
+    date: '2026-05-06',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/viaje-papa-espana-itinerario-barcelona-madrid-canarias-tenerife-montserrat_1_1452138.html',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'el-gobierno-se-vuelca-con-la-visita-del-papa-a-espana',
+    title: 'El Gobierno se vuelca con la visita del Papa a España',
+    excerpt: 'Bolaños se reúne con el nuncio Pioppo a pocas horas de que el Vaticano haga pública la agenda oficial de la visita de León XIV a España, mientras ya se ultiman los detalles del histórico discurso en el Congreso, Marlaska…',
+    content: 'Bolaños se reúne con el nuncio Pioppo a pocas horas de que el Vaticano haga pública la agenda oficial de la visita de León XIV a España, mientras ya se ultiman los detalles del histórico discurso en el Congreso, Marlaska cierra la seguridad del viaje',
+    date: '2026-05-06',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/gobierno-vuelca-visita-papa-espana_1_1452481.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'asi-sera-la-visita-de-leon-xiv-al-congreso-50-minutos-un-discurso-y-la-bienvenid',
+    title: 'Así será la visita de León XIV al Congreso: 50 minutos, un discurso y la bienvenida de Armengol',
+    excerpt: 'La noticia Así será la visita de León XIV al Congreso: 50 minutos, un discurso y la bienvenida de Armengol se publicó primero en Noticias religiosas de última hora | Vida Nueva Aunque esta previsto que mañana se haga púb…',
+    content: 'La noticia Así será la visita de León XIV al Congreso: 50 minutos, un discurso y la bienvenida de Armengol se publicó primero en Noticias religiosas de última hora | Vida Nueva Aunque esta previsto que mañana se haga pública la agenda definitiva del viaje de León XIV a España, hoy han trascendido algunos detalles del que será el acto “más delicado” de su visita a nuestro país. Así al menos lo consideran tanto los organizadores españoles de la peregrinación, como las voces consultadas por ‘Vida Nueva’ &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-05-05',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/05/05/asi-sera-la-visita-de-leon-xiv-al-congreso-50-minutos-un-discurso-y-la-bienvenida-de-armengol/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'marlaska-blinda-la-visita-del-papa-mas-de-13-000-policias-y-guardias-civiles-vel',
     title: 'Marlaska \'blinda\' la visita del Papa: más de 13.000 policías y guardias civiles velarán por la seguridad de León XIV en España',
     excerpt: '11.000 policías nacionales y unos 2.200 guardias civiles, a los que se sumarán efectivos de los Mossos d’Esquadra, de la policía canaria y agentes de las policías locales que conformarán el dispositivo de seguridad con m…',
