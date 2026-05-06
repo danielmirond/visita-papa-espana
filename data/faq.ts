@@ -129,6 +129,26 @@ export const faq: FaqItem[] = [
     answer: 'Por seguridad, no se permiten mochilas grandes, objetos punzantes, botellas de cristal, drones ni paraguas largos. Se recomienda llevar solo lo imprescindible en una bolsa pequeña o riñonera. Habrá controles de seguridad en los accesos.',
     category: 'evento',
   },
+  {
+    question: '¿Pertenece el Papa León XIV al Opus Dei?',
+    answer: 'No. El Papa León XIV es religioso de la Orden de San Agustín (OSA), también conocidos como agustinos, no del Opus Dei. Ingresó en el noviciado agustino en 1977 en Saint Louis (Missouri) y fue Prior General mundial de la Orden de San Agustín entre 2001 y 2013. La Orden de San Agustín es una orden religiosa fundada en 1244 que sigue la regla escrita por San Agustín de Hipona, distinta del Opus Dei (prelatura personal fundada por San Josemaría Escrivá en 1928).',
+    category: 'general',
+  },
+  {
+    question: '¿Es político el discurso del Papa al Congreso?',
+    answer: 'El discurso del Papa León XIV ante el Congreso de los Diputados el 8 de junio (10:30) será un discurso pastoral, no partidista. El Estado español es aconfesional según el artículo 16.3 de la Constitución, lo que no impide la cooperación con las confesiones religiosas. Los discursos papales en parlamentos suelen abordar derechos humanos, dignidad de la persona, paz y bien común, sin entrar en política de partido. Será la primera vez en la historia que un Papa interviene ante el Congreso español, en sesión conjunta con el Senado.',
+    category: 'evento',
+  },
+  {
+    question: '¿A qué hora exacta llega el Papa a Barcelona?',
+    answer: 'El Papa León XIV llegará al Aeropuerto Josep Tarradellas Barcelona-El Prat el martes 9 de junio a las 12:25 procedente de Madrid. Su primer acto público será a las 13:00 en la Catedral de la Santa Cruz y Santa Eulalia con el rezo de la Hora Media. El acto multitudinario del día será la vigilia de oración a las 20:00 en el Estadio Olímpico Lluís Companys de Montjuïc.',
+    category: 'evento',
+  },
+  {
+    question: '¿Hay actos del Papa abiertos al público en La Laguna y Tenerife?',
+    answer: 'Sí. El viernes 12 de junio a las 10:10 el Papa León XIV mantendrá un encuentro de integración con personas migrantes en la Plaza del Cristo de San Cristóbal de La Laguna, ante el Real Santuario del Santísimo Cristo. Por la mañana (12:15) presidirá la Santa Misa de clausura del Viaje Apostólico en el Puerto de Santa Cruz de Tenerife, abierta al público con inscripción previa en madrid.conelpapa.es. La visita al centro de acogida Las Raíces a las 9:30 es de carácter pastoral y no abierta al público general.',
+    category: 'evento',
+  },
 ]
 
 export const FAQ_CATEGORIES = {
