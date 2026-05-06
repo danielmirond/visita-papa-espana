@@ -38,6 +38,7 @@ const ROUTE_TRANSLATIONS = {
   'papa-bernabeu': { es: 'papa-bernabeu', en: 'pope-bernabeu', it: 'papa-bernabeu', fr: 'pape-bernabeu', de: 'papst-bernabeu', pt: 'papa-bernabeu', ca: 'papa-bernabeu', gl: 'papa-bernabeu', eu: 'aita-santua-bernabeu' },
   'vigilia-plaza-lima': { es: 'vigilia-plaza-lima', en: 'plaza-de-lima-vigil', it: 'veglia-plaza-lima', fr: 'veillee-plaza-lima', de: 'vigil-plaza-lima', pt: 'vigilia-plaza-lima', ca: 'vetlla-plaza-lima', gl: 'vixilia-plaza-lima', eu: 'lima-plaza-bijilia' },
   'intenciones-del-papa-2026': { es: 'intenciones-del-papa-2026', en: 'pope-prayer-intentions-2026', it: 'intenzioni-papa-2026', fr: 'intentions-pape-2026', de: 'gebetsanliegen-papst-2026', pt: 'intencoes-papa-2026', ca: 'intencions-papa-2026', gl: 'intencions-papa-2026', eu: 'aita-santuaren-asmoak-2026' },
+  'como-inscribirse': { es: 'como-inscribirse', en: 'how-to-register', it: 'come-iscriversi', fr: 'comment-s-inscrire', de: 'anmeldung', pt: 'como-inscrever-se', ca: 'com-inscriures', gl: 'como-inscribirse', eu: 'nola-izena-eman' },
 }
 
 // Build reverse map: localized slug per locale → canonical key

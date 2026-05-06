@@ -2,6 +2,16 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'diocesis-canarias-publica-guia-inscripcion-eucaristia-gran-canaria',
+    title: 'La Diócesis de Canarias publica la guía oficial de inscripción para la Eucaristía del Estadio de Gran Canaria',
+    excerpt: 'La Diócesis de Canarias ha difundido un documento de 12 páginas con los seis pasos detallados para inscribirse a la Eucaristía multitudinaria del 11 de junio en el Estadio de Gran Canaria, a través de la plataforma oficial inscripciones.conelpapa.es.',
+    content: 'La Diócesis de Canarias ha publicado una guía oficial de 12 páginas con los seis pasos detallados para que los fieles puedan inscribirse a la Eucaristía multitudinaria que el Papa León XIV presidirá el jueves 11 de junio de 2026 en el Estadio de Gran Canaria. La inscripción es gratuita y se realiza en la plataforma oficial de la Conferencia Episcopal Española (inscripciones.conelpapa.es). El acto está abierto a todo el público hasta completar aforo, pero la inscripción previa es obligatoria. La guía explica las tres modalidades de inscripción (grupo, familia/amigos, individual), los datos requeridos por persona (nombre completo, fecha de nacimiento, DNI/NIE/Pasaporte, código postal, país de procedencia, sexo, situación eclesial), las advertencias clave (la inscripción no asegura plaza, el orden de registro determina el acceso), y las indicaciones especiales para menores de edad y personas con discapacidad. La diócesis recomienda inscribirse cuanto antes para asegurar el acceso, especialmente en el caso de grupos parroquiales. Para cualquier duda se ha habilitado el contacto a través del perfil de la Diócesis de Canarias en redes sociales.',
+    date: '2026-04-16',
+    source: 'Diócesis de Canarias',
+    sourceUrl: 'https://www.diocesisdecanarias.es/cmsAdmin/uploads/o_1jmbg2p6tgu4i6r10c21kcugp4a.pdf',
+    relatedCities: ['gran-canaria'],
+  },
+  {
     slug: 'el-real-madrid-se-pronuncia-oficialmente-sobre-el-acto-del-papa-en-el-bernabeu',
     title: 'El Real Madrid se pronuncia oficialmente sobre el acto del Papa en el Bernabéu',
     excerpt: '«Esta será la segunda vez que el Bernabéu acoja un acto del Papa». La primera sucedió el 3 de noviembre de 1982 durante una visita de Juan Pablo II La entrada El Real Madrid se pronuncia oficialmente sobre el acto del Pa…',

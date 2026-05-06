@@ -348,7 +348,7 @@ export const schedule: ScheduleDay[] = [
       {
         id: 'misa-estadio-gc',
         title: 'Santa Misa en el Estadio de Gran Canaria',
-        description: 'Santa Misa pública presidida por el Papa León XIV en el Estadio de Gran Canaria, con la presencia de las diócesis canarias y peregrinos venidos de toda España.',
+        description: 'Santa Misa pública presidida por el Papa León XIV en el Estadio de Gran Canaria, con la presencia de las diócesis canarias y peregrinos venidos de toda España. Acto abierto al público hasta completar aforo, con inscripción previa obligatoria gestionada por la Diócesis de Canarias.',
         date: '2026-06-11',
         startTime: '18:30',
         citySlug: 'gran-canaria',
@@ -356,7 +356,7 @@ export const schedule: ScheduleDay[] = [
         eventType: 'misa',
         isPublic: true,
         isConfirmed: true,
-        registrationUrl: 'https://inscripciones.conelpapa.es/auth',
+        registrationUrl: 'https://inscripciones.conelpapa.es',
       },
     ],
   },
