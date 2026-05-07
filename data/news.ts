@@ -2,6 +2,16 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'vatican-va-publica-programa-oficial-viaje-leon-xiv-espana',
+    title: 'El Vaticano publica en vatican.va el programa oficial detallado del Viaje Apostólico del Papa León XIV a España',
+    excerpt: 'La Santa Sede ha publicado en vatican.va la página oficial del Viaje Apostólico de León XIV a España (6-12 junio 2026), con el itinerario completo cronológico que ajusta varios horarios respecto a versiones previas y añade actos hasta ahora no detallados, entre ellos un encuentro privado con la Orden de San Agustín en Madrid.',
+    content: 'La Santa Sede ha publicado en vatican.va la página oficial del Viaje Apostólico del Papa León XIV a España, con el programa completo detallado en formato cronológico. El documento confirma la salida desde Roma/Fiumicino el sábado 6 de junio a las 08:00 y la llegada a Madrid/Barajas a las 10:30, así como el regreso a Roma el viernes 12 de junio con llegada a Fiumicino a las 20:10. Entre los datos novedosos respecto a versiones previas destacan: el encuentro privado del Papa con la Orden de San Agustín (OSA) el domingo 7 de junio a las 16:30 en Madrid —acto de fuerte simbolismo, al ser el Pontífice religioso agustino y ex-Prior General de la Orden—, la cena privada con el cardenal arzobispo de Madrid esa misma noche, y un almuerzo con la comunidad benedictina de Montserrat el miércoles 10 de junio. La publicación oficial también ajusta varios horarios: el encuentro con los obispos españoles el lunes 8 se traslada a las 11:30 (con almuerzo posterior con los obispos a las 12:50), la oración mariana en la Almudena pasa a las 18:00, el encuentro con voluntarios en IFEMA el martes 9 se ajusta a las 10:20, y la ceremonia de despedida en Tenerife se adelanta a las 14:30 con salida del vuelo papal a las 15:00. La página oficial está disponible en español, italiano e inglés en vatican.va, e incorporará progresivamente los discursos y homilías que el Papa pronuncie durante el viaje.',
+    date: '2026-05-07',
+    source: 'Vatican.va',
+    sourceUrl: 'https://www.vatican.va/content/leo-xiv/en/travels/2026/documents/spagna-6-12giugno2026.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
     slug: 'diocesis-canarias-publica-guia-inscripcion-eucaristia-gran-canaria',
     title: 'La Diócesis de Canarias publica la guía oficial de inscripción para la Eucaristía del Estadio de Gran Canaria',
     excerpt: 'La Diócesis de Canarias ha difundido un documento de 12 páginas con los seis pasos detallados para inscribirse a la Eucaristía multitudinaria del 11 de junio en el Estadio de Gran Canaria, a través de la plataforma oficial inscripciones.conelpapa.es.',
