@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'almudena-hernandez-el-mensaje-del-papa-hace-mucha-falta-entre-los-jovenes-espano',
+    title: 'Almudena Hernández: «El mensaje del Papa hace mucha falta entre los jóvenes» españoles',
+    excerpt: 'La periodista de Servimedia Almudena Hernández publica el próximo 12 de mayo León XIV, el León de la Paz (Sekotia/Almuzara), un libro sobre el primer año de pontificado del Papa made in Spain, que pronto aterrizará en la…',
+    content: 'La periodista de Servimedia Almudena Hernández publica el próximo 12 de mayo León XIV, el León de la Paz (Sekotia/Almuzara), un libro sobre el primer año de pontificado del Papa made in Spain, que pronto aterrizará en la tierra de sus antepasados. «Tengo gran expectación ante la histórica presencia del Papa en el Congreso», asegura la autora La entrada Almudena Hernández: «El mensaje del Papa hace mucha falta entre los jóvenes» españoles se publicó primero en Alfa y Omega.',
+    date: '2026-05-08',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/almudena-hernandez-el-mensaje-del-papa-hace-mucha-falta-entre-los-jovenes-espanoles/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'en-la-plaza-de-lima-el-aura-del-papa-llegara-a-los-jovenes',
     title: 'En la plaza de Lima, el aura del Papa llegará a los jóvenes',
     excerpt: 'La expectación por la visita de León XIV va aumentando, todavía más ahora que ya se conoce el programa oficial. En el caso de los jóvenes, protagonistas de uno de los actos centrales en Madrid, la Vigilia de la tarde-noc…',
