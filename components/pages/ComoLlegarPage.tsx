@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
+import AffiliateLink from '@/components/affiliate/AffiliateLink'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { cityTransports } from '@/data/transporte'
 import { getAffiliateById } from '@/data/affiliates'
@@ -106,14 +107,16 @@ export default function ComoLlegarPageContent({ locale }: { locale: Locale }) {
                                   {option.duration}
                                 </span>
                                 {affiliate && (
-                                  <a
+                                  <AffiliateLink
                                     href={affiliate.url}
-                                    target="_blank"
-                                    rel="nofollow sponsored noopener"
+                                    provider={(affiliate.provider as never) || 'other'}
+                                    category={(affiliate.category as never) || 'flight'}
+                                    placement="inline"
+                                    productId={affiliate.id}
                                     className="rounded-lg bg-papal-gold px-3 py-1.5 text-xs font-bold text-papal-navy hover:bg-papal-gold-light"
                                   >
                                     {t.reserveAction}
-                                  </a>
+                                  </AffiliateLink>
                                 )}
                               </div>
                             </div>

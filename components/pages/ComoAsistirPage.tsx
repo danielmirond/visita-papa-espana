@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
+import AffiliateLink from '@/components/affiliate/AffiliateLink'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { siteConfig } from '@/data/siteConfig'
@@ -124,17 +125,19 @@ export default function ComoAsistirPageContent({ locale }: { locale: Locale }) {
               <p className="text-papal-navy/70">{t.section3.demandText}</p>
               <div className="mt-4 grid gap-3 sm:grid-cols-2">
                 {hoteles.map((hotel) => (
-                  <a
+                  <AffiliateLink
                     key={hotel.id}
                     href={hotel.url}
-                    target="_blank"
-                    rel="nofollow sponsored noopener"
+                    provider="booking"
+                    category="hotel"
+                    placement="card"
+                    productId={hotel.id}
                     className="rounded-lg border border-papal-gold/20 p-4 transition-colors hover:bg-papal-cream"
                   >
                     <p className="font-bold text-papal-navy">{hotel.displayName}</p>
                     <p className="mt-1 text-xs text-papal-navy/60">{hotel.description}</p>
                     <p className="mt-2 text-xs font-medium text-papal-gold">→</p>
-                  </a>
+                  </AffiliateLink>
                 ))}
               </div>
               <p className="mt-2 text-[10px] text-papal-navy/40">{t.section3.sponsoredLinks}</p>
@@ -207,16 +210,18 @@ export default function ComoAsistirPageContent({ locale }: { locale: Locale }) {
                 </h3>
                 <div className="mt-3 space-y-3">
                   {transporte.map((item) => (
-                    <a
+                    <AffiliateLink
                       key={item.id}
                       href={item.url}
-                      target="_blank"
-                      rel="nofollow sponsored noopener"
+                      provider={(item.provider as never) || 'other'}
+                      category="flight"
+                      placement="sidebar"
+                      productId={item.id}
                       className="block rounded-lg border border-gray-100 p-3 transition-colors hover:bg-gray-50"
                     >
                       <p className="font-medium text-papal-navy">{item.displayName}</p>
                       <p className="mt-1 text-xs text-papal-navy/60">{item.description}</p>
-                    </a>
+                    </AffiliateLink>
                   ))}
                 </div>
                 <p className="mt-2 text-[10px] text-papal-navy/40">{t.section3.sponsoredLinks}</p>
@@ -229,16 +234,18 @@ export default function ComoAsistirPageContent({ locale }: { locale: Locale }) {
                   {t.sidebar.insuranceTitle}
                 </h3>
                 {seguros.map((s) => (
-                  <a
+                  <AffiliateLink
                     key={s.id}
                     href={s.url}
-                    target="_blank"
-                    rel="nofollow sponsored noopener"
+                    provider="intermundial"
+                    category="insurance"
+                    placement="sidebar"
+                    productId={s.id}
                     className="mt-3 block rounded-lg border border-gray-100 p-3 transition-colors hover:bg-gray-50"
                   >
                     <p className="font-medium text-papal-navy">{s.displayName}</p>
                     <p className="mt-1 text-xs text-papal-navy/60">{s.description}</p>
-                  </a>
+                  </AffiliateLink>
                 ))}
                 <p className="mt-2 text-[10px] text-papal-navy/40">{t.sponsoredLink}</p>
               </div>
