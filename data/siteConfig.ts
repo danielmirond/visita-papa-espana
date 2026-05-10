@@ -34,6 +34,8 @@ export const featureFlags = {
 export const siteConfig = {
   name: 'Visita Papa León XIV a España 2026',
   shortName: 'Papa en España · Guía independiente',
+  /** Sufijo CORTO para el template de <title>. titleMatchScore se penaliza si excede ~65 chars. */
+  titleSuffix: 'Papa España 2026',
   description: 'Guía informativa INDEPENDIENTE y no oficial de la visita del Papa León XIV a España (6-12 junio 2026). Programa, ciudades, cómo asistir, dónde verlo. Sin afiliación con la Santa Sede ni la Conferencia Episcopal Española.',
 
   /** URL canónica (para SEO: canonical, hreflang, sitemap, OG). */

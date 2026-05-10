@@ -18,16 +18,17 @@ import { localizePath } from '@/data/i18n/routes'
  *   dominio que pueda confundir
  */
 
+// Anchor descriptivo (no genérico) hacia /aviso-legal — evita anchorMismatchDemotion.
 const TEXTS: Record<Locale, { label: string; link: string }> = {
-  es: { label: 'Sitio informativo independiente · no oficial', link: 'Más información' },
-  en: { label: 'Independent informational website · not official', link: 'More info' },
-  it: { label: 'Sito informativo indipendente · non ufficiale', link: 'Più info' },
-  fr: { label: 'Site informatif indépendant · non officiel', link: 'Plus d’infos' },
-  de: { label: 'Unabhängige Informationsseite · nicht offiziell', link: 'Mehr Infos' },
-  pt: { label: 'Site informativo independente · não oficial', link: 'Mais info' },
-  ca: { label: 'Lloc informatiu independent · no oficial', link: 'Més info' },
-  gl: { label: 'Sitio informativo independente · non oficial', link: 'Máis info' },
-  eu: { label: 'Informazio-webgune independentea · ez ofiziala', link: 'Info gehiago' },
+  es: { label: 'Sitio informativo independiente · no oficial', link: 'Aviso legal' },
+  en: { label: 'Independent informational website · not official', link: 'Legal notice' },
+  it: { label: 'Sito informativo indipendente · non ufficiale', link: 'Note legali' },
+  fr: { label: 'Site informatif indépendant · non officiel', link: 'Mentions légales' },
+  de: { label: 'Unabhängige Informationsseite · nicht offiziell', link: 'Impressum' },
+  pt: { label: 'Site informativo independente · não oficial', link: 'Aviso legal' },
+  ca: { label: 'Lloc informatiu independent · no oficial', link: 'Avís legal' },
+  gl: { label: 'Sitio informativo independente · non oficial', link: 'Aviso legal' },
+  eu: { label: 'Informazio-webgune independentea · ez ofiziala', link: 'Lege oharra' },
 }
 
 export default function UnofficialNotice() {
