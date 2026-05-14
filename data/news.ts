@@ -2,6 +2,16 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-recibira-pedro-sanchez-nunciatura-8-junio',
+    title: 'León XIV recibirá a Pedro Sánchez en la Nunciatura Apostólica el 8 de junio',
+    excerpt: 'El Papa León XIV mantendrá una audiencia privada con el presidente del Gobierno, Pedro Sánchez, el lunes 8 de junio a las 9:30 de la mañana en la Nunciatura Apostólica de Madrid, donde el Pontífice se aloja durante su estancia en la capital. Será el primer encuentro entre ambos desde el inicio del pontificado de Robert Francis Prevost y precederá al discurso histórico del Papa ante el Congreso de los Diputados.',
+    content: 'El Papa León XIV recibirá al presidente del Gobierno de España, Pedro Sánchez, en audiencia privada el lunes 8 de junio de 2026 a las 9:30 de la mañana en la Nunciatura Apostólica de Madrid, según el programa oficial publicado por la Sala de Prensa de la Santa Sede. Será el primer encuentro entre el Pontífice y el jefe del Ejecutivo español desde la elección de Robert Francis Prevost como sucesor de Pedro el 8 de mayo de 2025. La audiencia se celebra en la sede diplomática vaticana en Madrid —donde el Papa se alojará durante su estancia en la capital— por tradición protocolaria: la recepción oficial del Pontífice como jefe de Estado corre a cargo de los Reyes Felipe VI y Letizia, que celebrarán la ceremonia de bienvenida en el Palacio Real el sábado 6 de junio. Tras la audiencia con el presidente Sánchez, el Papa se desplazará al Congreso de los Diputados a las 10:30 para pronunciar su discurso ante los parlamentarios españoles en sesión conjunta con el Senado, en la primera intervención de un Pontífice ante el Parlamento español de la historia. Más tarde, ese mismo lunes, León XIV mantendrá encuentros con los obispos en la sede de la Conferencia Episcopal Española y con la comunidad diocesana de Madrid en el Estadio Santiago Bernabéu.',
+    date: '2026-05-06',
+    source: 'Infobae',
+    sourceUrl: 'https://www.infobae.com/america/agencias/2026/05/06/leon-xiv-recibira-a-pedro-sanchez-en-la-nunciatura-el-8-de-junio-durante-su-viaje-a-espana/',
+    relatedCities: ['madrid'],
+  },
+  {
     slug: 'visita-papa-coincidira-pruebas-selectividad-cataluna',
     title: 'La visita del Papa en Barcelona coincidirá con las pruebas de Selectividad en Cataluña',
     excerpt: 'El viaje apostólico del Papa León XIV a Cataluña los días 9 y 10 de junio coincide plenamente con la convocatoria ordinaria de las Pruebas de Acceso a la Universidad (PAU/Selectividad), programadas del 9 al 11 de junio. Los actos centrales —vigilia en el Estadio Olímpico Lluís Companys y Santa Misa en la Sagrada Familia con la inauguración de la Torre de Jesucristo— se solapan con el examen de miles de estudiantes catalanes.',
