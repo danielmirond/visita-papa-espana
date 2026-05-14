@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.name,
-    template: `%s | ${siteConfig.shortName}`,
+    template: `%s | ${siteConfig.titleSuffix}`,
   },
   description: siteConfig.description,
   keywords: [
@@ -91,6 +91,15 @@ export const metadata: Metadata = {
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
+  },
+  // Señal lastSignificantUpdate (Content Warehouse): se evalúa en BUILD time.
+  // Cada deploy en Vercel genera un timestamp fresco que Google interpreta como
+  // modificación significativa. VERCEL_GIT_COMMIT_SHA garantiza que cambia
+  // entre commits aunque el clock no se mueva.
+  other: {
+    'article:modified_time': process.env.VERCEL_GIT_COMMIT_DATE
+      ? new Date(process.env.VERCEL_GIT_COMMIT_DATE).toISOString()
+      : new Date().toISOString(),
   },
   icons: {
     icon: [

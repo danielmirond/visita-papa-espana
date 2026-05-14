@@ -6,6 +6,7 @@ import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
+import AffiliateLink from '@/components/affiliate/AffiliateLink'
 import SocialFeed from '@/components/shared/SocialFeed'
 import MeteoWidget from '@/components/shared/MeteoWidget'
 import { getCitiesByLocale } from '@/data/i18n/content/cities'
@@ -283,16 +284,19 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
                 </h3>
                 <div className="mt-3 space-y-3">
                   {hotels.map((hotel) => (
-                    <a
+                    <AffiliateLink
                       key={hotel.id}
                       href={hotel.url}
-                      target="_blank"
-                      rel="nofollow sponsored noopener"
+                      provider="booking"
+                      category="hotel"
+                      placement="card"
+                      city={(city.slug as never) || 'general'}
+                      productId={hotel.id}
                       className="block rounded-lg border border-papal-gold/20 p-3 transition-colors hover:bg-papal-cream"
                     >
                       <p className="font-medium text-papal-navy">{hotel.displayName}</p>
                       <p className="mt-1 text-xs text-papal-navy/60">{hotel.description}</p>
-                    </a>
+                    </AffiliateLink>
                   ))}
                 </div>
                 <p className="mt-2 text-[10px] text-papal-navy/40">{extra.sponsoredLink}</p>

@@ -1,6 +1,7 @@
 import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
+import AffiliateLink from '@/components/affiliate/AffiliateLink'
 import { getKitPeregrino, getKitCategories, type KitCategory } from '@/data/i18n/content/kitPeregrino'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
@@ -288,14 +289,16 @@ export default function KitPeregrinoPage({ locale }: Props) {
                     <p className="mt-3 text-xs text-papal-navy/60">
                       {t.priceLabel}: <strong>{item.priceRange}</strong>
                     </p>
-                    <a
+                    <AffiliateLink
                       href={item.url}
-                      target="_blank"
-                      rel="nofollow sponsored noopener noreferrer"
+                      provider="amazon"
+                      category="gear"
+                      placement="kit"
+                      productId={item.id}
                       className="mt-3 inline-block text-sm font-medium text-papal-gold hover:underline"
                     >
                       {t.seeOnAmazon}
-                    </a>
+                    </AffiliateLink>
                   </article>
                 ))}
               </div>

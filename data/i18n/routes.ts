@@ -44,6 +44,10 @@ export const ROUTE_TRANSLATIONS = {
     es: 'faq', en: 'faq', it: 'faq', fr: 'faq',
     de: 'faq', pt: 'faq', ca: 'faq', gl: 'faq', eu: 'faq',
   },
+  tienda: {
+    es: 'tienda', en: 'shop', it: 'negozio', fr: 'boutique',
+    de: 'shop', pt: 'loja', ca: 'botiga', gl: 'tenda', eu: 'denda',
+  },
   'que-llevar': {
     es: 'que-llevar', en: 'what-to-bring', it: 'cosa-portare', fr: 'que-emporter',
     de: 'was-mitnehmen', pt: 'o-que-levar', ca: 'que-portar', gl: 'que-levar', eu: 'zer-eraman',
@@ -103,6 +107,22 @@ export const ROUTE_TRANSLATIONS = {
   'politica-cookies': {
     es: 'politica-cookies', en: 'cookies-policy', it: 'politica-cookie', fr: 'politique-cookies',
     de: 'cookie-richtlinie', pt: 'politica-cookies', ca: 'politica-galetes', gl: 'politica-cookies', eu: 'cookie-politika',
+  },
+  'papa-bernabeu': {
+    es: 'papa-bernabeu', en: 'pope-bernabeu', it: 'papa-bernabeu', fr: 'pape-bernabeu',
+    de: 'papst-bernabeu', pt: 'papa-bernabeu', ca: 'papa-bernabeu', gl: 'papa-bernabeu', eu: 'aita-santua-bernabeu',
+  },
+  'vigilia-plaza-lima': {
+    es: 'vigilia-plaza-lima', en: 'plaza-de-lima-vigil', it: 'veglia-plaza-lima', fr: 'veillee-plaza-lima',
+    de: 'vigil-plaza-lima', pt: 'vigilia-plaza-lima', ca: 'vetlla-plaza-lima', gl: 'vixilia-plaza-lima', eu: 'lima-plaza-bijilia',
+  },
+  'intenciones-del-papa-2026': {
+    es: 'intenciones-del-papa-2026', en: 'pope-prayer-intentions-2026', it: 'intenzioni-papa-2026', fr: 'intentions-pape-2026',
+    de: 'gebetsanliegen-papst-2026', pt: 'intencoes-papa-2026', ca: 'intencions-papa-2026', gl: 'intencions-papa-2026', eu: 'aita-santuaren-asmoak-2026',
+  },
+  'como-inscribirse': {
+    es: 'como-inscribirse', en: 'how-to-register', it: 'come-iscriversi', fr: 'comment-s-inscrire',
+    de: 'anmeldung', pt: 'como-inscrever-se', ca: 'com-inscriures', gl: 'como-inscribirse', eu: 'nola-izena-eman',
   },
 } as const
 

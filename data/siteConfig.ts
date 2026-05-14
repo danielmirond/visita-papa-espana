@@ -17,9 +17,25 @@ const CANONICAL_URL = process.env.CANONICAL_URL || 'https://www.visita-papa-2026
  */
 const DEPLOY_URL = process.env.DEPLOY_URL || CANONICAL_URL
 
+/**
+ * Feature flags.
+ * Para activar una feature en local: añade la variable en .env.local
+ * Para activarla en producción: Settings → Environment Variables en Vercel
+ */
+export const featureFlags = {
+  /**
+   * Tienda de merchandising.
+   * En main pero oculta hasta que NEXT_PUBLIC_SHOP_ENABLED=true
+   * (en prod: no definir la variable → tienda oculta).
+   */
+  shopEnabled: process.env.NEXT_PUBLIC_SHOP_ENABLED === 'true',
+}
+
 export const siteConfig = {
   name: 'Visita Papa León XIV a España 2026',
   shortName: 'Papa en España · Guía independiente',
+  /** Sufijo CORTO para el template de <title>. titleMatchScore se penaliza si excede ~65 chars. */
+  titleSuffix: 'Papa España 2026',
   description: 'Guía informativa INDEPENDIENTE y no oficial de la visita del Papa León XIV a España (6-12 junio 2026). Programa, ciudades, cómo asistir, dónde verlo. Sin afiliación con la Santa Sede ni la Conferencia Episcopal Española.',
 
   /** URL canónica (para SEO: canonical, hreflang, sitemap, OG). */

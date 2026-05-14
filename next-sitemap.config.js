@@ -19,6 +19,7 @@ const ROUTE_TRANSLATIONS = {
   noticias: { es: 'noticias', en: 'news', it: 'notizie', fr: 'actualites', de: 'nachrichten', pt: 'noticias', ca: 'noticies', gl: 'novas', eu: 'albisteak' },
   guia: { es: 'guia', en: 'guides', it: 'guide', fr: 'guides', de: 'ratgeber', pt: 'guias', ca: 'guies', gl: 'guias', eu: 'gidak' },
   faq: { es: 'faq', en: 'faq', it: 'faq', fr: 'faq', de: 'faq', pt: 'faq', ca: 'faq', gl: 'faq', eu: 'faq' },
+  tienda: { es: 'tienda', en: 'shop', it: 'negozio', fr: 'boutique', de: 'shop', pt: 'loja', ca: 'botiga', gl: 'tenda', eu: 'denda' },
   'aviso-legal': { es: 'aviso-legal', en: 'legal-notice', it: 'note-legali', fr: 'mentions-legales', de: 'impressum', pt: 'aviso-legal', ca: 'avis-legal', gl: 'aviso-legal', eu: 'lege-oharra' },
   privacidad: { es: 'privacidad', en: 'privacy', it: 'privacy', fr: 'confidentialite', de: 'datenschutz', pt: 'privacidade', ca: 'privacitat', gl: 'privacidade', eu: 'pribatutasuna' },
   'politica-cookies': { es: 'politica-cookies', en: 'cookies-policy', it: 'politica-cookie', fr: 'politique-cookies', de: 'cookie-richtlinie', pt: 'politica-cookies', ca: 'politica-galetes', gl: 'politica-cookies', eu: 'cookie-politika' },
@@ -34,6 +35,10 @@ const ROUTE_TRANSLATIONS = {
   'alzad-la-mirada': { es: 'alzad-la-mirada', en: 'lift-up-your-eyes', it: 'alzate-gli-occhi', fr: 'levez-les-yeux', de: 'erhebt-eure-augen', pt: 'levantai-os-olhos', ca: 'alceu-els-ulls', gl: 'ergue-os-ollos', eu: 'jaso-begiak' },
   contacto: { es: 'contacto', en: 'contact', it: 'contatto', fr: 'contact', de: 'kontakt', pt: 'contato', ca: 'contacte', gl: 'contacto', eu: 'kontaktua' },
   creditos: { es: 'creditos', en: 'credits', it: 'crediti', fr: 'credits', de: 'credits', pt: 'creditos', ca: 'credits', gl: 'creditos', eu: 'kredituak' },
+  'papa-bernabeu': { es: 'papa-bernabeu', en: 'pope-bernabeu', it: 'papa-bernabeu', fr: 'pape-bernabeu', de: 'papst-bernabeu', pt: 'papa-bernabeu', ca: 'papa-bernabeu', gl: 'papa-bernabeu', eu: 'aita-santua-bernabeu' },
+  'vigilia-plaza-lima': { es: 'vigilia-plaza-lima', en: 'plaza-de-lima-vigil', it: 'veglia-plaza-lima', fr: 'veillee-plaza-lima', de: 'vigil-plaza-lima', pt: 'vigilia-plaza-lima', ca: 'vetlla-plaza-lima', gl: 'vixilia-plaza-lima', eu: 'lima-plaza-bijilia' },
+  'intenciones-del-papa-2026': { es: 'intenciones-del-papa-2026', en: 'pope-prayer-intentions-2026', it: 'intenzioni-papa-2026', fr: 'intentions-pape-2026', de: 'gebetsanliegen-papst-2026', pt: 'intencoes-papa-2026', ca: 'intencions-papa-2026', gl: 'intencions-papa-2026', eu: 'aita-santuaren-asmoak-2026' },
+  'como-inscribirse': { es: 'como-inscribirse', en: 'how-to-register', it: 'come-iscriversi', fr: 'comment-s-inscrire', de: 'anmeldung', pt: 'como-inscrever-se', ca: 'com-inscriures', gl: 'como-inscribirse', eu: 'nola-izena-eman' },
 }
 
 // Build reverse map: localized slug per locale → canonical key

@@ -4,6 +4,7 @@ import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { getProfilesByLocale, getProfileBySlugLocale } from '@/data/i18n/content/perfiles'
 import { getAffiliateById } from '@/data/affiliates'
+import AffiliateLink from '@/components/affiliate/AffiliateLink'
 import { getDictionary } from '@/data/i18n/dictionaries'
 import { type Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
@@ -135,16 +136,18 @@ export default function GuiaDetailPageContent({ locale, slug }: { locale: Locale
                 </h3>
                 <div className="mt-3 space-y-3">
                   {affiliates.map((aff) => (
-                    <a
+                    <AffiliateLink
                       key={aff.id}
                       href={aff.url}
-                      target="_blank"
-                      rel="nofollow sponsored noopener"
+                      provider={(aff.provider as never) || 'other'}
+                      category={(aff.category as never) || 'other'}
+                      placement="card"
+                      productId={aff.id}
                       className="block rounded-lg border border-papal-gold/20 p-3 transition-colors hover:bg-papal-cream"
                     >
                       <p className="font-medium text-papal-navy">{aff.displayName}</p>
                       <p className="mt-1 text-xs text-papal-navy/60">{aff.description}</p>
-                    </a>
+                    </AffiliateLink>
                   ))}
                 </div>
                 <p className="mt-2 text-[10px] text-papal-navy/40">{t.sponsoredLinks}</p>
