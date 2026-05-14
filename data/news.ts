@@ -2,6 +2,47 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'los-migrantes-hacen-una-travesia-muy-dura-y-en-las-raices-los-acogen',
+    title: 'Los migrantes «hacen una travesía muy dura» y en Las Raíces los acogen',
+    excerpt: 'León XIV visitará el centro, dirigido por Accem, el último día de su estancia en España. «La idea es que sea algo muy cercano», que León XIV «pueda saludar a los usuarios» y departir con los trabajadores La entrada Los m…',
+    content: 'León XIV visitará el centro, dirigido por Accem, el último día de su estancia en España. «La idea es que sea algo muy cercano», que León XIV «pueda saludar a los usuarios» y departir con los trabajadores La entrada Los migrantes «hacen una travesía muy dura» y en Las Raíces los acogen se publicó primero en Alfa y Omega.',
+    date: '2026-05-14',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/los-migrantes-hacen-una-travesia-muy-dura-y-en-las-raices-los-acogen/',
+    relatedCities: ['tenerife'],
+  },
+  {
+    slug: 'medicos-y-voluntarios-ante-el-papa-por-una-atencion-que-derriba-barreras',
+    title: 'Médicos y voluntarios ante el Papa por una atención que derriba barreras',
+    excerpt: 'Al término de la audiencia general, saludaron a León XIV unos cincuenta médicos del Hospital de Asiago, Italia, las Hijas de San Camillo y los jóvenes voluntarios del grupo “Cien brazos”, que asiste a los más frágiles. E…',
+    content: 'Al término de la audiencia general, saludaron a León XIV unos cincuenta médicos del Hospital de Asiago, Italia, las Hijas de San Camillo y los jóvenes voluntarios del grupo “Cien brazos”, que asiste a los más frágiles. El Pontífice bendijo también la campana mayor de la iglesia de San Nicolás en Valencia, España. Leer todo',
+    date: '2026-05-13',
+    source: 'Vatican News',
+    sourceUrl: 'https://www.vaticannews.va/es/papa/news/2026-05/papa-leon-xiv-saludos-audiencia-general-recuerdo-juan-pablo-ii.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'acontra-lanza-un-ciclo-de-cine-gratuito-para-preparar-la-visita-del-papa-a-espan',
+    title: 'acontra+ lanza un ciclo de cine gratuito para preparar la visita del Papa a España',
+    excerpt: 'Con motivo de la histórica visita del Papa León XIV a España el próximo mes de junio de 2026, la plataforma “acontra+” ha anunciado el lanzamiento de «Alza la mirada», un itinerario audiovisual diseñado para parroquias, …',
+    content: 'Con motivo de la histórica visita del Papa León XIV a España el próximo mes de junio de 2026, la plataforma “acontra+” ha anunciado el lanzamiento de «Alza la mirada», un itinerario audiovisual diseñado para parroquias, colegios y comunidades cristianas. La iniciativa busca ofrecer espacios de reflexión y encuentro a través del cine para preparar [&#8230;] La entrada acontra+ lanza un ciclo de cine gratuito para preparar la visita del Papa a España se publicó primero en Omnes.',
+    date: '2026-05-13',
+    source: 'Omnes Mag',
+    sourceUrl: 'https://www.omnesmag.com/actualidad/acontra-ciclo-cine-visita-papa/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'alza-la-mirada-asi-es-la-propuesta-de-acontra-para-vivir-la-visita-del-papa-leon',
+    title: '«Alza la mirada»: así es la propuesta de Acontra+ para vivir la visita del Papa León XIV a España a través del cine',
+    excerpt: 'En colaboración con The Chosen España, Perfect Days y Católicos en Red, la iniciativa presenta un ciclo de seis películas con el objetivo de acompañar a parroquias, colegios, familias y comunidades en las semanas previas…',
+    content: 'En colaboración con The Chosen España, Perfect Days y Católicos en Red, la iniciativa presenta un ciclo de seis películas con el objetivo de acompañar a parroquias, colegios, familias y comunidades en las semanas previas y posteriores a la visita del Sumo Pontífice. La entrada «Alza la mirada»: así es la propuesta de Acontra+ para vivir la visita del Papa León XIV a España a través del cine se publicó primero en Revista Ecclesia.',
+    date: '2026-05-13',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/acontra-presenta-un-ciclo-de-cine-por-la-visita-del-papa/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'madrid-confirma-que-trabaja-con-intensidad-para-que-leon-xiv-se-reuna-con-las-vi',
     title: 'Madrid confirma que trabaja "con intensidad" para que León XIV se reúna con las víctimas de abusos durante su viaje a España',
     excerpt: 'Tal y como adelantó RD, la Santa Sede prepara un encuentro privado del Papa León XIV con las víctimas de la pederastia clerical durante su visita a España. El encuentro, que está siendo trabajado desde hace semanas desde…',
