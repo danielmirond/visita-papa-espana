@@ -2,6 +2,16 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'sanchez-viajara-vaticano-reunion-papa-leon-xiv-previa-visita-espana',
+    title: 'Pedro Sánchez viajará al Vaticano para reunirse con el Papa León XIV antes de la visita a España',
+    excerpt: 'El presidente del Gobierno, Pedro Sánchez, viajará al Vaticano durante la última semana de mayo —previsiblemente el miércoles 27 de mayo, pendiente de confirmación oficial— para mantener una audiencia con el Papa León XIV, antes del viaje apostólico del Pontífice a España del 6 al 12 de junio. El encuentro responde a la invitación cursada por el Gobierno al Vaticano poco después de la elección de Robert Francis Prevost como sucesor de Pedro.',
+    content: 'El presidente del Gobierno, Pedro Sánchez, viajará a la Ciudad del Vaticano durante la última semana de mayo de 2026 para mantener una audiencia con el Papa León XIV, según ha confirmado el Ejecutivo. La fecha más probable es el miércoles 27 de mayo, aún pendiente de la confirmación oficial por parte de la Santa Sede. La reunión se enmarca dentro de la invitación que el Gobierno español cursó al Vaticano al poco de la designación de León XIV como sucesor del Papa Francisco el 8 de mayo de 2025: en aquella carta, España pedía una audiencia con el presidente del Ejecutivo e invitaba al nuevo Pontífice a visitar el país. La audiencia en Roma será así el primer contacto bilateral entre Pedro Sánchez y el Papa antes de la visita apostólica del 6-12 de junio, durante la cual el Pontífice mantendrá un segundo encuentro con el presidente del Gobierno en la Nunciatura Apostólica de Madrid el lunes 8 de junio a las 9:30, antes de su discurso histórico en el Congreso de los Diputados.',
+    date: '2026-05-14',
+    source: 'Infobae (EFE)',
+    sourceUrl: 'https://www.infobae.com/espana/agencias/2026/05/14/sanchez-se-reunira-con-el-papa-en-el-vaticano-antes-de-la-visita-de-leon-xiv-a-espana/',
+    relatedCities: ['madrid'],
+  },
+  {
     slug: 'leon-xiv-recibira-pedro-sanchez-nunciatura-8-junio',
     title: 'León XIV recibirá a Pedro Sánchez en la Nunciatura Apostólica el 8 de junio',
     excerpt: 'El Papa León XIV mantendrá una audiencia privada con el presidente del Gobierno, Pedro Sánchez, el lunes 8 de junio a las 9:30 de la mañana en la Nunciatura Apostólica de Madrid, donde el Pontífice se aloja durante su estancia en la capital. Será el primer encuentro entre ambos desde el inicio del pontificado de Robert Francis Prevost y precederá al discurso histórico del Papa ante el Congreso de los Diputados.',
