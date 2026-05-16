@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'un-videopodcast-para-la-visita-del-papa-leon-xiv-a-espana',
+    title: 'Un videopodcast para la visita del Papa León XIV a España',
+    excerpt: 'La archidiócesis de Madrid anima y prepara la visita del Papa también con un videopodcast: «Una Iglesia, mil voces» Leer todo',
+    content: 'La archidiócesis de Madrid anima y prepara la visita del Papa también con un videopodcast: «Una Iglesia, mil voces» Leer todo',
+    date: '2026-05-15',
+    source: 'Vatican News',
+    sourceUrl: 'https://www.vaticannews.va/es/iglesia/news/2026-05/un-videopodcast-para-la-visita-del-papa-leon-xiv-a-espana.html',
+    relatedCities: ['madrid'],
+  },
+  {
+    slug: 'almudena-hernandez-leon-xiv-conoce-muy-bien-espana-y-los-problemas-que-tiene',
+    title: 'Almudena Hernández: «León XIV conoce muy bien España y los problemas que tiene»',
+    excerpt: 'Almudena Hernández, periodista, acaba de publicar «León XIV, el león de la paz», un retrato sobre el pontífice, un año después de su elección. La entrada Almudena Hernández: «León XIV conoce muy bien España y los problem…',
+    content: 'Almudena Hernández, periodista, acaba de publicar «León XIV, el león de la paz», un retrato sobre el pontífice, un año después de su elección. La entrada Almudena Hernández: «León XIV conoce muy bien España y los problemas que tiene» se publicó primero en Revista Ecclesia.',
+    date: '2026-05-15',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/almudena-hernandez-robert-prevost-papa-leon-xiv-libro-paz/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'el-cardenal-cobo-advierte-del-riesgo-de-instrumentalizar-lo-que-dice-el-papa',
     title: 'El cardenal Cobo advierte del riesgo de «instrumentalizar lo que dice el Papa»',
     excerpt: 'El arzobispo de Madrid ha analizado en Telemadrid el viaje de León XIV a España, que «viene a ayudarnos a ver más allá de las conveniencias del momento». El purpurado también ha invitado a celebrar la próxima fiesta de s…',
