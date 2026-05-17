@@ -1,5 +1,6 @@
 import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import VaticanFlagBanner from '@/components/shared/VaticanFlagBanner'
 import { localizePath } from '@/data/i18n/routes'
 import type { Locale } from '@/data/i18n/types'
 import Link from 'next/link'
@@ -392,6 +393,8 @@ export default function PapaBernabeuPage({ locale }: Props) {
       </section>
 
       <Container className="py-10">
+        <VaticanFlagBanner locale={locale} className="mb-8" />
+
         <article className="prose prose-papal max-w-none">
           <p className="text-lg text-papal-navy/80">{t.intro}</p>
 

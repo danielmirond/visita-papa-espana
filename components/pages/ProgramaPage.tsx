@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import VaticanFlagBanner from '@/components/shared/VaticanFlagBanner'
 import { getDictionary } from '@/data/i18n/dictionaries'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { type Locale } from '@/data/i18n/types'
@@ -69,6 +70,8 @@ export default function ProgramaPageContent({ locale }: { locale: Locale }) {
       </section>
 
       <Container className="py-10">
+        <VaticanFlagBanner locale={locale} className="mb-8" />
+
         <div className="space-y-10">
           {schedule.map((day) => {
             const city = cities.find((c) => c.slug === day.citySlug)

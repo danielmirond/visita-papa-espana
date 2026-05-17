@@ -9,6 +9,7 @@ import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
 import AffiliateLink from '@/components/affiliate/AffiliateLink'
 import SocialFeed from '@/components/shared/SocialFeed'
 import MeteoWidget from '@/components/shared/MeteoWidget'
+import VaticanFlagBanner from '@/components/shared/VaticanFlagBanner'
 import { getCitiesByLocale } from '@/data/i18n/content/cities'
 import { getScheduleByLocale } from '@/data/i18n/content/schedule'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
@@ -134,6 +135,9 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
       </section>
 
       <Container className="py-10">
+        {/* Banner contextual: bandera del Vaticano para la visita papal */}
+        <VaticanFlagBanner locale={locale} className="mb-8" />
+
         <div className="grid gap-10 lg:grid-cols-3">
           {/* Contenido principal */}
           <div className="lg:col-span-2">
