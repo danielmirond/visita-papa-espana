@@ -3,6 +3,7 @@ import Container from '@/components/ui/Container'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
 import AffiliateLink from '@/components/affiliate/AffiliateLink'
+import ProductCarousel from '@/components/affiliate/ProductCarousel'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { siteConfig } from '@/data/siteConfig'
@@ -166,6 +167,9 @@ export default function ComoAsistirPageContent({ locale }: { locale: Locale }) {
                   </ul>
                 </div>
               </div>
+
+              {/* Carrusel de productos Amazon (afiliación con tracking GA4) */}
+              <ProductCarousel locale={locale} />
             </section>
 
             {/* Sección 5: Voluntariado */}

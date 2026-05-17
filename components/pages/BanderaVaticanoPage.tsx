@@ -45,7 +45,8 @@ type Translation = {
   related: RelatedLink[]
 }
 
-const AMAZON_URL = `https://www.amazon.es/s?k=bandera+vaticano&tag=${process.env.NEXT_PUBLIC_AMAZON_TAG || 'nuus-21'}`
+// Enlace afiliado curado (acortado amzn.to) con tag nuus-21 ya incluido
+const AMAZON_URL = 'https://amzn.to/43d7Z2F'
 
 const L: Record<Locale, Translation> = {
   es: {
