@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import Header from '@/components/layout/Header'
 import UnofficialNotice from '@/components/shared/UnofficialNotice'
 import Footer from '@/components/layout/Footer'
+import KitBanner from '@/components/shared/KitBanner'
 import JsonLd from '@/components/seo/JsonLd'
 import GoogleAnalytics from '@/components/seo/GoogleAnalytics'
 import CookieBanner from '@/components/shared/CookieBanner'
@@ -145,6 +146,7 @@ export default function RootLayout({
         <UnofficialNotice />
         <Header />
         <main className="min-h-screen">{children}</main>
+        <KitBanner />
         <Footer />
         <CookieBanner />
       </body>
