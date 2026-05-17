@@ -124,6 +124,10 @@ export const ROUTE_TRANSLATIONS = {
     es: 'como-inscribirse', en: 'how-to-register', it: 'come-iscriversi', fr: 'comment-s-inscrire',
     de: 'anmeldung', pt: 'como-inscrever-se', ca: 'com-inscriures', gl: 'como-inscribirse', eu: 'nola-izena-eman',
   },
+  'bandera-vaticano': {
+    es: 'bandera-vaticano', en: 'vatican-flag', it: 'bandiera-vaticano', fr: 'drapeau-vatican',
+    de: 'vatikanflagge', pt: 'bandeira-vaticano', ca: 'bandera-vatica', gl: 'bandeira-vaticano', eu: 'vatikanoaren-bandera',
+  },
 } as const
 
 export type RouteKey = keyof typeof ROUTE_TRANSLATIONS
