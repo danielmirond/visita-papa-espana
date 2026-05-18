@@ -2,6 +2,37 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'alzad-la-mirada-jn-4-35',
+    title: '«Alzad la mirada» (Jn 4,35)',
+    excerpt: 'Este es el lema de la visita apostólica del papa León a nuestras tierras dentro de tres semanas. Alzar la mirada es una invitación a mirar más allá de las realidades de este mundo que a menudo nos tienen atrapados. Ademá…',
+    content: 'Este es el lema de la visita apostólica del papa León a nuestras tierras dentro de tres semanas. Alzar la mirada es una invitación a mirar más allá de las realidades de este mundo que a menudo nos tienen atrapados. Además, hoy celebramos la solemnidad trasladada de la Ascensión del Señor y ese lema y&#8230; La entrada «Alzad la mirada» (Jn 4,35) se publicó primero en Revista Ecclesia.',
+    date: '2026-05-17',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/alzad-la-mirada-carta-obispo-tarrasa-salvador-cristau-visita-papa/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'una-protesta-de-docentes-bloquea-la-entrada-a-la-sagrada-familia',
+    title: 'Una protesta de docentes bloquea la entrada a la Sagrada Familia',
+    excerpt: 'La Sagrada Familia de Barcelona prevé reabrir "siempre que esté garantizada la seguridad" de trabajadores y visitantes, después que este lunes por la mañana docentes en huelga hayan bloqueado el acceso a la basílica, sub…',
+    content: 'La Sagrada Familia de Barcelona prevé reabrir "siempre que esté garantizada la seguridad" de trabajadores y visitantes, después que este lunes por la mañana docentes en huelga hayan bloqueado el acceso a la basílica, subrayaron sus responsables',
+    date: '2026-05-18',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/protesta-docentes-bloquea-entrada-sagrada-familia-gaudi_1_1454105.html',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'gaudi-y-la-sagrada-familia-del-arquitecto-de-dios-que-espera-a-leon-xiv',
+    title: 'Gaudí y la Sagrada Familia del “arquitecto de Dios” que espera a León XIV',
+    excerpt: 'La noticia Gaudí y la Sagrada Familia del “arquitecto de Dios” que espera a León XIV se publicó primero en Noticias religiosas de última hora | Vida Nueva Sin duda un elemento decisivo a la hora de elegir las fechas de l…',
+    content: 'La noticia Gaudí y la Sagrada Familia del “arquitecto de Dios” que espera a León XIV se publicó primero en Noticias religiosas de última hora | Vida Nueva Sin duda un elemento decisivo a la hora de elegir las fechas de la visita de León XIV a España ha sido la coincidencia con el centenario de la muerte del arquitecto Antoni Gaudí. Coronada la torre principal, la dedicada a Jesucristo, de la basílica de la Sagrada Familia ha resultado el momento idóneo –aunque &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-05-18',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/05/18/gaudi-sagrada-familia-arquitecto-dios-espera-leon-xiv/',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'un-videopodcast-para-la-visita-del-papa-leon-xiv-a-espana',
     title: 'Un videopodcast para la visita del Papa León XIV a España',
     excerpt: 'La archidiócesis de Madrid anima y prepara la visita del Papa también con un videopodcast: «Una Iglesia, mil voces» Leer todo',
