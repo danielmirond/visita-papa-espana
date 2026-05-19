@@ -42,9 +42,28 @@ export const affiliates: AffiliateLink[] = [
   {
     id: 'renfe',
     provider: 'renfe',
+    // CLAIM: Renfe NO tiene programa de afiliados público — comisión 0%.
+    // Cuando AWIN o Trainline estén activos (NEXT_PUBLIC_TRAINLINE_AID),
+    // este link pasa a apuntar a Trainline (que sí da 4-6%) y Renfe queda
+    // como fallback secundario en la UI.
     url: 'https://www.renfe.com/es/es',
     displayName: 'Billetes AVE - Renfe',
     description: 'Reserva billetes de AVE para viajar a Madrid y Barcelona. Consigue los mejores precios comprando con antelación.',
+    category: 'transporte',
+    placement: ['card', 'inline'],
+  },
+  {
+    id: 'trainline-spain',
+    provider: 'trainline',
+    // URL con afiliación si NEXT_PUBLIC_TRAINLINE_AID está configurado.
+    // Sin AID → enlace funcional sin comisión (no se pierde conversión).
+    // Mejor para peregrinos extranjeros: cubre Renfe + SNCF + Trenitalia
+    // + DB con interfaz multiidioma y precio en moneda local.
+    url: process.env.NEXT_PUBLIC_TRAINLINE_AID
+      ? `https://www.thetrainline.com/es?affid=${process.env.NEXT_PUBLIC_TRAINLINE_AID}&utm_source=visita-papa-2026&utm_medium=affiliate`
+      : 'https://www.thetrainline.com/es',
+    displayName: 'Tren a España · Trainline',
+    description: 'Compara y compra billetes de tren a Madrid, Barcelona y resto de España. Multiidioma, ideal para peregrinos europeos (SNCF, Trenitalia, DB compatibles).',
     category: 'transporte',
     placement: ['card', 'inline'],
   },

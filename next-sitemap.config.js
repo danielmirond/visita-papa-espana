@@ -40,6 +40,7 @@ const ROUTE_TRANSLATIONS = {
   'intenciones-del-papa-2026': { es: 'intenciones-del-papa-2026', en: 'pope-prayer-intentions-2026', it: 'intenzioni-papa-2026', fr: 'intentions-pape-2026', de: 'gebetsanliegen-papst-2026', pt: 'intencoes-papa-2026', ca: 'intencions-papa-2026', gl: 'intencions-papa-2026', eu: 'aita-santuaren-asmoak-2026' },
   'como-inscribirse': { es: 'como-inscribirse', en: 'how-to-register', it: 'come-iscriversi', fr: 'comment-s-inscrire', de: 'anmeldung', pt: 'como-inscrever-se', ca: 'com-inscriures', gl: 'como-inscribirse', eu: 'nola-izena-eman' },
   'bandera-vaticano': { es: 'bandera-vaticano', en: 'vatican-flag', it: 'bandiera-vaticano', fr: 'drapeau-vatican', de: 'vatikanflagge', pt: 'bandeira-vaticano', ca: 'bandera-vatica', gl: 'bandeira-vaticano', eu: 'vatikanoaren-bandera' },
+  'como-llegar-en-tren': { es: 'como-llegar-en-tren', en: 'how-to-get-by-train', it: 'come-arrivare-in-treno', fr: 'comment-venir-en-train', de: 'mit-dem-zug-anreisen', pt: 'como-chegar-de-comboio', ca: 'com-arribar-en-tren', gl: 'como-chegar-en-tren', eu: 'trenez-nola-iritsi' },
 }
 
 // Build reverse map: localized slug per locale → canonical key

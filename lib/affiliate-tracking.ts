@@ -11,7 +11,7 @@
  * placement y opcional city para análisis por ciudad de la visita.
  */
 
-type Provider = 'amazon' | 'booking' | 'intermundial' | 'skyscanner' | 'civitatis' | 'getyourguide' | 'holafly' | 'airalo' | 'hertz' | 'sixt' | 'awin' | 'other'
+type Provider = 'amazon' | 'booking' | 'intermundial' | 'skyscanner' | 'trainline' | 'renfe' | 'civitatis' | 'getyourguide' | 'holafly' | 'airalo' | 'hertz' | 'sixt' | 'awin' | 'other'
 type Category = 'hotel' | 'flight' | 'tour' | 'insurance' | 'esim' | 'car-rental' | 'merch' | 'book' | 'gear' | 'other'
 type Placement = 'card' | 'banner' | 'inline' | 'cta' | 'sidebar' | 'kit' | 'shop'
 

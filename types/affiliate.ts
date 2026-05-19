@@ -1,4 +1,4 @@
-export type AffiliateProvider = 'booking' | 'renfe' | 'skyscanner' | 'amazon' | 'seguro' | 'sim' | 'otro'
+export type AffiliateProvider = 'booking' | 'renfe' | 'trainline' | 'skyscanner' | 'amazon' | 'seguro' | 'sim' | 'otro'
 export type AffiliateCategory = 'hotel' | 'transporte' | 'merchandising' | 'seguro' | 'telecom'
 export type AffiliatePlacement = 'sidebar' | 'inline' | 'banner' | 'card'
 
