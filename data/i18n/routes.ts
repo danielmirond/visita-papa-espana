@@ -132,6 +132,10 @@ export const ROUTE_TRANSLATIONS = {
     es: 'como-llegar-en-tren', en: 'how-to-get-by-train', it: 'come-arrivare-in-treno', fr: 'comment-venir-en-train',
     de: 'mit-dem-zug-anreisen', pt: 'como-chegar-de-comboio', ca: 'com-arribar-en-tren', gl: 'como-chegar-en-tren', eu: 'trenez-nola-iritsi',
   },
+  'experiencias-peregrinos': {
+    es: 'experiencias-peregrinos', en: 'pilgrim-experiences', it: 'esperienze-pellegrini', fr: 'experiences-pelerins',
+    de: 'pilgererfahrungen', pt: 'experiencias-peregrinos', ca: 'experiencies-pelegrins', gl: 'experiencias-peregrinos', eu: 'erromes-esperientziak',
+  },
 } as const
 
 export type RouteKey = keyof typeof ROUTE_TRANSLATIONS
