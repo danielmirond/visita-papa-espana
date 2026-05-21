@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-recibe-su-acreditacion-para-el-viaje-a-espana-menos-mal-porque-no-quier',
+    title: 'León XIV recibe su acreditación para el viaje a España: "Menos mal, porque no quiero perderme nada"',
+    excerpt: 'El Papa tendrá "acceso total" a todos los actos de su histórica visita a Madrid, Canarias y Cataluña, del 6 al 12 de junio',
+    content: 'El Papa tendrá "acceso total" a todos los actos de su histórica visita a Madrid, Canarias y Cataluña, del 6 al 12 de junio',
+    date: '2026-05-21',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/leon-xiv-recibe-acreditacion-viaje-papa-espana_1_1454368.html',
+    relatedCities: ['madrid'],
+  },
+  {
+    slug: 'christian-galvez-y-patricia-pardo-una-historia-de-amor-y-conversion-para-el-bern',
+    title: 'Christian Gálvez y Patricia Pardo: una historia de amor y conversión para el Bernabéu de León XIV',
+    excerpt: 'La noticia Christian Gálvez y Patricia Pardo: una historia de amor y conversión para el Bernabéu de León XIV se publicó primero en Noticias religiosas de última hora | Vida Nueva Las diócesis madrileñas están apurando su…',
+    content: 'La noticia Christian Gálvez y Patricia Pardo: una historia de amor y conversión para el Bernabéu de León XIV se publicó primero en Noticias religiosas de última hora | Vida Nueva Las diócesis madrileñas están apurando sus casting para elegir quienes las representarán situándose cerca del papa León XIV en el escenario el próximo lunes 8 de junio. Ese día el Estadio Santiago Bernabéu se vestirá de fiesta para acoger un momento histórico de comunión eclesial: el gran encuentro de la comunidad diocesana de Madrid con &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-05-21',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/05/21/christian-galvez-historia-conversion-patricia-pardo-bernabeu-papa/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'catequesis-el-papa-leon-xiv-recuerda-que-la-fe-se-vive-no-solo-se-estudia',
     title: 'Catequesis: El Papa León XIV recuerda que la fe se vive, no solo se estudia',
     excerpt: 'En su catequesis de hoy, León XIV abrió una nueva serie sobre el Concilio Vaticano II recordando que la Iglesia no se sostiene en ideas o reformas externas, sino en Cristo vivo. Al presentar la constitución Sacrosanctum …',
