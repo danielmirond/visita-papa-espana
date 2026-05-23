@@ -2,6 +2,37 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'alfa-y-omega-viajara-a-espana-junto-a-leon-xiv-a-bordo-del-avion-papal',
+    title: 'Alfa y Omega viajará a España junto a León XIV a bordo del avión papal',
+    excerpt: 'El histórico viaje del Pontífice será seguido de cerca por la redacción del periódico. Un periodista de Alfa y Omega ha sido admitido en el vuelo del Santo Padre La entrada Alfa y Omega viajará a España junto a León XIV …',
+    content: 'El histórico viaje del Pontífice será seguido de cerca por la redacción del periódico. Un periodista de Alfa y Omega ha sido admitido en el vuelo del Santo Padre La entrada Alfa y Omega viajará a España junto a León XIV a bordo del avión papal se publicó primero en Alfa y Omega.',
+    date: '2026-05-22',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/alfa-y-omega-viajara-a-espana-junto-a-leon-xiv-a-bordo-del-avion-papal/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'manel-gash-i-hurios-montserrat-se-esta-abriendo-espiritualmente-al-mundo',
+    title: 'Manel Gash i Hurios: «Montserrat se está abriendo espiritualmente al mundo»',
+    excerpt: 'La visita del papa León XIV, sostiene el abad de Montserrat, vuelve a situar al monasterio como un lugar relevante en la Iglesia universal La entrada Manel Gash i Hurios: «Montserrat se está abriendo espiritualmente al m…',
+    content: 'La visita del papa León XIV, sostiene el abad de Montserrat, vuelve a situar al monasterio como un lugar relevante en la Iglesia universal La entrada Manel Gash i Hurios: «Montserrat se está abriendo espiritualmente al mundo» se publicó primero en Revista Ecclesia.',
+    date: '2026-05-23',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/abad-montserrat-papa-leon-xiv-manel-gash-i-hurios-iglesia/',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'asi-sera-la-bendicion-y-la-inauguracion-de-la-torre-de-jesucristo-de-la-sagrada-',
+    title: 'Así será la bendición y la inauguración de la torre de Jesucristo de la Sagrada Familia',
+    excerpt: 'El Papa León XIV presidirá los actos centrales el próximo 10 de junio de 2026, coincidiendo con el centenario del fallecimiento de Antoni Gaudí, ante la presencia de los Reyes de España. La entrada Así será la bendición …',
+    content: 'El Papa León XIV presidirá los actos centrales el próximo 10 de junio de 2026, coincidiendo con el centenario del fallecimiento de Antoni Gaudí, ante la presencia de los Reyes de España. La entrada Así será la bendición y la inauguración de la torre de Jesucristo de la Sagrada Familia se publicó primero en Revista Ecclesia.',
+    date: '2026-05-22',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/asi-sera-la-bendicion-y-la-inauguracion-de-la-torre-de-jesucristo-de-la-sagrada-familia/',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'pedro-sanchez-estara-presente-en-la-misa-del-papa-en-la-sagrada-familia',
     title: 'Pedro Sánchez estará presente en la Misa del Papa en la Sagrada Familia',
     excerpt: 'A la Eucaristía también asistirán los reyes y el presidente de la Generalidad La entrada Pedro Sánchez estará presente en la Misa del Papa en la Sagrada Familia se publicó primero en Alfa y Omega.',
