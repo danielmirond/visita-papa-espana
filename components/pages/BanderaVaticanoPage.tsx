@@ -279,7 +279,7 @@ const L: Record<Locale, Translation> = {
     breadcrumbCurrent: 'Drapeau du Vatican',
     title: 'Drapeau du Vatican · histoire, signification et blason',
     subtitle: 'Guide complet du drapeau de la Cité du Vatican : deux couleurs, blason avec les clés de Saint Pierre et la tiare papale, proportion carrée unique au monde.',
-    intro: 'Le drapeau de la Cité du Vatican est l’un des rares drapeaux nationaux carrés du monde (avec celui de la Suisse) et l’un des plus anciens liés à une autorité religieuse universelle. Adopté officiellement le 7 juin 1929 avec les Accords du Latran, il présente deux bandes verticales —jaune doré et blanc— avec le blason du Saint-Siège sur la bande blanche : les clés croisées de Saint Pierre surmontées de la tiare papale. Cette page explique son origine, sa signification, ses spécifications techniques et où le voir durant le Voyage apostolique du Pape Léon XIV en Espagne (6-12 juin 2026).',
+    intro: 'Le drapeau de la Cité du Vatican est l’un des deux seuls drapeaux nationaux carrés au monde. L’autre est le drapeau suisse. C’est aussi l’un des plus anciens à représenter une autorité religieuse universelle. Il a été adopté officiellement le 7 juin 1929, dans le cadre des Accords du Latran. Il comporte deux bandes verticales (jaune doré à gauche, blanc à droite). Sur la bande blanche figure le blason du Saint-Siège : les clés croisées de Saint Pierre surmontées de la tiare papale. Cette page couvre son origine, le sens des couleurs, les règles techniques et les endroits où vous le verrez durant le voyage du Pape Léon XIV en Espagne (6-12 juin 2026).',
     quickFacts: [
       { label: 'Adopté', value: '7 juin 1929 (Accords du Latran)' },
       { label: 'Proportion', value: '1:1 (carré)' },
@@ -290,12 +290,12 @@ const L: Record<Locale, Translation> = {
     ],
     historyTitle: 'Histoire et origine',
     historyBody: [
-      'L’usage du jaune et du blanc pour représenter le Saint-Siège remonte à 1808, lorsque le Pape Pie VII les adopta comme cocarde de l’armée pontificale, remplaçant les anciennes couleurs rouge et jaune. L’objectif était de distinguer les troupes pontificales de celles de Napoléon qui occupaient Rome.',
-      'Au XIXe siècle, le drapeau jaune et blanc représenta les États pontificaux jusqu’à l’unification italienne de 1870, quand Rome fut prise par le Royaume d’Italie. Le Saint-Siège perdit sa souveraineté territoriale mais conserva les couleurs comme symbole de l’autorité spirituelle du Pape.',
-      'Le drapeau moderne fut officialisé par les Accords du Latran du 11 février 1929 entre le Saint-Siège et le Royaume d’Italie, créant l’État de la Cité du Vatican. Il entra en vigueur le 7 juin 1929, date considérée comme l’anniversaire officiel du drapeau.',
+      'Le jaune et le blanc apparurent comme couleurs du Saint-Siège en 1808. C’est le Pape Pie VII qui les plaça sur la cocarde de l’armée pontificale, à la place du rouge et du jaune plus anciens. Il le fit pour que ses troupes ne soient pas confondues avec les forces napoléoniennes qui occupaient alors Rome.',
+      'Tout au long du XIXe siècle, le drapeau jaune et blanc représenta les États pontificaux. Cette période prit fin en 1870, lorsque le Royaume d’Italie s’empara de Rome lors de l’unification. Le Saint-Siège perdit son territoire mais conserva les couleurs comme signe de l’autorité spirituelle du Pape.',
+      'Le drapeau tel qu’on le connaît aujourd’hui naquit avec les Accords du Latran, signés le 11 février 1929 entre le Saint-Siège et le Royaume d’Italie. Ces accords créèrent l’État de la Cité du Vatican. Le drapeau entra en vigueur le 7 juin 1929 et c’est la date que le Vatican fête encore comme son anniversaire officiel.',
     ],
-    colorsTitle: 'Signification des couleurs',
-    colorsIntro: 'Les deux couleurs du drapeau ont une lecture symbolique liée aux clés de Saint Pierre dans Matthieu 16, 19 et à l’autorité spirituelle et temporelle du Pape.',
+    colorsTitle: 'Que signifient les couleurs',
+    colorsIntro: 'Les deux couleurs se lisent sur un plan symbolique. Elles renvoient aux clés de Saint Pierre qui apparaissent dans Matthieu 16, 19 et à la double autorité, spirituelle et temporelle, que la tradition attribue au Pape.',
     colors: [
       { name: 'Jaune doré', hex: '#FFE000', meaning: 'Représente la clé d’or remise par le Christ à Saint Pierre comme symbole du pouvoir spirituel de lier et délier dans les cieux. Évoque aussi la lumière divine et la dignité du souverain pontificat.' },
       { name: 'Blanc', hex: '#FFFFFF', meaning: 'Représente la clé d’argent, symbole du pouvoir temporel du Pape sur la terre. Signifie aussi pureté, paix et lumière de l’Évangile diffusée universellement.' },
@@ -318,8 +318,8 @@ const L: Record<Locale, Translation> = {
       { label: 'Forme alternative', value: 'Version rectangulaire autorisée pour processions et usage interne' },
       { label: 'Drapeaux carrés', value: 'Seuls le Vatican et la Suisse ont un drapeau national carré' },
     ],
-    visitTitle: 'Le drapeau du Vatican lors du voyage du Pape en Espagne',
-    visitBody: 'Pendant le Voyage apostolique du Pape Léon XIV en Espagne (6-12 juin 2026), le drapeau du Vatican flotte dans tous les lieux officiels du Pontife aux côtés du drapeau espagnol : au Palais Royal lors de la cérémonie de bienvenue du 6 juin, sur la Plaza de Cibeles pour la Sainte Messe du Corpus Christi du 7 juin, au Congrès des députés pour le discours du 8 juin, au stade Santiago Bernabéu pour la rencontre diocésaine, à la Basilique de la Sagrada Família pour l’inauguration de la Tour de Jésus-Christ (10 juin), au stade de Grande Canarie pour l’Eucharistie multitudinaire (11 juin) et au port de Santa Cruz de Tenerife pour la Messe de clôture (12 juin). Le protocole officiel place le drapeau du Vatican à droite du drapeau espagnol vu du public (à gauche depuis la scène), selon la courtoisie diplomatique vaticane.',
+    visitTitle: 'Où vous verrez le drapeau pendant la visite',
+    visitBody: 'Le drapeau du Vatican flottera aux côtés du drapeau espagnol dans tous les actes officiels du voyage : la cérémonie de bienvenue au Palais Royal (6 juin), la Messe du Corpus Christi sur la Plaza de Cibeles (7 juin), le discours au Congrès (8 juin), la rencontre diocésaine au Bernabéu, la Messe à la Sagrada Família avec l’inauguration de la Tour de Jésus-Christ (10 juin), l’Eucharistie de masse au stade de Grande Canarie (11 juin) et la Messe de clôture au port de Santa Cruz de Tenerife (12 juin). Le protocole place le drapeau du Vatican à droite du drapeau espagnol vu depuis le public (à gauche depuis la scène). C’est la règle diplomatique habituelle quand le Saint-Siège est l’invité.',
     curiositiesTitle: 'Curiosités sur le drapeau du Vatican',
     curiosities: [
       'Seuls deux pays au monde ont un drapeau carré : la Cité du Vatican et la Suisse. Les États pontificaux ont également eu un drapeau carré à certaines époques.',
