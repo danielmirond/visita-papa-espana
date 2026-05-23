@@ -204,7 +204,7 @@ const L: Record<Locale, Translation> = {
     breadcrumbCurrent: 'Bandiera del Vaticano',
     title: 'Bandiera del Vaticano · storia, significato e stemma',
     subtitle: 'Guida completa della bandiera della Città del Vaticano: due colori, stemma con le chiavi di San Pietro e la tiara papale, proporzione quadrata unica al mondo.',
-    intro: 'La bandiera della Città del Vaticano è una delle poche bandiere quadrate nazionali al mondo (insieme a quella svizzera) e una delle più antiche legate a un’autorità religiosa universale. Adottata ufficialmente il 7 giugno 1929 con i Patti Lateranensi, presenta due bande verticali —giallo dorato e bianco— con lo stemma della Santa Sede sulla banda bianca: le chiavi incrociate di San Pietro sormontate dalla tiara papale. Questa pagina spiega la sua origine, il significato, le specifiche tecniche e dove vederla durante il Viaggio Apostolico di Papa Leone XIV in Spagna (6-12 giugno 2026).',
+    intro: 'La bandiera della Città del Vaticano è una delle due sole bandiere nazionali quadrate al mondo. L’altra è quella svizzera. È inoltre una delle più antiche a rappresentare un’autorità religiosa universale. Fu adottata ufficialmente il 7 giugno 1929, con i Patti Lateranensi. Presenta due bande verticali (giallo dorato a sinistra, bianco a destra) e sulla banda bianca compare lo stemma della Santa Sede: le chiavi incrociate di San Pietro sormontate dalla tiara papale. In questa pagina trovi l’origine, il significato dei colori, le norme tecniche e dove potrai vederla durante il viaggio di Papa Leone XIV in Spagna (6-12 giugno 2026).',
     quickFacts: [
       { label: 'Adottata', value: '7 giugno 1929 (Patti Lateranensi)' },
       { label: 'Proporzione', value: '1:1 (quadrata)' },
@@ -215,12 +215,12 @@ const L: Record<Locale, Translation> = {
     ],
     historyTitle: 'Storia e origine',
     historyBody: [
-      'L’uso del giallo e del bianco per rappresentare la Santa Sede risale al 1808, quando Papa Pio VII li adottò come coccarda dell’esercito pontificio in sostituzione degli antichi colori rosso e giallo. L’obiettivo era distinguere le truppe pontificie da quelle napoleoniche che occupavano Roma.',
-      'Durante il XIX secolo la bandiera gialla e bianca rappresentò lo Stato Pontificio fino all’unificazione italiana del 1870, quando Roma fu presa dal Regno d’Italia. La Santa Sede perse la sovranità territoriale ma conservò i colori come simbolo dell’autorità spirituale del Papa.',
-      'La bandiera moderna fu ufficializzata con i Patti Lateranensi dell’11 febbraio 1929 tra la Santa Sede e il Regno d’Italia, che crearono lo Stato della Città del Vaticano. Entrò in vigore il 7 giugno 1929, data considerata l’anniversario ufficiale della bandiera.',
+      'Giallo e bianco comparvero come colori della Santa Sede nel 1808. Fu Papa Pio VII a metterli sulla coccarda dell’esercito pontificio al posto dei più antichi rosso e giallo. Lo fece perché le sue truppe non fossero confuse con quelle napoleoniche che allora occupavano Roma.',
+      'Per tutto l’Ottocento la bandiera gialla e bianca rappresentò lo Stato Pontificio. Quel periodo si chiuse nel 1870, quando il Regno d’Italia prese Roma durante l’unificazione. La Santa Sede perse il territorio ma conservò i colori come segno dell’autorità spirituale del Papa.',
+      'La bandiera così come la conosciamo oggi nacque con i Patti Lateranensi, firmati l’11 febbraio 1929 tra la Santa Sede e il Regno d’Italia. Quegli accordi crearono lo Stato della Città del Vaticano. La bandiera entrò in vigore il 7 giugno 1929, ed è la data che il Vaticano celebra ancora come suo anniversario ufficiale.',
     ],
-    colorsTitle: 'Significato dei colori',
-    colorsIntro: 'I due colori della bandiera hanno una lettura simbolica legata alle chiavi di San Pietro in Matteo 16,19 e all’autorità spirituale e temporale del Papa.',
+    colorsTitle: 'Cosa significano i colori',
+    colorsIntro: 'I due colori vanno letti in chiave simbolica. Rimandano alle chiavi di San Pietro che compaiono in Matteo 16,19 e alla doppia autorità, spirituale e temporale, che la tradizione attribuisce al Papa.',
     colors: [
       { name: 'Giallo dorato', hex: '#FFE000', meaning: 'Rappresenta la chiave d’oro consegnata da Cristo a San Pietro come simbolo del potere spirituale di legare e sciogliere nei cieli. Evoca anche la luce divina e la dignità del sommo pontificato.' },
       { name: 'Bianco', hex: '#FFFFFF', meaning: 'Rappresenta la chiave d’argento, simbolo del potere temporale del Papa sulla terra. Significa anche purezza, pace e la luce del Vangelo che si diffonde universalmente.' },
@@ -243,8 +243,8 @@ const L: Record<Locale, Translation> = {
       { label: 'Forma alternativa', value: 'Versione rettangolare consentita per processioni e uso interno' },
       { label: 'Bandiere quadrate', value: 'Solo Vaticano e Svizzera hanno bandiera nazionale quadrata' },
     ],
-    visitTitle: 'La bandiera vaticana nel viaggio del Papa in Spagna',
-    visitBody: 'Durante il Viaggio Apostolico di Papa Leone XIV in Spagna (6-12 giugno 2026), la bandiera vaticana sventola in tutti i luoghi ufficiali del Pontefice accanto a quella spagnola: al Palazzo Reale durante la cerimonia di benvenuto del 6 giugno, in Plaza de Cibeles per la Santa Messa del Corpus Domini del 7 giugno, al Congresso dei Deputati durante il discorso dell’8 giugno, nello Stadio Santiago Bernabéu per l’incontro diocesano, nella Basilica della Sagrada Familia per l’inaugurazione della Torre di Gesù Cristo (10 giugno), nello Stadio di Gran Canaria per l’Eucaristia multitudinaria (11 giugno) e al Porto di Santa Cruz de Tenerife per la Messa di chiusura (12 giugno). Il protocollo ufficiale colloca la bandiera vaticana a destra di quella spagnola vista dal pubblico (a sinistra dal palco), secondo la cortesia diplomatica vaticana.',
+    visitTitle: 'Dove si vedrà la bandiera durante la visita',
+    visitBody: 'La bandiera vaticana sventolerà accanto a quella spagnola in tutti gli atti ufficiali del viaggio: la cerimonia di benvenuto al Palazzo Reale (6 giugno), la Messa del Corpus Domini in Plaza de Cibeles (7 giugno), il discorso al Congresso (8 giugno), l’incontro diocesano al Bernabéu, la Messa alla Sagrada Familia con l’inaugurazione della Torre di Gesù Cristo (10 giugno), l’Eucaristia di massa allo Stadio di Gran Canaria (11 giugno) e la Messa di chiusura al Porto di Santa Cruz de Tenerife (12 giugno). Il protocollo colloca la bandiera vaticana a destra di quella spagnola vista dal pubblico (a sinistra dal palco). È la regola diplomatica abituale quando ospita la Santa Sede.',
     curiositiesTitle: 'Curiosità sulla bandiera vaticana',
     curiosities: [
       'Solo due paesi al mondo hanno una bandiera quadrata: Città del Vaticano e Svizzera. Anche lo Stato Pontificio aveva avuto una bandiera quadrata in alcuni momenti storici.',
