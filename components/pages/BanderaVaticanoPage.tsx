@@ -129,7 +129,7 @@ const L: Record<Locale, Translation> = {
     breadcrumbCurrent: 'Vatican flag',
     title: 'Vatican flag · history, meaning and coat of arms',
     subtitle: 'Complete guide to the flag of the Vatican City: two colours, coat of arms with Saint Peter’s keys and the papal tiara, unique square proportion.',
-    intro: 'The flag of Vatican City is one of the few square national flags in the world (together with Switzerland’s) and one of the oldest linked to a universal religious authority. Officially adopted on 7 June 1929 with the Lateran Pacts, it features two vertical bands —golden yellow and white— with the coat of arms of the Holy See on the white band: Saint Peter’s crossed keys topped by the papal tiara. This page explains its origin, meaning, technical specifications and where to see it during Pope Leo XIV’s Apostolic Journey to Spain (6-12 June 2026).',
+    intro: 'The flag of Vatican City is one of only two square national flags in the world. The other is the Swiss flag. It is also one of the oldest flags that represent a universal religious authority. It was officially adopted on 7 June 1929, as part of the Lateran Pacts. The design uses two vertical bands (golden yellow on the left, white on the right). On the white band sits the coat of arms of the Holy See: Saint Peter’s crossed keys crowned by the papal tiara. This page covers its origin, the meaning of the colours, the technical rules and where you will see it during Pope Leo XIV’s journey to Spain (6-12 June 2026).',
     quickFacts: [
       { label: 'Adopted', value: '7 June 1929 (Lateran Pacts)' },
       { label: 'Proportion', value: '1:1 (square)' },
@@ -140,12 +140,12 @@ const L: Record<Locale, Translation> = {
     ],
     historyTitle: 'History and origin',
     historyBody: [
-      'The use of yellow and white to represent the Holy See dates back to 1808, when Pope Pius VII adopted them as the cockade of the papal army, replacing the old red and yellow. The aim was to distinguish papal troops from the Napoleonic forces occupying Rome.',
-      'During the 19th century, the yellow and white flag represented the Papal States until Italian unification in 1870, when Rome was taken by the Kingdom of Italy. The Holy See lost its territorial sovereignty but retained the colours as a symbol of the Pope’s spiritual authority.',
-      'The modern flag was formalised by the Lateran Pacts of 11 February 1929 between the Holy See and the Kingdom of Italy, creating Vatican City State. It came into force on 7 June 1929, the date considered the official anniversary of the flag.',
+      'Yellow and white appeared as the colours of the Holy See in 1808. Pope Pius VII put them on the cockade of the papal army in place of the older red and yellow. He did it so that his troops would not be confused with the Napoleonic forces then occupying Rome.',
+      'Through the 19th century the yellow and white flag stood for the Papal States. That period ended in 1870, when the Kingdom of Italy took Rome during the country’s unification. The Holy See lost its territory but kept the colours as a sign of the Pope’s spiritual authority.',
+      'The flag as we know it today was born with the Lateran Pacts, signed on 11 February 1929 between the Holy See and the Kingdom of Italy. Those agreements created Vatican City State. The flag entered into force on 7 June 1929, and that is the date the Vatican still celebrates as its official anniversary.',
     ],
-    colorsTitle: 'Meaning of the colours',
-    colorsIntro: 'The two colours of the flag have a symbolic reading linked to Saint Peter’s keys in Matthew 16:19 and to the Pope’s spiritual and temporal authority.',
+    colorsTitle: 'What the colours mean',
+    colorsIntro: 'The two colours are read in symbolic terms. They point to the keys of Saint Peter from Matthew 16:19 and to the double authority, spiritual and temporal, traditionally attributed to the Pope.',
     colors: [
       { name: 'Golden yellow', hex: '#FFE000', meaning: 'Represents the gold key given by Christ to Saint Peter as a symbol of the spiritual power to bind and loose in heaven. It also evokes divine light and the dignity of the supreme pontificate.' },
       { name: 'White', hex: '#FFFFFF', meaning: 'Represents the silver key, symbol of the Pope’s temporal power on earth. It also means purity, peace and the light of the Gospel that spreads universally.' },
@@ -168,8 +168,8 @@ const L: Record<Locale, Translation> = {
       { label: 'Alternative form', value: 'Rectangular version allowed for processions and internal use' },
       { label: 'Square flags', value: 'Only the Vatican and Switzerland have square national flags' },
     ],
-    visitTitle: 'The Vatican flag during the Pope’s visit to Spain',
-    visitBody: 'During Pope Leo XIV’s Apostolic Journey to Spain (6-12 June 2026), the Vatican flag flies in all the Pontiff’s official venues alongside the Spanish flag: at the Royal Palace during the welcome ceremony on 6 June, in Plaza de Cibeles for the Corpus Christi Holy Mass on 7 June, in the Congress of Deputies during the 8 June address, in the Santiago Bernabéu Stadium for the diocesan gathering, in the Basilica of the Sagrada Familia for the inauguration of the Tower of Jesus Christ (10 June), in the Gran Canaria Stadium for the massive Eucharist (11 June) and at the Port of Santa Cruz de Tenerife for the closing Mass (12 June). Official protocol places the Vatican flag to the right of the Spanish flag as seen from the audience (to the left from the stage), following Vatican diplomatic courtesy.',
+    visitTitle: 'Where you will see the flag during the visit',
+    visitBody: 'The Vatican flag will fly next to the Spanish one at every official venue of the journey: the welcome ceremony at the Royal Palace (6 June), the Corpus Christi Mass at Plaza de Cibeles (7 June), the speech to the Congress (8 June), the diocesan gathering at the Bernabéu, the Mass at the Sagrada Familia and the inauguration of the Tower of Jesus Christ (10 June), the mass Eucharist at the Gran Canaria Stadium (11 June) and the closing Mass at the Port of Santa Cruz de Tenerife (12 June). Protocol puts the Vatican flag on the right of the Spanish one as you look from the audience (on the left from the stage). That is the standard diplomatic rule when the Holy See is hosted.',
     curiositiesTitle: 'Curiosities about the Vatican flag',
     curiosities: [
       'Only two countries in the world have a square flag: Vatican City and Switzerland. The Papal States also had a square flag at some point in history.',

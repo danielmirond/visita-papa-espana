@@ -208,7 +208,7 @@ const L: Record<Locale, Translation> = {
     breadcrumbCurrent: 'Pilgrim experiences',
     title: 'Pilgrim experiences from previous papal visits to Spain',
     subtitle: 'Real testimonies, verified quotes and archive videos from those who lived the visits of John Paul II (1982, 1989, 2003) and Benedict XVI (2010, 2011) before Pope Leo XIV’s arrival in June 2026.',
-    intro: 'This page collects real testimonies and verifiable links —Vatican.va, the official WYD channel, Spanish Catholic press— from pilgrims who lived the five major papal visits to Spain since 1982. They are stories of young people under the Cuatro Vientos storm, of Galicians at Monte do Gozo, of Catalans at the dedication of the Sagrada Familia, of Madrilenians at the canonisation of five Spaniards. They serve as inspiration for pilgrims preparing for Pope Leo XIV’s visit (6-12 June 2026) and show that what truly matters is not the attendance figures, but the mark each one takes home.',
+    intro: 'This page brings together real testimonies from pilgrims who lived the five major papal visits to Spain since 1982. Every testimony links back to its original source (Vatican.va, the official WYD channel, Spanish Catholic press), so you can check it. There are stories of young people caught by the Cuatro Vientos storm, of Galicians on Monte do Gozo, of Catalans at the dedication of the Sagrada Familia, of Madrilenians at the canonisation of the five Spanish saints. They may inspire pilgrims who are now getting ready for Pope Leo XIV’s visit (6-12 June 2026). And they make something obvious: what really counts is not how many people attended, but the mark each one takes home.',
     events: [
       {
         year: '2011',
