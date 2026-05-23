@@ -42,6 +42,8 @@ const ROUTE_TRANSLATIONS = {
   'bandera-vaticano': { es: 'bandera-vaticano', en: 'vatican-flag', it: 'bandiera-vaticano', fr: 'drapeau-vatican', de: 'vatikanflagge', pt: 'bandeira-vaticano', ca: 'bandera-vatica', gl: 'bandeira-vaticano', eu: 'vatikanoaren-bandera' },
   'como-llegar-en-tren': { es: 'como-llegar-en-tren', en: 'how-to-get-by-train', it: 'come-arrivare-in-treno', fr: 'comment-venir-en-train', de: 'mit-dem-zug-anreisen', pt: 'como-chegar-de-comboio', ca: 'com-arribar-en-tren', gl: 'como-chegar-en-tren', eu: 'trenez-nola-iritsi' },
   'experiencias-peregrinos': { es: 'experiencias-peregrinos', en: 'pilgrim-experiences', it: 'esperienze-pellegrini', fr: 'experiences-pelerins', de: 'pilgererfahrungen', pt: 'experiencias-peregrinos', ca: 'experiencies-pelegrins', gl: 'experiencias-peregrinos', eu: 'erromes-esperientziak' },
+  'papa-congreso-diputados': { es: 'papa-congreso-diputados', en: 'pope-spanish-congress', it: 'papa-congresso-deputati', fr: 'pape-cortes-espagne', de: 'papst-spanisches-parlament', pt: 'papa-congresso-deputados', ca: 'papa-congres-diputats', gl: 'papa-congreso-deputados', eu: 'aita-santua-diputatuen-kongresua' },
+  'magnifica-humanitas': { es: 'magnifica-humanitas', en: 'magnifica-humanitas', it: 'magnifica-humanitas', fr: 'magnifica-humanitas', de: 'magnifica-humanitas', pt: 'magnifica-humanitas', ca: 'magnifica-humanitas', gl: 'magnifica-humanitas', eu: 'magnifica-humanitas' },
 }
 
 // Build reverse map: localized slug per locale → canonical key

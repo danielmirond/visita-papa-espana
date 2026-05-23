@@ -136,6 +136,14 @@ export const ROUTE_TRANSLATIONS = {
     es: 'experiencias-peregrinos', en: 'pilgrim-experiences', it: 'esperienze-pellegrini', fr: 'experiences-pelerins',
     de: 'pilgererfahrungen', pt: 'experiencias-peregrinos', ca: 'experiencies-pelegrins', gl: 'experiencias-peregrinos', eu: 'erromes-esperientziak',
   },
+  'papa-congreso-diputados': {
+    es: 'papa-congreso-diputados', en: 'pope-spanish-congress', it: 'papa-congresso-deputati', fr: 'pape-cortes-espagne',
+    de: 'papst-spanisches-parlament', pt: 'papa-congresso-deputados', ca: 'papa-congres-diputats', gl: 'papa-congreso-deputados', eu: 'aita-santua-diputatuen-kongresua',
+  },
+  'magnifica-humanitas': {
+    es: 'magnifica-humanitas', en: 'magnifica-humanitas', it: 'magnifica-humanitas', fr: 'magnifica-humanitas',
+    de: 'magnifica-humanitas', pt: 'magnifica-humanitas', ca: 'magnifica-humanitas', gl: 'magnifica-humanitas', eu: 'magnifica-humanitas',
+  },
 } as const
 
 export type RouteKey = keyof typeof ROUTE_TRANSLATIONS
