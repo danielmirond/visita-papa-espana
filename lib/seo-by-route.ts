@@ -88,8 +88,8 @@ export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
 
   ciudades: {
     es: {
-      title: 'Ciudades visita Papa León XIV: Madrid, Barcelona, Canarias',
-      description: 'Guía completa de las 4 ciudades que visita el Papa León XIV en España: Madrid, Barcelona, Gran Canaria y Tenerife. Programa, transporte y alojamiento.',
+      title: 'Qué ciudades visita el Papa en España · Madrid, Barcelona, Canarias',
+      description: 'Las 4 ciudades de la visita del Papa León XIV a España: Madrid (6-9 jun), Barcelona (9-10 jun), Gran Canaria (11 jun) y Tenerife (12 jun). Programa, transporte y alojamiento.',
     },
     en: {
       title: 'Cities of Pope Leo XIV\'s Visit: Madrid, Barcelona, Canaries',
@@ -127,8 +127,8 @@ export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
 
   'como-asistir': {
     es: {
-      title: 'Cómo asistir a la visita del Papa León XIV: entradas 2026',
-      description: 'Guía práctica para asistir a la visita del Papa León XIV a España en junio de 2026: inscripción gratuita, entradas, acreditaciones y recomendaciones.',
+      title: 'Entradas Papa España 2026 · cómo asistir e inscribirse',
+      description: 'Cómo conseguir entradas para los actos del Papa León XIV en España (6-12 jun 2026): inscripción gratuita por ciudad, Cibeles, Bernabéu, Sagrada Familia, Estadio GC y Tenerife.',
     },
     en: {
       title: 'How to Attend Pope Leo XIV\'s Visit: Tickets & Passes 2026',
@@ -400,7 +400,7 @@ export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
 
   'papa-leon-xiv': {
     es: {
-      title: 'Papa León XIV: biografía, edad, familia e idiomas',
+      title: 'Papa León XIV · biografía, edad, altura, familia e idiomas',
       description:
         'Biografía completa del Papa León XIV (Robert Francis Prevost): edad, altura, familia, idiomas que habla, escudo papal, posiciones y línea de tiempo.',
     },

@@ -4,6 +4,7 @@ import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
 import AffiliateLink from '@/components/affiliate/AffiliateLink'
 import ProductCarousel from '@/components/affiliate/ProductCarousel'
+import EntradasPorCiudad from '@/components/shared/EntradasPorCiudad'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { siteConfig } from '@/data/siteConfig'
@@ -93,6 +94,9 @@ export default function ComoAsistirPageContent({ locale }: { locale: Locale }) {
                 </div>
               </div>
             </section>
+
+            {/* Bloque «Entradas por ciudad» — captura queries SC «entradas papa», «papa cibeles entradas» */}
+            <EntradasPorCiudad locale={locale} />
 
             {/* Sección 2: Transporte */}
             <section>
