@@ -54,7 +54,7 @@ const L: Record<Locale, Translation> = {
     breadcrumbCurrent: 'Bandera del Vaticano',
     title: 'Bandera del Vaticano · historia, significado y escudo',
     subtitle: 'Guía completa de la bandera de la Ciudad del Vaticano: dos colores, escudo con las llaves de San Pedro y la tiara papal, proporción cuadrada única en el mundo.',
-    intro: 'La bandera de la Ciudad del Vaticano es uno de los pocos pabellones cuadrados del mundo (junto con el suizo) y uno de los más antiguos vinculados a una autoridad religiosa universal. Adoptada oficialmente el 7 de junio de 1929 con los Pactos de Letrán, presenta dos bandas verticales —amarillo dorado y blanco— con el escudo de la Santa Sede sobre la franja blanca: las llaves cruzadas de San Pedro coronadas por la tiara papal. Esta página explica su origen, significado, especificaciones técnicas y dónde verla durante el Viaje Apostólico del Papa León XIV a España (6-12 de junio de 2026).',
+    intro: 'La bandera de la Ciudad del Vaticano es una de las dos banderas nacionales cuadradas del mundo. La otra es la suiza. Es además una de las más antiguas que representan a una autoridad religiosa universal. Se adoptó oficialmente el 7 de junio de 1929, con los Pactos de Letrán. Tiene dos bandas verticales (amarillo dorado a la izquierda, blanco a la derecha) y sobre la franja blanca aparece el escudo de la Santa Sede: las llaves cruzadas de San Pedro rematadas por la tiara papal. En esta página están su origen, el significado de sus colores, las normas técnicas y dónde se podrá ver durante el viaje del Papa León XIV a España (6-12 de junio de 2026).',
     quickFacts: [
       { label: 'Adoptada', value: '7 de junio de 1929 (Pactos de Letrán)' },
       { label: 'Proporción', value: '1:1 (cuadrada)' },
@@ -65,12 +65,12 @@ const L: Record<Locale, Translation> = {
     ],
     historyTitle: 'Historia y origen',
     historyBody: [
-      'El uso de los colores amarillo y blanco para representar a la Santa Sede se remonta a 1808, cuando el Papa Pío VII los adoptó como escarapela del ejército pontificio en sustitución de los antiguos colores rojo y amarillo. La razón fue diferenciarse de las tropas napoleónicas que ocupaban Roma.',
-      'Durante el siglo XIX la bandera amarilla y blanca representó los Estados Pontificios hasta la unificación italiana en 1870, cuando Roma fue tomada por el Reino de Italia. La Santa Sede perdió su soberanía territorial pero conservó los colores como símbolo de la autoridad espiritual del Papa.',
-      'La bandera moderna fue oficializada con la firma de los Pactos de Letrán el 11 de febrero de 1929 entre la Santa Sede y el Reino de Italia, que crearon el Estado de la Ciudad del Vaticano. Entró en vigor formalmente el 7 de junio de 1929, fecha que la propia Ciudad del Vaticano considera el aniversario oficial de la bandera.',
+      'Los colores amarillo y blanco aparecieron como distintivo de la Santa Sede en 1808. Fue el Papa Pío VII quien los puso en la escarapela del ejército pontificio para sustituir a los antiguos rojo y amarillo. Lo hizo para que sus tropas se distinguieran de las napoleónicas, que entonces ocupaban Roma.',
+      'A lo largo del siglo XIX la bandera amarilla y blanca representó a los Estados Pontificios. Esa etapa terminó en 1870, con la unificación italiana y la toma de Roma por el Reino de Italia. La Santa Sede se quedó sin soberanía territorial pero conservó los colores como símbolo de la autoridad espiritual del Papa.',
+      'La bandera tal y como la conocemos hoy nació con los Pactos de Letrán, firmados el 11 de febrero de 1929 entre la Santa Sede y el Reino de Italia. Esos acuerdos crearon el Estado de la Ciudad del Vaticano. La bandera entró en vigor el 7 de junio de 1929 y esa es la fecha que el propio Vaticano considera su aniversario oficial.',
     ],
-    colorsTitle: 'Significado de los colores',
-    colorsIntro: 'Los dos colores de la bandera tienen una lectura simbólica vinculada a las llaves de San Pedro en Mateo 16, 19 y a la autoridad espiritual y temporal del Papa.',
+    colorsTitle: 'Qué significan los colores',
+    colorsIntro: 'Los dos colores se leen en clave simbólica. Remiten a las llaves de San Pedro que aparecen en Mateo 16, 19 y a la doble autoridad, espiritual y temporal, que se atribuye al Papa.',
     colors: [
       { name: 'Amarillo dorado', hex: '#FFE000', meaning: 'Representa la llave de oro entregada por Cristo a San Pedro como símbolo del poder espiritual de atar y desatar en el cielo. También evoca la luz divina y la dignidad del sumo pontificado.' },
       { name: 'Blanco', hex: '#FFFFFF', meaning: 'Representa la llave de plata, símbolo del poder temporal del Papa sobre la tierra. También significa pureza, paz y la luz del Evangelio que se difunde universalmente.' },
@@ -93,8 +93,8 @@ const L: Record<Locale, Translation> = {
       { label: 'Forma alternativa', value: 'Versión rectangular permitida para procesiones y uso interno' },
       { label: 'Banderas cuadradas', value: 'Solo Vaticano y Suiza tienen pabellón nacional cuadrado' },
     ],
-    visitTitle: 'La bandera del Vaticano en la visita del Papa a España',
-    visitBody: 'Durante el Viaje Apostólico del Papa León XIV a España (6-12 de junio de 2026), la bandera vaticana ondea en todos los recintos oficiales del Pontífice junto a la bandera de España: en el Palacio Real durante la ceremonia de bienvenida del 6 de junio, en la Plaza de Cibeles para la Santa Misa del Corpus Christi del 7 de junio, en el Congreso de los Diputados durante el discurso del 8 de junio, en el Estadio Santiago Bernabéu para el encuentro diocesano, en la Basílica de la Sagrada Familia para la inauguración de la Torre de Jesucristo (10 de junio), en el Estadio de Gran Canaria para la Eucaristía multitudinaria (11 de junio) y en el Puerto de Santa Cruz de Tenerife para la Misa de clausura (12 de junio). El protocolo oficial sitúa la bandera vaticana a la derecha de la española vista desde el público (a la izquierda desde el escenario), siguiendo la cortesía diplomática vaticana.',
+    visitTitle: 'Dónde se verá la bandera durante la visita',
+    visitBody: 'La bandera vaticana ondeará junto a la española en todos los actos oficiales del viaje: la bienvenida en el Palacio Real (6 de junio), la misa del Corpus Christi en la Plaza de Cibeles (7 de junio), el discurso en el Congreso (8 de junio), el encuentro diocesano en el Bernabéu, la misa en la Sagrada Familia con la inauguración de la Torre de Jesucristo (10 de junio), la eucaristía multitudinaria en el Estadio de Gran Canaria (11 de junio) y la misa de clausura en el Puerto de Santa Cruz de Tenerife (12 de junio). El protocolo coloca la bandera vaticana a la derecha de la española desde el punto de vista del público (a la izquierda desde el escenario). Es la regla diplomática habitual cuando recibe la Santa Sede.',
     curiositiesTitle: 'Curiosidades sobre la bandera vaticana',
     curiosities: [
       'Solo dos países en el mundo tienen bandera cuadrada: Ciudad del Vaticano y Suiza. La de los Estados Pontificios también fue cuadrada en algún momento histórico.',
