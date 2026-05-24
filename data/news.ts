@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'christian-galvez-recibe-el-sacramento-de-la-confirmacion-antes-dar-la-bienvenida',
+    title: 'Christian Gálvez recibe el sacramento de la confirmación antes dar la bienvenida a León XIV en el Bernabéu',
+    excerpt: 'La noticia Christian Gálvez recibe el sacramento de la confirmación antes dar la bienvenida a León XIV en el Bernabéu se publicó primero en Noticias religiosas de última hora | Vida Nueva Le preparación del escritor y pr…',
+    content: 'La noticia Christian Gálvez recibe el sacramento de la confirmación antes dar la bienvenida a León XIV en el Bernabéu se publicó primero en Noticias religiosas de última hora | Vida Nueva Le preparación del escritor y presentador Christian Gálvez para recibir al papa León XIV está siento intensa. Ahora se ha confirmado, sacramentalmente hablando. Según ha desvelado la reportera Marta Riesco en sus redes sociales, este ha recibido el sacramento de la confirmación, un paso más en su proceso de redescubrimiento del cristianismo. Una celebración que se &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-05-23',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/05/24/christian-galvez-recibe-confirmacion-leon-xiv-bernabeu/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'alfa-y-omega-viajara-a-espana-junto-a-leon-xiv-a-bordo-del-avion-papal',
     title: 'Alfa y Omega viajará a España junto a León XIV a bordo del avión papal',
     excerpt: 'El histórico viaje del Pontífice será seguido de cerca por la redacción del periódico. Un periodista de Alfa y Omega ha sido admitido en el vuelo del Santo Padre La entrada Alfa y Omega viajará a España junto a León XIV …',
