@@ -45,8 +45,8 @@ const L: Record<Locale, Translation> = {
     breadcrumbCurrent: 'Magnifica humanitas',
     title: 'Magnifica humanitas · primera encíclica del Papa León XIV',
     subtitle: 'Publicación: 25 de mayo de 2026 · firmada el 15 de mayo, 135º aniversario de Rerum Novarum · tema: la custodia de la persona humana en el tiempo de la inteligencia artificial.',
-    badge: 'Publicación inminente',
-    intro: '«Magnifica humanitas» es la primera carta encíclica del Papa León XIV. Trata sobre cómo proteger a la persona en la era de la inteligencia artificial. El texto se publica el 25 de mayo de 2026 y lleva firma del Pontífice del 15 de mayo, justo en el 135 aniversario de Rerum Novarum (1891), la encíclica de León XIII que abrió la Doctrina Social de la Iglesia. La presentación oficial es ese 25 de mayo a las 11:30 en el Aula del Sínodo, con el Papa presente. Llega doce días antes del viaje del Papa a España (6-12 de junio de 2026), y muchas de sus tesis volverán a aparecer en el discurso ante el Congreso del lunes 8 de junio.',
+    badge: 'Publicada',
+    intro: 'Magnifica humanitas es la primera encíclica del Papa León XIV, publicada el 25 de mayo de 2026 a las 11:30 en el Aula del Sínodo con presentación oficial del Papa presente. Trata sobre cómo custodiar a la persona en la era de la inteligencia artificial. Lleva firma del 15 de mayo, exactamente 135 años después de Rerum Novarum (1891), la encíclica de León XIII que abrió la Doctrina Social de la Iglesia. El documento completo está disponible en vatican.va en los idiomas oficiales del Vaticano. Magnifica humanitas cierra el primer año de pontificado de León XIV y abre el marco doctrinal de su viaje a España (6-12 de junio).',
     quickFacts: [
       { label: 'Título', value: 'Magnifica humanitas' },
       { label: 'Fecha de publicación', value: '25 de mayo de 2026' },
@@ -91,8 +91,8 @@ const L: Record<Locale, Translation> = {
       { q: '¿Dónde puedo descargar el PDF?', a: 'A partir del 25 de mayo de 2026, el PDF oficial estará disponible en vatican.va en los principales idiomas. También en los portales de las conferencias episcopales nacionales. En esta página enlazaremos al PDF en cuanto se publique.' },
       { q: '¿Qué relación tiene con la visita del Papa a España?', a: 'Magnifica humanitas se publica 12 días antes del Viaje Apostólico a España (6-12 jun 2026). Es previsible que las claves de la encíclica aparezcan en el discurso del Papa al Congreso de los Diputados (8 jun) y en el encuentro «Tejer redes» en el Movistar Arena (7 jun).' },
     ],
-    updateTitle: 'Aviso de actualización',
-    updateBody: 'Esta página se actualizará el 25 de mayo de 2026 con el enlace al PDF oficial, citas verificadas del texto y resumen estructural. Hasta entonces, recogemos la información avanzada por la Sala de Prensa de la Santa Sede el 19 de mayo de 2026.',
+    updateTitle: 'Publicación confirmada',
+    updateBody: 'La encíclica Magnifica humanitas fue publicada oficialmente el 25 de mayo de 2026. El texto íntegro está disponible en vatican.va en latín, italiano, español, inglés, francés, alemán, portugués y polaco. Consulta los análisis de la Conferencia Episcopal Española para claves de lectura sobre dignidad humana, ecología integral y gobernanza de la IA.',
     relatedTitle: 'Páginas relacionadas',
     related: [
       { href: '/papa-leon-xiv', text: 'Biografía completa del Papa León XIV' },
