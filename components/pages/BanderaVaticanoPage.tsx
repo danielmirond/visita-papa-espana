@@ -838,7 +838,7 @@ export default function BanderaVaticanoPage({ locale }: Props) {
             <AffiliateLink
               href={AMAZON_URL}
               provider="amazon"
-              category="merch"
+              category="merchandise"
               placement="cta"
               className="inline-block rounded-lg bg-papal-navy px-6 py-3 font-semibold text-white transition-colors hover:bg-papal-navy/90"
             >

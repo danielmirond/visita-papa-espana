@@ -19,8 +19,8 @@ export default function ComoAsistirPageContent({ locale }: { locale: Locale }) {
   const nav = getDictionary(locale)
   const t = getComoAsistirContent(locale)
   const hoteles = affiliates.filter((a) => a.category === 'hotel')
-  const transporte = affiliates.filter((a) => a.category === 'transporte')
-  const seguros = affiliates.filter((a) => a.category === 'seguro')
+  const transporte = affiliates.filter((a) => a.category === 'flight')
+  const seguros = affiliates.filter((a) => a.category === 'insurance')
 
   const breadcrumbs = [
     { name: nav.nav.home, href: localizePath('/', locale) },

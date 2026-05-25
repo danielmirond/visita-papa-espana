@@ -326,7 +326,7 @@ const L: Record<Locale, Translation> = {
     breadcrumbCurrent: 'Papst Leo XIV. im spanischen Parlament',
     title: 'Papst Leo XIV. im Abgeordnetenkongress · 8. Juni 2026',
     subtitle: 'Erstmals in der Geschichte hält ein Papst eine Rede vor dem spanischen Parlament. Gemeinsame Sitzung von Kongress und Senat · 10:30 Uhr · Carrera de San Jerónimo, Madrid.',
-    intro: 'Am Montag, dem 8. Juni 2026, um 10:30 Uhr wird Papst Leo XIV. eine Rede vor der gemeinsamen Plenarsitzung des spanischen Abgeordnetenkongresses und des Senats halten. Es ist das erste Mal, dass sich ein Pontifex an das spanische Parlament wendet, ein institutioneller Meilenstein im Rahmen der Apostolischen Reise nach Spanien (6.-12. Juni 2026). Diese Seite sammelt die Details des Akts, das Protokoll, die Präzedenzfälle mit anderen Papstbesuchen in europäischen Parlamenten und die häufig gestellten Fragen zur Rede.',
+    intro: 'Am Montag, dem 8. Juni 2026, um 10:30 Uhr spricht Papst Leo XIV. vor der gemeinsamen Plenarsitzung des spanischen Abgeordnetenkongresses und des Senats. Kein Papst hatte sich zuvor an das spanische Parlament gewandt; es geschieht jetzt, im Rahmen der Spanienreise des Papstes (6.–12. Juni 2026). Auf dieser Seite stehen die Einzelheiten des Termins, das Protokoll, was andere Päpste in europäischen Parlamenten getan haben und die Fragen, die unsere Leser am häufigsten stellen.',
     quickFacts: [
       { label: 'Datum', value: 'Montag, 8. Juni 2026' },
       { label: 'Uhrzeit', value: '10:30 Uhr (Ortszeit Madrid)' },
