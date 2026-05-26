@@ -28,6 +28,18 @@ const EVENT_TYPE_COLORS: Record<string, string> = {
   'acto-publico': 'bg-papal-navy text-white',
 }
 
+const TRAFFIC_LINK_LABELS: Record<Locale, { title: string; description: string; btn: string }> = {
+  es: { title: 'Planifica tu viaje considerando el tráfico', description: 'Durante la visita papal se esperan importantes afectaciones de tráfico en todas las ciudades. Consulta los cortes horarios para planificar mejor tu desplazamiento.', btn: 'Ver cortes de tráfico por hora →' },
+  en: { title: 'Plan your visit considering traffic closures', description: 'Significant traffic closures are expected in all cities during the papal visit. Check hourly closures to plan your travel better.', btn: 'View hourly traffic closures →' },
+  it: { title: 'Pianifica la tua visita considerando il traffico', description: 'Sono previste importanti chiusure del traffico in tutte le città durante la visita papale. Consulta le chiusure orarie per pianificare meglio i tuoi spostamenti.', btn: 'Visualizza chiusure orarie →' },
+  fr: { title: 'Planifiez votre visite en tenant compte du trafic', description: 'Des fermetures de circulation importantes sont attendues dans toutes les villes lors de la visite papale. Consultez les fermetures horaires pour mieux planifier vos déplacements.', btn: 'Consulter les fermetures horaires →' },
+  de: { title: 'Planen Sie Ihren Besuch unter Berücksichtigung des Verkehrs', description: 'Während des Papstbesuchs sind in allen Städten erhebliche Verkehrssperrungen zu erwarten. Überprüfen Sie die stündlichen Sperrungen, um Ihre Reise besser zu planen.', btn: 'Stündliche Verkehrssperrungen anzeigen →' },
+  pt: { title: 'Planeje sua visita considerando o tráfego', description: 'Significativos cortes de tráfego são esperados em todas as cidades durante a visita papal. Consulte os cortes horários para planejar melhor sua viagem.', btn: 'Visualizar cortes horários →' },
+  ca: { title: 'Planifica la teva visita tenint en compte el trànsit', description: 'S\'esperen importants afectacions de trànsit a totes les ciutats durant la visita papal. Consulta els talls horaris per planificar millor els teus desplaçaments.', btn: 'Consultar talls de trànsit →' },
+  gl: { title: 'Planifica a túa visita considerando o tráfico', description: 'Espérase importantes afectacións de tráfico en todas as cidades durante a visita papal. Consulta os talls horarios para planificar mellor os teus desprazamentos.', btn: 'Ver cortes de tráfico por horas →' },
+  eu: { title: 'Planifikatu zure bisita trafikoa kontuan hartuta', description: 'Aita Santuaren bisitaren garaian trafikoa-bozpakatzeak espero dira hiri guztienetan. Kontsultatu orduz orduko tallen orriak zure biaiarentzat plana hobeto egiteko.', btn: 'Ikusi orduz orduko trafikoa-bozpakatzeak →' },
+}
+
 export default function ProgramaPageContent({ locale }: { locale: Locale }) {
   const nav = getDictionary(locale)
   const t = getPagesDict(locale)
@@ -71,6 +83,19 @@ export default function ProgramaPageContent({ locale }: { locale: Locale }) {
 
       <Container className="py-10">
         <VaticanFlagBanner locale={locale} className="mb-8" />
+
+        <div className="mb-8 rounded-xl border border-amber-100 bg-amber-50/40 p-6">
+          <h2 className="mb-2 flex items-center gap-2 font-heading text-lg font-bold text-papal-navy">
+            ⚠️ {TRAFFIC_LINK_LABELS[locale].title}
+          </h2>
+          <p className="mb-4 text-sm text-papal-navy/70">{TRAFFIC_LINK_LABELS[locale].description}</p>
+          <Link
+            href={localizePath('/cortes-trafico', locale)}
+            className="inline-block text-sm font-medium text-papal-gold hover:underline"
+          >
+            {TRAFFIC_LINK_LABELS[locale].btn}
+          </Link>
+        </div>
 
         <div className="space-y-10">
           {schedule.map((day) => {
