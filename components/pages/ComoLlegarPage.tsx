@@ -12,6 +12,18 @@ import { type Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 import { getComoLlegarLabels } from '@/data/i18n/content/como-llegar'
 
+const trafficGuideLabels: Record<Locale, string> = {
+  es: 'Guía completa de cortes',
+  en: 'Complete traffic guide',
+  it: 'Guida completa alle chiusure',
+  fr: 'Guide complet des fermetures',
+  de: 'Vollständiger Sperren-Leitfaden',
+  pt: 'Guia completo de cortes',
+  ca: "Guia completa d'afectacions",
+  gl: 'Guia completa de afectacións',
+  eu: 'Murrzketen gida osoa',
+}
+
 export default function ComoLlegarPageContent({ locale }: { locale: Locale }) {
   const nav = getDictionary(locale)
   const t = getComoLlegarLabels(locale)
@@ -165,6 +177,12 @@ export default function ComoLlegarPageContent({ locale }: { locale: Locale }) {
                         ))}
                       </ul>
                       <p className="mt-3 text-xs text-papal-navy/40">{t.trafficIntro}</p>
+                      <Link
+                        href={localizePath('/cortes-trafico', locale)}
+                        className="mt-4 inline-block text-sm font-medium text-papal-gold hover:underline"
+                      >
+                        {trafficGuideLabels[locale]} →
+                      </Link>
                     </div>
                   </div>
 
