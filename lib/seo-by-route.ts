@@ -44,6 +44,7 @@ export const OG_IMAGE_BY_ROUTE: Partial<Record<RouteKey, string>> = {
   himno: '/images/hero/papa-leon-xiv.webp',
   oracion: '/images/hero/papa-leon-xiv.webp',
   voluntariado: '/images/hero/papa-leon-xiv.webp',
+  'cortes-trafico': '/images/cities/madrid.webp',
 }
 
 export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
@@ -915,7 +916,7 @@ export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
     ca: {
       title: 'Visites papals a Espanya (1982-2026): història',
       description:
-        'Història completa dels viatges papals a Espanya: Joan Pau II (5 visites 1982-2003), Benet XVI (3 visites 2006-2011), Lleó XIV (2026). Per què Francesc no va anar.',
+        'História completa dels viatges papals a Espanya: Joan Pau II (5 visites 1982-2003), Benet XVI (3 visites 2006-2011), Lleó XIV (2026). Per què Francesc no va anar.',
     },
     gl: {
       title: 'Visitas papais a España (1982-2026): historia',
@@ -926,6 +927,54 @@ export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
       title: 'Bisitaldi papalak Espainian (1982-2026): historia',
       description:
         'Espainiarako bidai apostolikoen historia osoa: Joan Paulo II.a (5 bisita 1982-2003), Benedikto XVI.a (3 bisita 2006-2011), Leon XIV.a (2026). Zergatik ez zen etorri Frantzisko.',
+    },
+  },
+
+  'cortes-trafico': {
+    es: {
+      title: 'Cortes de tráfico Papa Madrid, Barcelona, Canarias 2026',
+      description:
+        'Cortes de tráfico día a día (6-12 junio): cierres por hora, calles afectadas, EMT alternativas, rutas y aparcamiento. Mapa interactivo por ciudad.',
+    },
+    en: {
+      title: 'Traffic Closures: Pope Leo XIV Visit to Spain 2026',
+      description:
+        'Daily traffic closures (6-12 June): street closures by hour, affected areas, public transport alternatives, routes and parking. Interactive map by city.',
+    },
+    it: {
+      title: 'Chiusure al traffico Papa Madrid, Barcellona, Canarie',
+      description:
+        'Chiusure al traffico giorno per giorno (6-12 giugno): strade chiuse per ora, aree interessate, trasporti alternativi, percorsi parcheggio. Mappa interattiva.',
+    },
+    fr: {
+      title: 'Fermetures de circulation Pape Madrid, Barcelone, Canaries',
+      description:
+        'Fermetures jour après jour (6-12 juin): rues fermées par heure, zones affectées, transports alternatifs, itinéraires parking. Carte interactive par ville.',
+    },
+    de: {
+      title: 'Verkehrssperrungen Papst Madrid, Barcelona, Kanaren 2026',
+      description:
+        'Tägliche Verkehrssperrungen (6.-12. Juni): gesperrte Straßen stündlich, betroffene Bereiche, alternative Verkehrsmittel, Routen und Parkplätze. Interaktive Karte.',
+    },
+    pt: {
+      title: 'Cortes de trânsito Papa Madri, Barcelona, Canárias 2026',
+      description:
+        'Cortes de trânsito dia a dia (6-12 junho): ruas fechadas por hora, áreas afetadas, transportes alternativos, rotas estacionamento. Mapa interativo por cidade.',
+    },
+    ca: {
+      title: 'Talls de trànsit Papa Madrid, Barcelona, Canàries 2026',
+      description:
+        'Talls de trànsit dia a dia (6-12 juny): carrers tancats per hora, àrees afectades, transports alternatius, rutes aparcament. Mapa interactiu per ciutat.',
+    },
+    gl: {
+      title: 'Cortes de tránsito Papa Madrid, Barcelona, Canarias 2026',
+      description:
+        'Cortes de tránsito día a día (6-12 xuño): rúas pechadas por hora, áreas afectadas, transportes alternativos, rutas aparcamento. Mapa interactivo por cidade.',
+    },
+    eu: {
+      title: 'Trafikoa bozpakatzea Papa Madrid, Bartzelona, Kanaria',
+      description:
+        'Trafikoa bozpakatzea egun bakoitzean (6-12 ekaina): kaleetan itxiak orduz, eragin gabeko eremuak, garraiobide alternatiboak, bideak eta aparcabideak.',
     },
   },
 }

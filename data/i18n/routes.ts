@@ -144,6 +144,10 @@ export const ROUTE_TRANSLATIONS = {
     es: 'magnifica-humanitas', en: 'magnifica-humanitas', it: 'magnifica-humanitas', fr: 'magnifica-humanitas',
     de: 'magnifica-humanitas', pt: 'magnifica-humanitas', ca: 'magnifica-humanitas', gl: 'magnifica-humanitas', eu: 'magnifica-humanitas',
   },
+  'cortes-trafico': {
+    es: 'cortes-trafico', en: 'traffic-closures', it: 'chiusure-traffico', fr: 'fermetures-circulation',
+    de: 'verkehrssperrungen', pt: 'cortes-trafico', ca: 'talls-traffic', gl: 'cortes-trafico', eu: 'trafikoa-bozpakatzea',
+  },
 } as const
 
 export type RouteKey = keyof typeof ROUTE_TRANSLATIONS
