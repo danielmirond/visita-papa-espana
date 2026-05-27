@@ -2,6 +2,47 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'magnifica-humanitas-primera-enciclica-del-papa-leon-xiv',
+    title: '«Magnifica Humanitas», primera encíclica del Papa León XIV',
+    excerpt: 'La primera carta encíclica del Papa León XIV, titulada Magnifica humanitas («Magnífica humanidad»), ha sido publicada hoy oficialmente por el Vaticano. El documento aborda d «la custodia de la persona humana en el tiempo…',
+    content: 'La primera carta encíclica del Papa León XIV, titulada Magnifica humanitas («Magnífica humanidad»), ha sido publicada hoy oficialmente por el Vaticano. El documento aborda d «la custodia de la persona humana en el tiempo de la inteligencia artificial», estableciendo la postura ética y moral de la Iglesia ante la actual revolución tecnológica. La encíclica fue [&#8230;]',
+    date: '2026-05-25',
+    source: 'Conferencia Episcopal Española',
+    sourceUrl: 'https://www.conferenciaepiscopal.es/magnifica-humanitas-primera-enciclica-del-papa-leon-xiv/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'leon-xiv-se-reune-con-el-presidente-del-gobierno-de-espana',
+    title: 'León XIV se reúne con el Presidente del Gobierno de España',
+    excerpt: 'A pocos días del Viaje Apostólico que desarrollará el Santo Padre del 6 al 12 de junio al pueblo español, hoy se reunió con Pedro Sánchez Pérez-Castejón, presidente del Gobierno de España. Leer todo',
+    content: 'A pocos días del Viaje Apostólico que desarrollará el Santo Padre del 6 al 12 de junio al pueblo español, hoy se reunió con Pedro Sánchez Pérez-Castejón, presidente del Gobierno de España. Leer todo',
+    date: '2026-05-27',
+    source: 'Vatican News',
+    sourceUrl: 'https://www.vaticannews.va/es/papa/news/2026-05/leon-xiv-se-reune-con-el-presidente-del-gobierno-de-espana.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'el-papa-al-circulo-ecuestre-de-barcelona-el-cristiano-no-es-un-simple-filantropo',
+    title: 'El Papa al Círculo Ecuestre de Barcelona: "El cristiano no es un simple filántropo, sino alguien compasivo"',
+    excerpt: 'León XIV recibió en audiencia al Círculo Ecuestre de Barcelona, invitándolos a abrirse a la acción del Espíritu Santo, y "en actitud de incansable disponibilidad a vivir la caridad cristiana"',
+    content: 'León XIV recibió en audiencia al Círculo Ecuestre de Barcelona, invitándolos a abrirse a la acción del Espíritu Santo, y "en actitud de incansable disponibilidad a vivir la caridad cristiana"',
+    date: '2026-05-27',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/leon-xiv/papa-circulo-ecuestre-barcelona-cristiano_1_1454930.html',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'el-gobierno-declara-la-visita-del-papa-a-espana-como-evento-de-excepcional-y-esp',
+    title: 'El Gobierno declara la visita del Papa a España como evento de “excepcional” y “especial” interés público',
+    excerpt: 'La noticia El Gobierno declara la visita del Papa a España como evento de “excepcional” y “especial” interés público se publicó primero en Noticias religiosas de última hora | Vida Nueva El Consejo de Ministros ha aproba…',
+    content: 'La noticia El Gobierno declara la visita del Papa a España como evento de “excepcional” y “especial” interés público se publicó primero en Noticias religiosas de última hora | Vida Nueva El Consejo de Ministros ha aprobado este este martes 26 de mayo un Real Decreto Ley por el que declara, entre otros eventos, el viaje apostólico del Papa a España como evento de “excepcional” interés público. ¿Todavía no sigues a Vida Nueva en INSTAGRAM? WHATSAPP: Sigue nuestro canal para recibir gratis la mejor información Regístrate &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-05-26',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/05/26/gobierno-declara-visita-papa-espana-evento-excepcional-especial-interes-publico/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'este-es-el-sueno-de-gaudi-que-marcara-los-actos-del-papa-en-barcelona',
     title: 'Este es «el sueño de Gaudí» que marcará los actos del Papa en Barcelona',
     excerpt: 'Los organizadores de la etapa catalana de la visita de León XIV han protagonizado la rueda de prensa semanal. Se han presentado también varios vídeos, incluido un corto de animación para ayudar a pasar del «yo» al «tú» L…',
