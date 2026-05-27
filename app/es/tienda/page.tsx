@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import ShopPageContent from '@/components/pages/ShopPage'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { getAlternates } from '@/lib/i18n-metadata'
+import { getMetadataOgImages } from '@/lib/og-image-generator'
 import { featureFlags } from '@/data/siteConfig'
 import type { ProductCategory } from '@/types/shop'
 
@@ -12,6 +13,9 @@ export const metadata: Metadata = {
   title: t.shop.title,
   description: t.shop.subtitle,
   alternates: getAlternates('/tienda', 'es'),
+  openGraph: {
+    images: getMetadataOgImages('tienda', 'es'),
+  },
   // Mientras la tienda esté oculta, no queremos que Google la indexe
   robots: featureFlags.shopEnabled ? undefined : { index: false, follow: false },
 }

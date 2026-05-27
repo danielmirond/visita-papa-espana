@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BanderaVaticanoPage from '@/components/pages/BanderaVaticanoPage'
+import { getMetadataOgImages } from '@/lib/og-image-generator'
 import { getAlternates } from '@/lib/i18n-metadata'
 
 export const metadata: Metadata = {
