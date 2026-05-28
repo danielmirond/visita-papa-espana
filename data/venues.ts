@@ -66,6 +66,10 @@ const VENUE_COORDS: Array<{ match: RegExp; coords: VenueCoords }> = [
 
   // BARCELONA
   {
+    match: /rosell[óo]\s*-\s*sardenya|papam[óo]vil/i,
+    coords: { lat: 41.3902, lng: 2.1746 }, // Calles Rosselló-Sardenya (ruta papamóvil)
+  },
+  {
     match: /sagrada\s+fam[ií]lia/i,
     coords: { lat: 41.4036, lng: 2.1744 }, // Sagrada Família
   },

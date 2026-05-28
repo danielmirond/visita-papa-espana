@@ -159,6 +159,17 @@ export const trafficClosures: CityTrafficClosures[] = [
         emtAlternatives: ['TMB 13', 'TMB 23', 'TMB 150'],
         parkingInfo: 'Estacionamiento en Plaça d\'Espanya subterráneo. Evitar zona hasta las 14h.',
       },
+      {
+        id: 'bcn-100600-002',
+        street: 'Rosselló - Sardenya',
+        description: 'Cierre para papamóvil. Recorrido papal hacia Sagrada Familia',
+        startTime: '19:00',
+        endTime: '19:45',
+        severity: 'high',
+        affectedAreas: ['Eixample', 'Passeig de Sant Joan', 'Ronda Sant Antoni'],
+        emtAlternatives: ['TMB 2', 'TMB 7', 'TMB 9', 'TMB 33'],
+        parkingInfo: 'Plaça de Gaudí (subterráneo), Parking Sagrada Familia. IMPORTANTE: Vía abierta para ver papamóvil desde ambas aceras.',
+      },
     ],
   },
 
