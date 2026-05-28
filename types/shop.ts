@@ -4,6 +4,10 @@ export type ProductCategory =
   | 'libros' // Libros sobre el Papa, devocionales
   | 'souvenirs' // Recuerdos de las ciudades (Madrid, BCN, Canarias)
   | 'ropa' // Camisetas, sudaderas
+  | 'viaje' // Equipaje, mochilas, bolsas de viaje
+  | 'salud-bienestar' // Protección solar, calcetines, botella, etc.
+  | 'tech' // Power banks, cables, auriculares, GPS
+  | 'nutricion' // Barras proteína, frutos secos, bebidas
 
 export type ProductSource = 'amazon' | 'printful' | 'redbubble' | 'teespring' | 'other'
 
@@ -34,4 +38,8 @@ export const CATEGORY_LABELS: Record<ProductCategory, string> = {
   libros: 'Libros',
   souvenirs: 'Souvenirs',
   ropa: 'Ropa',
+  viaje: 'Equipaje y viaje',
+  'salud-bienestar': 'Salud y bienestar',
+  tech: 'Tecnología',
+  nutricion: 'Nutrición y energía',
 }

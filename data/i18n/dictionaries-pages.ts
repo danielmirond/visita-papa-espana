@@ -61,6 +61,10 @@ type PagesExt = {
     categoryLibros: string
     categorySouvenirs: string
     categoryRopa: string
+    categoryViaje: string
+    categoryBienestar: string
+    categoryTech: string
+    categoryNutricion: string
   }
 }
 
@@ -126,6 +130,10 @@ const es: PagesExt = {
     categoryLibros: 'Libros',
     categorySouvenirs: 'Souvenirs',
     categoryRopa: 'Ropa',
+    categoryViaje: 'Equipaje y viaje',
+    categoryBienestar: 'Salud y bienestar',
+    categoryTech: 'Tecnología',
+    categoryNutricion: 'Nutrición y energía',
   },
 }
 
@@ -191,6 +199,10 @@ const en: PagesExt = {
     categoryLibros: 'Books',
     categorySouvenirs: 'Souvenirs',
     categoryRopa: 'Clothing',
+    categoryViaje: 'Luggage & travel',
+    categoryBienestar: 'Health & wellness',
+    categoryTech: 'Technology',
+    categoryNutricion: 'Nutrition & energy',
   },
 }
 
@@ -256,6 +268,10 @@ const it: PagesExt = {
     categoryLibros: 'Libri',
     categorySouvenirs: 'Souvenir',
     categoryRopa: 'Abbigliamento',
+    categoryViaje: 'Bagagli e viaggio',
+    categoryBienestar: 'Salute e benessere',
+    categoryTech: 'Tecnologia',
+    categoryNutricion: 'Nutrizione ed energia',
   },
 }
 
@@ -321,6 +337,10 @@ const fr: PagesExt = {
     categoryLibros: 'Livres',
     categorySouvenirs: 'Souvenirs',
     categoryRopa: 'Vêtements',
+    categoryViaje: 'Bagages et voyage',
+    categoryBienestar: 'Santé et bien-être',
+    categoryTech: 'Technologie',
+    categoryNutricion: 'Nutrition et énergie',
   },
 }
 
@@ -386,6 +406,10 @@ const de: PagesExt = {
     categoryLibros: 'Bücher',
     categorySouvenirs: 'Souvenirs',
     categoryRopa: 'Kleidung',
+    categoryViaje: 'Gepäck und Reisen',
+    categoryBienestar: 'Gesundheit und Wohlbefinden',
+    categoryTech: 'Technologie',
+    categoryNutricion: 'Ernährung und Energie',
   },
 }
 
@@ -451,6 +475,10 @@ const pt: PagesExt = {
     categoryLibros: 'Livros',
     categorySouvenirs: 'Souvenirs',
     categoryRopa: 'Vestuário',
+    categoryViaje: 'Bagagem e viagem',
+    categoryBienestar: 'Saúde e bem-estar',
+    categoryTech: 'Tecnologia',
+    categoryNutricion: 'Nutrição e energia',
   },
 }
 
@@ -515,6 +543,10 @@ const ca: PagesExt = {
     categoryLibros: 'Llibres',
     categorySouvenirs: 'Records',
     categoryRopa: 'Roba',
+    categoryViaje: 'Equipatge i viatge',
+    categoryBienestar: 'Salut i benestar',
+    categoryTech: 'Tecnologia',
+    categoryNutricion: 'Nutrició i energia',
   },
 }
 
@@ -579,6 +611,10 @@ const gl: PagesExt = {
     categoryLibros: 'Libros',
     categorySouvenirs: 'Recordos',
     categoryRopa: 'Roupa',
+    categoryViaje: 'Equipaxe e viaxe',
+    categoryBienestar: 'Saúde e benestar',
+    categoryTech: 'Tecnoloxía',
+    categoryNutricion: 'Nutrición e enerxía',
   },
 }
 
@@ -643,6 +679,10 @@ const eu: PagesExt = {
     categoryLibros: 'Liburuak',
     categorySouvenirs: 'Oroigarriak',
     categoryRopa: 'Arropa',
+    categoryViaje: 'Ekipajea eta bidaia',
+    categoryBienestar: 'Osasuna eta ongizatea',
+    categoryTech: 'Teknologia',
+    categoryNutricion: 'Elikadura eta energia',
   },
 }
 

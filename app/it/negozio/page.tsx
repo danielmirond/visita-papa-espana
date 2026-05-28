@@ -22,6 +22,10 @@ const categoryLabels: Record<ProductCategory, string> = {
   libros: t.shop.categoryLibros,
   souvenirs: t.shop.categorySouvenirs,
   ropa: t.shop.categoryRopa,
+  viaje: t.shop.categoryViaje,
+  'salud-bienestar': t.shop.categoryBienestar,
+  tech: t.shop.categoryTech,
+  nutricion: t.shop.categoryNutricion,
 }
 
 export default function Page() {
