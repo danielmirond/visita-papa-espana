@@ -19,6 +19,7 @@ import { getAffiliatesByCategory } from '@/data/affiliates'
 import { formatDateLong, dateToSlug } from '@/lib/utils'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
+import { localBusinessSchema } from '@/lib/schema/generators'
 
 const CityEventsMap = dynamic(() => import('@/components/map/CityEventsMap'), {
   ssr: false,
@@ -109,6 +110,10 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
           },
         }}
       />
+      {(() => {
+        const lbSchema = localBusinessSchema(city, locale)
+        return lbSchema ? <JsonLd data={lbSchema} /> : null
+      })()}
 
       {/* Hero */}
       <section className="relative overflow-hidden">

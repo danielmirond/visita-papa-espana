@@ -13,6 +13,7 @@ import { dateToSlug } from '@/lib/utils'
 import { siteConfig } from '@/data/siteConfig'
 import {
   eventSchema,
+  eventSeriesSchema,
   programmeItemListSchema,
   visitMainEventSchema,
 } from '@/lib/schema/generators'
@@ -53,8 +54,9 @@ export default function ProgramaPageContent({ locale }: { locale: Locale }) {
 
   return (
     <>
-      {/* Schema: evento principal + lista de items + un Event rico por cada acto */}
+      {/* Schema: evento principal + serie de eventos + lista de items + un Event rico por cada acto */}
       <JsonLd data={visitMainEventSchema(locale)} />
+      <JsonLd data={eventSeriesSchema(schedule, locale)} />
       <JsonLd data={programmeItemListSchema(schedule, locale)} />
       {schedule.flatMap((day) =>
         day.events.map((event) => {

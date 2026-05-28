@@ -477,3 +477,126 @@ export function programmeItemListSchema(
     })),
   }
 }
+
+// ----------------------- EventSeries (Programa multi-día) -----------
+
+/**
+ * EventSeries para /programa: agrupa los múltiples eventos del viaje
+ * como una serie cohesiva. Vital para "cuando viene el papa a madrid"
+ * y "que dias estara el papa en madrid" (Google instant answers).
+ */
+export function eventSeriesSchema(schedule: ScheduleDay[], locale: Locale = 'es') {
+  const startDate = schedule[0]?.date || '2026-06-06'
+  const endDate = schedule[schedule.length - 1]?.date || '2026-06-12'
+  const allEvents: PapalEvent[] = schedule.flatMap((d) => d.events)
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'EventSeries',
+    '@id': `${siteConfig.url}/${locale}/programa#series`,
+    name: 'Viaje apostólico del Papa León XIV a España',
+    alternateName: 'Programa papal 2026 España',
+    description: 'Serie completa de eventos de la visita apostólica del Papa León XIV a España, 6-12 de junio de 2026',
+    inLanguage: HTML_LANG[locale],
+    startDate,
+    endDate,
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    eventStatus: 'https://schema.org/EventScheduled',
+    performer: { '@id': ENTITIES.popeLeoXIV.wikidata },
+    organizer: {
+      '@type': 'Organization',
+      name: ENTITIES.cee.name,
+      url: ENTITIES.cee.url,
+      sameAs: ENTITIES.cee.wikidata,
+    },
+    image: `${siteConfig.url}/images/hero/papa-leon-xiv.webp`,
+    isAccessibleForFree: true,
+    // hasPart: individual events
+    hasPart: allEvents.slice(0, 10).map((ev) => ({
+      '@type': 'Event',
+      name: ev.title,
+      startDate: `${ev.date}T${ev.startTime}:00${
+        ['gran-canaria', 'tenerife'].includes(ev.citySlug) ? '+01:00' : '+02:00'
+      }`,
+      location: {
+        '@type': 'Place',
+        name: ev.location,
+      },
+    })),
+  }
+}
+
+// ----------------------- LocalBusiness (Ciudades) --------------------
+
+/**
+ * LocalBusiness para /ciudades/[slug]: refuerza visibilidad local.
+ * Captura "papa madrid", "visita papa barcelona", etc. con rich
+ * results de Google Maps / Local.
+ */
+export function localBusinessSchema(city: City, locale: Locale = 'es') {
+  const cityEnt = cityEntity(city.slug)
+  if (!cityEnt) return null
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${siteConfig.url}/${locale}/ciudades/${city.slug}#business`,
+    name: `Visita del Papa León XIV en ${city.name}`,
+    description: `Información sobre la visita apostólica del Papa León XIV en ${city.name}, ${city.region}, España.`,
+    inLanguage: HTML_LANG[locale],
+    url: `${siteConfig.url}/${locale}/ciudades/${city.slug}`,
+    image: `${siteConfig.url}${city.heroImage}`,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: city.name,
+      addressRegion: city.region,
+      addressCountry: 'ES',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: city.coordinates.lat,
+      longitude: city.coordinates.lng,
+    },
+    areaServed: {
+      '@type': 'City',
+      name: city.name,
+      sameAs: cityEnt?.wikidata,
+    },
+    isAccessibleForFree: true,
+  }
+}
+
+// ----------------------- Product (Tienda / Afiliación) ---------------
+
+/**
+ * Product schema para productos Amazon en tienda y placements.
+ * Mejora visibilidad en Google Shopping y producto rich results.
+ */
+export function productSchema(
+  title: string,
+  description: string,
+  price: { min: number; max: number },
+  url: string,
+  locale: Locale = 'es'
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: title,
+    description,
+    inLanguage: HTML_LANG[locale],
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'EUR',
+      lowPrice: String(price.min),
+      highPrice: String(price.max),
+      availability: 'https://schema.org/InStock',
+      url,
+    },
+    image: `${siteConfig.url}/images/og/que-llevar.webp`,
+    brand: {
+      '@type': 'Brand',
+      name: 'Amazon',
+    },
+  }
+}
