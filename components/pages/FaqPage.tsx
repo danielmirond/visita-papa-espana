@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import FAQProductRecommendations from '@/components/affiliate/FAQProductRecommendations'
 import { getFaqByLocale, getFaqCategoriesByLocale } from '@/data/i18n/content/faq'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { getDictionary } from '@/data/i18n/dictionaries'
@@ -71,6 +72,9 @@ export default function FaqPageContent({ locale }: { locale: Locale }) {
                         <p className="pl-8 text-sm leading-relaxed text-papal-navy/70">
                           {item.answer}
                         </p>
+                        <div className="pl-8">
+                          <FAQProductRecommendations category={item.category} locale={locale} />
+                        </div>
                       </div>
                     </details>
                   ))}
