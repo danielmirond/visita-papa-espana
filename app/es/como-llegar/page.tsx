@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Container from '@/components/ui/Container'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
+import TravelProductKit from '@/components/affiliate/TravelProductKit'
 import { cityTransports } from '@/data/transporte'
 import { getAffiliateById } from '@/data/affiliates'
 import { getAlternates } from '@/lib/i18n-metadata'
@@ -182,6 +183,7 @@ export default function ComoLlegarPage() {
                       Actos y ubicaciones &rarr;
                     </Link>
                   </div>
+                  <TravelProductKit locale="es" />
                   <BannerPlaceholder size="300x250" label={`Hoteles en ${city.cityName}`} />
                 </aside>
               </div>
