@@ -2,6 +2,26 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'papa-leon-xiv-recorrera-barcelona-papamovil-horario-recorrido-completo',
+    title: 'Papa León XIV recorrerá Barcelona en papamóvil: horario y recorrido completo',
+    excerpt: 'El Papa viajará entre las calles Rosselló y Sardenya en un vehículo abierto. Una de las pocas oportunidades para verlo de cerca en espacio abierto durante su visita a Catalunya. Salida prevista para las 19:00 horas del 10 de junio.',
+    content: 'Papa León XIV recorrerá aproximadamente 1 kilómetro en papamóvil entre las calles Rosselló y Sardenya de Barcelona el 10 de junio alrededor de las 19:00 horas. El trayecto en vehículo abierto a baja velocidad durará entre 10 y 15 minutos, concluyendo en la Basílica de la Sagrada Familia donde tendrá lugar la Misa solemne a las 19:30. Este recorrido representa una de las pocas oportunidades para que los barceloneses vean al Papa de cerca en espacio abierto durante su visita a Catalunya.',
+    date: '2026-05-28',
+    source: 'Metrópoli Abierta',
+    sourceUrl: 'https://metropoliabierta.elespanol.com/vivir-en-barcelona/20260528/papa-leon-xiv-recorrera-barcelona-papamovil-horario-recorrido-completo/1003742765344_0.html',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'el-papa-llegara-a-la-sagrada-familia-en-papamovil-restricciones-trafico-movilidad-barcelona',
+    title: 'El Papa llegará a la Sagrada Familia en papamóvil: restricciones de tráfico y movilidad en Barcelona',
+    excerpt: 'Las autoridades implementarán restricciones de tráfico durante el recorrido en papamóvil del 10 de junio. El Papa viajará en vehículo abierto entre Rosselló y Sardenya, una oportunidad única para verlo de cerca en la ciudad.',
+    content: 'El Papa León XIV llegará a la Basílica de la Sagrada Familia en papamóvil el 10 de junio. El recorrido en vehículo abierto entre las calles Rosselló y Sardenya comenzará alrededor de las 19:00 horas y durará entre 10 y 15 minutos. Las autoridades de Barcelona han implementado restricciones de tráfico y movilidad en toda la ciudad durante la visita papal. El recorrido en papamóvil constituye una de las oportunidades más valiosas para ver de cerca al Pontífice en espacio abierto durante los cuatro días de visita a Catalunya.',
+    date: '2026-05-28',
+    source: 'El País',
+    sourceUrl: 'https://elpais.com/espana/catalunya/2026-05-28/el-papa-llegara-a-la-sagrada-famila-en-papamovil-restricciones-de-trafico-y-movilidad-en-su-visita-a-barcelona.html',
+    relatedCities: ['barcelona'],
+  },
+  {
     slug: 'el-legado-de-juan-pablo-ii-y-benedicto-xvi-ante-la-llegada-de-leon-xiv-a-espana',
     title: 'El legado de Juan Pablo II y Benedicto XVI ante la llegada de León XIV a España',
     excerpt: 'Goya Producciones repasa las huellas de las visitas papales previas como una «alfombra roja audiovisual» que invita a revivir momentos inolvidables de fe en nuestro país. La entrada El legado de Juan Pablo II y Benedicto…',

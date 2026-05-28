@@ -298,6 +298,18 @@ export const schedule: ScheduleDay[] = [
         isConfirmed: true,
       },
       {
+        id: 'papamovil-rosselló-sardenya',
+        title: 'Recorrido en papamóvil hacia la Sagrada Familia',
+        description: 'Recorrido en papamóvil abierto del Papa León XIV entre las calles Rosselló y Sardenya. Aproximadamente 1 km de trayecto a baja velocidad. Una de las pocas oportunidades para verlo de cerca en espacio abierto durante su visita a Catalunya.',
+        date: '2026-06-10',
+        startTime: '19:00',
+        citySlug: 'barcelona',
+        location: 'Calles Rosselló–Sardenya, Barcelona',
+        eventType: 'traslado',
+        isPublic: true,
+        isConfirmed: true,
+      },
+      {
         id: 'misa-sagrada-familia',
         title: 'Santa Misa en la Sagrada Familia · inauguración Torre de Jesucristo',
         description: 'Santa Misa solemne en la Basílica de la Sagrada Familia presidida por el Papa León XIV. Durante la celebración tendrá lugar la inauguración y bendición de la Torre de Jesucristo (172,5 m), coincidiendo con el centenario de la muerte de Antoni Gaudí y su proceso de beatificación.',
