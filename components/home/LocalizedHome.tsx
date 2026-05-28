@@ -3,6 +3,8 @@ import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import Container from '@/components/ui/Container'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
+import VaticanFlagBanner from '@/components/shared/VaticanFlagBanner'
+import HomeProductShowcase from '@/components/affiliate/HomeProductShowcase'
 import JsonLd from '@/components/seo/JsonLd'
 import { getDictionary } from '@/data/i18n/dictionaries'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
@@ -119,6 +121,13 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
           </div>
         </Container>
       </section>
+
+      {/* Bandera papal */}
+      <div className="bg-white py-6">
+        <Container>
+          <VaticanFlagBanner locale={locale} className="mb-0" />
+        </Container>
+      </div>
 
       {/* Cifras clave */}
       <section className="border-b border-papal-gold/10 bg-papal-cream min-h-[88px]">
@@ -256,6 +265,9 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
           </div>
         </Container>
       </section>
+
+      {/* Showcase de productos para home */}
+      <HomeProductShowcase locale={locale} />
 
       {/* Últimas noticias */}
       <section className="section-padding">
