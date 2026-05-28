@@ -2,6 +2,7 @@ import Container from '@/components/ui/Container'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
 import AffiliateLink from '@/components/affiliate/AffiliateLink'
+import ProductKitCarousel from '@/components/affiliate/ProductKitCarousel'
 import { getKitPeregrino, getKitCategories, type KitCategory } from '@/data/i18n/content/kitPeregrino'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
@@ -253,6 +254,10 @@ export default function KitPeregrinoPage({ locale }: Props) {
         <div className="mb-6 rounded-lg border border-papal-gold/30 bg-white p-4 text-sm text-papal-navy/80">
           <strong>ℹ️ </strong>{t.disclaimerLead}
         </div>
+
+        <section className="mb-12">
+          <ProductKitCarousel locale={locale} placement="que-llevar" />
+        </section>
 
         {KIT_CATEGORIES.map((cat) => {
           const itemsInCat = kitPeregrino.filter((i) => i.category === cat.id as KitCategory)
