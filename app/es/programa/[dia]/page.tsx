@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Container from '@/components/ui/Container'
+import EventProductKit from '@/components/affiliate/EventProductKit'
 import { schedule } from '@/data/schedule'
 import { cities } from '@/data/cities'
 import { slugToDate, dateToSlug, formatDateLong } from '@/lib/utils'
@@ -113,6 +114,11 @@ export default function DiaPage({ params }: Props) {
             </div>
           ))}
         </div>
+
+        {/* Context-aware products */}
+        <section className="mt-12">
+          <EventProductKit events={day.events} locale="es" />
+        </section>
 
         {/* Nav prev/next */}
         <div className="mt-10 flex justify-between">
