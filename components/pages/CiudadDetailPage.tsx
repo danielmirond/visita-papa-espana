@@ -7,6 +7,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
 import AffiliateNotice from '@/components/affiliate/AffiliateNotice'
 import AffiliateLink from '@/components/affiliate/AffiliateLink'
+import ClimateProductKit from '@/components/affiliate/ClimateProductKit'
 import SocialFeed from '@/components/shared/SocialFeed'
 import MeteoWidget from '@/components/shared/MeteoWidget'
 import VaticanFlagBanner from '@/components/shared/VaticanFlagBanner'
@@ -296,6 +297,9 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
                 )}
               </p>
             </div>
+
+            {/* Climate Product Kit */}
+            <ClimateProductKit citySlug={city.slug} locale={locale} />
 
             {hotels.length > 0 && (
               <div className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
