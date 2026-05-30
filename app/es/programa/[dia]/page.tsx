@@ -3,10 +3,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Container from '@/components/ui/Container'
 import EventProductKit from '@/components/affiliate/EventProductKit'
-import DayMapCard from '@/components/map/DayMapCard'
 import { schedule } from '@/data/schedule'
 import { cities } from '@/data/cities'
-import { type Locale } from '@/data/i18n/types'
 import { slugToDate, dateToSlug, formatDateLong } from '@/lib/utils'
 import { getAlternates } from '@/lib/i18n-metadata'
 
@@ -116,9 +114,6 @@ export default function DiaPage({ params }: Props) {
             </div>
           ))}
         </div>
-
-        {/* Interactive map for special events */}
-        <DayMapCard citySlug={day.citySlug} date={day.date} locale={'es' as Locale} />
 
         {/* Context-aware products */}
         <section className="mt-12">

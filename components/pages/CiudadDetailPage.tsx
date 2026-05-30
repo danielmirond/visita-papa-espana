@@ -11,6 +11,7 @@ import ClimateProductKit from '@/components/affiliate/ClimateProductKit'
 import SocialFeed from '@/components/shared/SocialFeed'
 import MeteoWidget from '@/components/shared/MeteoWidget'
 import VaticanFlagBanner from '@/components/shared/VaticanFlagBanner'
+import DayMapCard from '@/components/map/DayMapCard'
 import { getCitiesByLocale } from '@/data/i18n/content/cities'
 import { getScheduleByLocale } from '@/data/i18n/content/schedule'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
@@ -229,6 +230,11 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
               />
               <p className="mt-2 text-xs text-papal-navy/40">{extra.mapHint}</p>
             </section>
+
+            {/* Special event map: Barcelona papamóvil route */}
+            {citySchedule.map((day) => (
+              <DayMapCard key={day.date} citySlug={city.slug} date={day.date} locale={locale} />
+            ))}
 
             {/* Info práctica */}
             <section className="mt-10">
