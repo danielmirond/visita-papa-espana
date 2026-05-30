@@ -17,7 +17,7 @@ import { getScheduleByLocale } from '@/data/i18n/content/schedule'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { getDictionary } from '@/data/i18n/dictionaries'
 import { getAffiliatesByCategory } from '@/data/affiliates'
-import { formatDateLong, dateToSlug } from '@/lib/utils'
+import { formatDateLong } from '@/lib/utils'
 import { Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
 import { localBusinessSchema } from '@/lib/schema/generators'
@@ -176,12 +176,9 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
               </h2>
               {citySchedule.map((day) => (
                 <div key={day.date} className="mb-6">
-                  <Link
-                    href={localizePath(`/programa/${dateToSlug(day.date)}`, locale)}
-                    className="mb-3 block font-heading text-lg font-bold text-papal-navy hover:text-papal-gold"
-                  >
+                  <h3 className="mb-3 block font-heading text-lg font-bold text-papal-navy">
                     {day.label}
-                  </Link>
+                  </h3>
                   <div className="space-y-2">
                     {day.events.map((event) => (
                       <div
