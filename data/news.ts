@@ -2,6 +2,37 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'a-dia-de-hoy-no-esta-previsto-que-el-santo-padre-reciba-a-victimas-de-abusos',
+    title: '"A día de hoy, no está previsto que el Santo Padre reciba a víctimas de abusos"',
+    excerpt: 'El Arzobispado de Madrid responde a un superviviente de la pederastia clerical. La diócesis no descarta hasta el último momento que pueda darse un encuentro que, en todo caso, sería privado y solo se comunicaría al final…',
+    content: 'El Arzobispado de Madrid responde a un superviviente de la pederastia clerical. La diócesis no descarta hasta el último momento que pueda darse un encuentro que, en todo caso, sería privado y solo se comunicaría al finalizar, pero las víctimas lo con',
+    date: '2026-06-01',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/victimas-abusos-papa-leon-xiv-espana_1_1455836.html',
+    relatedCities: ['madrid'],
+  },
+  {
+    slug: 'podemos-se-borra-del-discurso-del-papa-en-el-congreso-y-acusa-a-leon-xiv-de-ser-',
+    title: 'Podemos se borra del discurso del Papa en el Congreso y acusa a León XIV de ser "cómplice" de los abusos en España',
+    excerpt: 'No hay motivos "para hacer un recibimiento con honores al Papa mientras se siga siendo cómplice de los abusos cometidos por la Iglesia Católica española en cuestiones como los bebés robados o las situaciones relacionadas…',
+    content: 'No hay motivos "para hacer un recibimiento con honores al Papa mientras se siga siendo cómplice de los abusos cometidos por la Iglesia Católica española en cuestiones como los bebés robados o las situaciones relacionadas con lo ocurrido en el patrona',
+    date: '2026-06-01',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/borra-discurso-papa-congreso-acusa-podemos_1_1455840.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'arguello-formara-parte-del-sequito-papal-durante-el-viaje-apostolico-de-leon-xiv',
+    title: 'Argüello formará parte del séquito papal durante el viaje apostólico de León XIV a España',
+    excerpt: '“Interiormente, viviré esta emoción de la acogida del Santo Padre entre nosotros”, señala el presidente de la CEE, que afirma que esta visita “nos confirma en la fe, la esperanza y la caridad a todos, y nos propone la co…',
+    content: '“Interiormente, viviré esta emoción de la acogida del Santo Padre entre nosotros”, señala el presidente de la CEE, que afirma que esta visita “nos confirma en la fe, la esperanza y la caridad a todos, y nos propone la comunión misionera y compartir l',
+    date: '2026-06-01',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/argueello-formara-parte-sequito-papal-viaje-papa-espana-prevost_1_1455800.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'maria-del-mar-chapa-cuando-las-personas-levantan-la-mirada-pueden-generar-algo-m',
     title: 'María del Mar Chapa: “Cuando las personas levantan la mirada, pueden generar algo mucho más grande que ellas mismas”',
     excerpt: 'María del Mar Chapa estudió Comunicación e hizo un máster profesional en Dirección de Empresas de Comunicación. Es socia fundadora de Malinche Studio y afirma rotundamente que “el diseño va mucho más allá de lo estético”…',
