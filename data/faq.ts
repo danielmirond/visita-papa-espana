@@ -7,6 +7,11 @@ export interface FaqItem {
 export const faq: FaqItem[] = [
   // General
   {
+    question: '¿Cuáles son las fechas exactas de la visita papal por ciudad?',
+    answer: 'El Viaje Apostólico del Papa León XIV a España se celebrará del 6 al 12 de junio de 2026. Cronograma por ciudad: MADRID (6-8 junio): Llegada 6 de junio 10:30 en Barajas, encuentro con Reyes, Misa de Corpus Christi en Cibeles (7 jun), Discurso ante Congreso y Senado (8 jun), Encuentro diocesano en Bernabéu (8 jun). BARCELONA (9-10 junio): Llegada 9 de junio 12:25 en El Prat, Vigilia en Montjuïc (9 jun), Misa en Sagrada Familia y bendición Torre de Jesús (10 jun). GRAN CANARIA (11 junio): Llegada en Las Palmas, Encuentro en muelle de Arguineguín, Misa en Estadio de Gran Canaria. TENERIFE (12 junio): Encuentro con migrantes en La Laguna (10:10), Misa de clausura en Puerto de Santa Cruz (12:15).',
+    category: 'general',
+  },
+  {
     question: '¿Cuándo visita el Papa León XIV España?',
     answer: 'El Papa León XIV visitará España del 6 al 12 de junio de 2026. El recorrido incluye Madrid (6-8 junio), Barcelona (9-10 junio), Gran Canaria (11 junio) y Tenerife (12 junio).',
     category: 'general',
