@@ -52,7 +52,7 @@ export const news: NewsArticle[] = [
     relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
   },
   {
-    slug: 'barcelona-papamovil-papa-leon-xiv-recorrido-rosselló-sardenya-sagrada-familia',
+    slug: 'barcelona-papamovil-papa-leon-xiv-recorrido-rossello-sardenya-sagrada-familia',
     title: 'El Papa León XIV recorrerá Barcelona en papamóvil: ruta de Rosselló a Sagrada Familia',
     excerpt: 'León XIV realizará un recorrido de poco más de un kilómetro en papamóvil desde Rosselló hasta la Sagrada Familia a una velocidad humana, en unos 15 minutos. Barcelona activa máximas restricciones de tráfico en la zona del recorrido…',
     content: 'El día 10 de junio a las 19:00, el Papa León XIV recorrerá en papamóvil un trazado de poco más de un kilómetro desde la confluencia de la Diagonal con Rosselló hasta girar por Sardenya para llegar a la Sagrada Familia. El vehículo se moverá a una velocidad humana, cubriendo el recorrido en apenas 15 minutos, flanqueado por agentes de seguridad. Barcelona ha activado un dispositivo especial con restricciones de tráfico: Rosselló quedará sellada al tráfico privado con solo tres puntos de acceso controlado (Rosselló/Marina, Rosselló/Avenida Gaudí y Provença/Lepant). Las once manzanas que jalonan el recorrido del papamóvil, junto con las nueve que rodean la Sagrada Familia, se convierten en zona de máxima seguridad. Este será uno de los pocos momentos en que los barceloneses podrán ver al Papa en espacio abierto durante su visita a España.',
