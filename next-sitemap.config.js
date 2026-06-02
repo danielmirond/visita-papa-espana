@@ -80,16 +80,21 @@ function canonicalOfPath(path) {
   return '/' + [key, ...rest].join('/')
 }
 
+// Rutas localizadas de la tienda (/es/tienda, /en/shop, /it/negozio…).
+// Si el flag está off, además de excluirlas del sitemap, las bloqueamos
+// en robots.txt para que los buscadores ni las rastreen.
+const SHOP_PATHS = LOCALES.map((l) => `/${l}/${ROUTE_TRANSLATIONS.tienda[l]}`)
+
 module.exports = {
   siteUrl: SITE_URL,
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,
-  exclude: ['/', '/api/*'],
+  exclude: ['/', '/api/*', ...(SHOP_ENABLED ? [] : SHOP_PATHS)],
   robotsTxtOptions: {
     policies: [
       { userAgent: '*', allow: '/' },
-      { userAgent: '*', disallow: ['/api/'] },
+      { userAgent: '*', disallow: ['/api/', ...(SHOP_ENABLED ? [] : SHOP_PATHS)] },
     ],
   },
   transform: async (config, path) => {
