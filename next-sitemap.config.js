@@ -8,6 +8,11 @@ const SITE_URL =
 
 const LOCALES = ['es', 'en', 'it', 'fr', 'de', 'pt', 'ca', 'gl', 'eu']
 
+// La tienda está oculta tras un feature flag (NEXT_PUBLIC_SHOP_ENABLED).
+// Cuando está desactivada, las páginas /tienda devuelven 404, así que no
+// deben aparecer en el sitemap (si no, generan http-error al rastrearlas).
+const SHOP_ENABLED = process.env.NEXT_PUBLIC_SHOP_ENABLED === 'true'
+
 // Traducciones de rutas canónicas
 const ROUTE_TRANSLATIONS = {
   programa: { es: 'programa', en: 'schedule', it: 'programma', fr: 'programme', de: 'programm', pt: 'programa', ca: 'programa', gl: 'programa', eu: 'egitaraua' },
@@ -75,20 +80,29 @@ function canonicalOfPath(path) {
   return '/' + [key, ...rest].join('/')
 }
 
+// Rutas localizadas de la tienda (/es/tienda, /en/shop, /it/negozio…).
+// Si el flag está off, además de excluirlas del sitemap, las bloqueamos
+// en robots.txt para que los buscadores ni las rastreen.
+const SHOP_PATHS = LOCALES.map((l) => `/${l}/${ROUTE_TRANSLATIONS.tienda[l]}`)
+
 module.exports = {
   siteUrl: SITE_URL,
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,
-  exclude: ['/', '/api/*'],
+  exclude: ['/', '/api/*', ...(SHOP_ENABLED ? [] : SHOP_PATHS)],
   robotsTxtOptions: {
     policies: [
       { userAgent: '*', allow: '/' },
-      { userAgent: '*', disallow: ['/api/'] },
+      { userAgent: '*', disallow: ['/api/', ...(SHOP_ENABLED ? [] : SHOP_PATHS)] },
     ],
   },
   transform: async (config, path) => {
     const canonical = canonicalOfPath(path)
+
+    // Tienda oculta por feature flag → fuera del sitemap (devuelve 404).
+    if (!SHOP_ENABLED && canonical === '/tienda') return null
+
     const cleanCanonical = canonical === '/' ? '' : canonical
 
     let priority = 0.6

@@ -6,7 +6,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { news, getNewsBySlug } from '@/data/news'
 import { cities } from '@/data/cities'
-import { getAlternates } from '@/lib/i18n-metadata'
+import { newsMetadata } from '@/lib/i18n-metadata'
 import { newsArticleSchema } from '@/lib/schema/generators'
 import { localizePath } from '@/data/i18n/routes'
 
@@ -21,11 +21,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const article = getNewsBySlug(params.slug)
   if (!article) return {}
-  return {
-    title: article.title,
-    description: article.excerpt,
-    alternates: getAlternates(`/noticias/${params.slug}`, 'es'),
-  }
+  return newsMetadata(article, params.slug, 'es')
 }
 
 export default function NoticiaPage({ params }: Props) {
