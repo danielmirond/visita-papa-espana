@@ -68,7 +68,9 @@ export default function KitBanner() {
   const stripped = pathname.replace(`/${currentLocale}/`, '').replace(`/${currentLocale}`, '')
   const firstSegment = stripped.split('/')[0]
 
-  // No mostrar en la propia página del kit ni en páginas legales/contacto
+  // No mostrar en la home (ya tiene CTAs al kit destacadas), ni en la
+  // propia página del kit, ni en páginas legales/contacto
+  if (!firstSegment) return null
   if (firstSegment === KIT_SLUGS[currentLocale]) return null
   if (HIDE_ON_SLUGS.has(firstSegment)) return null
 
