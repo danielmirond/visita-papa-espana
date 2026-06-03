@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import Container from '@/components/ui/Container'
-import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
+import KitPromoBanner from '@/components/affiliate/KitPromoBanner'
 import VaticanFlagBanner from '@/components/shared/VaticanFlagBanner'
 import PilgrimKitBanner from '@/components/shared/PilgrimKitBanner'
 import HomeProductShowcase from '@/components/affiliate/HomeProductShowcase'
@@ -216,9 +216,11 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* Banner afiliación 1 */}
+      {/* CTA kit del peregrino (antes espacio publicitario) */}
       <div className="py-6">
-        <BannerPlaceholder size="728x90" label={t.home.affiliateLabel1} />
+        <Container>
+          <KitPromoBanner locale={locale} />
+        </Container>
       </div>
 
       {/* Programa día a día */}
@@ -325,9 +327,11 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* Banner afiliación 2 */}
+      {/* CTA kit del peregrino (antes espacio publicitario) */}
       <div className="py-4">
-        <BannerPlaceholder size="728x90" label={t.home.affiliateLabel2} />
+        <Container>
+          <KitPromoBanner locale={locale} />
+        </Container>
       </div>
 
       {/* CTA registro */}
