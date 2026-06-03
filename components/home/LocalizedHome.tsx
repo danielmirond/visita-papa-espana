@@ -2,8 +2,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import Container from '@/components/ui/Container'
-import BannerPlaceholder from '@/components/affiliate/BannerPlaceholder'
+import KitPromoBanner from '@/components/affiliate/KitPromoBanner'
 import VaticanFlagBanner from '@/components/shared/VaticanFlagBanner'
+import PilgrimKitBanner from '@/components/shared/PilgrimKitBanner'
 import HomeProductShowcase from '@/components/affiliate/HomeProductShowcase'
 import JsonLd from '@/components/seo/JsonLd'
 import { getDictionary } from '@/data/i18n/dictionaries'
@@ -106,9 +107,17 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
           </div>
 
           <div className="mt-10 flex flex-wrap justify-center gap-3">
+            <a
+              href={siteConfig.registrationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
+            >
+              {t.home.registerBtn}
+            </a>
             <Link
               href={localizePath('/programa', locale)}
-              className="rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
+              className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
             >
               {dict.home.seeProgram}
             </Link>
@@ -122,10 +131,13 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* Bandera papal */}
+      {/* CTAs destacadas: kit del peregrino + bandera del Vaticano */}
       <div className="bg-white py-6">
         <Container>
-          <VaticanFlagBanner locale={locale} className="mb-0" />
+          <div className="grid items-stretch gap-4 sm:grid-cols-2">
+            <PilgrimKitBanner locale={locale} className="mb-0 h-full" />
+            <VaticanFlagBanner locale={locale} className="mb-0 h-full" />
+          </div>
         </Container>
       </div>
 
@@ -204,9 +216,11 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* Banner afiliación 1 */}
+      {/* CTA kit del peregrino (antes espacio publicitario) */}
       <div className="py-6">
-        <BannerPlaceholder size="728x90" label={t.home.affiliateLabel1} />
+        <Container>
+          <KitPromoBanner locale={locale} />
+        </Container>
       </div>
 
       {/* Programa día a día */}
@@ -313,9 +327,11 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* Banner afiliación 2 */}
+      {/* CTA kit del peregrino (antes espacio publicitario) */}
       <div className="py-4">
-        <BannerPlaceholder size="728x90" label={t.home.affiliateLabel2} />
+        <Container>
+          <KitPromoBanner locale={locale} />
+        </Container>
       </div>
 
       {/* CTA registro */}
