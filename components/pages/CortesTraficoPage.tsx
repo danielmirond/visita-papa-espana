@@ -73,7 +73,9 @@ export default function CortesTraficoPage({ locale }: CortesTraficoPageProps) {
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
             <span className="text-2xl">⏰</span>
-            {locale === 'es' ? 'Cierres por Hora' : 'Hourly Closures'}
+            {locale === 'es'
+              ? `Calles cortadas en ${currentCity.name} por hora`
+              : `Street closures in ${currentCity.name} by hour`}
           </h3>
           {cityClosures.length > 0 ? (
             <TrafficTimeline closures={cityClosures} locale={locale} />
@@ -91,7 +93,9 @@ export default function CortesTraficoPage({ locale }: CortesTraficoPageProps) {
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2">
               <span className="text-2xl">🚇</span>
-              {locale === 'es' ? 'Estaciones de metro cerradas' : 'Closed metro stations'}
+              {locale === 'es'
+                ? `Estaciones de metro cerradas en ${currentCity.name}`
+                : `Closed metro stations in ${currentCity.name}`}
             </h3>
             <p className="text-gray-600 mb-6">
               {locale === 'es'
