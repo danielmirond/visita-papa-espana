@@ -76,6 +76,16 @@ export const faq: FaqItem[] = [
     category: 'transporte',
   },
   {
+    question: '¿Qué estaciones de metro estarán cerradas por la visita del Papa?',
+    answer: 'En Madrid, durante la Misa de Cibeles del domingo 7 de junio, cerrarán de 06:00 a 10:00 las estaciones de Bilbao, Tribunal, Plaza de España, Noviciado, Ópera, Sol, Sevilla, Banco de España, Retiro, Príncipe de Vergara, Serrano, Colón y Chueca; de 10:00 a 14:00 permanecerán cerradas Colón, Serrano, Velázquez, Retiro, Banco de España, Sevilla y Chueca. El sábado 6 (vigilia en Plaza de Lima) se cierran accesos en Nuevos Ministerios, Cuzco y Santiago Bernabéu. En Barcelona, la estación de Sagrada Família (L2 y L5) permanece cerrada todo el miércoles 10 de junio y los trenes pasan sin detenerse. Consulta el detalle por día y franja horaria en la página de cortes de tráfico. Datos sujetos a cambios de última hora.',
+    category: 'transporte',
+  },
+  {
+    question: '¿Qué calles se cortan en Barcelona por la visita del Papa?',
+    answer: 'El miércoles 10 de junio la Sagrada Família queda blindada en un perímetro de nueve manzanas entre las calles Rosselló, Lepant, València y Sicília. El papamóvil recorrerá desde la Diagonal con Rosselló girando por Sardenya hasta la basílica, con cortes en Rosselló, Mallorca, Provença, Marina y Sardenya. El dispositivo afecta también a Ciutat Vella y Montjuïc, y se refuerzan las líneas de metro L1 a L5 y una lanzadera entre Plaça Espanya y el Estadi Olímpic.',
+    category: 'transporte',
+  },
+  {
     question: '¿Cómo llego a Canarias para la visita?',
     answer: 'La única opción es el avión. Hay vuelos directos a Gran Canaria (aeropuerto LPA) y Tenerife (aeropuertos TFN y TFS) desde Madrid y Barcelona. Entre islas hay vuelos interinsulares de 30 minutos y ferris de 1h30. Reserva con mucha antelación porque la demanda será altísima.',
     category: 'transporte',

@@ -932,14 +932,14 @@ export const seoByRoute: Partial<Record<RouteKey, SeoByLocale>> = {
 
   'cortes-trafico': {
     es: {
-      title: 'Cortes de tráfico Papa Madrid, Barcelona, Canarias 2026',
+      title: 'Estaciones de metro cerradas y cortes de tráfico Papa 2026',
       description:
-        'Cortes de tráfico día a día (6-12 junio): cierres por hora, calles afectadas, EMT alternativas, rutas y aparcamiento. Mapa interactivo por ciudad.',
+        'Estaciones de metro cerradas y cortes de tráfico (6-12 junio): qué líneas y calles se cortan en Madrid y Barcelona, horarios y alternativas. Mapa por ciudad.',
     },
     en: {
-      title: 'Traffic Closures: Pope Leo XIV Visit to Spain 2026',
+      title: 'Closed Metro Stations & Traffic Closures: Pope 2026',
       description:
-        'Daily traffic closures (6-12 June): street closures by hour, affected areas, public transport alternatives, routes and parking. Interactive map by city.',
+        'Closed metro stations and traffic closures (6-12 June): which lines and streets shut in Madrid and Barcelona, times and alternatives. Interactive map by city.',
     },
     it: {
       title: 'Chiusure al traffico Papa Madrid, Barcellona, Canarie',
