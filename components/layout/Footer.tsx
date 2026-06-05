@@ -118,6 +118,20 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              {currentLocale === 'es' && (
+                <>
+                  <li>
+                    <Link href="/es/donde-se-aloja-el-papa" className="text-sm text-white/60 transition-colors hover:text-papal-gold">
+                      ¿Dónde se aloja el Papa?
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/es/cuanto-cuesta-visita-papa" className="text-sm text-white/60 transition-colors hover:text-papal-gold">
+                      ¿Cuánto cuesta la visita?
+                    </Link>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
 
