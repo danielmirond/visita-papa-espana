@@ -806,13 +806,75 @@ export const energyNutrition: AmazonProduct[] = [
 // Exportar catálogo completo
 // ============================================================
 
+// ============================================================
+// ESSENTIALS CLIMA (carrusel global de una fila)
+// ============================================================
+
+export const climateEssentials: AmazonProduct[] = [
+  {
+    id: 'ventilador-mano-portatil',
+    category: 'comfort-wellness',
+    title: {
+      es: 'Ventilador de mano portátil',
+      en: 'Portable handheld fan',
+    },
+    description: {
+      es: 'Ventilador de mano recargable por USB, 3 velocidades. Imprescindible para las largas esperas al sol.',
+      en: 'Rechargeable USB handheld fan, 3 speeds. A must for long waits in the sun.',
+    },
+    amazonQuery: 'ventilador de mano portatil recargable usb',
+    priceRange: { min: 8, max: 20 },
+    tags: ['essencial', 'bestseller'],
+    placement: ['tienda', 'que-llevar', 'programa', 'como-asistir'],
+  },
+  {
+    id: 'abanico-espanol',
+    category: 'accessories',
+    title: {
+      es: 'Abanico español',
+      en: 'Spanish hand fan',
+    },
+    description: {
+      es: 'Abanico tradicional de madera y tela, ligero y plegable. Alivia el calor en misas y vigilias.',
+      en: 'Traditional wooden hand fan, light and foldable. Beats the heat at Masses and vigils.',
+    },
+    amazonQuery: 'abanico español madera tela plegable',
+    priceRange: { min: 6, max: 15 },
+    tags: ['essencial'],
+    placement: ['tienda', 'que-llevar', 'programa', 'como-asistir'],
+  },
+]
+
 export const amazonProductCatalog: AmazonProduct[] = [
   ...religiousMerchandise,
   ...travelGear,
   ...healthWellness,
   ...techConnectivity,
   ...energyNutrition,
+  ...climateEssentials,
 ]
+
+/**
+ * IDs de los productos del carrusel global de "essentials" (clima/calor),
+ * en el orden en que deben mostrarse en toda la web.
+ */
+export const CAROUSEL_ESSENTIAL_IDS = [
+  'ventilador-mano-portatil',
+  'power-bank-20000mah',
+  'sombrero-panama-plegable',
+  'gafas-uv400-polarizadas',
+  'abanico-espanol',
+  'botella-agua-insulated-1l',
+] as const
+
+/**
+ * Obtener productos por una lista de ids, respetando el orden de la lista.
+ */
+export function getProductsByIds(ids: readonly string[]): AmazonProduct[] {
+  return ids
+    .map((id) => amazonProductCatalog.find((p) => p.id === id))
+    .filter((p): p is AmazonProduct => Boolean(p))
+}
 
 // ============================================================
 // Funciones de utilidad

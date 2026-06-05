@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header'
 import UnofficialNotice from '@/components/shared/UnofficialNotice'
 import Footer from '@/components/layout/Footer'
 import KitBanner from '@/components/shared/KitBanner'
+import EssentialsCarousel from '@/components/affiliate/EssentialsCarousel'
 import JsonLd from '@/components/seo/JsonLd'
 import GoogleAnalytics from '@/components/seo/GoogleAnalytics'
 import CookieBanner from '@/components/shared/CookieBanner'
@@ -149,6 +150,7 @@ export default function RootLayout({
         <KitBanner />
         <Footer />
         <CookieBanner />
+        <EssentialsCarousel />
       </body>
     </html>
   )
