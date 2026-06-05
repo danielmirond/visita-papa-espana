@@ -29,4 +29,9 @@ jobs:
         run: sleep 120
 
       - name: Ping a buscadores
+        env:
+          # Opcional: si se configuran, también re-envía el sitemap a Google
+          # Search Console (sitemaps.submit). Si no existen, ese paso se omite.
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          GSC_PROPERTY: ${{ secrets.GSC_PROPERTY }}
         run: node scripts/ping-search-engines.mjs

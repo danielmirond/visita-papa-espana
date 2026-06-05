@@ -20,6 +20,8 @@
  *   INDEXNOW_KEY              → clave IndexNow (def: la del repo)
  */
 
+import { createSign } from 'node:crypto'
+
 const args = process.argv.slice(2)
 const argVal = (name, def = '') =>
   args.find((a) => a.startsWith(`--${name}=`))?.split('=').slice(1).join('=') || def
@@ -74,6 +76,68 @@ async function pingGoogleBestEffort() {
   console.log('  Google: confía en el lastmod del sitemap. Para envío directo, configura la Indexing API (service account).')
 }
 
+function base64url(input) {
+  return Buffer.from(input).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+}
+
+/**
+ * Envía (re-submite) el sitemap a Google Search Console vía su API oficial
+ * (sitemaps.submit). Es lo soportado para "avisar" a Google: el ping de
+ * sitemap está deprecado y la Indexing API solo admite JobPosting/BroadcastEvent.
+ *
+ * Requiere (como secrets en GitHub):
+ *   GOOGLE_SA_KEY  → JSON de una service account en base64
+ *   GSC_PROPERTY   → propiedad de Search Console (ej. "https://www.visita-papa-2026.com/"
+ *                    o "sc-domain:visita-papa-2026.com")
+ * La service account debe estar añadida como usuario en esa propiedad de GSC.
+ */
+async function submitGoogleSearchConsole() {
+  const rawKey = process.env.GOOGLE_SA_KEY
+  const property = process.env.GSC_PROPERTY
+  if (!rawKey || !property) {
+    console.log('  GSC: omitido (define GOOGLE_SA_KEY y GSC_PROPERTY para activar el envío oficial a Google).')
+    return
+  }
+  try {
+    const sa = JSON.parse(Buffer.from(rawKey, 'base64').toString('utf8'))
+    const now = Math.floor(Date.now() / 1000)
+    const header = base64url(JSON.stringify({ alg: 'RS256', typ: 'JWT' }))
+    const claim = base64url(
+      JSON.stringify({
+        iss: sa.client_email,
+        scope: 'https://www.googleapis.com/auth/webmasters',
+        aud: 'https://oauth2.googleapis.com/token',
+        iat: now,
+        exp: now + 3600,
+      })
+    )
+    const signer = createSign('RSA-SHA256')
+    signer.update(`${header}.${claim}`)
+    const signature = signer.sign(sa.private_key).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+    const assertion = `${header}.${claim}.${signature}`
+
+    const tokenRes = await fetch('https://oauth2.googleapis.com/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion }),
+    })
+    const token = (await tokenRes.json()).access_token
+    if (!token) {
+      console.error('  GSC ERROR: no se obtuvo access_token.')
+      return
+    }
+    const endpoint = `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(property)}/sitemaps/${encodeURIComponent(`${BASE}/sitemap.xml`)}`
+    const res = await fetch(endpoint, { method: 'PUT', headers: { Authorization: `Bearer ${token}` } })
+    if (res.status === 200 || res.status === 204) {
+      console.log(`  GSC: sitemap re-enviado a Search Console (HTTP ${res.status}).`)
+    } else {
+      console.error(`  GSC ERROR HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`)
+    }
+  } catch (e) {
+    console.error(`  GSC ERROR: ${e.message}`)
+  }
+}
+
 async function main() {
   let urls
   const urlsArg = argVal('urls')
@@ -89,6 +153,7 @@ async function main() {
   console.log('— IndexNow (Bing/Yandex/…) —')
   const sent = await submitIndexNow(urls)
   console.log('— Google —')
+  await submitGoogleSearchConsole()
   await pingGoogleBestEffort()
   console.log(`\nHecho. IndexNow: ${sent}/${urls.length} URLs.`)
 }
