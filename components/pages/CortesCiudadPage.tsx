@@ -23,7 +23,7 @@ export function getCortesCityMeta(slug: string, locale: Locale): { title: string
   const M: Partial<Record<Locale, { title: string; description: string }>> = {
     es: {
       title: `Calles cortadas y metro cerrado en ${city} (Papa 2026)`,
-      description: `Calles cortadas, estaciones de metro cerradas y cortes de tráfico en ${city} por la visita del Papa León XIV (junio 2026): horarios por acto, calles afectadas y alternativas.`,
+      description: `Calles cortadas, afectaciones al tráfico y estaciones de metro cerradas en ${city} por la visita del Papa León XIV (junio 2026): recorrido, horarios por acto y alternativas de transporte.`,
     },
     en: {
       title: `Street & metro closures in ${city} — Pope 2026`,
@@ -88,7 +88,7 @@ export default function CortesCiudadPage({ locale, slug }: { locale: Locale; slu
           </h1>
           <p className="text-lg text-blue-100 max-w-2xl mt-4">
             {isEs
-              ? `Cortes de tráfico, calles afectadas y estaciones de metro cerradas en ${cityName} durante la visita del Papa León XIV (junio 2026).`
+              ? `Afectaciones al tráfico, calles cortadas, recorrido y estaciones de metro cerradas en ${cityName} durante la visita del Papa León XIV (junio 2026).`
               : `Traffic closures, affected streets and closed metro stations in ${cityName} during Pope Leo XIV's visit (June 2026).`}
           </p>
         </div>

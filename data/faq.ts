@@ -17,6 +17,21 @@ export const faq: FaqItem[] = [
     category: 'general',
   },
   {
+    question: '¿A qué hora llega el Papa a Madrid?',
+    answer: 'El Papa León XIV llega al aeropuerto de Madrid-Barajas el sábado 6 de junio de 2026 hacia las 10:30, y a continuación acude al Palacio Real para la ceremonia de bienvenida con los Reyes. A Barcelona llega el martes 9 de junio sobre las 12:25 (aeropuerto de El Prat); a Gran Canaria el jueves 11 y a Tenerife el viernes 12. Los horarios pueden ajustarse por seguridad: consulta el programa día a día.',
+    category: 'general',
+  },
+  {
+    question: '¿Dónde se aloja el Papa en Madrid y Barcelona?',
+    answer: 'En Madrid, el Papa se aloja en la Nunciatura Apostólica (la sede diplomática de la Santa Sede en España); en Barcelona, en el Palacio Episcopal del Barrio Gótico; y en Gran Canaria, en el Palacio Episcopal de Las Palmas. No se hospeda en hoteles por motivos de protocolo y seguridad.',
+    category: 'general',
+  },
+  {
+    question: '¿Cuánto cuesta la visita del Papa y quién la paga?',
+    answer: 'La visita costará unos 25 millones de euros. La financiación procede en un 45 % de empresas, fundaciones y benefactores privados; un 30 % de las diócesis y la Conferencia Episcopal (aportaciones de los fieles); un 5 % de pequeños donativos; y un 20 % de las administraciones públicas (sobre todo seguridad y transporte). El retorno económico estimado supera los 150 millones de euros.',
+    category: 'general',
+  },
+  {
     question: '¿Cuál es el lema de la visita papal?',
     answer: 'El lema oficial de la visita apostólica es "Alzad la mirada", tomado del Evangelio de Juan 4,35.',
     category: 'general',
