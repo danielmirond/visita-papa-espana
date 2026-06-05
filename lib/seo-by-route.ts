@@ -13,6 +13,7 @@
 
 import type { Locale } from '@/data/i18n/types'
 import type { RouteKey } from '@/data/i18n/routes'
+import { clampText } from '@/lib/utils'
 
 type SeoEntry = { title: string; description: string }
 type SeoByLocale = Partial<Record<Locale, SeoEntry>>
@@ -993,6 +994,7 @@ export function getSeoMeta(
   if (!entry) return null
   return {
     ...entry,
+    description: clampText(entry.description, 160),
     ogImage: OG_IMAGE_BY_ROUTE[routeKey],
   }
 }
