@@ -8,6 +8,14 @@ import { Locale, LOCALES } from './types'
  * Para español, el slug no cambia.
  */
 export const ROUTE_TRANSLATIONS = {
+  'cuanto-cuesta-visita-papa': {
+    es: 'cuanto-cuesta-visita-papa', en: 'pope-visit-cost', it: 'costo-visita-papa', fr: 'cout-visite-pape',
+    de: 'kosten-papstbesuch', pt: 'custo-visita-papa', ca: 'cost-visita-papa', gl: 'canto-custa-visita-papa', eu: 'aita-santuaren-bisitaren-kostua',
+  },
+  'donde-se-aloja-el-papa': {
+    es: 'donde-se-aloja-el-papa', en: 'where-does-the-pope-stay', it: 'dove-alloggia-il-papa', fr: 'ou-loge-le-pape',
+    de: 'wo-wohnt-der-papst', pt: 'onde-fica-o-papa', ca: 'on-s-allotja-el-papa', gl: 'onde-se-aloxa-o-papa', eu: 'non-egiten-du-lo-aita-santuak',
+  },
   programa: {
     es: 'programa', en: 'schedule', it: 'programma', fr: 'programme',
     de: 'programm', pt: 'programa', ca: 'programa', gl: 'programa', eu: 'egitaraua',

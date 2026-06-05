@@ -118,20 +118,16 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
-              {currentLocale === 'es' && (
-                <>
-                  <li>
-                    <Link href="/es/donde-se-aloja-el-papa" className="text-sm text-white/60 transition-colors hover:text-papal-gold">
-                      ¿Dónde se aloja el Papa?
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/es/cuanto-cuesta-visita-papa" className="text-sm text-white/60 transition-colors hover:text-papal-gold">
-                      ¿Cuánto cuesta la visita?
-                    </Link>
-                  </li>
-                </>
-              )}
+              <li>
+                <Link href={prefixHref('/donde-se-aloja-el-papa')} className="text-sm text-white/60 transition-colors hover:text-papal-gold">
+                  {currentLocale === 'es' ? '¿Dónde se aloja el Papa?' : 'Where the Pope stays'}
+                </Link>
+              </li>
+              <li>
+                <Link href={prefixHref('/cuanto-cuesta-visita-papa')} className="text-sm text-white/60 transition-colors hover:text-papal-gold">
+                  {currentLocale === 'es' ? '¿Cuánto cuesta la visita?' : 'How much does it cost?'}
+                </Link>
+              </li>
             </ul>
           </div>
 
