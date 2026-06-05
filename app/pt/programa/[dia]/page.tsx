@@ -8,13 +8,13 @@ interface Props {
 }
 
 export function generateStaticParams() {
-  return getScheduleByLocale('es').map((d) => ({ dia: dateToSlug(d.date) }))
+  return getScheduleByLocale('pt').map((d) => ({ dia: dateToSlug(d.date) }))
 }
 
 export function generateMetadata({ params }: Props): Metadata {
-  return getDiaMeta('es', params.dia)
+  return getDiaMeta('pt', params.dia)
 }
 
 export default function Page({ params }: Props) {
-  return <DiaPage locale="es" dia={params.dia} />
+  return <DiaPage locale="pt" dia={params.dia} />
 }
