@@ -1,0 +1,32 @@
+name: Avisar buscadores (IndexNow)
+
+# Cada vez que se sube o cambia algo en main (deploy a producción),
+# notifica a los buscadores vía IndexNow (Bing/Yandex/…) + intento Google.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # disparo manual desde la pestaña Actions
+
+# Evita solapes si llegan varios pushes seguidos
+concurrency:
+  group: ping-search-engines
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Esperar al deploy de Vercel
+        # Da margen para que la nueva versión esté publicada antes de avisar
+        run: sleep 120
+
+      - name: Ping a buscadores
+        run: node scripts/ping-search-engines.mjs
