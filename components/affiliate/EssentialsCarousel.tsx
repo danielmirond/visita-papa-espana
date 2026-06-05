@@ -47,9 +47,9 @@ export default function EssentialsCarousel() {
   const t = LABELS[locale] || LABELS.es
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-papal-gold/30 bg-white/95 shadow-[0_-2px_12px_rgba(0,0,0,0.08)] backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center gap-3 px-3 py-2 sm:px-4">
-        <span className="hidden whitespace-nowrap text-xs font-bold text-papal-navy sm:inline">
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t-4 border-blue-600 bg-white shadow-[0_-6px_20px_rgba(0,0,0,0.15)]">
+      <div className="mx-auto flex max-w-6xl items-center gap-3 px-3 py-4 sm:px-4 sm:py-5">
+        <span className="hidden whitespace-nowrap text-sm font-bold text-blue-700 sm:inline">
           🎒 {t.title}
         </span>
         <ul className="flex flex-1 gap-2 overflow-x-auto" style={{ scrollbarWidth: 'none' }}>
@@ -59,10 +59,10 @@ export default function EssentialsCarousel() {
                 href={buildAmazonUrl(p.amazonQuery, locale)}
                 target="_blank"
                 rel="nofollow sponsored noopener noreferrer"
-                className="flex items-center gap-2 whitespace-nowrap rounded-lg border border-papal-gold/30 bg-papal-cream/60 px-3 py-1.5 text-sm text-papal-navy transition-colors hover:bg-papal-cream"
+                className="flex items-center gap-2 whitespace-nowrap rounded-lg border border-blue-200 bg-blue-50 px-4 py-2.5 text-sm font-medium text-papal-navy transition-colors hover:border-blue-400 hover:bg-blue-100 sm:text-base"
               >
-                <span className="font-medium">{p.title[locale] || p.title.es}</span>
-                <span className="text-xs font-semibold text-papal-gold-dark">
+                <span className="font-semibold">{p.title[locale] || p.title.es}</span>
+                <span className="text-xs font-bold text-blue-700 sm:text-sm">
                   €{p.priceRange.min}-{p.priceRange.max}
                 </span>
               </a>
