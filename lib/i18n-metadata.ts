@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { siteConfig } from '@/data/siteConfig'
 import { LOCALES, HTML_LANG, type Locale } from '@/data/i18n/types'
 import { localizePath, RouteKey } from '@/data/i18n/routes'
+import { clampText } from '@/lib/utils'
 
 /**
  * Genera los alternates (hreflang + canonical) para una página usando
@@ -49,7 +50,7 @@ export function newsMetadata(
   slug: string,
   currentLocale: Locale = 'es'
 ): Metadata {
-  const description = article.excerpt?.trim() || article.title
+  const description = clampText(article.excerpt?.trim() || article.title, 160)
   // article.date es YYYY-MM-DD; lo emitimos en formato Zulu (UTC, sufijo Z),
   // consistente con el `article:modified_time` global del layout (.toISOString()).
   const iso = `${article.date}T08:00:00Z`
