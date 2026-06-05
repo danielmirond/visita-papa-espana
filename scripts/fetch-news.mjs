@@ -32,6 +32,7 @@ const FEEDS = [
   { name: 'Ecclesia', url: 'https://revistaecclesia.es/feed/' },
   { name: 'Religión Digital', url: 'https://www.religiondigital.org/rss/' },
   { name: 'Vida Nueva', url: 'https://www.vidanuevadigital.com/feed/' },
+  { name: 'RTVE', url: 'https://www.rtve.es/api/tematicas/63070/noticias.rss' },
 ]
 
 // =============================================================================
@@ -181,11 +182,28 @@ function parseRss(xml) {
 
 // ----------------------------- Filtering -------------------------------
 
+// Fuentes cuyo RSS ya está curado por temática (todo el feed trata del
+// Papa/la visita). Para ellas basta con que el item mencione al Papa, la
+// visita o una de las ciudades en el título O la descripción.
+const TOPIC_CURATED_SOURCES = new Set(['RTVE'])
+// Exige León XIV / la visita / una ciudad del viaje. Se evita el "papa"
+// suelto para no colar contenido genérico de Francisco (la temática 63070
+// está etiquetada como "Papa Francisco").
+const TOPIC_CURATED_RX =
+  /le[oó]n\s+xiv|lle[oó]\s+xiv|visita\s+(del\s+)?papa|papa\s+(en|a|llega|viaja|visita)|sagrada\s+fam[ií]l|cibeles|bernab[eé]u|montju[ïi]c|montserrat|gran\s+canaria|tenerife|arguinegu[ií]n|\bmadridejos\b|papamóvil|papamovil/i
+
 function isRelevant(item, sourceName) {
   // El TÍTULO es la señal más fuerte (la descripción suele ser ruido).
   // Devuelve { ok, category } o null si no pasa.
   const title = item.title
   const url = item.link.toLowerCase()
+
+  // Fuentes curadas por temática: el feed ya es del Papa, aceptamos si
+  // título o descripción lo mencionan (evita perder noticias cuyo título
+  // no repite "visita del papa").
+  if (TOPIC_CURATED_SOURCES.has(sourceName)) {
+    return TOPIC_CURATED_RX.test(`${title} ${item.description}`) ? { ok: true, category: 'visita' } : null
+  }
 
   // Tier 1 — viaje específico a España. Cualquier fuente.
   const titleHasVisit = VISIT_KEYWORDS.some((rx) => rx.test(title))
