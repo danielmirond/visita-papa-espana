@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { trafficClosures, emtAlternativesGeneral, parkingInfo } from '@/data/traffic-closures'
 import MetroClosures from '@/components/traffic/MetroClosures'
 import type { Locale } from '@/data/i18n/types'
+import { localizePath } from '@/data/i18n/routes'
+import Link from 'next/link'
 import TrafficTimeline from '@/components/traffic/TrafficTimeline'
 import EMTAlternatives from '@/components/traffic/EMTAlternatives'
 import ParkingGuide from '@/components/traffic/ParkingGuide'
@@ -12,6 +14,9 @@ import TabsByCity from '@/components/traffic/TabsByCity'
 interface CortesTraficoPageProps {
   locale: Locale
 }
+
+// Ciudades con página dedicada de cortes (mayor demanda de búsqueda)
+const CITIES_WITH_PAGE = new Set(['madrid', 'barcelona'])
 
 const cityData: Record<string, { name: string; dates: string }> = {
   madrid: { name: 'Madrid', dates: '6-9 junio' },
@@ -65,6 +70,17 @@ export default function CortesTraficoPage({ locale }: CortesTraficoPageProps) {
               <span className="text-xl">🕐</span>
               {currentCity.dates}
             </p>
+            {CITIES_WITH_PAGE.has(activeCity) && (
+              <Link
+                href={localizePath(`/cortes-trafico/${activeCity}`, locale)}
+                className="mt-4 inline-flex items-center gap-1 rounded-lg bg-blue-600 px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-blue-700"
+              >
+                {locale === 'es'
+                  ? `Ver calles cortadas y metro en ${currentCity.name}`
+                  : `See street & metro closures in ${currentCity.name}`}
+                <span aria-hidden="true">→</span>
+              </Link>
+            )}
           </div>
         </div>
 
