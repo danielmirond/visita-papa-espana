@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import DondeSeAlojaPage, { getDondeSeAlojaMeta } from '@/components/pages/DondeSeAlojaPage'
 
-export const metadata: Metadata = getDondeSeAlojaMeta('es')
+export const metadata: Metadata = getDondeSeAlojaMeta('ca')
 
 export default function Page() {
-  return <DondeSeAlojaPage locale="es" />
+  return <DondeSeAlojaPage locale="ca" />
 }

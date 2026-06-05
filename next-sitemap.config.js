@@ -15,6 +15,8 @@ const SHOP_ENABLED = process.env.NEXT_PUBLIC_SHOP_ENABLED === 'true'
 
 // Traducciones de rutas canónicas
 const ROUTE_TRANSLATIONS = {
+  'cuanto-cuesta-visita-papa': { es: 'cuanto-cuesta-visita-papa', en: 'pope-visit-cost', it: 'costo-visita-papa', fr: 'cout-visite-pape', de: 'kosten-papstbesuch', pt: 'custo-visita-papa', ca: 'cost-visita-papa', gl: 'canto-custa-visita-papa', eu: 'aita-santuaren-bisitaren-kostua' },
+  'donde-se-aloja-el-papa': { es: 'donde-se-aloja-el-papa', en: 'where-does-the-pope-stay', it: 'dove-alloggia-il-papa', fr: 'ou-loge-le-pape', de: 'wo-wohnt-der-papst', pt: 'onde-fica-o-papa', ca: 'on-s-allotja-el-papa', gl: 'onde-se-aloxa-o-papa', eu: 'non-egiten-du-lo-aita-santuak' },
   programa: { es: 'programa', en: 'schedule', it: 'programma', fr: 'programme', de: 'programm', pt: 'programa', ca: 'programa', gl: 'programa', eu: 'egitaraua' },
   ciudades: { es: 'ciudades', en: 'cities', it: 'citta', fr: 'villes', de: 'staedte', pt: 'cidades', ca: 'ciutats', gl: 'cidades', eu: 'hiriak' },
   'como-asistir': { es: 'como-asistir', en: 'how-to-attend', it: 'come-partecipare', fr: 'comment-assister', de: 'teilnahme', pt: 'como-assistir', ca: 'com-assistir', gl: 'como-asistir', eu: 'nola-parte-hartu' },
