@@ -7,6 +7,7 @@ import VaticanFlagBanner from '@/components/shared/VaticanFlagBanner'
 import PilgrimKitBanner from '@/components/shared/PilgrimKitBanner'
 import HomeProductShowcase from '@/components/affiliate/HomeProductShowcase'
 import JsonLd from '@/components/seo/JsonLd'
+import LiveBroadcast from '@/components/home/LiveBroadcast'
 import { getDictionary } from '@/data/i18n/dictionaries'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { type Locale } from '@/data/i18n/types'
@@ -71,6 +72,9 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
   return (
     <>
       <JsonLd data={visitMainEventSchema(locale)} />
+
+      {/* Retransmisión en directo (cuenta atrás → embed YouTube RTVE) */}
+      <LiveBroadcast locale={locale} />
 
       {/* Hero */}
       <section className="relative min-h-[600px] overflow-hidden">
