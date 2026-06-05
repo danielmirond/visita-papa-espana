@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'a-que-hora-llega-el-papa-a-madrid-horarios-visita-espana',
+    title: 'A qué hora llega el Papa a Madrid: horarios de llegada a cada ciudad',
+    excerpt:
+      'El Papa León XIV aterriza en el aeropuerto de Madrid-Barajas el sábado 6 de junio sobre las 10:30. Estos son los horarios de llegada a Madrid, Barcelona, Gran Canaria y Tenerife durante el viaje (6-12 de junio).',
+    content:
+      'El Viaje Apostólico del Papa León XIV a España arranca el sábado 6 de junio de 2026. ¿A qué hora llega el Papa a Madrid? El avión pontificio aterriza en el aeropuerto Adolfo Suárez Madrid-Barajas sobre las 10:30, donde será recibido por las autoridades. Después se traslada al Palacio Real para la ceremonia de bienvenida con los Reyes. Horarios de llegada a cada ciudad: MADRID — sábado 6 de junio, llegada a Barajas hacia las 10:30. BARCELONA — martes 9 de junio, llegada al aeropuerto de El Prat hacia las 12:25, con rezo posterior en la Catedral. GRAN CANARIA — jueves 11 de junio, con encuentro con personas migrantes y misa en el Estadio de Gran Canaria por la tarde. TENERIFE — viernes 12 de junio, última jornada con la misa de clausura. Conviene consultar el programa día a día y los cortes de tráfico, ya que los horarios pueden ajustarse por motivos de seguridad. Los actos principales se retransmiten en directo por RTVE.',
+    date: '2026-06-05',
+    source: 'Visita Papa 2026',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
     slug: 'caritas-leon-xiv-en-espana-para-abrazar-el-mundo-de-la-fragilidad',
     title: 'Cáritas: León XIV en España para abrazar el mundo de la fragilidad',
     excerpt: 'La secretaria general de la organización caritativa eclesial, María González Dyne, habló con medios vaticanos sobre el próximo viaje apostólico del Papa a la Península Ibérica, del 6 al 12 de junio, durante el cual tambi…',
