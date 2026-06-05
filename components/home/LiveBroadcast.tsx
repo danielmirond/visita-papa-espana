@@ -147,7 +147,7 @@ function Announcement({
           {when && <span className="text-sm text-white/85">· {when}</span>}
         </div>
         <a
-          href="https://www.rtve.es/directo/la-1/"
+          href="https://www.rtve.es/play/papa-leon-xiv/"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-lg bg-white px-4 py-1.5 text-sm font-bold text-red-700 transition-colors hover:bg-red-50"
