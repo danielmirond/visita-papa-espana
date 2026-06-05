@@ -33,6 +33,10 @@ const FEEDS = [
   { name: 'Religión Digital', url: 'https://www.religiondigital.org/rss/' },
   { name: 'Vida Nueva', url: 'https://www.vidanuevadigital.com/feed/' },
   { name: 'RTVE', url: 'https://www.rtve.es/api/tematicas/63070/noticias.rss' },
+  { name: 'El Mundo', url: 'https://www.elmundo.es/rss/googlenews/internacional/papa-francisco-i.xml' },
+  { name: 'El País', url: 'https://feeds.elpais.com/mrss-s/list/ep/site/elpais.com/tag/papa_a' },
+  { name: 'ABC', url: 'https://www.abc.es/rss/atom/ultima-hora/' },
+  { name: 'El Confidencial', url: 'https://rss.elconfidencial.com/espana/' },
 ]
 
 // =============================================================================
@@ -157,6 +161,8 @@ function decodeCdata(text) {
 function parseRss(xml) {
   const items = []
   let cursor = 0
+
+  // --- RSS 2.0 (<item>) ---
   while (true) {
     const item = extractTag(xml, 'item', cursor)
     if (!item) break
@@ -177,6 +183,37 @@ function parseRss(xml) {
       date: dateRaw.trim(),
     })
   }
+  if (items.length > 0) return items
+
+  // --- Atom (<entry>) — ABC, El Confidencial, etc. ---
+  cursor = 0
+  while (true) {
+    const entry = extractTag(xml, 'entry', cursor)
+    if (!entry) break
+    cursor = entry.end
+
+    const titleRaw = extractTag(entry.content, 'title')?.content || ''
+    // El link de Atom es <link href="..."/> (atributo, autocerrado).
+    const linkMatch =
+      entry.content.match(/<link[^>]*rel="alternate"[^>]*href="([^"]+)"/i) ||
+      entry.content.match(/<link[^>]*href="([^"]+)"/i)
+    const link = linkMatch ? linkMatch[1] : ''
+    const descRaw =
+      extractTag(entry.content, 'summary')?.content ||
+      extractTag(entry.content, 'content')?.content ||
+      ''
+    const dateRaw =
+      extractTag(entry.content, 'updated')?.content ||
+      extractTag(entry.content, 'published')?.content ||
+      ''
+
+    items.push({
+      title: decodeCdata(titleRaw),
+      link: decodeCdata(link),
+      description: decodeCdata(descRaw),
+      date: dateRaw.trim(),
+    })
+  }
   return items
 }
 
@@ -185,7 +222,7 @@ function parseRss(xml) {
 // Fuentes cuyo RSS ya está curado por temática (todo el feed trata del
 // Papa/la visita). Para ellas basta con que el item mencione al Papa, la
 // visita o una de las ciudades en el título O la descripción.
-const TOPIC_CURATED_SOURCES = new Set(['RTVE'])
+const TOPIC_CURATED_SOURCES = new Set(['RTVE', 'El Mundo', 'El País'])
 // Exige León XIV / la visita / una ciudad del viaje. Se evita el "papa"
 // suelto para no colar contenido genérico de Francisco (la temática 63070
 // está etiquetada como "Papa Francisco").
