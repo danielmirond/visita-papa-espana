@@ -38,7 +38,7 @@ export const liveBroadcast: LiveBroadcastConfig = {
     { label: 'Señal 2', youtubeUrl: 'https://www.youtube.com/watch?v=ptCETju1Wv0' },
     { label: 'Señal 3', youtubeUrl: 'https://www.youtube.com/watch?v=aTU1oUvmJEQ' },
     { label: 'Señal 4', youtubeUrl: 'https://www.youtube.com/watch?v=h-PXqNkwm0M' },
-    { label: 'Señal 5', youtubeUrl: 'https://www.youtube.com/watch?v=_EKs0D2BRbc' },
+    { label: 'RTVE', youtubeUrl: 'https://www.youtube.com/watch?v=_EKs0D2BRbc' },
   ],
   // Señal 2 (ptCETju1Wv0) es la que permite embed → por defecto.
   defaultSignal: 1,
