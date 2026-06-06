@@ -1,0 +1,32 @@
+name: Liveblog autónomo (cada 5 min)
+
+on:
+  schedule:
+    # Cada 5 min durante la visita. GitHub Actions garantiza ~5 min de
+    # precisión (puede haber retrasos en horas pico).
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: liveblog
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch + reescritura + push
+        run: node scripts/auto-liveblog.mjs --commit --max=3
