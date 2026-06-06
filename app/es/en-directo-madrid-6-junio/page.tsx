@@ -39,6 +39,10 @@ const FUENTES_DIRECTO = [
 
 export default function EnDirectoMadrid6() {
   const lb = liveblogMadrid6
+  // Orden cronológico robusto (las fuentes mezclan offsets Z y +02:00).
+  const orderedEntries = [...lb.entries].sort(
+    (a, b) => new Date(b.datetime).getTime() - new Date(a.datetime).getTime()
+  )
 
   return (
     <>
@@ -81,7 +85,7 @@ export default function EnDirectoMadrid6() {
           <div>
             <p className="mb-5 font-heading text-2xl font-bold text-papal-navy">Minuto a minuto</p>
             <ol className="relative space-y-8 border-l-2 border-papal-gold/30 pl-6">
-              {lb.entries.map((e) => (
+              {orderedEntries.map((e) => (
                 <li key={e.datetime} className="relative">
                   <span className="absolute -left-[31px] top-1 flex h-4 w-4 items-center justify-center rounded-full bg-papal-gold ring-4 ring-white" />
                   <time dateTime={e.datetime} className="text-sm font-bold text-papal-gold-dark">

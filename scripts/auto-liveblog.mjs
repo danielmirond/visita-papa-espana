@@ -187,8 +187,8 @@ function insertEntries(src, entries) {
     .join('\n')
   // Insertar tras "entries: ["
   let next = src.replace(/(entries:\s*\[\n)/, `$1${block}\n`)
-  // Actualizar dateModified al máximo iso de las nuevas
-  const newest = entries.reduce((a, b) => (a.datetime > b.datetime ? a : b))
+  // Actualizar dateModified al máximo iso (por epoch) de las nuevas
+  const newest = entries.reduce((a, b) => (new Date(a.datetime).getTime() >= new Date(b.datetime).getTime() ? a : b))
   next = next.replace(/dateModified:\s*'[^']*'/, `dateModified: '${newest.datetime}'`)
   return next
 }
@@ -213,12 +213,14 @@ async function main() {
   const publishedTitles = readPublishedTitlesNormalised(src)
   console.error(`Última entrada publicada: ${lastIso || '(ninguna)'} · ${publishedTimes.size} entradas previas`)
 
+  const lastMs = lastIso ? new Date(lastIso).getTime() : 0
   const updates = await fetchAll()
-  // Filtrar: más nuevos que lastIso, hora no publicada, titular no publicado
+  // Filtrar por EPOCH (no string: hay isos en Z y en +02:00), hora no
+  // publicada, titular no publicado. Coge las MÁS NUEVAS.
   const seen = new Set()
   const fresh = updates
     .filter((u) => u.iso && u.headline)
-    .filter((u) => !lastIso || u.iso > lastIso)
+    .filter((u) => { const t = new Date(u.iso).getTime(); return !isNaN(t) && t > lastMs })
     .filter((u) => u.time && !publishedTimes.has(u.time))
     .filter((u) => {
       const rew = rewrite(u)
@@ -228,7 +230,7 @@ async function main() {
       seen.add(u.time); seen.add(norm)
       return true
     })
-    .sort((a, b) => a.iso.localeCompare(b.iso)) // ascendente: para insertar las más antiguas primero (quedan al final del bloque insertado)
+    .sort((a, b) => new Date(b.iso).getTime() - new Date(a.iso).getTime()) // DESC: las más nuevas primero
     .slice(0, MAX)
   console.error(`Novedades: ${fresh.length} (limit=${MAX})`)
   if (!fresh.length) {
@@ -236,9 +238,10 @@ async function main() {
     return
   }
 
-  // Reescribir y preparar; las insertamos en orden inverso (más recientes arriba)
+  // fresh ya viene de más nueva a más antigua → ese es el orden de inserción
+  // (la más nueva queda arriba del todo).
   const rewritten = fresh.map(rewrite)
-  const inserted = [...rewritten].reverse()
+  const inserted = rewritten
 
   const next = insertEntries(src, inserted)
   if (DRY) {
