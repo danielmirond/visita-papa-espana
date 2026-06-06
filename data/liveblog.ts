@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T12:40:35+02:00',
+  dateModified: '2026-06-06T12:52:22Z',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '14:52',
+      datetime: '2026-06-06T12:52:22Z',
+      title: "Se prevé asistencia masiva a los actos del Papa masivos en Madrid",
+      body: "La organización de la visita del Papa prevé una asistencia masiva para los dos actos principales en Madrid. A estas horas son más de 240.000 personas las inscritas a través los formularios de acreditación para participar en la vigilia de esta tarde en la plaza de Lima, y 380.000 de cara a la gran misa de mañana en Cibeles. En total, los inscritos superan las 620.000 personas en todos los actos programados en la capital. Unas cifras que aún serán mayores, según considera el director de comunicación de la visita del Papa, Rafa Rubio: &amp;quot;La inscripción no es obligatoria, por lo que… (Según El Mundo.)",
+    },
+    {
+      time: '12:50',
+      datetime: '2026-06-06T12:50:51+02:00',
+      title: "El Rey Felipe VI comienza su discurso por la visita del Papa León XIV a España.",
+      body: "El Rey Felipe VI comienza su discurso por la visita del Papa León XIV a España. (Según ABC.)",
+    },
+    {
+      time: '12:46',
+      datetime: '2026-06-06T12:46:11+02:00',
+      title: "El Santo Padre se encuentra con las autoridades, acompañado de la Familia Real.",
+      body: "El Santo Padre se encuentra con las autoridades, acompañado de la Familia Real. Dentro de la visita de cortesía a Sus Majestades los Reyes de España, de la foto oficial, del Intercambio de regalos privado y del encuentro privado en el Salón de los Espejos, el Papa se ha dirigido con sus majestades al Salón de Columnas para el encuentro con las Autoridades, saludando a los presidentes de las Autonomías y otros líderes políticos de los diferentes partidos. (Según ABC.)",
+    },
     {
       time: '12:40',
       datetime: '2026-06-06T12:40:35+02:00',
