@@ -40,9 +40,9 @@ export const liveBroadcast: LiveBroadcastConfig = {
     { label: 'Señal 4', youtubeUrl: 'https://www.youtube.com/watch?v=h-PXqNkwm0M' },
     { label: 'RTVE', youtubeUrl: 'https://www.youtube.com/watch?v=_EKs0D2BRbc' },
   ],
-  // Señal 2 (ptCETju1Wv0) es la que permite embed → por defecto.
-  defaultSignal: 1,
-  youtubeUrl: 'https://www.youtube.com/watch?v=ptCETju1Wv0',
+  // Por defecto: RTVE 24h (señal genérica que no se corta).
+  defaultSignal: 0,
+  youtubeUrl: 'https://www.youtube.com/watch?v=b4tE5aKhtlg',
   source: 'RTVE',
 }
 
