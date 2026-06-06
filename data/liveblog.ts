@@ -37,10 +37,22 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T12:07:37+02:00',
+  dateModified: '2026-06-06T12:10:21+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '12:10',
+      datetime: '2026-06-06T12:10:21+02:00',
+      title: "León XIV, recibido con honores por los Reyes y sus hijas a su llegada al Palacio Real",
+      body: "El Papa León XIV ha sido recibido con honores por los Reyes Felipe VI y Letizia junto a la Princesa de Asturias y la Infanta Sofía a su llegada al Palacio Real de Madrid para el que será el primer acto oficial de la agenda de su visita a España, la primera de un Pontífice desde la que realizó Benedicto XIV en 2011. (Según Europa Press.)",
+    },
+    {
+      time: '12:09',
+      datetime: '2026-06-06T12:09:04+02:00',
+      title: "El momento en el que la Familia Real ha saludado a las autoridades eclesiásticas en el Palacio Real.",
+      body: "El momento en el que la Familia Real ha saludado a las autoridades eclesiásticas en el Palacio Real. (Según ABC.)",
+    },
     {
       time: '12:07',
       datetime: '2026-06-06T12:07:37+02:00',
