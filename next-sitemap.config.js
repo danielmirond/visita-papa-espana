@@ -94,6 +94,7 @@ module.exports = {
   priority: 0.7,
   exclude: ['/', '/api/*', ...(SHOP_ENABLED ? [] : SHOP_PATHS)],
   robotsTxtOptions: {
+    additionalSitemaps: [`${SITE_URL}/news-sitemap.xml`],
     policies: [
       { userAgent: '*', allow: '/' },
       { userAgent: '*', disallow: ['/api/', ...(SHOP_ENABLED ? [] : SHOP_PATHS)] },
