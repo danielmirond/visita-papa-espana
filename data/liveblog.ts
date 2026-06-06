@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T13:00:59+02:00',
+  dateModified: '2026-06-06T13:04:00+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '13:04',
+      datetime: '2026-06-06T13:04:00+02:00',
+      title: "El Santo Padre hace mención a la paz, las ideologías y la verdad.",
+      body: "El Santo Padre hace mención a la paz, las ideologías y la verdad. «Vengo entre ustedes para confirmar, alentar e inspirar una renovada fidelidad de los creyentes al Evangelio, así como una reconciliación y una cooperación más profundas entre las distintas fuerzas de esta Nación. De hecho, su propia historia sugiere que no es la cultura del enfrentamiento , sino la del encuentro, la que genera estabilidad y prosperidad. El mensaje de paz que en estos tiempos, por desgracia, resuena para algunos como ingenuo y para otros como provocador, encuentra acogida en quienes no se encierran en… (Según ABC.)",
+    },
+    {
+      time: '13:02',
+      datetime: '2026-06-06T13:02:43+02:00',
+      title: "León XIV, sobre España: «¡Es un pueblo lleno de pasión, que ama la vida y lo manifiesta!».",
+      body: "León XIV, sobre España: «¡Es un pueblo lleno de pasión, que ama la vida y lo manifiesta!». (Según ABC.)",
+    },
+    {
+      time: '15:01',
+      datetime: '2026-06-06T13:01:16Z',
+      title: "Unas 130.000 personas han recibido a León XIV en las calles de Madrid entre el Palacio Real y la Nunciatura",
+      body: "Unas 130.000 personas han recibido a León XIV en las calles de la capital entre el Palacio Real y la Nunciatura, ha cuantificado la Delegación de Gobierno en Madrid en un comunicado. El Papa ha iniciado cerca de las 13.40 horas de este 6 de junio su primer recorrido en papamóvil por las calles de Madrid, acompañado en aplausos, saludos y cánticos de &amp;apos;¡Viva el Papa!&amp;apos; y &amp;apos;Alza la mirada&amp;apos;, lema oficial de la visita a España, que ha comenzado con la recepción oficial celebrada en el Palacio Real con autoridades del Estado y representantes del cuerpo… (Según El Mundo.)",
+    },
     {
       time: '13:00',
       datetime: '2026-06-06T13:00:59+02:00',
