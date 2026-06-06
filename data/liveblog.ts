@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T21:00:00+02:00',
-  dateModified: '2026-06-06T23:05:51+02:00',
+  dateModified: '2026-06-07T00:01:31+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '00:01',
+      datetime: '2026-06-07T00:01:31+02:00',
+      title: "El Papa ante el «giro católico» de los jóvenes: «Las ideologías pasan, la verdad permanece» .",
+      body: "El Papa ante el «giro católico» de los jóvenes: «Las ideologías pasan, la verdad permanece» . Dicen que lo católico está de moda, sobre todo entre los jóvenes. A cuenta de la vocación en 'Los Domingos', del parafraseo hagiográfico de Rosalía en 'Lux' o de las conversiones de los retiros de impacto exhibidas hasta el descaro por los 'influencers' cristianos, llevamos meses llenando páginas sobre el «giro 200.000 representantes de esta generación, a caballo entre los 'millennials' y la Z, las inquietudes sobre cómo «reconocer la voz de Dios» en el ruido del mundo y sobre la misión concreta… (Según ABC.)",
+    },
+    {
+      time: '23:49',
+      datetime: '2026-06-06T23:49:02+02:00',
+      title: "Bad Bunny, en su concierto, y el Papa, en la Vigilia, avisan a los jóvenes sobre las redes sociales",
+      body: "Bad Bunny ha alcanzado, con el concierto de este sábado 6 de junio, el ecuador de su residencia de 10 recitales en Madrid. El quinto y sexto de ellos coinciden con la presencia del Papa León XIV, que justamente este sábado ha protagonizado la Vigilia con jóvenes la Plaza de Lima. (Según Europa Press.)",
+    },
+    {
+      time: '23:31',
+      datetime: '2026-06-06T23:31:31+02:00',
+      title: "Vive Dios»: Antonio Banderas pone música y baile al Evangelio en la vigilia de oración .",
+      body: "«Vive Dios»: Antonio Banderas pone música y baile al Evangelio en la vigilia de oración . Los actores del musical 'Godspell' han protagonizado el momento más inesperado de la vigilia de hoy en la plaza de Lima al interpretar algunos de los temas -en la versión de Antonio Banderas- del clásico de Broadway frente al Papa León XIV. Durante unos minutos, un elenco de cantantes vestidos de formas estrambóticas y con un acompañamiento musical que ha elevado los decibelios frente al Santiago Bernabéu, han cantado y bailado un popurrí con algunos de los temas más inolvidables de la obra, incluido… (Según ABC.)",
+    },
     {
       time: '23:05',
       datetime: '2026-06-06T23:05:51+02:00',
