@@ -24,7 +24,7 @@ export const liveBroadcast: LiveBroadcastConfig = {
   startsAt: '2026-06-06T09:50:00+02:00',
   endsAt: '2026-06-12T23:59:00+02:00',
   // Directo de RTVE en YouTube (vídeo concreto del viaje del Papa).
-  youtubeUrl: 'https://www.youtube.com/watch?v=_EKs0D2BRbc',
+  youtubeUrl: 'https://www.youtube.com/watch?v=ptCETju1Wv0',
   source: 'RTVE',
 }
 

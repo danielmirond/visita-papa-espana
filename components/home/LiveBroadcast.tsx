@@ -12,6 +12,7 @@ interface Strings {
   countdownPrefix: string // "Empieza en"
   soon: string // "El directo está a punto de empezar"
   watchOnRtve: string
+  openOnYouTube: string
   source: (s: string) => string
 }
 
@@ -24,6 +25,7 @@ const L: Record<'es' | 'en', Strings> = {
     countdownPrefix: 'Empieza en',
     soon: 'El directo está a punto de empezar…',
     watchOnRtve: 'Ver en RTVE',
+    openOnYouTube: 'Ver en YouTube',
     source: (s) => `Señal de ${s}`,
   },
   en: {
@@ -34,6 +36,7 @@ const L: Record<'es' | 'en', Strings> = {
     countdownPrefix: 'Starts in',
     soon: 'The live stream is about to begin…',
     watchOnRtve: 'Watch on RTVE',
+    openOnYouTube: 'Watch on YouTube',
     source: (s) => `${s} signal`,
   },
 }
@@ -128,6 +131,25 @@ function EmbedPlayer({ t, embed }: { t: Strings; embed: string }) {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           />
+        </div>
+        {/* Salida si el propietario tiene el embed bloqueado */}
+        <div className="mt-2 flex flex-wrap items-center gap-3 text-sm">
+          <a
+            href={liveBroadcast.youtubeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-white underline hover:text-papal-gold"
+          >
+            ▶ {t.openOnYouTube}
+          </a>
+          <a
+            href="https://www.rtve.es/play/papa-leon-xiv/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/70 underline hover:text-white"
+          >
+            {t.watchOnRtve}
+          </a>
         </div>
       </div>
     </section>
