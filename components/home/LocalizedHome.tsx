@@ -76,6 +76,20 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
       {/* Retransmisión en directo (cuenta atrás → embed YouTube RTVE) */}
       <LiveBroadcast locale={locale} />
 
+      {/* Acceso al liveblog */}
+      {locale === 'es' && (
+        <div className="bg-red-600">
+          <Container className="py-2 text-center">
+            <Link
+              href="/es/en-directo-madrid-6-junio"
+              className="inline-flex items-center gap-2 text-sm font-bold text-white hover:underline"
+            >
+              🔴 Visita del Papa en directo · minuto a minuto →
+            </Link>
+          </Container>
+        </div>
+      )}
+
       {/* Hero */}
       <section className="relative min-h-[600px] overflow-hidden">
         <Image

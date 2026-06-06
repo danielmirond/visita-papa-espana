@@ -63,15 +63,15 @@ export default function EnDirectoMadrid6() {
 
           {/* Feed de actualizaciones (liveblog) */}
           <div>
-            <h2 className="mb-5 font-heading text-2xl font-bold text-papal-navy">Minuto a minuto</h2>
-            <ol className="relative space-y-6 border-l-2 border-papal-gold/30 pl-6">
+            <p className="mb-5 font-heading text-2xl font-bold text-papal-navy">Minuto a minuto</p>
+            <ol className="relative space-y-8 border-l-2 border-papal-gold/30 pl-6">
               {lb.entries.map((e) => (
                 <li key={e.datetime} className="relative">
                   <span className="absolute -left-[31px] top-1 flex h-4 w-4 items-center justify-center rounded-full bg-papal-gold ring-4 ring-white" />
                   <time dateTime={e.datetime} className="text-sm font-bold text-papal-gold-dark">
                     {e.time}
                   </time>
-                  <h3 className="mt-1 font-heading text-lg font-bold text-papal-navy">{e.title}</h3>
+                  <h2 className="mt-1 font-heading text-xl font-bold text-papal-navy">{e.title}</h2>
                   <p className="mt-1 text-papal-navy/75">{e.body}</p>
                 </li>
               ))}
