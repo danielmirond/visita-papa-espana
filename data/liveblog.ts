@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T12:10:21+02:00',
+  dateModified: '2026-06-06T12:18:21+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '12:18',
+      datetime: '2026-06-06T12:18:21+02:00',
+      title: "El Papa, sobre si los jóvenes irán a verle a él o a Bad Bunny: «Habrá algunos aquí para ver al Papa.",
+      body: "El Papa, sobre si los jóvenes irán a verle a él o a Bad Bunny: «Habrá algunos aquí para ver al Papa. Y eso dice mucho». En el avión, sobre el momento católico en España. «Me alegran mucho los informes que estoy recibiendo [sobre el aumento del número de conversiones]», afirmó. (Según ABC.)",
+    },
+    {
+      time: '12:17',
+      datetime: '2026-06-06T12:17:15+02:00',
+      title: "Papa.- Cientos de fieles dan la bienvenida a León XIV: \"Papa León, te queremos un montón",
+      body: "Cientos de fieles procedentes de distintos puntos de España, así como de otras partes del mundo, se han congregado este sábado 6 de junio en las inmediaciones del Palacio Real de Madrid para dar la bienvenida al Papa León XIV en la recepción oficial, uno de los actos con los que comienza su viaje a España. (Según Europa Press.)",
+    },
+    {
+      time: '12:15',
+      datetime: '2026-06-06T12:15:32+02:00',
+      title: "El mensaje de los atuendos del Papa.",
+      body: "El mensaje de los atuendos del Papa. Del ropaje de Jefe de Estado al recuerdo de su sacerdocio, el Pontífice llevará casi una veintena de prendas o accesorios en su viaje por España, todos con una simbología propia. Consulta en este enlace el reportaje completo de Javier Martínez-Brocal (texto) y Rodrigo Parrado (diseño e ilustración). (Según ABC.)",
+    },
     {
       time: '12:10',
       datetime: '2026-06-06T12:10:21+02:00',
