@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T21:00:00+02:00',
-  dateModified: '2026-06-07T00:01:31+02:00',
+  dateModified: '2026-06-07T01:01:31+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '01:01',
+      datetime: '2026-06-07T01:01:31+02:00',
+      title: "Cantos, alabanza y mucha oración: así se vivió la vigilia de los jóvenes con el Papa en comunidad .",
+      body: "Cantos, alabanza y mucha oración: así se vivió la vigilia de los jóvenes con el Papa en comunidad . Conforme miles de jóvenes peregrinos fueron acercándose al paseo de la Castellana, las puertas de acceso para entrar a la vigilia de los jóvenes con el Papa cada vez fueron más complicadas. Aún lo fue más si antes de esta celebración habías tenido que venir directo y con prisas de una comunión, como les ocurrió a los jóvenes de la parroquia de San José. «Venimos de la comunión de Santi, un niño de nuestra comunidad. (Según ABC.)",
+    },
+    {
+      time: '00:48',
+      datetime: '2026-06-06T22:48:11Z',
+      title: "El Papa de \"la luz\" que habla \"claro y firme\" al mundo desde España desborda Madrid de júbilo",
+      body: "Recados para todos y mensajes por doquier. El primer día de León XIV en España dejó tres alocuciones públicas del Papa y una intervención en el avión que ya han servido para remover conciencias y sembrar semillas de reflexión. El Papa comenzó ayer su primera jornada del viaje oficial que realiza a territorio nacional con una intensa agenda, sorpresas y discursos que confirman lo que ya se sospechaba: que Robert Prevost es un hombre con criterio propio -iluminado por el Espíritu Santo- y que cada una de sus palabras tiene un propósito detrás. Lea aquí la información completa de Marina Pina. (Según El Mundo.)",
+    },
+    {
+      time: '00:31',
+      datetime: '2026-06-07T00:31:31+02:00',
+      title: "La vigilia del Papa León XIV, en imágenes .",
+      body: "La vigilia del Papa León XIV, en imágenes . El Papa León XIV ha presidido en la plaza de Lima la vigilia con los jóvenes, un acto multitudinario en el que se esperan medio millón de personas y que cierra el primer día del Pontífice en España. Consulta aquí todas las imágenes. (Según ABC.)",
+    },
     {
       time: '00:01',
       datetime: '2026-06-07T00:01:31+02:00',
