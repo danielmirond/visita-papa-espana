@@ -37,10 +37,40 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T19:39:18Z',
+  dateModified: '2026-06-06T19:51:33Z',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '21:51',
+      datetime: '2026-06-06T19:51:33Z',
+      title: "León XIV interpela a los jóvenes en Madrid: \"Ante el vacío de la indiferencia y el conformismo, sed…",
+      body: "Todo era jolgorio en el madrileño paseo de la Castellana. Decenas de miles de jóvenes cantaban, coreaban y disfrutaban de los alrededores de la plaza de Lima desde las cuatro y media de la tarde, esperando en comunión y con paciencia al Santo Padre. Oficialmente, la organización trasladó que 240.000 personas se habían apuntado a la vigilia previa al Corpus Christi, sin embargo, asumían que dos tercios no se apuntan a estos eventos y van por libre, por lo que fácilmente se juntaron medio millón de personas en la cita de los jóvenes, la que cerró el primer día del Papa en España. Lea aquí la… (Según El Mundo.)",
+    },
+    {
+      time: '21:49',
+      datetime: '2026-06-06T21:49:47+02:00',
+      title: "Papa.- León XIV a los jóvenes españoles: \"Vosotros podéis cambiar la historia, hacedlo con el amor",
+      body: "El Papa León XIV ha invitado a los jóvenes españoles a \"cambiar la historia\" con \"el amor\". Así se ha pronunciado este sábado durante la Vigilia celebrada en la Plaza de Lima, ante cientos de miles de jóvenes. (Según Europa Press.)",
+    },
+    {
+      time: '21:48',
+      datetime: '2026-06-06T21:48:19+02:00',
+      title: "El Papa saca la Sagrada Forma y la expone en la custodia ante de los jóvenes.",
+      body: "El Papa saca la Sagrada Forma y la expone en la custodia ante de los jóvenes. León XIV saca Sagrada Forma del sagrario y la expone ante los jóvenes antes de un momento de oración, meditación y lectura y proclamación de la palabra. (Según ABC.)",
+    },
+    {
+      time: '21:47',
+      datetime: '2026-06-06T19:47:26Z',
+      title: "El Papa León XIV inicia la adoración eucarística en la Plaza de Lima",
+      body: "El Pontífice, ante miles de jóvenes congregados en la Plaza de Lima, inicia la adoración eucarística. El rezo es el acto central de una ceremonia en la que el Papa León XIV ha contestado a las inquietudes de un grupo de jóvenes madrileños. (Según El Mundo.)",
+    },
+    {
+      time: '21:46',
+      datetime: '2026-06-06T21:46:04+02:00',
+      title: "Suena el himno 'Ubi caritas' antes de la exposición del Santísimo.",
+      body: "Suena el himno 'Ubi caritas' antes de la exposición del Santísimo. Suena el himno 'Ubi caritas' antes de la exposición del Santísimo, uno de los momentos culmen de todas las vigilias de los Papas con los jóvenes. (Según ABC.)",
+    },
     {
       time: '21:39',
       datetime: '2026-06-06T19:39:18Z',
