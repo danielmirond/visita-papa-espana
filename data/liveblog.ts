@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T11:03:00+02:00',
+  dateModified: '2026-06-06T12:09:00+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '11:59',
+      datetime: '2026-06-06T11:59:00+02:00',
+      title: 'Salvas, himnos y revista a la Guardia de Honor',
+      body: 'Tras los saludos, el Papa y el Rey pasan revista a la Guardia de Honor en el patio del Palacio Real. Suenan el himno pontificio y el himno español, acompañados de las salvas de cañón y los honores a las banderas. El acto, de marcado peso protocolario, escenifica la dimensión de Estado de la visita. A continuación se suceden las presentaciones de autoridades civiles y eclesiásticas.',
+    },
+    {
+      time: '11:50',
+      datetime: '2026-06-06T11:50:00+02:00',
+      title: 'La Familia Real recibe al Papa en el Palacio Real',
+      body: 'Los Reyes Felipe VI y Letizia, acompañados de sus hijas, dan la bienvenida a León XIV en la entrada del Palacio Real. El Papa es recibido entre vivas y cánticos de «esta es la juventud del Papa» de los fieles concentrados en los alrededores. Empieza la ceremonia oficial de Estado del primer día del viaje.',
+    },
+    {
+      time: '11:41',
+      datetime: '2026-06-06T11:41:00+02:00',
+      title: 'León XIV: los abusos en la Iglesia son «una herida abierta»',
+      body: 'El Papa ha hecho una declaración contundente sobre los abusos en el seno de la Iglesia, a los que ha calificado de «herida abierta». Ha reafirmado su compromiso de seguir luchando contra ellos y de mantener la escucha activa a las víctimas. El mensaje confirma uno de los ejes más delicados de la visita.',
+    },
     {
       time: '11:03',
       datetime: '2026-06-06T11:03:00+02:00',
