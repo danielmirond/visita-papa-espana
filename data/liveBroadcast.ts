@@ -34,10 +34,11 @@ export const liveBroadcast: LiveBroadcastConfig = {
   startsAt: '2026-06-06T09:50:00+02:00',
   endsAt: '2026-06-12T23:59:00+02:00',
   signals: [
-    { label: 'Señal 1', youtubeUrl: 'https://www.youtube.com/watch?v=_EKs0D2BRbc' },
+    { label: 'RTVE 24h', youtubeUrl: 'https://www.youtube.com/watch?v=b4tE5aKhtlg' },
     { label: 'Señal 2', youtubeUrl: 'https://www.youtube.com/watch?v=ptCETju1Wv0' },
     { label: 'Señal 3', youtubeUrl: 'https://www.youtube.com/watch?v=aTU1oUvmJEQ' },
     { label: 'Señal 4', youtubeUrl: 'https://www.youtube.com/watch?v=h-PXqNkwm0M' },
+    { label: 'Señal 5', youtubeUrl: 'https://www.youtube.com/watch?v=_EKs0D2BRbc' },
   ],
   // Señal 2 (ptCETju1Wv0) es la que permite embed → por defecto.
   defaultSignal: 1,

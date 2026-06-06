@@ -16,9 +16,13 @@ export const metadata: Metadata = {
 
 // Directos oficiales para contrastar el minuto a minuto.
 const FUENTES_DIRECTO = [
-  { name: 'RTVE — Directo', url: 'https://www.rtve.es/noticias/20260606/visita-papa-madrid-directo-ultima-hora-hoy-resumen-6-junio/17102474.shtml' },
-  { name: 'El País — En directo', url: 'https://elpais.com/espana/2026-06-06/visita-del-papa-leon-xiv-a-espana-en-directo.html' },
-  { name: 'La Razón — Directo', url: 'https://www.larazon.es/sociedad/visita-papa-leon-xiv-madrid-directo-sigue-ultima-hora-actos-visita-espana-b50m_202606066a23a25844a9ef6825fe2b10.html' },
+  { name: 'RTVE', url: 'https://www.rtve.es/noticias/20260606/visita-papa-madrid-directo-ultima-hora-hoy-resumen-6-junio/17102474.shtml' },
+  { name: 'El País', url: 'https://elpais.com/espana/2026-06-06/visita-del-papa-leon-xiv-a-espana-en-directo.html' },
+  { name: 'El Mundo', url: 'https://www.elmundo.es/espana/2026/06/06/6a23bffc751d9c417fcf9680-directo.html' },
+  { name: 'ABC', url: 'https://www.abc.es/sociedad/visita-papa-leon-xiv-madrid-directo-llega-20260605145954-di.html' },
+  { name: 'La Razón', url: 'https://www.larazon.es/sociedad/visita-papa-leon-xiv-madrid-directo-sigue-ultima-hora-actos-visita-espana-b50m_202606066a23a25844a9ef6825fe2b10.html' },
+  { name: 'La Vanguardia', url: 'https://www.lavanguardia.com/politica/20260606/11557866/papa-leon-xiv-visita-espana-madrid-ultima-hora-hoy-en-directo.html' },
+  { name: 'Europa Press', url: 'https://www.europapress.es/sociedad/noticia-visita-papa-espana-2026-directo-agenda-recorrido-discursos-anecdotas-ultima-hora-leon-xiv-20260606055952.html' },
 ]
 
 export default function EnDirectoMadrid6() {
