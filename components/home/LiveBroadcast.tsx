@@ -56,7 +56,7 @@ function isTomorrow(startMs: number, nowMs: number) {
   return fmt(startMs) !== fmt(nowMs)
 }
 
-export default function LiveBroadcast({ locale }: { locale: Locale }) {
+export default function LiveBroadcast({ locale, alwaysEmbed = false }: { locale: Locale; alwaysEmbed?: boolean }) {
   const [now, setNow] = useState<number | null>(null)
 
   useEffect(() => {
@@ -72,6 +72,12 @@ export default function LiveBroadcast({ locale }: { locale: Locale }) {
   const t = locale === 'es' ? L.es : L.en
   const embed = toYouTubeEmbed(liveBroadcast.youtubeUrl)
 
+  // alwaysEmbed (p. ej. en "dónde ver"): muestra el player desde ya, sin
+  // esperar a startsAt. Se oculta tras endsAt (en cliente).
+  if (alwaysEmbed && embed && !(now !== null && now > end)) {
+    return <EmbedPlayer t={t} embed={embed} />
+  }
+
   // Pre-montaje (SSR): banner de anuncio neutral para evitar mismatch de hidratación
   const startLabel = `${t.startsAtPrefix} ${fmtTime(liveBroadcast.startsAt, locale)}`
 
@@ -86,28 +92,7 @@ export default function LiveBroadcast({ locale }: { locale: Locale }) {
   // En ventana de directo
   if (now >= start) {
     if (embed) {
-      return (
-        <section className="bg-papal-navy">
-          <div className="mx-auto max-w-5xl px-3 py-4 sm:px-4">
-            <div className="mb-2 flex items-center gap-2">
-              <span className="inline-flex items-center gap-1 rounded bg-red-600 px-2 py-0.5 text-xs font-bold text-white">
-                <span className="h-2 w-2 animate-pulse rounded-full bg-white" />
-                {t.live}
-              </span>
-              <span className="text-sm font-semibold text-white">{t.source(liveBroadcast.source)}</span>
-            </div>
-            <div className="relative w-full overflow-hidden rounded-xl bg-black" style={{ aspectRatio: '16 / 9' }}>
-              <iframe
-                src={embed}
-                title={t.source(liveBroadcast.source)}
-                className="absolute inset-0 h-full w-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        </section>
-      )
+      return <EmbedPlayer t={t} embed={embed} />
     }
     // Directo en ventana pero sin URL configurada todavía
     return <Announcement t={t} startLabel={t.soon} when="" live />
@@ -122,6 +107,31 @@ export default function LiveBroadcast({ locale }: { locale: Locale }) {
   const countdown = h > 0 ? `${h}h ${two(m)}m ${two(s)}s` : `${m}m ${two(s)}s`
 
   return <Announcement t={t} startLabel={`${startLabel} (${when})`} when={`${t.countdownPrefix} ${countdown}`} />
+}
+
+function EmbedPlayer({ t, embed }: { t: Strings; embed: string }) {
+  return (
+    <section className="bg-papal-navy">
+      <div className="mx-auto max-w-5xl px-3 py-4 sm:px-4">
+        <div className="mb-2 flex items-center gap-2">
+          <span className="inline-flex items-center gap-1 rounded bg-red-600 px-2 py-0.5 text-xs font-bold text-white">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-white" />
+            {t.live}
+          </span>
+          <span className="text-sm font-semibold text-white">{t.source(liveBroadcast.source)}</span>
+        </div>
+        <div className="relative w-full overflow-hidden rounded-xl bg-black" style={{ aspectRatio: '16 / 9' }}>
+          <iframe
+            src={embed}
+            title={t.source(liveBroadcast.source)}
+            className="absolute inset-0 h-full w-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+      </div>
+    </section>
+  )
 }
 
 function Announcement({
