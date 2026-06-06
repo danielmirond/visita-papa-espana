@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T21:00:00+02:00',
-  dateModified: '2026-06-06T22:02:01+02:00',
+  dateModified: '2026-06-06T23:05:51+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '23:05',
+      datetime: '2026-06-06T23:05:51+02:00',
+      title: "Papa.-Primer día de León XVI en España: Pide acabar con la polarización y alienta a los jóvenes a \"cambiar...",
+      body: "El primer día de León XVI en España ha estado marcado por su llamamiento al diálogo y el encuentro en la ceremonia del Palacio Real, sin olvidar su mensaje a los jóvenes en la Vigilia de la Plaza de Lima o su encuentro con los más desfavorecidos en el centro para personas en exclusión de Cáritas Madrid. (Según Europa Press.)",
+    },
+    {
+      time: '23:00',
+      datetime: '2026-06-06T23:00:31+02:00',
+      title: "El grupo religioso Hakuna cierra la vigilia.",
+      body: "El grupo religioso Hakuna cierra la vigilia. El grupo católico Hakuna cierra la vigilia en la primera jornada de León XIV en España, que ha incluido también el recibimiento de la Familia Real en el Palacio, la visita al centro CEDIA de Cáritas. (Según ABC.)",
+    },
+    {
+      time: '22:50',
+      datetime: '2026-06-06T22:50:22+02:00',
+      title: "La cifra de asistentes a la vigilia ronda el medio millón.",
+      body: "La cifra de asistentes a la vigilia ronda el medio millón. El número de personas que han asistido a la vigilia con el Papa León XIV ronda el medio millón, de acuerdo con Delegación del Gobierno de Madrid. (Según ABC.)",
+    },
     {
       time: '22:02',
       datetime: '2026-06-06T22:02:01+02:00',
