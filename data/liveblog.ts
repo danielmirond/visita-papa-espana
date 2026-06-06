@@ -37,10 +37,22 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T19:51:33Z',
+  dateModified: '2026-06-06T22:02:01+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '22:02',
+      datetime: '2026-06-06T22:02:01+02:00',
+      title: "La adoración al Santísimo silencia la Castellena.",
+      body: "La adoración al Santísimo silencia la Castellena. Mientras el Papa rezaba de rodillas ante la custodia, el medio millón de jóvenes que llenan el paseo de la Castellana han permanecido en silencio, recogidos también en oración. Más de cinco minutos en los que los jóvenes se centraban en el silencio para buscar la respuesta de Dios, como les había dicho el Papa poco antes. Informa José Ramón Navarro-Pareja . (Según ABC.)",
+    },
+    {
+      time: '21:53',
+      datetime: '2026-06-06T21:53:23+02:00',
+      title: "Lectura del santo Evangelio según san Juan.",
+      body: "Lectura del santo Evangelio según san Juan. Proclamación del Evangelio según san Juan con la lectura del pasaje del milagro de los panes y los peces, según el cual con solo cinco panes y dos peces Jesús alimentó a una multitud de más de 5.000 hombres, además de mujeres y niños, y sobraron 12 canastas. (Según ABC.)",
+    },
     {
       time: '21:51',
       datetime: '2026-06-06T19:51:33Z',
