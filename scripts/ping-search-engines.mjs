@@ -138,7 +138,68 @@ async function submitGoogleSearchConsole() {
   }
 }
 
+/** Obtiene un access_token de Google para una service account y un scope. */
+async function googleAccessToken(scope) {
+  const rawKey = process.env.GOOGLE_SA_KEY
+  if (!rawKey) return null
+  const sa = JSON.parse(Buffer.from(rawKey, 'base64').toString('utf8'))
+  const now = Math.floor(Date.now() / 1000)
+  const header = base64url(JSON.stringify({ alg: 'RS256', typ: 'JWT' }))
+  const claim = base64url(
+    JSON.stringify({ iss: sa.client_email, scope, aud: 'https://oauth2.googleapis.com/token', iat: now, exp: now + 3600 })
+  )
+  const signer = createSign('RSA-SHA256')
+  signer.update(`${header}.${claim}`)
+  const signature = signer.sign(sa.private_key).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+  const tokenRes = await fetch('https://oauth2.googleapis.com/token', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({ grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion: `${header}.${claim}.${signature}` }),
+  })
+  return (await tokenRes.json()).access_token || null
+}
+
+/**
+ * Google Indexing API (urlNotifications:publish). SOLO es válido para
+ * páginas con BroadcastEvent (livestream) o JobPosting — como el liveblog,
+ * que lleva VideoObject + BroadcastEvent. Fuerza un re-rastreo rápido.
+ * Requiere GOOGLE_SA_KEY y que la service account sea propietaria en GSC.
+ */
+async function notifyGoogleIndexing(urls) {
+  if (!urls.length) return
+  if (!process.env.GOOGLE_SA_KEY) {
+    console.log('  Indexing API: omitido (define GOOGLE_SA_KEY).')
+    return
+  }
+  try {
+    const token = await googleAccessToken('https://www.googleapis.com/auth/indexing')
+    if (!token) {
+      console.error('  Indexing API ERROR: no se obtuvo access_token.')
+      return
+    }
+    for (const url of urls) {
+      const res = await fetch('https://indexing.googleapis.com/v3/urlNotifications:publish', {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url, type: 'URL_UPDATED' }),
+      })
+      console.log(`  Indexing API: ${url} → HTTP ${res.status}`)
+    }
+  } catch (e) {
+    console.error(`  Indexing API ERROR: ${e.message}`)
+  }
+}
+
 async function main() {
+  // Modo dedicado: --index=url1,url2 → solo notifica a la Indexing API.
+  const indexArg = argVal('index')
+  if (indexArg) {
+    const u = indexArg.split(',').map((x) => x.trim()).filter(Boolean)
+    console.log(`Indexing API: ${u.length} URL(s)`)
+    await notifyGoogleIndexing(u)
+    return
+  }
+
   let urls
   const urlsArg = argVal('urls')
   if (urlsArg) {
