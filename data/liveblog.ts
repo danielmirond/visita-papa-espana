@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T12:56:45+02:00',
+  dateModified: '2026-06-06T13:00:59+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '13:00',
+      datetime: '2026-06-06T13:00:59+02:00',
+      title: "El Pontífice agradece la invitación a nuestro país y enaltece «la riqueza multifacética de un gran país».",
+      body: "El Pontífice agradece la invitación a nuestro país y enaltece «la riqueza multifacética de un gran país». (Según ABC.)",
+    },
+    {
+      time: '12:59',
+      datetime: '2026-06-06T12:59:39+02:00',
+      title: "Felipe VI concluye su discurso de bienvenida al Papa.",
+      body: "Felipe VI concluye su discurso de bienvenida al Papa. «Bien merece ser pauta de conducta universal: la unidad como vehículo e instrumento para la paz. De nuevo, Santidad, bienvenido a España», finalizaba Su Majestad. (Según ABC.)",
+    },
+    {
+      time: '12:58',
+      datetime: '2026-06-06T12:58:52+02:00',
+      title: "Se hacen imprescindibles la empatía, la comprensión y la escucha», expone el Rey.",
+      body: "«Se hacen imprescindibles la empatía, la comprensión y la escucha», expone el Rey. «En un mundo anegado de datos y mensajes se hacen imprescindibles la empatía, la comprensión y la escucha. Vuestro predecesor, Su Santidad el Papa Francisco, insistía a menudo en la importancia de saber escuchar», y ha añadido que «cuando la atención está en el otro, en quién tenemos enfrente, podemos identificarnos con su dolor, con su alegría, con sus debilidades y fortalezas..., podemos ponernos en su lugar». (Según ABC.)",
+    },
     {
       time: '12:56',
       datetime: '2026-06-06T12:56:45+02:00',
