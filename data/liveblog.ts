@@ -37,10 +37,16 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T10:40:00+02:00',
+  dateModified: '2026-06-06T10:46:00+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '10:46',
+      datetime: '2026-06-06T10:46:00+02:00',
+      title: 'El Papa, camino del Palacio Real',
+      body: 'Tras el recibimiento en Barajas, la comitiva pontificia se pone en marcha hacia el Palacio Real, primera parada oficial de la jornada. Allí tendrá lugar la ceremonia de bienvenida con los Reyes y una recepción de Estado. El traslado se realiza con un fuerte dispositivo de seguridad por las calles de Madrid. Se esperan cortes de tráfico en el entorno del recorrido.',
+    },
     {
       time: '10:38',
       datetime: '2026-06-06T10:38:00+02:00',
