@@ -8,14 +8,24 @@
  *    en `youtubeUrl` (vale watch?v=…, youtu.be/…, /live/… o /embed/…,
  *    o un canal con /embed/live_stream?channel=UC…).
  */
+export interface LiveSignal {
+  label: string
+  youtubeUrl: string
+}
+
 export interface LiveBroadcastConfig {
   enabled: boolean
   /** Inicio de la retransmisión (ISO con offset de Madrid +02:00) */
   startsAt: string
   /** Fin: tras esta fecha el bloque desaparece */
   endsAt: string
-  /** URL del directo de YouTube de RTVE (dejar '' hasta tenerla) */
+  /** Señal por defecto (compat) — debe coincidir con signals[defaultSignal] */
   youtubeUrl: string
+  /** Señales seleccionables (usar SIEMPRE URL de vídeo watch?v=…; el embed por
+   *  canal live_stream?channel ya no lo soporta YouTube) */
+  signals: LiveSignal[]
+  /** Índice de la señal por defecto (la que mejor funciona) */
+  defaultSignal: number
   source: string
 }
 
@@ -23,9 +33,14 @@ export const liveBroadcast: LiveBroadcastConfig = {
   enabled: true,
   startsAt: '2026-06-06T09:50:00+02:00',
   endsAt: '2026-06-12T23:59:00+02:00',
-  // Directo en YouTube (vídeo concreto). NOTA: el embed por canal
-  // (live_stream?channel=…) ya no lo soporta YouTube; usar SIEMPRE la URL
-  // de un vídeo (watch?v=… / youtu.be/… / /live/…).
+  signals: [
+    { label: 'Señal 1', youtubeUrl: 'https://www.youtube.com/watch?v=_EKs0D2BRbc' },
+    { label: 'Señal 2', youtubeUrl: 'https://www.youtube.com/watch?v=ptCETju1Wv0' },
+    { label: 'Señal 3', youtubeUrl: 'https://www.youtube.com/watch?v=aTU1oUvmJEQ' },
+    { label: 'Señal 4', youtubeUrl: 'https://www.youtube.com/watch?v=h-PXqNkwm0M' },
+  ],
+  // Señal 2 (ptCETju1Wv0) es la que permite embed → por defecto.
+  defaultSignal: 1,
   youtubeUrl: 'https://www.youtube.com/watch?v=ptCETju1Wv0',
   source: 'RTVE',
 }

@@ -78,7 +78,7 @@ export default function LiveBroadcast({ locale, alwaysEmbed = false }: { locale:
   // alwaysEmbed (p. ej. en "dónde ver"): muestra el player desde ya, sin
   // esperar a startsAt. Se oculta tras endsAt (en cliente).
   if (alwaysEmbed && embed && !(now !== null && now > end)) {
-    return <EmbedPlayer t={t} embed={embed} />
+    return <EmbedPlayer t={t} />
   }
 
   // Pre-montaje (SSR): banner de anuncio neutral para evitar mismatch de hidratación
@@ -95,7 +95,7 @@ export default function LiveBroadcast({ locale, alwaysEmbed = false }: { locale:
   // En ventana de directo
   if (now >= start) {
     if (embed) {
-      return <EmbedPlayer t={t} embed={embed} />
+      return <EmbedPlayer t={t} />
     }
     // Directo en ventana pero sin URL configurada todavía
     return <Announcement t={t} startLabel={t.soon} when="" live />
@@ -112,30 +112,58 @@ export default function LiveBroadcast({ locale, alwaysEmbed = false }: { locale:
   return <Announcement t={t} startLabel={`${startLabel} (${when})`} when={`${t.countdownPrefix} ${countdown}`} />
 }
 
-function EmbedPlayer({ t, embed }: { t: Strings; embed: string }) {
+function EmbedPlayer({ t }: { t: Strings }) {
+  const signals = liveBroadcast.signals?.length ? liveBroadcast.signals : [{ label: liveBroadcast.source, youtubeUrl: liveBroadcast.youtubeUrl }]
+  const [sel, setSel] = useState(
+    Math.min(Math.max(liveBroadcast.defaultSignal ?? 0, 0), signals.length - 1)
+  )
+  const current = signals[sel]
+  const embed = toYouTubeEmbed(current.youtubeUrl)
+
   return (
     <section className="bg-papal-navy">
       <div className="mx-auto max-w-5xl px-3 py-4 sm:px-4">
-        <div className="mb-2 flex items-center gap-2">
+        <div className="mb-2 flex flex-wrap items-center gap-2">
           <span className="inline-flex items-center gap-1 rounded bg-red-600 px-2 py-0.5 text-xs font-bold text-white">
             <span className="h-2 w-2 animate-pulse rounded-full bg-white" />
             {t.live}
           </span>
           <span className="text-sm font-semibold text-white">{t.source(liveBroadcast.source)}</span>
         </div>
+
+        {/* Selector de señales */}
+        {signals.length > 1 && (
+          <div className="mb-2 flex flex-wrap gap-2">
+            {signals.map((s, i) => (
+              <button
+                key={s.youtubeUrl}
+                onClick={() => setSel(i)}
+                className={`rounded-lg px-3 py-1 text-xs font-bold transition-colors ${
+                  i === sel ? 'bg-papal-gold text-papal-navy' : 'bg-white/10 text-white hover:bg-white/20'
+                }`}
+              >
+                {s.label}
+              </button>
+            ))}
+          </div>
+        )}
+
         <div className="relative w-full overflow-hidden rounded-xl bg-black" style={{ aspectRatio: '16 / 9' }}>
-          <iframe
-            src={embed}
-            title={t.source(liveBroadcast.source)}
-            className="absolute inset-0 h-full w-full"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
+          {embed && (
+            <iframe
+              key={embed}
+              src={embed}
+              title={current.label}
+              className="absolute inset-0 h-full w-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          )}
         </div>
         {/* Salida si el propietario tiene el embed bloqueado */}
         <div className="mt-2 flex flex-wrap items-center gap-3 text-sm">
           <a
-            href={liveBroadcast.youtubeUrl}
+            href={current.youtubeUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-white underline hover:text-papal-gold"
