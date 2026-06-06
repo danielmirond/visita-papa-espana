@@ -73,6 +73,20 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
     <>
       <JsonLd data={visitMainEventSchema(locale)} />
 
+      {/* Titular/cita del Papa sobre el vídeo */}
+      {locale === 'es' && (
+        <div className="bg-papal-navy">
+          <Container className="py-4 text-center">
+            <p className="font-heading text-lg font-bold italic text-papal-gold sm:text-xl">
+              «Vosotros podéis cambiar la historia, hacedlo con el amor»
+            </p>
+            <p className="mt-1 text-xs uppercase tracking-widest text-white/60">
+              León XIV · Vigilia con los jóvenes en Madrid
+            </p>
+          </Container>
+        </div>
+      )}
+
       {/* Retransmisión en directo (cuenta atrás → embed YouTube RTVE) */}
       <LiveBroadcast locale={locale} />
 
