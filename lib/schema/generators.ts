@@ -18,6 +18,8 @@ import type { City } from '@/types/city'
 import type { PapalEvent, ScheduleDay } from '@/types/schedule'
 import type { NewsArticle } from '@/types/news'
 import type { FaqItem } from '@/data/faq'
+import type { Liveblog } from '@/data/liveblog'
+import { liveBroadcast } from '@/data/liveBroadcast'
 
 // -------------------------- Entidades base --------------------------
 
@@ -406,6 +408,76 @@ export function newsArticleSchema(article: NewsArticle, locale: Locale = 'es') {
       })),
     }),
     isAccessibleForFree: true,
+  }
+}
+
+// -------------------------- LiveBlog + Video -------------------------
+
+export function liveblogSchema(lb: Liveblog, locale: Locale = 'es') {
+  const url = `${siteConfig.url}/${locale}/${lb.slug}`
+  const author = { '@id': `${siteConfig.url}#organization` }
+  const publisher = { '@id': `${siteConfig.url}#organization` }
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'NewsArticle',
+        '@id': `${url}#article`,
+        headline: lb.headline,
+        description: lb.description,
+        datePublished: lb.datePublished,
+        dateModified: lb.dateModified,
+        inLanguage: HTML_LANG[locale],
+        mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+        author,
+        publisher,
+        image: `${siteConfig.url}/images/hero/papa-leon-xiv.webp`,
+        about: { '@id': `${siteConfig.url}#visit-event` },
+        isAccessibleForFree: true,
+      },
+      {
+        '@type': 'LiveBlogPosting',
+        '@id': `${url}#liveblog`,
+        headline: lb.headline,
+        description: lb.description,
+        url,
+        datePublished: lb.datePublished,
+        dateModified: lb.dateModified,
+        coverageStartTime: lb.coverageStart,
+        coverageEndTime: lb.coverageEnd,
+        inLanguage: HTML_LANG[locale],
+        author,
+        publisher,
+        about: { '@id': `${siteConfig.url}#visit-event` },
+        liveBlogUpdate: lb.entries.map((e) => ({
+          '@type': 'BlogPosting',
+          headline: e.title,
+          articleBody: e.body,
+          datePublished: e.datetime,
+          dateModified: e.datetime,
+          author,
+          publisher,
+        })),
+      },
+      {
+        '@type': 'VideoObject',
+        '@id': `${url}#video`,
+        name: lb.headline,
+        description: lb.description,
+        thumbnailUrl: [`${siteConfig.url}/images/hero/papa-leon-xiv.webp`],
+        uploadDate: lb.datePublished,
+        contentUrl: liveBroadcast.youtubeUrl,
+        embedUrl: liveBroadcast.youtubeUrl,
+        publication: {
+          '@type': 'BroadcastEvent',
+          name: lb.headline,
+          isLiveBroadcast: true,
+          startDate: liveBroadcast.startsAt,
+          endDate: liveBroadcast.endsAt,
+        },
+      },
+    ],
   }
 }
 
