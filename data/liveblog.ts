@@ -36,7 +36,7 @@ export const liveblogMadrid6: Liveblog = {
   headline: 'Visita del Papa León XIV a Madrid, en directo (6 de junio)',
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
-  datePublished: '2026-06-06T08:00:00+02:00',
+  datePublished: '2026-06-06T21:00:00+02:00',
   dateModified: '2026-06-06T22:02:01+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
