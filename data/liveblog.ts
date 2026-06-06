@@ -37,10 +37,34 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T13:04:00+02:00',
+  dateModified: '2026-06-06T19:39:18Z',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '21:39',
+      datetime: '2026-06-06T19:39:18Z',
+      title: "Los jóvenes aguardan al inicio del rezo ante el Santo Padre",
+      body: "En un momento que no estaba contemplado en el guion inicial, los jóvenes le han pedido al Papa León XIV que firme la Cruz de los jóvenes, mientras la gente coreaba: &amp;quot;León, amigo, el Papa está contigo&amp;quot;. Informa Marina Pina. A continuación, mientras el Santo Padre se marchaba a revestirse para rezar antes del Corpus que se celebrará mañana, el cantante de Siloe junto a un párroco han interpretado el tema &amp;apos;Búfalo&amp;apos;, en el que afirma: &amp;quot;Tú me das la fuerza de un búfalo, tú eres mi roca y mi verdad&amp;quot;. (Según El Mundo.)",
+    },
+    {
+      time: '21:38',
+      datetime: '2026-06-06T21:38:19+02:00',
+      title: "Fito Robles, voz de Siloé, canta con el sacerdote Jaime Salmoreno.",
+      body: "Fito Robles, voz de Siloé, canta con el sacerdote Jaime Salmoreno. El vocalista de Siloé, Fito Robles, canta con el sacerdote Jaime Salmoreno. (Según ABC.)",
+    },
+    {
+      time: '21:37',
+      datetime: '2026-06-06T21:37:16+02:00',
+      title: "El Papa firma una cruz que le llevan los jóvenes.",
+      body: "El Papa firma una cruz que le llevan los jóvenes. (Según ABC.)",
+    },
+    {
+      time: '21:36',
+      datetime: '2026-06-06T21:36:27+02:00',
+      title: "El Pontífice: «Sed humanos, hombres y mujeres de carne y hueso».",
+      body: "El Pontífice: «Sed humanos, hombres y mujeres de carne y hueso». «Quiero confiraros a todos una misión, sed humanos, hombres y mujeres de carne y hueso. No apariencias, sino rostros fiables, personas que buscan la Justicia», urge el Papa. (Según ABC.)",
+    },
     {
       time: '13:04',
       datetime: '2026-06-06T13:04:00+02:00',
