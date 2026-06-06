@@ -23,8 +23,10 @@ export const liveBroadcast: LiveBroadcastConfig = {
   enabled: true,
   startsAt: '2026-06-06T09:50:00+02:00',
   endsAt: '2026-06-12T23:59:00+02:00',
-  // Señal de RTVE en YouTube (canal: muestra su directo en curso).
-  youtubeUrl: 'https://www.youtube.com/channel/UCqlsTzBv49Uiu8Z3IseVgQQ',
+  // Directo en YouTube (vídeo concreto). NOTA: el embed por canal
+  // (live_stream?channel=…) ya no lo soporta YouTube; usar SIEMPRE la URL
+  // de un vídeo (watch?v=… / youtu.be/… / /live/…).
+  youtubeUrl: 'https://www.youtube.com/watch?v=ptCETju1Wv0',
   source: 'RTVE',
 }
 
