@@ -37,10 +37,22 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T10:46:00+02:00',
+  dateModified: '2026-06-06T11:03:00+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '11:03',
+      datetime: '2026-06-06T11:03:00+02:00',
+      title: 'La anécdota del día: el Papa, simpatizante del Real Madrid',
+      body: 'Entre los fieles circula una anécdota distendida en la jornada de bienvenida. Aunque suele decirse que «el Papa es de todos los equipos», León XIV ha reconocido en alguna ocasión su simpatía por el Real Madrid. Un guiño futbolístico que ha arrancado sonrisas en una mañana de fuerte carga institucional.',
+    },
+    {
+      time: '10:57',
+      datetime: '2026-06-06T10:57:00+02:00',
+      title: 'El Papa se reunirá con víctimas de abusos en España',
+      body: 'Antes de aterrizar, León XIV ha dejado claro que durante su viaje mantendrá un encuentro con víctimas de abusos en el seno de la Iglesia. Con ello busca despejar dudas y subrayar el compromiso con la reparación y la escucha. El encuentro se enmarca en la agenda más sensible de la visita. La organización no ha detallado aún la hora ni el lugar exactos.',
+    },
     {
       time: '10:46',
       datetime: '2026-06-06T10:46:00+02:00',
