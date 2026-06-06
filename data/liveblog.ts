@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T12:31:50Z',
+  dateModified: '2026-06-06T12:40:35+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '12:40',
+      datetime: '2026-06-06T12:40:35+02:00',
+      title: "Momentos de complicidad entre la Familia Real Española y el Papa León.",
+      body: "Momentos de complicidad entre la Familia Real Española y el Papa León. (Según ABC.)",
+    },
+    {
+      time: '12:35',
+      datetime: '2026-06-06T12:35:50+02:00',
+      title: "La juventud espera al Papa: «Hemos rezado un montón para que el viaje dé sus frutos».",
+      body: "La juventud espera al Papa: «Hemos rezado un montón para que el viaje dé sus frutos». Varias jóvenes de entre 13 y 26 años viajan desde Córdoba hasta la capital para asistir a la visita del Pontífice a Madrid. «Esta es la juventud del Papa», corean las andaluzas en su primera parada del día, en la Nunciatura Apostólica. «Hemos rezado un montón para que el viaje dé sus frutos. (Según ABC.)",
+    },
+    {
+      time: '12:33',
+      datetime: '2026-06-06T12:33:22+02:00',
+      title: "Salvas de cañón, himnos y honores a las banderas para recibir al Papa León XIV en el Palacio Real .",
+      body: "Salvas de cañón, himnos y honores a las banderas para recibir al Papa León XIV en el Palacio Real . El Papa ha sido recibido con todos los honores a su llegada al Palacio Real, donde le esperaban los Reyes Felipe VI y Letizia y sus hijas, la princesa Leonor y la Infanta Sofía. Consulta cómo ha sido el momento en este artículo de Inés Romero. (Según ABC.)",
+    },
     {
       time: '14:31',
       datetime: '2026-06-06T12:31:50Z',
