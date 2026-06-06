@@ -12,6 +12,18 @@ export const metadata: Metadata = {
   description:
     'Sigue en directo la visita del Papa León XIV a Madrid el 6 de junio de 2026: retransmisión en vídeo, actualizaciones minuto a minuto y enlaces a la última hora de RTVE, El País y La Razón.',
   alternates: { canonical: `${siteConfig.url}/es/en-directo-madrid-6-junio` },
+  openGraph: {
+    type: 'article',
+    url: `${siteConfig.url}/es/en-directo-madrid-6-junio`,
+    title: 'Visita del Papa en directo: Madrid 6 de junio',
+    description: 'Vídeo en directo y minuto a minuto del primer día del viaje del Papa León XIV a España.',
+    images: [{ url: `${siteConfig.url}/images/hero/papa-leon-xiv.webp`, width: 1200, height: 630, alt: 'Visita del Papa León XIV a Madrid' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Visita del Papa en directo: Madrid 6 de junio',
+    images: [`${siteConfig.url}/images/hero/papa-leon-xiv.webp`],
+  },
 }
 
 // Directos oficiales para contrastar el minuto a minuto.
