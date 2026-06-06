@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Container from '@/components/ui/Container'
+import LiveBroadcast from '@/components/home/LiveBroadcast'
 import { tvChannels } from '@/data/tvChannels'
 import { getAlternates } from '@/lib/i18n-metadata'
 import { getSeoMeta } from '@/lib/seo-by-route'
@@ -39,6 +40,9 @@ export default function DondeVerPage() {
           </p>
         </Container>
       </section>
+
+      {/* Directo de RTVE incrustado */}
+      <LiveBroadcast locale="es" alwaysEmbed />
 
       <Container className="py-10">
         <div className="mb-8 rounded-xl border border-papal-gold/20 bg-papal-cream p-5">

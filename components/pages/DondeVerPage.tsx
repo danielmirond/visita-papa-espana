@@ -1,4 +1,5 @@
 import Container from '@/components/ui/Container'
+import LiveBroadcast from '@/components/home/LiveBroadcast'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { tvChannels } from '@/data/tvChannels'
 import { getDictionary } from '@/data/i18n/dictionaries'
@@ -49,6 +50,9 @@ export default function DondeVerPageContent({ locale }: { locale: Locale }) {
           <p className="mt-3 text-white/70">{t.subtitle}</p>
         </Container>
       </section>
+
+      {/* Directo de RTVE incrustado */}
+      <LiveBroadcast locale={locale} alwaysEmbed />
 
       <Container className="py-10">
         <div className="mb-8 rounded-xl border border-papal-gold/20 bg-papal-cream p-5">
