@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T12:18:21+02:00',
+  dateModified: '2026-06-06T12:31:50Z',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '14:31',
+      datetime: '2026-06-06T12:31:50Z',
+      title: "El Ensache de Vallecas ya recibe autocares de fieles que llegan de distintos puntos para ver al papa",
+      body: "Está previsto que lleguen hasta 400 autocares de fieles que aparcarán en el barrio del Ensanche de Vallecas. Desde allí se espera que cojan el Metro y distintos medios de transporte para trasladarse a los actos del Papa. A estas horas ya hay varios autobuses aparcados en la zona. (Según El Mundo.)",
+    },
+    {
+      time: '12:26',
+      datetime: '2026-06-06T12:26:31+02:00',
+      title: "El exclusivo barrio de Madrid donde está la residencia del Papa León XIV: entre los más ricos de la capital…",
+      body: "El exclusivo barrio de Madrid donde está la residencia del Papa León XIV: entre los más ricos de la capital y con 25.000 vecinos . A pesar de todo el bullicio que se espera en las calles más céntricas de Madrid, lo cierto es que el Papa tan solo pasará por allí para acudir a los eventos multitudinarios. El resto del tiempo que pase en la capital se alojará en uno de los barrios residenciales más tranquilos, situado en pleno distrito de Chamartín, a apenas unos minutos a pie de la estación de tren Madrid-Chamartín-Clara Campoamor. Lee en este enlace el artículo completo de María Albert. (Según ABC.)",
+    },
+    {
+      time: '12:25',
+      datetime: '2026-06-06T12:25:53+02:00',
+      title: "Sergio Dalma, Beret, Álvaro Soler y Conchita actuarán en el acto del Papa en el Estadi Olímpic de Barcelona",
+      body: "Sergio Dalma, Beret, Álvaro Soler, Conchita y Siloé son algunos de los artistas que cantarán en el acto del Papa León XIV que se celebrará en el Estadi Olímpic de Barcelona el próximo 9 de junio, según ha informado la organización de la visita del Papa. (Según Europa Press.)",
+    },
     {
       time: '12:18',
       datetime: '2026-06-06T12:18:21+02:00',
