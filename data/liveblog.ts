@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T12:52:22Z',
+  dateModified: '2026-06-06T12:56:45+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '12:56',
+      datetime: '2026-06-06T12:56:45+02:00',
+      title: "Su Majestad hace referencia a los «valores democráticos y la legalidad internacional» en su discurso.",
+      body: "Su Majestad hace referencia a los «valores democráticos y la legalidad internacional» en su discurso. «En este tiempo corremos el riesgo de olvidar aquello que de verdad importa, de deslizarnos hacia la errada creencia de que —abolidas muchas de nuestras referencias por el pulso de la actualidad— todo vale, todo es admisible, negociable y justificable. Y no es así. La dignidad de la persona, los derechos humanos, los valores democráticos y la legalidad internacional deben seguir siendo nuestros números primos... (Según ABC.)",
+    },
+    {
+      time: '12:54',
+      datetime: '2026-06-06T12:54:51+02:00',
+      title: "El rey se refiere a la labor del Papa frente a los abusos en la Iglesia.",
+      body: "El rey se refiere a la labor del Papa frente a los abusos en la Iglesia. «No puede haber mayor contraste con todo ello que el dolor causado por los casos de abuso, que ni son ni pueden ser representativos de la inmensa comunidad eclesial. Vuestra claridad y firmeza, que también quiero reconocer, son esenciales en el proceso sanador y de reparación del daño infligido: lo son para las víctimas, para los fieles, para la Iglesia y para la sociedad en su conjunto», ha dicho Felipe VI. (Según ABC.)",
+    },
+    {
+      time: '12:53',
+      datetime: '2026-06-06T12:53:43+02:00',
+      title: "La fe católica está enraizada en nuestro país».",
+      body: "«La fe católica está enraizada en nuestro país». «La fe católica está enraizada en nuestro país y sin ella —bien lo sabéis— nuestra historia y nuestra cultura no se entenderían», ha indicado el Rey, antes de reconocer la labor social de la Iglesia Católica. (Según ABC.)",
+    },
     {
       time: '14:52',
       datetime: '2026-06-06T12:52:22Z',
