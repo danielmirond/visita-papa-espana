@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T08:00:00+02:00',
-  dateModified: '2026-06-06T12:09:00+02:00',
+  dateModified: '2026-06-06T12:07:37+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '12:07',
+      datetime: '2026-06-06T12:07:37+02:00',
+      title: "Los vestidos negros de la Princesa Leonor y la Infanta Sofía para recibir al Papa .",
+      body: "Los vestidos negros de la Princesa Leonor y la Infanta Sofía para recibir al Papa . Las hijas de los Reyes apuestan por la sobriedad para dar la bienvenida a León XIV. Consulta el artículo completo de Araceli Nicolás en este enlace . Los Reyes con sus hijas esperando al Papa en el Palacio Real. (Según ABC.)",
+    },
+    {
+      time: '12:05',
+      datetime: '2026-06-06T12:05:48+02:00',
+      title: "El Rey y el Papa pasan revista a la Guardia de Honor, vídeo del momento:.",
+      body: "El Rey y el Papa pasan revista a la Guardia de Honor, vídeo del momento:. (Según ABC.)",
+    },
+    {
+      time: '12:00',
+      datetime: '2026-06-06T12:00:58+02:00',
+      title: "Así ha sido el momento en el que han sonado el himno de España y las salvas y honores ante el Papa.",
+      body: "Así ha sido el momento en el que han sonado el himno de España y las salvas y honores ante el Papa. (Según ABC.)",
+    },
     {
       time: '11:59',
       datetime: '2026-06-06T11:59:00+02:00',
