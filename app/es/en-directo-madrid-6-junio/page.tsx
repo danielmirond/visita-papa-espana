@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Visita del Papa en directo: Madrid 6 de junio, última hora',
   description:
     'Sigue en directo la visita del Papa León XIV a Madrid el 6 de junio de 2026: retransmisión en vídeo, programa de hoy minuto a minuto y enlaces a la última hora de El País, La Razón y RTVE.',
-  alternates: { canonical: `${siteConfig.url}/es/en-directo-madrid-6` },
+  alternates: { canonical: `${siteConfig.url}/es/en-directo-madrid-6-junio` },
 }
 
 // Directos oficiales para el minuto a minuto (cobertura en tiempo real).
