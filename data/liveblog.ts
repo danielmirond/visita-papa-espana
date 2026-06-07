@@ -37,10 +37,28 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-07T14:45:31+02:00',
+  dateModified: '2026-06-07T16:43:40+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '16:43',
+      datetime: '2026-06-07T16:43:40+02:00',
+      title: "Visita del papa León XIV en Madrid | ¿Cuál es la agenda del Sumo Pontífice esta tarde?",
+      body: "Tras la multitudinaria misa y procesión del Corpus Christi celebradas esta mañana en la plaza de Cibeles, la agenda del papa León XIV en Madrid combina la diplomacia religiosa y un importante encuentro sectorial.Las actividades de esta tarde del domingo arrancan a las 16:30 con un encuentro privado en la Nunciatura Apostólica, donde el Santo Padre mantendrá una reunión con los miembros de la Orden de San Agustín.El plato fuerte de la tarde tendrá lugar a las 18:00, momento en el que el Pontífice se trasladará al Movistar Arena para presidir un macroencuentro titulado 'Tejer redes con el… (Según El Español.)",
+    },
+    {
+      time: '16:42',
+      datetime: '2026-06-07T16:42:40+02:00',
+      title: "Papa.- Víctima de abusos escenifica encuentro ficticio con León XIV: \"Tiene que comportarse conforme a lo...",
+      body: "Miguel Hurtado, portavoz de la asociación de víctimas de abusos de la Iglesia Reparación Integral Ya y primer denunciante de los abusos de la Abadía de Monserrat, ha escenificado un encuentro ficticio con León XIV a las puertas de la Nunciatura. (Según Europa Press.)",
+    },
+    {
+      time: '16:31',
+      datetime: '2026-06-07T16:31:27+02:00',
+      title: "Papa León XIV en Madrid | Samur atiende a 323 personas",
+      body: "Samur-Protección Civil ha atendido durante la mañana de hoy a un total de 323 personas en el dispositivo de misa de Cibeles. Nueve de ellas han sido trasladas al hospital, aunque ninguna de ellas está grave. (Según El Español.)",
+    },
     {
       time: '14:45',
       datetime: '2026-06-07T14:45:31+02:00',
