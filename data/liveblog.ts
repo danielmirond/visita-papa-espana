@@ -37,10 +37,28 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-07T17:57:38+02:00',
+  dateModified: '2026-06-07T19:17:08+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '19:17',
+      datetime: '2026-06-07T19:17:08+02:00',
+      title: "El Papa: «La iglesia no se desentiende de nada de lo verdaderamente humano».",
+      body: "El Papa: «La iglesia no se desentiende de nada de lo verdaderamente humano». «La Iglesia no se desentiende de nada de lo verdaderamente humano», asegura el Vicario de Cristo, que defiende que, además, anhela permanecer en diálogo con el mundo contemporáneo. (Según ABC.)",
+    },
+    {
+      time: '19:16',
+      datetime: '2026-06-07T19:16:52+02:00',
+      title: "El Papa insta a «tejer redes» y a dialogar El Papa propone «que la universidad no renuncie al mundo del…",
+      body: "El Papa insta a «tejer redes» y a dialogar El Papa propone «que la universidad no renuncie al mundo del trabajo, que la empresa no vea al trabajador como un elemento más para lograr sus intereses, o que el deporte no sea reducido a un espectáculo o negocio», ha asegurado. (Según OKDiario.)",
+    },
+    {
+      time: '19:12',
+      datetime: '2026-06-07T19:12:45+02:00',
+      title: "El Santo Padre: «¿Qué herencia estamos dejando al futuro y, por ende, qué tipo de comunidad estamos…",
+      body: "El Santo Padre: «¿Qué herencia estamos dejando al futuro y, por ende, qué tipo de comunidad estamos construyendo?». «Surge una pregunta: ¿qué herencia estamos dejando al futuro y, por ende, qué tipo de comunidad estamos construyendo», se cuestiona el Santo Padre, que destaca la capacidad de los seres humanos para «producir, innovar y comunicar». (Según ABC.)",
+    },
     {
       time: '17:57',
       datetime: '2026-06-07T17:57:38+02:00',
