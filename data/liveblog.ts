@@ -37,10 +37,22 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-07T23:01:31+02:00',
+  dateModified: '2026-06-08T00:01:31+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '00:01',
+      datetime: '2026-06-08T00:01:31+02:00',
+      title: "Antonio Banderas: «La Iglesia ha sido el mayor productor de arte de la historia de la humanidad» .",
+      body: "Antonio Banderas: «La Iglesia ha sido el mayor productor de arte de la historia de la humanidad» . En un momento donde el ritmo de la vida corre veloz y al mismo tiempo urge vivir porque el tiempo apremia, el arte trata de responder a las grandes preguntas e inquietudes que van más allá de lo tangible. Por eso, el Papa León XIV quiso tener un encuentro durante su visita por España con el mundo de la cultura y el deporte. También por eso Antonio Banderas representó a los actores en este emotivo evento, donde recalcó precisamente eso: que hay encuentros «que no se miden solo en el tiempo,… (Según ABC.)",
+    },
+    {
+      time: '23:31',
+      datetime: '2026-06-07T23:31:31+02:00',
+      title: "Editorial | León XIV y España: una lección de esperanza .",
+      body: "Editorial | León XIV y España: una lección de esperanza . Los dos primeros días de la visita apostólica de León XIV a España han dejado una impresión difícil de ignorar. No solo por la magnitud de la respuesta ciudadana, sino por la naturaleza de lo ocurrido. En una época marcada por la dispersión, la aceleración y el predominio del ruido sobre la reflexión, resulta extraordinario contemplar a cientos de miles de personas reunidas en torno a una propuesta de silencio, oración y esperanza. (Según ABC.)",
+    },
     {
       time: '23:01',
       datetime: '2026-06-07T23:01:31+02:00',
