@@ -37,10 +37,28 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-07T21:38:00+02:00',
+  dateModified: '2026-06-07T23:01:31+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '23:01',
+      datetime: '2026-06-07T23:01:31+02:00',
+      title: "De Tamara Falcó a Yolanda Díaz: los rostros que no quisieron perderse el encuentro con León XIV en el…",
+      body: "De Tamara Falcó a Yolanda Díaz: los rostros que no quisieron perderse el encuentro con León XIV en el Movistar Arena . La llegada del Papa León XIV al Movistar Arena ha dejado una de las imágenes más impactantes de su visita a España. Cerca de 15.000 personas se han puesto en pie para recibir al Santo Padre con una ovación que se ha prolongado durante más de ocho minutos, la más larga que ha recibido desde el inicio de su pontificado. Visiblemente emocionado, el Vicario de Cristo ha agradecido el gesto antes de participar en uno de los actos más novedosos de su agenda. (Según ABC.)",
+    },
+    {
+      time: '22:31',
+      datetime: '2026-06-07T22:31:31+02:00',
+      title: "Carolina Marín y Teresa Perales, a León XIV: «Gracias por recordarnos con su ejemplo que el deporte es un…",
+      body: "Carolina Marín y Teresa Perales, a León XIV: «Gracias por recordarnos con su ejemplo que el deporte es un puente de solidaridad» . Sin Rafael Nadal, como inicialmente se había comunicado, pero con Teresa Perales y Carolina Marín, dos iconos del deporte español. El acto 'Tejer redes con la cultura, la educación, la empresa y el deporte', presidido por el Papa León XIV en el Movistar Arena, ha congregado hoy a personalidades de distintos sectores. En el evento, ambas atletas han recalcado ante el Pontífice la importancia del deporte. (Según ABC.)",
+    },
+    {
+      time: '22:14',
+      datetime: '2026-06-07T22:14:51+02:00',
+      title: "Papa León XIV en Madrid | La visita del Pontífice registra un impacto mediático histórico con 400 millones…",
+      body: "El director de Comunicación del viaje papal, Rafael Rubio, ha destacado el rotundo éxito de audiencia de los eventos masivos en la capital, cifrando en 400 millones las personas que han seguido por televisión la Vigilia de la Plaza de Lima y la Misa de la Plaza de Cibeles. Este interés global se ha reflejado con la misma intensidad en el entorno digital, donde la página web oficial del viaje acumuló más de 13 millones de visitas en solo veinticuatro horas —superando los 68 millones en la última semana—, a lo que se suma el impacto de creadores de contenido y misioneros digitales, cuyos… (Según El Español.)",
+    },
     {
       time: '21:38',
       datetime: '2026-06-07T21:38:00+02:00',
