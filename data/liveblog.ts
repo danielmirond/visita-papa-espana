@@ -37,10 +37,22 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-08T00:01:31+02:00',
+  dateModified: '2026-06-08T01:01:31+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '01:01',
+      datetime: '2026-06-08T01:01:31+02:00',
+      title: "Los jóvenes vuelven a Córdoba entusiasmados con el Papa: «Me quedo con que hay que cambiar el mundo desde…",
+      body: "Los jóvenes vuelven a Córdoba entusiasmados con el Papa: «Me quedo con que hay que cambiar el mundo desde el amor» . Acaban de subirse al autobús para volver a Córdoba y la lista de adjetivos y de metáforas se hace corta. No es la primera vez que participa en el encuentro con un Papa, pero Francisco Daniel Jiménez vuelve a Córdoba transformado tras el encuentro en estos días con León XIV. Lee aquí la información completa de Luis Miranda . (Según ABC.)",
+    },
+    {
+      time: '00:31',
+      datetime: '2026-06-08T00:31:31+02:00',
+      title: "El segundo día del Papa León XIV en Madrid, en imágenes .",
+      body: "El segundo día del Papa León XIV en Madrid, en imágenes . Cibeles es el escenario del acto principal del Papa este domingo 7 de junio en Madrid. La emblemática plaza de la capital acoge una multitudinaria misa oficiada por León XIV, a la que han acudido desde la madrugada miles de personas de todo el país. (Según ABC.)",
+    },
     {
       time: '00:01',
       datetime: '2026-06-08T00:01:31+02:00',
