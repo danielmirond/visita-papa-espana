@@ -37,10 +37,28 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-07T20:35:31+02:00',
+  dateModified: '2026-06-07T21:38:00+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '21:38',
+      datetime: '2026-06-07T21:38:00+02:00',
+      title: "Papa León XIV en Madrid | Pedro Sánchez encabeza la representación del Gobierno en la histórica jornada…",
+      body: "El presidente del Gobierno, Pedro Sánchez, iniciará la jornada de este lunes con un encuentro bilateral con el Papa León XIV a las 09:30 en la Nunciatura Apostólica, una cita a la que acudirá acompañado por el ministro de Asuntos Exteriores, José Manuel Albares. Tras esta reunión privada, el Pontífice se trasladará en papamóvil al Congreso de los Diputados para protagonizar un hecho inédito: pronunciar un discurso ante el pleno conjunto de las Cortes Generales. A este histórico acto parlamentario asistirá el jefe del Ejecutivo junto a la práctica totalidad de su gabinete, con la única… (Según El Español.)",
+    },
+    {
+      time: '21:30',
+      datetime: '2026-06-07T21:30:31+02:00',
+      title: "La actuación íntegra de la bailaora Sara Baras ante el Papa: 'Vuela', un homenaje a Paco de Lucía .",
+      body: "La actuación íntegra de la bailaora Sara Baras ante el Papa: 'Vuela', un homenaje a Paco de Lucía . La bailora y coreógrafa Sara Baras ha interpretado una parte de su nueva creación, 'Vuela', ante el Papa en el acto 'Tejer redes con el mundo de la cultura, del arte, de la economía y del deporte', en el Movistar Arena. (Según ABC.)",
+    },
+    {
+      time: '21:08',
+      datetime: '2026-06-07T21:08:30+02:00',
+      title: "Vecinas de Cañada Real invitan a León XIV a conocer su realidad tras más de 5 años sin luz: \"Queremos...",
+      body: "La Asociación Cultural Tabadol, una asociación cultural liderada por mujeres migrantes vecinas de la Cañada Real, en Madrid, ha escrito una carta al Papa León XIV para denunciar la \"injusticia\" que viven desde hace cinco años y medio cuando les cortaron el suministro eléctrico y para invitarle a conocer su \"barrio lleno de vida\". (Según Europa Press.)",
+    },
     {
       time: '20:35',
       datetime: '2026-06-07T20:35:31+02:00',
