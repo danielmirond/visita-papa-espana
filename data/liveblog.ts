@@ -37,10 +37,28 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-07T11:29:21+02:00',
+  dateModified: '2026-06-07T13:16:00+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '13:16',
+      datetime: '2026-06-07T13:16:00+02:00',
+      title: "Los asistentes a la misa: «Ha sido muy claro» Muchos asistentes a la misa que se ha celebrado el domingo en…",
+      body: "Los asistentes a la misa: «Ha sido muy claro» Muchos asistentes a la misa que se ha celebrado el domingo en Cibeles han puesto en valor las palabras de León XIV durante la homilía y han destacado que son «palabras muy directas, no sólo para los católicos, sino para todo el mundo». (Según OKDiario.)",
+    },
+    {
+      time: '13:14',
+      datetime: '2026-06-07T13:14:31+02:00',
+      title: "Esta es la agenda del Papa León XIV para la tarde del domingo en Madrid.",
+      body: "Esta es la agenda del Papa León XIV para la tarde del domingo en Madrid. Tras pasar por la Nunciatura Apostólica, la residencia papal durante los días que pase en Madrid, para comer y descansar, la agenda del Pontífice se intensifica por la tarde, comenzando por el encuentro privado con los miembros de la orden de San Agustín. Esta reunión tendrá lugar a las 16.30 en la Nunciatura. La última aparición del día ocurrirá en el Movistar Arena a las 18:00. (Según ABC.)",
+    },
+    {
+      time: '13:13',
+      datetime: '2026-06-07T13:13:46+02:00',
+      title: "Emoción y devoción en la misa con León XIV en Cibeles con más de 1,2 millones de asistentes: \"Jornada...",
+      body: "La plaza de Cibeles y sus alrededores amanecieron este sábado convertidos en un gran punto de encuentro para más de 1,2 millones peregrinos y fieles que han acudido desde primeras horas de la mañana para participar en la misa presidida por el Papa León XIV, en una jornada marcada por la devoción, la expectación y un ambiente festivo que fue creciendo conforme avanzaban las horas, que han dado lugar a una \"jornada histórica\", como han coincidido en señalar. (Según Europa Press.)",
+    },
     {
       time: '11:29',
       datetime: '2026-06-07T11:29:21+02:00',
