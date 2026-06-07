@@ -37,10 +37,28 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-07T13:16:00+02:00',
+  dateModified: '2026-06-07T14:45:31+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '14:45',
+      datetime: '2026-06-07T14:45:31+02:00',
+      title: "De Victoria Federica a Ayuso o Carla Pereyra: así han vestido algunas de las invitadas a la misa del Papa…",
+      body: "De Victoria Federica a Ayuso o Carla Pereyra: así han vestido algunas de las invitadas a la misa del Papa en Cibeles . Numerosas autoridades han asistido a la celebración del Corpus Christi cumpliendo con las normas de vestuario establecidas. Lee aquí la noticia completa de María I. Carla Pereyara, Ayuso y Victoria Federica durante la misa celebrada en Cibeles. (Según ABC.)",
+    },
+    {
+      time: '14:43',
+      datetime: '2026-06-07T14:43:00+02:00',
+      title: "Papa León XIV en Madrid | Jóvenes que han vuelto al cristianismo",
+      body: "Durante la Vigilia del sábado, el Papa León XIV recibió a muchos jóvenes que perdieron la fe en el cristianismo pero que han vuelto a ella.A todos ellos, les invitó a ser \"protagonistas del cambio\". \"Estáis llamados a dar una nueva dirección a la sociedad\". Y, a su vez, les animó a cumplir una misión. A ser \"misioneros del Evangelio ante las pobrezas materiales y espirituales de nuestro tiempo\".Casos como el de una chica rusa abandonada en su niñez, o Ángel, un sacerdote que perdió la fe a los 19 años tras la muerte de sus amigos en un accidente. (Según El Español.)",
+    },
+    {
+      time: '14:25',
+      datetime: '2026-06-07T14:25:47+02:00',
+      title: "Papa León XIV en Madrid | El Papa León XIV se reunirá este lunes con víctimas de abusos en el seno de la…",
+      body: "León XIV se reunirá este lunes 8 de junio en Nunciatura con víctimas de abusos en la Iglesia en un encuentro de carácter privado, según han confirmado a Europa Press fuentes conocedoras del mismo.Dada la apretada agenda del Pontífice durante esta visita, el encuentro de carácter privado se podría agendar a primera hora de la tarde del lunes, tras la comida con los obispos españoles en Nunciatura y antes de su salida al acto de oración y homenaje a la Virgen de La Almudena.La Iglesia española ha sido la encargada de organizar esta reunión, que el Vaticano confirmó el pasado viernes y de la… (Según El Español.)",
+    },
     {
       time: '13:16',
       datetime: '2026-06-07T13:16:00+02:00',
