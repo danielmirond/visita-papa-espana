@@ -37,10 +37,28 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-07T16:43:40+02:00',
+  dateModified: '2026-06-07T17:57:38+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '17:57',
+      datetime: '2026-06-07T17:57:38+02:00',
+      title: "El Papa llega al Movistar Arena Multitud de personas del mundo de las artes, el espectáculo y la cultura…",
+      body: "El Papa llega al Movistar Arena Multitud de personas del mundo de las artes, el espectáculo y la cultura saludan a León XIV que llega al escenario principal del estadio a pie. (Según OKDiario.)",
+    },
+    {
+      time: '17:56',
+      datetime: '2026-06-07T17:56:34+02:00',
+      title: "El Santo Padre llega al Movistar Arena.",
+      body: "El Santo Padre llega al Movistar Arena. (Según ABC.)",
+    },
+    {
+      time: '17:54',
+      datetime: '2026-06-07T17:54:21+02:00',
+      title: "Papa León XIV en Madrid | “A los jóvenes les ha dicho que no están solos",
+      body: "Las palabras del Papa León XIV han emocionado a muchos de los jóvenes que han asistido a la Vigilia de ayer como a la misma de hoy.Así, María, Miriam y Silvia, del Colegio Alborada de Alcalá de Henares, han remarcado que les han llegado las palabras del Pontífice por su \"profundidad.“Le llegan mucho a la gente joven, les da esperanza y les anima a tender puentes y arrimar el hombro para ayudar a las personas que lo necesitan\", ha explicado Silvia a Europa Press.Por su parte, María ha destacado que a los \"jóvenes les ha dicho que no están solos\". \"El Papa une porque todos somos Iglesia\", ha… (Según El Español.)",
+    },
     {
       time: '16:43',
       datetime: '2026-06-07T16:43:40+02:00',
