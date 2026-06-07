@@ -37,10 +37,28 @@ export const liveblogMadrid6: Liveblog = {
   description:
     'Seguimiento en directo del primer día del viaje del Papa León XIV a España: llegada a Madrid, bienvenida en el Palacio Real y vigilia con los jóvenes en la Plaza de Lima.',
   datePublished: '2026-06-06T21:00:00+02:00',
-  dateModified: '2026-06-07T01:01:31+02:00',
+  dateModified: '2026-06-07T08:01:31+02:00',
   coverageStart: '2026-06-06T09:00:00+02:00',
   coverageEnd: '2026-06-06T23:30:00+02:00',
   entries: [
+    {
+      time: '08:01',
+      datetime: '2026-06-07T08:01:31+02:00',
+      title: "La parroquia de San José repartirá más de 30.000 hostias en la misa de Cibeles .",
+      body: "La parroquia de San José repartirá más de 30.000 hostias en la misa de Cibeles . No hay madrileño (ni forastero) que no haya pasado por las puertas de la parroquia de San José, en pleno corazón de Madrid. Su fachada, de ladrillo rojo y con una Virgen del Carmen en lo alto, forma parte de una de las estampas más reconocibles de la capital, frente al edificio Metrópoli y junto al Banco de España, en un rincón por el que cada día transitan miles de personas. Sin embargo, no todos conocen la vida que hay detrás. (Según ABC.)",
+    },
+    {
+      time: '07:45',
+      datetime: '2026-06-07T07:45:37+02:00',
+      title: "Los niños de Comunión que saldrán en la procesión del Corpus ya esperan al Papa.",
+      body: "Los niños de Comunión que saldrán en la procesión del Corpus ya esperan al Papa. Una imagen de Fermín Canas desde los preparativos de la misa. (Según ABC.)",
+    },
+    {
+      time: '07:30',
+      datetime: '2026-06-07T07:30:31+02:00',
+      title: "Encuentro en el Movistar Arena con distintos sectores de la sociedad.",
+      body: "Encuentro en el Movistar Arena con distintos sectores de la sociedad. Por la tarde, el Pontífice participará en el encuentro 'Tejer redes con el mundo de la cultura, el arte, la economía y el deporte', presentado por Carlos Franganillo. En el acto participarán Antonio Banderas, el vicerrector de la Universidad Complutense, José María Coello de Portugal; representantes del mundo económico y también del deporte, entre los que se encuentran Carolina Marín, Rafa Nadal y Teresa Perales. (Según ABC.)",
+    },
     {
       time: '01:01',
       datetime: '2026-06-07T01:01:31+02:00',
