@@ -40,10 +40,11 @@ const COMMIT = args.includes('--commit')
 const SOURCES = [
   { name: 'El Español', url: 'https://www.elespanol.com/madrid/20260607/visita-papa-leon-xiv-madrid-directo-horario-misa-cibeles-cortes-trafico-agenda-oficial-actos-domingo/1003744276656_10.html' },
   { name: 'OKDiario', url: 'https://okdiario.com/espana/visita-del-papa-leon-xiv-madrid-7-junio-directo-misa-del-corpus-christi-cibeles-agenda-completa-horarios-calles-cortadas-como-llegar-17933286' },
-  { name: 'El Mundo', url: 'https://www.elmundo.es/espana/2026/06/07/6a23bffc751d9c417fcf9680-directo.html' },
-  { name: 'ABC', url: 'https://www.abc.es/sociedad/visita-papa-leon-xiv-madrid-directo-llega-20260605145954-di.html' },
+  { name: 'ABC', url: 'https://www.abc.es/sociedad/visita-papa-leon-xiv-madrid-directo-agenda-20260607115324-di.html' },
+  { name: 'El País', url: 'https://elpais.com/espana/2026-06-07/visita-del-papa-leon-xiv-a-espana-en-directo.html' },
+  { name: 'Lecturas', url: 'https://www.lecturas.com/actualidad/visita-papa-leon-xiv-a-madrid-directo_193939' },
+  { name: 'El Confidencial', url: 'https://www.elconfidencial.com/espana/madrid/2026-06-07/1qrt-cortes-trafico-madrid-domingo-misa-papa-cibeles-horarios-calles_4367291/' },
   { name: 'Europa Press', url: 'https://www.europapress.es/sociedad/noticia-visita-papa-espana-2026-directo-agenda-recorrido-discursos-anecdotas-ultima-hora-leon-xiv-20260606055952.html' },
-  { name: 'La Vanguardia', url: 'https://www.lavanguardia.com/politica/20260606/11557866/papa-leon-xiv-visita-espana-madrid-ultima-hora-hoy-en-directo.html' },
 ]
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36'
 
@@ -62,6 +63,22 @@ function strip(s) {
     .trim()
 }
 
+/**
+ * Normaliza la fecha de un liveBlogUpdate a ISO con offset de Madrid.
+ * Algunos medios (p. ej. Lecturas) usan "DD/MM/YYYY HH:MM", que new Date()
+ * interpreta como MM/DD (formato US) y manda la fecha al futuro. Lo convertimos
+ * explícitamente para no corromper el orden ni dateModified.
+ */
+function toIso(raw) {
+  if (!raw) return ''
+  const m = raw.match(/^(\d{2})\/(\d{2})\/(\d{4})[ T](\d{2}):(\d{2})/)
+  if (m) {
+    const [, dd, mm, yyyy, HH, MM] = m
+    return `${yyyy}-${mm}-${dd}T${HH}:${MM}:00+02:00`
+  }
+  return raw
+}
+
 function madridTime(iso) {
   if (!iso) return ''
   const d = new Date(iso)
@@ -78,13 +95,16 @@ function extract(html, source) {
     for (const o of arr) {
       if (o['@type'] === 'LiveBlogPosting' && Array.isArray(o.liveBlogUpdate)) {
         return o.liveBlogUpdate
-          .map((u) => ({
-            source,
-            iso: u.datePublished || u.dateModified || '',
-            time: madridTime(u.datePublished || u.dateModified),
-            headline: strip(u.headline || u.name || ''),
-            body: strip(u.articleBody || u.text || u.description || ''),
-          }))
+          .map((u) => {
+            const iso = toIso(u.datePublished || u.dateModified || '')
+            return {
+              source,
+              iso,
+              time: madridTime(iso),
+              headline: strip(u.headline || u.name || ''),
+              body: strip(u.articleBody || u.text || u.description || ''),
+            }
+          })
           .filter((u) => u.headline || u.body)
       }
     }

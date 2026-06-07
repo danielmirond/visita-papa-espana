@@ -37,10 +37,22 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-07T10:03:09+02:00',
+  dateModified: '2026-06-07T10:07:00+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '10:07',
+      datetime: '2026-06-07T10:07:00+02:00',
+      title: "Imágenes para la historia",
+      body: "Los reyes Felipe y Letizia, junto a sus hijas Leonor y Sofía, son los únicos no religiosos que estarán al lado del Papa León XIV en el escenario de Cibeles. (Según Lecturas.)",
+    },
+    {
+      time: '10:05',
+      datetime: '2026-06-07T10:05:09+02:00',
+      title: "Sin incidentes en la seguridad del viaje del papa, un test de estrés para la Policía",
+      body: "El viaje del papa a España se está desarrollando con normalidad en el amplio dispositivo de seguridad desplegado por la Policía y que supone un reto logístico y un test de \"estrés y resistencia\" para los agentes que participan.Así lo ha asegurado a EFE el comisario jefe de las Unidades de Intervención Policial (UIP), Javier Orcaray, antes de que comience en Cibeles la misa presidida por León XIV, que, según este mando, seguirán al menos unas 800.000 personas en el entorno de esta plaza madrileña.Orcaray ha explicado que, hasta el momento, todo se está desarrollando con \"normalidad\", sin… (Según El Español.)",
+    },
     {
       time: '10:03',
       datetime: '2026-06-07T10:03:09+02:00',
