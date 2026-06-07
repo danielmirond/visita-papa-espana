@@ -37,10 +37,28 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-07T19:17:08+02:00',
+  dateModified: '2026-06-07T20:35:31+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '20:35',
+      datetime: '2026-06-07T20:35:31+02:00',
+      title: "Ibéricos, queso, vino español y aceite del pueblo del cardenal para cenar.",
+      body: "Ibéricos, queso, vino español y aceite del pueblo del cardenal para cenar. El Papa cena esta noche en casa del arzobispo, José Cobo, donde lo agasajarán con algunas de las más suculentas viandas españolas. Servido por el conocido restaurante Larry, el menú incluye un surtido de ibéricos y quesos y vinos nacionales, así como aceite de Sabiote -el pueblo jienense del cardenal-, según ha informado Cope. (Según ABC.)",
+    },
+    {
+      time: '20:33',
+      datetime: '2026-06-07T20:33:31+02:00',
+      title: "Papa León XIV en Madrid | ¿Cuál es la agenda del Papa mañana lunes?",
+      body: "Mañana lunes 8 de junio, el papa León XIV afrontará su jornada más institucional e intensa en Madrid. La mañana comenzará a las 09:30 h con una audiencia privada con el presidente del Gobierno, Pedro Sánchez, en la Nunciatura Apostólica. Posteriormente, a las 10:30 h, el Pontífice protagonizará un momento histórico al convertirse en el primer papa en dar un discurso ante el pleno conjunto del Congreso y el Senado en el Congreso de los Diputados. Tras esta cita parlamentaria, a las 11:30 h se trasladará a la sede de la Conferencia Episcopal Española para reunirse y almorzar con los obispos… (Según El Español.)",
+    },
+    {
+      time: '20:20',
+      datetime: '2026-06-07T20:20:31+02:00',
+      title: "El discurso íntegro de Antonio Banderas ante el Papa: «Confieso haber sido víctima del hechizo de Dios» .",
+      body: "El discurso íntegro de Antonio Banderas ante el Papa: «Confieso haber sido víctima del hechizo de Dios» . Lee el discurso íntegro que Antonio Banderas ha pronunciado ante el Papa León XIV en el acto 'tejer redes' en el Movistar Arena. (Según ABC.)",
+    },
     {
       time: '19:17',
       datetime: '2026-06-07T19:17:08+02:00',
