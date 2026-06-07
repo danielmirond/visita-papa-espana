@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import Header from '@/components/layout/Header'
+import LiveBanner from '@/components/shared/LiveBanner'
 import UnofficialNotice from '@/components/shared/UnofficialNotice'
 import Footer from '@/components/layout/Footer'
 import KitBanner from '@/components/shared/KitBanner'
@@ -145,6 +146,7 @@ export default function RootLayout({
         {/* JSON-LD global consolidado en @graph (Organization + WebSite + Person) */}
         <JsonLd data={globalGraphSchema('es')} />
         <UnofficialNotice />
+        <LiveBanner />
         <Header />
         <main className="min-h-screen">{children}</main>
         <KitBanner />
