@@ -11,3 +11,4 @@ Host: https://www.visita-papa-2026.com
 
 # Sitemaps
 Sitemap: https://www.visita-papa-2026.com/sitemap.xml
+Sitemap: https://www.visita-papa-2026.com/news-sitemap.xml

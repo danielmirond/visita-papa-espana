@@ -34,8 +34,13 @@ const MAX = parseInt(argVal('max', '3'), 10)
 const DRY = args.includes('--dry-run')
 const COMMIT = args.includes('--commit')
 
+// Directos del 7 de junio (misa de Cibeles + Movistar Arena). Los medios
+// abren una URL nueva por día; algunas reutilizan la misma URL "rolling".
+// El script descarta automáticamente las que devuelvan 404 o sin JSON-LD.
 const SOURCES = [
-  { name: 'El Mundo', url: 'https://www.elmundo.es/espana/2026/06/06/6a23bffc751d9c417fcf9680-directo.html' },
+  { name: 'El Español', url: 'https://www.elespanol.com/madrid/20260607/visita-papa-leon-xiv-madrid-directo-horario-misa-cibeles-cortes-trafico-agenda-oficial-actos-domingo/1003744276656_10.html' },
+  { name: 'OKDiario', url: 'https://okdiario.com/espana/visita-del-papa-leon-xiv-madrid-7-junio-directo-misa-del-corpus-christi-cibeles-agenda-completa-horarios-calles-cortadas-como-llegar-17933286' },
+  { name: 'El Mundo', url: 'https://www.elmundo.es/espana/2026/06/07/6a23bffc751d9c417fcf9680-directo.html' },
   { name: 'ABC', url: 'https://www.abc.es/sociedad/visita-papa-leon-xiv-madrid-directo-llega-20260605145954-di.html' },
   { name: 'Europa Press', url: 'https://www.europapress.es/sociedad/noticia-visita-papa-espana-2026-directo-agenda-recorrido-discursos-anecdotas-ultima-hora-leon-xiv-20260606055952.html' },
   { name: 'La Vanguardia', url: 'https://www.lavanguardia.com/politica/20260606/11557866/papa-leon-xiv-visita-espana-madrid-ultima-hora-hoy-en-directo.html' },
@@ -208,9 +213,15 @@ function gitCommitPush(titlePart) {
 
 async function main() {
   const src = readFileSync(FILE, 'utf8')
-  const lastIso = readFirstEntryIso(src)
-  const publishedTimes = readPublishedTimes(src)
-  const publishedTitles = readPublishedTitlesNormalised(src)
+  // El liveblog ACTIVO es el primer bloque del archivo (donde se insertan las
+  // entradas nuevas). Acotamos las lecturas a ese bloque para no deduplicar
+  // contra horas/títulos de liveblogs de días anteriores.
+  const blockStarts = [...src.matchAll(/export const liveblog\w+:/g)].map((m) => m.index)
+  const activeBlock =
+    blockStarts.length >= 2 ? src.slice(blockStarts[0], blockStarts[1]) : src
+  const lastIso = readFirstEntryIso(activeBlock)
+  const publishedTimes = readPublishedTimes(activeBlock)
+  const publishedTitles = readPublishedTitlesNormalised(activeBlock)
   console.error(`Última entrada publicada: ${lastIso || '(ninguna)'} · ${publishedTimes.size} entradas previas`)
 
   const lastMs = lastIso ? new Date(lastIso).getTime() : 0

@@ -31,6 +31,85 @@ export interface Liveblog {
   entries: LiveblogEntry[]
 }
 
+export const liveblogMadrid7: Liveblog = {
+  slug: 'visita-papa-madrid-misa-cibeles-movistar-arena-7-junio-directo',
+  headline: 'Misa del Papa en Cibeles y Movistar Arena, en directo (7 de junio)',
+  description:
+    'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
+  datePublished: '2026-06-07T08:00:00+02:00',
+  dateModified: '2026-06-07T10:03:09+02:00',
+  coverageStart: '2026-06-07T08:00:00+02:00',
+  coverageEnd: '2026-06-07T22:00:00+02:00',
+  entries: [
+    {
+      time: '10:03',
+      datetime: '2026-06-07T10:03:09+02:00',
+      title: "La misa se puede seguir a través de 42 pantallas repartidas por Madrid Para los fieles y seguidores del…",
+      body: "La misa se puede seguir a través de 42 pantallas repartidas por Madrid Para los fieles y seguidores del Papa que no hayan podido encontrar un sitio cerca de Cibeles para asistir a la misa del Corpus, se han instalado hasta 42 pantallas por todo Madrid para todos aquellos que quieran verla (Según OKDiario.)",
+    },
+    {
+      time: '10:00',
+      datetime: '2026-06-07T10:00:37+02:00',
+      title: "Almeida le da la llave de oro de la ciudad al Papa León XIV",
+      body: "León XIV recibe la llave de oro de Madrid antes de la gran misa en Cibeles. Tras firmar el Libro de Honor, el Santo Padre se dirige a pie a la sacristía. (Según El Español.)",
+    },
+    {
+      time: '09:57',
+      datetime: '2026-06-07T09:57:06+02:00',
+      title: "Quedan cinco minutos para la misa del Corpus El pontífice ha llegado al Ayuntamiento de Madrid en papamóvil…",
+      body: "Quedan cinco minutos para la misa del Corpus El pontífice ha llegado al Ayuntamiento de Madrid en papamóvil para recibir la llave de oro de la ciudad de Madrid. En breves minutos oficiará la misa del Corpus ante miles de fieles. Es el acto más multitudinario de la visita del Papa León XIV. (Según OKDiario.)",
+    },
+    {
+      time: '09:56',
+      datetime: '2026-06-07T09:56:44+02:00',
+      title: "Faltan pocos minutos para que dé comienzo la gran misa del Corpus Christi en Cibeles.",
+      body: "Faltan pocos minutos para que dé comienzo la gran misa del Corpus Christi en Cibeles. (Según ABC.)",
+    },
+    {
+      time: '09:55',
+      datetime: '2026-06-07T09:55:31+02:00',
+      title: "Algunas de las autoridades que está previsto que acudan a la misa del Corpus Christi.",
+      body: "Algunas de las autoridades que está previsto que acudan a la misa del Corpus Christi. A la misa oficiada por el Papa está previsto que asistan los Reyes Felipe VI y Letizia, la princesa Leonor y la infanta Sofía, además de la presidenta de Madrid, Isabel Díaz Ayuso y el alcalde, José Luis Martínez-Almeida. Desde el Gobierno acude Milagros Tolón, Ministra de Educación, Formación Profesional y Deportes. (Según ABC.)",
+    },
+    {
+      time: '09:54',
+      datetime: '2026-06-07T09:54:25+02:00',
+      title: "El alcalde de Madrid entrega la llave de oro a León XIV José Luis Martínez-Almeida entrega las llaves de la…",
+      body: "El alcalde de Madrid entrega la llave de oro a León XIV José Luis Martínez-Almeida entrega las llaves de la ciudad de Madrid al pontífice. Tras la entrega, el Papa León XIV ha firmado en el Libro de Honor de Madrid bajo la atenta mirada de la familia real. (Según OKDiario.)",
+    },
+    {
+      time: '09:52',
+      datetime: '2026-06-07T09:52:03+02:00',
+      title: "El Rey recibe al Papa en su llegada a Cibeles Los Reyes, la princesa de Asturias y la infanta reciben al…",
+      body: "El Rey recibe al Papa en su llegada a Cibeles Los Reyes, la princesa de Asturias y la infanta reciben al Papa León XIV a su llegada al Ayuntamiento de Madrid. Almeida ha sido la primera autoridad política en saludar al pontífice. (Según OKDiario.)",
+    },
+    {
+      time: '09:50',
+      datetime: '2026-06-07T09:50:31+02:00',
+      title: "La parroquia de San José repartirá más de 30.000 hostias consagradas en la misa de Cibeles .",
+      body: "La parroquia de San José repartirá más de 30.000 hostias consagradas en la misa de Cibeles . Está previsto que alrededor de 300 ministros repartan el Cuerpo y la Sangre de Cristo a todos los que estén participando en la misa. «Celebraremos una Eucaristía a puerta cerrada ese mismo domingo para consagrar todas las formas que nos han enviado desde el arzobispado. Nos han mandado 150 copones y en cada copón van 200 formas, más luego otros cuatro copones para celíacos, otras 500 formas aproximadamente, sin gluten», explicaba su párroco, don José Julio Martín Barba. (Según ABC.)",
+    },
+    {
+      time: '09:00',
+      datetime: '2026-06-07T09:00:00+02:00',
+      title: 'Segundo día del Papa en Madrid: la gran misa del Corpus en Cibeles',
+      body: 'León XIV afronta su segunda jornada en España con dos grandes citas en Madrid. Por la mañana presidirá la solemne misa del Corpus Christi en la plaza de Cibeles, uno de los actos centrales del viaje, para el que la organización espera una asistencia masiva. Por la tarde participará en el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
+    },
+    {
+      time: '08:30',
+      datetime: '2026-06-07T08:30:00+02:00',
+      title: 'Cibeles ultima los preparativos de la misa multitudinaria',
+      body: 'El entorno de la plaza de Cibeles y el paseo del Prado amanece con un amplio dispositivo de seguridad y cortes de tráfico para acoger la eucaristía. La parroquia de San José, en pleno centro de Madrid, ha preparado decenas de miles de formas para la comunión de los fieles que llenarán la zona.',
+    },
+    {
+      time: '08:00',
+      datetime: '2026-06-07T08:00:00+02:00',
+      title: 'La agenda del día: Cibeles por la mañana, Movistar Arena por la tarde',
+      body: 'La jornada del domingo, festividad del Corpus Christi, tiene dos polos. A las 10:00 el Papa preside la misa en la plaza de Cibeles —tras recorrer en papamóvil el trayecto desde el Instituto Ramiro de Maeztu— seguida del rezo del Ángelus y de la procesión del Corpus hasta la iglesia de San José. A las 18:00, el encuentro «Tejer redes con el mundo de la cultura, el arte, la economía y el deporte» en el Movistar Arena, presentado por Carlos Franganillo, con figuras como Antonio Banderas, Carolina Marín, Rafa Nadal y Teresa Perales.',
+    },
+  ],
+}
+
 export const liveblogMadrid6: Liveblog = {
   slug: 'en-directo-madrid-6-junio',
   headline: 'Visita del Papa León XIV a Madrid, en directo (6 de junio)',
