@@ -44,33 +44,33 @@ const CUADROS = [
   {
     obra: 'La Última Cena',
     autor: 'Juan de Juanes',
-    ficha: 'Óleo sobre tabla',
+    ficha: '1555-1562 · Óleo sobre tabla, 116 × 191 cm · Sala 051',
     texto:
-      'La célebre tabla de Juan de Juanes (Vicente Macip), una de las representaciones más conocidas de la institución de la Eucaristía. Una elección muy ligada al sentido de la noche, centrada en la adoración eucarística.',
+      'Tabla pintada por Juan de Juanes (Vicente Macip) para el banco del retablo mayor de San Esteban de Valencia. Inspirada en Leonardo por su espacio y la expresividad de los apóstoles, centra la escena en Jesús, sereno y triunfante, en el momento de consagrar la sagrada hostia. El cáliz del centro reproduce el que se conserva en la catedral de Valencia, venerado como el auténtico Santo Grial; la jarra y la jofaina del primer término aluden al Lavatorio de los pies. Todos los apóstoles llevan nimbo con su nombre salvo Judas Iscariote —de barba y cabello rojos, vestido de amarillo, color de la envidia— que oculta la bolsa del dinero.',
     prado: 'https://www.museodelprado.es/coleccion/obra-de-arte/la-ultima-cena/2800c04d-a3ad-41eb-a75b-fe359d7d1dde',
   },
   {
     obra: 'El Bautismo de Cristo',
     autor: 'El Greco',
-    ficha: 'Óleo sobre lienzo',
+    ficha: '1597-1600 · Óleo sobre lienzo, 350 × 144 cm',
     texto:
-      'Obra de la etapa madura de El Greco (Doménikos Theotokópoulos), de intensa fuerza espiritual y color, dentro de su gran ciclo sobre la vida de Cristo.',
+      'Obra de la etapa madura de El Greco (Doménikos Theotokópoulos), de intensa fuerza espiritual y color. Fue pintada para el retablo mayor del Colegio de la Encarnación de Madrid (seminario agustino conocido como «Doña María de Aragón»), dentro de su gran ciclo sobre la vida de Cristo. Representa el momento en que, tras ser bautizado Jesús en el Jordán, se abren los cielos y el Espíritu Santo desciende en forma de paloma.',
     prado: 'https://www.museodelprado.es/coleccion/obra-de-arte/bautismo-de-cristo/388206cf-943c-46ac-911c-3b63a0ac0200',
   },
   {
     obra: 'Las bodas de Caná',
-    autor: 'Museo del Prado',
+    autor: 'Anónimo',
     ficha: 'Siglo XVII · Óleo sobre lámina de cobre, 66,5 × 91,8 cm',
     texto:
-      'El primer milagro de Jesús, la conversión del agua en vino en las bodas de Caná. Una delicada obra del siglo XVII pintada sobre lámina de cobre. Consulta la autoría en la ficha del Museo del Prado.',
+      'El primer milagro de Jesús, la conversión del agua en vino en las bodas de Caná. Una delicada obra anónima del siglo XVII pintada sobre lámina de cobre, hoy en depósito en otra institución por parte del Museo del Prado.',
     prado: 'https://www.museodelprado.es/coleccion/obra-de-arte/las-bodas-de-cana/08712c2d-e3a3-47b4-b500-5df9f132f2b1',
   },
   {
     obra: 'Jesús en casa de Marta y María',
-    autor: 'Museo del Prado',
-    ficha: 'Museo del Prado',
+    autor: 'Según Guglielmo Courtois',
+    ficha: 'Siglo XVII · Óleo sobre lienzo, 180 × 150 cm',
     texto:
-      'La escena evangélica del encuentro de Jesús con las hermanas Marta y María, símbolo de la vida activa y la contemplativa. Consulta la ficha completa y la autoría en el Museo del Prado.',
+      'La escena evangélica del encuentro de Jesús con las hermanas Marta y María, símbolo de la vida activa y la contemplativa. Se trata de una variante del cuadro de formato oval de Guglielmo Courtois que preside el altar mayor del convento de los Santos Cuatro Coronados, en Roma. Está en depósito en otra institución.',
     prado: 'https://www.museodelprado.es/coleccion/obra-de-arte/jesus-en-casa-de-marta-y-maria/f9727dc0-0d32-4691-9c74-42de83eb8ce5',
   },
 ]
