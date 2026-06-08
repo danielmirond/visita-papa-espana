@@ -37,10 +37,28 @@ export const liveblogMadrid7: Liveblog = {
   description:
     'Seguimiento en directo del segundo día del Papa León XIV en Madrid: la gran misa del Corpus Christi en la plaza de Cibeles, el Ángelus y el encuentro con el mundo de la cultura, el arte, la economía y el deporte en el Movistar Arena.',
   datePublished: '2026-06-07T08:00:00+02:00',
-  dateModified: '2026-06-08T01:01:31+02:00',
+  dateModified: '2026-06-08T07:53:46+02:00',
   coverageStart: '2026-06-07T08:00:00+02:00',
   coverageEnd: '2026-06-07T22:00:00+02:00',
   entries: [
+    {
+      time: '07:53',
+      datetime: '2026-06-08T07:53:46+02:00',
+      title: "El Congreso se prepara para escuchar a León XIV, el primer Papa que se dirigirá a diputados y senadores",
+      body: "León XIV se convertirá este lunes en el primer Papa que pronuncia un discurso ante diputados y senadores en el Palacio del Congreso, y lo hará no como Sumo Pontífice, sino como jefe de Estado de Ciudad del Vaticano, en el marco de su visita oficial a España. (Según Europa Press.)",
+    },
+    {
+      time: '07:31',
+      datetime: '2026-06-08T07:31:31+02:00',
+      title: "El Vicario de Cristo asiste a la oración y homenaje a la Virgen de la Almudena.",
+      body: "El Vicario de Cristo asiste a la oración y homenaje a la Virgen de la Almudena. Por la tarde, a las seis, el Obispo de Roma asistirá a la oración y homenaje a la Virgen de la Almudena en la catedral. Acude la Reina Sofía, acompañada por la ministra de Inclusión, Seguridad Social y Migraciones y portavoz del Gobierno, Elma Saiz. (Según ABC.)",
+    },
+    {
+      time: '07:01',
+      datetime: '2026-06-08T07:01:31+02:00',
+      title: "El Pontífice come con los obispos.",
+      body: "El Pontífice come con los obispos. Después del discurso en el Congreso, León XIV se dirigirá a la Nunciatura Apostólica para asistir a una comida con los obispos. (Según ABC.)",
+    },
     {
       time: '01:01',
       datetime: '2026-06-08T01:01:31+02:00',
