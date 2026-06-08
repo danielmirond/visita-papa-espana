@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-08T13:20:05+02:00',
+  dateModified: '2026-06-08T16:53:56+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '16:53',
+      datetime: '2026-06-08T16:53:56+02:00',
+      title: "El Real Madrid lanza una camiseta de edición limitada en honor al Papa El Real Madrid ha puesto en venta en…",
+      body: "El Real Madrid lanza una camiseta de edición limitada en honor al Papa El Real Madrid ha puesto en venta en su tienda oficial una edición limitada de camisetas con el nombre de León XIV con un precio de 195 euros después de que el Papa León XIV desvelara su afición por el conjunto madridista. El club blanco ha colocado maniquíes para exhibir la camiseta en la que en su espalda se lee «León» en la parte superior y «XIV» como dorsal. (Según OKDiario.)",
+    },
+    {
+      time: '16:52',
+      datetime: '2026-06-08T16:52:31+02:00',
+      title: "Irene Montero acusa al Papa de atacar el derecho al aborto.",
+      body: "Irene Montero acusa al Papa de atacar el derecho al aborto. La eurodiputada de Podemos y exministra de Igualdad, Irene Montero, ha acusado al Papa León XIV, a quien tilda de «jefe de una teocracia», de atacar el derecho al aborto durante su discurso este lunes en el Congreso de los Diputados. A través de un vídeo publicado en sus redes sociales, ha lanzado que León XIV no debería haber tenido ese «altavoz» de intervenir en el Congreso para carga contra derechos «democráticamente conquistados» como la eutanasia o la interrupción voluntaria del embarazo. (Según ABC.)",
+    },
+    {
+      time: '16:50',
+      datetime: '2026-06-08T16:50:20+02:00',
+      title: "León XIV se reúne con víctimas de abusos en la Iglesia en Nunciatura",
+      body: "El Papa León XIV se reúne en Nunciatura con víctimas de abusos en la Iglesia, un encuentro de carácter privado previsto este lunes 8 de junio a las 16.15 horas, según confirmaron a Europa Press fuentes conocedoras del encuentro. (Según Europa Press.)",
+    },
     {
       time: '13:20',
       datetime: '2026-06-08T13:20:05+02:00',
