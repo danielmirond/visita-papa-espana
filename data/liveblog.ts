@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-08T19:35:48+02:00',
+  dateModified: '2026-06-08T21:45:03+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '21:45',
+      datetime: '2026-06-08T21:45:03+02:00',
+      title: "El Papa y los obispos hablan de unidad, comunión y compartir en un almuerzo \"entrañable\" con platos ligeros",
+      body: "El Papa y los obispos españoles han compartido este mediodía en Nunciatura un almuerzo \"entrañable\" y \"cercano\" con \"platos ligeros\" en el que han conversado sobre unidad, comunión y la necesidad de compartir, según ha podido saber Europa Press. (Según Europa Press.)",
+    },
+    {
+      time: '21:35',
+      datetime: '2026-06-08T21:35:53+02:00',
+      title: "León XIV descansa ya en la Nunciatura en su último día en Madrid, antes de su partida a Barcelona",
+      body: "León XIV descansa ya en la Nunciatura Apostólica, donde se encuentra desde las 21.00 horas, tras poner fin a su tercera jornada de viaje apostólico por España, que ha finalizado en el Estadio Santiago Bernabéu con un encuentro con la Iglesia diocesana de Madrid y las diócesis de Alcalá de Henares y Getafe, que representan a parroquias, movimientos, vida consagrada, sacerdote y agentes pastorales. (Según Europa Press.)",
+    },
+    {
+      time: '21:31',
+      datetime: '2026-06-08T21:31:31+02:00',
+      title: "Gonzalo, a ver al Pontífice con toda su familia.",
+      body: "Gonzalo, a ver al Pontífice con toda su familia. León XIV ya ha regresado a la Nunciatura, donde disfrutará de una cena en privado, pero el evento en el Bernabéu sigue. Ahí se encuentra Gonzalo, que ha llevado a toda la familia. Su mujer, su suegra, hijos, sobrinos y hasta amigos. (Según ABC.)",
+    },
     {
       time: '19:35',
       datetime: '2026-06-08T19:35:48+02:00',
