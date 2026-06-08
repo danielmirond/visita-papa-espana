@@ -106,6 +106,9 @@ export default function EnDirectoCongresoBernabeu() {
             <Link href="/es/programa/8-junio" className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-gold-light">
               Programa del día
             </Link>
+            <Link href="/es/discurso-papa-leon-xiv-congreso-diputados" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
+              Discurso completo en el Congreso
+            </Link>
             <Link href="/es/cortes-trafico/madrid" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
               Cortes de tráfico y metro
             </Link>
