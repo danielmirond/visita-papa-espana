@@ -132,6 +132,24 @@ export default function DiscursosPage({ locale }: Props) {
       </section>
 
       <Container className="py-10">
+        {/* Destacado: discurso íntegro en el Congreso (es) */}
+        {locale === 'es' && (
+          <Link
+            href="/es/discurso-papa-leon-xiv-congreso-diputados"
+            className="mb-6 block rounded-xl border border-papal-gold/40 bg-papal-cream p-5 transition hover:shadow-md"
+          >
+            <span className="inline-flex items-center gap-1 rounded bg-papal-gold/20 px-2 py-0.5 text-xs font-bold text-papal-gold-dark">
+              ⭐ Destacado · 8 de junio
+            </span>
+            <p className="mt-2 font-heading text-lg font-bold text-papal-navy">
+              Discurso completo del Papa León XIV en el Congreso de los Diputados
+            </p>
+            <p className="mt-1 text-sm text-papal-navy/70">
+              Texto íntegro de la primera intervención de un Pontífice ante las Cortes Generales. Leer el discurso →
+            </p>
+          </Link>
+        )}
+
         {/* Leyenda de tipos */}
         <div className="mb-6 flex flex-wrap gap-2">
           {tiposDiscurso.map((tp) => (

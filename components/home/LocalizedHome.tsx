@@ -104,6 +104,20 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </div>
       )}
 
+      {/* Destacado: discurso íntegro en el Congreso */}
+      {locale === 'es' && (
+        <div className="border-b border-papal-gold/20 bg-papal-cream">
+          <Container className="py-2 text-center">
+            <Link
+              href="/es/discurso-papa-leon-xiv-congreso-diputados"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-papal-navy hover:underline"
+            >
+              📜 Discurso completo del Papa en el Congreso de los Diputados →
+            </Link>
+          </Container>
+        </div>
+      )}
+
       {/* Hero */}
       <section className="relative min-h-[600px] overflow-hidden">
         <Image
