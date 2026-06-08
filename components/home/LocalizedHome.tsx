@@ -90,34 +90,6 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
       {/* Retransmisión en directo (cuenta atrás → embed YouTube RTVE) */}
       <LiveBroadcast locale={locale} />
 
-      {/* Acceso al liveblog */}
-      {locale === 'es' && (
-        <div className="bg-red-600">
-          <Container className="py-2 text-center">
-            <Link
-              href="/es/visita-papa-leon-madrid-8-junio-congreso-bernabeu"
-              className="inline-flex items-center gap-2 text-sm font-bold text-white hover:underline"
-            >
-              🔴 El Papa en Madrid, en directo: Congreso y Bernabéu · minuto a minuto →
-            </Link>
-          </Container>
-        </div>
-      )}
-
-      {/* Destacado: discurso íntegro en el Congreso */}
-      {locale === 'es' && (
-        <div className="border-b border-papal-gold/20 bg-papal-cream">
-          <Container className="py-2 text-center">
-            <Link
-              href="/es/discurso-papa-leon-xiv-congreso-diputados"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-papal-navy hover:underline"
-            >
-              📜 Discurso completo del Papa en el Congreso de los Diputados →
-            </Link>
-          </Container>
-        </div>
-      )}
-
       {/* Destacado: recorrido en Barcelona (9-10 jun) */}
       {locale === 'es' && (
         <div className="border-b border-papal-gold/20 bg-papal-gold/15">
