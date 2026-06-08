@@ -5,42 +5,47 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 /**
- * Franja global "EN DIRECTO" que aparece en TODAS las páginas mientras dura
- * la cobertura en vivo. Enlaza al liveblog del día (es). Se oculta sola:
- *  - tras el fin de la ventana de cobertura (END),
- *  - en la propia página del directo (para no duplicar).
+ * Franja global que aparece en TODAS las páginas (es) destacando la etapa de
+ * Barcelona. Enlaza la página principal de la ciudad y el recorrido del
+ * papamóvil. Renderizada en SSR para que ambos enlaces sean rastreables; se
+ * oculta sola tras el fin de la etapa de Barcelona y en sus propias páginas.
  */
-const LIVE = {
-  href: '/es/visita-papa-leon-madrid-8-junio-congreso-bernabeu',
-  label: 'EN DIRECTO · El Papa en Madrid: Congreso y Bernabéu',
-  // Fin de la cobertura del día (Madrid, +02:00)
-  end: '2026-06-08T23:00:00+02:00',
+const BANNER = {
+  // Fin de la etapa de Barcelona (Madrid, +02:00)
+  end: '2026-06-10T23:00:00+02:00',
+  links: [
+    { href: '/es/ciudades/barcelona', label: 'Guía de Barcelona' },
+    { href: '/es/recorrido-papa-barcelona', label: 'Recorrido del papamóvil' },
+  ],
 }
 
 export default function LiveBanner() {
   const pathname = usePathname()
-  // Se renderiza por defecto (también en SSR) para que el enlace sea rastreable
-  // en todas las páginas. En cliente se oculta sola al terminar la cobertura.
+  // Se renderiza por defecto (también en SSR) para que los enlaces sean
+  // rastreables en todas las páginas. En cliente se oculta al terminar la etapa.
   const [hidden, setHidden] = useState(false)
 
   useEffect(() => {
-    if (Date.now() >= new Date(LIVE.end).getTime()) setHidden(true)
+    if (Date.now() >= new Date(BANNER.end).getTime()) setHidden(true)
   }, [])
 
   if (hidden) return null
-  // No mostrar en la propia página del directo (evita duplicar).
-  if (pathname?.includes('visita-papa-leon-madrid-8-junio-congreso-bernabeu')) return null
+  // No mostrar en las propias páginas de Barcelona (evita duplicar).
+  if (pathname === '/es/ciudades/barcelona' || pathname?.includes('recorrido-papa-barcelona')) return null
 
   return (
-    <div className="bg-red-600 text-white">
-      <Link
-        href={LIVE.href}
-        className="mx-auto flex max-w-7xl items-center justify-center gap-2 px-4 py-2 text-center text-sm font-bold hover:underline"
-      >
-        <span className="inline-flex h-2 w-2 shrink-0 animate-pulse rounded-full bg-white" />
-        {LIVE.label}
-        <span aria-hidden>→</span>
-      </Link>
+    <div className="bg-papal-navy text-white">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-4 gap-y-1 px-4 py-2 text-center text-sm font-bold">
+        <span className="inline-flex items-center gap-2">
+          <span className="inline-flex h-2 w-2 shrink-0 animate-pulse rounded-full bg-papal-gold" />
+          El Papa en Barcelona · 9-10 jun
+        </span>
+        {BANNER.links.map((l) => (
+          <Link key={l.href} href={l.href} className="text-papal-gold hover:underline">
+            {l.label} →
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }
