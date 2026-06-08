@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-08T11:59:29+02:00',
+  dateModified: '2026-06-08T13:20:05+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '13:20',
+      datetime: '2026-06-08T13:20:05+02:00',
+      title: "Estos son los cortes de tráfico para este lunes Los cortes de tráfico de hoy lunes 8 de junio de 2026 se…",
+      body: "Estos son los cortes de tráfico para este lunes Los cortes de tráfico de hoy lunes 8 de junio de 2026 se concentran en el eje central de Madrid, los accesos a la M-30 y el entorno del Bernabéu debido a los recorridos oficiales y macroeventos del papa León XIV. Las restricciones e itinerarios se dividen principalmente por tramos horarios. A partir de media tarde, el desplazamiento del Pontífice blindará de forma intermitente el corazón de la capital con cortes escalonados en: Tramo inicial (Hacia la Almudena): Glorieta de Pirámides, Puerta de Toledo, Gran Vía de San Francisco y Calle Bailén.… (Según OKDiario.)",
+    },
+    {
+      time: '13:15',
+      datetime: '2026-06-08T13:15:38+02:00',
+      title: "León XIV asume en el Congreso que la Iglesia \"no siempre\" estuvo \"a la altura\" en la conquista de América",
+      body: "El Papa León XIV ha afirmado que sociedad e Iglesia católica \"no siempre\" estuvieron \"a la altura\" en la época del descubrimiento y la conquista de América. (Según Europa Press.)",
+    },
+    {
+      time: '13:05',
+      datetime: '2026-06-08T13:05:24+02:00',
+      title: "León XIV mantendrá un encuentro con voluntarios en IFEMA El Papa León XIV cerrará su agenda en Madrid este…",
+      body: "León XIV mantendrá un encuentro con voluntarios en IFEMA El Papa León XIV cerrará su agenda en Madrid este martes con un itinerario mucho más breve. A las 10:20 está previsto un encuentro con voluntarios en IFEMA, que será el último acto que atenderá en Madrid antes de coger el avión en Barajas a las 11:10 rumbo a Barcelona. Y ahí termina su paso por Madrid, después de varios días en los que la ciudad ha ido cambiando de ritmo casi a diario, entre actos masivos, reuniones discretas y momentos muy distintos entre sí. (Según OKDiario.)",
+    },
     {
       time: '11:59',
       datetime: '2026-06-08T11:59:29+02:00',
