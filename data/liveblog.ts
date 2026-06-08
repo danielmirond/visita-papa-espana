@@ -37,10 +37,34 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-08T11:42:12+02:00',
+  dateModified: '2026-06-08T11:59:29+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '11:59',
+      datetime: '2026-06-08T11:59:29+02:00',
+      title: "León XIV llega a la Conferencia Episcopal Española León XIV ha llegado a la Conferencia Episcopal Española.",
+      body: "León XIV llega a la Conferencia Episcopal Española León XIV ha llegado a la Conferencia Episcopal Española. (Según OKDiario.)",
+    },
+    {
+      time: '11:50',
+      datetime: '2026-06-08T11:50:10+02:00',
+      title: "Miriam Nogueras exige al Papa que hable en catalán cuando vaya a Barcelona La portavoz de Junts en el…",
+      body: "Miriam Nogueras exige al Papa que hable en catalán cuando vaya a Barcelona La portavoz de Junts en el Congreso, Miriam Nogueras, se ha saltado el protocolo y le ha exigido a León XIV que hable en catalán cuando vaya a Barcelona. (Según OKDiario.)",
+    },
+    {
+      time: '11:46',
+      datetime: '2026-06-08T11:46:58+02:00',
+      title: "La siguiente parada de León XIV: una reunión con los obispos españoles en la Conferencia Episcopal Española…",
+      body: "La siguiente parada de León XIV: una reunión con los obispos españoles en la Conferencia Episcopal Española La siguiente parada en la agenda de León XIV de este lunes es una reunión con los obispos españoles en la Conferencia Episcopal Española, donde realizará un almuerzo privado. (Según OKDiario.)",
+    },
+    {
+      time: '11:45',
+      datetime: '2026-06-08T11:45:15+02:00',
+      title: "Críticas de Rufián a los aplausos de PP y Vox.",
+      body: "Críticas de Rufián a los aplausos de PP y Vox. (Según ABC.)",
+    },
     {
       time: '11:42',
       datetime: '2026-06-08T11:42:12+02:00',
