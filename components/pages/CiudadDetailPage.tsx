@@ -319,6 +319,21 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
                     {extra.trafficClosuresBtn}
                   </Link>
                 </div>
+
+                {locale === 'es' && city.slug === 'barcelona' && (
+                  <div className="rounded-lg border border-papal-gold/30 bg-papal-cream p-4">
+                    <h3 className="mb-2 font-bold text-papal-navy">🗺️ Recorrido del papamóvil</h3>
+                    <p className="mb-3 text-sm text-papal-navy/70">
+                      Consulta la ruta del papamóvil por el Eixample hasta la Sagrada Familia y los horarios de cada acto.
+                    </p>
+                    <Link
+                      href="/es/recorrido-papa-barcelona"
+                      className="inline-block text-sm font-medium text-papal-gold hover:underline"
+                    >
+                      Ver el recorrido y horarios →
+                    </Link>
+                  </div>
+                )}
               </div>
             </section>
           </div>
