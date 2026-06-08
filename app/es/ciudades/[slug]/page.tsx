@@ -19,8 +19,8 @@ export function generateMetadata({ params }: Props): Metadata {
   const fmt = (d: Date) => d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long' })
   const datesLabel = start.toDateString() === end.toDateString() ? fmt(start) : `${fmt(start)} al ${fmt(end)}`
   return {
-    title: `Visita del Papa León XIV a ${city.name} · ${datesLabel} 2026`,
-    description: `Programa, actos, cómo asistir, cómo llegar y alojamiento para la visita del Papa León XIV a ${city.name} (${datesLabel} 2026). Mapa, meteo y guía práctica.`,
+    title: `Papa León XIV en ${city.name}: agenda, recorrido y actos · ${datesLabel} 2026`,
+    description: `Agenda, recorrido en papamóvil, actos, cómo asistir, cómo llegar (metro y transporte) y alojamiento para la visita del Papa León XIV a ${city.name} (${datesLabel} 2026). Itinerario día a día, mapa, meteo y guía práctica.`,
     alternates: getAlternates(`/ciudades/${params.slug}`, 'es'),
     openGraph: {
       images: [

@@ -17,6 +17,16 @@ export const faq: FaqItem[] = [
     category: 'general',
   },
   {
+    question: '¿Cuántos días estará el Papa en España?',
+    answer: 'El Papa León XIV estará siete días en España, del 6 al 12 de junio de 2026. Es su primer Viaje Apostólico al país y el primero de un Pontífice desde la visita de Benedicto XVI en 2011.',
+    category: 'general',
+  },
+  {
+    question: '¿Cuántos días estará el Papa en Madrid?',
+    answer: 'El Papa León XIV estará tres días en Madrid, del 6 al 8 de junio de 2026: el 6 (llegada, encuentro con los Reyes y vigilia con los jóvenes en la Plaza de Lima), el 7 (misa del Corpus Christi en Cibeles y encuentro en el Movistar Arena) y el 8 (discurso ante las Cortes y encuentro diocesano en el Bernabéu). Después viaja a Barcelona (9-10 junio).',
+    category: 'general',
+  },
+  {
     question: '¿A qué hora llega el Papa a Madrid?',
     answer: 'El Papa León XIV llega al aeropuerto de Madrid-Barajas el sábado 6 de junio de 2026 hacia las 10:30, y a continuación acude al Palacio Real para la ceremonia de bienvenida con los Reyes. A Barcelona llega el martes 9 de junio sobre las 12:25 (aeropuerto de El Prat); a Gran Canaria el jueves 11 y a Tenerife el viernes 12. Los horarios pueden ajustarse por seguridad: consulta el programa día a día.',
     category: 'general',

@@ -28,7 +28,7 @@ const L = {
     subtitle: 'Robert Francis Prevost OSA, primer papa nacido en EE. UU. y con nacionalidad peruana',
     whoTitle: '¿Quién es el Papa León XIV?',
     whoBody:
-      'Robert Francis Prevost (Chicago, 1955) es el 267.º papa de la Iglesia católica. Religioso agustino, ha sido misionero en Perú durante décadas, prior general de su orden, obispo de Chiclayo y prefecto del Dicasterio para los Obispos. Elegido en el cónclave del 8 de mayo de 2025 tras la muerte del Papa Francisco, escogió el nombre de León XIV en referencia expresa a León XIII y su Doctrina Social.',
+      'Robert Francis Prevost (Chicago, EE. UU.; 14 de septiembre de 1955, 70 años) es el 267.º papa de la Iglesia católica, el primero nacido en Estados Unidos y con nacionalidad también peruana. Religioso agustino, ha sido misionero en Perú durante décadas, prior general de su orden, obispo de Chiclayo y prefecto del Dicasterio para los Obispos. Elegido en el cónclave del 8 de mayo de 2025 tras la muerte del Papa Francisco, escogió el nombre de León XIV en referencia expresa a León XIII y su Doctrina Social.',
     timelineTitle: 'Línea de tiempo',
     priorityTitle: 'Prioridades de su magisterio',
     quotesTitle: 'Citas relevantes',

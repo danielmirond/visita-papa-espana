@@ -122,8 +122,12 @@ export default function VigiliaPapaMadrid() {
             <h2 className="mb-2 font-heading text-2xl font-bold text-papal-navy">Los artistas</h2>
             <p>
               El cartel musical de la vigilia y el «festival de la fe» previo lo encabezaron <strong>Siloé</strong>,
-              <strong> Hakuna Group Music</strong> y <strong>Beret</strong>. Puedes ver el cartel completo de todos
-              los actos en nuestra página de conciertos.
+              <strong> Hakuna Group Music</strong> y <strong>Beret</strong>. Uno de los momentos más inesperados llegó
+              con el elenco del musical{' '}
+              <Link href="/es/antonio-banderas-papa-vigilia" className="font-semibold text-papal-gold-dark underline">
+                «Godspell» de Antonio Banderas
+              </Link>
+              . Puedes ver el cartel completo de todos los actos en nuestra página de conciertos.
             </p>
           </div>
 
