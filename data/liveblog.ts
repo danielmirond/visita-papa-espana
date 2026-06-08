@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-08T21:45:03+02:00',
+  dateModified: '2026-06-08T23:21:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '23:21',
+      datetime: '2026-06-08T23:21:31+02:00',
+      title: "Íñigo Quintero conquista el Bernabéu al ritmo de 'Si no estás' antes de que llegue el Papa León XIV .",
+      body: "Íñigo Quintero conquista el Bernabéu al ritmo de 'Si no estás' antes de que llegue el Papa León XIV . Hablar de Dios a través de la música puede ser un gesto valiente, como lo fue el de Íñigo Quintero, que con su 'Si no estás' rompió los algoritmos escritos y se convirtió en el 'single' más escuchado en el mundo durante semanas. Su canción, que habla sobre la relación con Dios, se convirtió en una especie de himno que se alzó entre los jóvenes como un grito de esperanza. Hoy, el joven se ha adentrado en el escenario del Bernabéu, en la 'previa' del encuentro del Papa León XIV con la… (Según ABC.)",
+    },
+    {
+      time: '22:50',
+      datetime: '2026-06-08T22:50:31+02:00',
+      title: "León XIV entrega la Rosa de Oro a la Virgen de la Almudena y pide derribar «los muros que dividen» .",
+      body: "León XIV entrega la Rosa de Oro a la Virgen de la Almudena y pide derribar «los muros que dividen» . La Reina Sofía ha acompañado en la tarde de hoy al Papa León XIV en uno de los actos más emotivos de su visita a España: la oración y ofrenda floral a Santa María la Real de la Almudena, patrona de Madrid. En la catedral, consagrada hace 33 años por Juan Pablo II y donde Benedicto XVI rezó durante la Jornada Mundial de la Juventud de 2011, el Pontífice ha querido poner a los pies de la Virgen uno de los regalos más exclusivos que puede conceder un Santo Padre: la Rosa de Oro. Lee aquí la… (Según ABC.)",
+    },
+    {
+      time: '22:31',
+      datetime: '2026-06-08T22:31:31+02:00',
+      title: "Diana Navarro, Bustamante y Daniel Diges cantan 'Alza la mirada' frente al Papa en el Bernabéu .",
+      body: "Diana Navarro, Bustamante y Daniel Diges cantan 'Alza la mirada' frente al Papa en el Bernabéu . «El Papa es de todos los equipos, pero si preguntas a Prevost: del Real Madrid», confesaba el Santo Padre en el avión a una periodista camino a Madrid. Por eso, su entrada al Bernabéu para celebrar el encuentro con la comunidad diocesana ha sido especial. El Pontífice, sonriente y saludando a todos los presentes, se adentraba en el estadio bajo un gran himno: 'Alza la mirada'. (Según ABC.)",
+    },
     {
       time: '21:45',
       datetime: '2026-06-08T21:45:03+02:00',
