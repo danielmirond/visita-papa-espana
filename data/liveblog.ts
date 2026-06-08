@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-08T23:21:31+02:00',
+  dateModified: '2026-06-09T00:31:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '00:31',
+      datetime: '2026-06-09T00:31:31+02:00',
+      title: "El Papa recibe a Ayuso en la Nunciatura tras el histórico discurso en el Congreso de los Diputados .",
+      body: "El Papa recibe a Ayuso en la Nunciatura tras el histórico discurso en el Congreso de los Diputados . La Nunciatura había pedido a la presidenta de la Comunidad de Madrid, Isabel Díaz Ayuso, máxima discreción antes de ser recibida por el Papa León XIV, este lunes por la tarde, a las cuatro. Y ese compromiso se ha respetado al máximo. Solo se han hecho públicas tres imágenes del encuentro, que se ha producido después del histórico discurso que ha pronunciado el Pontífice en el Congreso de los Diputados, en el que ha pedido una «renovación moral» y ha hecho una defensa de la vida desde la… (Según ABC.)",
+    },
+    {
+      time: '00:01',
+      datetime: '2026-06-09T00:01:31+02:00',
+      title: "Feijóo se reúne con el Papa y le garantiza que «reivindicará» las «raíces cristianas» de España .",
+      body: "Feijóo se reúne con el Papa y le garantiza que «reivindicará» las «raíces cristianas» de España . El Papa León XIV ha recibido en audiencia a Alberto Núñez Feijóo esta tarde en la Nunciatura, la Embajada del Vaticano en Madrid, donde el Pontífice se aloja estos días durante su visita a Madrid. Lo ha hecho después de reunirse con la presidenta de la Comunidad de Madrid, Isabel Díaz Ayuso, y después de una intensa mañana en el Congreso de los Diputados, donde el Santo Padre ha pronunciado un significativo discurso, el más largo -fueron 30 minutos- y el de mayor carga política. Lee aquí la… (Según ABC.)",
+    },
+    {
+      time: '23:41',
+      datetime: '2026-06-08T23:41:31+02:00',
+      title: "El Papa recibe en la Nunciatura a la Reina Sofía y las infantas Elena y Cristina .",
+      body: "El Papa recibe en la Nunciatura a la Reina Sofía y las infantas Elena y Cristina . Una hora antes de que diera comienzo la oración y ofrenda floral a Santa María la Real de la Almudena, patrona de Madrid, León XIV ha recibido en audiencia en la Nunciatura a la Reina Sofía, acompañada por las infantas Elena y Cristina. Lee aquí la información de Angie Calero . (Según ABC.)",
+    },
     {
       time: '23:21',
       datetime: '2026-06-08T23:21:31+02:00',
