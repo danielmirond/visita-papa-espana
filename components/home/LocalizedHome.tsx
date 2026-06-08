@@ -95,10 +95,10 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         <div className="bg-red-600">
           <Container className="py-2 text-center">
             <Link
-              href="/es/visita-papa-madrid-misa-cibeles-movistar-arena-7-junio-directo"
+              href="/es/visita-papa-leon-madrid-8-junio-congreso-bernabeu"
               className="inline-flex items-center gap-2 text-sm font-bold text-white hover:underline"
             >
-              🔴 Misa del Papa en Cibeles y Movistar Arena, en directo · minuto a minuto →
+              🔴 El Papa en Madrid, en directo: Congreso y Bernabéu · minuto a minuto →
             </Link>
           </Container>
         </div>

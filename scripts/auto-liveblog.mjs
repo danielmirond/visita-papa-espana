@@ -34,16 +34,14 @@ const MAX = parseInt(argVal('max', '3'), 10)
 const DRY = args.includes('--dry-run')
 const COMMIT = args.includes('--commit')
 
-// Directos del 7 de junio (misa de Cibeles + Movistar Arena). Los medios
+// Directos del 8 de junio (Congreso de los Diputados + Bernabéu). Los medios
 // abren una URL nueva por día; algunas reutilizan la misma URL "rolling".
 // El script descarta automáticamente las que devuelvan 404 o sin JSON-LD.
 const SOURCES = [
+  { name: 'OKDiario', url: 'https://okdiario.com/espana/papa-leon-xiv-madrid-directo-agenda-horarios-reunion-pedro-sanchez-discurso-congreso-ultima-hora-visita-hoy-17937499' },
   { name: 'El Español', url: 'https://www.elespanol.com/madrid/20260607/visita-papa-leon-xiv-madrid-directo-horario-misa-cibeles-cortes-trafico-agenda-oficial-actos-domingo/1003744276656_10.html' },
-  { name: 'OKDiario', url: 'https://okdiario.com/espana/visita-del-papa-leon-xiv-madrid-7-junio-directo-misa-del-corpus-christi-cibeles-agenda-completa-horarios-calles-cortadas-como-llegar-17933286' },
   { name: 'ABC', url: 'https://www.abc.es/sociedad/visita-papa-leon-xiv-madrid-directo-agenda-20260607115324-di.html' },
-  { name: 'El País', url: 'https://elpais.com/espana/2026-06-07/visita-del-papa-leon-xiv-a-espana-en-directo.html' },
   { name: 'Lecturas', url: 'https://www.lecturas.com/actualidad/visita-papa-leon-xiv-a-madrid-directo_193939' },
-  { name: 'El Confidencial', url: 'https://www.elconfidencial.com/espana/madrid/2026-06-07/1qrt-cortes-trafico-madrid-domingo-misa-papa-cibeles-horarios-calles_4367291/' },
   { name: 'Europa Press', url: 'https://www.europapress.es/sociedad/noticia-visita-papa-espana-2026-directo-agenda-recorrido-discursos-anecdotas-ultima-hora-leon-xiv-20260606055952.html' },
 ]
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36'

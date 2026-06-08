@@ -31,6 +31,79 @@ export interface Liveblog {
   entries: LiveblogEntry[]
 }
 
+export const liveblogMadrid8: Liveblog = {
+  slug: 'visita-papa-leon-madrid-8-junio-congreso-bernabeu',
+  headline: 'Visita del Papa León XIV a Madrid, en directo (8 de junio): Congreso y Bernabéu',
+  description:
+    'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
+  datePublished: '2026-06-08T08:00:00+02:00',
+  dateModified: '2026-06-08T09:38:16+02:00',
+  coverageStart: '2026-06-08T08:00:00+02:00',
+  coverageEnd: '2026-06-08T23:00:00+02:00',
+  entries: [
+    {
+      time: '09:38',
+      datetime: '2026-06-08T09:38:16+02:00',
+      title: "Otros dirigentes políticos llegan al Congreso El ex presidente José María Aznar o el president de la…",
+      body: "Otros dirigentes políticos llegan al Congreso El ex presidente José María Aznar o el president de la Generalitat, Salvador Illa, son algunas de las autoridades que ya se encuentran en Congreso de los Diputados. (Según OKDiario.)",
+    },
+    {
+      time: '09:36',
+      datetime: '2026-06-08T09:36:00+02:00',
+      title: "Podemos no asistirá al Congreso Podemos no asistirá al Congreso de los Diputados, ya que desaprueban que un…",
+      body: "Podemos no asistirá al Congreso Podemos no asistirá al Congreso de los Diputados, ya que desaprueban que un líder religioso tenga que hablar en un Parlamento y sostienen que «un Estado aconfesional no debe recibir con honores» al dirigente de una institución que «no colabora con la verdad». (Según OKDiario.)",
+    },
+    {
+      time: '09:35',
+      datetime: '2026-06-08T09:35:33+02:00',
+      title: "Personalidades van llegando ya al Congreso.",
+      body: "Personalidades van llegando ya al Congreso. El expresidente Aznar, el presidente de la CEOE, Antonio Garamendi o el presidente catalán Salvador Illa son algunas de las autoridades que ya se encuentran en el Hemiciclo. Foto Txema Rodríguez. (Según ABC.)",
+    },
+    {
+      time: '09:30',
+      datetime: '2026-06-08T09:30:22+02:00',
+      title: "Abucheos a Pedro Sánchez a su llegada a la Nunciatura con el Papa El presidente del Gobierno ha sido…",
+      body: "Abucheos a Pedro Sánchez a su llegada a la Nunciatura con el Papa El presidente del Gobierno ha sido abucheado a su llegada a la Nunciatura con el Papa León XIV. (Según OKDiario.)",
+    },
+    {
+      time: '09:28',
+      datetime: '2026-06-08T09:28:19+02:00',
+      title: "Llega Pedro Sánchez a la Nunciatura Acaba de llegar Pedro Sánchez a la nunciatura con el Papa León XIV.",
+      body: "Llega Pedro Sánchez a la Nunciatura Acaba de llegar Pedro Sánchez a la nunciatura con el Papa León XIV. (Según OKDiario.)",
+    },
+    {
+      time: '09:27',
+      datetime: '2026-06-08T09:27:54+02:00',
+      title: "Félix Bolaños, en las mañanas de RNE: «La visita del Papa al Congreso fue iniciativa del Vaticano».",
+      body: "Félix Bolaños, en las mañanas de RNE: «La visita del Papa al Congreso fue iniciativa del Vaticano». «El discurso del Papa sobre el derecho internacional, la inmigración, la paz y los derechos humanos incomodan a la derecha y encajan dentro de la mayoría representada en el Congreso que es la izquierda», ha señalado el ministro. (Según ABC.)",
+    },
+    {
+      time: '09:24',
+      datetime: '2026-06-08T09:24:11+02:00',
+      title: "BNG no participará de la sesión extraordinaria celebrada en el Congreso con motivo de la visita de León XIV…",
+      body: "BNG no participará de la sesión extraordinaria celebrada en el Congreso con motivo de la visita de León XIV El partido gallego ha explicado que es una organización que, desde el respeto a todas las creencias religiosas, entiende que en un «Estado aconfesional» carece de sentido que un líder religioso sea recibido en una institución como el Congreso. «Desde la neutralidad que deben tener las instituciones públicas en materia religiosa, el BNG no comparte que se realice una sesión extraordinaria para recibir a un líder religioso», mencionan. (Según OKDiario.)",
+    },
+    {
+      time: '09:21',
+      datetime: '2026-06-08T09:21:45+02:00',
+      title: "El BNG no participará de la sesión extraordinaria celebrada en el Congreso con motivo de la visita del papa…",
+      body: "El BNG no participará de la sesión extraordinaria celebrada en el Congreso con motivo de la visita del papa León XIV. El partido gallego explica que es una organización que, desde el respeto a todas las creencias religiosas, entiende que en un Estado aconfesional carece de sentido que un líder religioso sea recibido en una institución como el Congreso. «Desde la neutralidad que deben tener las instituciones públicas en materia religiosa, el BNG no comparte que se realice una sesión extraordinaria para recibir a un lider religioso». (Según ABC.)",
+    },
+    {
+      time: '09:00',
+      datetime: '2026-06-08T09:00:00+02:00',
+      title: 'Último día del Papa en Madrid: discurso en el Congreso y encuentro en el Bernabéu',
+      body: 'León XIV afronta su jornada más institucional antes de viajar a Barcelona. Por la mañana se reúne con el presidente del Gobierno y pronuncia un discurso ante las Cortes Generales en el Congreso de los Diputados; por la tarde, oración en la Almudena y un multitudinario encuentro con la comunidad diocesana en el estadio Santiago Bernabéu.',
+    },
+    {
+      time: '08:30',
+      datetime: '2026-06-08T08:30:00+02:00',
+      title: 'La agenda del día: del Congreso de los Diputados al Santiago Bernabéu',
+      body: 'A las 9:30 el Papa se reúne con Pedro Sánchez en la Nunciatura Apostólica. A las 10:30 se traslada al Congreso de los Diputados para dirigirse a los miembros de las Cortes Generales. A las 11:30 mantiene un encuentro con los obispos en la Conferencia Episcopal. Por la tarde, a las 18:00, preside un acto de oración en la Catedral de la Almudena y, a las 19:00, el encuentro diocesano en el Santiago Bernabéu.',
+    },
+  ],
+}
+
 export const liveblogMadrid7: Liveblog = {
   slug: 'visita-papa-madrid-misa-cibeles-movistar-arena-7-junio-directo',
   headline: 'Misa del Papa en Cibeles y Movistar Arena, en directo (7 de junio)',

@@ -11,10 +11,10 @@ import { usePathname } from 'next/navigation'
  *  - en la propia página del directo (para no duplicar).
  */
 const LIVE = {
-  href: '/es/visita-papa-madrid-misa-cibeles-movistar-arena-7-junio-directo',
-  label: 'EN DIRECTO · Misa del Papa en Cibeles y Movistar Arena',
+  href: '/es/visita-papa-leon-madrid-8-junio-congreso-bernabeu',
+  label: 'EN DIRECTO · El Papa en Madrid: Congreso y Bernabéu',
   // Fin de la cobertura del día (Madrid, +02:00)
-  end: '2026-06-07T22:00:00+02:00',
+  end: '2026-06-08T23:00:00+02:00',
 }
 
 export default function LiveBanner() {
@@ -29,7 +29,7 @@ export default function LiveBanner() {
 
   if (hidden) return null
   // No mostrar en la propia página del directo (evita duplicar).
-  if (pathname?.includes('misa-cibeles-movistar-arena-7-junio-directo')) return null
+  if (pathname?.includes('visita-papa-leon-madrid-8-junio-congreso-bernabeu')) return null
 
   return (
     <div className="bg-red-600 text-white">
