@@ -37,10 +37,16 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-09T00:31:31+02:00',
+  dateModified: '2026-06-09T01:00:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '01:00',
+      datetime: '2026-06-09T01:00:31+02:00',
+      title: "El Papa se reúne con seis víctimas de abusos en España y recoge sus propuestas para combatirlos .",
+      body: "El Papa se reúne con seis víctimas de abusos en España y recoge sus propuestas para combatirlos . El Papa León XIV se ha reunido en la tarde de este lunes con seis víctimas de abusos en la Nunciatura durante casi una hora. En esos cerca de sesenta minutos ha tenido no sólo la oportunidad de escuchar detenidamente sus testimonios, sino también sus propuestas para acabar con esta «plaga», como el mismo Papa la ha denominado unas horas antes en su encuentro con los obispos españoles. Lee aquí la información de José Ramón Navarro-Pareja . (Según ABC.)",
+    },
     {
       time: '00:31',
       datetime: '2026-06-09T00:31:31+02:00',
