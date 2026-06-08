@@ -37,10 +37,46 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-08T09:38:16+02:00',
+  dateModified: '2026-06-08T11:42:12+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '11:42',
+      datetime: '2026-06-08T11:42:12+02:00',
+      title: "León XIV saluda a la gente y se salta el protocolo El Pontífice ha saludado a las personas que se…",
+      body: "León XIV saluda a la gente y se salta el protocolo El Pontífice ha saludado a las personas que se encontraban fuera del Congreso antes de montarse en el coche oficial, saltándose así el protocolo. (Según OKDiario.)",
+    },
+    {
+      time: '11:40',
+      datetime: '2026-06-08T11:40:00+02:00',
+      title: "Rompe el protocolo",
+      body: "A su salida del Congreso de los Diputados, el Papa León XIV, al ver a fieles y curiosos saludando, ha querido acercarse a pie. El pontífice ha dejado el vehículo y, rodeado de miembros de seguridad, ha salido del Congreso, ha cruzado la calle y ha saludado a los presentes. (Según Lecturas.)",
+    },
+    {
+      time: '11:38',
+      datetime: '2026-06-08T11:38:25+02:00',
+      title: "Sale a la calle a saludar.",
+      body: "Sale a la calle a saludar. En lugar de volver al coche, León XIV ha comenzado a bajar la calle para saludar a las miles de personas que se han concentrado para verle. Ha estrechado las manos de varios asistentes y ha saludado antes de, ya sí, subir al vehículo. (Según ABC.)",
+    },
+    {
+      time: '11:36',
+      datetime: '2026-06-08T11:36:22+02:00',
+      title: "El Papa abandona el Congreso El Papa León XIV acaba de abandonar el Congreso de los Diputados.",
+      body: "El Papa abandona el Congreso El Papa León XIV acaba de abandonar el Congreso de los Diputados. (Según OKDiario.)",
+    },
+    {
+      time: '11:34',
+      datetime: '2026-06-08T11:34:15+02:00',
+      title: "7 minutos de ovación León XIV ha recibido 7 minutos de ovación en el Congreso de los Diputados tras su…",
+      body: "7 minutos de ovación León XIV ha recibido 7 minutos de ovación en el Congreso de los Diputados tras su discurso. Además, se han escuchado gritos de «¡Viva el Papa!». (Según OKDiario.)",
+    },
+    {
+      time: '11:33',
+      datetime: '2026-06-08T11:33:55+02:00',
+      title: "Nogueras hace independentismo ante el Papa: «Like Gaudí, I am Catalan.",
+      body: "Nogueras hace independentismo ante el Papa: «Like Gaudí, I am Catalan. My Nation» . Fuentes del entorno han confirmado a ABC la conversación de Nogueras con el Papa. En inglés, pese a que ambos dominan el español, la portavoz de Junts le ha trasladado estas palabras: «His Holiness, Like Gaudí, I am Catalan. (Según ABC.)",
+    },
     {
       time: '09:38',
       datetime: '2026-06-08T09:38:16+02:00',
