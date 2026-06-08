@@ -334,6 +334,21 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
                     </Link>
                   </div>
                 )}
+
+                {locale === 'es' && (city.slug === 'gran-canaria' || city.slug === 'tenerife') && (
+                  <div className="rounded-lg border border-papal-gold/30 bg-papal-cream p-4">
+                    <h3 className="mb-2 font-bold text-papal-navy">🗺️ Agenda del Papa en Canarias</h3>
+                    <p className="mb-3 text-sm text-papal-navy/70">
+                      Consulta la agenda y los horarios del Papa en Gran Canaria y Tenerife (11-12 de junio), acto por acto.
+                    </p>
+                    <Link
+                      href="/es/visita-papa-canarias"
+                      className="inline-block text-sm font-medium text-papal-gold hover:underline"
+                    >
+                      Ver la agenda y horarios →
+                    </Link>
+                  </div>
+                )}
               </div>
             </section>
           </div>
