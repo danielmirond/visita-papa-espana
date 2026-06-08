@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-08T16:53:56+02:00',
+  dateModified: '2026-06-08T19:35:48+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '19:35',
+      datetime: '2026-06-08T19:35:48+02:00',
+      title: "El Papa entra en el Bernabéu León XIV ha entrado en el Santiago Bernabéu en un carrito de golf eléctrico,…",
+      body: "El Papa entra en el Bernabéu León XIV ha entrado en el Santiago Bernabéu en un carrito de golf eléctrico, reconvertido en papamóvil. El objetivo era facilitar su desplazamiento por los túneles del estadio y, después, por las inmediaciones del campo. (Según OKDiario.)",
+    },
+    {
+      time: '19:33',
+      datetime: '2026-06-08T19:33:11+02:00',
+      title: "David Bustamante, Diana Navarro y Daniel Diges cantan durante la subida del Santo Padre al escenario.",
+      body: "David Bustamante, Diana Navarro y Daniel Diges cantan durante la subida del Santo Padre al escenario. EL Pontífice sube al escenario del Bernabéu mientras David Bustamante, Diana Navarro y Daniel Diges cantan el himno de la visita del Papa. (Según ABC.)",
+    },
+    {
+      time: '19:28',
+      datetime: '2026-06-08T19:28:38+02:00',
+      title: "La Virgen de la Almudena y el Cristo de Medinaceli salen en procesión en el Bernabéu La Virgen de la…",
+      body: "La Virgen de la Almudena y el Cristo de Medinaceli salen en procesión en el Bernabéu La Virgen de la Almudena y el Cristo de Medinaceli han salido en procesión en el campo del Santiago Bernabéu, un acto que ha congregado cerca de 80.000 personas. Decenas de costaleros han iniciado el paso después de la intervención del Papa en el acto que ha asistido en la Catedral de la Almudena. (Según OKDiario.)",
+    },
     {
       time: '16:53',
       datetime: '2026-06-08T16:53:56+02:00',
