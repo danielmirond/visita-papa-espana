@@ -10,7 +10,13 @@ export const metadata: Metadata = {
   title: 'Recorrido del Papa en Barcelona: ruta del papamóvil, horarios y actos',
   description:
     'Recorrido y ruta del Papa León XIV en Barcelona (9-10 junio 2026): a qué hora llega a El Prat, la ruta del papamóvil por el Eixample hasta la Sagrada Familia, la vigilia de Montjuïc, Montserrat, Brians 1 y los horarios de cada acto.',
-  alternates: { canonical: `${siteConfig.url}/es/${SLUG}` },
+  alternates: {
+    canonical: `${siteConfig.url}/es/${SLUG}`,
+    languages: {
+      es: `${siteConfig.url}/es/${SLUG}`,
+      ca: `${siteConfig.url}/ca/recorregut-papa-barcelona`,
+    },
+  },
   openGraph: {
     type: 'article',
     url: `${siteConfig.url}/es/${SLUG}`,
