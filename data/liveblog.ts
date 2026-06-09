@@ -37,10 +37,22 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-09T01:00:31+02:00',
+  dateModified: '2026-06-09T05:31:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '05:31',
+      datetime: '2026-06-09T05:31:31+02:00',
+      title: "El Papa deja hoy Madrid para dirigirse a Barcelona.",
+      body: "El Papa deja hoy Madrid para dirigirse a Barcelona. En su cuarta jornada en España, el Papa León XIV dejará Madrid para dirigirse a Barcelona -segunda etapa de su viaje-, donde pasará un par de días, antes de volar a Canarias el próximo jueves. (Según ABC.)",
+    },
+    {
+      time: '05:00',
+      datetime: '2026-06-09T05:00:31+02:00',
+      title: "Desmontaje exprés de los escenarios del Papa: «A partir de ahora se compararán con nosotros» .",
+      body: "Desmontaje exprés de los escenarios del Papa: «A partir de ahora se compararán con nosotros» . Más de un decena de operarios se afanaban, a mediodía, en apilar los tablones de madera que iban bajando poco a poco del escenario de más de 600 metros donde el domingo el Papa ofreció una multitudinaria misa ante más de un millón de fieles. Aunque la decoración ya ha desaparecido, la cruz de madera que presidía el altar sigue aún en pie. La instantánea se repite en la plaza de Lima, donde se celebró el sábado por la noche la vigilia: del imponente altar apenas queda ya el esqueleto y la enorme… (Según ABC.)",
+    },
     {
       time: '01:00',
       datetime: '2026-06-09T01:00:31+02:00',
