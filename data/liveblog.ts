@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-09T08:00:31+02:00',
+  dateModified: '2026-06-09T12:30:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '12:30',
+      datetime: '2026-06-09T12:30:31+02:00',
+      title: "Los alrededores de la Catedral, con gran ambiente a la espera del Papa.",
+      body: "Los alrededores de la Catedral, con gran ambiente a la espera del Papa. Foto: Miquel Muñoz (Según ABC.)",
+    },
+    {
+      time: '12:23',
+      datetime: '2026-06-09T12:23:04+02:00',
+      title: "El Papa ha despegado en cabina.",
+      body: "El Papa ha despegado en cabina. El Pontífice ha despegado en cabina y es posible que haga todo el trayecto en ella para ver la Sagrada Familia antes de aterrizar en Barcelona. Informa Joan Guirado. (Según ABC.)",
+    },
+    {
+      time: '12:21',
+      datetime: '2026-06-09T12:21:31+02:00',
+      title: "El Papa bendecirá la torre que corona la iglesia más alta del mundo, la Sagrada Familia.",
+      body: "El Papa bendecirá la torre que corona la iglesia más alta del mundo, la Sagrada Familia. Foto: Inés Baucels (Según ABC.)",
+    },
     {
       time: '08:00',
       datetime: '2026-06-09T08:00:31+02:00',
