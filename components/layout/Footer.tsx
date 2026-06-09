@@ -62,6 +62,23 @@ export default function Footer() {
     },
   ]
 
+  // Páginas de Barcelona (standalone, solo es/ca). Slugs propios por idioma.
+  const bcnLinks: Partial<Record<Locale, { href: string; label: string }[]>> = {
+    es: [
+      { href: '/es/recorrido-papa-barcelona', label: 'Recorrido en Barcelona' },
+      { href: '/es/programa-papa-barcelona-10-junio', label: 'Programa 10 jun: Sagrada Familia' },
+      { href: '/es/torre-de-jesucristo-sagrada-familia', label: 'La Torre de Jesucristo' },
+      { href: '/es/a-que-hora-llega-el-papa-a-barcelona', label: '¿A qué hora llega?' },
+    ],
+    ca: [
+      { href: '/ca/recorregut-papa-barcelona', label: 'Recorregut a Barcelona' },
+      { href: '/ca/programa-papa-barcelona-10-juny', label: 'Programa 10 juny: Sagrada Família' },
+      { href: '/ca/torre-de-jesucrist-sagrada-familia', label: 'La Torre de Jesucrist' },
+      { href: '/ca/a-quina-hora-arriba-el-papa-a-barcelona', label: 'A quina hora arriba?' },
+    ],
+  }
+  const bcn = bcnLinks[currentLocale] || []
+
   return (
     <footer className="gradient-navy mt-16 text-white/80">
       <Container className="py-12">
@@ -129,6 +146,21 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
+
+            {bcn.length > 0 && (
+              <>
+                <h3 className="mb-3 mt-6 text-sm font-bold uppercase tracking-wider text-white">Barcelona</h3>
+                <ul className="space-y-2">
+                  {bcn.map((item) => (
+                    <li key={item.href}>
+                      <Link href={item.href} className="text-sm text-white/60 transition-colors hover:text-papal-gold">
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
 
           {/* Enlaces oficiales */}
