@@ -180,7 +180,10 @@ export default function RecorridoBarcelonaPage() {
 
           {/* Enlaces útiles */}
           <div className="flex flex-wrap gap-3 border-t border-gray-100 pt-6">
-            <Link href="/es/ciudades/barcelona" className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-gold-light">
+            <Link href="/es/a-que-hora-llega-el-papa-a-barcelona" className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-gold-light">
+              ¿A qué hora llega?
+            </Link>
+            <Link href="/es/ciudades/barcelona" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
               Guía de Barcelona
             </Link>
             <Link href="/es/programa/9-junio" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">

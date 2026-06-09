@@ -198,7 +198,7 @@ export const schedule: ScheduleDay[] = [
   // ===========================================================================
   {
     date: '2026-06-09',
-    citySlug: 'madrid',
+    citySlug: 'barcelona',
     label: 'Martes 9 de junio · Madrid–Barcelona',
     events: [
       {
