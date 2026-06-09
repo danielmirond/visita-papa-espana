@@ -189,8 +189,8 @@ export default function RecorregutBarcelonaPage() {
             <Link href="/ca/programa/9-junio" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
               Programa del 9 de juny
             </Link>
-            <Link href="/ca/programa/10-junio" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
-              Programa del 10 de juny
+            <Link href="/ca/programa-papa-barcelona-10-juny" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
+              Dia 10: Sagrada Família
             </Link>
             <Link href="/ca/on-veure" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
               On veure-ho

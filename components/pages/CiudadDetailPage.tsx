@@ -340,6 +340,14 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
                     >
                       Ver el recorrido y horarios →
                     </Link>
+                    <div className="mt-2">
+                      <Link
+                        href="/es/programa-papa-barcelona-10-junio"
+                        className="inline-block text-sm font-medium text-papal-gold hover:underline"
+                      >
+                        Programa del 10 de junio: Sagrada Familia →
+                      </Link>
+                    </div>
                   </div>
                 )}
 

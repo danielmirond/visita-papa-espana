@@ -189,8 +189,8 @@ export default function RecorridoBarcelonaPage() {
             <Link href="/es/programa/9-junio" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
               Programa del 9 de junio
             </Link>
-            <Link href="/es/programa/10-junio" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
-              Programa del 10 de junio
+            <Link href="/es/programa-papa-barcelona-10-junio" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
+              Día 10: Sagrada Familia
             </Link>
             <Link href="/es/donde-ver" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
               Dónde ver
