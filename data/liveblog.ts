@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-09T18:16:31+02:00',
+  dateModified: '2026-06-09T20:18:48+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '20:18',
+      datetime: '2026-06-09T20:18:48+02:00',
+      title: "Los Castellers de Vilafranca levantan su castillo ante el Papa.",
+      body: "Los Castellers de Vilafranca levantan su castillo ante el Papa. Los Castellers de Vilafranca han comenzado su actuación en el Estadio Olímpico Lluís Companys durante la vigilia de oración del Papa León XIV en Barcelona. La colla levanta ahora su castillo ante los miles de fieles reunidos en Montjuïc, en uno de los momentos más visuales del acto. (Según ABC.)",
+    },
+    {
+      time: '20:07',
+      datetime: '2026-06-09T20:07:55+02:00',
+      title: "Las imágenes del Papa recorriendo el Estadio Olímpico.",
+      body: "Las imágenes del Papa recorriendo el Estadio Olímpico. El Papa León XIV ha recorrido en papamóvil el interior del Estadio Olímpico Lluís Companys a su llegada a la vigilia de oración de Barcelona. Imagenes: Txema Rodríguez (Según ABC.)",
+    },
+    {
+      time: '19:55',
+      datetime: '2026-06-09T19:55:22+02:00',
+      title: "Siloé ameniza la vigilia mientras el Papa entra al Estadio Olímpico.",
+      body: "Siloé ameniza la vigilia mientras el Papa entra al Estadio Olímpico. (Según ABC.)",
+    },
     {
       time: '18:16',
       datetime: '2026-06-09T18:16:31+02:00',
