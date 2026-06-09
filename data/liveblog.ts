@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-09T15:26:31+02:00',
+  dateModified: '2026-06-09T18:16:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '18:16',
+      datetime: '2026-06-09T18:16:31+02:00',
+      title: "Dos jóvenes abrazados en el Estadio Olímpico, donde se celebrará la vigilia con León XIV.",
+      body: "Dos jóvenes abrazados en el Estadio Olímpico, donde se celebrará la vigilia con León XIV. Fotografía: Josep Lago (AFP). (Según ABC.)",
+    },
+    {
+      time: '18:10',
+      datetime: '2026-06-09T18:10:32+02:00',
+      title: "Los castellers se preparan para su espectáculo.",
+      body: "Los castellers se preparan para su espectáculo. Los castellers que esta tarde realizarán una torre humana frente a León XIV ya han llegado al Estadio Olímpico. Foto: Javier Martínez-Brocal. (Según ABC.)",
+    },
+    {
+      time: '18:05',
+      datetime: '2026-06-09T18:05:31+02:00',
+      title: "Barcelona se prepara para la vigilia.",
+      body: "Barcelona se prepara para la vigilia. La gente comienza a llenar las gradas del Estadio Olímpico Lluís Companys, donde el Papa acompañará a miles de fieles en una vigilia similar a la vivida en Madrid hace tres días. Foto: Txema Rodríguez. (Según ABC.)",
+    },
     {
       time: '15:26',
       datetime: '2026-06-09T15:26:31+02:00',
