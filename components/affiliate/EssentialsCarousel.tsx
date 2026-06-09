@@ -40,6 +40,7 @@ export default function EssentialsCarousel() {
 
   const stripped = pathname.replace(`/${locale}/`, '').replace(`/${locale}`, '')
   const firstSegment = stripped.split('/')[0]
+  if (!firstSegment) return null // No mostrar en la home
   if (HIDE_ON_SLUGS.has(firstSegment)) return null
   if (closed) return null
 

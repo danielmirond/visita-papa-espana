@@ -2,9 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import Container from '@/components/ui/Container'
-import KitPromoBanner from '@/components/affiliate/KitPromoBanner'
-import VaticanFlagBanner from '@/components/shared/VaticanFlagBanner'
-import PilgrimKitBanner from '@/components/shared/PilgrimKitBanner'
 import HomeProductShowcase from '@/components/affiliate/HomeProductShowcase'
 import JsonLd from '@/components/seo/JsonLd'
 import LiveBroadcast from '@/components/home/LiveBroadcast'
@@ -177,16 +174,6 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* CTAs destacadas: kit del peregrino + bandera del Vaticano */}
-      <div className="bg-white py-6">
-        <Container>
-          <div className="grid items-stretch gap-4 sm:grid-cols-2">
-            <PilgrimKitBanner locale={locale} className="mb-0 h-full" />
-            <VaticanFlagBanner locale={locale} className="mb-0 h-full" />
-          </div>
-        </Container>
-      </div>
-
       {/* Cifras clave */}
       <section className="border-b border-papal-gold/10 bg-papal-cream min-h-[88px]">
         <Container className="py-8">
@@ -261,13 +248,6 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
           </div>
         </Container>
       </section>
-
-      {/* CTA kit del peregrino (antes espacio publicitario) */}
-      <div className="py-6">
-        <Container>
-          <KitPromoBanner locale={locale} />
-        </Container>
-      </div>
 
       {/* Programa día a día */}
       <section className="section-padding bg-gray-50">
@@ -372,13 +352,6 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
           </div>
         </Container>
       </section>
-
-      {/* CTA kit del peregrino (antes espacio publicitario) */}
-      <div className="py-4">
-        <Container>
-          <KitPromoBanner locale={locale} />
-        </Container>
-      </div>
 
       {/* CTA registro */}
       <section className="gradient-navy">
