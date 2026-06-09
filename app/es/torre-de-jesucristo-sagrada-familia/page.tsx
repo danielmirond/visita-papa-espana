@@ -146,6 +146,20 @@ export default function TorreJesucristoPage() {
             la muerte de Antoni Gaudí, el Papa León XIV la bendice e inaugura.
           </p>
 
+          <figure className="space-y-2">
+            <img
+              src="/images/reportaje/sagrada-familia-aerea.jpg"
+              alt="Vista aérea de la Sagrada Familia en Barcelona"
+              width={1400}
+              height={932}
+              loading="lazy"
+              className="w-full rounded-xl border border-papal-gold/20"
+            />
+            <figcaption className="text-xs text-papal-navy/50">
+              Vista aérea de la Sagrada Familia. Foto: dronepicr · Wikimedia Commons (CC BY 2.0).
+            </figcaption>
+          </figure>
+
           {/* En cifras */}
           <div>
             <h2 className="mb-4 font-heading text-2xl font-bold text-papal-navy">En cifras</h2>
@@ -200,6 +214,20 @@ export default function TorreJesucristoPage() {
             </p>
           </div>
 
+          <figure className="space-y-2">
+            <img
+              src="/images/reportaje/sagrada-familia-exterior.jpg"
+              alt="Torres de la Sagrada Familia"
+              width={864}
+              height={1300}
+              loading="lazy"
+              className="mx-auto w-full max-w-sm rounded-xl border border-papal-gold/20"
+            />
+            <figcaption className="text-center text-xs text-papal-navy/50">
+              Las torres de la Sagrada Familia. Foto: Wolfgang Staudt · Wikimedia Commons (CC BY 2.0).
+            </figcaption>
+          </figure>
+
           {/* Las 18 torres */}
           <div>
             <h2 className="mb-3 font-heading text-2xl font-bold text-papal-navy">Las 18 torres del templo</h2>
@@ -238,6 +266,12 @@ export default function TorreJesucristoPage() {
                 </li>
               ))}
             </ol>
+          </div>
+
+          {/* Timelapse construcción */}
+          <div className="space-y-2">
+            <YouTube id="EzrEp9BL50E" title="Sagrada Familia: su construcción 1882-2026" />
+            <p className="text-xs text-papal-navy/50">Timelapse: la construcción de la Sagrada Familia, de 1882 a 2026.</p>
           </div>
 
           {/* Papa y centenario */}
