@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-09T05:31:31+02:00',
+  dateModified: '2026-06-09T08:00:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '08:00',
+      datetime: '2026-06-09T08:00:31+02:00',
+      title: "Vigilia de oración en el Estadio Olímpico.",
+      body: "Vigilia de oración en el Estadio Olímpico. Tras su encuentro privado con el presidente autonómico, el Santo Padre acudirá al Estadio Olímpico para presidir una vigilia, en la que habrá 'castells' y cantarán la Escolanía de Montserrat y Sergio Dalma. (Según ABC.)",
+    },
+    {
+      time: '07:30',
+      datetime: '2026-06-09T07:30:31+02:00',
+      title: "Reunión con Salvador Illa.",
+      body: "Reunión con Salvador Illa. A primera hora de la tarde, en torno a las 16.15 horas, el Vicario de Cristo mantendrá un encuentro privado con el presidente de la Generalitat de Cataluña, Salvador Illa. (Según ABC.)",
+    },
+    {
+      time: '07:01',
+      datetime: '2026-06-09T07:01:31+02:00',
+      title: "Visita a la catedral de Barcelona.",
+      body: "Visita a la catedral de Barcelona. Directamente desde el aeropuerto, el Obispo de Roma se dirigirá a la catedral de Barcelona, donde será recibido por el arzobispo, el cardenal Juan José Omella. Allí participará en la oración de la hora media, pronunciará una homilía y visitará el claustro. (Según ABC.)",
+    },
     {
       time: '05:31',
       datetime: '2026-06-09T05:31:31+02:00',
