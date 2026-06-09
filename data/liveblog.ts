@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-09T12:30:31+02:00',
+  dateModified: '2026-06-09T15:26:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '15:26',
+      datetime: '2026-06-09T15:26:31+02:00',
+      title: "El Papa pide en catalán a los catalanes que sean «constructores de unidad» .",
+      body: "El Papa pide en catalán a los catalanes que sean «constructores de unidad» . En la catedral de Barcelona elogia a quienes «se han entregado para construir armonía» y pronuncia en catalán al menos un tercio de su primer discurso en la región. Lee la crónica completa del primer acto del Papa en Barcelona, por Javier Martínez-Brocal. (Según ABC.)",
+    },
+    {
+      time: '15:11',
+      datetime: '2026-06-09T15:11:31+02:00',
+      title: "El despliegue de los Mossos para la visita del papa a Barcelona.",
+      body: "El despliegue de los Mossos para la visita del papa a Barcelona. El centro de coordinación operativo (CECOR) durante la visita a Cataluña de León XIV está situado al Complejo Central de los Mossos d'Esquadra en Sabadell (Egara). Un centro de mando para un dispositivo que integra también a efectivos de Policía Nacional, Guardia Civil, Casa Real, Presidencia del Gobierno, Secretaría de Estado, Guardia Urbana de Barcelona y el Ejército del Aire. En este espacio operativo se centralizará la información, hecho que permitirá hacer un seguimiento continuado del dispositivo, asegurando una… (Según ABC.)",
+    },
+    {
+      time: '15:10',
+      datetime: '2026-06-09T15:10:41+02:00',
+      title: "6.000 asistentes en el primer acto del Papa en Barcelona.",
+      body: "6.000 asistentes en el primer acto del Papa en Barcelona. El Ayuntamiento de Barcelona cifra en unos 6.000 los asistentes al primer acto de León XIV en Barcelona: el rezo de la hora media en la Catedral. Informa Elena Burés . (Según ABC.)",
+    },
     {
       time: '12:30',
       datetime: '2026-06-09T12:30:31+02:00',
