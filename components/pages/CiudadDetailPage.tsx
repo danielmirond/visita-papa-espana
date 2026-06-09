@@ -86,7 +86,15 @@ export default function CiudadDetailPage({ locale, slug }: Props) {
   const city = cities.find((c) => c.slug === slug)
   if (!city) notFound()
 
-  const citySchedule = schedule.filter((d) => d.citySlug === city.slug)
+  // Filtramos a nivel de EVENTO (no de día): un día puede ser mixto
+  // (p. ej. 9 de junio "Madrid–Barcelona" contiene actos de ambas ciudades).
+  // Cada evento lleva su propio citySlug; si falta, se usa el del día.
+  const citySchedule = schedule
+    .map((d) => ({
+      ...d,
+      events: d.events.filter((e) => ((e as any).citySlug ?? d.citySlug) === city.slug),
+    }))
+    .filter((d) => d.events.length > 0)
   const hotels = getAffiliatesByCategory('hotel').filter(
     (a) => a.id.includes(city.slug) || a.id.includes(city.name.toLowerCase())
   )
