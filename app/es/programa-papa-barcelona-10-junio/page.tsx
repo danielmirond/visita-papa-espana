@@ -157,7 +157,10 @@ export default function ProgramaBarcelona10Page() {
 
           {/* Enlaces útiles */}
           <div className="flex flex-wrap gap-3 border-t border-gray-100 pt-6">
-            <Link href="/es/recorrido-papa-barcelona" className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-gold-light">
+            <Link href="/es/torre-de-jesucristo-sagrada-familia" className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-gold-light">
+              La Torre de Jesucristo
+            </Link>
+            <Link href="/es/recorrido-papa-barcelona" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
               Recorrido del papamóvil
             </Link>
             <Link href="/es/a-que-hora-llega-el-papa-a-barcelona" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
