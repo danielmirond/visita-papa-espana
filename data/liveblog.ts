@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-09T20:18:48+02:00',
+  dateModified: '2026-06-09T22:12:12+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '22:12',
+      datetime: '2026-06-09T22:12:12+02:00',
+      title: "El Papa cierra en Montjuïc su primer gran acto multitudinario en Barcelona.",
+      body: "El Papa cierra en Montjuïc su primer gran acto multitudinario en Barcelona. La vigilia de oración del Papa León XIV en el Estadio Olímpico Lluís Companys ha concluido este martes después de congregar a unas 40.000 personas en Montjuïc. La tarde ha dejado algunas imágenes como la entrada del Papa en papamóvil entre aplausos y vítores, la bendición de las ambulancias destinadas a Ucrania, la participación de los Castellers de Vilafranca y varios momentos de fuerte carga simbólica catalana, como la presencia de la Moreneta, el Virolai interpretado por la Escolanía de Montserrat y la actuación… (Según ABC.)",
+    },
+    {
+      time: '21:51',
+      datetime: '2026-06-09T21:51:22+02:00',
+      title: "Sergio Dalma canta «Em dones força» junto a la Escolanía de Montserrat.",
+      body: "Sergio Dalma canta «Em dones força» junto a la Escolanía de Montserrat. Sergio Dalma ha interpretado este martes «Em dones força» junto a la Escolanía de Montserrat durante la vigilia del Papa León XIV en el Estadio Olímpico de Barcelona. La canción, versión catalana de You Raise Me Up, fue lanzada por el artista hace 15 años y ha sonado en uno de los momentos musicales más emotivos de la noche en Montjuïc. (Según ABC.)",
+    },
+    {
+      time: '21:46',
+      datetime: '2026-06-09T21:46:49+02:00',
+      title: "El Papa se inclina ante la Moreneta mientras la Escolanía entona el ‘Virolai’.",
+      body: "El Papa se inclina ante la Moreneta mientras la Escolanía entona el ‘Virolai’. El Papa León XIV se inclina ante la imagen de la Moreneta en uno de los momentos más solemnes de la vigilia en el Estadio Olímpico Lluís Companys, mientras la Escolanía de Montserrat entona el Virolai. La escena une dos de los grandes referentes religiosos y culturales de Cataluña: la patrona catalana y el canto dedicado a la Virgen de Montserrat. (Según ABC.)",
+    },
     {
       time: '20:18',
       datetime: '2026-06-09T20:18:48+02:00',
