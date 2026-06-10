@@ -37,10 +37,16 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-10T22:52:11+02:00',
+  dateModified: '2026-06-10T23:37:39+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '23:37',
+      datetime: '2026-06-10T23:37:39+02:00',
+      title: "Gaudí ya toca el cielo .",
+      body: "Gaudí ya toca el cielo . Un asombroso espectáculo culmina la bendición de la torre de Jesucristo Informan: Álex Gubern y Jordi Martínez (Según ABC.)",
+    },
     {
       time: '22:52',
       datetime: '2026-06-10T22:52:11+02:00',
