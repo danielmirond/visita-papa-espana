@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-10T12:15:56+02:00',
+  dateModified: '2026-06-10T15:40:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '15:40',
+      datetime: '2026-06-10T15:40:31+02:00',
+      title: "El Papa deja un mensaje en el libro de oro de la Abadía de Montserrat.",
+      body: "El Papa deja un mensaje en el libro de oro de la Abadía de Montserrat. El Papa ha dejado un mensaje en el libro de oro de la Abadía de Montserrat. «Pongo mi ministerio petrino a los pies de la ‘Mare de Déu’ de Montserrat, para que su intercesión maternal proteja a toda la Iglesia. Con mi afecto y bendición», ha escrito el Pontífice en el acto de la Abadía de Montserrat. (Según ABC.)",
+    },
+    {
+      time: '15:20',
+      datetime: '2026-06-10T15:20:31+02:00',
+      title: "León XIV, desde la Abadía de Monsterrat: «El mundo necesita modelos que nos inviten a vivir momentos de…",
+      body: "León XIV, desde la Abadía de Monsterrat: «El mundo necesita modelos que nos inviten a vivir momentos de silencio, a orar». Al término del saludo dirigido a los fieles reunidos en la plaza de abajo, desde el balcón de la Abadía de Montserrat, el papa León XIV se reunió con la comunidad en el refectorio. Tras el almuerzo, el papa se reunió con los monjes en el salón para un saludo y el intercambio de obsequios. El Papa recordó la época en que era párroco de una parroquia dedicada a Nuestra Señora de Montserrat, en Trujillo, Perú, y las visitas a la Abadía con otros agustinos; expresó su… (Según ABC.)",
+    },
+    {
+      time: '15:15',
+      datetime: '2026-06-10T15:15:31+02:00',
+      title: "Opinión | Barcelona elige bien, por Salvador Sostres .",
+      body: "Opinión | Barcelona elige bien, por Salvador Sostres . El júbilo en las calles de la Ciudad Condal por la visita del Santo Padre chocó con la manifestación de profesores de la escuela pública. (Según ABC.)",
+    },
     {
       time: '12:15',
       datetime: '2026-06-10T12:15:56+02:00',
