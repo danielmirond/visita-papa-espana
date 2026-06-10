@@ -44,6 +44,7 @@ const D: Record<string, { es: string; ca: string }> = {
   'cmp.pisa.n': { es: 'Torre de Pisa', ca: 'Torre de Pisa' },
   'cmp.pisa.t': { es: 'Italia', ca: 'Itàlia' },
   'cmp.src': { es: 'Alturas en metros · siluetas a escala', ca: 'Alçades en metres · siluetes a escala' },
+  'cmp.ceil': { es: 'el techo que no se supera', ca: 'el sostre que no se supera' },
   'h4.eyebrow': { es: '04 · El remate', ca: '04 · El coronament' },
   'h4.title': { es: 'Anatomía de la cruz', ca: 'Anatomia de la creu' },
   'h4.lede': { es: 'No es una cruz plana. Es una estructura tridimensional de doble giro —la misma geometría de las columnas de Gaudí— revestida de cerámica blanca esmaltada y vidrio.', ca: 'No és una creu plana. És una estructura tridimensional de doble gir —la mateixa geometria de les columnes de Gaudí— revestida de ceràmica blanca esmaltada i vidre.' },
@@ -262,7 +263,7 @@ export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
         <div className="hero__moon" aria-hidden="true" />
         <div className="hero__tower" aria-hidden="true">
           <svg viewBox="0 0 200 1000" preserveAspectRatio="xMidYMax meet">
-            <circle className="cross-glow-core" cx="100" cy="78" r="96" fill="url(#lightCore)" />
+            <circle className="cross-glow-core" cx="100" cy="70" r="96" fill="url(#lightCore)" />
             <g className="sketch" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
               <path d="M70,1000 C82,740 90,520 95,330 C97,260 97,205 96.5,150 L103.5,150 C103,205 103,260 105,330 C110,520 118,740 130,1000 Z" strokeWidth={1.6} strokeOpacity={0.85} />
               <g strokeWidth={0.7} strokeOpacity={0.4}>
@@ -276,13 +277,13 @@ export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
             </g>
             <g className="sketch cross-3d" stroke="#fff" strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" fill="none">
               <path d="M97,44 L103,44 L103,118 L97,118 Z" />
-              <path d="M74,84 L126,84 L126,98 L74,98 Z" />
+              <path d="M74,64 L126,64 L126,78 L74,78 Z" />
               <path d="M103,44 L106,41 L106,115 L103,118" strokeOpacity={0.5} />
-              <path d="M126,84 L129,81 L129,95 L126,98" strokeOpacity={0.5} />
+              <path d="M126,64 L129,61 L129,75 L126,78" strokeOpacity={0.5} />
               <g strokeWidth={1}>
                 <rect x="96.5" y="46" width="7" height="7" transform="rotate(45 100 49.5)" />
-                <rect x="76" y="87.5" width="7" height="7" transform="rotate(45 79.5 91)" />
-                <rect x="117" y="87.5" width="7" height="7" transform="rotate(45 120.5 91)" />
+                <rect x="76" y="67.5" width="7" height="7" transform="rotate(45 79.5 71)" />
+                <rect x="117" y="67.5" width="7" height="7" transform="rotate(45 120.5 71)" />
               </g>
             </g>
           </svg>
@@ -368,7 +369,7 @@ export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
                   <clipPath id="towerClip">
                     <path d="M70,1000 C82,740 90,520 95,330 C97,260 97,205 96.5,150 L103.5,150 C103,205 103,260 105,330 C110,520 118,740 130,1000 Z" />
                     <rect x="96.5" y="42" width="7" height="96" />
-                    <rect x="72" y="84" width="56" height="14" />
+                    <rect x="72" y="64" width="56" height="14" />
                   </clipPath>
                 </defs>
                 <g clipPath="url(#towerClip)">
@@ -383,9 +384,9 @@ export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
                 </g>
                 <g className="tower-outline sketch" fill="none" strokeWidth={1.5} strokeLinejoin="round" strokeLinecap="round">
                   <path d="M96.5,42 H103.5 V138 H96.5 Z" />
-                  <path d="M72,84 H128 V98 H72 Z" />
+                  <path d="M72,64 H128 V78 H72 Z" />
                 </g>
-                <circle className="alt-cross-glow" cx="100" cy="78" r="92" fill="url(#lightCore)" opacity="0" />
+                <circle className="alt-cross-glow" cx="100" cy="70" r="92" fill="url(#lightCore)" opacity="0" />
               </svg>
             </div>
             <div className="scrolly__verse" {...i('verse')} />
@@ -409,47 +410,44 @@ export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
             <p className="lede reveal d2" style={{ marginTop: '1.1em' }} {...i('h3.lede')} />
           </div>
           <div className="compare-chart reveal d2">
-            <div className="cbar is-hill">
-              <div className="cbar__sil" style={{ height: 'calc(1 * clamp(280px,46vh,500px))' }}>
-                <svg viewBox="0 0 160 100" preserveAspectRatio="xMidYMax meet"><path d="M2,100 C30,70 50,40 80,30 C110,40 132,70 158,100 Z" fill="none" stroke="var(--ink-soft)" strokeWidth={1.4} /><path d="M70,33 h20 v-9 h-7 l-3,-5 -3,5 h-7 z" fill="none" stroke="var(--ink-soft)" strokeWidth={1.2} /></svg>
-              </div>
-              <div className="cbar__base" /><div className="cbar__num">177,7</div>
-              <div className="cbar__name" {...i('cmp.montjuic.n')} /><div className="cbar__tag" {...i('cmp.montjuic.t')} />
-            </div>
-            <div className="cbar is-star">
-              <div className="cbar__sil" style={{ height: 'calc(0.971 * clamp(280px,46vh,500px))' }}>
-                <svg viewBox="0 0 120 210" preserveAspectRatio="xMidYMax meet">
-                  <g fill="none" stroke="var(--ink)" strokeWidth={1.8} strokeLinejoin="round" strokeLinecap="round">
-                    <path d="M60,8 L66,30 L62,30 L62,205 L58,205 L58,30 L54,30 Z" />
-                    <path d="M52,40 L40,205 L48,205 Z" /><path d="M68,40 L80,205 L72,205 Z" />
-                    <path d="M40,70 L26,205 L34,205 Z" /><path d="M80,70 L94,205 L86,205 Z" />
-                    <path d="M55,16 H65 M52,24 H68" />
-                  </g>
-                </svg>
-              </div>
-              <div className="cbar__base" style={{ background: 'var(--ink)' }} /><div className="cbar__num">172,5</div>
-              <div className="cbar__name" {...i('cmp.sf.n')} /><div className="cbar__tag" {...i('cmp.sf.t')} />
-            </div>
-            <div className="cbar">
-              <div className="cbar__sil" style={{ height: 'calc(0.909 * clamp(280px,46vh,500px))' }}>
-                <svg viewBox="0 0 60 200" preserveAspectRatio="xMidYMax meet"><g fill="none" stroke="var(--ink-soft)" strokeWidth={1.4}><path d="M30,6 L36,40 L30,36 L24,40 Z" /><path d="M24,40 L18,110 L30,100 L42,110 L36,40" /><path d="M18,110 L12,200 L48,200 L42,110" /><path d="M30,100 V200" /></g></svg>
-              </div>
-              <div className="cbar__base" /><div className="cbar__num">161,5</div>
-              <div className="cbar__name" {...i('cmp.ulm.n')} /><div className="cbar__tag" {...i('cmp.ulm.t')} />
-            </div>
-            <div className="cbar">
-              <div className="cbar__sil" style={{ height: 'calc(0.886 * clamp(280px,46vh,500px))' }}>
-                <svg viewBox="0 0 100 196" preserveAspectRatio="xMidYMax meet"><g fill="none" stroke="var(--ink-soft)" strokeWidth={1.4}><path d="M30,8 L34,46 L26,46 Z M30,46 L22,196 L38,196 L34,46" /><path d="M70,8 L74,46 L66,46 Z M70,46 L62,196 L78,196 L74,46" /><path d="M46,90 L50,70 L54,90 L52,196 L48,196 Z" /></g></svg>
-              </div>
-              <div className="cbar__base" /><div className="cbar__num">157,4</div>
-              <div className="cbar__name" {...i('cmp.colonia.n')} /><div className="cbar__tag" {...i('cmp.colonia.t')} />
-            </div>
-            <div className="cbar">
-              <div className="cbar__sil" style={{ height: 'calc(0.321 * clamp(280px,46vh,500px))' }}>
-                <svg viewBox="0 0 56 80" preserveAspectRatio="xMidYMax meet"><g fill="none" stroke="var(--ink-soft)" strokeWidth={1.4} transform="rotate(5 28 78)"><path d="M20,6 H38 L37,72 H21 Z" /><path d="M20,18 H38 M20,30 H37 M21,42 H37 M21,54 H37" /><path d="M19,72 H39 V78 H17 Z" /></g></svg>
-              </div>
-              <div className="cbar__base" /><div className="cbar__num">57</div>
-              <div className="cbar__name" {...i('cmp.pisa.n')} /><div className="cbar__tag" {...i('cmp.pisa.t')} />
+            <p className="cmp-ceiling-label"><b>Montjuïc</b> · 177,7 m — <em {...i('cmp.ceil')} /></p>
+            <svg className="cmp-svg" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMax meet" role="img" aria-label="Comparativa de alturas a escala">
+              <g stroke="#8b887d" strokeWidth={0.8} strokeOpacity={0.32}>
+                <line x1="40" y1="353.4" x2="980" y2="353.4" /><line x1="40" y1="226.8" x2="980" y2="226.8" /><line x1="40" y1="100.2" x2="980" y2="100.2" />
+              </g>
+              <g style={{ fontFamily: 'var(--mono)' }} fontSize="12" fill="#8b887d">
+                <text x="40" y="349">50 m</text><text x="40" y="222.4">100 m</text><text x="40" y="95.8">150 m</text>
+              </g>
+              <path className="sketch" d="M40,96 C260,46 400,33 500,31 C600,33 740,46 960,96" fill="none" stroke="#8b887d" strokeWidth={1.2} strokeOpacity={0.5} strokeLinecap="round" />
+              <line x1="40" y1="31" x2="980" y2="31" stroke="#54524a" strokeWidth={1.2} strokeDasharray="6 5" />
+              <g className="sketch" fill="none" stroke="#1b1b14" strokeWidth={2} strokeLinejoin="round" strokeLinecap="round">
+                <path d="M116,92 L113,480 L137,480 L134,92 Z" />
+                <path d="M104,150 L97,480 L111,480 Z" /><path d="M146,150 L139,480 L153,480 Z" />
+                <path d="M88,200 L81,480 L95,480 Z" /><path d="M162,200 L155,480 L169,480 Z" />
+                <g strokeWidth={1} strokeOpacity={0.6}><path d="M116,180 H134" /><path d="M116,270 H134" /><path d="M116,360 H134" /></g>
+                <path d="M122,43 L128,43 L128,92 L122,92 Z" />
+                <path d="M114,58 L136,58 L136,66 L114,66 Z" />
+              </g>
+              <g className="sketch" fill="none" stroke="#54524a" strokeWidth={1.7} strokeLinejoin="round" strokeLinecap="round">
+                <path d="M375,71 L387,130 L381,130 L381,480 L369,480 L369,130 L363,130 Z" />
+                <g strokeWidth={1} strokeOpacity={0.6}><path d="M369,210 H381" /><path d="M369,310 H381" /><path d="M369,410 H381" /></g>
+              </g>
+              <g className="sketch" fill="none" stroke="#54524a" strokeWidth={1.7} strokeLinejoin="round" strokeLinecap="round">
+                <path d="M611,81 L620,135 L615,135 L615,480 L607,480 L607,135 L602,135 Z" />
+                <path d="M639,81 L648,135 L643,135 L643,480 L635,480 L635,135 L630,135 Z" />
+                <path d="M615,300 L635,300 L635,480 L615,480 Z" strokeOpacity={0.6} />
+              </g>
+              <g className="sketch" fill="none" stroke="#54524a" strokeWidth={1.7} strokeLinejoin="round" strokeLinecap="round" transform="rotate(6 875 480)">
+                <path d="M858,336 H892 M860,336 V480 H890 V336" />
+                <g strokeWidth={1} strokeOpacity={0.6}><path d="M860,360 H890" /><path d="M860,384 H890" /><path d="M860,408 H890" /><path d="M860,432 H890" /><path d="M860,456 H890" /></g>
+              </g>
+              <line x1="40" y1="480" x2="980" y2="480" stroke="#1b1b14" strokeWidth={1.5} />
+            </svg>
+            <div className="cmp-labels">
+              <div className="cmp-cell is-star"><div className="cmp-h">172,5 m</div><div className="cmp-n" {...i('cmp.sf.n')} /><div className="cmp-t" {...i('cmp.sf.t')} /></div>
+              <div className="cmp-cell"><div className="cmp-h">161,5 m</div><div className="cmp-n" {...i('cmp.ulm.n')} /><div className="cmp-t" {...i('cmp.ulm.t')} /></div>
+              <div className="cmp-cell"><div className="cmp-h">157,4 m</div><div className="cmp-n" {...i('cmp.colonia.n')} /><div className="cmp-t" {...i('cmp.colonia.t')} /></div>
+              <div className="cmp-cell"><div className="cmp-h">57 m</div><div className="cmp-n" {...i('cmp.pisa.n')} /><div className="cmp-t" {...i('cmp.pisa.t')} /></div>
             </div>
           </div>
           <p className="src reveal" style={{ textAlign: 'center', marginTop: 34 }} {...i('cmp.src')} />

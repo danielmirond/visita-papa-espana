@@ -29,6 +29,8 @@ const HIDE_ON_SLUGS = new Set([
   'privacidad', 'privacy', 'confidentialite', 'datenschutz', 'privacidade', 'privacitat', 'pribatutasuna',
   'politica-cookies', 'cookies-policy', 'politica-cookie', 'politique-cookies', 'cookie-richtlinie', 'politica-galetes', 'cookie-politika',
   'contacto', 'contact', 'contatto', 'kontakt', 'contato', 'contacte', 'kontaktua',
+  // Reportaje inmersivo "La escalera de luz" (es/ca)
+  'torre-de-jesucristo-sagrada-familia', 'torre-de-jesucrist-sagrada-familia',
 ])
 
 export default function EssentialsCarousel() {
