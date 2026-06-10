@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-10T18:31:31+02:00',
+  dateModified: '2026-06-10T21:24:01+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '21:24',
+      datetime: '2026-06-10T21:24:01+02:00',
+      title: "Omella homenajea a quienes han hecho posible la Sagrada Família.",
+      body: "Omella homenajea a quienes han hecho posible la Sagrada Família. El cardenal Juan José Omella ha rendido homenaje en la Sagrada Família a la Junta Constructora del templo y al cardenal Lluís Martínez Sistach, arzobispo emérito de Barcelona e impulsor de la dedicación de la basílica por Benedicto XVI en 2010. El reconocimiento ha provocado un largo aplauso del público, que ha roto por unos segundos la solemnidad de la ceremonia presidida por el Papa León XIV. (Según ABC.)",
+    },
+    {
+      time: '21:22',
+      datetime: '2026-06-10T21:22:29+02:00',
+      title: "El Papa pronuncia la oración después de la comunión.",
+      body: "El Papa pronuncia la oración después de la comunión. El Papa León XIV pronuncia en estos momentos la oración después de la comunión en la Sagrada Família, uno de los últimos momentos de la misa que preside en Barcelona. (Según ABC.)",
+    },
+    {
+      time: '21:08',
+      datetime: '2026-06-10T21:08:37+02:00',
+      title: "Salvador Illa comulga durante la misa del Papa en la Sagrada Família.",
+      body: "Salvador Illa comulga durante la misa del Papa en la Sagrada Família. Varios sacerdotes distribuyen en estos momentos la comunión entre los asistentes a la misa presidida por el Papa León XIV en la Sagrada Família. Entre las personas que han recibido la comunión se encuentra el presidente de la Generalitat, Salvador Illa, presente en la ceremonia junto a otras autoridades políticas, religiosas y civiles. (Según ABC.)",
+    },
     {
       time: '18:31',
       datetime: '2026-06-10T18:31:31+02:00',
