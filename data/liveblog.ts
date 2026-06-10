@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-09T22:12:12+02:00',
+  dateModified: '2026-06-10T12:15:56+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '12:15',
+      datetime: '2026-06-10T12:15:56+02:00',
+      title: "Muchos saludos de camino al interior de la abadía.",
+      body: "Muchos saludos de camino al interior de la abadía. Suena el órgano mientras el Papa recorre el largo pasillo hasta la capilla del Santísimo, donde se ha arrodillado para hacer una plegaria. Foto: José Ramón Navarro-Pareja. (Según ABC.)",
+    },
+    {
+      time: '12:10',
+      datetime: '2026-06-10T12:10:51+02:00',
+      title: "León XIV entra en la plaza con el papamóvil, aclamado por los fieles que llevan horas esperándole.",
+      body: "León XIV entra en la plaza con el papamóvil, aclamado por los fieles que llevan horas esperándole. Foto: Esther Amora. (Según ABC.)",
+    },
+    {
+      time: '12:09',
+      datetime: '2026-06-10T12:09:38+02:00',
+      title: "Un plato de cerámica para el Papa y una carta con una cita del Evangelio de Mateo: «Estuve en prisión y me…",
+      body: "Un plato de cerámica para el Papa y una carta con una cita del Evangelio de Mateo: «Estuve en prisión y me visitasteis» . La pieza, elaborada por los internos, evoca al trencadís. Un obsequio al Papa, acompañado de una misiva para explicar la labor rehabilitadora de los talleres en prisión. Por Elena Burés. (Según ABC.)",
+    },
     {
       time: '22:12',
       datetime: '2026-06-09T22:12:12+02:00',
