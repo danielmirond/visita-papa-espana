@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-10T15:40:31+02:00',
+  dateModified: '2026-06-10T18:31:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '18:31',
+      datetime: '2026-06-10T18:31:31+02:00',
+      title: "La iglesia de San Agustín, el «cruce de caminos» con acento social del viaje de León XIV a España .",
+      body: "La iglesia de San Agustín, el «cruce de caminos» con acento social del viaje de León XIV a España . El padre Faustin sonríe y asegura que «la elección de la iglesia ha sido un cruce de caminos, es decir, una casualidad o una providencia de Dios», porque la parroquia está dedicada a San Agustín, regida por agustinos y ubicada en uno de los barrios más pobres y complejos de Barcelona. Es el mejor escenario para resaltar el aspecto más social del viaje apostólico de León XIV a España, a su paso por Barcelona, tras visitar Madrid y de camino a Canarias. Lee el artículo completo de Daniel Tercero. (Según ABC.)",
+    },
+    {
+      time: '18:28',
+      datetime: '2026-06-10T18:28:31+02:00',
+      title: "Todo preparado para que el Santo Padre coja el papamóvil.",
+      body: "Todo preparado para que el Santo Padre coja el papamóvil. Todo preparado en el tramo de Rossellón entre Paseo de Gracia y Rambla de Cataluña, donde León XIV cogerá el Papamóvil en su camino hacia la Sagrada Familia. Informa Àlex Gubern . (Según ABC.)",
+    },
+    {
+      time: '17:50',
+      datetime: '2026-06-10T17:50:31+02:00',
+      title: "Aumenta la expectación en Rosellón por el recorrido del Papa a la Sagrada Familia.",
+      body: "Aumenta la expectación en Rosellón por el recorrido del Papa a la Sagrada Familia. El Papa, a punto de salir de la iglesia, y emprender el camino a la Sagrada Familia. Antes de llegar, dejará el coche oficial y tomará el papamóvil en la calle Rosellón. Será entonces cuando se viva uno de los momentos más emocionantes y de contacto con la gente en Barcelona. (Según ABC.)",
+    },
     {
       time: '15:40',
       datetime: '2026-06-10T15:40:31+02:00',
