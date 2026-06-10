@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-10T21:24:01+02:00',
+  dateModified: '2026-06-10T22:52:11+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '22:52',
+      datetime: '2026-06-10T22:52:11+02:00',
+      title: "130.000 personas en la misa de León XIV.",
+      body: "130.000 personas en la misa de León XIV. Las autoridades locales confirman la asistencia de unos 9.000 fieles a la misa, tanto en el interior como en el exterior de la basílica de la Sagrada Familia de Barcelona. En los alrededores y a lo largo del recorrido hay unas 120.000 personas. (Según ABC.)",
+    },
+    {
+      time: '22:04',
+      datetime: '2026-06-10T22:04:52+02:00',
+      title: "La Sagrada Família se enciende y corona para siempre la obra de Gaudí.",
+      body: "La Sagrada Família se enciende y corona para siempre la obra de Gaudí. La Sagrada Família se ha encendido desde el interior hasta el exterior en el acto final de la visita del Papa León XIV a Barcelona. Miles de luces repartidas entre el público han latido como corazones alrededor del templo antes de que la torre de Jesús quedara iluminada sobre el cielo de la ciudad. La escena ha puesto el broche más espectacular a la jornada y ha convertido la obra cumbre de Antoni Gaudí en el símbolo de una ciudad que, más de un siglo después, ve coronarse para siempre uno de sus grandes sueños colectivos. (Según ABC.)",
+    },
+    {
+      time: '21:58',
+      datetime: '2026-06-10T21:58:30+02:00',
+      title: "La Escolanía sale al exterior con luces en las manos antes de iluminar la torre.",
+      body: "La Escolanía sale al exterior con luces en las manos antes de iluminar la torre. La Escolanía de Montserrat sale en estos momentos al exterior de la Sagrada Família cantando y con pequeñas luces en las manos, en la antesala del acto final de la visita del Papa León XIV al templo. (Según ABC.)",
+    },
     {
       time: '21:24',
       datetime: '2026-06-10T21:24:01+02:00',
