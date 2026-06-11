@@ -16,6 +16,7 @@ const BANNER = {
   links: [
     { href: '/es/ciudades/gran-canaria', label: 'Guía de Gran Canaria' },
     { href: '/es/visita-papa-canarias', label: 'Agenda en Canarias' },
+    { href: '/es/recorrido-papa-tenerife', label: 'Recorrido en Tenerife' },
   ],
 }
 
@@ -31,7 +32,7 @@ export default function LiveBanner() {
 
   if (hidden) return null
   // No mostrar en las propias páginas de Canarias (evita duplicar).
-  if (pathname === '/es/ciudades/gran-canaria' || pathname?.includes('visita-papa-canarias')) return null
+  if (pathname === '/es/ciudades/gran-canaria' || pathname?.includes('visita-papa-canarias') || pathname?.includes('recorrido-papa-tenerife')) return null
 
   return (
     <div className="bg-papal-navy text-white">
