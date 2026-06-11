@@ -87,15 +87,15 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
       {/* Retransmisión en directo (cuenta atrás → embed YouTube RTVE) */}
       <LiveBroadcast locale={locale} />
 
-      {/* Destacado: recorrido en Barcelona (9-10 jun) */}
+      {/* Destacado: Canarias (11-12 jun) */}
       {locale === 'es' && (
         <div className="border-b border-papal-gold/20 bg-papal-gold/15">
           <Container className="py-2 text-center">
             <Link
-              href="/es/recorrido-papa-barcelona"
+              href="/es/ciudades/gran-canaria"
               className="inline-flex items-center gap-2 text-sm font-semibold text-papal-navy hover:underline"
             >
-              🗺️ Barcelona (9-10 jun): recorrido del papamóvil y horarios →
+              🗺️ El Papa en Canarias (11-12 jun): Gran Canaria y Tenerife →
             </Link>
           </Container>
         </div>

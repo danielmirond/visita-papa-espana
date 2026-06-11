@@ -11,11 +11,11 @@ import { usePathname } from 'next/navigation'
  * oculta sola tras el fin de la etapa de Barcelona y en sus propias páginas.
  */
 const BANNER = {
-  // Fin de la etapa de Barcelona (Madrid, +02:00)
-  end: '2026-06-10T23:00:00+02:00',
+  // Fin de la etapa de Canarias (Madrid, +02:00)
+  end: '2026-06-12T23:00:00+02:00',
   links: [
-    { href: '/es/ciudades/barcelona', label: 'Guía de Barcelona' },
-    { href: '/es/recorrido-papa-barcelona', label: 'Recorrido del papamóvil' },
+    { href: '/es/ciudades/gran-canaria', label: 'Guía de Gran Canaria' },
+    { href: '/es/visita-papa-canarias', label: 'Agenda en Canarias' },
   ],
 }
 
@@ -30,15 +30,15 @@ export default function LiveBanner() {
   }, [])
 
   if (hidden) return null
-  // No mostrar en las propias páginas de Barcelona (evita duplicar).
-  if (pathname === '/es/ciudades/barcelona' || pathname?.includes('recorrido-papa-barcelona')) return null
+  // No mostrar en las propias páginas de Canarias (evita duplicar).
+  if (pathname === '/es/ciudades/gran-canaria' || pathname?.includes('visita-papa-canarias')) return null
 
   return (
     <div className="bg-papal-navy text-white">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-4 gap-y-1 px-4 py-2 text-center text-sm font-bold">
         <span className="inline-flex items-center gap-2">
           <span className="inline-flex h-2 w-2 shrink-0 animate-pulse rounded-full bg-papal-gold" />
-          El Papa en Barcelona · 9-10 jun
+          El Papa en Canarias · 11-12 jun
         </span>
         {BANNER.links.map((l) => (
           <Link key={l.href} href={l.href} className="text-papal-gold hover:underline">
