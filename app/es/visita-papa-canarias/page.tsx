@@ -189,6 +189,9 @@ export default function VisitaPapaCanariasPage() {
             <Link href="/es/ciudades/gran-canaria" className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-gold-light">
               Guía de Gran Canaria
             </Link>
+            <Link href="/es/recorrido-papa-tenerife" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
+              Recorrido en Tenerife
+            </Link>
             <Link href="/es/ciudades/tenerife" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
               Guía de Tenerife
             </Link>
