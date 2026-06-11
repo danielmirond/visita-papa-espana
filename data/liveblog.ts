@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-11T08:20:31+02:00',
+  dateModified: '2026-06-11T12:52:22+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '12:52',
+      datetime: '2026-06-11T12:52:22+02:00',
+      title: "Llega el Papa al muelle.",
+      body: "Llega el Papa al muelle. Ha saludado a las autoridades que le esperaban. Suena el himno, móviles en alto, todos en pie y atentos. (Según ABC.)",
+    },
+    {
+      time: '12:45',
+      datetime: '2026-06-11T12:45:02+02:00',
+      title: "El Papa, también pendiente del Mundial .",
+      body: "El Papa, también pendiente del Mundial . León XIV, que ya ha reconocido en anteriores ocasiones su afición al fútbol, no ha querido dejar pasar la oportunidad para mandar unas palabras que llevan a la reflexión de cara al inminente comienzo de la competición, que arranca en solo unas horas. En su mensaje, llama al trabajo en equipo y a dejar a un lado las individualidades. (Según ABC.)",
+    },
+    {
+      time: '12:41',
+      datetime: '2026-06-11T12:41:31+02:00',
+      title: "El equipo de la guardamar Urania saluda al público.",
+      body: "El equipo de la guardamar Urania saluda al público. El guardamar Urania y el salvamar Macondo se encuentran atracados en el puerto de Arguineguín. Son los barcos de salvamento marítimo encargados del rescate en Gran Canaria de los cayucos que llegan a aguas territoriales españolas. Formarán parte del homenaje. (Según ABC.)",
+    },
     {
       time: '08:20',
       datetime: '2026-06-11T08:20:31+02:00',
