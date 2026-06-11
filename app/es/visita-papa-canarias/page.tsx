@@ -7,9 +7,9 @@ import { siteConfig } from '@/data/siteConfig'
 const SLUG = 'visita-papa-canarias'
 
 export const metadata: Metadata = {
-  title: 'Visita del Papa a Canarias: agenda, horarios y recorrido (Gran Canaria y Tenerife)',
+  title: 'Visita del Papa a Canarias: a qué hora llega, agenda y horarios (Gran Canaria y Tenerife)',
   description:
-    'Agenda y horarios de la visita del Papa León XIV a Canarias (11-12 junio 2026): Gran Canaria (Arguineguín, Catedral de Santa Ana y misa en el Estadio de Gran Canaria) y Tenerife (Las Raíces, La Laguna y misa de clausura en el puerto de Santa Cruz).',
+    '¿A qué hora llega el Papa a Gran Canaria? Llega a Gando el 11 de junio hacia las 10:50. Agenda y horarios de la visita del Papa León XIV a Canarias (11-12 junio 2026): Arguineguín, Catedral de Santa Ana, misa en el Estadio de Gran Canaria, Las Raíces, La Laguna y misa de clausura en Santa Cruz de Tenerife.',
   alternates: { canonical: `${siteConfig.url}/es/${SLUG}` },
   openGraph: {
     type: 'article',
@@ -153,6 +153,17 @@ export default function VisitaPapaCanariasPage() {
             <strong>Gran Canaria</strong> y el 12 de junio en <strong>Tenerife</strong>. Estos son todos los actos y sus
             horarios.
           </p>
+
+          {/* Destacado: hora de llegada (capta 'a qué hora llega el papa a gran canaria') */}
+          <div className="rounded-xl border border-papal-gold/40 bg-papal-cream p-6 text-center">
+            <p className="text-sm font-semibold uppercase tracking-widest text-papal-gold-dark">¿A qué hora llega el Papa a Gran Canaria?</p>
+            <p className="mt-2 font-heading text-2xl font-bold text-papal-navy sm:text-3xl">Jueves 11 de junio · 10:50</p>
+            <p className="mt-2 text-papal-navy/75">
+              El Papa León XIV llega a la <strong>Base Aérea de Gando</strong> (Gran Canaria) hacia las <strong>10:50</strong>.
+              A Tenerife llega el viernes 12 sobre las <strong>9:10</strong> (aeropuerto de Los Rodeos). Horarios
+              aproximados; pueden ajustarse por seguridad.
+            </p>
+          </div>
 
           <DayBlock titulo="Jueves 11 de junio · Gran Canaria" actos={GRAN_CANARIA} />
           <DayBlock titulo="Viernes 12 de junio · Tenerife" actos={TENERIFE} />
