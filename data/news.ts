@@ -2,6 +2,47 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-desde-la-sagrada-familia-no-se-puede-creer-en-jesus-y-promover-la-guerr',
+    title: 'León XIV desde la Sagrada Familia: «No se puede creer en Jesús y promover la guerra»',
+    excerpt: 'El papa León XIV ha presidido este miércoles la Eucaristía en la obra magna de Gaudí y bendecido la torre de Jesucristo La entrada León XIV desde la Sagrada Familia: «No se puede creer en Jesús y promover la guerra» se p…',
+    content: 'El papa León XIV ha presidido este miércoles la Eucaristía en la obra magna de Gaudí y bendecido la torre de Jesucristo La entrada León XIV desde la Sagrada Familia: «No se puede creer en Jesús y promover la guerra» se publicó primero en Revista Ecclesia.',
+    date: '2026-06-10',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/leon-xiv-desde-la-sagrada-familia-no-puede-creer-en-jesus-y-promover-la-guerra/',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'resumen-del-dia-5-de-la-visita-del-papa-leon-xiv-a-espana-de-la-oracion-en-monts',
+    title: 'Resumen del día 5 de la visita del papa León XIV a España: de la oración en Montserrat a la misa en la Sagrada Familia',
+    excerpt: 'Lo más destacado de la segunda jornada del Pontífice en Barcelona',
+    content: 'Lo más destacado de la segunda jornada del Pontífice en Barcelona',
+    date: '2026-06-10',
+    source: 'El País',
+    sourceUrl: 'https://elpais.com/videos/2026-06-10/resumen-del-dia-5-de-la-visita-del-papa-leon-xiv-a-espana-de-la-oracion-en-montserrat-a-la-misa-en-la-sagrada-familia.html',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'rafael-ya-esta-bendecido-camino-de-la-sagrada-familia-lo-hemos-conseguido',
+    title: 'Rafael ya está bendecido camino de la Sagrada Familia: “Lo hemos conseguido”',
+    excerpt: 'Miles de personas asisten al recorrido del papamóvil en el centro de Barcelona',
+    content: 'Miles de personas asisten al recorrido del papamóvil en el centro de Barcelona',
+    date: '2026-06-10',
+    source: 'El País',
+    sourceUrl: 'https://elpais.com/espana/catalunya/2026-06-10/rafael-ya-esta-bendecido-camino-de-la-sagrada-familia-lo-hemos-conseguido.html',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'asi-es-el-puerto-de-arguineguin-que-va-a-visitar-el-papa-en-gran-canaria-conocid',
+    title: 'Así es el puerto de Arguineguín que va a visitar el Papa en Gran Canaria: conocido como el puerto de la vergüenza, donde llegan miles de migrantes y que León XIV quiere visibilizar',
+    excerpt: 'Una parada cargada de simbolismo marcará la visita del Pontífice a Gran Canaria, en un enclave ligado a la memoria migratoria del archipiélago. El mar y el recuerdo de quienes no llegaron con vida centrarán uno de los mo…',
+    content: 'Una parada cargada de simbolismo marcará la visita del Pontífice a Gran Canaria, en un enclave ligado a la memoria migratoria del archipiélago. El mar y el recuerdo de quienes no llegaron con vida centrarán uno de los momentos más esperados',
+    date: '2026-06-11',
+    source: 'El Confidencial',
+    sourceUrl: 'https://www.elconfidencial.com/espana/islas-canarias/2026-06-11/puerto-aguneguin-papa-gran-canaria-migracion-1qrt-1tna_4370437/',
+    relatedCities: ['gran-canaria'],
+  },
+
+  {
     slug: 'misa-en-la-sagrada-familia-dios-concibe-nuestra-vida-como-una-obra-maestra',
     title: 'Misa en la Sagrada Familia: «Dios concibe nuestra vida como una obra maestra»',
     excerpt: 'En su homilía, el Papa ha recordado a Gaudí en el centenario de su muerte y ha afirmado que el templo es «signo de unidad y de concordia». León XIV también ha advertido que «no podemos creer en Jesús y promover la guerra…',
