@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-10T23:37:39+02:00',
+  dateModified: '2026-06-11T08:20:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '08:20',
+      datetime: '2026-06-11T08:20:31+02:00',
+      title: "Cortes de carretera desde las 8.00 horas en Gran Canaria.",
+      body: "Cortes de carretera desde las 8.00 horas en Gran Canaria. Los cortes de carretera comenzarán este jueves, 11 de junio, en Gran Canaria a partir de las 08.00 horas con motivo de la llegada del Papa León XIV a la isla. Si bien, desde la Guardia Civil se ha indicado, en su cuenta oficial de 'X', que desde las 07.00 horas habrá un dispositivo de controles en la GC-1, con cierre de accesos a Arguineguín, en el municipio de Mogán, desde las 09.30 horas. Por su parte, la Dirección General de Tráfico (DGT) ha previsto una serie de restricciones en la circulación y la suspensión de obras que se… (Según ABC.)",
+    },
+    {
+      time: '08:11',
+      datetime: '2026-06-11T08:11:52+02:00',
+      title: "León XIV ya está en el aeropuerto junto a Illa.",
+      body: "León XIV ya está en el aeropuerto junto a Illa. El Papa ha salido este jueves sobre las 7.45 horas del Palacio Episcopal y ya se encuentra en el aeródromo. Se despide de las autoridades antes de subir a bordo del avión. (Según ABC.)",
+    },
+    {
+      time: '07:57',
+      datetime: '2026-06-11T07:57:04+02:00',
+      title: "Todo listo ya en el avión de Iberia que trasladará al Papa.",
+      body: "Todo listo ya en el avión de Iberia que trasladará al Papa. Suena en el interior música de la Escolanía de Montserrat. En el avión viaja también Isabel Celaa, embajadora de España ante la Santa Sede. Foto: Javier Martínez-Brocal. (Según ABC.)",
+    },
     {
       time: '23:37',
       datetime: '2026-06-10T23:37:39+02:00',
