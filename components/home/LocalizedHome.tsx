@@ -198,6 +198,38 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
+      {/* Vídeo destacado: bendición de la Torre de Jesucristo */}
+      {locale === 'es' && (
+        <section className="section-padding">
+          <Container>
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-semibold uppercase tracking-widest text-papal-gold">Barcelona · 10 de junio</p>
+              <h2 className="mt-2 font-heading text-2xl font-bold text-papal-navy sm:text-3xl">
+                El Papa bendice e ilumina la Torre de Jesucristo
+              </h2>
+              <div className="mt-5 overflow-hidden rounded-xl border border-papal-gold/20 shadow-sm">
+                <div className="relative" style={{ paddingBottom: '56.25%' }}>
+                  <iframe
+                    className="absolute inset-0 h-full w-full"
+                    src="https://www.youtube-nocookie.com/embed/L7LwFouh1pE"
+                    title="León XIV bendice la Torre de Jesucristo y se ilumina la fachada del Nacimiento"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+              <Link
+                href="/es/torre-de-jesucristo-sagrada-familia"
+                className="mt-4 inline-block rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-gold-light"
+              >
+                Reportaje: La Torre de Jesucristo →
+              </Link>
+            </div>
+          </Container>
+        </section>
+      )}
+
       {/* Ciudades */}
       <section className="section-padding">
         <Container>

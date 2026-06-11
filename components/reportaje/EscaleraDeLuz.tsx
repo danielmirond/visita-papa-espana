@@ -103,6 +103,7 @@ const D: Record<string, { es: string; ca: string }> = {
   'vid.cruz.cap': { es: 'La cruz completa de la Torre de Jesús, al descubrirse los andamios (marzo de 2026).', ca: 'La creu completa de la Torre de Jesús, en descobrir-se les bastides (març de 2026).' },
   'vid.rtve.cap': { es: 'La instalación de la última pieza de la cruz, en febrero de 2026 (RTVE).', ca: "La instal·lació de l'última peça de la creu, el febrer de 2026 (RTVE)." },
   'vid.tl.cap': { es: 'Timelapse: la construcción de la Sagrada Família, de 1882 a 2026.', ca: 'Timelapse: la construcció de la Sagrada Família, de 1882 a 2026.' },
+  'vid.bend.cap': { es: 'León XIV bendice la Torre de Jesucristo y se ilumina la fachada del Nacimiento (10 de junio de 2026).', ca: 'Lleó XIV beneeix la Torre de Jesucrist i s\'il·lumina la façana del Naixement (10 de juny de 2026).' },
   'prose.mirador.h': { es: 'El mirador más alto de Barcelona', ca: 'El mirador més alt de Barcelona' },
   'prose.mirador.b': { es: 'El interior de la torre se concibe como un espacio visitable. A 65 m está la <strong>Sala del Crucero</strong>, con bóvedas de azulejo y vidrio veneciano rojo; un <strong>ascensor de vidrio</strong> sube hasta los 138 m y, a pie, se alcanzan los 144 m. La torre interior es de granito blanco perforado con orificios en forma de rombo por los que se filtra la luz.', ca: "L'interior de la torre es concep com un espai visitable. A 65 m hi ha la <strong>Sala del Creuer</strong>, amb voltes de rajola i vidre venecià vermell; un <strong>ascensor de vidre</strong> puja fins als 138 m i, a peu, s'arriba als 144 m. La torre interior és de granit blanc perforat amb orificis en forma de rombe pels quals es filtra la llum." },
   'prose.cruz.h': { es: 'Una cruz que ilumina Barcelona', ca: 'Una creu que il·lumina Barcelona' },
@@ -645,6 +646,10 @@ export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
           <div className="closing__date reveal d3">
             <span {...i('cl.date')} />
             <small {...i('cl.date.s')} />
+          </div>
+          <div className="reveal" style={{ maxWidth: 760, margin: 'clamp(40px,6vw,64px) auto 0', textAlign: 'left' }}>
+            <Yt id="L7LwFouh1pE" title="León XIV bendice la Torre de Jesucristo y se ilumina la fachada del Nacimiento" />
+            <p className="esc-cap" style={{ textAlign: 'center' }} {...i('vid.bend.cap')} />
           </div>
         </div>
       </section>
