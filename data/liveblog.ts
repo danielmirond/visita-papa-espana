@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-11T12:52:22+02:00',
+  dateModified: '2026-06-11T16:45:31+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '16:45',
+      datetime: '2026-06-11T16:45:31+02:00',
+      title: "Sánchez imita al Papa y 'bendice' a un bebé en Canarias .",
+      body: "Sánchez imita al Papa y 'bendice' a un bebé en Canarias . Bebés bendecidos en el Papamóvil, en la puerta del Congreso de los Diputados, en la Nunciatura Apostólica, en el estadio olímpico Montjuïc, en Montserrat, en el puerto de Arguineguín. Desde que comenzó la visita de León XIV a España, los pequeños le han llegado por todos los flancos al Papa, que no ha dudado en realizar el signo de la cruz en sus cabezas para protegerles del mal. Tanta imagen parece haber contagiado al presidente del Gobierno, Pedro Sánchez, que este jueves ha tomado en brazos a Mama Usati, de 4 meses, hija de una… (Según ABC.)",
+    },
+    {
+      time: '16:31',
+      datetime: '2026-06-11T16:31:31+02:00',
+      title: "Ni un rincón sin mirar en el Estadio de Gran Canaria.",
+      body: "Ni un rincón sin mirar en el Estadio de Gran Canaria. (Según ABC.)",
+    },
+    {
+      time: '16:13',
+      datetime: '2026-06-11T16:13:01+02:00',
+      title: "El Papa agradece a Canarias su ayuda a «tantos hermanos crucificados» .",
+      body: "El Papa agradece a Canarias su ayuda a «tantos hermanos crucificados» . En Canarias, el lema del viaje papal «Alza la mirada» se ha prolongado con las palabras «y acoge». Significa que en el archipiélago León XIV declinará en clave solidaria sus peticiones de que se proteja la dignidad humana. Tras su encuentro en el puerto de Arguineguín con emigrantes que han sobrevivido a la travesía y su oración por los emigrantes fallecidos en el mar, se ha trasladado a la catedral de Las Palmas para dar las gracias a los católicos de esta isla por la ayuda que prestan a esos «hermanos crucificados». (Según ABC.)",
+    },
     {
       time: '12:52',
       datetime: '2026-06-11T12:52:22+02:00',
