@@ -115,58 +115,28 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </div>
       )}
 
-      {/* Hero */}
-      <section className="relative min-h-[600px] overflow-hidden">
-        <Image
-          src="/images/hero/papa-leon-xiv.webp"
-          alt="Papa León XIV"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-papal-navy/85 via-papal-navy/80 to-papal-navy/95" />
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-papal-gold blur-3xl" />
-        </div>
-        <Container className="relative py-16 text-center sm:py-24">
-          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-papal-gold">
-            {dict.home.heroDateRange}
+      {/* Hero compacto (franja) */}
+      <section className="gradient-navy">
+        <Container className="py-7 text-center sm:py-9">
+          <p className="text-xs font-medium uppercase tracking-widest text-papal-gold">
+            {dict.home.heroDateRange} &middot; Madrid · Barcelona · Gran Canaria · Tenerife
           </p>
-          <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
-            {dict.home.heroTitle}
-            <br />
-            <span className="text-papal-gold">{dict.home.heroCountry}</span>
+          <h1 className="mt-2 font-heading text-2xl font-bold text-white sm:text-3xl">
+            {dict.home.heroTitle} <span className="text-papal-gold">{dict.home.heroCountry}</span>
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/70">
-            Madrid &middot; Barcelona &middot; Gran Canaria &middot; Tenerife
-          </p>
-          <p className="mt-2 font-heading text-xl italic text-papal-gold/80">
+          <p className="mt-1 font-heading text-base italic text-papal-gold/80">
             &ldquo;{dict.home.heroMotto}&rdquo;
           </p>
-
-          <div className="mt-10">
-            <CountdownTimer targetDate={siteConfig.visitStartDate} />
-          </div>
-
-          <div className="mt-10 flex flex-wrap justify-center gap-3">
-            <a
-              href={siteConfig.registrationUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
-            >
-              {t.home.registerBtn}
-            </a>
+          <div className="mt-4 flex flex-wrap justify-center gap-2.5">
             <Link
               href={localizePath('/programa', locale)}
-              className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
+              className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
             >
               {dict.home.seeProgram}
             </Link>
             <Link
               href={localizePath('/como-asistir', locale)}
-              className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
+              className="rounded-lg border border-white/30 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-white/10"
             >
               {dict.home.howToAttend}
             </Link>
