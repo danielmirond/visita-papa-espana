@@ -129,7 +129,7 @@
 .escalera .anchor__label{font-size:clamp(1.1rem,2.6vw,1.9rem); font-family:var(--serif); font-style:italic; color:rgba(239,236,225,.86); text-wrap:balance;}
 .escalera .anchor__sub{margin-top:1.6em; color:rgba(239,236,225,.55); font-family:var(--mono); font-size:.74rem; letter-spacing:.18em; text-transform:uppercase;}
 
-/* ---------- SCROLLYTELLING ---------- */
+/* ---------- SCROLLYTELLING DE ALTURA (sub-scroll interno) ---------- */
 .escalera .scrolly{position:relative; height:460vh; background:var(--paper);}
 .escalera .scrolly__stage{position:sticky; top:0; height:100svh; overflow:hidden; display:grid; place-items:center; color:var(--ink); transition:color .3s linear;}
 .escalera .scrolly__sky{position:absolute; inset:0; z-index:0; transition:opacity .1s linear;}
@@ -156,6 +156,19 @@
 .escalera .scrolly__stage.night-on .ceiling .tag{color:rgba(239,236,225,.7);}
 .escalera .scrolly__verse{position:absolute; left:50%; bottom:clamp(40px,8vh,90px); transform:translateX(-50%); z-index:7; text-align:center; opacity:0; transition:opacity .9s var(--ease); font-family:var(--serif); font-style:italic; font-size:clamp(1.1rem,3vw,1.9rem); color:#fff; max-width:24ch; text-shadow:0 0 34px rgba(255,255,255,.45);}
 .escalera .scrolly__verse.show{opacity:1;}
+
+/* ---------- VÍDEO + PROSA (fusión texto/vídeo) ---------- */
+.escalera .esc-video{overflow:hidden; border-radius:4px; border:1px solid var(--hair); box-shadow:0 18px 50px rgba(0,0,0,.18);}
+.escalera .is-night .esc-video{border-color:rgba(239,236,225,.18); box-shadow:0 18px 50px rgba(0,0,0,.5);}
+.escalera .esc-video .ratio{position:relative; padding-bottom:56.25%; height:0;}
+.escalera .esc-video iframe{position:absolute; inset:0; width:100%; height:100%; border:0;}
+.escalera .esc-cap{font-family:var(--mono); font-size:.66rem; letter-spacing:.06em; color:var(--ink-mute); margin-top:.8em;}
+.escalera .is-night .esc-cap{color:rgba(239,236,225,.5);}
+.escalera .esc-prose p{max-width:60ch; color:var(--ink-soft); text-wrap:pretty; font-size:1.05rem; line-height:1.66;}
+.escalera .esc-prose p + p{margin-top:1.1em;}
+.escalera .esc-prose strong{color:var(--ink);}
+.escalera .is-night .esc-prose p{color:rgba(239,236,225,.76);}
+.escalera .is-night .esc-prose strong{color:#fff;}
 
 /* ---------- COMPARATIVA (single shared metre→px scale) ---------- */
 .escalera .compare-chart{position:relative; max-width:980px; margin:8px auto 0;}

@@ -98,6 +98,31 @@ const D: Record<string, { es: string; ca: string }> = {
   'soc.story.label': { es: 'Story · 1080×1920', ca: 'Story · 1080×1920' },
   'colo.marque': { es: 'La escalera de luz', ca: "L'escala de llum" },
   'colo.body': { es: 'Reportaje visual sobre la Torre de Jesucristo de la Sagrada Família. Datos: Basílica de la Sagrada Família y prensa, 2026. Infografías originales.', ca: 'Reportatge visual sobre la Torre de Jesucrist de la Sagrada Família. Dades: Basílica de la Sagrada Família i premsa, 2026. Infografies originals.' },
+  // ---- fusión: prosa + vídeos ----
+  'intro.b': { es: 'Después de <strong>144 años de obras</strong>, la Sagrada Família ha alcanzado su altura definitiva. El 20 de febrero de 2026 se colocó la pieza final de la <strong>Torre de Jesucristo</strong> y el templo se convirtió en la <strong>iglesia más alta del mundo</strong>. El 10 de junio, en el centenario de la muerte de Gaudí, el Papa León XIV la bendice e inaugura.', ca: "Després de <strong>144 anys d'obres</strong>, la Sagrada Família ha arribat a la seva alçada definitiva. El 20 de febrer de 2026 es va col·locar la peça final de la <strong>Torre de Jesucrist</strong> i el temple es va convertir en l'<strong>església més alta del món</strong>. El 10 de juny, en el centenari de la mort de Gaudí, el Papa Lleó XIV la beneeix i la inaugura." },
+  'vid.cruz.cap': { es: 'La cruz completa de la Torre de Jesús, al descubrirse los andamios (marzo de 2026).', ca: 'La creu completa de la Torre de Jesús, en descobrir-se les bastides (març de 2026).' },
+  'vid.rtve.cap': { es: 'La instalación de la última pieza de la cruz, en febrero de 2026 (RTVE).', ca: "La instal·lació de l'última peça de la creu, el febrer de 2026 (RTVE)." },
+  'vid.tl.cap': { es: 'Timelapse: la construcción de la Sagrada Família, de 1882 a 2026.', ca: 'Timelapse: la construcció de la Sagrada Família, de 1882 a 2026.' },
+  'prose.mirador.h': { es: 'El mirador más alto de Barcelona', ca: 'El mirador més alt de Barcelona' },
+  'prose.mirador.b': { es: 'El interior de la torre se concibe como un espacio visitable. A 65 m está la <strong>Sala del Crucero</strong>, con bóvedas de azulejo y vidrio veneciano rojo; un <strong>ascensor de vidrio</strong> sube hasta los 138 m y, a pie, se alcanzan los 144 m. La torre interior es de granito blanco perforado con orificios en forma de rombo por los que se filtra la luz.', ca: "L'interior de la torre es concep com un espai visitable. A 65 m hi ha la <strong>Sala del Creuer</strong>, amb voltes de rajola i vidre venecià vermell; un <strong>ascensor de vidre</strong> puja fins als 138 m i, a peu, s'arriba als 144 m. La torre interior és de granit blanc perforat amb orificis en forma de rombe pels quals es filtra la llum." },
+  'prose.cruz.h': { es: 'Una cruz que ilumina Barcelona', ca: 'Una creu que il·lumina Barcelona' },
+  'prose.cruz.b': { es: 'La cruz está revestida de <strong>cerámica vidriada blanca y vidrio</strong>, materiales que, como escribió Gaudí, debían lograr que «brille de día y dé luz de noche». El proyecto de iluminación —en el que colabora la Fundación Endesa— prevé focos en los extremos de los brazos y luz interior, convirtiendo el remate en un auténtico faro espiritual sobre la ciudad.', ca: 'La creu està revestida de <strong>ceràmica vidrada blanca i vidre</strong>, materials que, com va escriure Gaudí, havien d\'aconseguir que «brilli de dia i faci llum de nit». El projecte d\'il·luminació —en què col·labora la Fundació Endesa— preveu focus als extrems dels braços i llum interior, i converteix el remat en un autèntic far espiritual sobre la ciutat.' },
+}
+
+function Yt({ id, title }: { id: string; title: string }) {
+  return (
+    <div className="esc-video">
+      <div className="ratio">
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${id}`}
+          title={title}
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    </div>
+  )
 }
 
 export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
@@ -315,6 +340,17 @@ export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
         </div>
       </section>
 
+      {/* ===== INTRO prosa + vídeo ===== */}
+      <section className="section" style={{ background: 'var(--cream)' }}>
+        <div className="narrow esc-prose">
+          <p className="reveal" {...i('intro.b')} />
+          <div className="reveal d1" style={{ marginTop: 'clamp(28px,4vw,44px)' }}>
+            <Yt id="r2y27rprekM" title="La cruz completa de la Torre de Jesús" />
+            <p className="esc-cap" {...i('vid.cruz.cap')} />
+          </div>
+        </div>
+      </section>
+
       {/* ===== SCROLLY intro ===== */}
       <section className="section" style={{ paddingBottom: 0 }}>
         <div className="narrow">
@@ -367,9 +403,8 @@ export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
               <svg viewBox="0 0 200 1000" preserveAspectRatio="xMidYMax meet">
                 <defs>
                   <clipPath id="towerClip">
+                    {/* solo el fuste: la luz sube por la torre, la cruz no crece */}
                     <path d="M70,1000 C82,740 90,520 95,330 C97,260 97,205 96.5,150 L103.5,150 C103,205 103,260 105,330 C110,520 118,740 130,1000 Z" />
-                    <rect x="96.5" y="42" width="7" height="96" />
-                    <rect x="72" y="64" width="56" height="14" />
                   </clipPath>
                 </defs>
                 <g clipPath="url(#towerClip)">
@@ -398,6 +433,10 @@ export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
         <div className="narrow">
           <hr className="hair-line" style={{ marginBottom: 40 }} />
           <p className="lede" style={{ maxWidth: '46ch' }} {...i('scrolly.foot')} />
+          <div className="esc-prose reveal" style={{ marginTop: 'clamp(32px,5vw,56px)' }}>
+            <h3 className="h-section" style={{ fontSize: 'clamp(1.5rem,3.4vw,2.4rem)', color: '#f6f1e4', marginBottom: '.5em' }} {...i('prose.mirador.h')} />
+            <p {...i('prose.mirador.b')} />
+          </div>
         </div>
       </section>
 
@@ -501,6 +540,14 @@ export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
               <p className="note" style={{ marginTop: 26, color: 'rgba(239,236,225,0.66)', fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: '1.05rem', lineHeight: 1.5 }} {...i('cruz.foot')} />
             </div>
           </div>
+          <div className="esc-prose reveal" style={{ marginTop: 'clamp(44px,6vw,76px)', maxWidth: 760, marginInline: 'auto' }}>
+            <h3 className="h-section" style={{ fontSize: 'clamp(1.5rem,3.4vw,2.4rem)', color: '#f6f1e4', marginBottom: '.5em' }} {...i('prose.cruz.h')} />
+            <p {...i('prose.cruz.b')} />
+            <div style={{ marginTop: 'clamp(24px,4vw,40px)' }}>
+              <Yt id="jh3LmIJbAZI" title="Instalación de la última pieza de la cruz (RTVE)" />
+              <p className="esc-cap" {...i('vid.rtve.cap')} />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -532,6 +579,10 @@ export default function EscaleraDeLuz({ locale }: { locale: Locale }) {
                 <p className="tevent__body" {...i(e.b)} />
               </div>
             ))}
+          </div>
+          <div className="reveal" style={{ maxWidth: 760, margin: 'clamp(40px,6vw,72px) auto 0' }}>
+            <Yt id="EzrEp9BL50E" title="Timelapse de la construcción 1882-2026" />
+            <p className="esc-cap" {...i('vid.tl.cap')} />
           </div>
         </div>
       </section>
