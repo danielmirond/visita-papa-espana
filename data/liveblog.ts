@@ -37,10 +37,28 @@ export const liveblogMadrid8: Liveblog = {
   description:
     'Seguimiento en directo del tercer y último día del Papa León XIV en Madrid: la reunión con Pedro Sánchez, el discurso ante las Cortes en el Congreso de los Diputados, el encuentro con los obispos, la oración en la Almudena y el gran encuentro diocesano en el Santiago Bernabéu.',
   datePublished: '2026-06-08T08:00:00+02:00',
-  dateModified: '2026-06-11T16:45:31+02:00',
+  dateModified: '2026-06-11T19:49:45+02:00',
   coverageStart: '2026-06-08T08:00:00+02:00',
   coverageEnd: '2026-06-08T23:00:00+02:00',
   entries: [
+    {
+      time: '19:49',
+      datetime: '2026-06-11T19:49:45+02:00',
+      title: "Coros para el inicio de la misa.",
+      body: "Coros para el inicio de la misa. Suena el 'Gloria' en la Misa y está siendo interpretado por un coro local dirigido por Luis Prieto, que incorpora identidad local y sonoridades propias de Canarias. (Según ABC.)",
+    },
+    {
+      time: '19:39',
+      datetime: '2026-06-11T19:39:13+02:00',
+      title: "Comienza la Santa Misa en el Estadio de Gran Canaria.",
+      body: "Comienza la Santa Misa en el Estadio de Gran Canaria. Comienza la Santa Misa de León XIV en el Estadio de Gran Canaria. Ha empezado un poco más tarde porque el Pontífice se ha cambiado de ropa al llegar al recinto deportivo. (Según ABC.)",
+    },
+    {
+      time: '19:32',
+      datetime: '2026-06-11T19:32:46+02:00',
+      title: "El Papa saluda a los feligreses que se encuentran en el estadio.",
+      body: "El Papa saluda a los feligreses que se encuentran en el estadio. (Según ABC.)",
+    },
     {
       time: '16:45',
       datetime: '2026-06-11T16:45:31+02:00',
