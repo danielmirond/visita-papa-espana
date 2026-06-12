@@ -2,6 +2,37 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'jose-cobo-sobre-la-visita-de-leon-xiv-a-espana-el-papa-ha-crecido-en-este-viaje-',
+    title: 'José Cobo, sobre la visita de León XIV a España: "El Papa ha crecido en este viaje y ha reforzado nuestra identidad como Iglesia"',
+    excerpt: 'El cardenal y arzobispo de Madrid revela que la reunión con víctimas en el seno de la Iglesia fue "un encuentro hondo en el que se sintieron escuchados"',
+    content: 'El cardenal y arzobispo de Madrid revela que la reunión con víctimas en el seno de la Iglesia fue "un encuentro hondo en el que se sintieron escuchados"',
+    date: '2026-06-12',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/jose-cobo-visita-leon-xiv_1_1457623.html',
+    relatedCities: ['madrid'],
+  },
+  {
+    slug: 'el-recuerdo-sigue-vivo-barcelona-continua-procesando-el-gran-espectaculo-de-la-s',
+    title: 'El recuerdo sigue vivo: Barcelona continúa procesando el gran espectáculo de la Sagrada Familia',
+    excerpt: 'El impacto de la coronación todavía resuena entre los asistentes y la ciudadanía, que analiza un acto sin precedentes en la basílica de Gaudí',
+    content: 'El impacto de la coronación todavía resuena entre los asistentes y la ciudadanía, que analiza un acto sin precedentes en la basílica de Gaudí',
+    date: '2026-06-12',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/recuerdo-sigue-vivo-barcelona-continua_1_1457619.html',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'leon-xiv-deja-espana-tres-horas-despues-de-lo-previsto-por-una-averia-en-el-avio',
+    title: 'León XIV deja España tres horas después de lo previsto por una avería en el avión',
+    excerpt: 'La noticia León XIV deja España tres horas después de lo previsto por una avería en el avión se publicó primero en Noticias religiosas de última hora | Vida Nueva Si estaba previsto que León XIV abandonara España a las 1…',
+    content: 'La noticia León XIV deja España tres horas después de lo previsto por una avería en el avión se publicó primero en Noticias religiosas de última hora | Vida Nueva Si estaba previsto que León XIV abandonara España a las 16:00 (15:00 en Canarias), una avería en el avión de Iberia que le iba a trasladar a España, sumado al hecho de que ya llevaba una hora de retraso al volar más tarde desde Las Palmas de Gran Canaria, ha provocado que, después de despedirse &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-06-12',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/06/12/leon-xiv-deja-espana-tres-horas-despues-previsto-averia-avion/',
+    relatedCities: ['gran-canaria'],
+  },
+
+  {
     slug: 'la-ue-pone-en-marcha-su-pacto-de-migracion-y-asilo-con-leon-xiv-en-tenerife',
     title: 'La UE pone en marcha su Pacto de Migración y Asilo con León XIV en Tenerife',
     excerpt: 'El acuerdo promete acelerar la protección internacional pero implica devoluciones forzosas. España promete un «enfoque garantista», pero las organizaciones son escépticas La entrada La UE pone en marcha su Pacto de Migra…',
