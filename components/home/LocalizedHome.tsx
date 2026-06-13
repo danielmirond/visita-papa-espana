@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic'
 import Container from '@/components/ui/Container'
 import HomeProductShowcase from '@/components/affiliate/HomeProductShowcase'
 import JsonLd from '@/components/seo/JsonLd'
-import LiveBroadcast from '@/components/home/LiveBroadcast'
+import KeyVideos from '@/components/home/KeyVideos'
 import { getDictionary } from '@/data/i18n/dictionaries'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { type Locale } from '@/data/i18n/types'
@@ -84,8 +84,8 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </div>
       )}
 
-      {/* Retransmisión en directo (cuenta atrás → embed YouTube RTVE) */}
-      <LiveBroadcast locale={locale} />
+      {/* Vídeos clave de la visita (recap; sustituye al directo ya finalizado) */}
+      <KeyVideos locale={locale} />
 
       {/* Destacado: Canarias (11-12 jun) */}
       {locale === 'es' && (
@@ -127,19 +127,43 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
           <p className="mt-1 font-heading text-base italic text-papal-gold/80">
             &ldquo;{dict.home.heroMotto}&rdquo;
           </p>
+          {locale === 'es' && (
+            <p className="mx-auto mt-2 max-w-xl text-sm text-white/70">
+              El viaje apostólico de León XIV a España ya ha concluido. Revive cada jornada: vídeos, programa día a día y toda la cobertura.
+            </p>
+          )}
           <div className="mt-4 flex flex-wrap justify-center gap-2.5">
-            <Link
-              href={localizePath('/programa', locale)}
-              className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
-            >
-              {dict.home.seeProgram}
-            </Link>
-            <Link
-              href={localizePath('/como-asistir', locale)}
-              className="rounded-lg border border-white/30 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-white/10"
-            >
-              {dict.home.howToAttend}
-            </Link>
+            {locale === 'es' ? (
+              <>
+                <a
+                  href="#videos-clave"
+                  className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
+                >
+                  Revive la visita
+                </a>
+                <Link
+                  href={localizePath('/programa', locale)}
+                  className="rounded-lg border border-white/30 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-white/10"
+                >
+                  {dict.home.seeProgram}
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link
+                  href={localizePath('/programa', locale)}
+                  className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
+                >
+                  {dict.home.seeProgram}
+                </Link>
+                <Link
+                  href={localizePath('/como-asistir', locale)}
+                  className="rounded-lg border border-white/30 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-white/10"
+                >
+                  {dict.home.howToAttend}
+                </Link>
+              </>
+            )}
           </div>
         </Container>
       </section>
@@ -355,31 +379,65 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* CTA registro */}
-      <section className="gradient-navy">
-        <Container className="py-12 text-center">
-          <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
-            {dict.home.attendanceInfo}
-          </h2>
-          <p className="mx-auto mt-3 max-w-xl text-white/70">{dict.home.attendanceDesc}</p>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <a
-              href={siteConfig.registrationUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
-            >
-              {t.home.registerBtn}
-            </a>
-            <Link
-              href={localizePath('/como-asistir', locale)}
-              className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
-            >
-              {t.home.fullGuideBtn}
-            </Link>
-          </div>
-        </Container>
-      </section>
+      {/* CTA final: registro (modo evento) → recap (post-visita, solo es) */}
+      {locale === 'es' ? (
+        <section className="gradient-navy">
+          <Container className="py-12 text-center">
+            <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
+              Revive la visita del Papa a España
+            </h2>
+            <p className="mx-auto mt-3 max-w-xl text-white/70">
+              El viaje apostólico de León XIV (6-12 de junio de 2026) ya ha concluido. Repasa el programa día a día, los
+              vídeos clave y toda la cobertura.
+            </p>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <a
+                href="#videos-clave"
+                className="rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
+              >
+                Vídeos clave
+              </a>
+              <Link
+                href={localizePath('/programa', locale)}
+                className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
+              >
+                {dict.home.viewFullProgram}
+              </Link>
+              <Link
+                href={localizePath('/noticias', locale)}
+                className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
+              >
+                {dict.home.latestNews}
+              </Link>
+            </div>
+          </Container>
+        </section>
+      ) : (
+        <section className="gradient-navy">
+          <Container className="py-12 text-center">
+            <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
+              {dict.home.attendanceInfo}
+            </h2>
+            <p className="mx-auto mt-3 max-w-xl text-white/70">{dict.home.attendanceDesc}</p>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <a
+                href={siteConfig.registrationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
+              >
+                {t.home.registerBtn}
+              </a>
+              <Link
+                href={localizePath('/como-asistir', locale)}
+                className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
+              >
+                {t.home.fullGuideBtn}
+              </Link>
+            </div>
+          </Container>
+        </section>
+      )}
     </>
   )
 }
