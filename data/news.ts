@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-papa-alienta-los-participantes-del-med26-en-barcelona-gracias-por-hacer-del-m',
+    title: 'El Papa alienta los participantes del MED26 en Barcelona: Gracias por hacer del mundo un lugar mejor',
+    excerpt: 'Tarde de encuentros para León XIV en la ciudad catalana: desde reuniones institucionales hasta encuentros con obispos, jóvenes y diversos agentes sociales que animan el Encuentro Mediterráneo MED26',
+    content: 'Tarde de encuentros para León XIV en la ciudad catalana: desde reuniones institucionales hasta encuentros con obispos, jóvenes y diversos agentes sociales que animan el Encuentro Mediterráneo MED26',
+    date: '2026-06-13',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/papa-alienta-participantes-med26-barcelona_1_1457244.html',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'pilar-samanes-accem-que-surgio-de-la-iglesia-aunque-ahora-sea-aconfesional-esta-',
     title: 'Pilar Samanes: "Accem, que surgió de la Iglesia, aunque ahora sea aconfesional, está orgullosa de haber recibido a León XIV en Las Raíces"',
     excerpt: '"El Papa es un referente mundial para todas las religiones. Es una persona que moralmente está aportando mucho"',
