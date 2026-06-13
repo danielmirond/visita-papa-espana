@@ -2,6 +2,37 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-firmo-ante-notario-la-bendicion-de-la-torre-de-jesus-de-la-sagrada-fami',
+    title: 'León XIV firmó, ante notario, la bendición de la Torre de Jesús de la Sagrada Familia',
+    excerpt: 'El documento protocoliza la inauguración y bendición de Su Santidad de la Torre de Jesucristo, con una altura de 172,5 metros, elemento que convierte la Sagrada Familia en la iglesia más alta del mundo, y recoge la misa …',
+    content: 'El documento protocoliza la inauguración y bendición de Su Santidad de la Torre de Jesucristo, con una altura de 172,5 metros, elemento que convierte la Sagrada Familia en la iglesia más alta del mundo, y recoge la misa solemne celebrada en ella. Ade',
+    date: '2026-06-13',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/leon-xiv-firmo-notario-bendicion-torre-jesus-sagrada-familia_1_1457583.html',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'soy-el-unico-que-se-ha-quedado-de-piedra-con-el-fenomeno-leon-xiv-en-espana-una-',
+    title: '¿Soy el único que se ha quedado de piedra con el "fenómeno" León XIV en España? Una visita desarmada y desarmante',
+    excerpt: 'Mejor volcarse con el Papa real que con los que lo intentan suplantar…, porque los hay más papistas que el Papa',
+    content: 'Mejor volcarse con el Papa real que con los que lo intentan suplantar…, porque los hay más papistas que el Papa',
+    date: '2026-06-13',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/hacer_realidad_lo_posible-_jesus_lozano_pino/unico-quedado-piedra-fenomeno-leon_132_1457458.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'leon-xiv-orilla-a-los-catolicos-lgtbiq-que-en-la-iglesia-aun-llevan-el-estigma-d',
+    title: 'León XIV orilla a los católicos LGTBIQ+, que en la Iglesia aún llevan el estigma de pecadores',
+    excerpt: 'El Papa evita referencias al colectivo, cuya discriminación está incrustada en el Catecismo. “Con la excusa de que hay que buscar lo que nos une, el tema ha quedado postergado”, lamenta Niurka Gibaja, teóloga y mujer ‘tr…',
+    content: 'El Papa evita referencias al colectivo, cuya discriminación está incrustada en el Catecismo. “Con la excusa de que hay que buscar lo que nos une, el tema ha quedado postergado”, lamenta Niurka Gibaja, teóloga y mujer ‘trans’',
+    date: '2026-06-13',
+    source: 'El País',
+    sourceUrl: 'https://elpais.com/espana/2026-06-13/leon-xiv-orilla-a-los-catolicos-lgtbiq-que-en-la-iglesia-aun-llevan-el-estigma-de-pecadores.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'en-un-minuto-la-septima-jornada-de-leon-xiv-en-espana',
     title: 'En un minuto: la séptima jornada de León XIV en España',
     excerpt: 'Imágenes exclusivas de Vatican Media que recogen la llegada y las actividades del Papa a la isla de Tenerife, en España, en el séptimo día de su viaje apostólico Leer todo',
