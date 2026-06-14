@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'cardenal-aveline-el-espectaculo-de-la-sagrada-familia-fue-maravilloso-extraordin',
+    title: 'Cardenal Aveline: "El espectáculo de la Sagrada Familia fue maravilloso, extraordinario"',
+    excerpt: 'El arzobispo de Marsella, en Barcelona para participar en el Encuentro del Mediterráneo 2026, elogió la organización de la visita papal a Cataluña: "Tendremos que hacer algo para cuando llegue a la Catedral de Notre-Dame…',
+    content: 'El arzobispo de Marsella, en Barcelona para participar en el Encuentro del Mediterráneo 2026, elogió la organización de la visita papal a Cataluña: "Tendremos que hacer algo para cuando llegue a la Catedral de Notre-Dame… esto nos añade una gran pres',
+    date: '2026-06-14',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/mundo/cardenal-aveline-espectaculo-sagrada-familia_1_1457810.html',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'leon-xiv-en-espana-de-la-prioridad-nacional-a-la-prioridad-de-la-dignidad',
     title: 'León XIV en España: de la \'prioridad nacional\' a la \'prioridad de la dignidad\'',
     excerpt: 'Éxito absoluto de un viaje, con tres etapas claramente diferenciadas: el baño de masas y la política, en Madrid; la belleza, la cultura y la solidaridad, en Barcelona; y el clamor contra las mafias y a favor de la acogid…',
