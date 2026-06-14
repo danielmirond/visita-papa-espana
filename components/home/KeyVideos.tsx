@@ -4,144 +4,143 @@ import { useState } from 'react'
 import type { Locale } from '@/data/i18n/types'
 
 /**
- * Selector de vídeos clave de la visita (modo recap, sustituye al directo).
- * Pestañas estilo señal: cada una carga un embed de YouTube.
+ * Mosaico de vídeos clave de la visita (modo recap, sustituye al directo).
+ * Cada celda muestra la miniatura de YouTube; al pulsar carga el reproductor
+ * en su sitio (patrón "facade": no embebe 7 iframes a la vez, solo el que
+ * pulsas → la home no se ralentiza).
  *
  * 👉 Para añadir un momento: pega aquí su ID de YouTube (la parte tras
- *    `watch?v=` o tras `youtu.be/`). El primero del array es el que se
- *    muestra por defecto. Orden = orden de las pestañas.
+ *    `watch?v=` o tras `youtu.be/`). Orden = orden en el mosaico.
  */
 interface KeyVideo {
   id?: string // ID de vídeo de YouTube (NO la URL completa)
   list?: string // ID de playlist de YouTube (alternativa a id)
-  label: string // texto de la pestaña (corto)
-  title: string // titular sobre el player
+  title: string // titular de la celda
   meta: string // ciudad · fecha
 }
 
 const VIDEOS: KeyVideo[] = [
   {
     id: 'L7LwFouh1pE',
-    label: 'Torre de Jesucristo',
     title: 'El Papa bendice e ilumina la Torre de Jesucristo',
     meta: 'Barcelona · 10 de junio',
   },
   {
     id: 'fdf_jNY11V0',
-    label: 'Sagrada Família',
     title: 'El Papa en la Sagrada Familia de Barcelona',
     meta: 'Barcelona · 10 de junio',
   },
   {
     id: '1rege9qSA50',
-    label: 'Misa Gran Canaria',
-    title: 'Misa del Papa León XIV en el Estadio de Gran Canaria',
+    title: 'Misa en el Estadio de Gran Canaria',
     meta: 'Gran Canaria · 11 de junio',
   },
   {
     id: 'BHfiCfw3BO4',
-    label: 'Las Raíces',
-    title: 'El Papa visita el centro de acogida Las Raíces y se encuentra con migrantes',
+    title: 'El Papa en el centro de acogida Las Raíces',
     meta: 'Tenerife · 12 de junio',
   },
   {
     id: 'qKF1UUkgryo',
-    label: 'Misa de clausura',
-    title: 'Misa de clausura en el puerto de Santa Cruz de Tenerife',
+    title: 'Misa de clausura en el puerto de Santa Cruz',
     meta: 'Tenerife · 12 de junio',
   },
   {
     id: 'EBN_LMKzFcE',
-    label: 'Los mensajes',
     title: 'Los mensajes de León XIV en su visita a España',
     meta: 'Resumen · RTVE',
   },
   {
     list: 'PLFLBjMW4wU7jfqmJLi2voG1STzquK9cNk',
-    label: 'Todos los vídeos',
-    title: 'El Papa visita España: todos los vídeos',
+    title: 'Todos los vídeos de la visita',
     meta: 'Lista completa · RTVE',
   },
 ]
 
-const STR: Record<'es' | 'en', { kicker: string; heading: string; openYt: string }> = {
+const STR: Record<'es' | 'en', { kicker: string; heading: string; play: string }> = {
   es: {
     kicker: 'Revive la visita',
     heading: 'Vídeos clave del viaje del Papa León XIV',
-    openYt: 'Ver en YouTube',
+    play: 'Reproducir',
   },
   en: {
     kicker: 'Relive the visit',
     heading: 'Key videos of Pope Leo XIV’s journey',
-    openYt: 'Watch on YouTube',
+    play: 'Play',
   },
 }
 
+function embedSrc(v: KeyVideo) {
+  return v.list
+    ? `https://www.youtube-nocookie.com/embed/videoseries?list=${v.list}&autoplay=1&rel=0`
+    : `https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0`
+}
+
 export default function KeyVideos({ locale }: { locale: Locale }) {
-  const [sel, setSel] = useState(0)
+  // Índices de las celdas cuyo reproductor ya se ha cargado (tras pulsar).
+  const [active, setActive] = useState<number[]>([])
   const t = locale === 'es' ? STR.es : STR.en
 
   if (VIDEOS.length === 0) return null
-  const current = VIDEOS[Math.min(sel, VIDEOS.length - 1)]
-  const embedSrc = current.list
-    ? `https://www.youtube-nocookie.com/embed/videoseries?list=${current.list}`
-    : `https://www.youtube-nocookie.com/embed/${current.id}`
-  const watchHref = current.list
-    ? `https://www.youtube.com/playlist?list=${current.list}`
-    : `https://www.youtube.com/watch?v=${current.id}`
 
   return (
     <section className="bg-papal-navy" id="videos-clave">
-      <div className="mx-auto max-w-5xl px-3 py-6 sm:px-4 sm:py-8">
-        <div className="mb-3 text-center">
+      <div className="mx-auto max-w-6xl px-3 py-8 sm:px-4 sm:py-10">
+        <div className="mb-6 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-papal-gold">{t.kicker}</p>
           <h2 className="mt-1 font-heading text-xl font-bold text-white sm:text-2xl">{t.heading}</h2>
         </div>
 
-        {/* Selector de vídeos */}
-        {VIDEOS.length > 1 && (
-          <div className="mb-3 flex flex-wrap justify-center gap-2">
-            {VIDEOS.map((v, i) => (
-              <button
-                key={v.id ?? v.list}
-                onClick={() => setSel(i)}
-                className={`rounded-lg px-3 py-1.5 text-xs font-bold transition-colors ${
-                  i === sel ? 'bg-papal-gold text-papal-navy' : 'bg-white/10 text-white hover:bg-white/20'
-                }`}
-              >
-                {v.label}
-              </button>
-            ))}
-          </div>
-        )}
-
-        {/* Titular del vídeo activo */}
-        <div className="mb-2 text-center">
-          <p className="font-heading text-base font-bold text-white sm:text-lg">{current.title}</p>
-          <p className="text-xs uppercase tracking-wide text-papal-gold/80">{current.meta}</p>
-        </div>
-
-        <div className="relative w-full overflow-hidden rounded-xl bg-black" style={{ aspectRatio: '16 / 9' }}>
-          <iframe
-            key={current.id ?? current.list}
-            src={embedSrc}
-            title={current.title}
-            className="absolute inset-0 h-full w-full"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
-        </div>
-
-        <div className="mt-2 text-center">
-          <a
-            href={watchHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-semibold text-white/80 underline hover:text-papal-gold"
-          >
-            ▶ {t.openYt}
-          </a>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {VIDEOS.map((v, i) => {
+            const isActive = active.includes(i)
+            const thumb = v.id ? `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg` : undefined
+            return (
+              <figure key={v.id ?? v.list} className="overflow-hidden rounded-xl bg-black/40">
+                <div className="relative w-full overflow-hidden bg-black" style={{ aspectRatio: '16 / 9' }}>
+                  {isActive ? (
+                    <iframe
+                      src={embedSrc(v)}
+                      title={v.title}
+                      className="absolute inset-0 h-full w-full"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => setActive((a) => [...a, i])}
+                      aria-label={`${t.play}: ${v.title}`}
+                      className="group absolute inset-0 h-full w-full"
+                    >
+                      {thumb ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={thumb}
+                          alt={v.title}
+                          loading="lazy"
+                          className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+                      ) : (
+                        <span className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-papal-gold-dark to-papal-navy">
+                          <span className="font-heading text-lg font-bold text-white">▶ Lista completa</span>
+                        </span>
+                      )}
+                      <span className="absolute inset-0 bg-black/20 transition-colors group-hover:bg-black/10" />
+                      <span className="absolute left-1/2 top-1/2 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-red-600 shadow-lg transition-transform group-hover:scale-110">
+                        <span className="ml-1 border-y-[10px] border-l-[16px] border-y-transparent border-l-white" />
+                      </span>
+                    </button>
+                  )}
+                </div>
+                <figcaption className="px-3 py-3">
+                  <p className="font-heading text-sm font-bold leading-snug text-white">{v.title}</p>
+                  <p className="mt-0.5 text-xs uppercase tracking-wide text-papal-gold/80">{v.meta}</p>
+                </figcaption>
+              </figure>
+            )
+          })}
         </div>
       </div>
     </section>
