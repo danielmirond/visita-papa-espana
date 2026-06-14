@@ -154,6 +154,20 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
       {/* Vídeos clave de la visita (recap; sustituye al directo ya finalizado) */}
       <KeyVideos locale={locale} />
 
+      {/* Destacado: resumen de la visita (intención principal post-visita) */}
+      {locale === 'es' && (
+        <div className="border-b border-papal-gold/20 bg-papal-gold/15">
+          <Container className="py-2 text-center">
+            <Link
+              href="/es/resumen-visita-papa-espana"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-papal-navy hover:underline"
+            >
+              📋 Resumen de la visita: qué pasó cada día y los mejores momentos →
+            </Link>
+          </Container>
+        </div>
+      )}
+
       {/* Destacado: Canarias (11-12 jun) */}
       {locale === 'es' && (
         <div className="border-b border-papal-gold/20 bg-papal-gold/15">
