@@ -57,17 +57,16 @@ const VIDEOS: KeyVideo[] = [
   },
 ]
 
-const STR: Record<'es' | 'en', { kicker: string; heading: string; play: string }> = {
-  es: {
-    kicker: 'Revive la visita',
-    heading: 'Vídeos clave del viaje del Papa León XIV',
-    play: 'Reproducir',
-  },
-  en: {
-    kicker: 'Relive the visit',
-    heading: 'Key videos of Pope Leo XIV’s journey',
-    play: 'Play',
-  },
+const STR: Record<Locale, { kicker: string; heading: string; play: string }> = {
+  es: { kicker: 'Revive la visita', heading: 'Vídeos clave del viaje del Papa León XIV', play: 'Reproducir' },
+  en: { kicker: 'Relive the visit', heading: 'Key videos of Pope Leo XIV’s journey', play: 'Play' },
+  it: { kicker: 'Rivivi la visita', heading: 'Video principali del viaggio di Papa Leone XIV', play: 'Riproduci' },
+  fr: { kicker: 'Revivez la visite', heading: 'Vidéos clés du voyage du Pape Léon XIV', play: 'Lire' },
+  de: { kicker: 'Besuch noch einmal erleben', heading: 'Wichtige Videos der Reise von Papst Leo XIV.', play: 'Abspielen' },
+  pt: { kicker: 'Reviva a visita', heading: 'Vídeos principais da viagem do Papa Leão XIV', play: 'Reproduzir' },
+  ca: { kicker: 'Reviu la visita', heading: 'Vídeos clau del viatge del Papa Lleó XIV', play: 'Reprodueix' },
+  gl: { kicker: 'Revive a visita', heading: 'Vídeos clave da viaxe do Papa León XIV', play: 'Reproducir' },
+  eu: { kicker: 'Birbizi bisita', heading: 'Aita Santu Leon XIV.aren bidaiako bideo nagusiak', play: 'Erreproduzitu' },
 }
 
 function embedSrc(v: KeyVideo) {
@@ -79,7 +78,7 @@ function embedSrc(v: KeyVideo) {
 export default function KeyVideos({ locale }: { locale: Locale }) {
   // Índices de las celdas cuyo reproductor ya se ha cargado (tras pulsar).
   const [active, setActive] = useState<number[]>([])
-  const t = locale === 'es' ? STR.es : STR.en
+  const t = STR[locale] ?? STR.es
 
   if (VIDEOS.length === 0) return null
 

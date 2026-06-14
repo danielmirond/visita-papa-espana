@@ -9,7 +9,6 @@ import { getDictionary } from '@/data/i18n/dictionaries'
 import { getPagesDict } from '@/data/i18n/dictionaries-pages'
 import { type Locale } from '@/data/i18n/types'
 import { localizePath } from '@/data/i18n/routes'
-import { siteConfig } from '@/data/siteConfig'
 import { getCitiesByLocale } from '@/data/i18n/content/cities'
 import { getScheduleByLocale } from '@/data/i18n/content/schedule'
 import { getNewsByLocale } from '@/data/i18n/content/news'
@@ -40,6 +39,74 @@ const CITY_COLORS: Record<string, string> = {
   barcelona: 'from-papal-navy-light to-papal-navy',
   'gran-canaria': 'from-papal-gold-dark to-papal-navy',
   tenerife: 'from-papal-navy to-papal-gold-dark',
+}
+
+// Textos de cierre post-visita (modo recap) por idioma. La visita ya concluyó:
+// el hero y el CTA final invitan a revivirla en vez de a inscribirse.
+const RECAP: Record<Locale, { heroLine: string; revive: string; heading: string; desc: string; keyVideos: string }> = {
+  es: {
+    heroLine: 'El viaje apostólico de León XIV a España ya ha concluido. Revive cada jornada: vídeos, programa día a día y toda la cobertura.',
+    revive: 'Revive la visita',
+    heading: 'Revive la visita del Papa a España',
+    desc: 'El viaje apostólico de León XIV (6-12 de junio de 2026) ya ha concluido. Repasa el programa día a día, los vídeos clave y toda la cobertura.',
+    keyVideos: 'Vídeos clave',
+  },
+  en: {
+    heroLine: 'Pope Leo XIV’s apostolic journey to Spain has ended. Relive every day: videos, day-by-day programme and full coverage.',
+    revive: 'Relive the visit',
+    heading: 'Relive the Pope’s visit to Spain',
+    desc: 'Pope Leo XIV’s apostolic journey (6–12 June 2026) has ended. Browse the day-by-day programme, the key videos and full coverage.',
+    keyVideos: 'Key videos',
+  },
+  it: {
+    heroLine: 'Il viaggio apostolico di Leone XIV in Spagna è concluso. Rivivi ogni giornata: video, programma giorno per giorno e tutta la copertura.',
+    revive: 'Rivivi la visita',
+    heading: 'Rivivi la visita del Papa in Spagna',
+    desc: 'Il viaggio apostolico di Leone XIV (6-12 giugno 2026) è concluso. Sfoglia il programma giorno per giorno, i video principali e tutta la copertura.',
+    keyVideos: 'Video principali',
+  },
+  fr: {
+    heroLine: 'Le voyage apostolique de Léon XIV en Espagne est terminé. Revivez chaque journée : vidéos, programme jour par jour et toute la couverture.',
+    revive: 'Revivez la visite',
+    heading: 'Revivez la visite du Pape en Espagne',
+    desc: 'Le voyage apostolique de Léon XIV (6-12 juin 2026) est terminé. Parcourez le programme jour par jour, les vidéos clés et toute la couverture.',
+    keyVideos: 'Vidéos clés',
+  },
+  de: {
+    heroLine: 'Die Apostolische Reise von Leo XIV. nach Spanien ist beendet. Erleben Sie jeden Tag noch einmal: Videos, Tagesprogramm und die gesamte Berichterstattung.',
+    revive: 'Besuch noch einmal erleben',
+    heading: 'Erleben Sie den Papstbesuch in Spanien noch einmal',
+    desc: 'Die Apostolische Reise von Leo XIV. (6.–12. Juni 2026) ist beendet. Durchstöbern Sie das Tagesprogramm, die wichtigsten Videos und die gesamte Berichterstattung.',
+    keyVideos: 'Wichtige Videos',
+  },
+  pt: {
+    heroLine: 'A viagem apostólica de Leão XIV a Espanha terminou. Reviva cada jornada: vídeos, programa dia a dia e toda a cobertura.',
+    revive: 'Reviva a visita',
+    heading: 'Reviva a visita do Papa a Espanha',
+    desc: 'A viagem apostólica de Leão XIV (6-12 de junho de 2026) terminou. Consulte o programa dia a dia, os vídeos principais e toda a cobertura.',
+    keyVideos: 'Vídeos principais',
+  },
+  ca: {
+    heroLine: 'El viatge apostòlic de Lleó XIV a Espanya ja ha conclòs. Reviu cada jornada: vídeos, programa dia a dia i tota la cobertura.',
+    revive: 'Reviu la visita',
+    heading: 'Reviu la visita del Papa a Espanya',
+    desc: 'El viatge apostòlic de Lleó XIV (6-12 de juny de 2026) ja ha conclòs. Repassa el programa dia a dia, els vídeos clau i tota la cobertura.',
+    keyVideos: 'Vídeos clau',
+  },
+  gl: {
+    heroLine: 'A viaxe apostólica de León XIV a España xa rematou. Revive cada xornada: vídeos, programa día a día e toda a cobertura.',
+    revive: 'Revive a visita',
+    heading: 'Revive a visita do Papa a España',
+    desc: 'A viaxe apostólica de León XIV (6-12 de xuño de 2026) xa rematou. Repasa o programa día a día, os vídeos clave e toda a cobertura.',
+    keyVideos: 'Vídeos clave',
+  },
+  eu: {
+    heroLine: 'Leon XIV.aren Espainiarako bidaia apostolikoa amaitu da. Birbizi ezazu egun bakoitza: bideoak, eguneko programa eta estaldura osoa.',
+    revive: 'Birbizi bisita',
+    heading: 'Birbizi Aita Santuaren Espainiako bisita',
+    desc: 'Leon XIV.aren bidaia apostolikoa (2026ko ekainaren 6-12) amaitu da. Begiratu eguneko programa, bideo nagusiak eta estaldura osoa.',
+    keyVideos: 'Bideo nagusiak',
+  },
 }
 
 // Mapping de slug español → ruta traducida para el programa
@@ -127,43 +194,22 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
           <p className="mt-1 font-heading text-base italic text-papal-gold/80">
             &ldquo;{dict.home.heroMotto}&rdquo;
           </p>
-          {locale === 'es' && (
-            <p className="mx-auto mt-2 max-w-xl text-sm text-white/70">
-              El viaje apostólico de León XIV a España ya ha concluido. Revive cada jornada: vídeos, programa día a día y toda la cobertura.
-            </p>
-          )}
+          <p className="mx-auto mt-2 max-w-xl text-sm text-white/70">
+            {RECAP[locale].heroLine}
+          </p>
           <div className="mt-4 flex flex-wrap justify-center gap-2.5">
-            {locale === 'es' ? (
-              <>
-                <a
-                  href="#videos-clave"
-                  className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
-                >
-                  Revive la visita
-                </a>
-                <Link
-                  href={localizePath('/programa', locale)}
-                  className="rounded-lg border border-white/30 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-white/10"
-                >
-                  {dict.home.seeProgram}
-                </Link>
-              </>
-            ) : (
-              <>
-                <Link
-                  href={localizePath('/programa', locale)}
-                  className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
-                >
-                  {dict.home.seeProgram}
-                </Link>
-                <Link
-                  href={localizePath('/como-asistir', locale)}
-                  className="rounded-lg border border-white/30 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-white/10"
-                >
-                  {dict.home.howToAttend}
-                </Link>
-              </>
-            )}
+            <a
+              href="#videos-clave"
+              className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
+            >
+              {RECAP[locale].revive}
+            </a>
+            <Link
+              href={localizePath('/programa', locale)}
+              className="rounded-lg border border-white/30 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-white/10"
+            >
+              {dict.home.seeProgram}
+            </Link>
           </div>
         </Container>
       </section>
@@ -192,34 +238,28 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* Vídeo destacado: bendición de la Torre de Jesucristo */}
+      {/* CTA al reportaje de la Torre (el vídeo ya está en el mosaico de arriba) */}
       {locale === 'es' && (
         <section className="section-padding">
           <Container>
-            <div className="mx-auto max-w-3xl text-center">
-              <p className="text-sm font-semibold uppercase tracking-widest text-papal-gold">Barcelona · 10 de junio</p>
-              <h2 className="mt-2 font-heading text-2xl font-bold text-papal-navy sm:text-3xl">
-                El Papa bendice e ilumina la Torre de Jesucristo
-              </h2>
-              <div className="mt-5 overflow-hidden rounded-xl border border-papal-gold/20 shadow-sm">
-                <div className="relative" style={{ paddingBottom: '56.25%' }}>
-                  <iframe
-                    className="absolute inset-0 h-full w-full"
-                    src="https://www.youtube-nocookie.com/embed/L7LwFouh1pE"
-                    title="León XIV bendice la Torre de Jesucristo y se ilumina la fachada del Nacimiento"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-              </div>
-              <Link
-                href="/es/torre-de-jesucristo-sagrada-familia"
-                className="mt-4 inline-block rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-gold-light"
-              >
-                Reportaje: La Torre de Jesucristo →
-              </Link>
-            </div>
+            <Link
+              href="/es/torre-de-jesucristo-sagrada-familia"
+              className="group mx-auto flex max-w-3xl flex-col items-center gap-3 rounded-2xl border border-papal-gold/30 bg-papal-cream p-6 text-center transition hover:shadow-md sm:flex-row sm:text-left"
+            >
+              <span className="text-4xl">🗼</span>
+              <span className="flex-1">
+                <span className="block text-sm font-semibold uppercase tracking-widest text-papal-gold-dark">Reportaje · Barcelona</span>
+                <span className="mt-1 block font-heading text-xl font-bold text-papal-navy sm:text-2xl">
+                  La escalera de luz: la Torre de Jesucristo
+                </span>
+                <span className="mt-1 block text-sm text-papal-navy/70">
+                  La iglesia más alta del mundo, contada paso a paso. Cómo el Papa la bendijo e iluminó.
+                </span>
+              </span>
+              <span className="shrink-0 rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy transition-colors group-hover:bg-papal-gold-light">
+                Leer el reportaje →
+              </span>
+            </Link>
           </Container>
         </section>
       )}
@@ -379,65 +419,35 @@ export default function LocalizedHome({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* CTA final: registro (modo evento) → recap (post-visita, solo es) */}
-      {locale === 'es' ? (
-        <section className="gradient-navy">
-          <Container className="py-12 text-center">
-            <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
-              Revive la visita del Papa a España
-            </h2>
-            <p className="mx-auto mt-3 max-w-xl text-white/70">
-              El viaje apostólico de León XIV (6-12 de junio de 2026) ya ha concluido. Repasa el programa día a día, los
-              vídeos clave y toda la cobertura.
-            </p>
-            <div className="mt-6 flex flex-wrap justify-center gap-3">
-              <a
-                href="#videos-clave"
-                className="rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
-              >
-                Vídeos clave
-              </a>
-              <Link
-                href={localizePath('/programa', locale)}
-                className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
-              >
-                {dict.home.viewFullProgram}
-              </Link>
-              <Link
-                href={localizePath('/noticias', locale)}
-                className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
-              >
-                {dict.home.latestNews}
-              </Link>
-            </div>
-          </Container>
-        </section>
-      ) : (
-        <section className="gradient-navy">
-          <Container className="py-12 text-center">
-            <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
-              {dict.home.attendanceInfo}
-            </h2>
-            <p className="mx-auto mt-3 max-w-xl text-white/70">{dict.home.attendanceDesc}</p>
-            <div className="mt-6 flex flex-wrap justify-center gap-3">
-              <a
-                href={siteConfig.registrationUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
-              >
-                {t.home.registerBtn}
-              </a>
-              <Link
-                href={localizePath('/como-asistir', locale)}
-                className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
-              >
-                {t.home.fullGuideBtn}
-              </Link>
-            </div>
-          </Container>
-        </section>
-      )}
+      {/* CTA final: recap post-visita (todos los idiomas) */}
+      <section className="gradient-navy">
+        <Container className="py-12 text-center">
+          <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
+            {RECAP[locale].heading}
+          </h2>
+          <p className="mx-auto mt-3 max-w-xl text-white/70">{RECAP[locale].desc}</p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <a
+              href="#videos-clave"
+              className="rounded-lg bg-papal-gold px-6 py-3 text-sm font-bold text-papal-navy transition-colors hover:bg-papal-gold-light"
+            >
+              {RECAP[locale].keyVideos}
+            </a>
+            <Link
+              href={localizePath('/programa', locale)}
+              className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
+            >
+              {dict.home.viewFullProgram}
+            </Link>
+            <Link
+              href={localizePath('/noticias', locale)}
+              className="rounded-lg border border-white/30 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
+            >
+              {dict.home.latestNews}
+            </Link>
+          </div>
+        </Container>
+      </section>
     </>
   )
 }
