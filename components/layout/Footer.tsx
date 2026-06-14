@@ -243,6 +243,14 @@ export default function Footer() {
               Este sitio no es una web oficial. Información recopilada de fuentes públicas.
             </p>
             <nav className="flex flex-wrap gap-4 text-xs text-white/60">
+              <a
+                href="https://mundiales-de-futbol.com/2026/calendario"
+                target="_blank"
+                rel="noopener"
+                className="hover:text-papal-gold"
+              >
+                Calendario del Mundial 2026
+              </a>
               <Link href={prefixHref('/aviso-legal')} className="hover:text-papal-gold">
                 Aviso legal
               </Link>
