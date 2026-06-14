@@ -186,6 +186,9 @@ export default function VisitaPapaCanariasPage() {
 
           {/* Enlaces útiles */}
           <div className="flex flex-wrap gap-3 border-t border-gray-100 pt-6">
+            <Link href="/es/resumen-visita-papa-espana" className="rounded-lg border border-papal-gold/40 px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-cream">
+              Resumen de la visita
+            </Link>
             <Link href="/es/ciudades/gran-canaria" className="rounded-lg bg-papal-gold px-5 py-2.5 text-sm font-bold text-papal-navy hover:bg-papal-gold-light">
               Guía de Gran Canaria
             </Link>
