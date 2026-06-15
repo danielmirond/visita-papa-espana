@@ -2,6 +2,37 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-deslumbro-en-espana-resignifico-el-valor-del-servicio-al-modo-de-cristo',
+    title: 'León XIV deslumbró en España: resignificó el valor del servicio al modo de Cristo… Esto anima a todos. Y también molesta a otros muchos',
+    excerpt: 'Desde esta bella y maltratada Argentina, a pesar de que los medios ignoraron en general la visita papal a España, es imposible eludir el valor y la profundidad que generó. Ojalá podamos vivirlo en estos horizontes, según…',
+    content: 'Desde esta bella y maltratada Argentina, a pesar de que los medios ignoraron en general la visita papal a España, es imposible eludir el valor y la profundidad que generó. Ojalá podamos vivirlo en estos horizontes, según se comenta, hacia fines de es',
+    date: '2026-06-15',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/opinion/leon-xiv-deslumbro-espana-resignifico_1_1457830.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'el-papa-y-la-doble-moral',
+    title: 'El Papa y la doble moral',
+    excerpt: 'Una de las lecciones del viaje de León XIV es que los partidos que más defienden la tradición católica son capaces de instalarse en el más transparente cinismo',
+    content: 'Una de las lecciones del viaje de León XIV es que los partidos que más defienden la tradición católica son capaces de instalarse en el más transparente cinismo',
+    date: '2026-06-15',
+    source: 'El País',
+    sourceUrl: 'https://elpais.com/espana/catalunya/2026-06-15/el-papa-y-la-doble-moral.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'madrid-conservara-la-cruz-gigante-de-plaza-de-lima-como-recuerdo-de-la-visita-de',
+    title: 'Madrid conservará la cruz gigante de Plaza de Lima como recuerdo de la visita del Papa',
+    excerpt: 'Está aún por decidir si se queda en el mismo emplazamiento o le buscan uno nuevo, ha precisado Almeida',
+    content: 'Está aún por decidir si se queda en el mismo emplazamiento o le buscan uno nuevo, ha precisado Almeida',
+    date: '2026-06-15',
+    source: 'ABC',
+    sourceUrl: 'https://www.abc.es/espana/madrid/madrid-conservara-cruz-gigante-plaza-lima-recuerdo-20260615135242-nt.html',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'cardenal-aveline-el-espectaculo-de-la-sagrada-familia-fue-maravilloso-extraordin',
     title: 'Cardenal Aveline: "El espectáculo de la Sagrada Familia fue maravilloso, extraordinario"',
     excerpt: 'El arzobispo de Marsella, en Barcelona para participar en el Encuentro del Mediterráneo 2026, elogió la organización de la visita papal a Cataluña: "Tendremos que hacer algo para cuando llegue a la Catedral de Notre-Dame…',
