@@ -2,6 +2,37 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'arguello-hace-balance-de-la-visita-del-papa-gracias-y-ahora-accion',
+    title: 'Argüello hace balance de la visita del Papa: «Gracias, y ahora acción»',
+    excerpt: 'El presidente de la Conferencia Episcopal Española destaca que la visita del Santo Padre «ha desbordado nuestras expectativas» La entrada Argüello hace balance de la visita del Papa: «Gracias, y ahora acción» se publicó …',
+    content: 'El presidente de la Conferencia Episcopal Española destaca que la visita del Santo Padre «ha desbordado nuestras expectativas» La entrada Argüello hace balance de la visita del Papa: «Gracias, y ahora acción» se publicó primero en Alfa y Omega.',
+    date: '2026-06-16',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/arguello-hace-balance-de-la-visita-del-papa-gracias-y-ahora-accion/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'el-papa-en-espana-el-peso-de-la-historia',
+    title: 'El Papa en España, el peso de la historia',
+    excerpt: '«Hay que reconocer que la sociedad y la propia Iglesia no siempre han estado a la altura de las intuiciones que encontraban eco en su propia tradición cristiana»',
+    content: '«Hay que reconocer que la sociedad y la propia Iglesia no siempre han estado a la altura de las intuiciones que encontraban eco en su propia tradición cristiana»',
+    date: '2026-06-16',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/papa-espana-peso-historia-viaje-canarias-indios-congreso_1_1457990.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'una-cuestion-de-prioridades',
+    title: 'Una cuestión de prioridades',
+    excerpt: 'Las lectoras y los lectores escriben sobre la visita del Papa, los valores de la UE, una iniciativa europea para detectar presencia infantil en vehículos, y la Selectividad',
+    content: 'Las lectoras y los lectores escriben sobre la visita del Papa, los valores de la UE, una iniciativa europea para detectar presencia infantil en vehículos, y la Selectividad',
+    date: '2026-06-16',
+    source: 'El País',
+    sourceUrl: 'https://elpais.com/opinion/2026-06-16/una-cuestion-de-prioridades.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'leon-xiv-se-comprometio-en-madrid-a-impulsar-nuevas-medidas-de-reparacion-con-la',
     title: 'León XIV se comprometió en Madrid a impulsar nuevas medidas de reparación con las víctimas de abusos',
     excerpt: 'La noticia León XIV se comprometió en Madrid a impulsar nuevas medidas de reparación con las víctimas de abusos se publicó primero en Noticias religiosas de última hora | Vida Nueva El papa León XIV mantuvo el pasado lun…',
