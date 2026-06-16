@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'carmen-una-de-las-1-000-voces-que-canto-en-el-bernabeu-fue-alucinante',
+    title: 'Carmen, una de las 1.000 voces que cantó en el Bernabéu: «Fue alucinante»',
+    excerpt: 'La joven se mostró sorprendida al ver a tanta gente junta con el único fin de cantarle al Papa y rezar por él La entrada Carmen, una de las 1.000 voces que cantó en el Bernabéu: «Fue alucinante» se publicó primero en Alf…',
+    content: 'La joven se mostró sorprendida al ver a tanta gente junta con el único fin de cantarle al Papa y rezar por él La entrada Carmen, una de las 1.000 voces que cantó en el Bernabéu: «Fue alucinante» se publicó primero en Alfa y Omega.',
+    date: '2026-06-16',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/carmen-una-de-las-1-000-voces-que-canto-en-el-bernabeu-ha-sido-alucinante-ver-a-tanta-gente-junta-con-el-unico-fin-de-cantarle-al-papa-y-rezar-por-el/',
+    relatedCities: ['madrid'],
+  },
+  {
+    slug: 'la-iglesia-hace-balance-de-la-visita-de-leon-xiv-a-espana-nos-ha-desbordado',
+    title: 'La Iglesia hace balance de la visita de León XIV a España: «Nos ha desbordado»',
+    excerpt: 'El presidente de la Conferencia Episcopal Española afirma ahora que es el momento de transformar la emoción en virtud La entrada La Iglesia hace balance de la visita de León XIV a España: «Nos ha desbordado» se publicó p…',
+    content: 'El presidente de la Conferencia Episcopal Española afirma ahora que es el momento de transformar la emoción en virtud La entrada La Iglesia hace balance de la visita de León XIV a España: «Nos ha desbordado» se publicó primero en Revista Ecclesia.',
+    date: '2026-06-16',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/la-iglesia-hace-balance-de-la-visita-de-leon-xiv-a-espana-nos-ha-desbordado/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'arguello-hace-balance-de-la-visita-del-papa-gracias-y-ahora-accion',
     title: 'Argüello hace balance de la visita del Papa: «Gracias, y ahora acción»',
     excerpt: 'El presidente de la Conferencia Episcopal Española destaca que la visita del Santo Padre «ha desbordado nuestras expectativas» La entrada Argüello hace balance de la visita del Papa: «Gracias, y ahora acción» se publicó …',
