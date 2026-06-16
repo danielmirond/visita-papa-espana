@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-se-comprometio-en-madrid-a-impulsar-nuevas-medidas-de-reparacion-con-la',
+    title: 'León XIV se comprometió en Madrid a impulsar nuevas medidas de reparación con las víctimas de abusos',
+    excerpt: 'La noticia León XIV se comprometió en Madrid a impulsar nuevas medidas de reparación con las víctimas de abusos se publicó primero en Noticias religiosas de última hora | Vida Nueva El papa León XIV mantuvo el pasado lun…',
+    content: 'La noticia León XIV se comprometió en Madrid a impulsar nuevas medidas de reparación con las víctimas de abusos se publicó primero en Noticias religiosas de última hora | Vida Nueva El papa León XIV mantuvo el pasado lunes, 8 de junio, un encuentro de carácter privado en la Nunciatura Apostólica de Madrid, durante su visita a España, con seis víctimas de abusos cometidos en el seno de la Iglesia. La reunión, uno de los actos más delicados y reservados de su viaje, tuvo como principal &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-06-15',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/06/16/leon-comprometio-madrid-impulsar-nuevas-medidas-reparacion-victimas-abusos/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'madrid-conservara-la-cruz-de-la-vigilia-del-papa-en-la-plaza-de-lima',
     title: 'Madrid conservará la cruz de la vigilia del Papa en la plaza de Lima',
     excerpt: 'La iniciativa quiere ser un «testimonio permanente de unos días inolvidables para nuestra ciudad», ha dicho el alcalde de la ciudad. De momento, se está estudiando la ubicación definitiva La entrada Madrid conservará la …',
