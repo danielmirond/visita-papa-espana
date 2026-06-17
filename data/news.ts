@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'las-torres-de-la-sagrada-familia-se-pegaron-con-loctite',
+    title: 'Las torres de la Sagrada Familia se pegaron con Loctite',
+    excerpt: 'Durante el montaje de las torres centrales de la Sagrada Familia se han usado hasta 24 toneladas del mítico adhesivo La entrada Las torres de la Sagrada Familia se pegaron con Loctite se publicó primero en Alfa y Omega.',
+    content: 'Durante el montaje de las torres centrales de la Sagrada Familia se han usado hasta 24 toneladas del mítico adhesivo La entrada Las torres de la Sagrada Familia se pegaron con Loctite se publicó primero en Alfa y Omega.',
+    date: '2026-06-17',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/las-torres-de-la-sagrada-familia-se-pegaron-con-loctite/',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'el-papa-en-espana-un-reencuentro-con-el-evangelio-sin-ideologias',
     title: 'El Papa en España: Un reencuentro con el Evangelio, sin ideologías',
     excerpt: 'En la catequesis dedicada al Viaje Apostólico a España, León XIV sostuvo que la acogida entusiasta y multitudinaria del pueblo español no solo manifiesta la necesidad generalizada de reencontrarse unidos sobre un fundame…',
