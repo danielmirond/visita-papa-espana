@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'emocion-en-trujillo-al-ver-a-leon-xiv-en-la-abadia-de-montserrat-es-un-honor-y-u',
+    title: 'Emoción en Trujillo al ver a León XIV en la abadía de Montserrat: “Es un honor y un orgullo para nosotros”',
+    excerpt: 'A miles de kilómetros, la imagen del Papa ante la Moreneta reabre un vínculo que sigue muy vivo',
+    content: 'A miles de kilómetros, la imagen del Papa ante la Moreneta reabre un vínculo que sigue muy vivo',
+    date: '2026-06-17',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/emocion-trujillo-ver-leon-xiv_1_1458095.html',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'gimenez-barriocanal-espana-ha-marcado-el-camino-para-los-proximos-viajes-de-leon',
+    title: 'Giménez Barriocanal: «España ha marcado el camino para los próximos viajes de León XIV»',
+    excerpt: 'El cocoordinador valora positivamente la visita papal aunque califica de «desafortunado» el dosier que marcaba distintos niveles de colaboración económica',
+    content: 'El cocoordinador valora positivamente la visita papal aunque califica de «desafortunado» el dosier que marcaba distintos niveles de colaboración económica',
+    date: '2026-06-17',
+    source: 'ABC',
+    sourceUrl: 'https://www.abc.es/sociedad/gimenez-barriocanal-espana-marcado-camino-proximos-viajes-20260617015552-nt.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'carmen-una-de-las-1-000-voces-que-canto-en-el-bernabeu-fue-alucinante',
     title: 'Carmen, una de las 1.000 voces que cantó en el Bernabéu: «Fue alucinante»',
     excerpt: 'La joven se mostró sorprendida al ver a tanta gente junta con el único fin de cantarle al Papa y rezar por él La entrada Carmen, una de las 1.000 voces que cantó en el Bernabéu: «Fue alucinante» se publicó primero en Alf…',
