@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-iglesia-de-la-ue-cita-al-papa-en-canarias-para-criticar-los-centros-de-devolu',
+    title: 'La Iglesia de la UE cita al Papa en Canarias para criticar los centros de devolución de migrantes',
+    excerpt: 'El Parlamento Europeo aprobó el miércoles el Reglamento de Retornos, que incluye la creación de centros de devolución de migrantes y su detención hasta 30 meses mientras son expulsados La entrada La Iglesia de la UE cita…',
+    content: 'El Parlamento Europeo aprobó el miércoles el Reglamento de Retornos, que incluye la creación de centros de devolución de migrantes y su detención hasta 30 meses mientras son expulsados La entrada La Iglesia de la UE cita al Papa en Canarias para criticar los centros de devolución de migrantes se publicó primero en Alfa y Omega.',
+    date: '2026-06-18',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/la-iglesia-de-la-ue-cita-al-papa-en-canarias-para-criticar-los-centros-de-devolucion-de-migrantes/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: '8216-buscad-siempre-la-verdad-leon-xiv-en-espana-el-libro-electronico-con-todos-',
+    title: '&#8216;¡Buscad siempre la verdad! León XIV en España’: el libro electrónico con todos los textos y vídeos del viaje apostólico',
+    excerpt: 'La Conferencia Episcopal Española —a través de la Comisión Episcopal para las Comunicaciones Sociales— publica un libro electrónico con textos y vídeos que recogen todos los actos del Papa León XIV durante su viaje apost…',
+    content: 'La Conferencia Episcopal Española —a través de la Comisión Episcopal para las Comunicaciones Sociales— publica un libro electrónico con textos y vídeos que recogen todos los actos del Papa León XIV durante su viaje apostólico a España. El libro recopila los discursos y homilías del Santo Padre, así como la catequesis en la audiencia general [&#8230;]',
+    date: '2026-06-18',
+    source: 'Conferencia Episcopal Española',
+    sourceUrl: 'https://www.conferenciaepiscopal.es/buscad-siempre-la-verdad-leon-xiv-en-espana-libro-electronico/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'teresa-voluntaria-de-caritas-el-papa-paso-del-palacio-real-a-la-cocina-de-cedia-',
     title: 'Teresa, voluntaria de Cáritas: El Papa «pasó del Palacio Real a la cocina de CEDIA, qué gesto de humildad»',
     excerpt: 'El día que el Papa visitó CEDIA «fue muy bonito; comimos con los 15 usuarios del comedor» y esa experiencia fue intensa porque no se lo creían. «He pasado de estar en la calle y que nadie quiera ni mirarme a que venga el…',
