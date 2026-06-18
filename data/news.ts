@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'teresa-voluntaria-de-caritas-el-papa-paso-del-palacio-real-a-la-cocina-de-cedia-',
+    title: 'Teresa, voluntaria de Cáritas: El Papa «pasó del Palacio Real a la cocina de CEDIA, qué gesto de humildad»',
+    excerpt: 'El día que el Papa visitó CEDIA «fue muy bonito; comimos con los 15 usuarios del comedor» y esa experiencia fue intensa porque no se lo creían. «He pasado de estar en la calle y que nadie quiera ni mirarme a que venga el…',
+    content: 'El día que el Papa visitó CEDIA «fue muy bonito; comimos con los 15 usuarios del comedor» y esa experiencia fue intensa porque no se lo creían. «He pasado de estar en la calle y que nadie quiera ni mirarme a que venga el Papa a ver mi habitación», decía uno de ellos La entrada Teresa, voluntaria de Cáritas: El Papa «pasó del Palacio Real a la cocina de CEDIA, qué gesto de humildad» se publicó primero en Alfa y Omega.',
+    date: '2026-06-18',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/teresa-voluntaria-de-caritas-el-papa-paso-del-palacio-real-a-la-cocina-de-cedia-que-gesto-de-humildad/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'marlaska-sobre-la-expulsion-del-coro-de-la-sagrada-familia-habia-una-prohibicion',
+    title: 'Marlaska, sobre la expulsión del coro de la Sagrada Familia: "Había una prohibición expresa del dean para impedir cualquier signo político"',
+    excerpt: '«Se trata de trabajar para mantener el orden público, no es atentar contra la libertad de expresión de nadie», ha sostenido Marlaska, que ha felicitado tanto a la Policía Nacional como a los Mossos d’Esquadra por el «tra…',
+    content: '«Se trata de trabajar para mantener el orden público, no es atentar contra la libertad de expresión de nadie», ha sostenido Marlaska, que ha felicitado tanto a la Policía Nacional como a los Mossos d’Esquadra por el «trabajo extraordinario» realizado',
+    date: '2026-06-18',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/marlaska-expulsion-coro-sagrada-familia_1_1458290.html',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'las-mejores-frases-del-papa-en-espana',
     title: 'Las mejores frases del Papa en España',
     excerpt: 'Invito a todos a abandonar las narrativas divisivas y polarizantes de vuestra realidad social y de su historia, para pasar de las simplificaciones estériles a la apreciación fecunda de la complejidad. Veo aquí una vocaci…',
