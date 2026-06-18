@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'las-mejores-frases-del-papa-en-espana',
+    title: 'Las mejores frases del Papa en España',
+    excerpt: 'Invito a todos a abandonar las narrativas divisivas y polarizantes de vuestra realidad social y de su historia, para pasar de las simplificaciones estériles a la apreciación fecunda de la complejidad. Veo aquí una vocaci…',
+    content: 'Invito a todos a abandonar las narrativas divisivas y polarizantes de vuestra realidad social y de su historia, para pasar de las simplificaciones estériles a la apreciación fecunda de la complejidad. Veo aquí una vocación específica de Europa, de la que España es protagonista original y fundamental. El joven cristiano se vuelve luminoso tanto en [&#8230;] La entrada Las mejores frases del Papa en España se publicó primero en Alfa y Omega.',
+    date: '2026-06-18',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/las-mejores-frases-del-papa-en-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'el-papa-pide-alzar-la-mirada-con-amor-y-respeto-y-ve-en-canarias-una-clave-de-di',
+    title: 'El Papa pide “alzar la mirada” con amor y respeto, y ve en Canarias “una clave de diálogo”',
+    excerpt: 'El Santo Padre ha vuelto a dar las gracias en la Audiencia de esta mañana por su viaje apostólico a España, “un país europeo de antigua y riquísima tradición católica”, ha dicho. El Papa ha sido acogido en todas partes “…',
+    content: 'El Santo Padre ha vuelto a dar las gracias en la Audiencia de esta mañana por su viaje apostólico a España, “un país europeo de antigua y riquísima tradición católica”, ha dicho. El Papa ha sido acogido en todas partes “con entusiasmo y apertura a la escucha”, y “doy gracias por ello a Dios y [&#8230;] La entrada El Papa pide “alzar la mirada” con amor y respeto, y ve en Canarias “una clave de diálogo” se publicó primero en Omnes.',
+    date: '2026-06-17',
+    source: 'Omnes Mag',
+    sourceUrl: 'https://www.omnesmag.com/actualidad/el-papa-pide-alzar-la-mirada-con-amor-y-respeto/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'las-torres-de-la-sagrada-familia-se-pegaron-con-loctite',
     title: 'Las torres de la Sagrada Familia se pegaron con Loctite',
     excerpt: 'Durante el montaje de las torres centrales de la Sagrada Familia se han usado hasta 24 toneladas del mítico adhesivo La entrada Las torres de la Sagrada Familia se pegaron con Loctite se publicó primero en Alfa y Omega.',
