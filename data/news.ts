@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-reunion-de-la-comision-permanente-de-la-cee-viene-marcada-por-la-reflexion-y-',
+    title: 'La reunión de la Comisión Permanente de la CEE viene marcada por la «reflexión» y «valoración» del viaje del Papa a España',
+    excerpt: 'Los obispos también dialogarán sobre la recepción de la exhortación apostólica Amoris Laetitia y la Oficina de Libertad Religiosa presentará el informe sobre delitos de odio en España en 2025 La entrada La reunión de la …',
+    content: 'Los obispos también dialogarán sobre la recepción de la exhortación apostólica Amoris Laetitia y la Oficina de Libertad Religiosa presentará el informe sobre delitos de odio en España en 2025 La entrada La reunión de la Comisión Permanente de la CEE viene marcada por la «reflexión» y «valoración» del viaje del Papa a España se publicó primero en Revista Ecclesia.',
+    date: '2026-06-19',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/la-reunion-de-la-comision-permanente-de-la-cee-viene-marcada-por-la-reflexion-y-la-valoracion-del-viaje-del-papa-a-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'el-podcast-de-vida-nueva-el-papa-leon-xiv-paso-por-canarias-y-viceversa',
+    title: 'El Podcast de Vida Nueva: El papa León XIV pasó por Canarias y viceversa',
+    excerpt: 'La noticia El Podcast de Vida Nueva: El papa León XIV pasó por Canarias y viceversa se publicó primero en Noticias religiosas de última hora | Vida Nueva La reciente visita apostólica del papa León XIV a España se articu…',
+    content: 'La noticia El Podcast de Vida Nueva: El papa León XIV pasó por Canarias y viceversa se publicó primero en Noticias religiosas de última hora | Vida Nueva La reciente visita apostólica del papa León XIV a España se articuló bajo un alegato fundamental sobre la defensa incondicional de la vida humana y su dignidad inalienable. Las Islas Canarias fueron el escenario para poner rostro al drama de las rutas atlánticas de migración y para visibilizar el sufrimiento de quienes escapan de la &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-06-19',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/06/19/podcast-vida-nueva-viaje-apostolico-leon-xiv-islas-canarias/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'el-congreso-convalida-el-real-decreto-que-declara-de-excepcional-interes-la-visi',
     title: 'El Congreso convalida el Real Decreto que declara de excepcional interés la visita del Papa a España y activa deducciones fiscales',
     excerpt: 'La declaración permite las deducciones fiscales previstas en la Ley de Mecenazgo para las donaciones a este tipo de eventos. En el caso de la visita de León XIV, era una petición de los organizadores del viaje',
