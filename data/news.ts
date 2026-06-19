@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-catedral-de-la-almudena-acogera-una-misa-de-accion-de-gracias-por-la-visita-d',
+    title: 'La catedral de la Almudena acogerá una Misa de acción de gracias por la visita del Papa',
+    excerpt: 'El próximo domingo, 21 de junio, a las 12:00 horas, la catedral de Santa María la Real de la Almudena acogerá una Eucaristía de acción de gracias presidida por el cardenal José Cobo La entrada La catedral de la Almudena …',
+    content: 'El próximo domingo, 21 de junio, a las 12:00 horas, la catedral de Santa María la Real de la Almudena acogerá una Eucaristía de acción de gracias presidida por el cardenal José Cobo La entrada La catedral de la Almudena acogerá una Misa de acción de gracias por la visita del Papa se publicó primero en Alfa y Omega.',
+    date: '2026-06-19',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/la-catedral-de-la-almudena-acogera-una-misa-de-accion-de-gracias-por-la-visita-del-papa/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'la-reunion-de-la-comision-permanente-de-la-cee-viene-marcada-por-la-reflexion-y-',
     title: 'La reunión de la Comisión Permanente de la CEE viene marcada por la «reflexión» y «valoración» del viaje del Papa a España',
     excerpt: 'Los obispos también dialogarán sobre la recepción de la exhortación apostólica Amoris Laetitia y la Oficina de Libertad Religiosa presentará el informe sobre delitos de odio en España en 2025 La entrada La reunión de la …',
