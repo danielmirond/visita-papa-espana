@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-congreso-convalida-el-real-decreto-que-declara-de-excepcional-interes-la-visi',
+    title: 'El Congreso convalida el Real Decreto que declara de excepcional interés la visita del Papa a España y activa deducciones fiscales',
+    excerpt: 'La declaración permite las deducciones fiscales previstas en la Ley de Mecenazgo para las donaciones a este tipo de eventos. En el caso de la visita de León XIV, era una petición de los organizadores del viaje',
+    content: 'La declaración permite las deducciones fiscales previstas en la Ley de Mecenazgo para las donaciones a este tipo de eventos. En el caso de la visita de León XIV, era una petición de los organizadores del viaje',
+    date: '2026-06-19',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/congreso-convalida-real-decreto-declara_1_1458485.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'la-iglesia-de-la-ue-cita-al-papa-en-canarias-para-criticar-los-centros-de-devolu',
     title: 'La Iglesia de la UE cita al Papa en Canarias para criticar los centros de devolución de migrantes',
     excerpt: 'El Parlamento Europeo aprobó el miércoles el Reglamento de Retornos, que incluye la creación de centros de devolución de migrantes y su detención hasta 30 meses mientras son expulsados La entrada La Iglesia de la UE cita…',
