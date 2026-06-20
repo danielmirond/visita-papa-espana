@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: '600-cantantes-200-esteladas-un-papa-y-los-mossos-cataluna-reflejada-en-la-sagrad',
+    title: '600 cantantes, 200 esteladas, un Papa y los Mossos: Cataluña, reflejada en la Sagrada Familia',
+    excerpt: 'Cataluña en miniatura en la Sagrada Familia. La expulsión de los 600 cantantes de los coros por intentar mostrar esteladas lo explica todo sobre el actual momento independentista',
+    content: 'Cataluña en miniatura en la Sagrada Familia. La expulsión de los 600 cantantes de los coros por intentar mostrar esteladas lo explica todo sobre el actual momento independentista',
+    date: '2026-06-20',
+    source: 'El Confidencial',
+    sourceUrl: 'https://www.elconfidencial.com/espana/cataluna/2026-06-20/600-cantantes-200-esteladas-papa-mossos-familia_4375968/',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'la-catedral-de-la-almudena-acogera-una-misa-de-accion-de-gracias-por-la-visita-d',
     title: 'La catedral de la Almudena acogerá una Misa de acción de gracias por la visita del Papa',
     excerpt: 'El próximo domingo, 21 de junio, a las 12:00 horas, la catedral de Santa María la Real de la Almudena acogerá una Eucaristía de acción de gracias presidida por el cardenal José Cobo La entrada La catedral de la Almudena …',
