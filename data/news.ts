@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-peregrina-a-la-tumba-de-san-agustin-y-llama-a-construir-una-iglesia-de-',
+    title: 'León XIV peregrina a la tumba de san Agustín y llama a construir una Iglesia de «piedras vivas»',
+    excerpt: 'El Pontífice viaja a Pavía para rezar ante las reliquias del santo de Hipona y propone una renovación eclesial basada en la centralidad de Cristo, la vida interior y el impulso misionero La entrada León XIV peregrina a l…',
+    content: 'El Pontífice viaja a Pavía para rezar ante las reliquias del santo de Hipona y propone una renovación eclesial basada en la centralidad de Cristo, la vida interior y el impulso misionero La entrada León XIV peregrina a la tumba de san Agustín y llama a construir una Iglesia de «piedras vivas» se publicó primero en Alfa y Omega.',
+    date: '2026-06-20',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/leon-xiv-peregrina-a-la-tumba-de-san-agustin-y-llama-a-construir-una-iglesia-de-piedras-vivas/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'leon-xiv-en-pavia-visita-la-tumba-de-san-agustin-y-llama-a-una-iglesia-de-piedra',
+    title: 'León XIV en Pavía: visita la tumba de san Agustín y llama a una Iglesia de ‘piedras vivas’',
+    excerpt: 'León XIV viaja a Pavía, en el norte de Italia, para peregrinar a la tumba de san Agustín y celebrar la Liturgia de la palabra. En su homilía, el Papa articula su mensaje en torno a cuatro ejes: poner a Cristo en el centr…',
+    content: 'León XIV viaja a Pavía, en el norte de Italia, para peregrinar a la tumba de san Agustín y celebrar la Liturgia de la palabra. En su homilía, el Papa articula su mensaje en torno a cuatro ejes: poner a Cristo en el centro, volver a lo esencial del Evangelio, cultivar la interioridad agustiniana y promover una Iglesia misionera. Leer todo',
+    date: '2026-06-20',
+    source: 'Vatican News',
+    sourceUrl: 'https://www.vaticannews.va/es/papa/news/2026-06/leon-xiv-en-pavia-visita-la-tumba-de-san-agustin-y-piedras-vivas.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'leon-xiv-sobre-su-viaje-a-espana-la-gente-muy-contenta-y-yo-ciertamente-contento',
     title: 'León XIV sobre su viaje a España: la gente muy contenta y yo ciertamente contento',
     excerpt: 'León XIV responde a las preguntas de los periodistas en Castel Gandolfo y comenta su reciente viaje a España, afirmando que está muy contento con la acogida del pueblo. También auspicia que el acuerdo entre EE. UU. e Irá…',
