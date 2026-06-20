@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'los-santos-que-cito-leon-xiv-en-su-visita-a-espana',
+    title: 'Los santos que citó León XIV en su visita a España',
+    excerpt: 'El Santo Padre León XIV citó en su visita a España a más de una docena de santos y, como era bien lógico, al venerable Antoni Gaudí, arquitecto de la Sagrada Familia, cuya Causa sigue adelante. El Papa vivió en España es…',
+    content: 'El Santo Padre León XIV citó en su visita a España a más de una docena de santos y, como era bien lógico, al venerable Antoni Gaudí, arquitecto de la Sagrada Familia, cuya Causa sigue adelante. El Papa vivió en España esa “comunión de los santos” que recoge el Catecismo de la Doctrina Cristina, cuando [&#8230;] La entrada Los santos que citó León XIV en su visita a España se publicó primero en Omnes.',
+    date: '2026-06-20',
+    source: 'Omnes Mag',
+    sourceUrl: 'https://www.omnesmag.com/actualidad/los-santos-que-cito-leon-xiv-en-su-visita-a-espana/',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: '600-cantantes-200-esteladas-un-papa-y-los-mossos-cataluna-reflejada-en-la-sagrad',
     title: '600 cantantes, 200 esteladas, un Papa y los Mossos: Cataluña, reflejada en la Sagrada Familia',
     excerpt: 'Cataluña en miniatura en la Sagrada Familia. La expulsión de los 600 cantantes de los coros por intentar mostrar esteladas lo explica todo sobre el actual momento independentista',
