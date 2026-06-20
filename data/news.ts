@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-sobre-su-viaje-a-espana-la-gente-muy-contenta-y-yo-ciertamente-contento',
+    title: 'León XIV sobre su viaje a España: la gente muy contenta y yo ciertamente contento',
+    excerpt: 'León XIV responde a las preguntas de los periodistas en Castel Gandolfo y comenta su reciente viaje a España, afirmando que está muy contento con la acogida del pueblo. También auspicia que el acuerdo entre EE. UU. e Irá…',
+    content: 'León XIV responde a las preguntas de los periodistas en Castel Gandolfo y comenta su reciente viaje a España, afirmando que está muy contento con la acogida del pueblo. También auspicia que el acuerdo entre EE. UU. e Irán “sea realmente una solución a la guerra”. Leer todo',
+    date: '2026-06-16',
+    source: 'Vatican News',
+    sourceUrl: 'https://www.vaticannews.va/es/papa/news/2026-06/el-papa-castel-gandolfo-espana-iran-usa-guerra-migracion.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'los-santos-que-cito-leon-xiv-en-su-visita-a-espana',
     title: 'Los santos que citó León XIV en su visita a España',
     excerpt: 'El Santo Padre León XIV citó en su visita a España a más de una docena de santos y, como era bien lógico, al venerable Antoni Gaudí, arquitecto de la Sagrada Familia, cuya Causa sigue adelante. El Papa vivió en España es…',
