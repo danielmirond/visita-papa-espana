@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-en-el-angelus-la-contemplacion-nos-hace-apostoles-creibles-y-libres',
+    title: 'León XIV en el Ángelus: “la contemplación nos hace apóstoles creíbles y libres”',
+    excerpt: 'El Papa invita a los fieles a profundizar en su relación con Dios mediante la contemplación y la oración, y asegura que la fuerza del apostolado no depende de técnicas o estrategias, sino de la acción del Espíritu Santo …',
+    content: 'El Papa invita a los fieles a profundizar en su relación con Dios mediante la contemplación y la oración, y asegura que la fuerza del apostolado no depende de técnicas o estrategias, sino de la acción del Espíritu Santo y de la autenticidad de nuestra respuesta. Leer todo',
+    date: '2026-06-21',
+    source: 'Vatican News',
+    sourceUrl: 'https://www.vaticannews.va/es/papa/news/2026-06/leon-xiv-angelus-la-contemplacion-nos-hace-apostoles-creibles.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'leon-xiv-en-el-angelus-es-un-desafio-responder-al-odio-con-amor-y-a-la-prepotenc',
+    title: 'León XIV en el ángelus: “Es un desafío responder al odio con amor y a la prepotencia con mansedumbre”',
+    excerpt: 'La noticia León XIV en el ángelus: “Es un desafío responder al odio con amor y a la prepotencia con mansedumbre” se publicó primero en Noticias religiosas de última hora | Vida Nueva Este domingo, 21 de junio de 2026, el…',
+    content: 'La noticia León XIV en el ángelus: “Es un desafío responder al odio con amor y a la prepotencia con mansedumbre” se publicó primero en Noticias religiosas de última hora | Vida Nueva Este domingo, 21 de junio de 2026, el papa León XIV se asomó a la ventana de su estudio en el Palacio Apostólico en el Vaticano para rezar el ángelus con los fieles y peregrinos congregados en la Plaza de San Pedro. Síguenos en Google y añádenos como fuente preferida Regístrate en el boletín gratuito &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-06-21',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/06/21/leon-xiv-angelus-desafio-responder-odio-amor-prepotencia-mansedumbre/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'leon-xiv-peregrina-a-la-tumba-de-san-agustin-y-llama-a-construir-una-iglesia-de-',
     title: 'León XIV peregrina a la tumba de san Agustín y llama a construir una Iglesia de «piedras vivas»',
     excerpt: 'El Pontífice viaja a Pavía para rezar ante las reliquias del santo de Hipona y propone una renovación eclesial basada en la centralidad de Cristo, la vida interior y el impulso misionero La entrada León XIV peregrina a l…',
