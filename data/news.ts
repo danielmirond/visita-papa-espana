@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-gracia-de-acompanar-al-papa-leon-xiv-en-su-viaje-apostolico-a-espana',
+    title: 'La gracia de acompañar al Papa León XIV en su viaje apostólico a España',
+    excerpt: 'Del 6 al 12 de junio he tenido la gracia de poder acompañar al Papa León XIV en su viaje apostólico a España bajo el lema “Alzad la mirada”, un viaje que ha superado con creces todas las expectativas que pudiéramos haber…',
+    content: 'Del 6 al 12 de junio he tenido la gracia de poder acompañar al Papa León XIV en su viaje apostólico a España bajo el lema “Alzad la mirada”, un viaje que ha superado con creces todas las expectativas que pudiéramos haber tenido.La acogida del pueblo español ha sido desbordante en todos los lugares por&#8230; La entrada La gracia de acompañar al Papa León XIV en su viaje apostólico a España se publicó primero en Revista Ecclesia.',
+    date: '2026-06-21',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/la-gracia-de-acompanar-al-papa-leon-xiv-en-su-viaje-apostolico-a-espana-carta-obispo-coria-caceres-jesus-pulido/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'leon-xiv-en-el-angelus-la-contemplacion-nos-hace-apostoles-creibles-y-libres',
     title: 'León XIV en el Ángelus: “la contemplación nos hace apóstoles creíbles y libres”',
     excerpt: 'El Papa invita a los fieles a profundizar en su relación con Dios mediante la contemplación y la oración, y asegura que la fuerza del apostolado no depende de técnicas o estrategias, sino de la acción del Espíritu Santo …',
