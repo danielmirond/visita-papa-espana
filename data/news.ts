@@ -2,6 +2,37 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-en-el-angelus-nadie-puede-mirar-hacia-otro-lado-ante-quienes-buscan-pro',
+    title: 'León XIV en el ángelus: «Nadie puede mirar hacia otro lado ante quienes buscan protección y seguridad»',
+    excerpt: 'El Papa exhorta a las naciones a acoger a las víctimas de persecución en el 75 aniversario de la Convención sobre los Refugiados y recuerda que el anuncio evangélico nace de la contemplación y el silencio. La entrada Leó…',
+    content: 'El Papa exhorta a las naciones a acoger a las víctimas de persecución en el 75 aniversario de la Convención sobre los Refugiados y recuerda que el anuncio evangélico nace de la contemplación y el silencio. La entrada León XIV en el ángelus: «Nadie puede mirar hacia otro lado ante quienes buscan protección y seguridad» se publicó primero en Revista Ecclesia.',
+    date: '2026-06-22',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/leon-xiv-en-el-angelus-nadie-puede-mirar-hacia-otro-lado-ante-quienes-buscan-proteccion-y-seguridad/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'todos-los-discursos-del-papa-leon-xiv-en-espana-de-regalo-con-religion-digital',
+    title: 'Todos los discursos del papa León XIV en España, de regalo con Religión Digital',
+    excerpt: 'Hazte socio/a y te regalamos el \'Informe RD\' que hace balance de una visita histórica y que contiene los 22 discursos, homilías y saludos íntegros del Papa durante su visita a España. HAZTE SOCIO/A AHORA',
+    content: 'Hazte socio/a y te regalamos el \'Informe RD\' que hace balance de una visita histórica y que contiene los 22 discursos, homilías y saludos íntegros del Papa durante su visita a España. HAZTE SOCIO/A AHORA',
+    date: '2026-06-22',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/discursos-papa-leon-xiv-espana_1_1458586.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'los-obispos-comienzan-o-deberian-comenzar-a-implementar-los-ecos-del-viaje-de-le',
+    title: 'Los obispos comienzan (o deberían comenzar) a implementar los ecos del viaje de León XIV a España',
+    excerpt: 'No se descarta una \'Carta al pueblo de Dios que peregrina en España\' proponiendo una suerte de decálogo de acciones para comenzar a sembrar las semillas dejadas por Prevost, ni siquiera que haya una reformulación del ya …',
+    content: 'No se descarta una \'Carta al pueblo de Dios que peregrina en España\' proponiendo una suerte de decálogo de acciones para comenzar a sembrar las semillas dejadas por Prevost, ni siquiera que haya una reformulación del ya aprobado plan pastoral de la I',
+    date: '2026-06-22',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/obispos-comienzan-deberian-comenzar-implementar-viaje-leon-xiv-espana_1_1458676.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'la-gracia-de-acompanar-al-papa-leon-xiv-en-su-viaje-apostolico-a-espana',
     title: 'La gracia de acompañar al Papa León XIV en su viaje apostólico a España',
     excerpt: 'Del 6 al 12 de junio he tenido la gracia de poder acompañar al Papa León XIV en su viaje apostólico a España bajo el lema “Alzad la mirada”, un viaje que ha superado con creces todas las expectativas que pudiéramos haber…',
