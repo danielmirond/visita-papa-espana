@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'eusebio-hernandez-la-visita-del-papa-a-espana-nos-ha-dejado-ahora-la-patata-cali',
+    title: 'Eusebio Hernández: "La visita del Papa a España nos ha dejado ahora \'la patata caliente\' de dar respuesta a la sed de trascendencia de tanta gente"',
+    excerpt: 'El obispo emérito de Tarazona y agustino recoleto ha acompañado a León XIV por Madrid, Cataluña y Canarias, disfrutando muchísimo de sus mensajes y gestos. Y ya les ha dicho a los demás obispos que hay que aprovechar la …',
+    content: 'El obispo emérito de Tarazona y agustino recoleto ha acompañado a León XIV por Madrid, Cataluña y Canarias, disfrutando muchísimo de sus mensajes y gestos. Y ya les ha dicho a los demás obispos que hay que aprovechar la riada de entusiasmo que dejó R',
+    date: '2026-06-23',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/eusebio-hernandez-visita-papa-espana_1_1458753.html',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'leon-xiv-en-el-angelus-nadie-puede-mirar-hacia-otro-lado-ante-quienes-buscan-pro',
     title: 'León XIV en el ángelus: «Nadie puede mirar hacia otro lado ante quienes buscan protección y seguridad»',
     excerpt: 'El Papa exhorta a las naciones a acoger a las víctimas de persecución en el 75 aniversario de la Convención sobre los Refugiados y recuerda que el anuncio evangélico nace de la contemplación y el silencio. La entrada Leó…',
