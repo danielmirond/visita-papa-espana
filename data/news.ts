@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'marlaska-asume-la-responsabilidad-de-la-actuacion-policial-en-la-sagrada-familia',
+    title: 'Marlaska asume "la responsabilidad" de la actuación policial en la Sagrada Familia hacia miembros del coro',
+    excerpt: 'El ministro del Interior a una pregunta del senador de JxCat Eduard Pujol, que le ha acusado de comportarse como "la derechona más oscura" con el caso de los 600 cantantes expulsados de la Sagrada Familia, durante la vis…',
+    content: 'El ministro del Interior a una pregunta del senador de JxCat Eduard Pujol, que le ha acusado de comportarse como "la derechona más oscura" con el caso de los 600 cantantes expulsados de la Sagrada Familia, durante la visita del Papa',
+    date: '2026-06-24',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/marlaska-asume-responsabilidad-actuacion-policial_1_1458987.html',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'eusebio-hernandez-la-visita-del-papa-a-espana-nos-ha-dejado-ahora-la-patata-cali',
     title: 'Eusebio Hernández: "La visita del Papa a España nos ha dejado ahora \'la patata caliente\' de dar respuesta a la sed de trascendencia de tanta gente"',
     excerpt: 'El obispo emérito de Tarazona y agustino recoleto ha acompañado a León XIV por Madrid, Cataluña y Canarias, disfrutando muchísimo de sus mensajes y gestos. Y ya les ha dicho a los demás obispos que hay que aprovechar la …',
