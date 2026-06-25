@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-en-espana-alzar-la-mirada-buscar-y-proclamar-la-verdad',
+    title: 'León XIV en España: alzar la mirada, buscar y proclamar la verdad',
+    excerpt: 'El arzobispo de Santiago hace balance de la visita y mantiene la esperanza de que el Pontífice vuelva en 2027 por el Año Santo Compostelano La entrada León XIV en España: alzar la mirada, buscar y proclamar la verdad se …',
+    content: 'El arzobispo de Santiago hace balance de la visita y mantiene la esperanza de que el Pontífice vuelva en 2027 por el Año Santo Compostelano La entrada León XIV en España: alzar la mirada, buscar y proclamar la verdad se publicó primero en Revista Ecclesia.',
+    date: '2026-06-25',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/leon-xiv-espana-ano-santo-compostelano-visita-santiago-de-compostela-francisco-jose-prieto-arzobispo/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'marlaska-asume-la-responsabilidad-de-la-actuacion-policial-en-la-sagrada-familia',
     title: 'Marlaska asume "la responsabilidad" de la actuación policial en la Sagrada Familia hacia miembros del coro',
     excerpt: 'El ministro del Interior a una pregunta del senador de JxCat Eduard Pujol, que le ha acusado de comportarse como "la derechona más oscura" con el caso de los 600 cantantes expulsados de la Sagrada Familia, durante la vis…',
