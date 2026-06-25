@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-papa-escribe-a-la-iglesia-de-madrid-sigan-abriendo-las-puertas-de-sus-corazon',
+    title: 'El Papa escribe a la Iglesia de Madrid: «¡Sigan abriendo las puertas de sus corazones a Cristo!»',
+    excerpt: 'León XIV ha descrito los días vividos en Madrid como «colmados de alegría» y marcados por «valientes y conmovedores testimonios de fe» La entrada El Papa escribe a la Iglesia de Madrid: «¡Sigan abriendo las puertas de su…',
+    content: 'León XIV ha descrito los días vividos en Madrid como «colmados de alegría» y marcados por «valientes y conmovedores testimonios de fe» La entrada El Papa escribe a la Iglesia de Madrid: «¡Sigan abriendo las puertas de sus corazones a Cristo!» se publicó primero en Alfa y Omega.',
+    date: '2026-06-25',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/el-papa-escribe-a-la-iglesia-de-madrid-sigan-abriendo-las-puertas-de-sus-corazones-a-cristo/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'leon-xiv-en-espana-alzar-la-mirada-buscar-y-proclamar-la-verdad',
     title: 'León XIV en España: alzar la mirada, buscar y proclamar la verdad',
     excerpt: 'El arzobispo de Santiago hace balance de la visita y mantiene la esperanza de que el Pontífice vuelva en 2027 por el Año Santo Compostelano La entrada León XIV en España: alzar la mirada, buscar y proclamar la verdad se …',
