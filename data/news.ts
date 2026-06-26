@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'visita-apostolica-del-papa-leon-xiv-a-espana-i',
+    title: 'Visita apostólica del papa León XIV a España (I)',
+    excerpt: 'Visita Apostólica del Papa León XIV a España (I): Confirmar en la fe, mantener la unidad y tender puentes con la sociedad El Viaje Apostólico del Papa León XIV a España ha sido un acontecimiento de gracia para la Iglesia…',
+    content: 'Visita Apostólica del Papa León XIV a España (I): Confirmar en la fe, mantener la unidad y tender puentes con la sociedad El Viaje Apostólico del Papa León XIV a España ha sido un acontecimiento de gracia para la Iglesia y una interpelación luminosa para toda la sociedad. Más allá de la crónica de unos&#8230; La entrada Visita apostólica del papa León XIV a España (I) se publicó primero en Revista Ecclesia.',
+    date: '2026-06-26',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/visita-apostolica-del-papa-leon-xiv-a-espana-arzobispo-sevilla-jose-angel-saiz-meneses/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'el-podcast-de-vida-nueva-veinte-retos-de-leon-xiv-para-la-iglesia-en-espana',
+    title: 'El Podcast de Vida Nueva: Veinte retos de León XIV para la Iglesia en España',
+    excerpt: 'La noticia El Podcast de Vida Nueva: Veinte retos de León XIV para la Iglesia en España se publicó primero en Noticias religiosas de última hora | Vida Nueva El reciente viaje apostólico de León XIV a España deja tras de…',
+    content: 'La noticia El Podcast de Vida Nueva: Veinte retos de León XIV para la Iglesia en España se publicó primero en Noticias religiosas de última hora | Vida Nueva El reciente viaje apostólico de León XIV a España deja tras de sí una rigurosa hoja de ruta dirigida a toda la comunidad eclesial. El pontífice pronunció veintidós discursos repletos de directrices pastorales de gran calado. ¿Todavía no sigues a Vida Nueva en INSTAGRAM? WHATSAPP: Sigue nuestro canal para recibir gratis la mejor información Regístrate &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-06-26',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/06/26/podcast-vida-nueva-veinte-retos-iglesia-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'el-cementerio-de-la-almudena-y-su-plan-estival-nocturno-descubre-los-secretos-de',
     title: 'El cementerio de la Almudena y su plan estival nocturno: descubre los secretos de la necrópolis más grande de Europa con sus visitas teatralizadas',
     excerpt: 'El cementerio de la Almudena recupera sus fascinantes visitas teatralizadas nocturnas hasta el próximo 6 de septiembre. Una experiencia inmersiva única para descubrir la historia, el arte y los secretos de Madrid a la lu…',
