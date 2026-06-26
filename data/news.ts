@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-cementerio-de-la-almudena-y-su-plan-estival-nocturno-descubre-los-secretos-de',
+    title: 'El cementerio de la Almudena y su plan estival nocturno: descubre los secretos de la necrópolis más grande de Europa con sus visitas teatralizadas',
+    excerpt: 'El cementerio de la Almudena recupera sus fascinantes visitas teatralizadas nocturnas hasta el próximo 6 de septiembre. Una experiencia inmersiva única para descubrir la historia, el arte y los secretos de Madrid a la lu…',
+    content: 'El cementerio de la Almudena recupera sus fascinantes visitas teatralizadas nocturnas hasta el próximo 6 de septiembre. Una experiencia inmersiva única para descubrir la historia, el arte y los secretos de Madrid a la luz de la luna',
+    date: '2026-06-26',
+    source: 'El Confidencial',
+    sourceUrl: 'https://www.elconfidencial.com/espana/madrid/2026-06-26/cementerio-almudena-visitas-teatralizadas-nocturno-verano_4378876/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'el-papa-escribe-a-la-iglesia-de-madrid-sigan-abriendo-las-puertas-de-sus-corazon',
     title: 'El Papa escribe a la Iglesia de Madrid: «¡Sigan abriendo las puertas de sus corazones a Cristo!»',
     excerpt: 'León XIV ha descrito los días vividos en Madrid como «colmados de alegría» y marcados por «valientes y conmovedores testimonios de fe» La entrada El Papa escribe a la Iglesia de Madrid: «¡Sigan abriendo las puertas de su…',
