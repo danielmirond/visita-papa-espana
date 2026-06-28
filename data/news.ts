@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'una-emocion-profunda-y-dos-cuestiones-decisivas-sobre-la-vigilia-de-oracion-con-',
+    title: 'Una emoción profunda y dos cuestiones decisivas. Sobre la Vigilia de oración con el papa en Barcelona',
+    excerpt: '',
+    content: '',
+    date: '2026-06-28',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/el_blog_de_jose_arregi/emocion-profunda-cuestiones-decisivas-vigilia_132_1457380.html',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'visita-apostolica-del-papa-leon-xiv-a-espana-i',
     title: 'Visita apostólica del papa León XIV a España (I)',
     excerpt: 'Visita Apostólica del Papa León XIV a España (I): Confirmar en la fe, mantener la unidad y tender puentes con la sociedad El Viaje Apostólico del Papa León XIV a España ha sido un acontecimiento de gracia para la Iglesia…',
