@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'exponen-el-papamovil-del-bernabeu-para-que-la-visita-del-papa-no-caiga-en-el-olv',
+    title: 'Exponen el papamóvil del Bernabéu «para que la visita del Papa no caiga en el olvido»',
+    excerpt: 'El vehículo que usó el Santo Padre en su encuentro con la Iglesia en Madrid está expuesto en una parroquia burgalesa La entrada Exponen el papamóvil del Bernabéu «para que la visita del Papa no caiga en el olvido» se pub…',
+    content: 'El vehículo que usó el Santo Padre en su encuentro con la Iglesia en Madrid está expuesto en una parroquia burgalesa La entrada Exponen el papamóvil del Bernabéu «para que la visita del Papa no caiga en el olvido» se publicó primero en Alfa y Omega.',
+    date: '2026-06-29',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/exponen-el-papamovil-del-bernabeu-para-que-la-visita-del-papa-no-caiga-en-el-olvido/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'una-emocion-profunda-y-dos-cuestiones-decisivas-sobre-la-vigilia-de-oracion-con-',
     title: 'Una emoción profunda y dos cuestiones decisivas. Sobre la Vigilia de oración con el papa en Barcelona',
     excerpt: '',
