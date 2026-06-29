@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'siete-diaconos-seran-ordenados-diaconos-este-sabado-en-la-almudena',
+    title: 'Siete diáconos serán ordenados diáconos este sábado en la Almudena',
+    excerpt: '',
+    content: '',
+    date: '2026-06-29',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/estola_cruzada-_el_blog_de_jose_garcia-roca_lopez/siete-diaconos-seran-ordenados_132_1458223.html',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'exponen-el-papamovil-del-bernabeu-para-que-la-visita-del-papa-no-caiga-en-el-olv',
     title: 'Exponen el papamóvil del Bernabéu «para que la visita del Papa no caiga en el olvido»',
     excerpt: 'El vehículo que usó el Santo Padre en su encuentro con la Iglesia en Madrid está expuesto en una parroquia burgalesa La entrada Exponen el papamóvil del Bernabéu «para que la visita del Papa no caiga en el olvido» se pub…',
