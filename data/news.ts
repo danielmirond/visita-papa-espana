@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-nuncio-apostolico-en-la-almudena-vuestra-presencia-es-prueba-de-la-unidad-con',
+    title: 'El nuncio apostólico en la Almudena: «Vuestra presencia es prueba de la unidad con el Papa»',
+    excerpt: 'El arzobispo Piero Pioppo explica en la solemnidad de san Pedro y san Pablo que «cuando oramos por el Papa, pedimos que la Iglesia se mantenga fiel en su misión» La entrada El nuncio apostólico en la Almudena: «Vuestra p…',
+    content: 'El arzobispo Piero Pioppo explica en la solemnidad de san Pedro y san Pablo que «cuando oramos por el Papa, pedimos que la Iglesia se mantenga fiel en su misión» La entrada El nuncio apostólico en la Almudena: «Vuestra presencia es prueba de la unidad con el Papa» se publicó primero en Alfa y Omega.',
+    date: '2026-06-29',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/el-nuncio-apostolico-en-la-almudena-vuestra-presencia-es-prueba-de-la-unidad-con-el-papa/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'siete-diaconos-seran-ordenados-diaconos-este-sabado-en-la-almudena',
     title: 'Siete diáconos serán ordenados diáconos este sábado en la Almudena',
     excerpt: '',
