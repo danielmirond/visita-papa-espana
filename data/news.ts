@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'anuncian-que-leon-xiv-visitaria-peru-y-uruguay-en-noviembre-en-espana-es-impresi',
+    title: 'Anuncian que León XIV visitaría Perú y Uruguay en noviembre: "En España es impresionante lo que ha hecho"',
+    excerpt: 'La visita del papa León XIV a Perú está programada "a partir del 10 de noviembre", comunicó este domingo el presidente interino del país andino, José María Balcázar. Por su parte, el cardenal uruguayo Daniel Sturla puntu…',
+    content: 'La visita del papa León XIV a Perú está programada "a partir del 10 de noviembre", comunicó este domingo el presidente interino del país andino, José María Balcázar. Por su parte, el cardenal uruguayo Daniel Sturla puntualizó que espera el anuncio of',
+    date: '2026-06-30',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/anuncian-leon-xiv-visitaria-peru_1_1456856.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'el-nuncio-apostolico-en-la-almudena-vuestra-presencia-es-prueba-de-la-unidad-con',
     title: 'El nuncio apostólico en la Almudena: «Vuestra presencia es prueba de la unidad con el Papa»',
     excerpt: 'El arzobispo Piero Pioppo explica en la solemnidad de san Pedro y san Pablo que «cuando oramos por el Papa, pedimos que la Iglesia se mantenga fiel en su misión» La entrada El nuncio apostólico en la Almudena: «Vuestra p…',
