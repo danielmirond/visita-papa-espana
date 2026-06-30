@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-papa-leon-xiv-intenta-evitar-in-extremis-el-cisma-ultraconservador-de-los-lef',
+    title: 'El papa León XIV intenta evitar in extremis el cisma ultraconservador de los ‘lefebvrianos’: “¡Den marcha atrás!”',
+    excerpt: 'El grupo nostálgico del latín en misa prevé ordenar cuatro obispos este miércoles, lo que conlleva la excomunión automática, pero ya vende botellas de vino como recuerdo de un día “histórico”',
+    content: 'El grupo nostálgico del latín en misa prevé ordenar cuatro obispos este miércoles, lo que conlleva la excomunión automática, pero ya vende botellas de vino como recuerdo de un día “histórico”',
+    date: '2026-06-30',
+    source: 'El País',
+    sourceUrl: 'https://elpais.com/sociedad/2026-06-30/el-papa-leon-xiv-intenta-evitar-in-extremis-el-cisma-ultraconservador-de-los-lefebvrianos-den-marcha-atras.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'cesar-garcia-magan-el-papa-ha-recolocado-a-la-iglesia-en-el-ambito-publico',
     title: 'César García Magán: «El Papa ha recolocado a la Iglesia en el ámbito público»',
     excerpt: 'El secretario general de la Conferencia Episcopal Española reconoce que les ha sorprendido la participación tan masiva en los distintos actos presididos por el Pontífice La entrada César García Magán: «El Papa ha recoloc…',
