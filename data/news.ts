@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'cesar-garcia-magan-el-papa-ha-recolocado-a-la-iglesia-en-el-ambito-publico',
+    title: 'César García Magán: «El Papa ha recolocado a la Iglesia en el ámbito público»',
+    excerpt: 'El secretario general de la Conferencia Episcopal Española reconoce que les ha sorprendido la participación tan masiva en los distintos actos presididos por el Pontífice La entrada César García Magán: «El Papa ha recoloc…',
+    content: 'El secretario general de la Conferencia Episcopal Española reconoce que les ha sorprendido la participación tan masiva en los distintos actos presididos por el Pontífice La entrada César García Magán: «El Papa ha recolocado a la Iglesia en el ámbito público» se publicó primero en Revista Ecclesia.',
+    date: '2026-06-30',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/garcia-magan-entrevista-visita-papa-leon-xiv-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'anuncian-que-leon-xiv-visitaria-peru-y-uruguay-en-noviembre-en-espana-es-impresi',
     title: 'Anuncian que León XIV visitaría Perú y Uruguay en noviembre: "En España es impresionante lo que ha hecho"',
     excerpt: 'La visita del papa León XIV a Perú está programada "a partir del 10 de noviembre", comunicó este domingo el presidente interino del país andino, José María Balcázar. Por su parte, el cardenal uruguayo Daniel Sturla puntu…',
