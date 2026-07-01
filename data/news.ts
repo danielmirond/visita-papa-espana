@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-papa-leon-xiv-nombra-a-una-tercera-mujer-al-frente-de-uno-de-los-dicasterios-',
+    title: 'El papa León XIV nombra a una tercera mujer al frente de uno de los dicasterios del Vaticano',
+    excerpt: 'El Pontífice confirma la línea de Francisco de contar cada vez con más altos cargos femeninos y designa a una monja salesiana como prefecta del Dicasterio para el Servicio del Desarrollo Humano Integral',
+    content: 'El Pontífice confirma la línea de Francisco de contar cada vez con más altos cargos femeninos y designa a una monja salesiana como prefecta del Dicasterio para el Servicio del Desarrollo Humano Integral',
+    date: '2026-06-30',
+    source: 'El País',
+    sourceUrl: 'https://elpais.com/sociedad/2026-06-30/el-papa-leon-xiv-nombra-a-una-tercera-mujer-al-frente-de-uno-de-los-dicasterios-del-vaticano.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'el-papa-leon-xiv-intenta-evitar-in-extremis-el-cisma-ultraconservador-de-los-lef',
     title: 'El papa León XIV intenta evitar in extremis el cisma ultraconservador de los ‘lefebvrianos’: “¡Den marcha atrás!”',
     excerpt: 'El grupo nostálgico del latín en misa prevé ordenar cuatro obispos este miércoles, lo que conlleva la excomunión automática, pero ya vende botellas de vino como recuerdo de un día “histórico”',
