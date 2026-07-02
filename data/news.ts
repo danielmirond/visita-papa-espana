@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'alzad-la-mirada-a-jesus-la-iglesia-y-los-pobres',
+    title: 'Alzad la mirada a Jesús, la Iglesia y los pobres',
+    excerpt: 'Argüello hace balance en ECCLESIA de la visita del Papa a España: «El viaje ha estado lleno de emoción, sabiduría evangélica, dramas humanos y belleza. En nosotros está ser heraldos de la sabiduría y transformar la emoci…',
+    content: 'Argüello hace balance en ECCLESIA de la visita del Papa a España: «El viaje ha estado lleno de emoción, sabiduría evangélica, dramas humanos y belleza. En nosotros está ser heraldos de la sabiduría y transformar la emoción en virtud» La entrada Alzad la mirada a Jesús, la Iglesia y los pobres se publicó primero en Revista Ecclesia.',
+    date: '2026-07-02',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/firma-luis-arguello-viaje-papa-leon-xiv-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'el-muelle-de-arguineguin-pasa-a-denominarse-oficialmente-muelle-de-la-esperanza',
+    title: 'El muelle de Arguineguín pasa a denominarse oficialmente \'Muelle de la esperanza\'',
+    excerpt: 'La denominación, que se popularizó con la visita del Papa León XIV como símbolo de superación de la crisis migratoria por el que se le llamó \'Muelle de la vergüenza\', ya es oficial',
+    content: 'La denominación, que se popularizó con la visita del Papa León XIV como símbolo de superación de la crisis migratoria por el que se le llamó \'Muelle de la vergüenza\', ya es oficial',
+    date: '2026-07-02',
+    source: 'ABC',
+    sourceUrl: 'https://www.abc.es/espana/canarias/muelle-arguineguin-pasa-denominarse-oficialmente-muelle-esperanza-20260702101515-nt.html',
+    relatedCities: ['gran-canaria'],
+  },
+
+  {
     slug: 'el-papa-leon-xiv-nombra-a-una-tercera-mujer-al-frente-de-uno-de-los-dicasterios-',
     title: 'El papa León XIV nombra a una tercera mujer al frente de uno de los dicasterios del Vaticano',
     excerpt: 'El Pontífice confirma la línea de Francisco de contar cada vez con más altos cargos femeninos y designa a una monja salesiana como prefecta del Dicasterio para el Servicio del Desarrollo Humano Integral',
