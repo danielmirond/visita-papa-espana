@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'visita-apostolica-del-papa-leon-xiv-a-espana-ii',
+    title: 'Visita apostólica del papa León XIV a España (II)',
+    excerpt: 'Visita Apostólica del Papa León XIV a España (I): Confirmar en la fe, mantener la unidad y tender puentes con la sociedad El Viaje Apostólico del Papa León XIV a España ha sido, verdaderamente, un acontecimiento apasiona…',
+    content: 'Visita Apostólica del Papa León XIV a España (I): Confirmar en la fe, mantener la unidad y tender puentes con la sociedad El Viaje Apostólico del Papa León XIV a España ha sido, verdaderamente, un acontecimiento apasionante. No sólo por la intensidad de los días vividos, sino, sobre todo, por la hondura evangélica de sus&#8230; La entrada Visita apostólica del papa León XIV a España (II) se publicó primero en Revista Ecclesia.',
+    date: '2026-07-03',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/visita-apostolica-del-papa-leon-xiv-a-espana-ii-carta-arzobispo-sevilla-jose-angel-saiz-meneses-visita-papa/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'cadinanos-la-visita-del-papa-a-espana-nos-ha-ayudado-a-tejer-un-estilo-de-iglesi',
     title: 'Cadiñanos: "La visita del Papa a España nos ha ayudado a tejer un estilo de Iglesia"',
     excerpt: '',
