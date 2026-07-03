@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'cadinanos-la-visita-del-papa-a-espana-nos-ha-ayudado-a-tejer-un-estilo-de-iglesi',
+    title: 'Cadiñanos: "La visita del Papa a España nos ha ayudado a tejer un estilo de Iglesia"',
+    excerpt: '',
+    content: '',
+    date: '2026-07-03',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/cadinanos-visita-papa-espana-ayudado_1_1459569.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'alzad-la-mirada-a-jesus-la-iglesia-y-los-pobres',
     title: 'Alzad la mirada a Jesús, la Iglesia y los pobres',
     excerpt: 'Argüello hace balance en ECCLESIA de la visita del Papa a España: «El viaje ha estado lleno de emoción, sabiduría evangélica, dramas humanos y belleza. En nosotros está ser heraldos de la sabiduría y transformar la emoci…',
