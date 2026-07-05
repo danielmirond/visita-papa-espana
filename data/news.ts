@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-en-el-angelus-bajo-el-azote-de-la-guerra-cristo-es-esperanza',
+    title: 'León XIV en el ángelus: “Bajo el azote de la guerra, Cristo es esperanza”',
+    excerpt: 'La noticia León XIV en el ángelus: “Bajo el azote de la guerra, Cristo es esperanza” se publicó primero en Noticias religiosas de última hora | Vida Nueva “En la esclavitud, Cristo es liberación. Bajo el azote de la guer…',
+    content: 'La noticia León XIV en el ángelus: “Bajo el azote de la guerra, Cristo es esperanza” se publicó primero en Noticias religiosas de última hora | Vida Nueva “En la esclavitud, Cristo es liberación. Bajo el azote de la guerra, Cristo es esperanza. En la hora del pecado, Cristo es perdón”. Con estas palabras, León XIV ha resumido durante el rezo del ángelus de este domingo, 5 de julio, la “verdadera sabiduría” cristiana. Síguenos en Google y añádenos como fuente preferida Regístrate en &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-07-05',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/07/05/leon-angelus-bajo-azote-guerra-cristo-esperanza/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'visita-apostolica-del-papa-leon-xiv-a-espana-ii',
     title: 'Visita apostólica del papa León XIV a España (II)',
     excerpt: 'Visita Apostólica del Papa León XIV a España (I): Confirmar en la fe, mantener la unidad y tender puentes con la sociedad El Viaje Apostólico del Papa León XIV a España ha sido, verdaderamente, un acontecimiento apasiona…',
