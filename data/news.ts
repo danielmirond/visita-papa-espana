@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-en-el-angelus-la-verdadera-sabiduria-de-dios-se-revela-en-la-humildad',
+    title: 'León XIV en el ángelus: «La verdadera sabiduría de Dios se revela en la humildad»',
+    excerpt: 'El Pontífice ha comenzado esta tarde su periodo vacacional en Castel Gandolfo. Se suspenden las audiencias generales, privadas y especiales La entrada León XIV en el ángelus: «La verdadera sabiduría de Dios se revela en …',
+    content: 'El Pontífice ha comenzado esta tarde su periodo vacacional en Castel Gandolfo. Se suspenden las audiencias generales, privadas y especiales La entrada León XIV en el ángelus: «La verdadera sabiduría de Dios se revela en la humildad» se publicó primero en Revista Ecclesia.',
+    date: '2026-07-05',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/leon-xiv-en-el-angelus-la-verdadera-sabiduria-de-dios-se-revela-en-la-humildad/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'leon-xiv-en-el-angelus-bajo-el-azote-de-la-guerra-cristo-es-esperanza',
     title: 'León XIV en el ángelus: “Bajo el azote de la guerra, Cristo es esperanza”',
     excerpt: 'La noticia León XIV en el ángelus: “Bajo el azote de la guerra, Cristo es esperanza” se publicó primero en Noticias religiosas de última hora | Vida Nueva “En la esclavitud, Cristo es liberación. Bajo el azote de la guer…',
