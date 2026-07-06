@@ -2,6 +2,37 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-visita-del-papa-a-tenerife-dejo-un-impacto-economico-de-5-71-millones-de-euro',
+    title: 'La visita del Papa a Tenerife dejó un impacto económico de 5,71 millones de euros',
+    excerpt: 'Por cada euro gastado directamente por los asistentes se generaron aproximadamente 0,88 euros adicionales en la economía local, revela un estudio elaborado por la Sociedad de Desarrollo de Santa Cruz de Tenerife La entra…',
+    content: 'Por cada euro gastado directamente por los asistentes se generaron aproximadamente 0,88 euros adicionales en la economía local, revela un estudio elaborado por la Sociedad de Desarrollo de Santa Cruz de Tenerife La entrada La visita del Papa a Tenerife dejó un impacto económico de 5,71 millones de euros se publicó primero en Alfa y Omega.',
+    date: '2026-07-06',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/la-visita-del-papa-a-tenerife-dejo-un-impacto-economico-de-571-millones-de-euros/',
+    relatedCities: ['tenerife'],
+  },
+  {
+    slug: 'se-cumple-un-mes-de-la-visita-del-papa-leon-xiv-a-espana-asi-fue-su-paso-por-mad',
+    title: 'Se cumple un mes de la visita del Papa León XIV a España: así fue su paso por Madrid',
+    excerpt: 'Hace exactamente un mes, el 6 de junio, el Papa León XIV aterrizaba en Madrid para realizar su primera visita apostólica a España. Un viaje del que aún resuenan muchos ecos y que desde la archidiócesis de Madrid se quier…',
+    content: 'Hace exactamente un mes, el 6 de junio, el Papa León XIV aterrizaba en Madrid para realizar su primera visita apostólica a España. Un viaje del que aún resuenan muchos ecos y que desde la archidiócesis de Madrid se quiere recordar con un vídeo resumen. Aquel día, el Santo Padre bajaba la escalerilla del avión en [&#8230;] La entrada Se cumple un mes de la visita del Papa León XIV a España: así fue su paso por Madrid se publicó primero en Alfa y Omega.',
+    date: '2026-07-06',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/se-cumple-un-mes-de-la-visita-del-papa-leon-xiv-a-espana-asi-fue-su-paso-por-madrid/',
+    relatedCities: ['madrid'],
+  },
+  {
+    slug: 'un-mes-del-historico-viaje-de-leon-xiv-a-espana-asi-fue-su-paso-por-madrid',
+    title: 'Un mes del histórico viaje de León XIV a España: así fue su paso por Madrid',
+    excerpt: 'La diócesis publica un vídeo en recuerdo de la visita de Prevost a la capital de España. Desde Barajas al CEDIA, pasando por los discursos en el Palacio Real, el Congreso o la sede de la CEE, los encuentros multitudinari…',
+    content: 'La diócesis publica un vídeo en recuerdo de la visita de Prevost a la capital de España. Desde Barajas al CEDIA, pasando por los discursos en el Palacio Real, el Congreso o la sede de la CEE, los encuentros multitudinarios con los jóvenes, la cultura',
+    date: '2026-07-06',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/mes-historico-viaje-leon-xiv-madrid-gracias-cobo_1_1460096.html',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'la-visita-de-leon-xiv-a-tenerife-genero-un-impacto-economico-de-5-7-millones-en-',
     title: 'La visita de León XIV a Tenerife generó un impacto económico de 5,7 millones en la isla',
     excerpt: 'Un informe encargado por el Ayuntamiento concluye que el 89,4% de los asistentes se desplazó expresamente a la capital con motivo de la visita del papa. Además, el 88% acudió como público general, mientras que el 8% lo h…',
