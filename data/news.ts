@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-visita-de-leon-xiv-a-tenerife-genero-un-impacto-economico-de-5-7-millones-en-',
+    title: 'La visita de León XIV a Tenerife generó un impacto económico de 5,7 millones en la isla',
+    excerpt: 'Un informe encargado por el Ayuntamiento concluye que el 89,4% de los asistentes se desplazó expresamente a la capital con motivo de la visita del papa. Además, el 88% acudió como público general, mientras que el 8% lo h…',
+    content: 'Un informe encargado por el Ayuntamiento concluye que el 89,4% de los asistentes se desplazó expresamente a la capital con motivo de la visita del papa. Además, el 88% acudió como público general, mientras que el 8% lo hizo como peregrino o integrant',
+    date: '2026-07-06',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/visita-leon-xiv-tenerife-genero_1_1460074.html',
+    relatedCities: ['tenerife'],
+  },
+
+  {
     slug: 'leon-xiv-en-el-angelus-la-verdadera-sabiduria-de-dios-se-revela-en-la-humildad',
     title: 'León XIV en el ángelus: «La verdadera sabiduría de Dios se revela en la humildad»',
     excerpt: 'El Pontífice ha comenzado esta tarde su periodo vacacional en Castel Gandolfo. Se suspenden las audiencias generales, privadas y especiales La entrada León XIV en el ángelus: «La verdadera sabiduría de Dios se revela en …',
