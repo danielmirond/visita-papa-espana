@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'a-un-mes-de-leon-xiv-en-espana-una-presencia-que-dejo-semillas-de-esperanza',
+    title: 'A un mes de León XIV en España: una presencia que dejó semillas de esperanza',
+    excerpt: 'Del 6 al 12 de junio, el Papa recorrió Madrid, Barcelona y las Islas Canarias invitando a "alzar la mirada". Cuatro semanas después, quienes vivieron de cerca su visita recuerdan menos los grandes acontecimientos que la …',
+    content: 'Del 6 al 12 de junio, el Papa recorrió Madrid, Barcelona y las Islas Canarias invitando a "alzar la mirada". Cuatro semanas después, quienes vivieron de cerca su visita recuerdan menos los grandes acontecimientos que la fuerza de unos gestos capaces de seguir interpelando a la Iglesia y a la sociedad. Leer todo',
+    date: '2026-07-07',
+    source: 'Vatican News',
+    sourceUrl: 'https://www.vaticannews.va/es/papa/news/2026-07/papa-viaje-espana-un-mes-mirada-esperanza-futuro.html',
+    relatedCities: ['madrid', 'barcelona'],
+  },
+
+  {
     slug: 'la-visita-del-papa-a-tenerife-dejo-un-impacto-economico-de-5-71-millones-de-euro',
     title: 'La visita del Papa a Tenerife dejó un impacto económico de 5,71 millones de euros',
     excerpt: 'Por cada euro gastado directamente por los asistentes se generaron aproximadamente 0,88 euros adicionales en la economía local, revela un estudio elaborado por la Sociedad de Desarrollo de Santa Cruz de Tenerife La entra…',
