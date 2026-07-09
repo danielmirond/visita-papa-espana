@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'almudena-lastra-recurre-ante-el-supremo-su-no-renovacion-como-fiscal-superior-de',
+    title: 'Almudena Lastra recurre ante el Supremo su no renovación como fiscal superior de Madrid',
+    excerpt: 'El recurso se dirige contra el Real Decreto que designó a María Isabel Martín López como nueva fiscal superior de la Comunidad de Madrid',
+    content: 'El recurso se dirige contra el Real Decreto que designó a María Isabel Martín López como nueva fiscal superior de la Comunidad de Madrid',
+    date: '2026-07-09',
+    source: 'El Confidencial',
+    sourceUrl: 'https://www.elconfidencial.com/espana/2026-07-09/fiscalia-madrid-lastra-nombramiento-1tps_4387283/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'a-un-mes-de-leon-xiv-en-espana-una-presencia-que-dejo-semillas-de-esperanza',
     title: 'A un mes de León XIV en España: una presencia que dejó semillas de esperanza',
     excerpt: 'Del 6 al 12 de junio, el Papa recorrió Madrid, Barcelona y las Islas Canarias invitando a "alzar la mirada". Cuatro semanas después, quienes vivieron de cerca su visita recuerdan menos los grandes acontecimientos que la …',
