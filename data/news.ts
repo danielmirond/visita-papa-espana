@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'las-rodillas-invisibles-la-vida-contemplativa-en-la-visita-del-papa-leon-xiv-a-e',
+    title: 'Las rodillas invisibles: la vida contemplativa en la visita del papa León XIV a España',
+    excerpt: 'De la vida contemplativa recibió, a bordo del avión que le traía a nuestro país por primera vez vestido de blanco, una cesta repleta de productos hechos en silencio y oración La entrada Las rodillas invisibles: la vida c…',
+    content: 'De la vida contemplativa recibió, a bordo del avión que le traía a nuestro país por primera vez vestido de blanco, una cesta repleta de productos hechos en silencio y oración La entrada Las rodillas invisibles: la vida contemplativa en la visita del papa León XIV a España se publicó primero en Revista Ecclesia.',
+    date: '2026-07-10',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/vida-contemplativa-visita-papa-leon-xiv-contemplare-eva-fernandez/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'almudena-lastra-recurre-ante-el-supremo-su-no-renovacion-como-fiscal-superior-de',
     title: 'Almudena Lastra recurre ante el Supremo su no renovación como fiscal superior de Madrid',
     excerpt: 'El recurso se dirige contra el Real Decreto que designó a María Isabel Martín López como nueva fiscal superior de la Comunidad de Madrid',
