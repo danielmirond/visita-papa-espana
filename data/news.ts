@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-bac-publica-el-libro-oficial-del-viaje-apostolico-de-leon-xiv-a-espana',
+    title: 'La BAC publica el libro oficial del Viaje apostólico de León XIV a España',
+    excerpt: 'La&#160;Biblioteca de Autores Cristianos (BAC), editorial de la Conferencia Episcopal Española, publica el volumen Alzad la mirada. Visita apostólica del papa León XIV a España 2026. El libro reúne los textos oficiales p…',
+    content: 'La&#160;Biblioteca de Autores Cristianos (BAC), editorial de la Conferencia Episcopal Española, publica el volumen Alzad la mirada. Visita apostólica del papa León XIV a España 2026. El libro reúne los textos oficiales pronunciados por el Santo Padre durante su histórico viaje a nuestro país el pasado mes de junio. Ofrece todos los discursos, homilías, mensajes [&#8230;]',
+    date: '2026-07-10',
+    source: 'Conferencia Episcopal Española',
+    sourceUrl: 'https://www.conferenciaepiscopal.es/libro-viaje-apostolico-leon-xiv-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'las-rodillas-invisibles-la-vida-contemplativa-en-la-visita-del-papa-leon-xiv-a-e',
     title: 'Las rodillas invisibles: la vida contemplativa en la visita del papa León XIV a España',
     excerpt: 'De la vida contemplativa recibió, a bordo del avión que le traía a nuestro país por primera vez vestido de blanco, una cesta repleta de productos hechos en silencio y oración La entrada Las rodillas invisibles: la vida c…',
