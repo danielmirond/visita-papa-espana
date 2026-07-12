@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'desde-castel-gandolfo-el-papa-pide-en-el-angelus-rezar-este-verano-y-recuerda-a-',
+    title: 'Desde Castel Gandolfo, el Papa pide en el ángelus rezar este verano y recuerda a los marinos',
+    excerpt: 'En el primero de los tres que rezará desde su residencia de verano, ha lamentado que «vuelven a soplar los vientos de la guerra en Oriente Medio y en Ucrania» La entrada Desde Castel Gandolfo, el Papa pide en el ángelus …',
+    content: 'En el primero de los tres que rezará desde su residencia de verano, ha lamentado que «vuelven a soplar los vientos de la guerra en Oriente Medio y en Ucrania» La entrada Desde Castel Gandolfo, el Papa pide en el ángelus rezar este verano y recuerda a los marinos se publicó primero en Alfa y Omega.',
+    date: '2026-07-12',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/desde-castel-gandolfo-el-papa-pide-en-el-angelus-rezar-este-verano-y-recuerda-a-los-marinos/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'la-bac-publica-el-libro-oficial-del-viaje-apostolico-de-leon-xiv-a-espana',
     title: 'La BAC publica el libro oficial del Viaje apostólico de León XIV a España',
     excerpt: 'La&#160;Biblioteca de Autores Cristianos (BAC), editorial de la Conferencia Episcopal Española, publica el volumen Alzad la mirada. Visita apostólica del papa León XIV a España 2026. El libro reúne los textos oficiales p…',
