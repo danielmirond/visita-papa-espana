@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-papa-leon-xiv-en-el-angelus-la-generosidad-de-dios-no-es-ingenua-sino-sabia-y',
+    title: 'El Papa León XIV en el Ángelus: «La generosidad de Dios no es ingenua, sino sabia y cree en nosotros»',
+    excerpt: 'El domingo 12 de julio de 2026, el Papa León XIV presidió el rezo del Ángelus desde Castel Gandolfo junto a los fieles y peregrinos congregados frente al Palacio Apostólico. En su alocución, el Santo Padre centró su mens…',
+    content: 'El domingo 12 de julio de 2026, el Papa León XIV presidió el rezo del Ángelus desde Castel Gandolfo junto a los fieles y peregrinos congregados frente al Palacio Apostólico. En su alocución, el Santo Padre centró su mensaje en la parábola del sembrador, destacando la paciencia, la confianza y el amor incondicional de Dios [&#8230;] La entrada El Papa León XIV en el Ángelus: «La generosidad de Dios no es ingenua, sino sabia y cree en nosotros» se publicó primero en Omnes.',
+    date: '2026-07-13',
+    source: 'Omnes Mag',
+    sourceUrl: 'https://www.omnesmag.com/actualidad/leon-xiv-angelus-12-julio/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'el-papa-mejor-vestido-el-pio-xiii-de-jude-law',
+    title: '¿El Papa mejor vestido? El Pío XIII de Jude Law',
+    excerpt: 'La visita de León XIV dejó en el aire muchos temas papales de interés',
+    content: 'La visita de León XIV dejó en el aire muchos temas papales de interés',
+    date: '2026-07-13',
+    source: 'El País',
+    sourceUrl: 'https://elpais.com/icon/2026-07-13/el-papa-mejor-vestido-el-pio-xiii-de-jude-law.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'leon-xiv-en-el-angelus-dios-no-deja-de-sembrar-porque-el-poder-de-su-amor-es-mas',
     title: 'León XIV en el ángelus: «Dios no deja de sembrar, porque el poder de su amor es más fuerte que nuestra debilidad»',
     excerpt: 'El Papa, que pasa sus vacaciones de verano en Castel Gandolfo hasta el 27 de julio, alertó de que «vuelven a soplar los vientos de la guerra» en Oriente Medio y Ucrania y pidió perseverar en el camino del diálogo y la di…',
