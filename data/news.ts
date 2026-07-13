@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-en-el-angelus-dios-no-deja-de-sembrar-porque-el-poder-de-su-amor-es-mas',
+    title: 'León XIV en el ángelus: «Dios no deja de sembrar, porque el poder de su amor es más fuerte que nuestra debilidad»',
+    excerpt: 'El Papa, que pasa sus vacaciones de verano en Castel Gandolfo hasta el 27 de julio, alertó de que «vuelven a soplar los vientos de la guerra» en Oriente Medio y Ucrania y pidió perseverar en el camino del diálogo y la di…',
+    content: 'El Papa, que pasa sus vacaciones de verano en Castel Gandolfo hasta el 27 de julio, alertó de que «vuelven a soplar los vientos de la guerra» en Oriente Medio y Ucrania y pidió perseverar en el camino del diálogo y la diplomacia. La entrada León XIV en el ángelus: «Dios no deja de sembrar, porque el poder de su amor es más fuerte que nuestra debilidad» se publicó primero en Revista Ecclesia.',
+    date: '2026-07-13',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/leon-xiv-en-el-angelus-dios-no-deja-de-sembrar-porque-el-poder-de-su-amor-es-mas-fuerte-que-nuestra-debilidad/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'desde-castel-gandolfo-el-papa-pide-en-el-angelus-rezar-este-verano-y-recuerda-a-',
     title: 'Desde Castel Gandolfo, el Papa pide en el ángelus rezar este verano y recuerda a los marinos',
     excerpt: 'En el primero de los tres que rezará desde su residencia de verano, ha lamentado que «vuelven a soplar los vientos de la guerra en Oriente Medio y en Ucrania» La entrada Desde Castel Gandolfo, el Papa pide en el ángelus …',
