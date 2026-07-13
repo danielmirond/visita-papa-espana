@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'restaurado-y-abierto-al-publico-el-taller-donde-gaudi-diseno-la-sagrada-familia',
+    title: 'Restaurado y abierto al público el taller donde Gaudí diseñó la Sagrada Familia',
+    excerpt: 'En 1936 sufrió un incendio en el que se destruyeron muchos de sus planos y maquetas, pero las fotografías conservadas han permitido reproducirlo La entrada Restaurado y abierto al público el taller donde Gaudí diseñó la …',
+    content: 'En 1936 sufrió un incendio en el que se destruyeron muchos de sus planos y maquetas, pero las fotografías conservadas han permitido reproducirlo La entrada Restaurado y abierto al público el taller donde Gaudí diseñó la Sagrada Familia se publicó primero en Alfa y Omega.',
+    date: '2026-07-13',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/restaurado-y-abierto-al-publico-el-taller-donde-gaudi-diseno-la-sagrada-familia/',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'el-papa-leon-xiv-en-el-angelus-la-generosidad-de-dios-no-es-ingenua-sino-sabia-y',
     title: 'El Papa León XIV en el Ángelus: «La generosidad de Dios no es ingenua, sino sabia y cree en nosotros»',
     excerpt: 'El domingo 12 de julio de 2026, el Papa León XIV presidió el rezo del Ángelus desde Castel Gandolfo junto a los fieles y peregrinos congregados frente al Palacio Apostólico. En su alocución, el Santo Padre centró su mens…',
