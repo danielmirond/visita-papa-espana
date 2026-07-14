@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-fotografia-que-resuelve-el-misterio-del-baculo-gaudiniano-regalado-al-papa-le',
+    title: 'La fotografía que resuelve el misterio del báculo gaudiniano regalado al papa León XIV en Barcelona',
+    excerpt: 'La imagen pone punto final a un recorrido que, hasta ahora, había transcurrido casi por completo en silencio',
+    content: 'La imagen pone punto final a un recorrido que, hasta ahora, había transcurrido casi por completo en silencio',
+    date: '2026-07-14',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/fotografia-resuelve-misterio-baculo-gaudiniano-leon-xiv_1_1460794.html',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'restaurado-y-abierto-al-publico-el-taller-donde-gaudi-diseno-la-sagrada-familia',
     title: 'Restaurado y abierto al público el taller donde Gaudí diseñó la Sagrada Familia',
     excerpt: 'En 1936 sufrió un incendio en el que se destruyeron muchos de sus planos y maquetas, pero las fotografías conservadas han permitido reproducirlo La entrada Restaurado y abierto al público el taller donde Gaudí diseñó la …',
