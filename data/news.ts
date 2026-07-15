@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'armand-puig-gaudi-esta-evangelizando-al-mundo-a-traves-del-templo-de-la-sagrada-',
+    title: 'Armand Puig: “Gaudí está evangelizando al mundo a través del templo de La Sagrada Familia”',
+    excerpt: 'El teólogo catalán acaba de publicar un libro sobre la vida y obra del “Apóstol de Dios”. La beatificación del arquitecto de Reus podría estar próxima',
+    content: 'El teólogo catalán acaba de publicar un libro sobre la vida y obra del “Apóstol de Dios”. La beatificación del arquitecto de Reus podría estar próxima',
+    date: '2026-07-15',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/libros/armand-puig-gaudi-evangelizando-mundo-sagrada-familia-milagro_1_1460808.html',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'la-fotografia-que-resuelve-el-misterio-del-baculo-gaudiniano-regalado-al-papa-le',
     title: 'La fotografía que resuelve el misterio del báculo gaudiniano regalado al papa León XIV en Barcelona',
     excerpt: 'La imagen pone punto final a un recorrido que, hasta ahora, había transcurrido casi por completo en silencio',
