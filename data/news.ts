@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'madrid-rumiara-los-mensajes-de-leon-xiv-a-lo-largo-del-curso-que-viene',
+    title: 'Madrid "rumiará" los mensajes de León XIV a lo largo del curso que viene',
+    excerpt: '«Estamos pensando en un acto con una invitación amplia en el que puedan participar personas que no son de Iglesia», adelanta Vicente Martín. Y detalla que seguramente cuente con «una parte de testimonios, alguna mesa de …',
+    content: '«Estamos pensando en un acto con una invitación amplia en el que puedan participar personas que no son de Iglesia», adelanta Vicente Martín. Y detalla que seguramente cuente con «una parte de testimonios, alguna mesa de reflexión y una parte final má',
+    date: '2026-07-16',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/diocesis/madrid-rumiara-mensajes-leon-xiv_1_1460931.html',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'armand-puig-gaudi-esta-evangelizando-al-mundo-a-traves-del-templo-de-la-sagrada-',
     title: 'Armand Puig: “Gaudí está evangelizando al mundo a través del templo de La Sagrada Familia”',
     excerpt: 'El teólogo catalán acaba de publicar un libro sobre la vida y obra del “Apóstol de Dios”. La beatificación del arquitecto de Reus podría estar próxima',
