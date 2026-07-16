@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'almudena-hernandez-leon-xiv-es-agustino-por-los-cuatro-costados',
+    title: 'Almudena Hernández: “León XIV es agustino por los cuatro costados”',
+    excerpt: 'La noticia Almudena Hernández: “León XIV es agustino por los cuatro costados” se publicó primero en Noticias religiosas de última hora | Vida Nueva Es una periodista asfáltica, de las pegadas a la realidad. De las que co…',
+    content: 'La noticia Almudena Hernández: “León XIV es agustino por los cuatro costados” se publicó primero en Noticias religiosas de última hora | Vida Nueva Es una periodista asfáltica, de las pegadas a la realidad. De las que conoce el hecho religioso desde dentro porque lo trabaja cada día para la agencia Servimedia. El olfato adquirido desde la experiencia de lo cotidiano le ha permitido elaborar un perfil afinado del primer Papa agustino de la historia en ‘León XIV, el &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-07-16',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/07/16/almudena-hernandez-leon-agustino-cuatro-costados/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'madrid-rumiara-los-mensajes-de-leon-xiv-a-lo-largo-del-curso-que-viene',
     title: 'Madrid "rumiará" los mensajes de León XIV a lo largo del curso que viene',
     excerpt: '«Estamos pensando en un acto con una invitación amplia en el que puedan participar personas que no son de Iglesia», adelanta Vicente Martín. Y detalla que seguramente cuente con «una parte de testimonios, alguna mesa de …',
