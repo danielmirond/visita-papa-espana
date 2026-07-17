@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'vivafe-lanza-jesus-christ-you-are-the-only-one-la-cancion-que-sono-durante-la-vi',
+    title: 'VIVAFE lanza «Jesus Christ, You Are The Only One», la canción que sonó durante la visita del Papa León XIV a España',
+    excerpt: 'La comunidad digital VIVAFE ha publicado en todas las plataformas el nuevo tema de worship contemporáneo que sonó durante las vigilias celebradas en Madrid y Barcelona y en los trayectos del papamóvil durante la reciente…',
+    content: 'La comunidad digital VIVAFE ha publicado en todas las plataformas el nuevo tema de worship contemporáneo que sonó durante las vigilias celebradas en Madrid y Barcelona y en los trayectos del papamóvil durante la reciente visita de León XIV a España. La entrada VIVAFE lanza «Jesus Christ, You Are The Only One», la canción que sonó durante la visita del Papa León XIV a España se publicó primero en Revista Ecclesia.',
+    date: '2026-07-17',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/vivafe-lanza-jesus-christ-you-are-the-only-one-la-cancion-que-sono-durante-la-visita-del-papa-leon-xiv-a-espana/',
+    relatedCities: ['madrid', 'barcelona'],
+  },
+
+  {
     slug: 'almudena-hernandez-leon-xiv-es-agustino-por-los-cuatro-costados',
     title: 'Almudena Hernández: “León XIV es agustino por los cuatro costados”',
     excerpt: 'La noticia Almudena Hernández: “León XIV es agustino por los cuatro costados” se publicó primero en Noticias religiosas de última hora | Vida Nueva Es una periodista asfáltica, de las pegadas a la realidad. De las que co…',
