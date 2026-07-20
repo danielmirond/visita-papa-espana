@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-le-pide-a-san-benito-en-montecasino-el-fin-de-las-guerras',
+    title: 'León XIV le pide a san Benito en Montecasino el fin de las guerras',
+    excerpt: 'La abadía es un lugar emblemático para este ruego porque fue destruida por lombardos, sarracenos, un terremoto y en la Segunda Guerra Mundial La entrada León XIV le pide a san Benito en Montecasino el fin de las guerras …',
+    content: 'La abadía es un lugar emblemático para este ruego porque fue destruida por lombardos, sarracenos, un terremoto y en la Segunda Guerra Mundial La entrada León XIV le pide a san Benito en Montecasino el fin de las guerras se publicó primero en Alfa y Omega.',
+    date: '2026-07-20',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/leon-xiv-le-pide-a-san-benito-en-montecasino-el-fin-de-las-guerras/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'vivafe-lanza-jesus-christ-you-are-the-only-one-la-cancion-que-sono-durante-la-vi',
     title: 'VIVAFE lanza «Jesus Christ, You Are The Only One», la canción que sonó durante la visita del Papa León XIV a España',
     excerpt: 'La comunidad digital VIVAFE ha publicado en todas las plataformas el nuevo tema de worship contemporáneo que sonó durante las vigilias celebradas en Madrid y Barcelona y en los trayectos del papamóvil durante la reciente…',
