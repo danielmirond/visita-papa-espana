@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'banfi-el-libro-del-papa-nos-recuerda-que-la-verdad-es-desarmante',
+    title: 'Banfi: El libro del Papa nos recuerda que la verdad es desarmante',
+    excerpt: 'Los medios vaticanos entrevistaron a Alessandro Banfi, editor del libro "Desarmados y desarmantes. La paz es un don", publicado por la LEV. "La paz es un don, pero también una responsabilidad, y el Papa", afirma el perio…',
+    content: 'Los medios vaticanos entrevistaron a Alessandro Banfi, editor del libro "Desarmados y desarmantes. La paz es un don", publicado por la LEV. "La paz es un don, pero también una responsabilidad, y el Papa", afirma el periodista y autor, "está lejos de una concepción utópica o ideológica. La paz de Cristo se consigue mediante el sacrificio". Leer todo',
+    date: '2026-07-21',
+    source: 'Vatican News',
+    sourceUrl: 'https://www.vaticannews.va/es/vaticano/news/2026-07/banfi-el-libro-del-papa-nos-recuerda-que-la-verdad-es-desarmante.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'leon-xiv-le-pide-a-san-benito-en-montecasino-el-fin-de-las-guerras',
     title: 'León XIV le pide a san Benito en Montecasino el fin de las guerras',
     excerpt: 'La abadía es un lugar emblemático para este ruego porque fue destruida por lombardos, sarracenos, un terremoto y en la Segunda Guerra Mundial La entrada León XIV le pide a san Benito en Montecasino el fin de las guerras …',
