@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-encuesta-perogrullo-de-la-cee-casi-todos-los-inscritos-para-ver-al-papa-satis',
+    title: 'La \'encuesta Perogrullo\' de la CEE: (casi) todos los inscritos para ver al Papa, satisfechos por ver al Papa',
+    excerpt: 'Los obispos encargan un estudio a GAD3 entre los asistentes al histórico viaje de León XIV a España. Las palabras de Prevost sobre voluntariado, migraciones o polarización, los menos valorados por los participantes',
+    content: 'Los obispos encargan un estudio a GAD3 entre los asistentes al histórico viaje de León XIV a España. Las palabras de Prevost sobre voluntariado, migraciones o polarización, los menos valorados por los participantes',
+    date: '2026-07-22',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/encuesta-perogrullo-cee-inscritos-viaje-papa-espana-cee_1_1461525.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'valoracion-muy-positiva-de-la-visita-del-papa-a-espana-por-parte-de-los-particip',
     title: 'Valoración muy positiva de la visita del Papa a España por parte de los participantes',
     excerpt: '22 de julio de 2026 Estos son parte de los datos resultantes de un estudio realizado por la Consultora GAD3 para la organización del viaje del Papa León XIV a España. El estudio, en el que han participado 5.027 personas …',
