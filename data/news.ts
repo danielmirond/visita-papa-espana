@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'valoracion-muy-positiva-de-la-visita-del-papa-a-espana-por-parte-de-los-particip',
+    title: 'Valoración muy positiva de la visita del Papa a España por parte de los participantes',
+    excerpt: '22 de julio de 2026 Estos son parte de los datos resultantes de un estudio realizado por la Consultora GAD3 para la organización del viaje del Papa León XIV a España. El estudio, en el que han participado 5.027 personas …',
+    content: '22 de julio de 2026 Estos son parte de los datos resultantes de un estudio realizado por la Consultora GAD3 para la organización del viaje del Papa León XIV a España. El estudio, en el que han participado 5.027 personas se realizó a través de entrevista al finalizar la visita del Papa, que tuvo lugar [&#8230;]',
+    date: '2026-07-22',
+    source: 'Conferencia Episcopal Española',
+    sourceUrl: 'https://www.conferenciaepiscopal.es/valoracion-muy-positiva-de-la-visita-del-papa-a-espana-por-parte-de-los-participantes/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'exito-de-leon-xiv-en-espana-el-98-de-los-inscritos-en-la-visita-se-rinde-al-papa',
+    title: 'Éxito de León XIV en España: el 98% de los inscritos en la visita se rinde al Papa',
+    excerpt: 'La noticia Éxito de León XIV en España: el 98% de los inscritos en la visita se rinde al Papa se publicó primero en Noticias religiosas de última hora | Vida Nueva El viaje de León XIV a España del 6 al 12 de junio ha si…',
+    content: 'La noticia Éxito de León XIV en España: el 98% de los inscritos en la visita se rinde al Papa se publicó primero en Noticias religiosas de última hora | Vida Nueva El viaje de León XIV a España del 6 al 12 de junio ha sido todo un éxito. Así lo atestiguan los participantes y voluntarios, pues un 97% tiene una valoración positiva o muy positiva de la visita del Papa a nuestro país, según un estudio realizado por Gad3 para la organización del viaje en &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-07-22',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/07/22/exito-leon-espana-98-inscritos-visita-rinde-papa/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'banfi-el-libro-del-papa-nos-recuerda-que-la-verdad-es-desarmante',
     title: 'Banfi: El libro del Papa nos recuerda que la verdad es desarmante',
     excerpt: 'Los medios vaticanos entrevistaron a Alessandro Banfi, editor del libro "Desarmados y desarmantes. La paz es un don", publicado por la LEV. "La paz es un don, pero también una responsabilidad, y el Papa", afirma el perio…',
