@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'los-camilianos-y-las-hijas-misioneras-de-la-sagrada-familia-de-nazaret-unen-fuer',
+    title: 'Los Camilianos y las Hijas Misioneras de la Sagrada Familia de Nazaret unen fuerzas para brindar refugio a los niños venezolanos',
+    excerpt: 'La organización humanitaria camiliana, Camillian Disaster Service (CADIS) International, coordina intervenciones de emergencia junto con los Camilianos de la Provincia de Brasil y CADIS Brasil, e impulsa una campaña para…',
+    content: 'La organización humanitaria camiliana, Camillian Disaster Service (CADIS) International, coordina intervenciones de emergencia junto con los Camilianos de la Provincia de Brasil y CADIS Brasil, e impulsa una campaña para adquirir artículos de primera',
+    date: '2026-07-23',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/solidaridad/camilianos-hijas-misioneras-sagrada-familia_1_1461568.html',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'la-almudena-acogera-la-beatificacion-de-ignacio-alaez-y-diez-companeros-seminari',
+    title: 'La Almudena acogerá la beatificación de Ignacio Aláez y diez compañeros seminaristas y familiares, mártires del siglo XX en Madrid',
+    excerpt: 'La ceremonia se celebrará el sábado 28 de noviembre en la catedral de Santa María la Real de la Almudena y estará presidida por el cardenal Marcello Semeraro, prefecto del Dicasterio para las Causas de los Santos, quien …',
+    content: 'La ceremonia se celebrará el sábado 28 de noviembre en la catedral de Santa María la Real de la Almudena y estará presidida por el cardenal Marcello Semeraro, prefecto del Dicasterio para las Causas de los Santos, quien acudirá en representación del',
+    date: '2026-07-23',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/diocesis/almudena-acogera-beatificacion-ignacio-alaez_1_1461564.html',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'la-encuesta-perogrullo-de-la-cee-casi-todos-los-inscritos-para-ver-al-papa-satis',
     title: 'La \'encuesta Perogrullo\' de la CEE: (casi) todos los inscritos para ver al Papa, satisfechos por ver al Papa',
     excerpt: 'Los obispos encargan un estudio a GAD3 entre los asistentes al histórico viaje de León XIV a España. Las palabras de Prevost sobre voluntariado, migraciones o polarización, los menos valorados por los participantes',
