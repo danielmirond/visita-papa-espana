@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'mas-de-200-trabajadores-cristianos-reivindican-ante-la-almudena-que-el-futuro-no',
+    title: 'Más de 200 trabajadores cristianos reivindican ante la Almudena que el futuro no puede quedar en manos de algoritmos',
+    excerpt: 'La noticia Más de 200 trabajadores cristianos reivindican ante la Almudena que el futuro no puede quedar en manos de algoritmos se publicó primero en Noticias religiosas de última hora | Vida Nueva Más de 200 trabajadore…',
+    content: 'La noticia Más de 200 trabajadores cristianos reivindican ante la Almudena que el futuro no puede quedar en manos de algoritmos se publicó primero en Noticias religiosas de última hora | Vida Nueva Más de 200 trabajadores cristianos reclamaron ayer por la tarde frente a la catedral de la Almudena que la inteligencia artificial y el desarrollo tecnológico se pongan al servicio de la dignidad humana, el trabajo digno y el bien común. Síguenos en Google y añádenos como fuente preferida Regístrate en el boletín gratuito y recibe &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-07-24',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/07/24/200-trabajadores-cristianos-reivindican-almudena-futuro-manos-algoritmos/',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'los-camilianos-y-las-hijas-misioneras-de-la-sagrada-familia-de-nazaret-unen-fuer',
     title: 'Los Camilianos y las Hijas Misioneras de la Sagrada Familia de Nazaret unen fuerzas para brindar refugio a los niños venezolanos',
     excerpt: 'La organización humanitaria camiliana, Camillian Disaster Service (CADIS) International, coordina intervenciones de emergencia junto con los Camilianos de la Provincia de Brasil y CADIS Brasil, e impulsa una campaña para…',
