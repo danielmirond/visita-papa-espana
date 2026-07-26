@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-pide-en-el-angelus-rezar-por-los-afectados-por-los-incendios-en-espana',
+    title: 'León XIV pide en el ángelus rezar por los afectados por los incendios en España',
+    excerpt: 'La noticia León XIV pide en el ángelus rezar por los afectados por los incendios en España se publicó primero en Noticias religiosas de última hora | Vida Nueva La tragedia de los incendios que asolan distintos puntos de…',
+    content: 'La noticia León XIV pide en el ángelus rezar por los afectados por los incendios en España se publicó primero en Noticias religiosas de última hora | Vida Nueva La tragedia de los incendios que asolan distintos puntos de España ha estado presente este domingo en las palabras de León XIV tras el rezo del Ángelus. Y es que, desde la Plaza de la Libertad de Castel Gandolfo, donde el Pontífice continúa su descanso estival, ha querido expresar públicamente su cercanía a quienes están &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-07-26',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/07/26/papa-leon-pide-angelus-rezar-por-los-afectados-incendios-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'mas-de-200-trabajadores-cristianos-reivindican-ante-la-almudena-que-el-futuro-no',
     title: 'Más de 200 trabajadores cristianos reivindican ante la Almudena que el futuro no puede quedar en manos de algoritmos',
     excerpt: 'La noticia Más de 200 trabajadores cristianos reivindican ante la Almudena que el futuro no puede quedar en manos de algoritmos se publicó primero en Noticias religiosas de última hora | Vida Nueva Más de 200 trabajadore…',
