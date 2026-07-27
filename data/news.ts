@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-papa-leon-xiv-dirige-un-mensaje-a-los-jovenes-reunidos-en-congreso-misionero-',
+    title: 'El papa León XIV dirige un mensaje a los jóvenes reunidos en congreso misionero en México',
+    excerpt: 'La noticia El papa León XIV dirige un mensaje a los jóvenes reunidos en congreso misionero en México se publicó primero en Noticias religiosas de última hora | Vida Nueva El papa León XIV dirigió un mensaje a los jóvenes…',
+    content: 'La noticia El papa León XIV dirige un mensaje a los jóvenes reunidos en congreso misionero en México se publicó primero en Noticias religiosas de última hora | Vida Nueva El papa León XIV dirigió un mensaje a los jóvenes reunidos en el XV Congreso Nacional Juvenil Misionero 2026, efectuado en la Arquidiócesis de San Luis Potosí del 23 al 26 de julio, bajo el lema &#8216;Con María de la expectación, jóvenes llevando esperanza con la misión’. Síguenos en Google y añádenos como fuente preferida &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-07-27',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/07/27/papa-leon-dirige-mensaje-a-jovenes-reunidos-congreso-misionero-mexico/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'leon-xiv-pide-en-el-angelus-rezar-por-los-afectados-por-los-incendios-en-espana',
     title: 'León XIV pide en el ángelus rezar por los afectados por los incendios en España',
     excerpt: 'La noticia León XIV pide en el ángelus rezar por los afectados por los incendios en España se publicó primero en Noticias religiosas de última hora | Vida Nueva La tragedia de los incendios que asolan distintos puntos de…',
