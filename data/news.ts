@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-paseo-de-los-andic-por-montserrat-fue-para-abordar-los-planes-de-futuro-de-jo',
+    title: 'El paseo de los Andic por Montserrat fue para abordar los planes de futuro de Jonathan',
+    excerpt: 'El empresario envió a su hijo una foto de la montaña nevada dos días antes del recorrido, propuesto por el equipo de la terapeuta familiar y que se saldó con la caída mortal',
+    content: 'El empresario envió a su hijo una foto de la montaña nevada dos días antes del recorrido, propuesto por el equipo de la terapeuta familiar y que se saldó con la caída mortal',
+    date: '2026-07-29',
+    source: 'ABC',
+    sourceUrl: 'https://www.abc.es/espana/cataluna/paseo-andic-montserrat-abordar-planes-futuro-jonathan-20260730014543-nt.html',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'el-papa-leon-xiv-dirige-un-mensaje-a-los-jovenes-reunidos-en-congreso-misionero-',
     title: 'El papa León XIV dirige un mensaje a los jóvenes reunidos en congreso misionero en México',
     excerpt: 'La noticia El papa León XIV dirige un mensaje a los jóvenes reunidos en congreso misionero en México se publicó primero en Noticias religiosas de última hora | Vida Nueva El papa León XIV dirigió un mensaje a los jóvenes…',
