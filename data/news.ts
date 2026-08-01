@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-cardenal-cobo-recuerda-la-visita-del-papa-en-su-balance-del-curso',
+    title: 'El cardenal Cobo recuerda la visita del Papa en su balance del curso',
+    excerpt: '«El gol lo metió él; nos dio la posibilidad de identificarnos, en torno a él, como diócesis», ha explicado el cardenal en una entrevista a la COPE La entrada El cardenal Cobo recuerda la visita del Papa en su balance del…',
+    content: '«El gol lo metió él; nos dio la posibilidad de identificarnos, en torno a él, como diócesis», ha explicado el cardenal en una entrevista a la COPE La entrada El cardenal Cobo recuerda la visita del Papa en su balance del curso se publicó primero en Alfa y Omega.',
+    date: '2026-07-31',
+    source: 'Alfa y Omega',
+    sourceUrl: 'https://alfayomega.es/el-cardenal-cobo-recuerda-la-visita-del-papa-en-su-balance-del-curso/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'el-paseo-de-los-andic-por-montserrat-fue-para-abordar-los-planes-de-futuro-de-jo',
     title: 'El paseo de los Andic por Montserrat fue para abordar los planes de futuro de Jonathan',
     excerpt: 'El empresario envió a su hijo una foto de la montaña nevada dos días antes del recorrido, propuesto por el equipo de la terapeuta familiar y que se saldó con la caída mortal',
