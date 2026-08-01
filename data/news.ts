@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'el-muelle-de-arguineguin-pasara-a-llamarse-oficialmente-muelle-de-la-esperanza-t',
+    title: 'El muelle de Arguineguín pasará a llamarse oficialmente Muelle de la Esperanza tras la visita del Papa a Canarias',
+    excerpt: 'El consejo de administración de Puertos Canarios ha decidido renombrar formalmente el dique exterior del puerto de Arguineguín adoptando el término que la Iglesia de Canarias utilizó durante la visita del papa León XIV a…',
+    content: 'El consejo de administración de Puertos Canarios ha decidido renombrar formalmente el dique exterior del puerto de Arguineguín adoptando el término que la Iglesia de Canarias utilizó durante la visita del papa León XIV a ese mismo enclave',
+    date: '2026-08-01',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/muelle-arguineguin-pasara-llamarse-oficialmente_1_1462429.html',
+    relatedCities: ['gran-canaria'],
+  },
+
+  {
     slug: 'el-cardenal-cobo-recuerda-la-visita-del-papa-en-su-balance-del-curso',
     title: 'El cardenal Cobo recuerda la visita del Papa en su balance del curso',
     excerpt: '«El gol lo metió él; nos dio la posibilidad de identificarnos, en torno a él, como diócesis», ha explicado el cardenal en una entrevista a la COPE La entrada El cardenal Cobo recuerda la visita del Papa en su balance del…',
