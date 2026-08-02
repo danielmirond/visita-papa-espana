@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'ceuta-el-papa-expresa-su-preocupacion-por-la-situacion-migratoria-y-pide-dialogo',
+    title: 'Ceuta: el Papa expresa su preocupación por la situación migratoria y pide diálogo',
+    excerpt: 'Tras el rezo del Ángelus dominical, León XIV expresa su preocupación por la “alarmante situación” en la ciudad autónoma española de Ceuta y pide seguir rezando por la paz, la resolución diplomática de los conflictos y po…',
+    content: 'Tras el rezo del Ángelus dominical, León XIV expresa su preocupación por la “alarmante situación” en la ciudad autónoma española de Ceuta y pide seguir rezando por la paz, la resolución diplomática de los conflictos y por las víctimas de las hostilidades. También invita a los fieles a redescubrir el valor del Perdón de Asís, coincidiendo con el 800 aniversario del “Tránsito” de San Francisco. Leer todo',
+    date: '2026-08-02',
+    source: 'Vatican News',
+    sourceUrl: 'https://www.vaticannews.va/es/papa/news/2026-08/el-papa-pide-soluciones-paz-estabilidad-y-justicia-ceuta-espana.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'el-muelle-de-arguineguin-pasara-a-llamarse-oficialmente-muelle-de-la-esperanza-t',
     title: 'El muelle de Arguineguín pasará a llamarse oficialmente Muelle de la Esperanza tras la visita del Papa a Canarias',
     excerpt: 'El consejo de administración de Puertos Canarios ha decidido renombrar formalmente el dique exterior del puerto de Arguineguín adoptando el término que la Iglesia de Canarias utilizó durante la visita del papa León XIV a…',
