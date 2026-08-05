@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-fuerza-del-circulo-de-heroes-con-el-papa-en-la-audiencia-general',
+    title: 'La Fuerza del "Círculo de Héroes" con el Papa en la Audiencia General',
+    excerpt: 'Veinte terapeutas italianos de artes marciales de la asociación internacional Kids Kicking Cancer, durante la Audiencia de los miércoles en la Basílica Vaticana, presentaron a León XIV las experiencias de niños hospitali…',
+    content: 'Veinte terapeutas italianos de artes marciales de la asociación internacional Kids Kicking Cancer, durante la Audiencia de los miércoles en la Basílica Vaticana, presentaron a León XIV las experiencias de niños hospitalizados en unidades de oncología pediátrica que, gracias a la disciplina de las artes marciales, como héroes, logran transformar la fragilidad en fortaleza consciente. Leer todo',
+    date: '2026-08-05',
+    source: 'Vatican News',
+    sourceUrl: 'https://www.vaticannews.va/es/papa/news/2026-08/la-fuerza-del-circulo-de-heroes-con-el-papa-en-la-audiencia-ge.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'javier-domingo-fernandez-jefe-de-protocolo-de-la-santa-sede-la-visita-de-leon-xi',
     title: 'Javier Domingo Fernández, jefe de Protocolo de la Santa Sede: «la visita de León XIV ha sacado lo mejor de España»',
     excerpt: 'Nacido en Caracas y con raíces en El Hierro, repasa su trayectoria ministerial y diplomática al cumplir 25 años como sacerdote La entrada Javier Domingo Fernández, jefe de Protocolo de la Santa Sede: «la visita de León X…',
