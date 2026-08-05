@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'javier-domingo-fernandez-jefe-de-protocolo-de-la-santa-sede-la-visita-de-leon-xi',
+    title: 'Javier Domingo Fernández, jefe de Protocolo de la Santa Sede: «la visita de León XIV ha sacado lo mejor de España»',
+    excerpt: 'Nacido en Caracas y con raíces en El Hierro, repasa su trayectoria ministerial y diplomática al cumplir 25 años como sacerdote La entrada Javier Domingo Fernández, jefe de Protocolo de la Santa Sede: «la visita de León X…',
+    content: 'Nacido en Caracas y con raíces en El Hierro, repasa su trayectoria ministerial y diplomática al cumplir 25 años como sacerdote La entrada Javier Domingo Fernández, jefe de Protocolo de la Santa Sede: «la visita de León XIV ha sacado lo mejor de España» se publicó primero en Revista Ecclesia.',
+    date: '2026-08-05',
+    source: 'Ecclesia',
+    sourceUrl: 'https://revistaecclesia.es/jefe-protocolo-santa-sede-javier-domingo-fernandez-vaticano-espana/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'ceuta-el-papa-expresa-su-preocupacion-por-la-situacion-migratoria-y-pide-dialogo',
     title: 'Ceuta: el Papa expresa su preocupación por la situación migratoria y pide diálogo',
     excerpt: 'Tras el rezo del Ángelus dominical, León XIV expresa su preocupación por la “alarmante situación” en la ciudad autónoma española de Ceuta y pide seguir rezando por la paz, la resolución diplomática de los conflictos y po…',
