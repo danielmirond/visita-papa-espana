@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-toma-el-testigo-del-papa-francisco-y-peregrina-a-asis-para-celebrar-los',
+    title: 'León XIV toma el testigo del papa Francisco y peregrina a Asís para celebrar los 800 años de la muerte del \'Poverello\'',
+    excerpt: 'Bergoglio adopt&oacute; el nombre del santo de los pobres y visit&oacute; esta peque&ntilde;a ciudad italiana en seis ocasionesLa Iglesia cat&oacute;lica celebra el A&ntilde;o Jubilar Franciscano para potenciar la paz en…',
+    content: 'Bergoglio adopt&oacute; el nombre del santo de los pobres y visit&oacute; esta peque&ntilde;a ciudad italiana en seis ocasionesLa Iglesia cat&oacute;lica celebra el A&ntilde;o Jubilar Franciscano para potenciar la paz en el mundo y el amor fraterno',
+    date: '2026-08-06',
+    source: 'RTVE',
+    sourceUrl: 'https://www.rtve.es/noticias/20260806/papa-leon-xiv-peregrina-asis-800-anos-muerte-san-francisco/17178232.shtml',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+  {
+    slug: 'uruguay-argentina-y-peru-recibiran-al-papa-leon-xiv-en-noviembre',
+    title: 'Uruguay, Argentina y Perú recibirán al papa León XIV en noviembre',
+    excerpt: 'El Vaticano confirma que el pontífice realizará una gira por Sudamérica de 12 días, en los que visitará una decena de ciudades',
+    content: 'El Vaticano confirma que el pontífice realizará una gira por Sudamérica de 12 días, en los que visitará una decena de ciudades',
+    date: '2026-08-05',
+    source: 'El País',
+    sourceUrl: 'https://elpais.com/america/2026-08-05/uruguay-argentina-y-peru-recibiran-al-papa-leon-xiv-en-noviembre.html',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'la-fuerza-del-circulo-de-heroes-con-el-papa-en-la-audiencia-general',
     title: 'La Fuerza del "Círculo de Héroes" con el Papa en la Audiencia General',
     excerpt: 'Veinte terapeutas italianos de artes marciales de la asociación internacional Kids Kicking Cancer, durante la Audiencia de los miércoles en la Basílica Vaticana, presentaron a León XIV las experiencias de niños hospitali…',
