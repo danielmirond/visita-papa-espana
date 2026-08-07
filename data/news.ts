@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-zarzuela-toma-tio-pepe-festival-con-ismael-jordi-sabina-puertolas-y-oliver-di',
+    title: 'La zarzuela toma Tío Pepe Festival con Ismael Jordi, Sabina Puértolas y Óliver Díaz como grandes protagonistas',
+    excerpt: 'El tenor jerezano, la soprano navarra y el director asturiano protagonizan este domingo un concierto junto a la Orquesta Sinfónica de Málaga y el Coro del Teatro Villamarta en las bodegas González Byass',
+    content: 'El tenor jerezano, la soprano navarra y el director asturiano protagonizan este domingo un concierto junto a la Orquesta Sinfónica de Málaga y el Coro del Teatro Villamarta en las bodegas González Byass',
+    date: '2026-08-07',
+    source: 'ABC',
+    sourceUrl: 'https://www.abc.es/sevilla/cultura/zarzuela-toma-tio-pepe-festival-ismael-jordi-20260807195542-nts.html',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'leon-xiv-toma-el-testigo-del-papa-francisco-y-peregrina-a-asis-para-celebrar-los',
     title: 'León XIV toma el testigo del papa Francisco y peregrina a Asís para celebrar los 800 años de la muerte del \'Poverello\'',
     excerpt: 'Bergoglio adopt&oacute; el nombre del santo de los pobres y visit&oacute; esta peque&ntilde;a ciudad italiana en seis ocasionesLa Iglesia cat&oacute;lica celebra el A&ntilde;o Jubilar Franciscano para potenciar la paz en…',
