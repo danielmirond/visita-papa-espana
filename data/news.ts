@@ -2,6 +2,27 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'la-visita-de-leon-xiv-a-espana-tuvo-casi-veinte-millones-de-espectadores-lo-mas-',
+    title: 'La visita de León XIV a España tuvo casi veinte millones de espectadores. Lo más visto, el evento de la Sagrada Familia',
+    excerpt: 'La visita de León XIV a España ha contado con una importante cobertura informativa en televisión, programas en 28 cadenas y 19,7 millones de espectadores únicos con el 41,5% de la población de España, según el \'Informe A…',
+    content: 'La visita de León XIV a España ha contado con una importante cobertura informativa en televisión, programas en 28 cadenas y 19,7 millones de espectadores únicos con el 41,5% de la población de España, según el \'Informe Audiencia TV\' elaborado por Bar',
+    date: '2026-08-08',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/visita-de-leon-xiv-a-espana-2026/visita-leon-xiv-espana-tuvo_1_1458078.html',
+    relatedCities: ['barcelona'],
+  },
+  {
+    slug: 'la-sagrada-familia-despide-a-su-rector-eterno-lluis-bonet',
+    title: 'La Sagrada Familia despide a “su rector eterno” Lluís Bonet',
+    excerpt: 'La noticia La Sagrada Familia despide a “su rector eterno” Lluís Bonet se publicó primero en Noticias religiosas de última hora | Vida Nueva Apenas dos meses después de la visita del papa León XIV a Barcelona, Lluís Bone…',
+    content: 'La noticia La Sagrada Familia despide a “su rector eterno” Lluís Bonet se publicó primero en Noticias religiosas de última hora | Vida Nueva Apenas dos meses después de la visita del papa León XIV a Barcelona, Lluís Bonet i Armengol, quien fuera rector de la parroquia de la Sagrada Familia durante 25 años y una de las figuras eclesiales más estrechamente vinculadas al templo de Gaudí, falleció este viernes, 7 de agosto, a los 95 años. Síguenos en &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-08-08',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/08/08/sagrada-familia-despide-rector-eterno-lluis-bonet/',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'muere-lluis-bonet-el-sacerdote-que-acompano-durante-25-anos-la-sagrada-familia-d',
     title: 'Muere Lluís Bonet, el sacerdote que acompañó durante 25 años la Sagrada Familia de Gaudí',
     excerpt: 'Una de sus dieciséis sobrinas recuerda a un hombre austero, alegre y acogedor que hizo de la vocación un servicio a los demás y que mantuvo siempre una especial vinculación con el universo gaudiniano',
