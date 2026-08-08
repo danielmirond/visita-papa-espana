@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'roc-nation-el-imperio-deportivo-de-jay-z-que-conquista-el-bernabeu-con-vinicius-',
+    title: 'Roc Nation, el imperio deportivo de Jay Z que conquista el Bernabéu con Vinicius y Diomande',
+    excerpt: 'La renovación y el fichaje más caros de la historia del Real Madrid, protagonizadas por el brasileño y el exjugador del RB Leipzig, consagran a la agencia norteamericana como una de las mayores potencias del mundo de los…',
+    content: 'La renovación y el fichaje más caros de la historia del Real Madrid, protagonizadas por el brasileño y el exjugador del RB Leipzig, consagran a la agencia norteamericana como una de las mayores potencias del mundo de los despachos',
+    date: '2026-08-08',
+    source: 'ABC',
+    sourceUrl: 'https://www.abc.es/deportes/real-madrid/roc-nation-imperio-deportivo-jay-conquista-bernabeu-20260807010944-nt.html',
+    relatedCities: ['madrid'],
+  },
+
+  {
     slug: 'la-zarzuela-toma-tio-pepe-festival-con-ismael-jordi-sabina-puertolas-y-oliver-di',
     title: 'La zarzuela toma Tío Pepe Festival con Ismael Jordi, Sabina Puértolas y Óliver Díaz como grandes protagonistas',
     excerpt: 'El tenor jerezano, la soprano navarra y el director asturiano protagonizan este domingo un concierto junto a la Orquesta Sinfónica de Málaga y el Coro del Teatro Villamarta en las bodegas González Byass',
