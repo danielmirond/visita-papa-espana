@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'muere-lluis-bonet-el-sacerdote-que-acompano-durante-25-anos-la-sagrada-familia-d',
+    title: 'Muere Lluís Bonet, el sacerdote que acompañó durante 25 años la Sagrada Familia de Gaudí',
+    excerpt: 'Una de sus dieciséis sobrinas recuerda a un hombre austero, alegre y acogedor que hizo de la vocación un servicio a los demás y que mantuvo siempre una especial vinculación con el universo gaudiniano',
+    content: 'Una de sus dieciséis sobrinas recuerda a un hombre austero, alegre y acogedor que hizo de la vocación un servicio a los demás y que mantuvo siempre una especial vinculación con el universo gaudiniano',
+    date: '2026-08-08',
+    source: 'Religión Digital',
+    sourceUrl: 'https://www.religiondigital.org/espana/muere-lluis-bonet-sacerdote-acompano_1_1463095.html',
+    relatedCities: ['barcelona'],
+  },
+
+  {
     slug: 'roc-nation-el-imperio-deportivo-de-jay-z-que-conquista-el-bernabeu-con-vinicius-',
     title: 'Roc Nation, el imperio deportivo de Jay Z que conquista el Bernabéu con Vinicius y Diomande',
     excerpt: 'La renovación y el fichaje más caros de la historia del Real Madrid, protagonizadas por el brasileño y el exjugador del RB Leipzig, consagran a la agencia norteamericana como una de las mayores potencias del mundo de los…',
