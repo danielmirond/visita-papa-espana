@@ -2,6 +2,17 @@ import { NewsArticle } from '@/types/news'
 
 export const news: NewsArticle[] = [
   {
+    slug: 'leon-xiv-denuncia-en-el-angelus-que-la-guerra-no-hace-mas-que-provocar-otra-guer',
+    title: 'León XIV denuncia en el ángelus que la “guerra no hace más que provocar otra guerra”',
+    excerpt: 'La noticia León XIV denuncia en el ángelus que la “guerra no hace más que provocar otra guerra” se publicó primero en Noticias religiosas de última hora | Vida Nueva Durante el habitual rezo del ángelus de este domingo, …',
+    content: 'La noticia León XIV denuncia en el ángelus que la “guerra no hace más que provocar otra guerra” se publicó primero en Noticias religiosas de última hora | Vida Nueva Durante el habitual rezo del ángelus de este domingo, el papa León XIV se dirigió a los fieles y peregrinos congregados en la Plaza de San Pedro desde la ventana del Palacio Apostólico, ofreciendo un mensaje centrado en la humildad, la fe y la superación de la fragilidad humana en tiempos de dificultad. Síguenos en &#8230; Este es un artículo original de vidanuevadigital.com',
+    date: '2026-08-09',
+    source: 'Vida Nueva',
+    sourceUrl: 'https://www.vidanuevadigital.com/2026/08/09/leon-xiv-denuncia-angelus-guerra-no-hace-mas-provocar-otra-guerra/',
+    relatedCities: ['madrid', 'barcelona', 'gran-canaria', 'tenerife'],
+  },
+
+  {
     slug: 'la-visita-de-leon-xiv-a-espana-tuvo-casi-veinte-millones-de-espectadores-lo-mas-',
     title: 'La visita de León XIV a España tuvo casi veinte millones de espectadores. Lo más visto, el evento de la Sagrada Familia',
     excerpt: 'La visita de León XIV a España ha contado con una importante cobertura informativa en televisión, programas en 28 cadenas y 19,7 millones de espectadores únicos con el 41,5% de la población de España, según el \'Informe A…',
