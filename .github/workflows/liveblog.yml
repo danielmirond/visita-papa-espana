@@ -1,10 +1,12 @@
 name: Liveblog autónomo (cada 5 min)
 
 on:
-  schedule:
-    # Cada 5 min durante la visita. GitHub Actions garantiza ~5 min de
-    # precisión (puede haber retrasos en horas pico).
-    - cron: '*/5 * * * *'
+  # Cron desactivado (2026-08-10): la visita ya terminó y el liveblog no tiene
+  # nada que publicar. Sigue disponible el disparo manual desde Actions.
+  # schedule:
+  #   # Cada 5 min durante la visita. GitHub Actions garantiza ~5 min de
+  #   # precisión (puede haber retrasos en horas pico).
+  #   - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
